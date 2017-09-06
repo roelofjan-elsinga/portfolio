@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+#custom rewrite rules
+RewriteRule    ^action/?$    Process.php    [NC,L] 
+RewriteRule    ^dashboard/?$    work    [NC,L] 
+RewriteRule    ^logout/?$    Process.php?signout    [NC,L] 
+
+#twig rewrite rules if all others fail
+RewriteRule    ^([A-Za-z0-9-]+)/?$    index.php?page=$1    [NC,L] 
+RewriteRule    ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    index.php?page=$1&id=$2    [NC,L] 
+Redirect 301 /projects/aduard/public http://projects.roelofjanelsinga.nl/aduard

@@ -1,0 +1,37 @@
+{% extends "master/dashboard.twig" %}
+
+{% block content %}
+    <a href="{{ url }}add/work" class="btn btn-info pull-right add-work">Add work</a>
+    <table class="table table-bordered table-condensed table-hover table-responsive">
+        <thead>
+            <tr>
+                <th class="same-width">Name</th>
+                <th class="same-width">URL</th>
+                <th class="same-width">Added</th>
+                <th class="condense"></th>
+                <th class="condense"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if work is empty %}
+                <tr>
+                    <td>No work found!</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            {% else %}
+                {% for item in work %}
+                    <tr id="{{ item.id }}">
+                        <td>{{ item.title }}</td>
+                        <td>{{ item.url }}</td>
+                        <td>{{ item.publish_date|date("l, F jS, Y") }}</td>
+                        <td><a onclick="confirm({{ item.id }}, 'removeWork');" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></a></td>
+                        <td><a class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a></td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+{% endblock %}

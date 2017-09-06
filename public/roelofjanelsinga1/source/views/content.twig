@@ -1,0 +1,67 @@
+{% extends "master/dashboard.twig" %}
+
+{% block content %}
+    <form action="{{ url }}action" method="post">
+        <h3>Home</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="home_title" placeholder="Title" value="{{ home.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="home_text" placeholder="Text" rows="3">{{ home.text }}</textarea>
+        </div>
+
+        <h3>Work</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="work_title" placeholder="Title" value="{{ work.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="work_text" placeholder="Text" rows="3">{{ work.text }}</textarea>
+        </div>
+
+        <h3>Services</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="services_title" placeholder="Title" value="{{ services.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="services_text" placeholder="Text" rows="3">{{ services.text }}</textarea>
+        </div>
+
+        <h3>About me</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="about_title" placeholder="Title" value="{{ about.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="about_text" placeholder="Text" rows="5">{{ about.text }}</textarea>
+        </div>
+
+        <h3>Contact</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="contact_title" placeholder="Title" value="{{ contact.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="contact_text" placeholder="Text" rows="3">{{ contact.text }}</textarea>
+        </div>
+
+        <h3>Footer</h3>
+        <div class="form-group">
+            <label for="home_title">Title:</label>
+            <input type="text" class="form-control" name="footer_title" placeholder="Title" value="{{ footer.title }}">
+        </div>	
+        <div class="form-group">	
+            <label for="home_text">Text:</label>
+            <textarea class="form-control" name="footer_text" placeholder="Text" rows="3">{{ footer.text }}</textarea>
+        </div>
+
+        <button class="btn btn-info pull-right" type="submit" name="saveContent">Save</button>
+    </form>
+{% endblock %}

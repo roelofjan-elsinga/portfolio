@@ -1,0 +1,55 @@
+.navbar {
+    border-radius:0px;
+    margin-bottom:0px;
+    background:@transparant;
+    z-index:999;
+    transition-duration: 1s;
+    
+    .navbar-header {
+        .navbar-toggle {
+        	color:white;
+        	border:transparant;
+        }
+        
+        .navbar-toggle:hover {
+        	background-color:rgba(255, 255, 255, 0.3);
+        	color:black;
+        }
+        
+        .navbar-brand {
+        	color: @clouds;
+        	font-size:22px;
+        }
+        .navbar-brand:hover {
+            color: @peter;   
+        }
+    }
+    
+    .navbar-collapse    {
+        .navbar-nav {
+        	margin-right:15px;
+        	
+        	li {
+            	
+            	a {
+                	color:@clouds;
+                	font-weight:bold;
+                	display:block;
+                	height:65px;
+                	padding:8px 10px 10px 10px;
+                	line-height:50px;
+                	margin:0px 5px;
+                }
+                
+                a:hover, a:focus, a:active {
+                    background-color: @transparant;
+                    color: @peter;
+                }
+            }
+            .active {
+                color: @peter;  
+                border-bottom: 3px solid @peter;
+            }
+        }
+    }
+}
