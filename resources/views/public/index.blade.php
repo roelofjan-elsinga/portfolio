@@ -5,7 +5,7 @@
         <div class="color-overlay overlay-1">
             <div class="bg-txt-home">
                 <h1>{{ $home->title }}</h1>
-                <h2>{!! $home->content !!}</h2>
+                <p>{!! $home->content !!}</p>
             </div>
         </div>
     </div> 
@@ -14,7 +14,7 @@
         <div class="cd-container work-panel">
             <h2>{{ $work->title }}</h2>
             <p>{!! $work->content !!}</p>
-            <div class="row">
+            <div>
                 @if(count($works) > 0)
                     @foreach($works->take(4) as $work)
                         <div class="col-sm-6 col-md-3 element work">
@@ -47,19 +47,17 @@
 
     <div class="cd-fixed-bg cd-bg-2 section" id="services">
         <div class="color-overlay overlay-1">
-            <div class="bg-txt-services">
+            <div class="bg-txt-home">
                 <div id="services-intro">
                     <h2>{{ $service->title }}</h2>
                     {!! $service->content !!}
                 </div>
                 @if($services != null)
                     @foreach($services as $serv)
-                        <div class="col-md-4">
-                            <div class="section">
-                                <span style="font-size:48px;"><i class="fa fa-{{ $serv->icon }} hidden-xs"></i></span>
-                                <h3 style="margin-top:5px;" class="section-header">{{ $serv->title }}</h3>
-                                {!! $serv->content !!}
-                            </div>
+                        <div class="section">
+                            <span style="font-size:48px;"><i class="fa fa-{{ $serv->icon }} hidden-xs"></i></span>
+                            <h3 style="margin-top:5px;" class="section-header">{{ $serv->title }}</h3>
+                            {!! $serv->content !!}
                         </div>
                     @endforeach
                 @endif
@@ -70,13 +68,13 @@
     <div class="cd-scrolling-bg cd-color-1 section" id="about">
         <div class="cd-container about-panel">
             <h2>{{ $about->title }}</h2>
+
+            <img src="{{ asset('images/image_bw.png') }}" alt="profile_picture">
+
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-xs-12">
                         {!! $about->content !!}
-                    </div>
-                    <div class="col-md-3">
-                        <img src="{{ asset('images/about.jpg') }}" alt="profile_picture" class="img-circle img-responsive">
                     </div>
                 </div>
             </div>
@@ -131,6 +129,6 @@
         <div class="cd-container">
             <h2>{{ $footer->title }}</h2>
             <p>{!! $footer->content !!}</p>
-        </div> 
-    </div> 
+        </div>
+    </div>
 @endsection

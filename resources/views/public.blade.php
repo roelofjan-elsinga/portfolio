@@ -55,10 +55,10 @@
         <!-- Bootstrap -->
         @section('stylesheets')
             <link href="{{ asset('css/flatly.css') }}" rel="stylesheet">
-            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="{{ asset('css/sweet-alert.css') }}">
             <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
-            <link href="{{ asset('css/roelof.css') }}" rel="stylesheet">
+            <link href="{{ asset('css/front.css') }}" rel="stylesheet">
         @show
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -83,7 +83,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="home_btn active" href="#home">Home</a></li>
                             <li><a class="work_btn" href="#work">Work</a></li>
-                            <li><a class="services_btn" href="#services">Services</a></li>
+                            <li><a class="services_btn" href="#services">What I do</a></li>
                             <li><a class="about_btn" href="#about">About me</a></li>
                             <li><a class="contact_btn" href="#contact">Contact</a></li>
                             <li><a href="https://blog.roelofjanelsinga.nl/">Blog</a></li>

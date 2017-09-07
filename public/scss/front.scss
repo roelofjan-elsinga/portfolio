@@ -1,0 +1,158 @@
+@import "globals";
+@import "layout";
+@import "navbar";
+
+html {
+    position: relative;
+    min-height: 100%;
+
+    body {
+        background-color: #ecf0f1;
+    
+        .row {
+            margin-bottom: 20px;
+    
+            .modal-content {
+                border-radius: 0;
+    
+                #modal-container {
+                    padding: 0 10px;
+    
+                    .form-control {
+                        border-radius: 0;
+                    }
+                }
+    
+                .modal-footer {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}
+
+#about {
+    font-size: 18px;
+    text-align: justify
+}
+
+.cd-bg-1 {
+    background-image: url("../images/chicago.jpg")
+}
+
+.cd-bg-2 {
+    background-color: #34495e
+}
+
+.overlay-1 {
+    //background-color: rgba(44, 62, 80, 0.7);
+    //background-color: rgba(52, 152, 219, 0.7);
+    background-color: rgba(41, 128, 185, 0.7);
+}
+
+.cd-color-1 {
+    background-color: #ecf0f1
+}
+
+@media screen and (max-width:767px) {
+    .cd-scrolling-bg .cd-container {
+        padding: 60px;
+        width: 100%
+    }
+    .btn-stories {
+        left: 40%
+    }
+}
+
+.work {
+    padding: 5px;
+    text-align: left;
+    height: 100%
+}
+
+.work .work-item {
+    border: 3px solid #2980b9;
+    height: 100%
+}
+
+.work .work-item .work-image {
+    position: relative
+}
+
+.work .work-item .work-image img {
+    width: 100%
+}
+
+.work .work-item .work-image .work-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ecf0f1;
+    background-color: rgba(44, 62, 80, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: none;
+    transition-duration: .5s
+}
+
+.work .work-item .work-image .work-info .work-title p {
+    margin: 0;
+    font-size: 22px;
+    border-bottom: 3px solid #3498db
+}
+
+.work .work-item .work-image .work-info .work-summary p {
+    font-size: 14px
+}
+
+.work #add-work {
+    color: #2980b9;
+    border: 5px dashed #2980b9;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    min-height: 100px;
+    width: 100%;
+    display: table;
+    transition-duration: .5s
+}
+
+.work #add-work .fa {
+    font-size: 36px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.work #add-work:hover {
+    color: #ecf0f1;
+    background-color: #2980b9
+}
+
+.work:hover .work-item .work-image .work-info {
+    display: block;
+    transition-duration: .5s
+}
+
+.form-horizontal .form-group input,
+.form-horizontal .form-group textarea {
+    border: 2px solid #bdc3c7
+}
+
+.form-horizontal .form-group input:focus,
+.form-horizontal .form-group textarea:focus {
+    border: 2px solid #3498db;
+    background-color: rgba(52, 152, 219, 0.8);
+    color: #2c3e50
+}
+
+.form-horizontal .form-group .btn {
+    float: right;
+    margin-right: 15px;
+    background-color: #3498db;
+    border: 0
+}
+
+.form-horizontal .form-group .btn:hover {
+    background-color: #2980b9
+}
