@@ -18,7 +18,8 @@ class PublicController extends Controller{
 
     public function index(){
         return view('public.index', [
-            'works' => Work::orderBy('id', 'asc')->get(),
+            'works' => Work::orderBy('id', 'asc')->take(4)->get(),
+            'worksCount' => Work::count(),
             'services' => Service::all(),
             'home' => Page::where('name', 'home')->first(),
             'work' => Page::where('name', 'work')->first(),

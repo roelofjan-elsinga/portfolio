@@ -1,0 +1,79 @@
+.work-panel {
+    width: 100%;
+    color: #2c3e50;
+    text-align: center;
+    
+    .items {
+        .work {
+            padding: 5px;
+            text-align: left;
+            height: 100%;
+        
+            .work-item {
+                height: 100%;
+                background-color: white;
+                padding: 15px;
+                box-shadow: 2px 2px 2px lighten(#e2e2e2, 5%);
+                border: 1px solid lighten(#e2e2e2, 5%);
+            
+                .work-image {
+                    position: relative;
+                
+                    .work-info {
+                        color: black;
+                    
+                        &.even {
+                            text-align: left;
+                        }
+                        
+                        &.uneven {
+                            text-align: right;
+                        }
+                        
+                        .work-title {
+                            margin: 0;
+                            font-size: 22px;
+                        }
+                    
+                        .work-summary p {
+                            font-size: 16px;
+                            line-height: 1.7;
+                            
+                            @media screen and (max-width: 767px) {
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+        
+            #add-work {
+                color: #2980b9;
+                border: 5px dashed #2980b9;
+                background-color: rgba(0, 0, 0, 0);
+                height: 100%;
+                min-height: 100px;
+                width: 100%;
+                display: table;
+                transition-duration: .5s;
+            
+                .fa {
+                    font-size: 36px;
+                    text-align: center;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            
+                &:hover {
+                    color: #ecf0f1;
+                    background-color: #2980b9
+                }
+            }
+        }
+        
+        .more-link {
+            color: black;
+        }
+    }
+}

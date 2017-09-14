@@ -1,13 +1,14 @@
 @import "globals";
 @import "layout";
 @import "navbar";
+@import "work";
 
 html {
     position: relative;
     min-height: 100%;
 
     body {
-        background-color: #ecf0f1;
+        background-color: white;
     
         .row {
             margin-bottom: 20px;
@@ -51,7 +52,7 @@ html {
 }
 
 .cd-color-1 {
-    background-color: #ecf0f1
+    background-color: white;
 }
 
 @media screen and (max-width:767px) {
@@ -62,76 +63,6 @@ html {
     .btn-stories {
         left: 40%
     }
-}
-
-.work {
-    padding: 5px;
-    text-align: left;
-    height: 100%
-}
-
-.work .work-item {
-    border: 3px solid #2980b9;
-    height: 100%
-}
-
-.work .work-item .work-image {
-    position: relative
-}
-
-.work .work-item .work-image img {
-    width: 100%
-}
-
-.work .work-item .work-image .work-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ecf0f1;
-    background-color: rgba(44, 62, 80, 0.7);
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    display: none;
-    transition-duration: .5s
-}
-
-.work .work-item .work-image .work-info .work-title p {
-    margin: 0;
-    font-size: 22px;
-    border-bottom: 3px solid #3498db
-}
-
-.work .work-item .work-image .work-info .work-summary p {
-    font-size: 14px
-}
-
-.work #add-work {
-    color: #2980b9;
-    border: 5px dashed #2980b9;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100%;
-    min-height: 100px;
-    width: 100%;
-    display: table;
-    transition-duration: .5s
-}
-
-.work #add-work .fa {
-    font-size: 36px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle
-}
-
-.work #add-work:hover {
-    color: #ecf0f1;
-    background-color: #2980b9
-}
-
-.work:hover .work-item .work-image .work-info {
-    display: block;
-    transition-duration: .5s
 }
 
 .form-horizontal .form-group input,

@@ -14,31 +14,43 @@
         <div class="cd-container work-panel">
             <h2>{{ $work->title }}</h2>
             <p>{!! $work->content !!}</p>
-            <div>
-                @if(count($works) > 0)
-                    @foreach($works->take(4) as $work)
-                        <div class="col-sm-6 col-md-3 element work">
-                            <a href="{{ route('public.workDetail', $work->slug) }}">
-                                <div class="work-item">
-                                    <div class="work-image">
-                                        <img src="{{ asset('images/work/'.$work->image_large)  }}" class="img" alt="{{ $work->title }}">
-                                        <div class="work-info">
-                                            <div class="work-title">
-                                                <p>{{ $work->title }}</p>
-                                            </div>
+            <div class="items">
+                @foreach($works as $index => $work)
+
+                    <div class="col-md-6 element work">
+                        <a href="{{ $work->link }}">
+                            <div class="work-item">
+                                <div class="work-image row">
+                                    @if($index % 2 == 0)
+                                        <div class="work-info col-xs-6 uneven">
+                                            <h3 class="work-title">{{ $work->title }}</h3>
                                             <div class="work-summary">
                                                 <p>{{ $work->summary }}</p>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="col-xs-6">
+                                            <img src="{{ asset('images/work/'.$work->image_large)  }}" class="img-responsive" alt="{{ $work->title }}">
+                                        </div>
+                                    @else
+                                        <div class="col-xs-6">
+                                            <img src="{{ asset('images/work/'.$work->image_large)  }}" class="img-responsive" alt="{{ $work->title }}">
+                                        </div>
+                                        <div class="work-info col-xs-6 even">
+                                            <h3 class="work-title">{{ $work->title }}</h3>
+                                            <div class="work-summary">
+                                                <p>{{ $work->summary }}</p>
+                                            </div>
+                                        </div>
+                                    @endif
                                 </div>
-                            </a>
-                        </div>
-                    @endforeach
-                @endif
-                @if(count($works) > 4)
+                            </div>
+                        </a>
+                    </div>
+
+                @endforeach
+                @if($worksCount > 4)
                     <div class="col-md-12">
-                        <a href="{{ route('public.work') }}">Click here for all my work ({{ count($works) - 4 }} item{{(count($works) - 4) > 1 ? 's' : ''}} not displayed here)</a>
+                        <a href="{{ route('public.work') }}" class="more-link">Click here for all my work ({{ $worksCount - 4 }} item{{$worksCount - 4 > 1 ? 's' : ''}} not displayed here)</a>
                     </div>
                 @endif
             </div>
