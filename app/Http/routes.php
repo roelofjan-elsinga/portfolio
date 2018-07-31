@@ -31,7 +31,4 @@ Route::post('register/{one?}/{two?}/{three?}/{four?}/{five?}', ['as' => 'auth.po
 Route::resource('public', 'PublicController');
 
 //Controllers    
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
+Auth::routes();
