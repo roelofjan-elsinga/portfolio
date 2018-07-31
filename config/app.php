@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => 'Your Application Name',
+    'name' => 'Portfolio website',
 
     'env' => env('APP_ENV', 'production'),
 
@@ -43,7 +43,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Amsterdam',
 
     /*
     |--------------------------------------------------------------------------
@@ -99,7 +99,7 @@ return [
     |
     */
 
-    'log' => 'single',
+    'log' => 'daily',
 
     /*
     |--------------------------------------------------------------------------
@@ -140,7 +140,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
-
 
         /*
          * Application Service Providers...
