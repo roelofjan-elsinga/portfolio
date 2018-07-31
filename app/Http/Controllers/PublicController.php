@@ -18,10 +18,6 @@ class PublicController extends Controller{
     }
 
     public function index(){
-        $text = $this->parseMarkdownFile("content/blocks/about.md");
-
-        dd($text);
-
         return view('public.index', [
             'works' => Work::orderBy('id', 'asc')->take(4)->get(),
             'worksCount' => Work::count(),
@@ -29,7 +25,7 @@ class PublicController extends Controller{
             'home' => Page::where('name', 'home')->first(),
             'work' => Page::where('name', 'work')->first(),
             'service' => Page::where('name', 'service')->first(),
-            'about' => Page::where('name', 'about')->first(),
+            'about' => $this->parseMarkdownFile("content/blocks/about.md"),
             'contact' => Page::where('name', 'contact')->first(),
             'footer' => Page::where('name', 'footer')->first()
         ]);

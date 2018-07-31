@@ -82,17 +82,7 @@
 
     <div class="cd-scrolling-bg cd-color-1 section" id="about">
         <div class="cd-container about-panel">
-            <h2>{{ $about->title }}</h2>
-
-            <img src="{{ asset('images/image_bw.png') }}" alt="profile_picture">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        {!! $about->content !!}
-                    </div>
-                </div>
-            </div>
+            {!! $about !!}
         </div> 
     </div> 
 
