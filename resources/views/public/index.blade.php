@@ -4,8 +4,11 @@
     <div class="cd-fixed-bg cd-bg-1 section" id="home">
         <div class="color-overlay overlay-1">
             <div class="bg-txt-home">
-                <h1>{{ $home->title }}</h1>
-                <p>{!! $home->content !!}</p>
+                <h1>Hello, I'm Roelof</h1>
+                <p>
+                    Follow me on <a href="https://twitter.com/RJElsinga" target="_blank">Twitter</a> and
+                    <a href="https://medium.com/@roelofjanelsinga" target="_blank">Medium</a>
+                </p>
             </div>
         </div>
     </div> 
@@ -57,7 +60,7 @@
         </div> 
     </div>
 
-    <div class="cd-fixed-bg cd-bg-2 section" id="services">
+    <div class="cd-fixed-bg cd-bg-2 section" id="blog">
         <div class="color-overlay overlay-1">
             <div class="bg-txt-home">
                 <div id="services-intro">

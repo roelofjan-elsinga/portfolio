@@ -82,8 +82,8 @@
                     <div class="collapse navbar-collapse" id="navbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="home_btn active" href="#home">Home</a></li>
+                            <li><a class="services_btn" href="#blog">Blog</a></li>
                             <li><a class="work_btn" href="#work">Work</a></li>
-                            <li><a class="services_btn" href="#services">What I do</a></li>
                             <li><a class="about_btn" href="#about">About me</a></li>
                             <li><a class="contact_btn" href="#contact">Contact</a></li>
                             <li><a href="https://blog.roelofjanelsinga.nl/">Blog</a></li>

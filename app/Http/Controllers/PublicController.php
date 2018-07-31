@@ -3,6 +3,7 @@
 namespace Main\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use Main\Http\Requests;
@@ -17,6 +18,10 @@ class PublicController extends Controller{
     }
 
     public function index(){
+        $text = $this->parseMarkdownFile("content/blocks/about.md");
+
+        dd($text);
+
         return view('public.index', [
             'works' => Work::orderBy('id', 'asc')->take(4)->get(),
             'worksCount' => Work::count(),
@@ -28,6 +33,14 @@ class PublicController extends Controller{
             'contact' => Page::where('name', 'contact')->first(),
             'footer' => Page::where('name', 'footer')->first()
         ]);
+    }
+
+    private function parseMarkdownFile($path) {
+        $parser = new \Parsedown();
+        $filename = resource_path($path);
+        $text = File::get($filename);
+
+        return $parser->parse($text);
     }
 
     public function contact(Request $request){
