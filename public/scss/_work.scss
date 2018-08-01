@@ -16,35 +16,8 @@
                 box-shadow: 2px 2px 2px lighten(#e2e2e2, 5%);
                 border: 1px solid lighten(#e2e2e2, 5%);
             
-                .work-image {
-                    position: relative;
-                
-                    .work-info {
-                        color: black;
-                    
-                        &.even {
-                            text-align: left;
-                        }
-                        
-                        &.uneven {
-                            text-align: right;
-                        }
-                        
-                        .work-title {
-                            margin: 0;
-                            font-size: 22px;
-                        }
-                    
-                        .work-summary p {
-                            font-size: 16px;
-                            line-height: 1.7;
-                            
-                            @media screen and (max-width: 767px) {
-                                font-size: 14px;
-                                line-height: 1.5;
-                            }
-                        }
-                    }
+                img {
+                    width: 100%;
                 }
             }
         

@@ -32,11 +32,6 @@ html {
     }
 }
 
-#about {
-    font-size: 18px;
-    text-align: justify
-}
-
 .cd-bg-1 {
     background-image: url("../images/chicago.jpg")
 }
@@ -67,20 +62,18 @@ html {
 
 .form-horizontal .form-group input,
 .form-horizontal .form-group textarea {
-    border: 2px solid #bdc3c7
+    border: 1px solid #bdc3c7
 }
 
 .form-horizontal .form-group input:focus,
 .form-horizontal .form-group textarea:focus {
-    border: 2px solid #3498db;
-    background-color: rgba(52, 152, 219, 0.8);
+    border: 1px solid #3498db;
     color: #2c3e50
 }
 
 .form-horizontal .form-group .btn {
     float: right;
     margin-right: 15px;
-    background-color: #3498db;
     border: 0
 }
 
