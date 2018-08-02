@@ -82,6 +82,7 @@ class PublicController extends Controller{
 
     public function work() {
         return view('public.work', [
+            'content' => $this->parseMarkdownFile("content/blocks/work-page.md"),
             'works' => $this->getContent("content/work/snippets/*", 0),
             'page' => Page::where('name', 'work')->first()
         ]);

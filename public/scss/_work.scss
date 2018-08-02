@@ -50,3 +50,27 @@
         }
     }
 }
+
+.work-page {
+    
+    .work {
+        border: 1px solid #e2e2e2;
+        padding: 16px;
+        margin-bottom: 16px;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.work-detail {
+    img {
+        max-width: 100%;
+    }
+    
+    .more-link {
+        margin-top: 16px;
+        display: inline-block;
+    }
+}

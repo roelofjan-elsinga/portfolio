@@ -23,9 +23,11 @@
 @endsection
 
 @section('content')
-    <div class="container" style="padding-top:75px;">
+    <div class="container work-detail" style="padding-top:75px;">
         <div class="row">
-            {!! $work !!}
+            <div class="col-xs-12">
+                {!! $work !!}
+            </div>
         </div>
     </div>
 @endsection
