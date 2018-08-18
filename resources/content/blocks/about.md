@@ -1,7 +1,5 @@
 ## About me
 
-![Roelof Jan Elsinga](/images/image_bw.jpg "This is me")
-
 I'm currently working as a lead developer at Tubber. I'm working on a platform to facilitate C2C and C2B boat rental all over the world.  
 
 My education was spent as a fulltime student at Hanze Hogeschool Groningen / University of Applied Science Groningen. 

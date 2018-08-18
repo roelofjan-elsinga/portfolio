@@ -29,7 +29,15 @@
     </div>
 
     <div class="section about" id="about">
-        {!! $about !!}
+        <div class="about-me-block">
+            <div class="image-block">
+                <img src="{{asset('images/image_bw.jpg')}}" alt="Roelof Jan Elsinga" title="This is me">
+            </div>
+
+            <div class="about-me-content">
+                {!! $about !!}
+            </div>
+        </div>
     </div>
 
     <div class="section social" id="blog">
