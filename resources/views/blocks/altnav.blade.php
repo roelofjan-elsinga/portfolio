@@ -9,14 +9,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="home_btn active" href="{{ route('home') }}#home">Home</a></li>
-                <li><a class="work_btn" href="{{ route('home') }}#work">Work</a></li>
-                <li><a class="services_btn" href="{{ route('home') }}#services">Services</a></li>
-                <li><a class="about_btn" href="{{ route('home') }}#about">About me</a></li>
-                <li><a class="contact_btn" href="{{ route('home') }}#contact">Contact</a></li>
-                @if(!Auth::guest())
-                    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                @endif
+                <li><a class="home_btn active" href="{{ route('home') }}">Home</a></li>
+                <li><a class="" href="{{ route('articles.index') }}">Blog</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
