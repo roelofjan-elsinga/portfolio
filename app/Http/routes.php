@@ -16,6 +16,8 @@ Route::group(['middleware' => ['auth']], function() {
 
 /*Authentication*/
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
+Route::get('articles', ['as' => 'articles.index', 'uses' => 'PublicController@articles']);
+Route::get('articles/{slug}', ['as' => 'articles.view', 'uses' => 'PublicController@viewArticle']);
 Route::post('/contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 
 

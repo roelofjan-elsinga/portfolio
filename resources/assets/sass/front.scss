@@ -3,10 +3,12 @@
 @import "navbar";
 @import "work";
 @import "about";
+@import "articles";
 
 html {
     position: relative;
     min-height: 100%;
+    width: 100%;
 
     body {
         background-color: white;

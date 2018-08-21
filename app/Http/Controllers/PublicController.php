@@ -11,6 +11,8 @@ use Main\Http\Controllers\Controller;
 use Main\Models\Page;
 use Main\Models\Service;
 use Main\Models\Work;
+use Carbon\Carbon;
+use PHPHtmlParser\Dom;
 
 class PublicController extends Controller{
     public function __construct(){
@@ -99,6 +101,96 @@ class PublicController extends Controller{
             'title' => ucfirst(str_replace("-", " ", $slug)),
             'work' => $content['text'],
             'page' => Page::where('name', 'work')->first()
+        ]);
+    }
+
+    private function getTextBetweenTags($string, $tagname, $attribute = 'textContent'){
+        $d = new \DOMDocument();
+        $d->loadHTML($string);
+        $return = array();
+        foreach($d->getElementsByTagName($tagname) as $item){
+            $return[] = $item->$attribute;
+        }
+        return $return;
+    }
+
+    function getTagAttribute($string, $tagname, $source){
+        $d = new \DOMDocument();
+        $d->loadHTML($string);
+        $return = array();
+        foreach($d->getElementsByTagName($tagname) as $item){
+            $return[] = $item->getAttribute($source);
+        }
+        return $return;
+    }
+
+    private function getThumbnailFromPath(string $path, int $width = 300): string {
+        $basename = basename($path);
+        $extension = pathinfo($path, PATHINFO_EXTENSION);
+        $filename = str_replace(".{$extension}", "", $basename);
+
+        return "{$filename}_w{$width}.{$extension}";
+    }
+
+    public function articles() {
+        $articles = collect(
+            json_decode(
+                File::get(
+                    resource_path("content/articles/metadata.json")
+                )
+            )
+        )
+            ->sortByDesc('postDate')
+            ->values()
+            ->map(function($article) {
+                $content = $this->parseMarkdownFile("content/articles/{$article->filename}");
+
+                if(strlen($content) > 0) {
+                    $title = $this->getTextBetweenTags($content, 'h1');
+                    $image = $this->getTagAttribute($content, 'img', 'src');
+
+                    $article->title = isset($title[0]) ? $title[0] : "Untitled article";
+                    $article->image = isset($image[0]) ? $image[0] : "";
+                    $article->thumbnail = "/images/articles/{$this->getThumbnailFromPath($article->image)}";
+                }
+
+                $article->content = $content;
+                $article->slug = str_replace(".md", "", $article->filename);
+
+                $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
+                return $article;
+            });
+
+        return view('public.articles', [
+            'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
+            'articles' => $articles
+        ]);
+    }
+
+    public function viewArticle(string $slug) {
+        $article = collect(
+            json_decode(
+                File::get(
+                    resource_path("content/articles/metadata.json")
+                )
+            )
+        )
+            ->filter(function($article) use ($slug) {
+                return $article->filename === "{$slug}.md";
+            })
+            ->values()
+            ->map(function($article) {
+                $content = $this->parseMarkdownFile("content/articles/{$article->filename}");
+
+                $article->content = $content;
+
+                $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
+                return $article;
+            })
+            ->first();
+
+        return view('public.view-article', [
+            'article' => $article
         ]);
     }
 }
