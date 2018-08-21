@@ -67,7 +67,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body class="{{isset($customClass) ? $customClass : ''}}">
         @section('navigation')
             <nav class="navbar navbar-roelof navbar-fixed-top">
                 <div class="container-fluid">
@@ -85,10 +85,7 @@
                             <li><a class="about_btn" href="#about">About me</a></li>
                             <li><a class="services_btn" href="#blog">Social</a></li>
                             <li><a class="contact_btn" href="#contact">Contact</a></li>
-                            <li><a href="https://medium.com/@roelofjanelsinga">Blog</a></li>
-                            @if(!Auth::guest())
-                                <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                            @endif
+                            <li><a href="{{route('articles.index')}}">Blog</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
