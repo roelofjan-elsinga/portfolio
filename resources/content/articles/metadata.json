@@ -46,5 +46,75 @@
     {
         "filename": "how-to-index-a-single-page-application-built-in-angularjs.md",
         "postDate": "2017-01-12"
+    },
+    {
+        "filename": "modernizing-log-part-1-conventional-rest-api-to-graphql.md",
+        "postDate": "2018-03-14",
+        "url": "https://medium.com/@roelofjanelsinga/modernizing-log-part-1-conventional-rest-api-to-graphql-f512cb07d2ab"
+    },
+    {
+        "filename": "improving-my-programming-skills-at-a-full-time-job.md",
+        "postDate": "2018-03-15",
+        "url": "https://medium.com/@roelofjanelsinga/improving-my-programming-skills-at-a-full-time-job-e3f380c492b1"
+    },
+    {
+        "filename": "docker-isnt-as-difficult-as-i-thought-it-was.md",
+        "postDate": "2018-03-16",
+        "url": "https://medium.com/@roelofjanelsinga/docker-isnt-as-difficult-as-i-thought-it-was-db2cdea06e21"
+    },
+    {
+        "filename": "modernizing-log-part-2-graphql-test-results.md",
+        "postDate": "2018-03-19",
+        "url": "https://medium.com/@roelofjanelsinga/modernizing-log-part-2-graphql-test-results-e8f3b2db676b"
+    },
+    {
+        "filename": "how-i-sped-up-a-cronjob-by-94.md",
+        "postDate": "2018-04-26",
+        "url": "https://medium.com/@roelofjanelsinga/how-i-sped-up-a-cronjob-by-1800-e33e9ef073dd"
+    },
+    {
+        "filename": "an-overview-of-my-programming-style-guide.md",
+        "postDate": "2018-04-29",
+        "url": "https://medium.com/@roelofjanelsinga/a-overview-of-my-programming-style-guide-a5537b6e8b52"
+    },
+    {
+        "filename": "modernizing-log-part-3-optimizing-graphql-queries.md",
+        "postDate": "2018-05-02",
+        "url": "https://medium.com/@roelofjanelsinga/modernizing-log-part-3-optimizing-graphql-queries-bea400c86a3d"
+    },
+    {
+        "filename": "angularjs-angular-v6-hybrid-finally.md",
+        "postDate": "2018-06-01",
+        "url": "https://medium.com/@roelofjanelsinga/angularjs-angular-v6-hybrid-finally-97ac37087de1"
+    },
+    {
+        "filename": "how-to-start-using-the-terminal.md",
+        "postDate": "2018-06-17",
+        "url": "https://medium.com/@roelofjanelsinga/how-to-start-using-the-terminal-9116662bd5e"
+    },
+    {
+        "filename": "sharing-state-between-angularjs-and-angular-v6-with-redux.md",
+        "postDate": "2018-07-04",
+        "url": "https://itnext.io/sharing-state-between-angularjs-and-angular-v6-with-redux-75e3abe7f4f3"
+    },
+    {
+        "filename": "enhance-your-dynamic-website-with-markdown.md",
+        "postDate": "2018-07-10",
+        "url": "https://medium.com/@roelofjanelsinga/enhance-your-dynamic-website-with-markdown-20f374ba2039"
+    },
+    {
+        "filename": "sharing-the-ui-router-between-angularjs-and-angular-6.md",
+        "postDate": "2018-07-22",
+        "url": "https://itnext.io/sharing-the-ui-router-between-angularjs-and-angular-6-84f6370ec557"
+    },
+    {
+        "filename": "apache-solr-tips-for-beginners-like-me.md",
+        "postDate": "2018-08-06",
+        "url": "https://itnext.io/apache-solr-tips-for-beginners-like-me-b27201dcefcf"
+    },
+    {
+        "filename": "i-need-a-mentor.md",
+        "postDate": "2018-08-15",
+        "url": "https://medium.com/@roelofjanelsinga/i-need-a-mentor-cfbfe948c47e"
     }
 ]

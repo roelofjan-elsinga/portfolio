@@ -40,7 +40,7 @@
                                     <span class="muted">Posted on: {!! $article->postDate !!}</span>
                                 </div>
 
-                                <a href="{{route('articles.view', $article->slug)}}" class="desktop-link"></a>
+                                <a href="{{isset($article->url) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
                             </article>
 
                         @endforeach
