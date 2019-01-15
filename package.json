@@ -12,8 +12,10 @@
   "devDependencies": {
     "cross-env": "^5.1",
     "jquery": "^3.2",
-    "laravel-mix": "^2.0",
+    "laravel-mix": "^4.0.14",
     "laravel-mix-purgecss": "^4.0.0",
+    "sass": "^1.16.0",
+    "sass-loader": "7.*",
     "tailwindcss": "^0.7.3"
   }
 }
