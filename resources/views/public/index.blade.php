@@ -7,7 +7,7 @@
             I love building products people can't wait to interact with. <br/>
             I get my motivation from building for and with actual users, <br />
             finding their likes and dislikes, and constantly improving. <br />
-            I can help you with developing & designing the platform.
+            I can help you with developing web applications.
         </p>
 
         <p>

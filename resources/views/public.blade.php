@@ -70,7 +70,9 @@
             <nav class="menu block w-full">
                 <div class="flex h-16 md:h-32">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold" href="{{ route('home') }}">Roelof Jan</a>
+                    <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold" href="{{ route('home') }}">
+                        Roelof Jan
+                    </a>
 
                     <ul class="block flex-1 flex items-center">
                         <li class="inline-block mx-2"><a class="link" href="#home">Home</a></li>
