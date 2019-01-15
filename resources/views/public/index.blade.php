@@ -1,31 +1,38 @@
 @extends('public')
 
 @section('content')
-    <div class="cd-fixed-bg cd-bg-1 section" id="home">
-        <div class="color-overlay overlay-1">
-            <div class="bg-txt-home">
-                <h1>Hello, I'm Roelof</h1>
-            </div>
-        </div>
+    <div class="section h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest" id="home">
+        <h1 class="font-bold text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
+        <p class="text-xl leading-loose">
+            I love building products people can't wait to interact with. <br/>
+            I get my motivation from building for and with actual users, <br />
+            finding their likes and dislikes, and constantly improving. <br />
+            I can help you with developing & designing the platform.
+        </p>
+
+        <p>
+            <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
+               class="text-xl font-bold pt-8 link link--underline inline-block">roelofjanelsinga@gmail.com</a>
+        </p>
     </div> 
 
-    <div class="cd-scrolling-bg cd-color-1 section" id="work">
-        <div class="cd-container work-panel">
-            {!! $work !!}
-            <div class="items">
-                @foreach($works as $index => $project)
+    <div class="section text-center" id="work">
 
-                    <div class="col-md-3 element work">
-                        <div class="work-item">
-                            {!! $project['text'] !!}
-                        </div>
+        {!! $work !!}
+
+        <div class="items">
+            @foreach($works as $index => $project)
+
+                <div class="col-md-3 element work">
+                    <div class="work-item">
+                        {!! $project['text'] !!}
                     </div>
+                </div>
 
-                @endforeach
-            </div>
+            @endforeach
+        </div>
 
-            <a href="{{ route('public.work') }}" class="more-link">Click here for all my work</a>
-        </div> 
+        <a href="{{ route('public.work') }}" class="more-link">Click here for all my work</a>
     </div>
 
     <div class="section about" id="about">
@@ -76,40 +83,12 @@
 
     </div>
 
-    <div class="section contact" id="contact">
-        {!! $contact !!}
-        <div class="row">
-            <div class="col-md-12">
-                {!! Form::open(['route' => 'contact', 'method' => 'post', 'class' => 'form-horizontal']) !!}
-                <div class="form-group">
-                    {!! Form::label('name', 'Name', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name', 'required' => 'required']) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('email', 'Email', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::input('email', 'email', null, ['class' => 'form-control', 'placeholder' => 'Email', 'required' => 'required']) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('message', 'Message', ['class' => 'col-sm-2']) !!}
-                    <div class="col-md-10">
-                        {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Type your message here...', 'required' => 'required', 'rows' => 3]) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('validation', 'Validation', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::text('validation', null, ['class' => 'form-control', 'placeholder' => 'Type any 3 numbers', 'required' => 'required', 'max-length' => 3]) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::submit('Send', ['class' => 'btn btn-default pull-right']) !!}
-                </div>
-                {!! Form::close() !!}
-            </div>
-        </div>
+    <div class="section" id="contact">
+        <h2>Let’s work together on your next project.</h2>
+
+        <p>
+            <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
+               class="link link--underline">roelofjanelsinga@gmail.com</a>
+        </p>
     </div>
 @endsection

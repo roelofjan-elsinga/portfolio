@@ -11,7 +11,7 @@
 
             <link rel="author" href="https://plus.google.com/u/0/+RoelofJanElsinga"/>
 
-            <meta property="og:title" content="{{ $page->title }} | Roelof Jan Elsinga"/>
+            <meta property="og:title" content="{{ $page->title }}"/>
             <meta property="og:type" content="website"/>
             <meta property="og:image" content="{{ asset('images/meta/'.$page->image_small) }}"/>
             <meta property="og:url" content="{{ Request::url() }}"/>
@@ -23,7 +23,7 @@
             <meta name="twitter:description" content="{{ $page->description }}">
             <meta name="twitter:image" content="{{ asset('images/meta/'.$page->image_large) }}">
 
-            <title>{{ $page->title }} | Roelof Jan Elsinga</title>
+            <title>{{ $page->title }}</title>
 		@show
 		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
 		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
@@ -54,9 +54,7 @@
 
         <!-- Bootstrap -->
         @section('stylesheets')
-            <link href="{{ asset('css/flatly.css') }}" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
             <link href="{{ mix('css/front.css') }}" rel="stylesheet">
         @show
 
@@ -67,35 +65,27 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="{{isset($customClass) ? $customClass : ''}}">
+    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-blue-darkest">
         @section('navigation')
-            <nav class="navbar navbar-roelof navbar-fixed-top">
-                <div class="container-fluid">
+            <nav class="menu block w-full">
+                <div class="flex h-16 md:h-32">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"><span class="glyphicon glyphicon-th-large"></span></button>
-                        <a class="navbar-brand" id="brand_btn" href="{{ route('home') }}">Roelof Jan Elsinga</a>
-                    </div>
+                    <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold" href="{{ route('home') }}">Roelof Jan</a>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="home_btn active" href="#home">Home</a></li>
-                            <li><a class="work_btn" href="#work">Work</a></li>
-                            <li><a class="about_btn" href="#about">About me</a></li>
-                            <li><a class="services_btn" href="#blog">Social</a></li>
-                            <li><a class="contact_btn" href="#contact">Contact</a></li>
-                            <li><a href="{{route('articles.index')}}">Blog</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
+                    <ul class="block flex-1 flex items-center">
+                        <li class="inline-block mx-2"><a class="link" href="#home">Home</a></li>
+                        <li class="inline-block mx-2"><a class="link" href="#work">Work</a></li>
+                        <li class="inline-block mx-2"><a class="link" href="#about">About me</a></li>
+                        <li class="inline-block mx-2"><a class="link" href="#blog">Social</a></li>
+                        <li class="inline-block mx-2"><a class="link" href="#contact">Contact</a></li>
+                        <li class="inline-block mx-2"><a class="link" href="{{route('articles.index')}}">Blog</a></li>
+                    </ul>
                 </div><!-- /.container-fluid -->
             </nav>
         @show
         @yield('content')
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="{{ asset('js/grids.min.js') }}"></script>
         <script src="{{ asset('js/roelof.js') }}"></script>
     </body>
 </html>

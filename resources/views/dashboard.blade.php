@@ -8,10 +8,8 @@
     <title>{{ $pagetitle }} | Roelof Jan Elsinga</title>
 
     @section('stylesheets')
-    <link href="{{ asset('css/darkly.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('css/sweet-alert.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fileinput.min.css') }}">
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     @show
 
@@ -60,7 +58,6 @@
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
 <script src="{{ asset('js/canvas-to-blob.min.js') }}"></script>
-<script src="{{ asset('js/fileinput.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/grids.min.js') }}"></script>
 <script src="{{ asset('js/sweet-alert.min.js') }}"></script>
