@@ -24,7 +24,7 @@ class PublicController extends Controller {
 
     public function index(){
         return view('public.index', [
-            'works' => $this->getContent("content/work/snippets/*", 4),
+            'works' => $this->getContent("content/work/snippets/*", 2),
             'work' => $this->parseMarkdownFile("content/blocks/work.md"),
             'social' => $this->parseMarkdownFile("content/blocks/social.md"),
             'about' => $this->parseMarkdownFile("content/blocks/about.md"),
