@@ -5,3 +5,5 @@ Homestead.json
 .env
 .idea
 scss/
+package-lock.json
+composer.lock
