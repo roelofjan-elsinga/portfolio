@@ -7,3 +7,4 @@ Homestead.json
 scss/
 package-lock.json
 composer.lock
+yarn.lock
