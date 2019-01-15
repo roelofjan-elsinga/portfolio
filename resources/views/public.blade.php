@@ -66,26 +66,20 @@
         <![endif]-->
     </head>
     <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-blue-darkest">
-        @section('navigation')
-            <nav class="menu block w-full">
-                <div class="flex h-16 md:h-32">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold" href="{{ route('home') }}">
-                        Roelof Jan
-                    </a>
 
-                    <ul class="block flex-1 flex items-center">
-                        <li class="inline-block mx-2"><a class="link" href="#home">Home</a></li>
-                        <li class="inline-block mx-2"><a class="link" href="#work">Work</a></li>
-                        <li class="inline-block mx-2"><a class="link" href="#about">About me</a></li>
-                        <li class="inline-block mx-2"><a class="link" href="#blog">Social</a></li>
-                        <li class="inline-block mx-2"><a class="link" href="#contact">Contact</a></li>
-                        <li class="inline-block mx-2"><a class="link" href="{{route('articles.index')}}">Blog</a></li>
-                    </ul>
-                </div><!-- /.container-fluid -->
-            </nav>
+        @section('navigation')
+
+            @include('blocks.navigation')
+
         @show
+
         @yield('content')
+
+        @section('footer')
+
+            @include('blocks.navigation')
+
+        @show
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ asset('js/roelof.js') }}"></script>

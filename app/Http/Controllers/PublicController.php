@@ -28,7 +28,8 @@ class PublicController extends Controller {
             'work' => $this->parseMarkdownFile("content/blocks/work.md"),
             'social' => $this->parseMarkdownFile("content/blocks/social.md"),
             'about' => $this->parseMarkdownFile("content/blocks/about.md"),
-            'contact' => $this->parseMarkdownFile("content/blocks/contact.md")
+            'contact' => $this->parseMarkdownFile("content/blocks/contact.md"),
+            'site_techniques' => $this->parseMarkdownFile("content/blocks/site_techniques.md")
         ]);
     }
 

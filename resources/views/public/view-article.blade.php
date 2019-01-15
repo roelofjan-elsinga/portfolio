@@ -1,30 +1,30 @@
 @extends('public')
 
 @section('navigation')
-    @include('blocks.altnav')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection
 
 @section('content')
-    <div class="container" style="padding-top:75px;">
-        <div class="articles-page">
+    <div class="articles-page">
 
-            <div class="row">
-                <div class="col-md-12">
+        <main class="view-article">
 
-                    <main class="view-article">
+            <article>
 
-                        <article>
+                {!! $article->content !!}
 
-                            {!! $article->content !!}
+                <span class="muted">Posted on: {!! $article->postDate !!}</span>
 
-                            <span class="muted">Posted on: {!! $article->postDate !!}</span>
+            </article>
 
-                        </article>
-
-                    </main>
-
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
+@endsection
+
+@section('footer')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection
