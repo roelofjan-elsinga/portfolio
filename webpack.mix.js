@@ -1,4 +1,6 @@
 var mix = require('laravel-mix');
+var tailwindcss = require('tailwindcss');
+var purgeCss = require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +14,9 @@ var mix = require('laravel-mix');
  */
 
 mix.sass('resources/assets/sass/front.scss', 'public/css')
+    .options({
+        processCssUrls: false,
+        postCss: [ tailwindcss('./tailwind.js') ],
+    })
+    // .purgeCss()
     .version();
