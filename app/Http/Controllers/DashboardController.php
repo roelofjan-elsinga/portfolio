@@ -11,6 +11,8 @@ use Main\Models\Page;
 class DashboardController extends Controller{
 
     public function __construct(){
+        parent::__construct();
+
         View::share('pagetitle', 'Dashboard');
     }
 

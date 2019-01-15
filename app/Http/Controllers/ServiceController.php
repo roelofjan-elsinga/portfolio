@@ -12,6 +12,7 @@ class ServiceController extends Controller{
     private $service;
 
     public function __construct(){
+        parent::__construct();
         $this->service = new Service;
         View::share('pagetitle', 'Services');
     }

@@ -14,15 +14,17 @@ use Main\Models\Work;
 use Carbon\Carbon;
 use PHPHtmlParser\Dom;
 
-class PublicController extends Controller{
-    public function __construct(){
-        View::share('page', Page::where('name', 'home')->first());
+class PublicController extends Controller {
+
+    public function __construct() {
+        parent::__construct();
+
+        View::share('page', $this->tagsParser->getTagsForPageName('home'));
     }
 
     public function index(){
         return view('public.index', [
             'works' => $this->getContent("content/work/snippets/*", 4),
-            'home' => Page::where('name', 'home')->first(),
             'work' => $this->parseMarkdownFile("content/blocks/work.md"),
             'social' => $this->parseMarkdownFile("content/blocks/social.md"),
             'about' => $this->parseMarkdownFile("content/blocks/about.md"),
@@ -86,7 +88,7 @@ class PublicController extends Controller{
         return view('public.work', [
             'content' => $this->parseMarkdownFile("content/blocks/work-page.md"),
             'works' => $this->getContent("content/work/snippets/*", 0),
-            'page' => Page::where('name', 'work')->first()
+            'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
     }
 
@@ -163,7 +165,8 @@ class PublicController extends Controller{
 
         return view('public.articles', [
             'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
-            'articles' => $articles
+            'articles' => $articles,
+            'page' => $this->tagsParser->getTagsForPageName('articles')
         ]);
     }
 

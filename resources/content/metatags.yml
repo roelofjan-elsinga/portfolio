@@ -1,0 +1,22 @@
+tags:
+  home:
+    keywords: roelof, jan, elsinga, portfolio, work, development, design
+    description: This is the homepage of Roelof Jan Elsinga
+    author: Roelof Jan Elsinga
+    title: Hello
+    image_small:
+    image_large:
+  work:
+    keywords: roelof, jan, elsinga, portfolio, work, development, design
+    description: All my previous work can be found here
+    author: Roelof Jan Elsinga
+    title: Previous projects
+    image_small:
+    image_large:
+  articles:
+    keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
+    description: I've written a vew articles over the years, this is a list of all of them
+    author: Roelof Jan Elsinga
+    title: Articles
+    image_small:
+    image_large:

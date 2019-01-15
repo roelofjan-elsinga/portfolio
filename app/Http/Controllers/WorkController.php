@@ -17,6 +17,7 @@ class WorkController extends Controller{
     private $work;
 
     public function __construct() {
+        parent::__construct();
         $this->work = new Work;
         View::share('pagetitle', 'Work');
     }
