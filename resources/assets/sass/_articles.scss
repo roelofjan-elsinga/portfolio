@@ -97,14 +97,14 @@
 
 .view-article {
 
-    img {
-        max-width: 100%;
-    }
-    
     p {
         font-size: 16px;
-        line-height: 1.5;
+        line-height: 1.75;
         margin-bottom: 16px;
     }
-    
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
 }

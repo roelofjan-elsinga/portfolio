@@ -7,6 +7,11 @@ use Symfony\Component\Yaml\Yaml;
 class TagsParser
 {
 
+    public static function instance(): TagsParser
+    {
+        return new TagsParser();
+    }
+
     public function getTagsForPageName(string $name): \stdClass
     {
         $all_tags = $this->getAllTags();

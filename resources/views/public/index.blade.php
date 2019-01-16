@@ -1,115 +1,83 @@
 @extends('public')
 
 @section('content')
-    <div class="cd-fixed-bg cd-bg-1 section" id="home">
-        <div class="color-overlay overlay-1">
-            <div class="bg-txt-home">
-                <h1>Hello, I'm Roelof</h1>
-            </div>
-        </div>
+    <div class="section h-full sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
+        <h1 class="font-bold text-4xl sm:text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
+        <p class="text-lg sm:text-xl leading-loose">
+            I love building products people can't wait to interact with. <br/>
+            I get my motivation from building for and with actual users, <br />
+            finding their likes and dislikes, and constantly improving. <br />
+            I can help you with developing web applications.
+        </p>
+
+        <p>
+            <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
+               class="text-xl font-bold pt-8 link link--underline inline-block">roelofjanelsinga@gmail.com</a>
+        </p>
     </div> 
 
-    <div class="cd-scrolling-bg cd-color-1 section" id="work">
-        <div class="cd-container work-panel">
-            {!! $work !!}
-            <div class="items">
-                @foreach($works as $index => $project)
+    <div class="section" id="work">
 
-                    <div class="col-md-3 element work">
-                        <div class="work-item">
-                            {!! $project['text'] !!}
-                        </div>
+        {!! $work !!}
+
+        <div class="items mt-12">
+            @foreach($works as $index => $project)
+
+                <div class="col-md-3 element work">
+                    <div class="work-item">
+                        {!! $project['text'] !!}
                     </div>
+                </div>
 
-                @endforeach
-            </div>
+            @endforeach
+        </div>
 
-            <a href="{{ route('public.work') }}" class="more-link">Click here for all my work</a>
-        </div> 
-    </div>
+        <a href="{{ route('public.work') }}"
+           class="text-xl font-bold pt-8 link link--underline inline-block">Click here for all my work</a>
 
-    <div class="section about" id="about">
-        <div class="about-me-block">
-            <div class="image-block">
-                <img src="{{asset('images/image_bw.jpg')}}" alt="Roelof Jan Elsinga" title="This is me">
-            </div>
+        <div class="items paragraph-spacing my-32 text-xl">
 
-            <div class="about-me-content">
-                {!! $about !!}
-            </div>
+            {!! $site_techniques !!}
+
         </div>
     </div>
 
-    <div class="section social" id="blog">
+    <div class="section social" id="social">
 
-        <div class="row">
-            <div class="col-md-12">
-                {!! $social !!}
-            </div>
+        <div class="items paragraph-spacing my-32 text-xl">
+
+            {!! $social !!}
+
+            <p class="mt-8">
+                Email address
+                <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
+                   class="link link--underline">roelofjanelsinga@gmail.com</a>
+            </p>
+
+            <p>
+                Twitter
+                <a href="https://twitter.com/RJElsinga"
+                   class="link link--underline">RJElsinga</a>
+            </p>
+
+            <p>
+                Medium
+                <a href="https://medium.com/@roelofjanelsinga"
+                   class="link link--underline">@roelofjanelsinga</a>
+            </p>
+
+            <p>
+                Github
+                <a href="https://github.com/roelofjan-elsinga"
+                   class="link link--underline">roelofjan-elsinga</a>
+            </p>
+
+            <p>
+                LinkedIn
+                <a href="https://www.linkedin.com/in/roelofjanelsinga/"
+                   class="link link--underline">roelofjanelsinga</a>
+            </p>
         </div>
 
-        <div class="row">
-
-            <div class="col-xs-3">
-                <a href="https://twitter.com/RJElsinga" class="twitter">
-                    <span class="fa fa-twitter fa-4x"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="https://medium.com/@roelofjanelsinga" class="medium">
-                    <span class="fa fa-medium fa-4x"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="https://github.com/roelofjan-elsinga" class="github">
-                    <span class="fa fa-github fa-4x"></span>
-                </a>
-            </div>
-            <div class="col-xs-3">
-                <a href="https://www.linkedin.com/in/roelofjanelsinga/" class="linkedin">
-                    <span class="fa fa-linkedin fa-4x"></span>
-                </a>
-            </div>
-
-
-        </div>
-
-    </div>
-
-    <div class="section contact" id="contact">
-        {!! $contact !!}
-        <div class="row">
-            <div class="col-md-12">
-                {!! Form::open(['route' => 'contact', 'method' => 'post', 'class' => 'form-horizontal']) !!}
-                <div class="form-group">
-                    {!! Form::label('name', 'Name', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name', 'required' => 'required']) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('email', 'Email', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::input('email', 'email', null, ['class' => 'form-control', 'placeholder' => 'Email', 'required' => 'required']) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('message', 'Message', ['class' => 'col-sm-2']) !!}
-                    <div class="col-md-10">
-                        {!! Form::textarea('message', null, ['class' => 'form-control', 'placeholder' => 'Type your message here...', 'required' => 'required', 'rows' => 3]) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::label('validation', 'Validation', ['class' => 'col-sm-2']) !!}
-                    <div class="col-sm-10">
-                        {!! Form::text('validation', null, ['class' => 'form-control', 'placeholder' => 'Type any 3 numbers', 'required' => 'required', 'max-length' => 3]) !!}
-                    </div>
-                </div>
-                <div class="form-group">
-                    {!! Form::submit('Send', ['class' => 'btn btn-default pull-right']) !!}
-                </div>
-                {!! Form::close() !!}
-            </div>
-        </div>
     </div>
 @endsection

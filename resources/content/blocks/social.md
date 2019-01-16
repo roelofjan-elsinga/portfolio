@@ -1,3 +1,3 @@
-## Connect with me
+## Let's work together
 
-Connect with me on social media to follow my steps to growing as a better developer.
+Connect with me through e-mail or social media to work with me.

@@ -1,3 +1,1 @@
-## Work
-
-I've worked on several (public) projects before, below you can find the most recent.
+<h2 class="text-3xl">Some of my previous projects</h2>
