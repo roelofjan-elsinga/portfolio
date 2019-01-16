@@ -82,6 +82,15 @@
         @show
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="{{ asset('js/roelof.js') }}"></script>
+        <script>
+            (function() {
+                $('a').click(function () {
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top
+                    }, 500);
+                    return false;
+                });
+            })();
+        </script>
     </body>
 </html>
