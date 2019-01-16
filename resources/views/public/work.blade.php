@@ -1,27 +1,33 @@
 @extends('public')
 
 @section('navigation')
-    @include('blocks.altnav')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection
 
 @section('content')
-    <div class="container work-page" style="padding-top:75px;">
-        <div class="row">
-            <div class="col-xs-12">
-                {!! $content !!}
-            </div>
-        </div>
+    <div class="section paragraph-spacing">
 
-        <div class="row">
-            @foreach($works as $index => $work)
+        {!! $content !!}
 
-                <div class="col-md-4">
-                    <div class="element work">
-                        {!! $work['text'] !!}
+        <div class="items mt-12">
+            @foreach($works as $index => $project)
+
+                <div class="element work">
+                    <div class="work-item">
+                        {!! $project['text'] !!}
                     </div>
                 </div>
 
             @endforeach
         </div>
+
     </div>
+@endsection
+
+@section('footer')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection

@@ -1,9 +1,9 @@
 @extends('public')
 
 @section('content')
-    <div class="section h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
-        <h1 class="font-bold text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
-        <p class="text-xl leading-loose">
+    <div class="section h-full sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
+        <h1 class="font-bold text-4xl sm:text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
+        <p class="text-lg sm:text-xl leading-loose">
             I love building products people can't wait to interact with. <br/>
             I get my motivation from building for and with actual users, <br />
             finding their likes and dislikes, and constantly improving. <br />
@@ -35,7 +35,7 @@
         <a href="{{ route('public.work') }}"
            class="text-xl font-bold pt-8 link link--underline inline-block">Click here for all my work</a>
 
-        <div class="items this-website my-32 text-xl">
+        <div class="items paragraph-spacing my-32 text-xl">
 
             {!! $site_techniques !!}
 
@@ -44,7 +44,7 @@
 
     <div class="section social" id="social">
 
-        <div class="items this-website my-32 text-xl">
+        <div class="items paragraph-spacing my-32 text-xl">
 
             {!! $social !!}
 

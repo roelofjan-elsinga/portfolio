@@ -19,15 +19,21 @@
 @endsection
 
 @section('navigation')
-    @include('blocks.altnav')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection
 
 @section('content')
-    <div class="container work-detail" style="padding-top:75px;">
-        <div class="row">
-            <div class="col-xs-12">
-                {!! $work !!}
-            </div>
-        </div>
+    <div class="section paragraph-spacing py-8 sm:py-0">
+
+        {!! $work !!}
+
     </div>
+@endsection
+
+@section('footer')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection

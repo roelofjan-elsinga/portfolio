@@ -103,7 +103,7 @@ class PublicController extends Controller {
         return view('public.workdetail', [
             'title' => ucfirst(str_replace("-", " ", $slug)),
             'work' => $content['text'],
-            'page' => Page::where('name', 'work')->first()
+            'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
     }
 

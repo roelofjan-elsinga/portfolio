@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="articles-page items this-website">
+    <div class="articles-page items paragraph-spacing pt-8 sm:pt-0">
 
         {!! $content !!}
 
@@ -28,7 +28,7 @@
 
                     <div class="content pt-8">
                         @isset($article->title)
-                            <h3>
+                            <h3 class="pt-4 sm:pt-0">
                                 {{$article->title}}
                             </h3>
                         @endisset

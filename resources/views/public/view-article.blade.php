@@ -7,9 +7,9 @@
 @endsection
 
 @section('content')
-    <div class="articles-page">
+    <div class="articles-page py-8 sm:py-0">
 
-        <main class="view-article">
+        <main class="view-article paragraph-spacing">
 
             <article>
 

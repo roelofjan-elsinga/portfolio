@@ -20,3 +20,10 @@ tags:
     title: My articles - Roelof Jan Elsinga
     image_small:
     image_large:
+  404:
+    keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
+    description: Uh oh! You've found a page I still have to create!
+    author: Roelof Jan Elsinga
+    title: Uh oh! - Roelof Jan Elsinga
+    image_small:
+    image_large:
