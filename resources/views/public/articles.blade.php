@@ -1,54 +1,52 @@
-@extends('public', ['customClass' => 'dark-background'])
+@extends('public')
 
 @section('navigation')
-    @include('blocks.altnav')
+    @include('blocks.navigation', ['is_external' => true])
 @endsection
 
 @section('content')
-    <div class="container" style="padding-top:75px;">
-        <div class="articles-page">
+    <div class="articles-page items paragraph-spacing pt-8 sm:pt-0">
 
-            {!! $content !!}
+        {!! $content !!}
 
-            <div class="row">
-                <div class="col-md-12">
+        <main class="articles my-8">
 
-                    <main class="articles">
+            @foreach($articles as $article)
 
-                        @foreach($articles as $article)
+                <article class="inline-block">
+                    <div class="image">
+                        @isset($article->thumbnail)
+                            <img src="{{asset($article->thumbnail)}}" />
+                        @endisset
 
-                            <article>
-                                <div class="image">
-                                    @isset($article->thumbnail)
-                                        <img src="{{asset($article->thumbnail)}}" />
-                                    @endisset
+                        <div class="read-box">
+                            <a href="{{route('articles.view', $article->slug)}}" class="read-link">
+                                <i class="fa fa-angle-right fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                                    <div class="read-box">
-                                        <a href="{{route('articles.view', $article->slug)}}" class="read-link">
-                                            <i class="fa fa-angle-right fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="content pt-8">
+                        @isset($article->title)
+                            <h3 class="pt-4 sm:pt-0">
+                                {{$article->title}}
+                            </h3>
+                        @endisset
 
-                                <div class="content">
-                                    @isset($article->title)
-                                        <h3>
-                                            {{$article->title}}
-                                        </h3>
-                                    @endisset
+                        <span class="muted">Posted on: {!! $article->postDate !!}</span>
+                    </div>
 
-                                    <span class="muted">Posted on: {!! $article->postDate !!}</span>
-                                </div>
+                    <a href="{{isset($article->url) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
+                </article>
 
-                                <a href="{{isset($article->url) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
-                            </article>
+            @endforeach
 
-                        @endforeach
-
-                    </main>
-
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
+@endsection
+
+@section('footer')
+
+    @include('blocks.navigation', ['is_external' => true])
+
 @endsection

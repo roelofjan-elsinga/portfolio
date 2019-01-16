@@ -24,11 +24,12 @@ class PublicController extends Controller {
 
     public function index(){
         return view('public.index', [
-            'works' => $this->getContent("content/work/snippets/*", 4),
+            'works' => $this->getContent("content/work/snippets/*", 2),
             'work' => $this->parseMarkdownFile("content/blocks/work.md"),
             'social' => $this->parseMarkdownFile("content/blocks/social.md"),
             'about' => $this->parseMarkdownFile("content/blocks/about.md"),
-            'contact' => $this->parseMarkdownFile("content/blocks/contact.md")
+            'contact' => $this->parseMarkdownFile("content/blocks/contact.md"),
+            'site_techniques' => $this->parseMarkdownFile("content/blocks/site_techniques.md")
         ]);
     }
 
@@ -102,7 +103,7 @@ class PublicController extends Controller {
         return view('public.workdetail', [
             'title' => ucfirst(str_replace("-", " ", $slug)),
             'work' => $content['text'],
-            'page' => Page::where('name', 'work')->first()
+            'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
     }
 

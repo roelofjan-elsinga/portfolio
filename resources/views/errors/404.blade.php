@@ -1,47 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Page not found!</title>
+@extends('public', ['page' => \Main\Classes\TagsParser::instance()->getTagsForPageName('404')])
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('navigation')
 
-    <style>
-        html, body {
-            height: 100%;
-        }
+    @include('blocks.navigation', ['is_external' => true])
 
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            color: #B0BEC5;
-            display: table;
-            font-weight: 100;
-            font-family: 'Lato';
-        }
+@endsection
 
-        .container {
-            text-align: center;
-            display: table-cell;
-            vertical-align: middle;
-        }
+@section('content')
 
-        .content {
-            text-align: center;
-            display: inline-block;
-        }
+    <div class="section h-3/4">
 
-        .title {
-            font-size: 72px;
-            margin-bottom: 40px;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="content">
-        <div class="title">Page not found!</div>
+        <h1 class="text-5xl py-8">Oops! I can't show you this page!</h1>
+        <h3 class="text-2xl mb-4">Did you find a page I still have to create?</h3>
+        <a href="{{route('home')}}" class="link link--underline">I'll take you back to the content</a>
+
     </div>
-</div>
-</body>
-</html>
+
+
+@endsection
+
+@section('footer')
+
+@endsection
