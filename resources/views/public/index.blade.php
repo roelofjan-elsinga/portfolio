@@ -57,25 +57,25 @@
             <p>
                 Twitter
                 <a href="https://twitter.com/RJElsinga"
-                   class="link link--underline">RJElsinga</a>
+                   class="link link--underline" target="_blank">RJElsinga</a>
             </p>
 
             <p>
                 Medium
                 <a href="https://medium.com/@roelofjanelsinga"
-                   class="link link--underline">@roelofjanelsinga</a>
+                   class="link link--underline" target="_blank">@roelofjanelsinga</a>
             </p>
 
             <p>
                 Github
                 <a href="https://github.com/roelofjan-elsinga"
-                   class="link link--underline">roelofjan-elsinga</a>
+                   class="link link--underline" target="_blank">roelofjan-elsinga</a>
             </p>
 
             <p>
                 LinkedIn
                 <a href="https://www.linkedin.com/in/roelofjanelsinga/"
-                   class="link link--underline">roelofjanelsinga</a>
+                   class="link link--underline" target="_blank">roelofjanelsinga</a>
             </p>
         </div>
 

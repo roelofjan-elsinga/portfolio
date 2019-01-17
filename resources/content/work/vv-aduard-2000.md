@@ -16,4 +16,4 @@ some text, and a list of attached files, if present.
 ### Tools used
 - Laravel
 
-<a href="http://www.vvaduard2000.nl/" class="more-link">View the website here</a>
+<a href="http://www.vvaduard2000.nl/" target="_blank" class="link link--underline">View the website</a>
