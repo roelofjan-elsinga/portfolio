@@ -25,7 +25,13 @@
 
                 <div class="col-md-3 element work">
                     <div class="work-item">
-                        {!! $project['text'] !!}
+                        <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+
+                        <h3>{{$project['title']}}</h3>
+
+                        <p class="mb-4">{{$project['description']}}</p>
+
+                        <a href="{{$project['url']}}" class="link">Read more</a>
                     </div>
                 </div>
 
