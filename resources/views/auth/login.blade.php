@@ -1,12 +1,4 @@
-@extends('auth')
-
-@section('stylesheets')
-    <link href="{{ asset('css/flatly.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ asset('css/sweet-alert.css') }}">
-    <link href="{{ asset('css/roelof.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/signin.css') }}" rel="stylesheet">
-@endsection
+@extends('public')
 
 @section('content')
     @if (count($errors) > 0)

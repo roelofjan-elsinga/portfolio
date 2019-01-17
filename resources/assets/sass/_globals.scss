@@ -1,25 +1,16 @@
-h1,h2,h3,h4,p {
-    font-family: Roboto, "sans-serif";
-}
-
-p {
-    font-size: 14px;
-}
-
-h1 {
-    font-size: 36px
-}
-
-h2 {
-    font-size: 32px
-}
-
-h3 {
-    font-size: 24px
-}
-
 body,
-html,
-main {
+html {
     height: 100%
+}
+
+.link {
+    color: #12283a;
+    font-weight: 700;
+    padding-bottom: .25rem;
+    text-decoration: none;
+
+    &:hover, &--underline {
+        border-bottom-width: 2px;
+        border-color: #12283a;
+    }
 }
