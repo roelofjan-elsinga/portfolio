@@ -1,0 +1,60 @@
+previews:
+
+  hsv-de-hondenvrienden:
+    image:
+      url: /images/work/hsvdhv_1920x1080_1444039130.png
+      alt: HSV De Hondenvrienden screenshot
+    title: HSV De Hondenvrienden
+    description: >
+      This is a project that I worked on with three other people.
+      We were challenged to create a website using the Drupal CMS, and this is the result.
+    url: /portfolio/hsv-de-hondenvrienden
+
+  nkrv:
+    image:
+      url: /images/work/nkrv_1920x1080_1444039117.png
+      alt: NKRV screenshot
+    title: NKRV
+    description: >
+      My contribution to NKRV was not a complete website, but rather a WordPress Theme.
+    url: /portfolio/nkrv
+
+  abdijloop-aduard:
+    image:
+      url: /images/work/abdijloop_1920x1080_1523907651.png
+      alt: Abdijloop Aduard screenshot
+    title: Abdijloop Aduard
+    description: >
+      I created a WordPress website for Abdijloop Aduard to inform people about the race.
+    url: /portfolio/abdijloop-aduard
+
+  vv-aduard-2000:
+    image:
+      url: /images/work/aduard_2000_1920x1080_1444039068.png
+      alt: VV Aduard 2000 screenshot
+    title: VV Aduard 2000
+    description: >
+      I made a website for my old football club with the PHP Framework Laravel.
+      This website is fully responsive and has an extensive admin dashboard.
+    url: /portfolio/vv-aduard-2000
+
+  tracerlab:
+    image:
+      url: /images/work/tracerlab_1920x1080.png
+      alt: Tracerlab screenshot
+    title: Tracerlab
+    description: >
+      Science of any kind is a subject I love to talk about. So I was thrilled when I was asked
+      to build a website for Tracerlab and contribute to science in one way or another.
+      If I can't do it through academic research, I'll do it through building a website for a great project.
+    url: /portfolio/tracerlab
+
+  punchlisthero:
+    image:
+      url: /images/work/punchlisthero_1920x1080.png
+      alt: PunchlistHero homepage
+    title: PunchlistHero
+    description: >
+      This project is all about efficiency. Currently the construction company is using pen and
+      paper to write down issues on houses. However, this takes a lot of time.
+    url: /portfolio/punchlisthero

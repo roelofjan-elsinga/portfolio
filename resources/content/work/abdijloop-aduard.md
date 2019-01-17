@@ -9,4 +9,4 @@ how I can use it to make themes and plugins fairly quickly.
 ### Tools used
 - WordPress
 
-<a href="https://abdijloopaduard.nl/" class="more-link">View the website here</a>
+<a href="https://abdijloopaduard.nl/" target="_blank" class="link link--underline">View the website</a>
