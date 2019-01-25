@@ -16,4 +16,4 @@ Absolutely! Instead of using a standard Bootstrap theme I would use Tailwindcss,
 ### Tools used
 - WordPress
 
-<a href="http://tracerlab.nl/" class="link link--underline">View the website here</a>
+<a href="http://tracerlab.nl/" target="_blank" class="link link--underline">View the website</a>
