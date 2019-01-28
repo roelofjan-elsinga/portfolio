@@ -4,6 +4,7 @@ namespace Main\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
@@ -186,35 +187,100 @@ class PublicController extends Controller
         return "{$filename}_w{$width}.{$extension}";
     }
 
-    public function articles()
+    private function getMetaDataForPath(string $path = 'articles'): Collection
     {
-        $articles = collect(
+        return collect(
             json_decode(
                 File::get(
-                    resource_path("content/articles/metadata.json")
+                    resource_path("content/{$path}/metadata.json")
                 )
             )
-        )
+        );
+    }
+
+    private function mapArticlesForPath(Collection $articles, string $path = 'articles'): Collection
+    {
+        return $articles->map(function ($article) use ($path) {
+            $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+
+            if (strlen($content) > 0) {
+                $title = $this->getTextBetweenTags($content, 'h1');
+                $image = $this->getTagAttribute($content, 'img', 'src');
+
+                $article->title = isset($title[0]) ? $title[0] : "Untitled article";
+                $article->image = isset($image[0]) ? $image[0] : "";
+                $article->thumbnail = "/images/{$path}/{$this->getThumbnailFromPath($article->image)}";
+            }
+
+            $article->content = $content;
+            $article->slug = str_replace(".md", "", $article->filename);
+
+            $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
+            return $article;
+        });
+    }
+
+    private function mapArticleForViewing($article, string $path = 'articles')
+    {
+        $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+
+        $article->content = $content;
+
+        $article->title = $this->getTextBetweenTags($content, 'h1')[0];
+        $article->image = $this->getTagAttribute($content, 'img', 'src')[0];
+        $article->description = $this->getDescriptionFromContent($content);
+
+        $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
+        return $article;
+    }
+
+    public function passions()
+    {
+        $articles = $this->getMetaDataForPath('passions')
             ->sortByDesc('postDate')
+            ->values();
+
+        $articles = $this->mapArticlesForPath($articles, 'passions');
+
+        return view('public.articles', [
+            'content' => $this->parseMarkdownFile("content/blocks/passions.md"),
+            'articles' => $articles,
+            'page' => $this->tagsParser->getTagsForPageName('passions')
+        ]);
+    }
+
+    public function viewPassion(string $slug)
+    {
+        $article = $this->getMetaDataForPath('passions')
+            ->filter(function ($article) use ($slug) {
+                return $article->filename === "{$slug}.md";
+            })
             ->values()
             ->map(function ($article) {
-                $content = $this->parseMarkdownFile("content/articles/{$article->filename}");
+                return $this->mapArticleForViewing($article, 'passions');
+            })
+            ->first();
 
-                if (strlen($content) > 0) {
-                    $title = $this->getTextBetweenTags($content, 'h1');
-                    $image = $this->getTagAttribute($content, 'img', 'src');
+        return view('public.view-article', [
+            'article' => $article,
+            'page' => $this->arrayToClass([
+                'title' => "{$article->title} - Roelof Jan Elsinga",
+                'author' => 'Roelof Jan Elsinga',
+                'description' => substr(strip_tags($article->description), 0, 160),
+                'image_large' => url($article->image),
+                'image_small' => url($article->image),
+                'keywords' => str_replace(' ', ',', $article->title)
+            ])
+        ]);
+    }
 
-                    $article->title = isset($title[0]) ? $title[0] : "Untitled article";
-                    $article->image = isset($image[0]) ? $image[0] : "";
-                    $article->thumbnail = "/images/articles/{$this->getThumbnailFromPath($article->image)}";
-                }
+    public function articles()
+    {
+        $articles = $this->getMetaDataForPath()
+            ->sortByDesc('postDate')
+            ->values();
 
-                $article->content = $content;
-                $article->slug = str_replace(".md", "", $article->filename);
-
-                $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
-                return $article;
-            });
+        $articles = $this->mapArticlesForPath($articles);
 
         return view('public.articles', [
             'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
@@ -225,28 +291,13 @@ class PublicController extends Controller
 
     public function viewArticle(string $slug)
     {
-        $article = collect(
-            json_decode(
-                File::get(
-                    resource_path("content/articles/metadata.json")
-                )
-            )
-        )
+        $article = $this->getMetaDataForPath()
             ->filter(function ($article) use ($slug) {
                 return $article->filename === "{$slug}.md";
             })
             ->values()
             ->map(function ($article) {
-                $content = $this->parseMarkdownFile("content/articles/{$article->filename}");
-
-                $article->content = $content;
-
-                $article->title = $this->getTextBetweenTags($content, 'h1')[0];
-                $article->image = $this->getTagAttribute($content, 'img', 'src')[0];
-                $article->description = $this->getDescriptionFromContent($content);
-
-                $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
-                return $article;
+                return $this->mapArticleForViewing($article);
             })
             ->first();
 

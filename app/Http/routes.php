@@ -3,6 +3,8 @@
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
 Route::get('articles', ['as' => 'articles.index', 'uses' => 'PublicController@articles']);
 Route::get('articles/{slug}', ['as' => 'articles.view', 'uses' => 'PublicController@viewArticle']);
+Route::get('passions', ['as' => 'passions.index', 'uses' => 'PublicController@passions']);
+Route::get('passions/{slug}', ['as' => 'passions.view', 'uses' => 'PublicController@viewPassion']);
 Route::post('/contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 
 

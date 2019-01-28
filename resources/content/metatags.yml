@@ -20,6 +20,13 @@ tags:
     title: My articles - Roelof Jan Elsinga
     image_small:
     image_large:
+  passions:
+    keywords: roelof, jan, elsinga, portfolio, work, development, design, passions, articles
+    description: I have many passions besides my work, so this is where I've posted articles about them
+    author: Roelof Jan Elsinga
+    title: My passions - Roelof Jan Elsinga
+    image_small:
+    image_large:
   404:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
     description: Uh oh! You've found a page I still have to create!
