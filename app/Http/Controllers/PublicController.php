@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
-use Main\Http\Requests;
-use Main\Http\Controllers\Controller;
-use Main\Models\Page;
-use Main\Models\Service;
-use Main\Models\Work;
 use Carbon\Carbon;
 use PHPHtmlParser\Dom;
 use Symfony\Component\Yaml\Yaml;
@@ -246,13 +241,63 @@ class PublicController extends Controller
 
                 $article->content = $content;
 
+                $article->title = $this->getTextBetweenTags($content, 'h1')[0];
+                $article->image = $this->getTagAttribute($content, 'img', 'src')[0];
+                $article->description = $this->getDescriptionFromContent($content);
+
                 $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
                 return $article;
             })
             ->first();
 
         return view('public.view-article', [
-            'article' => $article
+            'article' => $article,
+            'page' => $this->arrayToClass([
+                'title' => "{$article->title} - Roelof Jan Elsinga",
+                'author' => 'Roelof Jan Elsinga',
+                'description' => substr(strip_tags($article->description), 0, 160),
+                'image_large' => url($article->image),
+                'image_small' => url($article->image),
+                'keywords' => str_replace(' ', ',', $article->title)
+            ])
         ]);
+    }
+
+    /**
+     * Generate a description from the text content of the given HTML string
+     *
+     * @param string $content
+     * @return string
+     */
+    private function getDescriptionFromContent(string $content): string
+    {
+        $paragraphs = $this->getTextBetweenTags($content, 'p');
+
+        $paragraphs_with_text_content = array_filter($paragraphs, function($paragraph) {
+           return !empty(strip_tags($paragraph));
+        });
+
+        if(count($paragraphs_with_text_content) > 0) {
+            return substr(head($paragraphs_with_text_content), 0, 160);
+        }
+
+        return "";
+    }
+
+    /**
+     * Convert an array to a stdClass
+     *
+     * @param array $input
+     * @return \stdClass
+     */
+    private function arrayToClass(array $input)
+    {
+        $class = new \stdClass();
+
+        foreach($input as $key => $value) {
+            $class->{$key} = $value;
+        }
+
+        return $class;
     }
 }
