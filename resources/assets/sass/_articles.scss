@@ -98,9 +98,18 @@
 .view-article {
 
     p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.75;
         margin-bottom: 16px;
+
+        a {
+            color: #12283a;
+            font-weight: 700;
+            padding-bottom: .25rem;
+            text-decoration: none;
+            border-bottom-width: 2px;
+            border-color: #12283a;
+        }
     }
 
     h1 {
