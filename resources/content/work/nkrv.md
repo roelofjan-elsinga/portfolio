@@ -8,6 +8,6 @@ This project taught me more about using CSS, because it was one of my first webs
 ### Tools used
 - WordPress
 
-<a href="http://www.nkrv.nl/" class="more-link">View the website here</a>
+<a href="http://www.nkrv.nl/" target="_blank" class="link link--underline">View the website</a>
 
 

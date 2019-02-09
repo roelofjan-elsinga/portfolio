@@ -15,7 +15,9 @@
         "kartik-v/bootstrap-fileinput": "dev-master",
         "erusev/parsedown": "^1.7",
         "laravelcollective/html": "^5.4.0",
-        "symfony/yaml": "^4.2"
+        "symfony/yaml": "^4.2",
+      "ext-json": "*",
+      "ext-dom": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

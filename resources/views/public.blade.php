@@ -13,7 +13,7 @@
 
             <meta property="og:title" content="{{ $page->title }}"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content="{{ asset('images/meta/'.$page->image_small) }}"/>
+            <meta property="og:image" content="{{ $page->image_small }}"/>
             <meta property="og:url" content="{{ Request::url() }}"/>
             <meta property="og:description" content="{{ $page->description }}"/>
 
@@ -21,7 +21,7 @@
             <meta name="twitter:url" content="{{ Request::url() }}">
             <meta name="twitter:title" content="{{ $page->title }} | Roelof Jan Elsinga">
             <meta name="twitter:description" content="{{ $page->description }}">
-            <meta name="twitter:image" content="{{ asset('images/meta/'.$page->image_large) }}">
+            <meta name="twitter:image" content="{{ $page->image_large  }}">
 
             <title>{{ $page->title }}</title>
 		@show
@@ -65,7 +65,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-blue-darkest px-2 lg:px-0">
+    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-blue-darkest px-4 lg:px-0">
 
         @section('navigation')
 

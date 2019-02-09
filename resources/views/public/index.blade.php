@@ -25,7 +25,13 @@
 
                 <div class="col-md-3 element work">
                     <div class="work-item">
-                        {!! $project['text'] !!}
+                        <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+
+                        <h3>{{$project['title']}}</h3>
+
+                        <p class="mb-4">{{$project['description']}}</p>
+
+                        <a href="{{$project['url']}}" class="link">Read more</a>
                     </div>
                 </div>
 
@@ -57,25 +63,25 @@
             <p>
                 Twitter
                 <a href="https://twitter.com/RJElsinga"
-                   class="link link--underline">RJElsinga</a>
+                   class="link link--underline" target="_blank">RJElsinga</a>
             </p>
 
             <p>
                 Medium
                 <a href="https://medium.com/@roelofjanelsinga"
-                   class="link link--underline">@roelofjanelsinga</a>
+                   class="link link--underline" target="_blank">@roelofjanelsinga</a>
             </p>
 
             <p>
                 Github
                 <a href="https://github.com/roelofjan-elsinga"
-                   class="link link--underline">roelofjan-elsinga</a>
+                   class="link link--underline" target="_blank">roelofjan-elsinga</a>
             </p>
 
             <p>
                 LinkedIn
                 <a href="https://www.linkedin.com/in/roelofjanelsinga/"
-                   class="link link--underline">roelofjanelsinga</a>
+                   class="link link--underline" target="_blank">roelofjanelsinga</a>
             </p>
         </div>
 

@@ -10,4 +10,4 @@ We were challenged to create a website using the Drupal CMS, and this is what we
 - Drupal
 
 
-<a href="http://hsvdehondenvrienden.nl/" class="more-link">View the website here</a>
+<a href="http://hsvdehondenvrienden.nl/" target="_blank" class="link link--underline">View the website</a>
