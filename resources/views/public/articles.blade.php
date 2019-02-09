@@ -20,7 +20,7 @@
                         @endisset
 
                         <div class="read-box">
-                            <a href="{{route('articles.view', $article->slug)}}" class="read-link">
+                            <a href="{{route($view_route_name, $article->slug)}}" class="read-link">
                                 <i class="fa fa-angle-right fa-2x"></i>
                             </a>
                         </div>
@@ -36,7 +36,7 @@
                         <span class="muted">Posted on: {!! $article->postDate !!}</span>
                     </div>
 
-                    <a href="{{isset($article->url) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
+                    <a href="{{isset($article->url) ? $article->url : route($view_route_name, $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
                 </article>
 
             @endforeach

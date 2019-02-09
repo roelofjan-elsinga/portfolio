@@ -245,6 +245,7 @@ class PublicController extends Controller
         return view('public.articles', [
             'content' => $this->parseMarkdownFile("content/blocks/passions.md"),
             'articles' => $articles,
+            'view_route_name' => 'passions.view',
             'page' => $this->tagsParser->getTagsForPageName('passions')
         ]);
     }
@@ -285,6 +286,7 @@ class PublicController extends Controller
         return view('public.articles', [
             'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
             'articles' => $articles,
+            'view_route_name' => 'articles.view',
             'page' => $this->tagsParser->getTagsForPageName('articles')
         ]);
     }
