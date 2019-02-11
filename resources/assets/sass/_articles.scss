@@ -110,6 +110,11 @@
             border-bottom-width: 2px;
             border-color: #12283a;
         }
+
+    }
+
+    .quote {
+        @apply text-grey-dark text-3xl italic my-8;
     }
 
     h1 {
