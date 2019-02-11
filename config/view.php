@@ -30,4 +30,10 @@ return [
 
     'compiled' => realpath(storage_path('framework/views')),
 
+    'canonical' => [
+
+        'destination' => env('CANONICAL_BASE')
+
+    ]
+
 ];
