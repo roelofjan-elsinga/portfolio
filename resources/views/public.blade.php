@@ -25,6 +25,11 @@
 
             <title>{{ $page->title }}</title>
 		@show
+
+        @if(\Main\Classes\Canonical::needsLink())
+            <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
+        @endif
+
 		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
 		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
 		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/icons/apple-icon-72x72.png') }}">
@@ -93,6 +98,15 @@
                     return false;
                 });
             })();
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49160339-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-49160339-1');
         </script>
     </body>
 </html>
