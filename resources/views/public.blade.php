@@ -77,6 +77,8 @@
 
         @section('footer')
 
+            @include('blocks.mailchimp_form')
+
             @include('blocks.navigation')
 
         @show

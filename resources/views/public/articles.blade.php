@@ -47,6 +47,8 @@
 
 @section('footer')
 
+    @include('blocks.mailchimp_form')
+
     @include('blocks.navigation', ['is_external' => true])
 
 @endsection
