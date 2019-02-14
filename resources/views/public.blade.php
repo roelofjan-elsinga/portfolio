@@ -19,7 +19,7 @@
 
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:url" content="{{ Request::url() }}">
-            <meta name="twitter:title" content="{{ $page->title }} | Roelof Jan Elsinga">
+            <meta name="twitter:title" content="{{ $page->title }}">
             <meta name="twitter:description" content="{{ $page->description }}">
             <meta name="twitter:image" content="{{ $page->image_large  }}">
 
