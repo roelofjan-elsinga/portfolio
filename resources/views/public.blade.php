@@ -26,6 +26,8 @@
             <title>{{ $page->title }}</title>
 		@show
 
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
         @if(\Main\Classes\Canonical::needsLink())
             <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
         @endif
@@ -59,7 +61,6 @@
 
         <!-- Bootstrap -->
         @section('stylesheets')
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="{{ mix('css/front.css') }}" rel="stylesheet">
         @show
 
