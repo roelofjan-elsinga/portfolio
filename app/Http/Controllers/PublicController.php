@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
+use Main\Classes\Metadata;
 use PHPHtmlParser\Dom;
 use Symfony\Component\Yaml\Yaml;
 
@@ -187,17 +188,6 @@ class PublicController extends Controller
         return "{$filename}_w{$width}.{$extension}";
     }
 
-    private function getMetaDataForPath(string $path = 'articles'): Collection
-    {
-        return collect(
-            json_decode(
-                File::get(
-                    resource_path("content/{$path}/metadata.json")
-                )
-            )
-        );
-    }
-
     private function mapArticlesForPath(Collection $articles, string $path = 'articles'): Collection
     {
         return $articles->map(function ($article) use ($path) {
@@ -236,7 +226,7 @@ class PublicController extends Controller
 
     public function passions()
     {
-        $articles = $this->getMetaDataForPath('passions')
+        $articles = Metadata::forPath('passions')
             ->sortByDesc('postDate')
             ->values();
 
@@ -252,7 +242,7 @@ class PublicController extends Controller
 
     public function viewPassion(string $slug)
     {
-        $article = $this->getMetaDataForPath('passions')
+        $article = Metadata::forPath('passions')
             ->filter(function ($article) use ($slug) {
                 return $article->filename === "{$slug}.md";
             })
@@ -277,7 +267,7 @@ class PublicController extends Controller
 
     public function articles()
     {
-        $articles = $this->getMetaDataForPath()
+        $articles = Metadata::forPath()
             ->sortByDesc('postDate')
             ->values();
 
@@ -293,7 +283,7 @@ class PublicController extends Controller
 
     public function viewArticle(string $slug)
     {
-        $article = $this->getMetaDataForPath()
+        $article = Metadata::forPath()
             ->filter(function ($article) use ($slug) {
                 return $article->filename === "{$slug}.md";
             })

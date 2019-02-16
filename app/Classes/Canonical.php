@@ -37,7 +37,7 @@ class Canonical
      *
      * @return string
      */
-    private static function getCanonicalDestination(): string
+    public static function getCanonicalDestination(): string
     {
         return config('view.canonical.destination');
     }
