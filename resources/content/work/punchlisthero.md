@@ -1,4 +1,4 @@
-![PunchlistHero](/images/work/punchlisthero_1920x1080.png "PunchlistHero homepage")
+![PunchlistHero](/images/work/punchlisthero_1920x1080.jpg "PunchlistHero homepage")
 
 # PunchlistHero
 

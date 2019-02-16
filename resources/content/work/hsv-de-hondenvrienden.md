@@ -1,4 +1,4 @@
-![HSV De Hondenvrienden screenshot](/images/work/hsvdhv_1920x1080_1444039130.png "HSV De Hondenvrienden screenshot")
+![HSV De Hondenvrienden screenshot](/images/work/hsvdhv_1920x1080_1444039130.jpg "HSV De Hondenvrienden screenshot")
 
 # HSV De Hondenvrienden
 
