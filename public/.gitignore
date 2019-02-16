@@ -1,3 +1,5 @@
 mix-manifest.json
 mix.js.map
 sitemap.xml
+sw.js
+precache*

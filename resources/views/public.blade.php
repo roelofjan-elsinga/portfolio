@@ -61,7 +61,7 @@
 
         <!-- Bootstrap -->
         @section('stylesheets')
-            <link href="{{ mix('css/front.css') }}" rel="stylesheet">
+            <link href="{{ mix('css/front.css') }}" rel="stylesheet" defer>
         @show
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -108,6 +108,13 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-49160339-1');
+        </script>
+        <script>
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(function() { console.log("Service Worker Registered"); });
+            }
         </script>
     </body>
 </html>
