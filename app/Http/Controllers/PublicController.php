@@ -132,7 +132,13 @@ class PublicController extends Controller
      */
     public function workDetail(string $slug)
     {
-        $content = $this->getContent("content/work/{$slug}.md", 1)[0];
+        $contents = $this->getContent("content/work/{$slug}.md", 1);
+
+        if(count($contents) === 0) {
+            return abort(404);
+        }
+
+        $content = $contents[0];
 
         if (!isset($content['text'])) {
             return redirect()->route('public.work');
@@ -252,6 +258,10 @@ class PublicController extends Controller
             })
             ->first();
 
+        if(is_null($article)) {
+            return abort(404);
+        }
+
         return view('public.view-article', [
             'article' => $article,
             'page' => $this->arrayToClass([
@@ -292,6 +302,10 @@ class PublicController extends Controller
                 return $this->mapArticleForViewing($article);
             })
             ->first();
+
+        if(is_null($article)) {
+            return abort(404);
+        }
 
         return view('public.view-article', [
             'article' => $article,
