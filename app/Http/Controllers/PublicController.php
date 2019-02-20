@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
+use Main\Classes\Markdown;
 use Main\Classes\Metadata;
 use PHPHtmlParser\Dom;
 use Symfony\Component\Yaml\Yaml;
@@ -27,11 +28,11 @@ class PublicController extends Controller
     {
         return view('public.index', [
             'works' => $this->getWorkPreviews(2),
-            'work' => $this->parseMarkdownFile("content/blocks/work.md"),
-            'social' => $this->parseMarkdownFile("content/blocks/social.md"),
-            'about' => $this->parseMarkdownFile("content/blocks/about.md"),
-            'contact' => $this->parseMarkdownFile("content/blocks/contact.md"),
-            'site_techniques' => $this->parseMarkdownFile("content/blocks/site_techniques.md")
+            'work' => Markdown::parseResourcePath("content/blocks/work.md"),
+            'social' => Markdown::parseResourcePath("content/blocks/social.md"),
+            'about' => Markdown::parseResourcePath("content/blocks/about.md"),
+            'contact' => Markdown::parseResourcePath("content/blocks/contact.md"),
+            'site_techniques' => Markdown::parseResourcePath("content/blocks/site_techniques.md")
         ]);
     }
 
@@ -85,19 +86,6 @@ class PublicController extends Controller
     }
 
     /**
-     * @param string $path
-     * @return string
-     */
-    private function parseMarkdownFile(string $path): string
-    {
-        $parser = new \Parsedown();
-        $filename = resource_path($path);
-        $text = File::get($filename);
-
-        return $parser->parse($text);
-    }
-
-    /**
      * @param Request $request
      * @return RedirectResponse
      */
@@ -120,7 +108,7 @@ class PublicController extends Controller
     public function work()
     {
         return view('public.work', [
-            'content' => $this->parseMarkdownFile("content/blocks/work-page.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/work-page.md"),
             'works' => $this->getWorkPreviews(),
             'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
@@ -185,6 +173,11 @@ class PublicController extends Controller
         return $return;
     }
 
+    /**
+     * @param string $path
+     * @param int $width
+     * @return string
+     */
     private function getThumbnailFromPath(string $path, int $width = 300): string
     {
         $basename = basename($path);
@@ -194,10 +187,15 @@ class PublicController extends Controller
         return "{$filename}_w{$width}.{$extension}";
     }
 
+    /**
+     * @param Collection $articles
+     * @param string $path
+     * @return Collection
+     */
     private function mapArticlesForPath(Collection $articles, string $path = 'articles'): Collection
     {
         return $articles->map(function ($article) use ($path) {
-            $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+            $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
 
             if (strlen($content) > 0) {
                 $title = $this->getTextBetweenTags($content, 'h1');
@@ -216,9 +214,14 @@ class PublicController extends Controller
         });
     }
 
+    /**
+     * @param $article
+     * @param string $path
+     * @return mixed
+     */
     private function mapArticleForViewing($article, string $path = 'articles')
     {
-        $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+        $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
 
         $article->content = $content;
 
@@ -230,6 +233,11 @@ class PublicController extends Controller
         return $article;
     }
 
+    /**
+     * View the passions overview page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function passions()
     {
         $articles = Metadata::forPath('passions')
@@ -239,13 +247,19 @@ class PublicController extends Controller
         $articles = $this->mapArticlesForPath($articles, 'passions');
 
         return view('public.articles', [
-            'content' => $this->parseMarkdownFile("content/blocks/passions.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/passions.md"),
             'articles' => $articles,
             'view_route_name' => 'passions.view',
             'page' => $this->tagsParser->getTagsForPageName('passions')
         ]);
     }
 
+    /**
+     * View a passion post
+     *
+     * @param string $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
+     */
     public function viewPassion(string $slug)
     {
         $article = Metadata::forPath('passions')
@@ -275,6 +289,11 @@ class PublicController extends Controller
         ]);
     }
 
+    /**
+     * View the articles page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function articles()
     {
         $articles = Metadata::forPath()
@@ -284,13 +303,19 @@ class PublicController extends Controller
         $articles = $this->mapArticlesForPath($articles);
 
         return view('public.articles', [
-            'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/articles.md"),
             'articles' => $articles,
             'view_route_name' => 'articles.view',
             'page' => $this->tagsParser->getTagsForPageName('articles')
         ]);
     }
 
+    /**
+     * View an article
+     *
+     * @param string $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
+     */
     public function viewArticle(string $slug)
     {
         $article = Metadata::forPath()
