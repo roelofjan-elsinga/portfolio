@@ -8,14 +8,12 @@
 
 namespace Main\Classes;
 
-
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Collection;
 
 class Metadata
 {
-
-    static public function forPath(string $path = 'articles'): Collection
+    public static function forPath(string $path = 'articles'): Collection
     {
         return collect(
             json_decode(
@@ -25,5 +23,4 @@ class Metadata
             )
         );
     }
-
 }

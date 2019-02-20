@@ -11,15 +11,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract{
-
+class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
+{
     use Authenticatable, Authorizable, CanResetPassword, Notifiable;
 
     protected $table = 'users';
     protected $fillable = ['name', 'email', 'password'];
     protected $hidden = ['password', 'remember_token'];
 
-    public function page() {
+    public function page()
+    {
         return $this->hasMany('Main\Models\Page', 'user_id', 'id');
     }
 }

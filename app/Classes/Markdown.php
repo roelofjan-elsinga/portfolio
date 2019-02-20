@@ -8,12 +8,10 @@
 
 namespace Main\Classes;
 
-
 use Illuminate\Support\Facades\File;
 
 class Markdown
 {
-
     public static function parseResourcePath(string $path): string
     {
         $parser = new \Parsedown();
@@ -22,5 +20,4 @@ class Markdown
 
         return $parser->parse($text);
     }
-
 }

@@ -16,7 +16,6 @@ use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
 {
-
     public function __construct()
     {
         parent::__construct();
@@ -62,18 +61,19 @@ class PublicController extends Controller
      * @param int $amount
      * @return array
      */
-    private function getContent(string $path, int $amount): array {
+    private function getContent(string $path, int $amount): array
+    {
         $parser = new \Parsedown();
         $path = resource_path($path);
         $paths = glob($path);
-        if($amount === 0) {
+        if ($amount === 0) {
             $filenames = $paths;
         } else {
             $filenames = array_splice($paths, -$amount, $amount);
         }
         $strings = [];
-        foreach($filenames as $filename) {
-            if(File::isFile($filename)) {
+        foreach ($filenames as $filename) {
+            if (File::isFile($filename)) {
                 $file = File::get($filename);
                 $strings[] = [
                     "filename" => $filename,
@@ -122,7 +122,7 @@ class PublicController extends Controller
     {
         $contents = $this->getContent("content/work/{$slug}.md", 1);
 
-        if(count($contents) === 0) {
+        if (count($contents) === 0) {
             return abort(404);
         }
 
@@ -162,7 +162,7 @@ class PublicController extends Controller
      * @param string $source
      * @return array
      */
-    function getTagAttribute(string $string, string $tagname, string $source): array
+    public function getTagAttribute(string $string, string $tagname, string $source): array
     {
         $d = new \DOMDocument();
         $d->loadHTML($string);
@@ -272,7 +272,7 @@ class PublicController extends Controller
             })
             ->first();
 
-        if(is_null($article)) {
+        if (is_null($article)) {
             return abort(404);
         }
 
@@ -328,7 +328,7 @@ class PublicController extends Controller
             })
             ->first();
 
-        if(is_null($article)) {
+        if (is_null($article)) {
             return abort(404);
         }
 
@@ -355,11 +355,11 @@ class PublicController extends Controller
     {
         $paragraphs = $this->getTextBetweenTags($content, 'p');
 
-        $paragraphs_with_text_content = array_filter($paragraphs, function($paragraph) {
-           return !empty(strip_tags($paragraph));
+        $paragraphs_with_text_content = array_filter($paragraphs, function ($paragraph) {
+            return !empty(strip_tags($paragraph));
         });
 
-        if(count($paragraphs_with_text_content) > 0) {
+        if (count($paragraphs_with_text_content) > 0) {
             return substr(head($paragraphs_with_text_content), 0, 160);
         }
 
@@ -376,7 +376,7 @@ class PublicController extends Controller
     {
         $class = new \stdClass();
 
-        foreach($input as $key => $value) {
+        foreach ($input as $key => $value) {
             $class->{$key} = $value;
         }
 
