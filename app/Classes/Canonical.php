@@ -55,5 +55,4 @@ class Canonical
 
         return "{$destination}{$request->getRequestUri()}";
     }
-
 }

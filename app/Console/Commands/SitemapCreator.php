@@ -12,7 +12,6 @@ use Symfony\Component\Yaml\Yaml;
 
 class SitemapCreator extends Command
 {
-
     private $domain;
     private $lastmod;
 
@@ -45,7 +44,6 @@ class SitemapCreator extends Command
      */
     public function handle()
     {
-
         $sitemap_strings = [];
 
         $main_urls = [
@@ -77,7 +75,6 @@ class SitemapCreator extends Command
         $this->persistUrlsToSitemap($sitemap_strings);
 
         $this->createSymlinkForSitemap();
-
     }
 
     /**
@@ -87,7 +84,7 @@ class SitemapCreator extends Command
      */
     private function generateSiteMapForUrls(array &$sitemap_strings, array $urls, $priority)
     {
-        foreach($urls as $url) {
+        foreach ($urls as $url) {
             $sitemap_strings[] = "<url><loc>{$this->domain}{$url}</loc><lastmod>{$this->lastmod}</lastmod><changefreq>monthly</changefreq><priority>{$priority}</priority></url>";
         }
     }
@@ -103,10 +100,10 @@ class SitemapCreator extends Command
         $meta_data = Metadata::forPath($path);
 
         return $meta_data
-            ->filter(function($article) {
+            ->filter(function ($article) {
                 return !isset($article->url);
             })
-            ->map(function($article) use ($path) {
+            ->map(function ($article) use ($path) {
                 $slug = str_replace('.md', '', $article->filename);
 
                 return "/{$path}/{$slug}";
@@ -124,7 +121,7 @@ class SitemapCreator extends Command
         $projects = Yaml::parseFile(resource_path('content/work/previews.yml'));
 
         return collect($projects['previews'])
-            ->map(function($preview) {
+            ->map(function ($preview) {
                 return $preview['url'];
             })
             ->toArray();
