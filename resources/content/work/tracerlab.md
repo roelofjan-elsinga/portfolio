@@ -1,4 +1,4 @@
-![Tracerlab screenshot](/images/work/tracerlab_1920x1080.png "Tracerlab screenshot")
+![Tracerlab screenshot](/images/work/tracerlab_1920x1080.jpg "Tracerlab screenshot")
 
 # Tracerlab
 

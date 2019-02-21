@@ -8,5 +8,5 @@ It's things like that here and there, for serious, but also little things that c
 
 But why would you want a complete OS instead of just a lightweight Docker installation? Believe me, I tried to set up Docker and work with it like that, but I simply couldn't get it to work on my Windows machine and going with a virtual machine was just so much easier. Also, the installation process can be run on many different host operating systems and even on remote hosts. So the environment on all these machines is also identical. You don't have to think about bottlenecks in any way, shape, or form and it just works for me. Call me crazy, I won't blame you. Docker is probable far...far easier and I just overcomplicated it, but virtual machines do the exact same thing for me. Identical environments with identical permissions on all the different machines, so everything always works identically.
 
-NOTE:
-This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!
+**NOTE:
+This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!**

@@ -15,7 +15,7 @@
 
                 {!! $article->content !!}
 
-                <span class="muted">Posted on: {!! $article->postDate !!}</span>
+                <span class="text-sm text-grey-dark">Posted on: {!! $article->postDate !!}</span>
 
             </article>
 
@@ -24,6 +24,8 @@
 @endsection
 
 @section('footer')
+
+    @include('blocks.mailchimp_form')
 
     @include('blocks.navigation', ['is_external' => true])
 

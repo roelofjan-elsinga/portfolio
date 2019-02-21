@@ -19,7 +19,8 @@ class Kernel extends ConsoleKernel
 //        $schedule->command('inspire')->hourly();
     }
 
-    protected function commands() {
+    protected function commands()
+    {
         $this->load(__DIR__.'/Commands');
     }
 }

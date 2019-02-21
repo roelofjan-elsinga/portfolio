@@ -6,5 +6,3 @@ Homestead.json
 .idea
 scss/
 package-lock.json
-composer.lock
-yarn.lock
