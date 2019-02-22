@@ -98,9 +98,8 @@
 .view-article {
 
     p {
-        font-size: 18px;
+        @apply text-lg mb-4;
         line-height: 1.75;
-        margin-bottom: 16px;
 
         a {
             color: #12283a;
@@ -113,12 +112,24 @@
 
     }
 
+    ul {
+        @apply text-lg mb-4;
+    }
+
+    .caption {
+        @apply block -mt-2 text-sm text-grey-dark text-center;
+    }
+
     .quote {
         @apply text-grey-dark text-3xl italic my-8;
     }
 
     h1 {
-        margin-bottom: 2rem;
+        @apply mb-4;
+    }
+
+    h2 {
+        @apply mt-8 mb-4;
     }
 
 }
