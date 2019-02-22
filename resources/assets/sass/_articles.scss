@@ -113,6 +113,10 @@
 
     }
 
+    .caption {
+        @apply block -mt-2 text-sm text-grey-dark text-center;
+    }
+
     .quote {
         @apply text-grey-dark text-3xl italic my-8;
     }
