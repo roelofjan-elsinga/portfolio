@@ -151,7 +151,9 @@ class PublicController extends Controller
         $d->loadHTML($string);
         $return = array();
         foreach ($d->getElementsByTagName($tagname) as $item) {
-            $return[] = $item->$attribute;
+            if ($item->childNodes->length === 1) {
+                $return[] = $item->$attribute;
+            }
         }
         return $return;
     }
@@ -258,7 +260,7 @@ class PublicController extends Controller
      * View a passion post
      *
      * @param string $slug
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function viewPassion(string $slug)
     {
@@ -314,7 +316,7 @@ class PublicController extends Controller
      * View an article
      *
      * @param string $slug
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function viewArticle(string $slug)
     {

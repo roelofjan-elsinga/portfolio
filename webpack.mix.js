@@ -19,7 +19,9 @@ mix.sass('resources/assets/sass/front.scss', 'public/css/')
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
     })
-    .purgeCss()
+    .purgeCss({
+        extensions: ['html', 'js', 'php', 'md'],
+    })
     .sourceMaps()
     .webpackConfig({
         plugins: [
