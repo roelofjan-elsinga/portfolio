@@ -9,12 +9,13 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
+use Main\Classes\Markdown;
+use Main\Classes\Metadata;
 use PHPHtmlParser\Dom;
 use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
 {
-
     public function __construct()
     {
         parent::__construct();
@@ -26,11 +27,11 @@ class PublicController extends Controller
     {
         return view('public.index', [
             'works' => $this->getWorkPreviews(2),
-            'work' => $this->parseMarkdownFile("content/blocks/work.md"),
-            'social' => $this->parseMarkdownFile("content/blocks/social.md"),
-            'about' => $this->parseMarkdownFile("content/blocks/about.md"),
-            'contact' => $this->parseMarkdownFile("content/blocks/contact.md"),
-            'site_techniques' => $this->parseMarkdownFile("content/blocks/site_techniques.md")
+            'work' => Markdown::parseResourcePath("content/blocks/work.md"),
+            'social' => Markdown::parseResourcePath("content/blocks/social.md"),
+            'about' => Markdown::parseResourcePath("content/blocks/about.md"),
+            'contact' => Markdown::parseResourcePath("content/blocks/contact.md"),
+            'site_techniques' => Markdown::parseResourcePath("content/blocks/site_techniques.md")
         ]);
     }
 
@@ -60,18 +61,19 @@ class PublicController extends Controller
      * @param int $amount
      * @return array
      */
-    private function getContent(string $path, int $amount): array {
+    private function getContent(string $path, int $amount): array
+    {
         $parser = new \Parsedown();
         $path = resource_path($path);
         $paths = glob($path);
-        if($amount === 0) {
+        if ($amount === 0) {
             $filenames = $paths;
         } else {
             $filenames = array_splice($paths, -$amount, $amount);
         }
         $strings = [];
-        foreach($filenames as $filename) {
-            if(File::isFile($filename)) {
+        foreach ($filenames as $filename) {
+            if (File::isFile($filename)) {
                 $file = File::get($filename);
                 $strings[] = [
                     "filename" => $filename,
@@ -81,19 +83,6 @@ class PublicController extends Controller
         }
         $strings = array_reverse($strings);
         return $strings;
-    }
-
-    /**
-     * @param string $path
-     * @return string
-     */
-    private function parseMarkdownFile(string $path): string
-    {
-        $parser = new \Parsedown();
-        $filename = resource_path($path);
-        $text = File::get($filename);
-
-        return $parser->parse($text);
     }
 
     /**
@@ -119,7 +108,7 @@ class PublicController extends Controller
     public function work()
     {
         return view('public.work', [
-            'content' => $this->parseMarkdownFile("content/blocks/work-page.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/work-page.md"),
             'works' => $this->getWorkPreviews(),
             'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
@@ -131,7 +120,13 @@ class PublicController extends Controller
      */
     public function workDetail(string $slug)
     {
-        $content = $this->getContent("content/work/{$slug}.md", 1)[0];
+        $contents = $this->getContent("content/work/{$slug}.md", 1);
+
+        if (count($contents) === 0) {
+            return abort(404);
+        }
+
+        $content = $contents[0];
 
         if (!isset($content['text'])) {
             return redirect()->route('public.work');
@@ -156,7 +151,9 @@ class PublicController extends Controller
         $d->loadHTML($string);
         $return = array();
         foreach ($d->getElementsByTagName($tagname) as $item) {
-            $return[] = $item->$attribute;
+            if ($item->childNodes->length === 1) {
+                $return[] = $item->$attribute;
+            }
         }
         return $return;
     }
@@ -167,7 +164,7 @@ class PublicController extends Controller
      * @param string $source
      * @return array
      */
-    function getTagAttribute(string $string, string $tagname, string $source): array
+    public function getTagAttribute(string $string, string $tagname, string $source): array
     {
         $d = new \DOMDocument();
         $d->loadHTML($string);
@@ -178,6 +175,11 @@ class PublicController extends Controller
         return $return;
     }
 
+    /**
+     * @param string $path
+     * @param int $width
+     * @return string
+     */
     private function getThumbnailFromPath(string $path, int $width = 300): string
     {
         $basename = basename($path);
@@ -187,21 +189,15 @@ class PublicController extends Controller
         return "{$filename}_w{$width}.{$extension}";
     }
 
-    private function getMetaDataForPath(string $path = 'articles'): Collection
-    {
-        return collect(
-            json_decode(
-                File::get(
-                    resource_path("content/{$path}/metadata.json")
-                )
-            )
-        );
-    }
-
+    /**
+     * @param Collection $articles
+     * @param string $path
+     * @return Collection
+     */
     private function mapArticlesForPath(Collection $articles, string $path = 'articles'): Collection
     {
         return $articles->map(function ($article) use ($path) {
-            $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+            $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
 
             if (strlen($content) > 0) {
                 $title = $this->getTextBetweenTags($content, 'h1');
@@ -220,9 +216,14 @@ class PublicController extends Controller
         });
     }
 
+    /**
+     * @param $article
+     * @param string $path
+     * @return mixed
+     */
     private function mapArticleForViewing($article, string $path = 'articles')
     {
-        $content = $this->parseMarkdownFile("content/{$path}/{$article->filename}");
+        $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
 
         $article->content = $content;
 
@@ -234,25 +235,36 @@ class PublicController extends Controller
         return $article;
     }
 
+    /**
+     * View the passions overview page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function passions()
     {
-        $articles = $this->getMetaDataForPath('passions')
+        $articles = Metadata::forPath('passions')
             ->sortByDesc('postDate')
             ->values();
 
         $articles = $this->mapArticlesForPath($articles, 'passions');
 
         return view('public.articles', [
-            'content' => $this->parseMarkdownFile("content/blocks/passions.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/passions.md"),
             'articles' => $articles,
             'view_route_name' => 'passions.view',
             'page' => $this->tagsParser->getTagsForPageName('passions')
         ]);
     }
 
+    /**
+     * View a passion post
+     *
+     * @param string $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function viewPassion(string $slug)
     {
-        $article = $this->getMetaDataForPath('passions')
+        $article = Metadata::forPath('passions')
             ->filter(function ($article) use ($slug) {
                 return $article->filename === "{$slug}.md";
             })
@@ -261,6 +273,10 @@ class PublicController extends Controller
                 return $this->mapArticleForViewing($article, 'passions');
             })
             ->first();
+
+        if (is_null($article)) {
+            return abort(404);
+        }
 
         return view('public.view-article', [
             'article' => $article,
@@ -275,25 +291,36 @@ class PublicController extends Controller
         ]);
     }
 
+    /**
+     * View the articles page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function articles()
     {
-        $articles = $this->getMetaDataForPath()
+        $articles = Metadata::forPath()
             ->sortByDesc('postDate')
             ->values();
 
         $articles = $this->mapArticlesForPath($articles);
 
         return view('public.articles', [
-            'content' => $this->parseMarkdownFile("content/blocks/articles.md"),
+            'content' => Markdown::parseResourcePath("content/blocks/articles.md"),
             'articles' => $articles,
             'view_route_name' => 'articles.view',
             'page' => $this->tagsParser->getTagsForPageName('articles')
         ]);
     }
 
+    /**
+     * View an article
+     *
+     * @param string $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function viewArticle(string $slug)
     {
-        $article = $this->getMetaDataForPath()
+        $article = Metadata::forPath()
             ->filter(function ($article) use ($slug) {
                 return $article->filename === "{$slug}.md";
             })
@@ -302,6 +329,10 @@ class PublicController extends Controller
                 return $this->mapArticleForViewing($article);
             })
             ->first();
+
+        if (is_null($article)) {
+            return abort(404);
+        }
 
         return view('public.view-article', [
             'article' => $article,
@@ -326,11 +357,11 @@ class PublicController extends Controller
     {
         $paragraphs = $this->getTextBetweenTags($content, 'p');
 
-        $paragraphs_with_text_content = array_filter($paragraphs, function($paragraph) {
-           return !empty(strip_tags($paragraph));
+        $paragraphs_with_text_content = array_filter($paragraphs, function ($paragraph) {
+            return !empty(strip_tags($paragraph));
         });
 
-        if(count($paragraphs_with_text_content) > 0) {
+        if (count($paragraphs_with_text_content) > 0) {
             return substr(head($paragraphs_with_text_content), 0, 160);
         }
 
@@ -347,7 +378,7 @@ class PublicController extends Controller
     {
         $class = new \stdClass();
 
-        foreach($input as $key => $value) {
+        foreach ($input as $key => $value) {
             $class->{$key} = $value;
         }
 

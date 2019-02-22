@@ -1,4 +1,4 @@
-![NKRV screenshot](/images/work/nkrv_1920x1080_1444039117.png "NKRV screenshot")
+![NKRV screenshot](/images/work/nkrv_1920x1080_1444039117.jpg "NKRV screenshot")
 
 # NKRV
 

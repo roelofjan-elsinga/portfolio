@@ -19,12 +19,19 @@
 
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:url" content="{{ Request::url() }}">
-            <meta name="twitter:title" content="{{ $page->title }} | Roelof Jan Elsinga">
+            <meta name="twitter:title" content="{{ $page->title }}">
             <meta name="twitter:description" content="{{ $page->description }}">
             <meta name="twitter:image" content="{{ $page->image_large  }}">
 
             <title>{{ $page->title }}</title>
 		@show
+
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+        @if(\Main\Classes\Canonical::needsLink())
+            <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
+        @endif
+
 		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
 		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
 		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/icons/apple-icon-72x72.png') }}">
@@ -54,8 +61,7 @@
 
         <!-- Bootstrap -->
         @section('stylesheets')
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link href="{{ mix('css/front.css') }}" rel="stylesheet">
+            <link href="{{ mix('css/front.css') }}" rel="stylesheet" defer>
         @show
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -77,6 +83,8 @@
 
         @section('footer')
 
+            @include('blocks.mailchimp_form')
+
             @include('blocks.navigation')
 
         @show
@@ -91,6 +99,22 @@
                     return false;
                 });
             })();
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49160339-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-49160339-1');
+        </script>
+        <script>
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(function() { console.log("Service Worker Registered"); });
+            }
         </script>
     </body>
 </html>

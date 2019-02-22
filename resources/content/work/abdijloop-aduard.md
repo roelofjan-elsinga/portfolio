@@ -1,4 +1,4 @@
-![Abdijloop Aduard screenshot](/images/work/abdijloop_1920x1080_1523907651.png "Abdijloop Aduard screenshot")
+![Abdijloop Aduard screenshot](/images/work/abdijloop_1920x1080_1523907651.jpg "Abdijloop Aduard screenshot")
 
 # Abdijloop Aduard
 

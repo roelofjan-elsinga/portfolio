@@ -6,7 +6,6 @@ use Symfony\Component\Yaml\Yaml;
 
 class TagsParser
 {
-
     public static function instance(): TagsParser
     {
         return new TagsParser();
@@ -20,7 +19,7 @@ class TagsParser
             return $pageName === $name;
         }, 1);
 
-        if(isset($filtered_array[$name])) {
+        if (isset($filtered_array[$name])) {
             return $filtered_array[$name];
         } else {
             return head($all_tags);
@@ -32,7 +31,7 @@ class TagsParser
         $parsed_config = $this->parseConfigFile();
 
         return collect($parsed_config['tags'])
-            ->mapWithKeys(function($tags, $pageName) {
+            ->mapWithKeys(function ($tags, $pageName) {
                 return [$pageName => $this->convertArrayToStdClass($tags)];
             })
             ->toArray();
@@ -42,7 +41,7 @@ class TagsParser
     {
         $output_class = new \stdClass();
 
-        foreach(array_keys($input_array) as $key) {
+        foreach (array_keys($input_array) as $key) {
             $output_class->$key = $input_array[$key];
         }
 
@@ -55,5 +54,4 @@ class TagsParser
             resource_path('content/metatags.yml')
         );
     }
-
 }
