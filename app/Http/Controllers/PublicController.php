@@ -390,6 +390,8 @@ class PublicController extends Controller
     {
         $atom_feed = Storage::get('atom.xml');
 
-        return response($atom_feed, 200);
+        return response($atom_feed, 200, [
+            'Content-Type' => 'application/atom+xml'
+        ]);
     }
 }
