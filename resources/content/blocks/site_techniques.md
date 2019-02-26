@@ -31,6 +31,15 @@ Can you see the meta tags of this website? These are all defined in
 Again, not making use of a database for the purpose of having dynamic meta tags. 
 This allows me to keep the content in Git version control.
 
+#### XML
+I'm generating several XML files through some simple commands on this website.
+The first is a 
+<a href="https://roelofjanelsinga.com/sitemap.xml" class="link link--underline">sitemap</a> 
+of all of the pages on this website, 
+and the second is an 
+<a href="https://roelofjanelsinga.com/feed" class="link link--underline">Atom feed</a> 
+for all of my blog posts.
+
 #### Design inspiration
 I'm not a great designer, so I couldn't have built this website without an 
 excellent example made by
