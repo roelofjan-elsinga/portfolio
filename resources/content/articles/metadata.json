@@ -146,5 +146,9 @@
     {
         "filename": "the-elephant-in-the-room-burnouts.md",
         "postDate": "2019-02-22"
+    },
+    {
+        "filename": "how-to-search-whole-world-with-solr-spatial-search.md",
+        "postDate": "2019-02-26"
     }
 ]

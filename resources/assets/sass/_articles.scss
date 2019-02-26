@@ -105,4 +105,8 @@
         @apply mt-8 mb-4;
     }
 
+    code {
+        @apply bg-grey-light block p-8 break-words;
+    }
+
 }
