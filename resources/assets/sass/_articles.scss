@@ -20,10 +20,6 @@
                 max-width: 300px;
             }
             
-            .read-box {
-                display: none;
-            }
-            
         }
         
         .content {
@@ -55,35 +51,12 @@
                 max-width: 100%;
                 display: flex;
                 
-                .read-box {
-                    flex: 1;
-                    display: block;
-                    position: relative;
-                    
-                    .read-link {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #3498db;
-                        color: white;
-                        
-                        &:hover, &:active {
-                            background-color: darken(#3498db, 10%);
-                            text-decoration: none;
-                        }
-                    }
-                }
-                
                 img {
                     flex: 1;
                     display: block;
                     max-width: 100%;
                     height: auto;
+                    object-fit: cover;
                 }
             }
             

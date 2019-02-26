@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="articles-page items paragraph-spacing pt-8 sm:pt-0">
+    <div class="articles-page items paragraph-spacing pt-8 md:pt-0">
 
         {!! $content !!}
 
@@ -13,17 +13,11 @@
 
             @foreach($articles as $article)
 
-                <article class="inline-block">
+                <article>
                     <div class="image">
                         @isset($article->thumbnail)
                             <img src="{{asset($article->thumbnail)}}" />
                         @endisset
-
-                        <div class="read-box">
-                            <a href="{{route($view_route_name, $article->slug)}}" class="read-link">
-                                <i class="fa fa-angle-right fa-2x"></i>
-                            </a>
-                        </div>
                     </div>
 
                     <div class="content pt-8">
