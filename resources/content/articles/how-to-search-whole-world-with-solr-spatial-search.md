@@ -8,7 +8,8 @@ counter-clockwise manner, which didn't work for me. According to the WKT standar
 a square is not a valid shape, so to solve this problem, 
 simply add two points in the middle of the longitude line.
 
-This means that
+My initial solution was a self closing shape that only had its four corners defined. 
+But this either returned errors or gave me no results. This means that
 ```
 MULTIPOLYGON(
     (
