@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    
+              <title>Roelof Jan Elsinga</title>
+              <link href="https://roelofjanelsinga.com"/>
+              <updated>2019-02-26T19:16:12+01:00</updated>
+              <author>
+                <name>Roelof Jan Elsinga</name>
+              </author>
+              <id>https://roelofjanelsinga.com/</id>
+              <link rel="self" href='https://roelofjanelsinga.com/feed'/>
+        <entry>
+                            <title>Researching Home Servers</title>
+                            <link href="https://roelofjanelsinga.com/articles/researching-home-servers"/>
+                            <id>https://roelofjanelsinga.com/articles/researching-home-servers</id>
+                            <updated>2016-10-20T12:00:00+02:00</updated>
+                            <published>2016-10-20T12:00:00+02:00</published>
+                            <content>
+Researching Home Servers
+Ever since I got a Raspberry Pi 2, in December 2015,
+I've been very interested in setting up a home server
+to be able to save all my files and access them from anywhere I want.
+Besides file storage I've been looking at ways to integrate this with my web development projects.
+Using the Pi 2 for this is great, especially being able to use SSH to remotely access it
+and use Git to load all the up-to-date files on it.
+So an ideal home server would be able to do both of these things for me,
+both file storage and local web hosting. Additionally I would be able to use this home server
+for video streaming purposes. Originally I was using my Raspberry Pi for this,
+and this worked well for the web hosting, but not so much for file storage.
+It was a hassle to get my external hard drives hooked up to it,
+to manage all the folders and to keep it organized.
+A solution presented itself to me in the form of FreeBSD, in particular FreeNAS.
+This way I can simply install the Operating System(OS) on a flash drive and boot
+the entire system from that, while using multiple hard drives for file storage.
+Looking at guides and videos on YouTube, I figured that 4 hard drives would be ideal
+for this setup. I will also need a sufficient amount of RAM memory and CPU power to
+be able to use a ZFS file system with FreeNAS. This way the data on the hard drives
+is safe in case 1 or 2 hard drives stops working.
+On the downside, this system would mean it's not as energy efficient as a Raspberry Pi,
+but which system is? I will have to research how I can make sure this new system,
+built with FreeNAS, is quick, reliable, but also very energy efficient and low in power usage.
+More posts will follow on this and hopefully at that point I have more concrete ideas
+about system specifications, specific components I'd like to use and the estimated cost
+of this whole project.</content>
+                          </entry>
+<entry>
+                            <title>Benefits of a single page application</title>
+                            <link href="https://roelofjanelsinga.com/articles/benefits-single-page-application"/>
+                            <id>https://roelofjanelsinga.com/articles/benefits-single-page-application</id>
+                            <updated>2016-10-27T12:00:00+02:00</updated>
+                            <published>2016-10-27T12:00:00+02:00</published>
+                            <content>
+Benefits of a single page application
+Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just plain Javascript and jQuery any more. More and more Javascript frameworks and libraries are being developed and are quickly taking over the roles of traditional web development techniques. The LAMP (Linux, Apache, MySQL, and PHP) stack is slowly losing ground to faster, more flexible ways of development, like the MEAN (MongoDB, ExpressJS, AngularJS, and NodeJS) stack. Javascript allows for quicker navigation through websites and applications and even allow developers to develop application for phones.
+Smoother user interactions
+Speed and flexibility are nice and all, but how does this apply to a real world solution? Well first of all a single page application (SPA) invites the user for a more interactive experience. Because a SPA loads all its data on the initial loading process, loading times are shorter while navigating between pages. This behaviour is very similar to the process of loading a native mobile application. The application seems smoother to the users, unlike a typical website, in which you'll have to wait until the next page is loaded. A typical website doesn't feel dynamic, it feels like a stack of static pages, through which you can click. A native application feels more like a stack of layers, within layers. These layers can change and respond to user input. Something a typical website will never be able to do in a smooth manner. SPA's however are trying to replicate this dynamic feeling of a native application, but in a web environment. Through asynchronous calls and responsive Javascript, pages are loaded more quickly and are better able to respond to user input, improving the user experiences throughout the entire application.
+Lower server load
+Second of all, a single page application generally takes up less bandwidth and less computing power from the server. This is because of a very simple reason, the server doesn't constantly need to serve entire web pages. Instead it serves partial pages and loads data asynchronously, causing less strain from the I/O of CPU. Typical websites work synchronously, meaning one task gets completed before the other one starts processing. Javascript allows for asynchronous calls, this means the server can queue tasks. It will then complete one task from the queue after another per CPU thread. Meaning it will be able to do multiple tasks at the same time, causing the single page application to out perform any typical web application for the same task.
+Convertable to a hybrid application
+And finally, the third benefit highlighted in this post, convertibility. More and more companies are bringing out applications for iPhone, Android, etc. these days. Often, these applications are made from scratch and are being built by iOS and Android developers. This is a very costly process, often costing 50.000+ for a single application. What if there was a way to convert your existing website into a mobile application, without a lot of extra development? Well with single page applications, made with Javascript, this is possible. There are countless of programs that can help you convert a simple website to a hybrid application, PhoneGap for example. This program essentially builds a shell around your website, allowing it to execute like a mobile application on your phone. A single page application, built on Javascript can easily be converted into such an application, as long as the underlying API endpoints are accessible by the application. Of course this will never be as smooth as an actual native mobile application, but it offers for a quick and easy way of testing out a mobile application.
+These points are just a few of many of the benefits of single page applications. But keep in mind that benefits always come with trade offs. There are also disadvantages of building single page applications, and these will be highlighted in a next blog post. The highlighted points in this article are some of the main parts I have encountered building several single page applications of the past year. I'm sure more advantages and disadvantages will show up, but only time will tell.</content>
+                          </entry>
+<entry>
+                            <title>The future of machine learning</title>
+                            <link href="https://roelofjanelsinga.com/articles/the-future-of-machine-learning"/>
+                            <id>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</id>
+                            <updated>2016-11-03T12:00:00+01:00</updated>
+                            <published>2016-11-03T12:00:00+01:00</published>
+                            <content>
+The future of machine learning
+Machine learning has been getting a lot of attention the last few years. Without most of us knowing it, it's been taking over our lives. Webshops, social media, and our phones, they all make use of it in some way. It sounds scary, but do the advantages outweigh the disadvantages?
+I personally think that the advantages do outweigh the disadvantages. This is because machine learning, and with that big data, helps systems learn what you're like and how to help you the best it can. It will better know how to help you, adjust to you, and predict what you may be interested in. It takes a lot of faith in the system to allow it to collect data based on your behaviour within the system. But, if done correctly, this is a very valuable &quot;personal assistent&quot;. An example for machine learning comes from a presentation by Werner Vogels (CTO Amazon) at The Next Web Conference in Amsterdam. He mentioned that small things like emails with suggestions based on your search history already collect a large amount of data. At Amazon they analyse which emails with which products get opened and clicked or deleted. This way a system learns which products you most likely care about more than other products.
+Will it only be used for advertising?
+Advertising is definitely a big part of using machine learning, but if you think about it: is it really advertising if you're really interested in a particular product or range of products and a system helps you out to find the best possible solution to fit what you need it for? It definitely is, but it's more than a shot in the dark, hoping someone grabs on and responds. It's a win win situation for both buyer and seller. The seller has a more confident chance of making a sale, and the buyer finds the best possible product he or she needs.
+This is why I think machine learning will become much bigger than it already is. It won't just be used for advertising, but also for services like Netflix. Suggesting which movie or serie to watch at which time of the year or at a certain time of the day. It may even be able to suggest the right movies for a mood. The system will learn to help you pick the best series or movies that perfectly fit you and your situation at all times.
+It will need to be secure
+With all this data comes a lot of risk as well. Keeping the data secure is very important for the integrity of the system it's being used for. Anyone from the outside would be able to learn anything and everything about a person without having met this person. This is a scary thought. Not only could this result in dangerous (stalking) situations, it could also cause private and professional harm if it turns out a person has a private interest in non conventional movies, products, or services. This could cause loss of image for people, groups, businesses, and communities.
+Machine learning and big data are incredibly useful when they are used in the right way. They can help make the lives of all kinds of people easier, but could also be a threat. Systems will be able to give very personalised advice, suggestions, and help in general. Security will need to be kept up-to-date at all times, because leaked data can cause harm on many different levels.</content>
+                          </entry>
+<entry>
+                            <title>Windows or Linux?</title>
+                            <link href="https://roelofjanelsinga.com/articles/windows-or-linux"/>
+                            <id>https://roelofjanelsinga.com/articles/windows-or-linux</id>
+                            <updated>2016-11-10T12:00:00+01:00</updated>
+                            <published>2016-11-10T12:00:00+01:00</published>
+                            <content>
+Windows or Linux?
+The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my entire life, coming from Windows 3.1 to the new Windows 10. You can say that I like my Windows OS's. On the other hand I'm also a web app developer and Linux based systems are perfect for running servers and they're just simply a joy to install new programs. How do I choose a system to stick with, or is a compromise between the two different systems possible?
+Advantages of Windows
+One of the main advantages of Windows is it's compatibility with games. Gaming is becoming bigger and bigger on Linux based system, but it's no where near the level of Windows. Almost all major games are available for Windows and this is why I prefer Windows over Linux for gaming. Besides the compatibility with most major games, most programs are also compatible with the Windows operating system. This makes installing programs very simple for the average user.
+Disadvantages of Windows
+Of course there are also disadvantages of using Windows, especially as a web developer. One of the disadvantages is that Windows is based on DOS, and not UNIX like MAC OS and Linux based operating systems. In most cases this is not a big problem, but using UNIX is much more intuitive than DOS in my opinion. Another one of the disadvantages of Windows is that it's not a free piece of software. Of course I gladly pay for software that makes your life easier, but everyone rather has stuff for free.
+Because so many programs are compatible with Windows, and developing for a Windows machine is easy, it's very easy to catch viruses. On a Windows machine it's very easy to install software from non-trusted vendors, thus making it easy to install a virus on your system when you are not an experienced user. For most people this means installing a virus scanner and firewall is the only way to prevent this from happening. This can bring extra costs and unwanted software plans with it.
+Advantages of Linux based systems
+Where it's very simplistic on a Windows machine to install a program for the average user, on UNIX this is very easy for experienced users. You can simply install a program by using the command: apt-get install [package-name]. Again, for the average user this may be very complicated and just not a wanted solution to install programs, but since I'm working with the command line for Node and PHP anyway, the transition is very natural.
+Apart from the command line and UNIX, Linux just has so many different distributions (distro's)! There is always one that fits your needs or just works like you want it to work. And the best part of these distro's? They're all free of use, you don't have to pay anything for them, apart for a boot USB if you don't have one laying around. Because different distro's can behave differently with different pieces of software, these distro's have their own (official) repository of programs you can install. If the program you need is not available in this repository, you can just add one that does have it. Because the official repositories only carry trusted pieces of software, the chance to get a virus from installing programs is non existent. Unless a piece of software slipped through the cracks, or you install programs from a non-official repository. Only then you could get viruses in your system.
+In some of the distro's you can expect useful pieces of software to be pre-installed, like Node or Python. With these programs pre-installed you can instantly start programming or set up a server for a project you're working on.
+Disadvantages of Linux based systems
+However, there are always disadvantages. One of them I have mentioned earlier, gaming. Even though support for Linux based system is getting better, it's still not at the level that gamers can expect from Windows. But then again, I haven't come across many people who use their Linux based operating system for gaming. So this disadvantage doesn't apply to everyone out there.
+As mentioned before, installing programs on a Linux based system can be done through apt-get install [package-name]. This is not for everyone, thus making the learning curve on some distro's quite steep for average users. Distro's like Ubuntu come with an app store, but this is not the case for all distro's so this could be a thing to look out for when choose one for your uses. And a last disadvantage I have encountered is the recognition of device like an iPhone. For me it showed up, but that was about it. It taks tinkering to get it to work and this can be a breaking point for some users who just want it to work. If you're a person like this, perhaps a Linux based system is not the right system for you.
+Compromise
+So is a compromise possible between Windows and Linux? Making use of all the advantages of both systems while filling the disadvantages. Well yes there is. There are two scenarios that come to mind for me. A dual boot system, meaning you have both a windows system installed on your harddrive, as well as a Linux based system. On starting your PC you can choose which operating system to use. This can be great when you want a real experience, no slow loading times, but a real Windows or real Linux environment. If, however, you don't want to deal with this, a virtual machine is a great option. What this allows you to do is boot up a Linux based system inside a window on your Windows based system. This way you don't have to bother with installing a seperate operating system on your system and you can easily switch between your Windows system and your Linux based system. This could be ideal for testing purposes, application development, or just quick tasks.
+So based on your needs you can go for either a Windows based system, a Linux based system or a combination between the two. Personally I have two different systems, one for Ubuntu (A Linux distro) and another one for Windows 10. This makes developing applications very easy, because I need some pieces of software that are only available on a Linux based system. I can just simply set up a connection between the two systems and they work with each other perfectly. But this is only an isolated example, there are a ton of different scenarios possible in which a combination of the two operating systems is a very desirable setup. But try and see for yourself. Give different distro's a try, try making connections, combine systems and see what you can do with them.</content>
+                          </entry>
+<entry>
+                            <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
+                            <link href="https://roelofjanelsinga.com/articles/isomorphic-javascript"/>
+                            <id>https://roelofjanelsinga.com/articles/isomorphic-javascript</id>
+                            <updated>2016-11-17T12:00:00+01:00</updated>
+                            <published>2016-11-17T12:00:00+01:00</published>
+                            <content>
+Isomorphic JavaScript: What is it and what can I do with it?
+JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user's input, send XHR requests to PHP (or Rails/Java/etc.), receive data from the server, and complete a task with the provided data. This is the way Javascript has been used for a long, long time. But then, in 2008, NodeJS was launched. NodeJS, most web developers have heard of it, is a JavaScript framework running on the server. This means that Javascript is not just on the client side any more, it can also be a full fledged server. This has many benefits, including the following: it's blazing fast, the front-end and backend use the same language, and code can easily be shared between the front-end and backend. But what does this really mean?
+A library called React
+Well to answer that question, let's use a front-end Javascript library as an example to be used next to Node for the server. Let's call this library ReactJS. ReactJS is a library created by Facebook to easily build user interfaces, through the use of Components. This means that you can easily make reusable components like a navigation bar, provide it with information from the server, like menu items, and render it on the screen. This is nice and well, but how does this answer the question? Well ReactJS comes with ways to convert the components within a view to strings. This means that NodeJS can serve this string as a response to requests to it's server. This can be useful for three different things.
+SEO
+With Frameworks like AngularJS the JavaScript won't be executed once a crawler hits your website. This causes misinterpreted meta tags, titles, content, and images. There is a solution for this, but it's complicated and just plain annoying. You're going to have to use PhantomJS to render the pages once a crawler hits your site and serve a static HTML version of the requested page. This is slow if this page is hit for the first time, because the page needs to be rendered on the fly. Once this is done, it is cached and the problem is not as apparent, but it's still a bottleneck for web applications built with AngularJS. Here's where ReactJS shines. Because the content of views can very easily be converted to strings, NodeJS can serve these static pages when the specified URL is requested. This doesn't just happen wehen a crawler hits the page, it happens all the time. This means that Google, Facebook, or any other service that uses a crawler to grab page information, will always be served with a static HTML page with all the required information.
+Page content of page refresh
+Besides making it easy for crawlers to read the page content, NodeJS also helps with page refreshes. Imagine the following scenario. You made a React application with react routing. You hit the index page and everything is perfect. You can navigate between views and everything works perfectly fine. BUT THEN the user decides, for some reason, to refresh the page on the about page of your React application. A 404 page will be presented. But I made a route for the about page, why is it giving me a 404 page? Well for the simple reason that the entrance of you React application is under /. This means that unless you are on the home page and refresh, you will get a 404 page, because the root of your application can't be found. In AngularJS this can be solved by always pointing all page requests to the index.html page of your application and prepending the rest of the requested URL to the request in the Angular router. In React, in combination with Node, this is much, much simpler. What you can do through Node is to render the requested React view to a string, and simply serve this string as a response, just like how the SEO works. Because this time the crawler isn't the one requesting the page, but the user is, the browser will automatically render the HTML and the user will be presented with the right page. Once this HTML is rendered by the browser, React will automatically be kick started and ready for new requests and user actions.
+Loading speeds through caching
+Last but not least, loading speeds of pages can be drastically improved. Because NodeJS creates an HTML string on every page refresh, it can be very easily cached. This way Node can just look in the server memory and see if a cached version of the page exists. When it does, it can return this cached version instead of rendering the React view on the fly. Of course you should always set a maximum time between caches of pages, because otherwise it could be possible that your fancy updated pages will never actually be presented to the user and all your work will be for nothing. A good time guideline for pages that change often could be a few hours to a day. Other pages can be cached for a week or two. A good average is to cache pages for one day at a time, to make sure users get the updated experience soon enough, while still benefitting from the faster loading times of pages.
+Conclusion
+So what does it mean to share code between the server and the front-end? Well it means that user experiences are smooth, responds times are low, and implementing new features can be almost instantanious. There is no need to write the same logic twice (which I catch myself doing a lot in Angular), because the code for the front-end and backend is exactly the same. Because the code is exactly the same, SEO can be done easily, through server-side rendering, pages are always available, even after page refreshes, and page reloads can be made incredibly quick through page caching. Using the same language all across the application is quick, convenient, and it makes developing a delight, because you only need to know one language for everything.</content>
+                          </entry>
+<entry>
+                            <title>Building your own computer</title>
+                            <link href="https://roelofjanelsinga.com/articles/building-your-own-computer"/>
+                            <id>https://roelofjanelsinga.com/articles/building-your-own-computer</id>
+                            <updated>2016-12-01T12:00:00+01:00</updated>
+                            <published>2016-12-01T12:00:00+01:00</published>
+                            <content>
+Building your own computer
+Building your own computer? Why would you do that if you can simply buy one in the store? You'd be instantly ready to use it and you know it'll work. But you know what? That would be the simple way out wouldn't it be? Isn't understanding how a computer is made, how it works, what the different components are for way more interesting? Isn't it way more useful to have a computer that is made for the exact purpose you need it for, nothing more, nothing less? Wouldn't you want to be able to control every aspect of the computer itself, even the look, costs and extra's? Well that's exactly why you should build your own computer.
+Understanding
+Understanding how a computer works and is made can be both intriguing and extremely useful. Finding out how different parts work together, which parts are necessary to be compatible, and the influence of different combination of parts can be an interesting research project or experiment. But besides it being interesting, it can also be very useful in case a component breaks. Then you'll be able to find out more specifically how to fix a problem or how to figure out which part either causes the problem or is broken and needs to be replaced. Knowing exactly what parts you put in your computer helps with diagnosing problems and looking up ways to fix them.
+Applying
+Knowing which parts you can put together to achieve a certain goal or get a certain result is not only a fun experiment, but it can have a big impact on the way your new computer behaves doing certain tasks. If for example you want to do web development, getting a fast and expensive graphics card is simply not necessary. Web development is very harddrive, RAM, and CPU intensive. Lots of data will need to be saved on the harddrive and will also need to be retrieved. This data will also need to be processed when saving or retrieving it. This means that a computer for this specific task will require a fast processor, a fair amount of RAM memory (4 to 8GB at least), and a fast harddrive, such as a SSD (Solid State Drive) or M.2 drive. But if, for example, you'd want a computer to play videogames on, you're going to need a fast graphics card at the least. Every frame will need to be rendered to the screen without and frame lag. This means a fast graphics card, but also a good processor and RAM to make calculations in the background and to make sure tasks get executed correctly. In the case of a gaming computer, a harddrive is less important. You'll still need one with a lot of space to install all the games you'd want. You can install one or two on an SSD for optimal performance, but you really won't notice an enormous amount of extra smoothness.
+One application which really needs a combination of all the best components is a video editing and rendering computer. You'll need a fast graphics card for rendering all the frames of your videos, a lot of RAM to process all the information you'll be saving to your fast hard drives, and a fast processor to manage all the different tasks that are coming in to play. This will probably the most expensive option out of the three described above.
+Of course there are more applications you may want to build a computer for. Maybe you just want a very simple computer for text editing. In this case you can go easy on all parts and go for the bare minimum your OS (Operating System) needs in order to function well. That's where building your own computer has another advantage. You can make it as cheap or as expensive as you want. You won't need to fit a budget around a choice, but you fit your choice around your budget. If you say that, for example, you want to spend 500 euros/dollars on a computer, but you want to be able to play video games on it without any problems. Well you start to select a graphics card that will run every single game you play or plan on playing. After you have figured out which graphics card fits your needs, you can select a processor, the amount of RAM you think you'll require (please go for at least 8GB these days), and then a motherboard that'll connect these pieces together perfectly. You can go for a cheap harddrive, but please don't cheap out on a power supply. A great quality power supply is your best friend and will keep your computer happy. Aim for an 80 plus bronze quality checkmark or higher. You can even select which case you'd want. This can really go either way, a really cheap case, or a very fancy, but expensive one. Just make sure the motherboard you picked out, and all the other components, will fit in your chosen case. Usually this is marked by motherboard size (ATX, mini-ATX, micro-ATX, etc.).
+Reflecting
+As you can see, the possibilities are endless. Even if you decide to change your mind on the purpose of your computer, upgrading is easy. Just add a quicker processor, a faster graphics card, an SSD or M.2 drive or whatever else you may need to get your desired machine. And because you built your computer yourself in the first place, you'll know exactly which parts will be compatible, or at least you'll be able to find out with a bit of Googling. So next time you're thinking of buying a new PC, but you don't want to take the easy way out, or have a very specific need or budget, think about making your own computer. It can be a lot of fun, a great learning moment, or just an interesting experience.</content>
+                          </entry>
+<entry>
+                            <title>What practical use can VR have for the web?</title>
+                            <link href="https://roelofjanelsinga.com/articles/practical-use-vr-for-web"/>
+                            <id>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</id>
+                            <updated>2016-12-08T12:00:00+01:00</updated>
+                            <published>2016-12-08T12:00:00+01:00</published>
+                            <content>
+What practical use can VR have for the web?
+Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift and even the Gear VR are all trying to accomplish themselves. The Gear VR is aimed at usage on Samsung phones, and the HTC Vive is best used with Steam games. But could VR play a bigger role for different uses other than gaming? Yes, it definitely could, if done properly. Just have a look at the way Jaguar launched their new I-Pace electric SUV. They used VR to display and let people experience diagrams, sketches and other models. That is exactly what what VR is all about, experiencing an event, being in a place, feeling one with it. This all sounds very visionairy, but what are the actual practical applications for VR in the world?
+Stores
+Stores, actual physical stores are still a thing, why? Well because you can see a product for yourself, feel the product, experience it. For a lot of people this is very important. It helps them believe they buy a product that's worth their money, worth their time. But what if the closest store that has a product you want or need is far away? What if you don't feel like going out of the house, but still want to be able to experience the product you're looking for? Well VR could fill this void. You would be able to &quot;walk&quot; through an online store, trying out different products before making a decision on which to buy. This could simply start out with being able to see the product from all angles, being able to rotate it and see what it's like.
+What would it take?
+What would this progression in online stores take? Well first of all, VR needs to be brought to the browser. This would take a lot of development from software engineers and funding from donors, investors, or believers. This would also need improved hardware for everyone wanting to use this technology. It'll need artists and game designers to make models of the products, develop controls to be able to interact with the models, hardware engineers to develop affordable VR gear to make the use of it widespread. Is this a hard task, a tough progression? Absolutely! Is this worth all the monetary investments? All the time spent on it? Only time can tell. Would this bring VR to the masses with applied, real world uses? Definitely!
+What's needed?
+So what's stopping us? Well cost first of all. VR gear is expensive, computers able to run VR games and programs are expensive. The hardware costs a fortune and the software is not where it should be just yet. But it's getting there. The software has already been improved a lot in the past two years, from simple roller coasters on the Oculus Rift, to pretty impressive games like job simulator on the HTC Vive and golf games that genuinely work and are quite fun. But that's the thing. Right now the hardware and software aren't take seriously by everyone yet. The same way smartphones were seen as unnecessary a few years ago. But it takes a lot of development and commitment from both developers and the community. Together the platform will improve, become more well known, be established as a serious platform for all kinds of uses. This is also why the car launch by Jaguar is such an important step for VR.
+What about the future?
+If all of the previous conditions have been met, where would that VR? VR could potentially take over the role of the personal computer. It sounds like a very distant future, but with the rate hardware currently is being developed, and it only going quicker and quicker, this could be as quick as a few years. It will not happen over night, a lot of doubt will and ridicule will come with it, but this is nothing different from the development of mobile phones and personal computers. It's a cycle that will be repeated over and over again for every sort of technology, and VR is no different.
+Once, however it gets past this stage, when both hardware and software are developing quickly, efficiently, and are of high quality,spreading will start. When the costs of being able to use VR gear lower, it'll spread like a wildfire in a dried out countryside. VR will only become more prominent as more and more people are starting to experience real life applications for the use of VR. Once businesses are starting to use it to promote their services, helping customers and potential customers with their needs, it will get a real life application besides gaming and entertainment. It'll slowly become integrated in everyone's life. Keep in mind, this may be in the current state, with glasses headphones and controllers, but it very well may be more like hologrammic images of some sort. Either through Google Glass like products, or some other, newer invention. VR is coming, be ready for it.</content>
+                          </entry>
+<entry>
+                            <title>IndexedDB: Caching your data on the client side</title>
+                            <link href="https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side"/>
+                            <id>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</id>
+                            <updated>2016-12-15T12:00:00+01:00</updated>
+                            <published>2016-12-15T12:00:00+01:00</published>
+                            <content>
+IndexedDB: Caching your data on the client side
+A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes. This worked perfectly for a long time, until the app grew larger and larger. At this point I had 5 to 10 XHR requests per view. This was easily achieveable in the beginning when it was 2 or 3. Most pages used the same data, the same non-changing data. This is when I started thinking about caching all of this data, making the experience for the user better, because the app would load faster. Not only the users are benefitting though, the server also gets less requests, causing it to perform better for concurrent users.
+Why no localStorage?
+So why was localStorage not good any more? Well there are two simple reasons for this. First of all, the limited storage space. LocalStorage data can only be saved as a string. The string lengths can only be so long before errors will start to occur. IndexedDB on the other hand saves data as actual objects. This way data can instantly be used in the applicaion. Besides saving data as objects instead of string, IndexedDB is asynchronous. This is important because it doesn't block the DOM. Not blocking the DOM is important when larger tasks are being processed and you don't want to confuse the user with a non-responsive application. LocalStorage and SessionStorage are both synchronous and do block the DOM, but they're not supposed to be used for larger tasks. IndexedDB is better for this task.
+Why would you cache the data on the client?
+But why use IndexedDB at all? Isn't it just another layer that you need to pay attention to when you're developing an application? Absolutely, but also look at what it can do for you, as a developer, your server, and your users. If done correctly, you can harnass IndexedDB to cache all your incomming &quot;static&quot; data. What this accomplishes is that you only have to load a specific resource once. When you loaded it from the server, you can save it and use the saved resource next time it's needed. This accomplishes two things. One, your server doesn't have to take duplicate requests from an individual user. Two, the requested page will load quicker, since the request to the server is no longer necessary and the resource is already saved to the RAM memory. This will be beneficial to the user experience of your application.
+If you use localStorage, IndexedDB or nothing at all, making an application as efficient as possible is very important. It's important for your users, but also for your server. Nothing is worse than overloading the server or causing a bad user experience. Whatever you do, make sure you do it well. If that means you will need to use a caching solution like localStorage, sessionStorag, or IndexedDB (WebSQL is deprecated, don't use it) go for what best fits your needs. Do you need something simple like keeping data close between views? Give localStorage or sessionStorage a try. It's excellent for small tasks. If you need a more complex caching solution, that is capable of saving larger sets of data and does not block the DOM, IndexedDB is exacly what you should be using. To make this even better, use it in combination with service workers and you're on your way to make a web application that's not only available when you're online, but also when you have no internet connection whatsoever.</content>
+                          </entry>
+<entry>
+                            <title>Use software for what it's made, and you'll see the benefits!</title>
+                            <link href="https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit"/>
+                            <id>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</id>
+                            <updated>2016-12-22T12:00:00+01:00</updated>
+                            <published>2016-12-22T12:00:00+01:00</published>
+                            <content>
+Use software for what it's made, and you'll see the benefits!
+You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from using SQL queries in a relational database to a piece of software that's designed for search: Solr. Don't get me wrong, SQL queries, or requests to any NoSQL database are perfectly fine if you have very specific search needs. For example: find the records belonging to this particular unique identifier. This is a wonderful solution. However, when your databases start to grow, the amount of documents belonging to this particular unique identifier grow and having to do more JOIN operations for relational databases, you'll start to find bottlenecks.
+What was the problem?
+JOIN operations in particular was an issue for me, the shear amount of data that needed to be filtered destroyed my search performances. Often having to wait for 10 or more seconds before receiving any data whatsoever. My first solution was to make one enormous flat table in my SQL database. My thought behind this was to eliminate the JOIN queries to boost performance. This worked really well for months, it started with about 5000 records, which is an easy task to say the least. However this slowly grew over the months to a table of 200,000+ records. It was at this point I saw a slight performance hit, going from 2 to 4-6 seconds per request. This was definitely still less than before, but it was too slow for me. I eventually decided to make the switch when I had to implement real time pricing for products. This meant calculating discounts, user credits, and a list of other things on the fly...for thousands of records. You can imagine the enormous hit this must've been. My search request times went from 4-6 seconds to about 45 seconds. This was the point at which I stopped, stood back, and made the decision to use two different systems, each designed for the purpose it serves. The relational database to save data, keeping it well structured, and Solr to index documents and make them searchable.
+The solution
+Now, if you know me, you know that I'm not the most technical programmer alive. I know how to do a bit of everything and aren't the best at all of them. However, I am someone that does not give up easily. Starting to learn how to set up Solr and Solarium (PHP library) was definitely not an easy task. In my opinion I missed a lot of the documentation that I'm used to. I use Laravel and Laravel Lumen on a daily basis and these PHP (micro) frameworks are wonderfully documented. To start with the whole process, I set up a virtual Ubuntu box. I was already familiar with the Java programming language (on which Solr is built), so at least I wasn't completely clueless. Anyway, I set up the Solr server and created my first collection. This took me about 4 hours, because to the life of me, I couldn't find the command for it and kept trying to use the GUI in the browser. After I found the command for it though, I was off to a flying start. I set up a username and password for it and then got started on Solarium.
+Solarium is a PHP library to interact with a Solr server. This was easily installed through Composer. The configuration in Laravel itself was also very simplistic and I got a working connection with my Solr server within 30 minutes. But then I had to populate this brand new Solr server with data to index. I followed the Solarium documentation and was struggling. It's a useful guide, but it could be much more extensive to really help people that just start out with the library. However, once I finally got the first documents indexed, it was very easy to create new collections and populate these with documents.
+Was it worth it?
+So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents etc. This meant that I could replace most of my manual filtering in PHP with the built in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually, because relevant documents in my case were heavily dependent on distance between the requested location and the product. Solr does all of this for you, on the fly. Of course this bring a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
+I'm very happy I made the switch. Not only did it speed up search, but it also helped analyzing data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!</content>
+                          </entry>
+<entry>
+                            <title>The importance of server-side caching</title>
+                            <link href="https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching"/>
+                            <id>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</id>
+                            <updated>2016-12-29T12:00:00+01:00</updated>
+                            <published>2016-12-29T12:00:00+01:00</published>
+                            <content>
+The importance of server-side caching
+Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my understanding and interpretation of the term &quot;caching&quot; is. Caching for me means to temporarily save data in a very easy to read and easy to process format, so it can be retrieved effortlessly and used right away. What I'm really saying with this is that, data has been processed, formatted in a way your application will need it, and then saved to an entity. This entity can be several things, for example a flat database table, a file of some sort (.txt or .json for example), or memory in Memcached (Memcache for Windows) or Redis.
+It saves CPU cycles
+So with that said, let's get right to it. As I mentioned in the previous paragraph, caching is important for your hardware. Not necessarily for the lifespan of it, but more for the resources that can be used for other tasks. If you'd have to query a database multiple times with it returning the same result, you found a task to cache. Instead of constantly retrieving the same (static) data and processing it in the same way, thus wasting CPU/RAM resources, is costly. Instead you can cache the data on the first request, and serve the data from the caching layer afterwards. If you do this, you have just saved CPU/RAM resources that can be used for other tasks.
+It makes your application faster
+But it doesn't just save hardware resources, it's also quicker. Think about it: querying data from the database, processing this data, formatting the data to make it ready for usage versus requesting the data from a caching layer and receiving this data. This speed boost can significantly reduce loading times of your application, making the user experience better. I remember the huge difference in retrieval time between non-cached data and cached data. Non-cached could easily take 5 or 6 seconds on a single task, while the cached data was retrieved within a second. For most simple tasks this is still very slow, but it at least shows a significant decrease in loading times. This particular caching job caused a homepage of my app to be loaded a full 3 to 4 seconds faster. And this was before I switched from file caching to Redis caching, decreasing the cached requests by at least 50%.
+I mentioned user experience quickly before. There is nothing more annoying than long loading times and it will definitely make users leaving your website. Google said at their Chrome Dev Conference last year that if your app doesn't have a first draw (showing some kind of screen) within 3-5 seconds, 50% of visitors will leave your website. Now I'm not a user experience expert at all, so I can't confirm or deny this statement, but it makes sense. Often time I'll do the same thing. With that said, if you can make your app load quicker in any way, do it. If you have a lot of static data that needs to be loaded from a database upon first entry in your application, make sure to cache all of this. Make the first draw as quick as you can. When caching data to files or the database does not work well enough, try Memcached. When this is still not quick enough, go all out with Redis.
+Everything has disadvantages
+I can only praise caching and leave it at that, but that wouldn't paint the whole picture. Of course there are also disadvantages to it. For example, it's very tough to cache data that changes a lot. It's definitely possible, but you end of having to synchronize the cached data with the new data on every single (important) change. This makes it hell for developers. My rule of thumb on this is: when the data can change at least once a day or it will need to be available right away when changed, do not cache it. If, however, the data never really changes or you really need a performance boost for something, go ahead and cache it. Make it easier for yourself, not harder. The amount of times I was wondering why the page wasn't updating because of cache is too high. Learn from my mistakes and don't cache anything if you're working on that particular part of your application.</content>
+                          </entry>
+<entry>
+                            <title>How to see if your application works</title>
+                            <link href="https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works"/>
+                            <id>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</id>
+                            <updated>2017-01-05T12:00:00+01:00</updated>
+                            <published>2017-01-05T12:00:00+01:00</published>
+                            <content>
+How to see if your application works
+If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working flawlessly on your localhost and completely falling apart on your hosting server. I have definitely seen this happen to my applications a lot. I primarily work on a Windows machine, with a XAMPP installation for the server and database. This is how I test my applications and see if anything strange happens when I run it. When this is all perfect, I will deploy this to my remote server through Git. So far so good...until I pull the changes and see my application fall apart, because somehow an error or typo slipped in. One of the main things that I have seen happen to me is that file extensions of images, for example, are capitalized. On Windows this is no problem at all, it will run perfectly. However, Ubuntu (my main server OS) will start to throw errors. It will not find the image with the capitalized extension, because it doesn't exist. Only a version with a lowercase extension exists, but it's not the same and it just simply throws an error.
+It's things like that here and there, for serious, but also little things that can be different for each seperate OS. Throw in another developer in the mix and you can very well end up with a project that has to be flawless on Mac OS, Windows, and a Linux distro at the same time. This used to be a tedious process, until things like virtual machines and Docker came along. Docker is a virtual OS on your Host OS and it will be identical on all the different Host operating systems. This causes all environments to work identically on all the different machines. This is great, but it has it's limitations in my opinion. Before you start to shoot me down with my crazy ideas, hear me out. I use virtual machines to create fully fledged Ubuntu environments on all the different Host operating systems. But Roelof... that's just making things harder for yourself! Well yes, sort of. You will need to adjust all the different host operating systems to be able to work flawlessly with the virtual machine environment and that could be a tedious process, but it can also be easy once you have a single working machine. In my case I wrote an entire installation script to install a particular project (this is of course interchangable with other Git projects) in a folder, complete with Apache2, Redis, Solr and MySQL. So installing the entire environment is as easy as running a single command and following a few simple instructions.
+But why would you want a complete OS instead of just a lightweight Docker installation? Believe me, I tried to set up Docker and work with it like that, but I simply couldn't get it to work on my Windows machine and going with a virtual machine was just so much easier. Also, the installation process can be run on many different host operating systems and even on remote hosts. So the environment on all these machines is also identical. You don't have to think about bottlenecks in any way, shape, or form and it just works for me. Call me crazy, I won't blame you. Docker is probable far...far easier and I just overcomplicated it, but virtual machines do the exact same thing for me. Identical environments with identical permissions on all the different machines, so everything always works identically.
+NOTE:
+This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!</content>
+                          </entry>
+<entry>
+                            <title>How to index a single page application built in AngularJS</title>
+                            <link href="https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs"/>
+                            <id>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</id>
+                            <updated>2017-01-12T12:00:00+01:00</updated>
+                            <published>2017-01-12T12:00:00+01:00</published>
+                            <content>
+How to index a single page application built in AngularJS
+The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic Javascript. Single Page Applications are fantastic for the user experience, but of course it also has a few disadvantages, one of which is actually a user experience killer. I will describe the two disadvantages that I have found using AngularJS (I know, I haven't completely switched to Angular 2, calm yourselves) and a solution to combat both of these problems in this post. So to get started, the disadvantages that I have found: the initial page load takes long and causes users to leave your website and indexing your website, or any social media sharing is a pain. I know these issues have mostly been resolved with Angular 2, but I know a lot of people out there are still using AngularJS, so this is why this is still relevant.
+Disadvantages
+So the first disadvantage: the initial page load takes ages. This depends completely on the complexity of the app, but the one I work on is very complex, so it takes a good 4 - 5 seconds for the first draw to happen. This means that the user has a white screen of nothingness for about 5 seconds before the application actually bootstraps and shows a page. This is annoying, because it seems like the website is broken, therefore people leave your website before it's even loaded. A super simple way to at least let the users know that the page is loading...is to show a loading symbol. This very simple chance may retain some of the users that otherwise would've left your website. So that's step one. Step 2 is to either lazy load parts of your application, or to make sure the scripts load as quickly as they possible can, through a CDN or a static domain for example. These changes make leave the user with a white screen (with a loader in it) for about 3 seconds before the application has loaded and is ready for the user. It's a huge improvement, but it's not quite there yet.
+The second disadvantage is the dynamic nature of a single page application. This means that none of the content on the pages is actually...well on the pages. The pages don't even exist. Everything is loaded on runtime. This causes the long initial load, but the swift interface after the scripts have loaded. It's also a very bad thing for SEO. Search engines and web crawlers are simply not built or prepared to deal with dynamic websites. They don't seem to understand that websites these days are very dynamic and often need to load a lot of javascript before the even work. If we take the Facebook and Twitter social cards as an example... well you won't see a page title, or a description, or a featured picture, or even any meta tags. The Facebook open graph crawler simply doesn't understand what to do with your web app.
+Server-side rendering! Or not?
+So the (easy, not so easy) solution is to use server side rendering or prerendering. These terms are two very different things. For a framework like AngularJS, in which the controllers and directives are tightly coupled with the DOM (the HTML) server side rendering is almost impossible. So that option is out. That leaves us with prerendering pages. What does this mean? Well it means that the server serves a static version of the page when this is desired. This is the most useful for Facebook's open graph crawler, because it finally understands the data it's receiving. There is a title, description, tags, and images and it just works. A less and slightly strange solution could be to make the loading screens of your applications resemble the view it's about to serve. Right now there is one well-known prerender service available through prerender.io. I have been using their service for over a year and it works, well enough. It's open source and can be pulled from Github.
+I wanted something better
+However, I wanted something else, more of a Hybrid solution. Right now we use a sitemap generator that crawls all the pages and makes an enormous sitemap for Google. But to me this seems like two jobs that could be combined into one. I mean if you're crawling every single page on the website anyway, why not prerender all those pages at the same time? Well this is what I built. It's a solution that not only serves static pages when they're requested, but it's also a website indexer that's able to index any page on the fly in case it's not prerendered yet. So have I built this in Node? No I have not. I actually built the crawler in Python. Why? Well I've built a crawler in it before. That one was like most crawlers only able to index static pages. So I enhanced it with PhantomJS to be able to fully render dynamic pages and save them to a file. I then integrated this Python project in my Laravel project, synchronizing all of the cached pages to an S3 drive for swift requests. If you're interested to check it out, you can clone it from Github. If you think you can do better (and I think most of you can, because I'm a huge Python Noob), create pull requests to improve it with me. Anyway, this solution is able to crawl, index, and cache static files of the entire website, which I think is pretty cool!</content>
+                          </entry>
+<entry>
+                            <title>Improving development hiring</title>
+                            <link href="https://roelofjanelsinga.com/articles/improving-development-hiring"/>
+                            <id>https://roelofjanelsinga.com/articles/improving-development-hiring</id>
+                            <updated>2019-01-25T12:00:00+01:00</updated>
+                            <published>2019-01-25T12:00:00+01:00</published>
+                            <content>
+Improving development hiring
+When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
+1. Trial period of a few weeks
+Let the developer work together with your developers in a team on real projects, just as if the developer was already hired. Coding is only 5% of the job. Communication skills, team work, and culture fit are so much more important. A person can learn how to code, but not learn how to be a team player, and a person to perfectly for in your company. Hire based on team fit, not just coding skills.
+2. Open source work
+Has the applicant worked on any personal projects? Perfect! Use that to judge the programming skills. It's much better to look at code that a person enjoyed writing then code that's being forced into a limited timeframe. Look at how they comment their code, and whether they take care of something simple as a consistent coding style and formatting. A passionate and organized developer is what you want, don't judge them by the forced positivity of a coding test.</content>
+                          </entry>
+<entry>
+                            <title>Plants in my living space</title>
+                            <link href="https://roelofjanelsinga.com/passions/plants-in-my-living-space"/>
+                            <id>https://roelofjanelsinga.com/passions/plants-in-my-living-space</id>
+                            <updated>2019-01-28T12:00:00+01:00</updated>
+                            <published>2019-01-28T12:00:00+01:00</published>
+                            <content>
+Plants in my living space
+I've found that having plants in spaces you are a lot, like the office, relax me.
+Workdesign
+published a study to support this.
+One of them is that having plants in a workplace reduces concentration problems by 23%
+and fatigue by 30%. It also helps to reduce coughs, sore throats, and eye irritation
+by at least 24%. So in short, it is very beneficial to the well-being of employees.
+Extending this to my living space...it puts my mind to peace. It helps me to relax.
+Seeing the green leaves, fun patterns, and just something that's alive and growing
+in front of my eyes is very satisfying to me.
+I have two areas where I keep my plants, a sunny, south facing window,
+and a shady room without any windows to the outside.
+The shady room only has internal windows and gets its' light from other rooms.
+It's a dark room most of the day, but to light it up, I use LED strips.
+The sunny room
+The sunny room has all my succulents, cacti, and tropical plants. These plants all need a lot of light.
+Some of them need a lot of humidity, while others like to be dry.
+I keep them all in the same space but give each of them different care.
+The plants that like the humidity get misted with water every day, to keep the leaves damp.
+The plants that like to be dry will get water, maybe once a week, some even once every two weeks.
+Some of the plants in this room need bright, but indirect sunlight.
+So one corner of the room has partial shading because of curtains.
+
+This is my parlour palm in the sunny room.
+The shady room
+The shady room is home of low-light plants. Right now, there are several spider plants,
+a low light tolerant ball cactus, and a snake plant.
+These plants don't like to be in the sun at all, because it'll burn their leaves.
+These plants can tolerate low-light. The spider plant needs to be watered fairly frequently
+and can't dry out. If they dry out, their leaves will turn brown and fall off.
+The snake plant and the cactus, on the other hand need to dry out completely.
+If you keep them too wet, their roots will rot and the plant will die.
+So they're amazing for people who forget to water their plants
+because these plants need to dry out completely between watering.
+As you can see in the picture above, there are two glass jars with water and propagated spider plants.
+I'm growing a few small cuttings in water, this way I can see the plants grow roots until they're ready for some soil.
+This is definitely not a requirement for propagating spider plants, but I like to be able to see the growing roots.
+
+This is my shady office, I use the LED strips to provide the plants with some additional light.
+Humidifier
+I've recently gotten a humidifier to create a more humid environment for some of my plants.
+This is not a huge problem in the summer, but the winters with burning radiators make the air very dry.
+This can cause some problems for some plants that like to be in moist soil at all times
+because they'll dry out too quickly. So to combat this dry air,
+the humidifier will help to raise the humidity and provide these plants with a more pleasant environment.
+Of course, I don't have enough humidifiers to take care of all of my plants, so I also spray some of the plants with some water.</content>
+                          </entry>
+<entry>
+                            <title>5 Lessons I've learned by working on a product with non-technical people</title>
+                            <link href="https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people"/>
+                            <id>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</id>
+                            <updated>2019-02-07T12:00:00+01:00</updated>
+                            <published>2019-02-07T12:00:00+01:00</published>
+                            <content>
+5 Lessons I've learned by working on a product with non-technical people
+For the past 4 or so years, I've been working on a product with non-technical people, for non-technical people,
+PunchlistHero.
+Here are the 5 lessons I've learned from this.
+1. Ask questions
+To get started with any work, you need to know what to do. In order to find out what the actual problem the person is facing,
+you have to ask questions, a lot of them. The goal here is to find out what the actual problem is,
+not what the person thinks is wrong in the current situation.
+For example, while working on my own product I asked questions like
+&quot;What would be the simplest way for you to save tasks?&quot; only to find out that the actual problem was that at the time,
+this person had to write these tasks on a piece of paper, then go to the office and insert them into a management system.
+You'd think he was now done with the process, but you'd be wrong.
+He then had to email this entire list to all the other people who had to complete these tasks.
+So by asking a very general question, I got very distorted answers,
+because that person simply didn't know any better than to write things down multiple times.
+Only through asking more and more questions, like: &quot;How do you do your job right now?
+Walk me through your process.” I figured out what the actual problem was.
+I saw several problems here: you have to enter tasks multiple times,
+you have to copy &amp; paste the tasks the tasks into an e-mail, there is no personalized task list for assignees,
+and the whole process just takes far too long.
+2. Listen, don't interrupt
+While people are answering your questions, you need to be quiet and listen.
+This is not simply to be able to hear what they're saying. When people start talking,
+they will often reveal more information than you asked for,
+but they will also give you information that you may not even have thought about asking.
+When you listen, keep notes. You can use these notes to ask follow-up questions.
+If you think that simply recording a conversation is enough, you're sadly mistaken.
+A recording is great if you want to preserve any and all information that's being said,
+but you can't use it for follow up questions. The conversation should have a natural flow.
+When the people you're speaking with feel at ease, you will get all the answers you need for your product,
+and hopefully more.
+3. Look at solutions, not features
+Developers have the horrible tendency to jump the gun and come up with features because
+the user asked for them or because they seem to solve the problem at first glance.
+However, people you speak with don't ask for features, they're asking for solutions to problems
+and are simply assuming that a specific feature will solve that problem. Sometimes it will do the job,
+but don't just assume that it does. You have to do a bit of research and come up with ways to solve the problem.
+Sometimes the first answer is wrong and you have to keep digging for better solutions.
+An example of a problem I've dealt with is the fact that a person used voice input, instead of typing.
+This caused some issues because people would be assigned the wrong tasks.
+A simple solution would be to just use a dropdown with all the available people.
+That would be fine if you had 10 people, but in this case, it was hundreds.
+An auto-complete element would be fine as well, but that takes up extra space and you'd still
+need to use your finger to select the right person. The actual problem was that the person is
+walking through houses and simply doesn't have time to write down a task and then assign it to another person.
+What I came up with was a combination of things. First of all, I added the auto-complete field.
+That way, if you do want to select the person through touch or click, you can.
+The second layer was a bit more involved. This was a server-side solution using Elasticsearch.
+When the assignee was received on the server, it would look if that specific assignee already exists,
+with an exact match. If not, it would try to match it through a fuzzy search in Elasticsearch
+with a minimum relevancy score of 90%, meaning that it was a 90% percent match or more.
+If this still doesn't produce an assignee, it will simply create a new one.
+This already solved 90% of the incorrect assignees. The other 10% could be solved through an extensive merging process,
+where you can assign all tasks to another person and delete the original assignee in one go.
+4. Learn to make compromises
+Sometimes you think you may have the best solution to the problem, which you've used for another
+project before and it worked like a charm. But this may not be the best solution to the problem,
+or the people simply don't know why you even came up with a solution like that.
+This is when you make a compromise, you combine their ideas with your ideas into something you know will work,
+and they would actually want to use. Over time this can always be altered into something that leans more to their
+solution or to your own. But by compromising on this, all parties will feel like they're involved in the final result.
+This will cause them to take a bit of ownership for that solution and present this to others as a good idea.
+5. Make changes very very slowly
+Technical people love new features and new designs. They can explore an application all over again and
+see what's changed. Non-technical people don't like this at all in most cases.
+They just want to do their tasks as quickly as they can. When they're presented with a new design,
+their workflow will be interrupted and they won't be happy with this. Does this mean you can never
+redesign your application? No, of course not! You just have to do this very carefully, incrementally,
+and above all, slowly.
+The point is that they don't have to &quot;re-learn” your whole application, but only small parts at a time. 
+You want to make their experience better, not terrible. When you change features very slowly,
+you will make their experience better over time and you still get to redesign your application.
+If you really &quot;need” to redesign your application, consider versioning everything.
+With this, I mean you start to support multiple environments, multiple versions of the application.
+This seems like a lot of work, but it doesn't have to be. You can simply let the users know that you'll be maintaining
+the current application and fix any bugs that may arise, but you won't add any new features.
+If those users really want the new features, they would have to consider upgrading to the new environment.
+This is how I currently deal with a redesign for PunchlistHero.
+The old version is just a separate branch in the Git repository, so any updates can be done quickly and easily.
+What have you learned from your experiences?
+Do you have any other tips or have you experienced working with non-technical people differently?
+Let me know! I'd love to get in touch on Twitter and get your take on this topic!</content>
+                          </entry>
+<entry>
+                            <title>Learning to speak Norwegian</title>
+                            <link href="https://roelofjanelsinga.com/passions/learning-to-speak-norwegian"/>
+                            <id>https://roelofjanelsinga.com/passions/learning-to-speak-norwegian</id>
+                            <updated>2019-02-10T12:00:00+01:00</updated>
+                            <published>2019-02-10T12:00:00+01:00</published>
+                            <content>
+Learning to speak Norwegian
+Disclaimer: I just like to learn new languages, I don’t actually have any degrees for them.
+Learning a new language is very exciting. I like to do it because it puts my own language to the test.
+I like to compare the grammar and the words when and where I can.
+This helps me learn to use the language in writing and speech.
+The language I’m currently learning is Norwegian, so let’s focus on that one in particular in this post.
+Why would you learn Norwegian?
+I speak Dutch natively and English fluently, and a bit of German here and there.
+These three languages have a few words in common every once in a while, which helped while learning them.
+About two years ago I decided it’d be fun to learn a third language fluently (not counting German here,
+because I’m far from fluent). At the time I was fascinated with Vikings, both the sagas and the television show.
+I wanted to be able to understand them, so I figured out the language they spoke was old Norse.
+The closest thing to old Norse is Icelandic, but since the resources to learn Icelandic were very limited,
+I decided to go for Norwegian. Its grammar is somewhat close to Icelandic and has a few similar sounding words,
+but also has a lot in common with Swedish and Danish.
+After I started to learn Norwegian I found out that there are actually two Norwegian languages:
+Nynorsk and Bokmål. I found out that the two languages sound similar, but are written very differently.
+Nynorsk is written as it sounds and Bokmål is more of an average of all the dialects of Eastern Norway.
+Anyway, I was learning Bokmål, which was further from Icelandic then I would’ve liked,
+but it did help me to understand Swedish and Danish a bit better. 
+While learning Bokmål, I’ve made heavy use of my knowledge of Dutch and English to figure out what
+certain words mean before they tell me what words actually mean. As an example,
+&quot;bus driver&quot; in Dutch is &quot;buschauffeur&quot;, which looks like it’s French, and it is partially.
+&quot;Chauffeur&quot; is a French loanword. The Bokmål word for it is &quot;bussjåfør&quot;. Which looks very intimidating,
+but it sounds identical to the Dutch word. Because of the fact that some words sound very similar,
+I can figure out the meaning very quickly. 
+Grammatical challenges
+A very tricky grammatical thing I found in all the Scandinavian languages is that there is no word for “the”,
+as in: “I like the car”. The Scandinavian languages solve this by adding a suffix to &quot;car&quot;:
+&quot;Jeg liker bilen&quot;. The word for &quot;car&quot; is &quot;bil&quot;. The suffix can look a bit different from time to time,
+which still confuses me every once in a while: &quot;Vi sitter ved bordet&quot;, “We are sitting by the table”.
+This concept was very difficult to get used to, but now I can appreciate it because you can say a lot
+of things with very little words.
+A little update about my progress
+I originally wrote this post in July 2018, it’s now February 2019 and I’m still learning Norwegian.
+It’s still very fun to me and I’ve started to watch videos, news clips, and some other Norwegian media.
+A lot of it is very fast, people speak very quickly. However,
+I can understand a lot of the conversations that are going on in those videos and it’s very exciting! 
+I’m also watching some Icelandic, Swedish, and Danish videos to see if I can understand any of it.
+To my surprise, I can actually understand a few Icelandic words,
+even though it sounds very different from Norwegian. Swedish sounds fairly similar to Norwegian,
+it’s a bit like Flemish is to Dutch and Austrian to German. This means I can understand basic conversations,
+but I get thrown off track by some of the words that are different and don’t sound similar. 
+Danish is a whole different story, however. Danish is very easy to read because I can combine Norwegian,
+Dutch, English, and German to decipher it, but when people are speaking I’m completely lost.
+Danish speech sounds very different from Norwegian. While learning Norwegian I got used to crisp,
+finished words, and then Danish sometimes just combine letters into a separate sound and cut off
+half of the words. So when reading things like subtitles it all makes sense,
+but then when I listen to the conversation it doesn’t seem to line up.
+What about you?
+Have you tried to learn a new language or do you want to? Are you bi-lingual or maybe even multi-lingual?
+How do you learn to use these languages? Let me know what your experiences are on Twitter!
+I'd love to hear from you!</content>
+                          </entry>
+<entry>
+                            <title>Learn to say NO</title>
+                            <link href="https://roelofjanelsinga.com/articles/learn-to-say-no"/>
+                            <id>https://roelofjanelsinga.com/articles/learn-to-say-no</id>
+                            <updated>2019-02-11T12:00:00+01:00</updated>
+                            <published>2019-02-11T12:00:00+01:00</published>
+                            <content>
+Learn to say NO
+When working on tasks during a work day, you can often get distracted by other tasks that need to
+be completed while you're working on something else. As this keeps going on for a while,
+you'll have 10 tasks, of which you completed none. How will you feel at the end of the day?
+You'll feel like you don't know why you were at work,
+you'll feel like you haven't done anything all day. 
+Defend your time
+This is why you need to say NO more often. But saying NO alone won't solve the problem.
+You need to defend your work time, one task at a time.
+Only new tasks when the previous task is completed.
+When the second task is &quot;urgent&quot; and &quot;very important&quot;, take a step back and ask questions.
+Make sure the new task is really THAT important that it needs to be done &quot;right now&quot;.
+Prioritize based on the task, not on who told you to do the task. 
+
+"Prioritize based on the task, not on who told you to do the task"
+
+By arguing the task itself, and not worrying about who told you to do the task,
+you'll be able to avoid the &quot;but the boss told me to do this&quot;.
+Managers and leaders give out tasks, but don't always know what the task actually involves.
+Don't just accept those tasks, but ask questions about it. The goal is to prioritize the task.
+Maybe the task you're currently working on will already take care of the new task,
+maybe your current task has much more impact. Don't simply assume because a manager
+says a task is important, it actually is. Don't ignore the task, however.
+Be prepared to explain your reasoning. Remember, they're still in charge of you.
+Business Decisions
+Saying NO doesn't just apply to day-to-day tasks. You have to learn to say no, as a company,
+to some customer wishes. Sometimes saying YES to everything will get you into trouble.
+You can take on too much work and don't have enough employees to complete the work.
+Sometimes saying YES just compromises your integrity, your ethics, and your office politics.
+Saying NO will be the right choice in these situations.
+Sometimes your company is just not suited for a specific customer need and they'd be better
+off going to another company with their business.
+Controlling expectations
+And as a last piece of advice, it's better to say you won't be able to do something,
+and then actually do it anyway, then saying that you'll do something and never get to it.
+If you say NO and do it anyway, you're seen as &quot;You're awesome for doing this even though
+you didn't really have time for it&quot;. That's what you want right? You don't want to hear
+&quot;You said you'd do this for me and now you still haven't done it&quot;.
+Saying NO on a majority of the requests will help you to control the expectations put on you.
+If you say YES all the time, you'll have too many people depending on you at the same time
+and you'll most likely let a majority of them down.
+Try to avoid this at all costs, just say no.</content>
+                          </entry>
+<entry>
+                            <title>Company culture - productive and pleasant for all</title>
+                            <link href="https://roelofjanelsinga.com/articles/company-culture"/>
+                            <id>https://roelofjanelsinga.com/articles/company-culture</id>
+                            <updated>2019-02-14T12:00:00+01:00</updated>
+                            <published>2019-02-14T12:00:00+01:00</published>
+                            <content>
+Company culture - productive and pleasant for all
+I want to build a company, never take any outside investments,
+and build a livelihood for any employees I'll have (at some point).
+Work should be work, and free time should be free time. When you're working,
+you should be able to work uninterrupted and have a great working day, but then,
+when you're done, you have free time. During this free time, you shouldn't work,
+think about work, or be contacted about work. Here’s how I would manage this:
+40 hours
+40 hours of work per week is plenty of time to get a great amount of work done,
+but most people get interrupted too much to be able to actually work that amount of time.
+I think most people actually really work for 10 hours per week and never actually get close to 40.
+It’s not just in the interest of employees to work uninterrupted either.
+Think about it, as an owner, do you really want to pay for 40 hours if you only get 10 hours of work?
+I didn’t think so.
+Work-life balance
+The company culture will promote personal productivity,
+but at the same time making sure that you’re not working (including thinking about work) during your off-time,
+weekends, and holidays. This means that every individual gets the chance to work how they want to work,
+where they want to work, and at what time. It also doesn’t matter how short or long you spend on a task,
+as long as it’s done at the deadline.
+Projects
+There will be no long projects because long projects drain anyone’s motivation.
+The longest project will take 2 weeks. This seems very short, but any feature/project has a bare minimum.
+If it turns out that you need 4 weeks to complete the “full version” of the feature,
+start stripping the “nice to have” aspects and only build the bare minimum.
+Through iteration, you can always add the “nice-to-have” features at a later stage.
+The bare minimum is no excuse for a non-working feature but challenges you to prioritize your work
+and skip all the bloat.</content>
+                          </entry>
+<entry>
+                            <title>The elephant in the room: burnouts</title>
+                            <link href="https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts"/>
+                            <id>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</id>
+                            <updated>2019-02-22T12:00:00+01:00</updated>
+                            <published>2019-02-22T12:00:00+01:00</published>
+                            <content>
+I dislike all the negative images about burnouts,
+so here's a calm one
+The elephant in the room: burnouts
+Programming languages are evolving lightning fast, businesses are ever demanding,
+and employees are being pushed to the edge.
+Today's businesses are increasingly built to push people towards a burnout,
+and it's tragic how people seem to accept this to be normal.
+Employers expect their employees to slave away to make (unrealistic) deadlines,
+instead of scaling down scopes to make the deadline more realistic.
+SPOILER ALERT: There is a positive message in this post, keep reading.
+Also, the advice is at the bottom.
+The problems
+I've been on the brink of a burnout three times in 2018, three times.
+After the third time, I stopped accepting the fact that nothing was being done to
+prevent this from happening. So I took matters into my own hands and learned to say no.
+“Can you do this for me right now?” “No, I'm working on something else right now.
+I'll get to your task after I've finished mine.” This helped,
+but also caused irritation and is not sustainable in the long run.
+Sometimes tasks just have to be done “right now”.
+Dealing with the high demand on you as an employee
+To be able to keep up with this speed, I had to find hobbies that had nothing
+to do with computers or sitting still in the same place for a longer period of time.
+I started to do things outside, just anything, and this worked really well.
+But obviously didn't solve the root of the problem.
+The root of the problem was that work was draining and unpleasant.
+That's where I've tried to work with other departments to make it better for everyone.
+To avoid irritation between the departments,
+I've tried to make clear that every single time we're being interrupted with a
+question it doesn't take just us the time to listen and answer the question to
+get back to what we were doing. It takes an additional 5–20 minutes,
+depending on how challenging the task is we're working on, to get back to work.
+To put this in perspective: we have three developers in one room if
+one of them gets asked a question, 3 x 5–20 minutes gets wasted.
+So the solution (for now) is to send the question through slack,
+this will still disrupt one person's concentration, but at least not all three. 
+Team check-in meetings
+To come up with some ways to solve this problem, we had a team meeting.
+We're asking tough questions and expect tough answers.
+So for example: what didn't go so well this week and what would need to happen to
+make this better next week? Putting all frustrations on the table has, ironically
+enough, made the team tighter and work better together. 
+We've concluded that we're all feeling very similar about our current work
+situation and that we should put in an effort to get more work done while
+being less stressed, and having a good working relationship with your colleagues.
+The main goal: how can we do this together?
+Solutions
+Make communication asynchronous, have quiet periods of time in the office,
+make it clear that interruptions are unacceptable.
+Those are just some of the solutions we've worked out. 
+Moving from Slack to Basecamp
+One of the things that distracted us and often did more harm than good is the
+constant synchronous communication between everyone.
+Sending files and finding them later one was impossible.
+Since we've moved away from Slack, we've been able to work much more efficiently.
+Nobody expects an answer right away anymore and instead just waits until the other
+person has some free time to check the messages and formulates a thoughtful message.
+The fact that you can upload files in a specific spot, instead of a chronological chat,
+it helps to avoid irritation. “I sent you that last week”, doesn't really happen anymore.
+The internal communication has become much more pleasant.
+Library rules
+To minimize the interruptions, even more, we've worked out a few hours per day
+when it's quiet. No talking, no interruptions, quietness. We've implemented
+library rules (quiet times) in the morning hours and the late afternoon,
+so when people get to work and leave to go home, it's quiet.
+These were always huge moments of interruption because there is a lot going on.
+But now it's quiet and people can work on things.
+This really helps to focus on some of the larger tasks,
+while still giving people a chance to talk during the hours in the middle of the workday.
+We've also made it clear to everyone, that interruptions are unacceptable.
+Everyone's time is valuable and you have no right to decide that your time is
+more important than others'. If you put it in this perspective,
+people will think twice about interrupting you. So far, it's helped a lot,
+people just send messages, and e-mails instead of coming to your desk,
+and this is great. 
+There is no golden rule to preventing burnouts
+There is no golden rule, but there are definitely things you can do to make it less severe. 
+
+First, get a hobby that has nothing to do with your job. If you're in an office, go outside,
+do things outside. You need variation in your life,
+so figure out what's opposite of your job, and take that up as a hobby. 
+Breathe, do meditation. Your head is constantly racing and stressed,
+this is the best way to get burnout. So do meditation, clear your head, relax. 
+The last thing is, try to influence your coworkers and office environments to be calmer.
+In large companies, this may be impossible, but if you work at a small company,
+this is definitely a thing you can do. Smaller companies move more quickly.
+
+If you've ever had burnout, what have you done to make it go away?
+I'd like to hear from you! Contact me on
+Twitter
+and share your story.
+I'd like to give a huge shout out to my coworkers for embracing the changes
+I've implemented. It makes a work day much more productive and pleasant.
+Since the start of writing this post and with all the implemented changes,
+I haven't felt anything but productive at work.</content>
+                          </entry>
+
+</feed>

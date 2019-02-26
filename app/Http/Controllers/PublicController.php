@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
 use Main\Classes\Markdown;
@@ -221,7 +222,7 @@ class PublicController extends Controller
      * @param string $path
      * @return mixed
      */
-    private function mapArticleForViewing($article, string $path = 'articles')
+    public function mapArticleForViewing($article, string $path = 'articles')
     {
         $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
 
@@ -383,5 +384,12 @@ class PublicController extends Controller
         }
 
         return $class;
+    }
+
+    public function atomFeed()
+    {
+        $atom_feed = Storage::get('atom.xml');
+
+        return response($atom_feed, 200);
     }
 }
