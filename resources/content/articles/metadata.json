@@ -150,5 +150,9 @@
     {
         "filename": "how-to-search-whole-world-with-solr-spatial-search.md",
         "postDate": "2019-02-26"
+    },
+    {
+        "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
+        "postDate": "2019-02-28"
     }
 ]
