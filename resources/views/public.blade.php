@@ -89,6 +89,20 @@
 
         @show
 
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.roelofjanelsinga.com",
+          "name": "Roelof Jan Elsinga",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+31-6-2232-4113",
+            "contactType": "Customer service"
+          }
+        }
+        </script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             (function() {

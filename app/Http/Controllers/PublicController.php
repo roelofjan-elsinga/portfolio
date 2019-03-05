@@ -232,7 +232,11 @@ class PublicController extends Controller
         $article->image = $this->getTagAttribute($content, 'img', 'src')[0];
         $article->description = $article->description ?? $this->getDescriptionFromContent($content);
 
-        $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
+        $postDate = Carbon::createFromFormat("Y-m-d", $article->postDate);
+
+        $article->postDate = $postDate->format("F jS, Y");
+        $article->rawPostDate = $postDate;
+        $article->rawUpdatedDate = isset($article->updateDate) ? Carbon::createFromFormat("Y-m-d", $article->updateDate) : $postDate;
         return $article;
     }
 

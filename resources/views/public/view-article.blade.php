@@ -21,6 +21,37 @@
 
         </main>
     </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://google.com/article"
+      },
+      "dateModified": "{{$article->rawUpdatedDate->toIso8601String()}}",
+      "datePublished": "{{$article->rawPostDate->toIso8601String()}}",
+      "headline": "{{$article->title}}",
+      "author": {
+        "@type": "Person",
+        "name": "Roelof Jan Elsinga"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Roelof Jan Elsinga",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{url('/images/icons/favicon-96x96.png')}}"
+        }
+      },
+      "image": [
+        "{{url($article->image)}}"
+      ],
+      "description": "{{$page->description}}"
+    }
+    </script>
+
 @endsection
 
 @section('footer')
