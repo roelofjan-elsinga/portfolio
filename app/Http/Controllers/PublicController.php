@@ -230,7 +230,7 @@ class PublicController extends Controller
 
         $article->title = $this->getTextBetweenTags($content, 'h1')[0];
         $article->image = $this->getTagAttribute($content, 'img', 'src')[0];
-        $article->description = $this->getDescriptionFromContent($content);
+        $article->description = $article->description ?? $this->getDescriptionFromContent($content);
 
         $article->postDate = Carbon::createFromFormat("Y-m-d", $article->postDate)->format("F jS, Y");
         return $article;
