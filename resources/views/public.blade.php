@@ -103,6 +103,21 @@
         }
         </script>
 
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Roelof Jan Elsinga",
+          "url": "https://roelofjanelsinga.com",
+          "sameAs": [
+            "https://twitter.com/RJElsinga",
+            "https://medium.com/@roelofjanelsinga",
+            "https://github.com/roelofjan-elsinga",
+            "https://www.linkedin.com/in/roelofjanelsinga/"
+          ]
+        }
+        </script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             (function() {
