@@ -17,14 +17,20 @@ tags:
     image_large:
   articles:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
-    description: I've written a vew articles over the years, this is a list of all of them
+    description: >
+      I've written several articles about things I was working on.
+      Writing about my projects and problems helped me to reflect on my development
+      choices and to keep learning new things and improving on old skills.
     author: Roelof Jan Elsinga
     title: My articles - Roelof Jan Elsinga
     image_small:
     image_large:
   passions:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, passions, articles
-    description: I have many passions besides my work, so this is where I've posted articles about them
+    description: >
+      Here you can read about the things I do in my free-time. Unlike my blog posts about my professional development,
+      these are about the other good things in life. My job keeps me glued to my computer for at least 8 hours per day
+      so I try to find activities that have nothing to do with that.
     author: Roelof Jan Elsinga
     title: My passions - Roelof Jan Elsinga
     image_small:
