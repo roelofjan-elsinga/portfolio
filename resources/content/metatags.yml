@@ -1,7 +1,9 @@
 tags:
   home:
     keywords: roelof, jan, elsinga, portfolio, work, development, design
-    description: This is the homepage of Roelof Jan Elsinga
+    description: >
+      Hello, I'm Roelof Jan. Full-stack web developer & Scrum master.
+      I love building products people can't wait to interact with.
     author: Roelof Jan Elsinga
     title: Roelof Jan - Full-stack web developer
     image_small:
@@ -36,5 +38,5 @@ tags:
     image_large:
 
   default:
-      image_small: https://roelofjanelsinga.com/images/me.jpeg
-      image_large: https://roelofjanelsinga.com/images/me.jpeg
+      image_small: https://roelofjanelsinga.com/images/image_bw_sm.jpg
+      image_large: https://roelofjanelsinga.com/images/image_bw_sm.jpg
