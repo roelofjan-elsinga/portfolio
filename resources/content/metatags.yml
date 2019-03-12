@@ -34,3 +34,7 @@ tags:
     title: Uh oh! - Roelof Jan Elsinga
     image_small:
     image_large:
+
+  default:
+      image_small: https://roelofjanelsinga.com/images/me.jpeg
+      image_large: https://roelofjanelsinga.com/images/me.jpeg
