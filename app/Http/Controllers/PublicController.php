@@ -236,7 +236,7 @@ class PublicController extends Controller
 
         $article->postDate = $postDate->format("F jS, Y");
         $article->rawPostDate = $postDate;
-        $article->rawUpdatedDate = isset($article->updateDate) ? Carbon::createFromFormat("Y-m-d", $article->updateDate) : $postDate;
+        $article->rawUpdatedDate = isset($article->updateDate) ? Carbon::createFromFormat("Y-m-d H:i:s", $article->updateDate) : $postDate;
         return $article;
     }
 

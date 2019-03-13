@@ -4,7 +4,7 @@
     
               <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-02-27T19:32:58+01:00</updated>
+              <updated>2019-03-13T07:26:16+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -652,7 +652,7 @@ I haven't felt anything but productive at work.</content>
                             <title>How to search "the whole world" with Solr Spatial Search</title>
                             <link href="https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search"/>
                             <id>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</id>
-                            <updated>2019-02-26T12:00:00+01:00</updated>
+                            <updated>2019-03-13T07:26:00+01:00</updated>
                             <published>2019-02-26T12:00:00+01:00</published>
                             <content>
 How to search &quot;the whole world&quot; with Solr Spatial Search
@@ -661,7 +661,7 @@ with IsWithin(), you can't use a square shape. Unless you use it in a
 counter-clockwise manner, which didn't work for me. According to the WKT standards,
 a square is not a valid shape, so to solve this problem,
 simply add two points in the middle of the longitude line.
-My initial solution was a self closing shape that only had its four corners defined.
+My initial solution was a self-closing shape that only had its four corners defined.
 But this either returned errors or gave me no results. This means that
 MULTIPOLYGON(
     (
@@ -674,7 +674,7 @@ MULTIPOLYGON(
         )
     )
 )
-which is a self closing square, gives an error. When using values like 175 and -175,
+which is a self-closing square, gives an error. When using values like 175 and -175,
 which are not good enough for my case, you don't get an error,
 but I simply didn't get any search results.
 But (notice the two extra points: 0 -85.05112877980659 and 0 85.05112877980659)
@@ -693,12 +693,12 @@ MULTIPOLYGON(
 )
 is completely valid and will get you the results you want.
 The reason I'm not using -180 to 180 and -90 to 90 is that the values I used are
-the maximum values Google uses for it's maps. I use Google maps as an input for
+the maximum values Google uses for its maps. I use Google maps as an input for
 saving Polygons and MultiPolygons,
 so there is no point in going past those maximum values.
 I wasted three hours on this, so you don't have to! Let me know on
 Twitter if you've ever been stuck on a bug
-like this that seems easy, but you end up spending hours on it any way!</content>
+like this that seems easy, but you end up spending hours on it anyway!</content>
                           </entry>
 <entry>
                             <title>How I reduced my docker image by 55%</title>
