@@ -145,14 +145,17 @@
     },
     {
         "filename": "the-elephant-in-the-room-burnouts.md",
-        "postDate": "2019-02-22"
+        "postDate": "2019-02-22",
+        "description": "Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time."
     },
     {
         "filename": "how-to-search-whole-world-with-solr-spatial-search.md",
-        "postDate": "2019-02-26"
+        "postDate": "2019-02-26",
+        "description": "When using a Polygon or MultiPolygon for searching on a SpatialField with IsWithin(), you can't use a square shape unless it's counter-clockwise."
     },
     {
         "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
-        "postDate": "2019-02-28"
+        "postDate": "2019-02-28",
+        "description": "Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image."
     }
 ]
