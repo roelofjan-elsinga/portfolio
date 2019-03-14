@@ -4,7 +4,7 @@
     
               <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-03-13T07:26:16+01:00</updated>
+              <updated>2019-03-14T15:20:48+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -43,6 +43,9 @@ built with FreeNAS, is quick, reliable, but also very energy efficient and low i
 More posts will follow on this and hopefully at that point I have more concrete ideas
 about system specifications, specific components I'd like to use and the estimated cost
 of this whole project.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/video-streaming.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Benefits of a single page application</title>
@@ -60,6 +63,9 @@ Second of all, a single page application generally takes up less bandwidth and l
 Convertable to a hybrid application
 And finally, the third benefit highlighted in this post, convertibility. More and more companies are bringing out applications for iPhone, Android, etc. these days. Often, these applications are made from scratch and are being built by iOS and Android developers. This is a very costly process, often costing 50.000+ for a single application. What if there was a way to convert your existing website into a mobile application, without a lot of extra development? Well with single page applications, made with Javascript, this is possible. There are countless of programs that can help you convert a simple website to a hybrid application, PhoneGap for example. This program essentially builds a shell around your website, allowing it to execute like a mobile application on your phone. A single page application, built on Javascript can easily be converted into such an application, as long as the underlying API endpoints are accessible by the application. Of course this will never be as smooth as an actual native mobile application, but it offers for a quick and easy way of testing out a mobile application.
 These points are just a few of many of the benefits of single page applications. But keep in mind that benefits always come with trade offs. There are also disadvantages of building single page applications, and these will be highlighted in a next blog post. The highlighted points in this article are some of the main parts I have encountered building several single page applications of the past year. I'm sure more advantages and disadvantages will show up, but only time will tell.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>The future of machine learning</title>
@@ -77,6 +83,9 @@ This is why I think machine learning will become much bigger than it already is.
 It will need to be secure
 With all this data comes a lot of risk as well. Keeping the data secure is very important for the integrity of the system it's being used for. Anyone from the outside would be able to learn anything and everything about a person without having met this person. This is a scary thought. Not only could this result in dangerous (stalking) situations, it could also cause private and professional harm if it turns out a person has a private interest in non conventional movies, products, or services. This could cause loss of image for people, groups, businesses, and communities.
 Machine learning and big data are incredibly useful when they are used in the right way. They can help make the lives of all kinds of people easier, but could also be a threat. Systems will be able to give very personalised advice, suggestions, and help in general. Security will need to be kept up-to-date at all times, because leaked data can cause harm on many different levels.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/machine-learning.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Windows or Linux?</title>
@@ -102,6 +111,9 @@ As mentioned before, installing programs on a Linux based system can be done thr
 Compromise
 So is a compromise possible between Windows and Linux? Making use of all the advantages of both systems while filling the disadvantages. Well yes there is. There are two scenarios that come to mind for me. A dual boot system, meaning you have both a windows system installed on your harddrive, as well as a Linux based system. On starting your PC you can choose which operating system to use. This can be great when you want a real experience, no slow loading times, but a real Windows or real Linux environment. If, however, you don't want to deal with this, a virtual machine is a great option. What this allows you to do is boot up a Linux based system inside a window on your Windows based system. This way you don't have to bother with installing a seperate operating system on your system and you can easily switch between your Windows system and your Linux based system. This could be ideal for testing purposes, application development, or just quick tasks.
 So based on your needs you can go for either a Windows based system, a Linux based system or a combination between the two. Personally I have two different systems, one for Ubuntu (A Linux distro) and another one for Windows 10. This makes developing applications very easy, because I need some pieces of software that are only available on a Linux based system. I can just simply set up a connection between the two systems and they work with each other perfectly. But this is only an isolated example, there are a ton of different scenarios possible in which a combination of the two operating systems is a very desirable setup. But try and see for yourself. Give different distro's a try, try making connections, combine systems and see what you can do with them.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
@@ -122,6 +134,9 @@ Loading speeds through caching
 Last but not least, loading speeds of pages can be drastically improved. Because NodeJS creates an HTML string on every page refresh, it can be very easily cached. This way Node can just look in the server memory and see if a cached version of the page exists. When it does, it can return this cached version instead of rendering the React view on the fly. Of course you should always set a maximum time between caches of pages, because otherwise it could be possible that your fancy updated pages will never actually be presented to the user and all your work will be for nothing. A good time guideline for pages that change often could be a few hours to a day. Other pages can be cached for a week or two. A good average is to cache pages for one day at a time, to make sure users get the updated experience soon enough, while still benefitting from the faster loading times of pages.
 Conclusion
 So what does it mean to share code between the server and the front-end? Well it means that user experiences are smooth, responds times are low, and implementing new features can be almost instantanious. There is no need to write the same logic twice (which I catch myself doing a lot in Angular), because the code for the front-end and backend is exactly the same. Because the code is exactly the same, SEO can be done easily, through server-side rendering, pages are always available, even after page refreshes, and page reloads can be made incredibly quick through page caching. Using the same language all across the application is quick, convenient, and it makes developing a delight, because you only need to know one language for everything.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/its-better-together.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Building your own computer</title>
@@ -140,6 +155,9 @@ One application which really needs a combination of all the best components is a
 Of course there are more applications you may want to build a computer for. Maybe you just want a very simple computer for text editing. In this case you can go easy on all parts and go for the bare minimum your OS (Operating System) needs in order to function well. That's where building your own computer has another advantage. You can make it as cheap or as expensive as you want. You won't need to fit a budget around a choice, but you fit your choice around your budget. If you say that, for example, you want to spend 500 euros/dollars on a computer, but you want to be able to play video games on it without any problems. Well you start to select a graphics card that will run every single game you play or plan on playing. After you have figured out which graphics card fits your needs, you can select a processor, the amount of RAM you think you'll require (please go for at least 8GB these days), and then a motherboard that'll connect these pieces together perfectly. You can go for a cheap harddrive, but please don't cheap out on a power supply. A great quality power supply is your best friend and will keep your computer happy. Aim for an 80 plus bronze quality checkmark or higher. You can even select which case you'd want. This can really go either way, a really cheap case, or a very fancy, but expensive one. Just make sure the motherboard you picked out, and all the other components, will fit in your chosen case. Usually this is marked by motherboard size (ATX, mini-ATX, micro-ATX, etc.).
 Reflecting
 As you can see, the possibilities are endless. Even if you decide to change your mind on the purpose of your computer, upgrading is easy. Just add a quicker processor, a faster graphics card, an SSD or M.2 drive or whatever else you may need to get your desired machine. And because you built your computer yourself in the first place, you'll know exactly which parts will be compatible, or at least you'll be able to find out with a bit of Googling. So next time you're thinking of buying a new PC, but you don't want to take the easy way out, or have a very specific need or budget, think about making your own computer. It can be a lot of fun, a great learning moment, or just an interesting experience.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/construction.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>What practical use can VR have for the web?</title>
@@ -159,6 +177,9 @@ So what's stopping us? Well cost first of all. VR gear is expensive, computers a
 What about the future?
 If all of the previous conditions have been met, where would that VR? VR could potentially take over the role of the personal computer. It sounds like a very distant future, but with the rate hardware currently is being developed, and it only going quicker and quicker, this could be as quick as a few years. It will not happen over night, a lot of doubt will and ridicule will come with it, but this is nothing different from the development of mobile phones and personal computers. It's a cycle that will be repeated over and over again for every sort of technology, and VR is no different.
 Once, however it gets past this stage, when both hardware and software are developing quickly, efficiently, and are of high quality,spreading will start. When the costs of being able to use VR gear lower, it'll spread like a wildfire in a dried out countryside. VR will only become more prominent as more and more people are starting to experience real life applications for the use of VR. Once businesses are starting to use it to promote their services, helping customers and potential customers with their needs, it will get a real life application besides gaming and entertainment. It'll slowly become integrated in everyone's life. Keep in mind, this may be in the current state, with glasses headphones and controllers, but it very well may be more like hologrammic images of some sort. Either through Google Glass like products, or some other, newer invention. VR is coming, be ready for it.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>IndexedDB: Caching your data on the client side</title>
@@ -174,6 +195,9 @@ So why was localStorage not good any more? Well there are two simple reasons for
 Why would you cache the data on the client?
 But why use IndexedDB at all? Isn't it just another layer that you need to pay attention to when you're developing an application? Absolutely, but also look at what it can do for you, as a developer, your server, and your users. If done correctly, you can harnass IndexedDB to cache all your incomming &quot;static&quot; data. What this accomplishes is that you only have to load a specific resource once. When you loaded it from the server, you can save it and use the saved resource next time it's needed. This accomplishes two things. One, your server doesn't have to take duplicate requests from an individual user. Two, the requested page will load quicker, since the request to the server is no longer necessary and the resource is already saved to the RAM memory. This will be beneficial to the user experience of your application.
 If you use localStorage, IndexedDB or nothing at all, making an application as efficient as possible is very important. It's important for your users, but also for your server. Nothing is worse than overloading the server or causing a bad user experience. Whatever you do, make sure you do it well. If that means you will need to use a caching solution like localStorage, sessionStorag, or IndexedDB (WebSQL is deprecated, don't use it) go for what best fits your needs. Do you need something simple like keeping data close between views? Give localStorage or sessionStorage a try. It's excellent for small tasks. If you need a more complex caching solution, that is capable of saving larger sets of data and does not block the DOM, IndexedDB is exacly what you should be using. To make this even better, use it in combination with service workers and you're on your way to make a web application that's not only available when you're online, but also when you have no internet connection whatsoever.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Use software for what it's made, and you'll see the benefits!</title>
@@ -192,6 +216,9 @@ Solarium is a PHP library to interact with a Solr server. This was easily instal
 Was it worth it?
 So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents etc. This meant that I could replace most of my manual filtering in PHP with the built in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually, because relevant documents in my case were heavily dependent on distance between the requested location and the product. Solr does all of this for you, on the fly. Of course this bring a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
 I'm very happy I made the switch. Not only did it speed up search, but it also helped analyzing data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>The importance of server-side caching</title>
@@ -209,6 +236,9 @@ But it doesn't just save hardware resources, it's also quicker. Think about it: 
 I mentioned user experience quickly before. There is nothing more annoying than long loading times and it will definitely make users leaving your website. Google said at their Chrome Dev Conference last year that if your app doesn't have a first draw (showing some kind of screen) within 3-5 seconds, 50% of visitors will leave your website. Now I'm not a user experience expert at all, so I can't confirm or deny this statement, but it makes sense. Often time I'll do the same thing. With that said, if you can make your app load quicker in any way, do it. If you have a lot of static data that needs to be loaded from a database upon first entry in your application, make sure to cache all of this. Make the first draw as quick as you can. When caching data to files or the database does not work well enough, try Memcached. When this is still not quick enough, go all out with Redis.
 Everything has disadvantages
 I can only praise caching and leave it at that, but that wouldn't paint the whole picture. Of course there are also disadvantages to it. For example, it's very tough to cache data that changes a lot. It's definitely possible, but you end of having to synchronize the cached data with the new data on every single (important) change. This makes it hell for developers. My rule of thumb on this is: when the data can change at least once a day or it will need to be available right away when changed, do not cache it. If, however, the data never really changes or you really need a performance boost for something, go ahead and cache it. Make it easier for yourself, not harder. The amount of times I was wondering why the page wasn't updating because of cache is too high. Learn from my mistakes and don't cache anything if you're working on that particular part of your application.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/airshow.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>How to see if your application works</title>
@@ -223,6 +253,9 @@ It's things like that here and there, for serious, but also little things that c
 But why would you want a complete OS instead of just a lightweight Docker installation? Believe me, I tried to set up Docker and work with it like that, but I simply couldn't get it to work on my Windows machine and going with a virtual machine was just so much easier. Also, the installation process can be run on many different host operating systems and even on remote hosts. So the environment on all these machines is also identical. You don't have to think about bottlenecks in any way, shape, or form and it just works for me. Call me crazy, I won't blame you. Docker is probable far...far easier and I just overcomplicated it, but virtual machines do the exact same thing for me. Identical environments with identical permissions on all the different machines, so everything always works identically.
 NOTE:
 This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>How to index a single page application built in AngularJS</title>
@@ -240,6 +273,9 @@ Server-side rendering! Or not?
 So the (easy, not so easy) solution is to use server side rendering or prerendering. These terms are two very different things. For a framework like AngularJS, in which the controllers and directives are tightly coupled with the DOM (the HTML) server side rendering is almost impossible. So that option is out. That leaves us with prerendering pages. What does this mean? Well it means that the server serves a static version of the page when this is desired. This is the most useful for Facebook's open graph crawler, because it finally understands the data it's receiving. There is a title, description, tags, and images and it just works. A less and slightly strange solution could be to make the loading screens of your applications resemble the view it's about to serve. Right now there is one well-known prerender service available through prerender.io. I have been using their service for over a year and it works, well enough. It's open source and can be pulled from Github.
 I wanted something better
 However, I wanted something else, more of a Hybrid solution. Right now we use a sitemap generator that crawls all the pages and makes an enormous sitemap for Google. But to me this seems like two jobs that could be combined into one. I mean if you're crawling every single page on the website anyway, why not prerender all those pages at the same time? Well this is what I built. It's a solution that not only serves static pages when they're requested, but it's also a website indexer that's able to index any page on the fly in case it's not prerendered yet. So have I built this in Node? No I have not. I actually built the crawler in Python. Why? Well I've built a crawler in it before. That one was like most crawlers only able to index static pages. So I enhanced it with PhantomJS to be able to fully render dynamic pages and save them to a file. I then integrated this Python project in my Laravel project, synchronizing all of the cached pages to an S3 drive for swift requests. If you're interested to check it out, you can clone it from Github. If you think you can do better (and I think most of you can, because I'm a huge Python Noob), create pull requests to improve it with me. Anyway, this solution is able to crawl, index, and cache static files of the entire website, which I think is pretty cool!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" 
+                                type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
                             <title>Improving development hiring</title>
@@ -254,6 +290,9 @@ When applying to development jobs, you're often asked to do a coding test to pro
 Let the developer work together with your developers in a team on real projects, just as if the developer was already hired. Coding is only 5% of the job. Communication skills, team work, and culture fit are so much more important. A person can learn how to code, but not learn how to be a team player, and a person to perfectly for in your company. Hire based on team fit, not just coding skills.
 2. Open source work
 Has the applicant worked on any personal projects? Perfect! Use that to judge the programming skills. It's much better to look at code that a person enjoyed writing then code that's being forced into a limited timeframe. Look at how they comment their code, and whether they take care of something simple as a consistent coding style and formatting. A passionate and organized developer is what you want, don't judge them by the forced positivity of a coding test.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/keyboard.jpg" medium="image" 
+                                type="image/jpeg" width="1080" height="715" />
                           </entry>
 <entry>
                             <title>Plants in my living space</title>
@@ -308,6 +347,9 @@ This can cause some problems for some plants that like to be in moist soil at al
 because they'll dry out too quickly. So to combat this dry air,
 the humidifier will help to raise the humidity and provide these plants with a more pleasant environment.
 Of course, I don't have enough humidifiers to take care of all of my plants, so I also spray some of the plants with some water.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/passions/fittonia.png" medium="image" 
+                                type="image/png" width="1280" height="720" />
                           </entry>
 <entry>
                             <title>5 Lessons I've learned by working on a product with non-technical people</title>
@@ -398,6 +440,9 @@ The old version is just a separate branch in the Git repository, so any updates 
 What have you learned from your experiences?
 Do you have any other tips or have you experienced working with non-technical people differently?
 Let me know! I'd love to get in touch on Twitter and get your take on this topic!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/light_bulbs.jpeg" medium="image" 
+                                type="image/jpeg" width="1351" height="901" />
                           </entry>
 <entry>
                             <title>Learning to speak Norwegian</title>
@@ -459,6 +504,9 @@ What about you?
 Have you tried to learn a new language or do you want to? Are you bi-lingual or maybe even multi-lingual?
 How do you learn to use these languages? Let me know what your experiences are on Twitter!
 I'd love to hear from you!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/passions/pencil_paper.jpeg" medium="image" 
+                                type="image/jpeg" width="1350" height="900" />
                           </entry>
 <entry>
                             <title>Learn to say NO</title>
@@ -509,6 +557,9 @@ Saying NO on a majority of the requests will help you to control the expectation
 If you say YES all the time, you'll have too many people depending on you at the same time
 and you'll most likely let a majority of them down.
 Try to avoid this at all costs, just say no.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/clock.jpg" medium="image" 
+                                type="image/jpeg" width="1350" height="900" />
                           </entry>
 <entry>
                             <title>Company culture - productive and pleasant for all</title>
@@ -545,6 +596,9 @@ start stripping the “nice to have” aspects and only build the bare minimum.
 Through iteration, you can always add the “nice-to-have” features at a later stage.
 The bare minimum is no excuse for a non-working feature but challenges you to prioritize your work
 and skip all the bloat.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/office.jpeg" medium="image" 
+                                type="image/jpeg" width="1350" height="901" />
                           </entry>
 <entry>
                             <title>The elephant in the room: burnouts</title>
@@ -647,6 +701,9 @@ I'd like to give a huge shout out to my coworkers for embracing the changes
 I've implemented. It makes a work day much more productive and pleasant.
 Since the start of writing this post and with all the implemented changes,
 I haven't felt anything but productive at work.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/meditation.jpeg" medium="image" 
+                                type="image/jpeg" width="1393" height="879" />
                           </entry>
 <entry>
                             <title>How to search "the whole world" with Solr Spatial Search</title>
@@ -699,6 +756,9 @@ so there is no point in going past those maximum values.
 I wasted three hours on this, so you don't have to! Let me know on
 Twitter if you've ever been stuck on a bug
 like this that seems easy, but you end up spending hours on it anyway!</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/solr_logo.png" medium="image" 
+                                type="image/png" width="1200" height="800" />
                           </entry>
 <entry>
                             <title>How I reduced my docker image by 55%</title>
@@ -751,6 +811,9 @@ This brought my image size down to its final 555mb.
 Do you have any more tips on reducing docker images further?
 Make sure to contact me on Twitter! I can always use advice on these matters,
 as I'm still learning new things every single day.</content>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/steel_tower.jpeg" medium="image" 
+                                type="image/jpeg" width="1200" height="798" />
                           </entry>
 
 </feed>

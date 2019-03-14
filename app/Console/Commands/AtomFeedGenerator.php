@@ -111,6 +111,18 @@ class AtomFeedGenerator extends Command
 
                 $description = strip_tags($article->content, ENT_QUOTES);
 
+                $image_string = '';
+
+                if (isset($article->image)) {
+                    $image_url = Canonical::getCanonicalDestination() . $article->image;
+
+                    $image_size = getimagesize($image_url);
+
+                    $image_string = "<media:content xmlns:media=\"http://search.yahoo.com/mrss/\" 
+                                url=\"{$image_url}\" medium=\"image\" 
+                                type=\"{$image_size['mime']}\" width=\"{$image_size[0]}\" height=\"{$image_size[1]}\" />";
+                }
+
                 return "<entry>
                             <title>{$article->title}</title>
                             <link href=\"{$this->domain}/{$article->type}/{$url}\"/>
@@ -118,6 +130,7 @@ class AtomFeedGenerator extends Command
                             <updated>{$updatedAt->toAtomString()}</updated>
                             <published>{$createdAt->toAtomString()}</published>
                             <content>{$description}</content>
+                            {$image_string}
                           </entry>\n";
             })->implode('');
 
