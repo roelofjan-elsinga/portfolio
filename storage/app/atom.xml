@@ -4,7 +4,7 @@
     
               <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-03-14T15:52:07+01:00</updated>
+              <updated>2019-03-14T21:17:51+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -317,6 +317,901 @@ The age (read: a few years) old question...how do you index a single page applic
                                 type="image/jpeg" width="1920" height="1080" />
                           </entry>
 <entry>
+                            <title>Why I use SASS rather than just CSS</title>
+                            <link href="https://roelofjanelsinga.com/articles/using-sass-rather-css"/>
+                            <id>https://roelofjanelsinga.com/articles/using-sass-rather-css</id>
+                            <updated>2017-06-01T12:00:00+02:00</updated>
+                            <published>2017-06-01T12:00:00+02:00</published>
+                            <content>
+Why I use SASS rather than just CSS
+CSS to LESS
+When I first started out with web design &amp; development,
+CSS was this tool to make HTML pages look better.
+This was just before responsive web design started becoming the new industry standard for web
+design. Websites were zoomed out and broke on mobile devices, but this was normal at that time.
+The first time I started learning about the media queries within css was when I was introduced
+to Twitter Bootstrap, which I still use to this day. I still use this, because nowadays
+I'm more of a web developer than a web designer, so most css is not done by me any more.
+Anyway, Twitter Bootstrap got me into using more of the features CSS3 offers.
+During my internship I started to look for ways to make writing CSS more efficient,
+because I caught myself copying and pasting styles constantly.
+This is where I discovered LESS. LESS gave me what I wanted at the time, nested CSS.
+This helped me to reduce copying and pasting CSS for the most part.
+LESS to SASS
+Yet I felt like LESS wasn't quite there yet after I'd been using it for a few months.
+Jerke and a guy I worked with, led me to starting out with SASS.
+This is where I knew I found what I was looking for all along. SASS offers nested CSS,
+but also functions and mixins. This helped me to (almost) never copy CSS again.
+One of the great things I have been using a lot more lately are functions.
+These help me to calculate exactly what margins, widths and heights should be.
+Obviously since I discovered Flexbox this has been used less, but it still has its applications.
+Before, when I started out with LESS, I used a program called Panda to compile my CSS files.
+This all changed when I switched to SASS. This is where Grunt came in.
+Grunt constantly watches and compiles my SASS files, so I can instantly test the changes
+I have made.
+A single file
+But back to using SASS rather than CSS. One of the advantages of using SASS (and LESS) is that
+I can easily include all &quot;modules&quot; (files) in one main file. This way I can make
+Grunt/Gulp/Webpack watch for changes in all files, when it detects this, it compiles one new file.
+This helps to keep the file loading on the website efficient,
+but it doesn't trade efficiency for ease of use. What I mean with this is that when I was using
+normal CSS files, I needed to create multiple files to keep different functionalities separated.
+Obviously this is not the way I wanted to work. With SASS it loads one single file,
+that is made up out of an unlimited amount of separate files.
+These I can easily manage these different files, while Grunt does all the compiling for me.
+That way ease of use is not compromised.
+Mixins
+Another important thing about SASS that I mentioned earlier was the ability to use mixins in
+my files. This means that I can make standard &quot;classes&quot; within the SASS files and easily
+include these in styling for other elements. For example: I want to make an orange button.
+In plain CSS you could make two different classes, one being &quot;.button&quot; and one being
+&quot;.orange-button&quot;. The button class could make up the shape, font, and border styles.
+The orange-button class could just make the button orange and implement custom hover styles.
+What a mixin does is simpler. A mixin could be defined, taking two arguments,
+color and hover-color. Then in the orange-button class the mixin could be called by using:
+button(orange, a-darker-orange). This reduces code and in my opinion makes it easier to
+quickly style different elements.
+Manageable
+Using SASS has made styling websites for me much more fun again. Before I started to use SASS
+I hated it, because I knew I needed to work in yet another file.
+I had to include this file in the HTML file and it was just tedious.
+Then I'm not even talking about the enormous CSS files that I was already using.
+Then I had to try to find the right class or ID and hope for the best this doesn't actually
+change anything else. Using SASS has made working on specific elements much more manageable,
+especially with Grunt having my back by compiling my main SASS file in the background.
+While using SASS it has reduced my frustrations with styling.
+It has made it easier, more efficient, and it gave me the opportunity to really structure the
+files how I want without having to load yet another file in my HTML file.</content>
+                            <summary>
+Why I use SASS rather than just CSS
+CSS to LESS
+When I first started out with web design &amp; development,
+CSS was this tool to make HTML pages look better.
+This was just before responsive web design started becoming the new industry standard for web
+design. Websites were zoomed out and broke on m[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" 
+                                type="image/jpeg" width="3240" height="2160" />
+                          </entry>
+<entry>
+                            <title>Why some people can work remotely</title>
+                            <link href="https://roelofjanelsinga.com/articles/some-people-can-work-remotely"/>
+                            <id>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</id>
+                            <updated>2017-06-02T12:00:00+02:00</updated>
+                            <published>2017-06-02T12:00:00+02:00</published>
+                            <content>
+Why some people can work remotely
+Working remotely, we've all heard of it before. Simply said, you're working on something,
+but you're not actually in the office while you do it.
+In some occasions this means you work from home for the day.
+In others maybe you're a freelancer and work for several different companies from your
+own office instead of theirs. Or maybe you're taking a trip but you still want to work.
+There are many different ways to work abroad. Let me tell you about my experiences.
+My experiment
+I work for a company, but my girlfriend lives in the United States. You might think,
+well tough luck, I guess you'll only see her during the holidays.
+Wrong. I asked my boss and colleagues if they would mind if I worked from another country.
+They were fine with it, it wasn't the first time. The first time was only 2 weeks,
+it wasn't a long time, but it was an experiment. An experiment whether I could work remotely
+or not. In my opinion it worked really well. I got up at normal times and worked from 9
+til 5, just 6 hours later than normal due to time zones. I found a quiet place that I could
+work at, but still Skype with my colleagues to discuss some things.
+So after this experiment I was wondering if I could do the same, but for a longer period of time.
+Second trial
+This longer period of time presented itself in march of 2017.
+I asked if I could once again work from abroad, but a little longer this time.
+My boss gave me permission so I booked my trip, my 9 week long trip.
+For some this may seem like a very long time, and it is.
+But I knew that if I found the right environment, I could work just as well abroad as I
+would in the office. And I found this environment in the same library I used during the
+previous experiment. I worked from 8 to 4, so only a 5 hour difference with my colleagues
+and this worked well. We didn't need a lot of skype meetings,
+because I knew what was expected of me. We learned to communicate with each other really
+well through Jira and Slack, so everyone could move on with their work as usual.
+A small adjustment it took for me was to set up a small development server,
+so I could test the same code my colleagues were testing, but through the internet
+instead of a simple local network.
+Advice for some of you travelers
+So for me the experiments worked out really well, I knew I had enough discipline to
+keep working on schedule, not take unnecessary breaks, or treat the whole thing as a
+long vacation. But the experiment also worked out well, because my colleagues
+were fine with it and they were able to adjust to the new situation instantly and flawlessly.
+Working abroad only works if the whole team is aboard and is able to work in a non-traditional
+setting, or at least is able to adjust to the new situation pretty easily.
+So if you think you may want to try something like this some time,
+try to start with a shorter period of time and see if you can do it.
+If you can, try longer, but don't try to force yourself to be productive if you know
+you don't have the discipline it takes to pull it off, it will not work.</content>
+                            <summary>
+Why some people can work remotely
+Working remotely, we've all heard of it before. Simply said, you're working on something,
+but you're not actually in the office while you do it.
+In some occasions this means you work from home for the day.
+In others maybe you're a freelancer and work for several di[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" 
+                                type="image/jpeg" width="1500" height="1000" />
+                          </entry>
+<entry>
+                            <title>What I've learned building Single page applications</title>
+                            <link href="https://roelofjanelsinga.com/articles/learned-building-single-page-applications"/>
+                            <id>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</id>
+                            <updated>2017-06-06T12:00:00+02:00</updated>
+                            <published>2017-06-06T12:00:00+02:00</published>
+                            <content>
+What I've learned building Single page applications
+Single Page Applications (SPA's) are amazing to build and work with,
+but there are a lot of disadvantages as well. This post describes some of the things that
+I have learned while building SPA's. It also contains tips to help developers building or
+thinking about building SPA's.
+So first up is the challenge of having proper titles, meta tags, and general SEO requirements.
+In some Javascript frameworks (like ReactJS and Angular) this problem has already been solved.
+Some older generations of Javascript frameworks like AngularJS (version 1.x),
+this problem still persists. When you don't do anything to properly generate SEO
+tags/titles/texts, Google and Facebook will simply not find anything for your website
+apart from the URL.
+Meta tags with Javascript
+A very simple, but in some situations pretty tricky solution would be to use prerender.io.
+This service uses PhantomJS to render an entire webpage, to show titles, tags, and texts.
+This way, when Google or Facebook crawl your website, they will see all the proper information
+they need for search results or Facebook's open graph cards. At my job we use this service,
+but not without any problems. First of all, you need to make sure you're using HTML5
+polyfills for everything. This is because we made use of Javascripts Promises,
+but PhantomJS didn't recognize what this meant, so it simply didn't render our pages,
+causing us to pull out our hair over it. When we discovered Promises were the problem,
+we switched to using Angular's $q promise instead solving the problem.
+So if SEO is very important to you and your application, make sure the framework you choose
+has a built-in functionality to render your pages properly for Facebook, Google, etc.
+A great starting point would be to use Angular2 or ReactJS.
+File organization
+Another thing I have learned is that file structures are incredibly important.
+Consistency in file and code placement is important. What does this mean?
+Well this means that code and modules need to be separated by function, not by type.
+What this means is that you shouldn't put all controllers in one folder,
+all services in another folder and all directives in yet another.
+What I'm saying is that you should put all code, templates, etc. belonging to a
+specific functionality in a seperate folder. This may seem tough to start out with,
+and for small applications this is not necessary, but for large applications,
+this makes your life so much easier. The amount of times it took me so long
+I just gave up and did a full on text search over all files to find the one
+I needed is too high. If I had started to structure my filesystem like this from the
+beginning I could simply find the folder that belonged to that specific functionality
+and have all the code I needed right there. It's a real time-saver.
+API calls
+The last thing I have learned while building SPA's is that the API structure in your
+back-end is incredibly important. Starting out I wrote a single API call for each page,
+collecting a lot of data in one server response. This is slow and is the wrong way to go.
+The asynchronous nature of SPA's makes it easier to use several smaller API calls to get the
+data you need. While you have one request in a queue, other processes can still take place.
+This helps me to load screens and it's data much quicker than waiting for larger requests.
+When the application only loads one massive response, the pages need to wait before
+they're ready to go. So when you structure the API endpoints in the backend,
+make sure to keep the responses small. This will help you break up the loading times so
+users using the application will have a smoother experience.</content>
+                            <summary>
+What I've learned building Single page applications
+Single Page Applications (SPA's) are amazing to build and work with,
+but there are a lot of disadvantages as well. This post describes some of the things that
+I have learned while building SPA's. It also contains tips to help developers building o[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" 
+                                type="image/jpeg" width="1500" height="1000" />
+                          </entry>
+<entry>
+                            <title>Offline accessibility with service workers</title>
+                            <link href="https://roelofjanelsinga.com/articles/offline-accessibility-service-workers"/>
+                            <id>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</id>
+                            <updated>2017-06-09T12:00:00+02:00</updated>
+                            <published>2017-06-09T12:00:00+02:00</published>
+                            <content>
+Offline accessibility with service workers
+Web applications are great. They're fast, they can be used on all platforms and often feel
+like they're a real native application with accessibility .
+But then, your internet stops working and you only had to check that little note you made
+earlier. Too bad, you can't connect to the application and you can't see that note you made
+earlier, bummer! Service workers to the rescue!
+To really make web applications competitive against native applications,
+you'll need to simulate or even enhance the expected behaviour of such apps.
+This means that the app should feel quick and responsive, you should be able to
+access it whenever and wherever you want and it should benefit you when you need it.
+So let's split this expected behaviour in three sections: quick and responsive,
+accessible whenever and wherever, and personal benefit.
+Quick and responsive
+One aspect of a native application over a web application is usually that the native
+application feels quicker. You don't have to wait for something to appear on your screen,
+whereas for web applications you often have to wait for data to show content on your screen.
+This is a deal breaker for a lot of people. A true app should be quick.
+One solution for this is browser caching through Nginx or Apache through Cache-Control
+and Expire in your response headers. The browser will attempt to cache the requested
+resources in the browser, thus making the second load of your application nearly instantaneous.
+This is an amazing first step, because your application instantly feels a lot faster.
+However, the browser will still need to request data from the server to even receive
+response headers, which isn't possible when you don't have any internet.
+This is where service workers play a huge role.
+Accessible whenever, wherever
+I mentioned in the previous paragraph that browser caching is a great way to reduce
+bootstrapping time, but it won't work if you're not connected to the internet.
+Service workers are the solution here. A service worker essentially is a middle man,
+built into the browser. This middle man can intercept any request made from the browser
+to the server and customize its behaviour. This sounds a little vague, but hang in there.
+You have to imagine that this middle man is receiving a request from you (through the browser).
+The worker will then look in its memory to see if you've requested this resources before.
+This resource can be anything from a JS file to a CSS file, HTML, image, etc.
+If the worker does find the resource in its memory, it will return this.
+Did you see what just happened? The request never touched the server.
+It requested something and the service worker returned a cached version of the requested
+resource. You can create a web application like this that is available,
+even when you're not connected to the internet.
+Offline accessibility is only one of the benefits of service workers.
+Imagine you're in a remote location and you're connected to the internet,
+but your connection is incredibly slow. Normally when you're offline the website will
+fail to load straight off the bat, but not this time. It will attempt to download all
+the resources like it normally would, with a slow connection. This can cause the website
+to load in 3 minutes instead of 3 seconds, which is a terrible user experience.
+Tadaa! Another task for the service worker. This little worker will recognize the
+situation and will return the cached version instead of attempting to request the resource
+from the server. The load time is once again three seconds! Service worker out!
+Personal benefit
+That offline web application is great and everything, but if you still need internet to save
+data, your web application will still fail its purpose. It'll look like it's working,
+but in reality it doesn't do anything else besides being pretty and fast.
+The solution here is maybe not the most obvious to some of you, but you can make use of a
+fantastic feature of HTML5 called IndexedDB. This is an in-browser database that can
+contain json objects in a simple key-value pair database. When your app is unable to
+save any data to your actual database, it can use IndexedDB as an offline fallback and
+synchronize with your server at a later point in time when you do have an internet connection.
+What does this mean for your app? Well it means that it looks pretty, it's fast,
+and it's actually fully functional. This will get your web application to be more
+and more competitive with native applications. First of all, your application will
+behave like a normal native application, no matter what the situation might be.
+Second of all, don't tell everyone, but it's much cheaper and easier to build web
+applications than it is to build native applications. That's what I call a win win situation.
+So to round up: use service workers to make your web application to behave more like a native
+application in less than optimal situations.</content>
+                            <summary>
+Offline accessibility with service workers
+Web applications are great. They're fast, they can be used on all platforms and often feel
+like they're a real native application with accessibility .
+But then, your internet stops working and you only had to check that little note you made
+earlier. Too ba[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" 
+                                type="image/jpeg" width="1500" height="1000" />
+                          </entry>
+<entry>
+                            <title>Build bridges with API based application structures</title>
+                            <link href="https://roelofjanelsinga.com/articles/build-bridges-api-based-structures"/>
+                            <id>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</id>
+                            <updated>2017-08-12T12:00:00+02:00</updated>
+                            <published>2017-08-12T12:00:00+02:00</published>
+                            <content>
+Build bridges with API based application structures
+There is nothing more fun than working with API's during my work day.
+It's programming like any other day, but it's also so much more!
+It's connecting other services with your own, using them to enhance your application and
+making it much richer with functionalities. You're essentially using other
+fine-tuned services to benefit your own service and sometimes to offload some aspects of
+your application, like social login buttons through Google, Facebook, and Github.
+I mentioned in an earlier post &quot;What I've learned building Single page applications&quot;
+a little bit about how I've been using API calls during my day.
+I'd like to clarify one thing before we dive into my fascinations with API's.
+I see an API call as any form of data transfer between two different applications,
+so it's not limited to HTTP.
+What I'm using right now
+Currently I'm working on a project that involves 4 major connections so far,
+and it's only just started. My application connects to Sendgrid for sending of all
+my system emails, Zapier for offloading data to other services
+(there are literally 750 applications connected to it, it's wonderful),
+GraphCMS for the content management of the application, and Tubbber for all
+search and database related functionalities. So what does my application actually
+do by itself? Not all that much, except using all the different API's to
+give different kinds of data some context.
+API based structures are gaining popularity
+This has type of application architecture has become more popular in the last few years.
+A few years ago, all aspects of your application or platform were combined in one big package,
+applications nowadays are more broken up, they're more modular.
+This means that each individual component has a very specific task, one task it can do
+really well. You'll notice that testing these functionalities is a lot easier as well,
+which is another added benefit.
+Spreading risks
+This is a huge benefit to larger corporate systems, because when one of these services breaks,
+your applications can still partially run normally. If you cache all data going to and from all
+your API calls, your users may not even experience any problems at all when one of the
+components of your architecture goes down. Not only does this architecture spread the
+risks of losing different components, it also spreads hardware usage,
+meaning you can downgrade your main server to a smaller size, since it won't need to do
+everything in one place any more. If you're lucky, you can use all your connecting
+components for free and it just saves you money.
+It fascinates me
+An aspect of this whole architecture that fascinates me a lot is the fact that all
+these applications can work together flawlessly. The applications could be using completely
+different programming languages, yet they work together. As long as they share a
+common data structure or are at least able to parse the same data (JSON, XML),
+they will be compatible. I can provide one great example of this is, because
+I built a search engine for my work. This search engine utilizes Solr,
+which is built on top of Java. I built the main system with PHP, but through JSON exchanges
+I can get information easily.
+I like API's, because with only a few simple lines of code, you can trigger a huge
+calculation elsewhere. This event will then return get the exact data you requested,
+the only thing you have to do is ask. You can also use an array of API's to
+improve all the connected applications, not just your own application.
+For example, you can grab data from Facebook and use it to enrich your own data.
+You can then use this data to enrich data in a program like Google tag manager or Salesforce.
+API's are amazing to me, so I want to share some platforms to start with. Have a look at:
+
+Facebook
+Instagram
+Twitter
+Zapier
+
+If you like to talk about this subject further, follow me on twitter @RJElsinga or
+Instagram @roelof1001.</content>
+                            <summary>
+Build bridges with API based application structures
+There is nothing more fun than working with API's during my work day.
+It's programming like any other day, but it's also so much more!
+It's connecting other services with your own, using them to enhance your application and
+making it much richer w[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" 
+                                type="image/jpeg" width="1280" height="853" />
+                          </entry>
+<entry>
+                            <title>Developer tools for a back-end programmer</title>
+                            <link href="https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer"/>
+                            <id>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</id>
+                            <updated>2017-08-26T12:00:00+02:00</updated>
+                            <published>2017-08-26T12:00:00+02:00</published>
+                            <content>
+Developer tools for a back-end programmer
+Any developer will have a set of developer tools they swear by. A set of tools that does
+everything we need it to do. People can say that tools are interchangeable,
+and to an extend they certainly are. However, the set of tools a developer uses,
+often dictate the workflow. With that said, I'd like to move to the part where I tell
+you which tools I use on a daily basis.
+My developer tools
+One of my main programming tools is an IDE called PHPStorm, which I think almost all
+programmers have at least heard of. The editor comes with built-in terminals,
+which I find a really useful feature. I usually use 3 or 4 terminals at the same
+time and the editor makes it very easy to manage all of them. Another useful feature
+it has that I use a lot is the search functionalities. You can use a few keywords to
+search for the string in your whole project and it makes developing easier and less tedious.
+Updating and managing code
+If, for any reason, I ever need to change any live code, I use the command line editor
+Nano or Atom combined with Filezilla. Luckily I don't resort to going down this route too
+often, because any mistakes will immediately be reflected in production.
+Normally I change all the things I need locally and get it into production through
+Git and Github, which are two of the other tools that I use on a daily basis.
+Along with Git there is of course NPM and Composer to get all the required packages
+in my projects. If you're not using package managers for your projects in 2017,
+you should check it out. It makes keeping your applications up-to-date a breeze.
+It also means you can take advantage of thousands of open source packages that have
+been built by other people.
+Testing
+Testing is a very important part of the build process. Luckily Laravel, the PHP framework
+I use for most of my projects, has PHPUnit support built-in. This means that writing tests
+and test classes is very easy. With a few simple lines of code you will always know if the
+methods you write act as you intended them to act. This is a very good process to run
+before you're ready to publish your code, just to make sure what you wrote actually works.
+Browsers
+Sometimes you just really need a browser to test your application. For example while
+building SPA's I use the Chrome Developer tools almost 100% of the time.
+There are two browsers I test in and see if everything goes according to plan.
+The first is of course Google Chrome and the second is Firefox with the Firebug plugin installed.
+This comes with a console and a network tab to see if there are any logged errors and to
+see what data your browser actually loads or receives from the server.
+This is very useful for debugging and making sure the browser receives the data you need
+it to receive.
+So there are a few tools I use on a day to day basis to make sure the development process
+goes according to plan and the code you want published gets published in an orderly fashion.
+Because at the end of the day, you want local code running in a production environment.
+There is not just one way to get there, everyone will have their own way.</content>
+                            <summary>
+Developer tools for a back-end programmer
+Any developer will have a set of developer tools they swear by. A set of tools that does
+everything we need it to do. People can say that tools are interchangeable,
+and to an extend they certainly are. However, the set of tools a developer uses,
+often dicta[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" 
+                                type="image/jpeg" width="1080" height="720" />
+                          </entry>
+<entry>
+                            <title>Podcasts for creators and programmers</title>
+                            <link href="https://roelofjanelsinga.com/articles/podcasts-for-creators"/>
+                            <id>https://roelofjanelsinga.com/articles/podcasts-for-creators</id>
+                            <updated>2017-09-02T12:00:00+02:00</updated>
+                            <published>2017-09-02T12:00:00+02:00</published>
+                            <content>
+Podcasts for creators and programmers
+Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
+You can share your interests by talking to colleagues, go to meet-ups, or by simply listening to
+podcasts. Which is what this post happens to be about, what a coincidence.
+Sander and I (Roelof) both listen to podcasts, but we listen to different types of podcasts
+because we have different interests and skill sets. I mainly listen to developers podcasts,
+either front-end development, or PHP or just Javascript specifically, they all interest me
+very much. Sander listens to branding and design podcasts. Below we will both describe some
+podcasts we listen to and also explain why we choose to listen to it.
+Front-end Happy Hour (Roelof)
+Front-end happy hour is a podcast with a panel coming from different companies,
+ranging from Netflix to LinkedIn, to Atlassian and Evernote.
+The podcast is about anything related to front-end development.
+So there is a lot of Javascript, but also HTML5, CSS, and even Swift.
+I like hearing from people working at big innovative companies what their take on
+different situations is. Especially situations I have been in myself before.
+Not only is it great to hear what alternatives they have used opposed to my own solutions,
+but I can also learn to use different tools or approaches to deal with a situation.
+They upload a new podcast every two weeks, so be sure to check them out!
+NodeUp (Roelof)
+NodeUp is a podcast that's all about NodeJS. Recently I've been more and more into using
+NodeJS into my projects. A few years ago I've made a simple application in NodeJS and
+AngularJS just to try it out. I stuck with AngularJS and sort of put NodeJS to the side.
+Now I'm trying to get back into it and listening to these podcasts have helped me to understand
+certain topics and concepts better. Coming from PHP on the server it's hard for me to
+imagine how Javascript on the server can be secure, so this podcast has helped me understand
+better how this works and what you can do to secure your applications better.
+ShopTalk (Roelof)
+ShopTalk is a podcast about web design. I've been working on designs and front-end development
+a lot in the past few weeks, so listening to people talk about it helps me to find new ways
+to solve some problems I could be having. The podcast is similar to Front-end Happy Hour
+with the range of topics, but the personalities are different. One of the hosts is the
+founder of CSS-Tricks, a website I use fairly often these days. So it's exciting to hear
+what he and his co-founder have to say about web design.
+Trav and Los (Sander)
+Travis and Carlos will help you to develop yourself as a person. They are two awesome people,
+Travis is also known for his channel Devtips (which at this point as the blog is written
+is on a break due to a burnout). The podcasts or focused on you as a person, design, branding,
+and front-end. They will discuss many things and sometimes invite other people to join
+their podcast. They upload on a regular basis which is fun!
+Basic Agency (Sander)
+Sander's favorite company is Basic Agency from San Diego, they have really awesome and
+well-known clients. Why should you listen to their podcasts? They help the design community
+all around the world to become better. They invest a decent amount of time on this.
+The podcast is one of these examples. Most podcasts are general and all say the same,
+while the podcasts of Basic Agency go in depth. It's fun to listen to these people.
+Designer News (Sander)
+Do you want to listen to the big names? Then this is podcast is something for you.
+I'm checking Designernews every day to stay up-to-date as a web designer and front-end developer.
+I've listened to all their podcasts. There are really big names in these podcasts,
+people that made it! Listen to their experiences and you might learn something that
+will help you grown or understand how things work within the web design world.
+If you want to talk about your favorite podcasts with us, or give us some suggestions
+for podcasts, get in touch with us! You can follow me on Twitter @RJElsinga and on Instagram,
+be sure to check out Sander as well on Instagram! If you're interested in more of our posts,
+maybe to try to learn how to make more time for side projects!</content>
+                            <summary>
+Podcasts for creators and programmers
+Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
+You can share your interests by talking to colleagues, go to meet-ups, or by simply listening to
+podcasts. Which is what this post happens to be about, what a coin[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/microphone.jpg" medium="image" 
+                                type="image/jpeg" width="1013" height="675" />
+                          </entry>
+<entry>
+                            <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
+                            <link href="https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react"/>
+                            <id>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</id>
+                            <updated>2017-09-09T12:00:00+02:00</updated>
+                            <published>2017-09-09T12:00:00+02:00</published>
+                            <content>
+The battle of apples and oranges: Angular vs React vs VueJS
+People keep asking about which framework to use (Angular, React, or VueJS),
+and which one is better. I can understand they want to know which one to use for
+projects, but it's a silly question. It's comparing apples to oranges.
+I'll explain why you should use one over the other for a specific situation,
+but it's only my humble opinion.
+Angular
+Before I start with Angular, I will have to clarify that I'm biased towards it.
+I have been using AngularJS for 3 years and I've put a considerable amount of
+time in Angular 4 (just Angular from now on). For now, we'll stick to Angular
+though because AngularJS is not really updated anymore and it's becoming outdated.
+So when should you use Angular? Well, when you're building a medium to a large
+application. The set-up time is longer than both React and VueJS,
+but it's also the full package. Where React and VueJS are only used as the user
+interface, Angular is the user interface and it has other things &quot;included&quot;.
+I say included here, but they have been removed from the Angular core and included
+in separate modules since Angular version 4 launched. Angular uses TypeScript
+instead of Javascript, which is a big turn off for a lot of people,
+but I've come to really enjoy it. I mentioned that Angular is mainly good for
+medium or large applications because it's not very easily used as a &quot;drop-in&quot;
+framework. You either make all pages through Angular or you make none.
+React
+As I said earlier, React only deals with the user interface.
+If you want things like a router or any way to interact with the server,
+you'll need to find modules yourself and integrate it with React.
+Many people like this, as it gives you all the freedom to choose whichever
+module you please. React can be used as a drop-in framework,
+so you can make parts of the page with React instead of having to make the
+entire page with a single framework, like Angular.
+Since React can easily be used as a drop-in framework but also includes a
+router module, it can be used for small to large applications.
+The set-up time is minimal, but it does have a fair learning curve.
+Where Angular uses TypeScript, React uses JSX. It means that all the
+logic and the templates can be built in a single file.
+VueJS
+I'd like to call VueJS &quot;All the right things of AngularJS&quot;.
+AngularJS will always have a special place in my heart and that's why
+I'm liking what VueJS is doing. VueJS is also a framework that only deals
+with the user interface, just like React. It does have a router and modules
+to deal with server interaction available, so it's fairly similar to
+React in that way. It's also a drop-in framework, which means you can
+use VueJS for small applications. I wouldn't recommend using it for medium
+or larger applications just yet. It's a new framework and the file
+organization needs some work because it can get messy.
+That's why I recommend using it for smaller applications.
+You can set it up in a breeze, so you can get started quickly.
+VueJS actually uses plain Javascript, which I really appreciate.
+There isn't really anything new to learn except some of the directives
+that AngularJS and Angular have as well.
+Comparison
+I hope that clears up the battle of the apples and oranges a little bit.
+The frameworks are completely different and don't even have the same use case.
+You can use Angular for large applications and has all the most-used modules
+built-in. React and VueJS are both for the user interface alone and they
+don't include any of the modules that deal with server interaction.
+This means the developer is free to choose any modules to fill these gaps.
+React and VueJS are comparable because they are both only for the user interface,
+but they still don't serve the same use case.
+React is for small to large applications because the file organization is
+simpler than VueJS. VueJS is for small applications only for now,
+simply because it hasn't had the time to mature just yet.
+You can use any of these frameworks to make single page applications,
+or React and VueJS for some dynamic elements.
+If you like to talk about this subject further,
+follow me on twitter @RJElsinga or Instagram @roelof1001.</content>
+                            <summary>
+The battle of apples and oranges: Angular vs React vs VueJS
+People keep asking about which framework to use (Angular, React, or VueJS),
+and which one is better. I can understand they want to know which one to use for
+projects, but it's a silly question. It's comparing apples to oranges.
+I'll explai[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/apples.jpg" medium="image" 
+                                type="image/jpeg" width="1000" height="667" />
+                          </entry>
+<entry>
+                            <title>Are programming books worth your money?</title>
+                            <link href="https://roelofjanelsinga.com/articles/programming-books-worth-your-money"/>
+                            <id>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</id>
+                            <updated>2017-09-16T12:00:00+02:00</updated>
+                            <published>2017-09-16T12:00:00+02:00</published>
+                            <content>
+Are programming books worth your money?
+You've all seen programming books on the internet or in bookstores. But most of us know
+that those books are usually not relevant anymore, most of them are outdated.
+So should you buy them? I think you should, but there are a few conditions.
+Maturity of the language
+The maturity of the language is incredibly important for the relevancy of the book.
+I'll use two examples here. I bought a book for AngularJS to learn the languages.
+At the time it was already a few years old, so the book had a few gone through some
+revisions and was more in line with how AngularJS actually worked. Fast forward two years,
+I bought an Angular 2 book. Angular 2 was still in beta at this time and was constantly changing.
+I couldn't use the book at all because it was written before Angular CLI was in existence,
+which made the book useless. The only thing I could use it for was figuring out what the
+concept of the language was, but actual coding examples were irrelevant.
+Application of the books &amp; personal skills
+Books about data analysis with Apache Spark is really fun, but you won't be able to use
+them if you have no clue how to set up a server or work with databases.
+You should get books that help you to improve your skills, not books that are too complicated
+for your own skill level. You'll end up feeling dumb and unmotivated. You'll get to that
+level through practice and more practice. Start at your own level, or ideally,
+a little bit above your level to improve your skills. If you're just starting out,
+get very general knowledge books. They'll help you to start understanding how a
+language or technique work and it'll help you form a basis on which you can build skills.
+If you get very specific books right from the start, something like &quot;Machine learning with
+Python&quot;, instead of starting with &quot;Python: The beginner's guide&quot;, you will not understand why
+certain parts of the program behave the way they do.
+Real life application
+I'm a PHP and Javascript programmer, this is why learning Python from the ground up,
+doesn't really make sense. It won't help me do my job better. However, knowing something
+from another language is definitely not a bad thing. Maybe you need to make a new
+application and your current programming language is too limiting to be able to accomplish this.
+Well, then you have a great reason to use another language that's much better up to the task.
+This project will help you develop new skills and build a better application than you'd be
+able to make prior to learning this new language. What I'm saying is, if you're a
+Javascript developer, don't start to learn something like C++. This won't have an
+immediate benefit for you and it'll most likely cost you a lot of time. My suggestion
+would be to slowly make your way towards the language, don't sprint there.
+Books can be an amazing way to learn a new programming language, but keep in mind that
+the new language should be something that's achievable for you. Make the experience
+eye-opening and challenging, but don't make it an impossible task. When you challenge
+yourself you'll pick up the new language very quickly. If you make it impossible,
+you'll never touch the book again. Make sure the language you do decide to buy a book
+for is something that you'll end up using a lot of the time, otherwise you'll forget all
+about it and you will have wasted your time.
+Have you found amazing programming books that have helped you to learn a new language?
+Share them with me on Twitter!</content>
+                            <summary>
+Are programming books worth your money?
+You've all seen programming books on the internet or in bookstores. But most of us know
+that those books are usually not relevant anymore, most of them are outdated.
+So should you buy them? I think you should, but there are a few conditions.
+Maturity of the l[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/book-top.jpg" medium="image" 
+                                type="image/jpeg" width="1000" height="667" />
+                          </entry>
+<entry>
+                            <title>How to Stay Healthy as a Web Designer or Developer</title>
+                            <link href="https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer"/>
+                            <id>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</id>
+                            <updated>2017-09-30T12:00:00+02:00</updated>
+                            <published>2017-09-30T12:00:00+02:00</published>
+                            <content>
+How to Stay Healthy as a Web Designer or Developer
+Us web designers and developers sit down all day long while we're at work.
+We don't move as much as we probably should. So many of us are probably not as healthy
+as we could and should be. I'll be giving you a few tips to get healthier and feel better
+during the day and sleep better at night.
+
+Walk or ride a bike to work
+Reduce your coffee intake and drink more water
+Take a stroll every 1 – 2 hours
+Meal prep
+Get a step counter
+Find other people to get healthy together
+
+Walk or ride a bike to work
+This could be a no-brainer, but we're trying to maximize your body movement during the day.
+If your work is too far away to walk or take your bike and you have to take the bus,
+get out a stop earlier and walk the last part. When you're taking the car to work,
+try parking at a parking space further away from work and walk the last part.
+And if you're working in an office building and have to take the elevator, take the stairs
+instead, or don't take the elevator all the way and climb the stairs the last part.
+Whatever your travel situation, try to walk as much as you can.
+This can give you 1000 to 2000 extra steps and that's an amazing start of the day.
+Reduce your coffee intake and drink more water
+Everyone knows that coffee is dehydrating, but did you know it can also be bad for your
+physical health if you drink too much of it? Try to switch some of your cups of coffee to
+tea or water throughout the day. I personally reduced my coffee intake from 5 to 6 cups per
+day to 2 to 3 and it doesn't feel any different. A good way to start to replace some of your
+coffee with water is to have a bottle or cup of water on your desk at all times.
+When the cup is right there, you're more likely to drink it and most of the time you don't
+even realize it. If you need a way to track your water intake, I can highly recommend
+Hydro coach. I've been using the app for almost two years and it reminds me to drink
+when I need to.
+Take a stroll every 1 – 2 hours
+Taking a stroll every hour or two is not just good for your body movement,
+it can also help you think. Taking a stroll every so often can help you think about a
+problem in a different way. Maybe you see something or someone that can help you solve
+the problem. It's also a great time to fill up your cup of water after you drank the last one.
+Meal prep
+I hated making lunches for the day in the morning, it took up too much of my time.
+When you start meal prepping you can make all your lunches during the weekend and just
+grab a box during the week. This is not only very convenient, but it's also healthier
+and cheaper than buying a lunch every day. You can decide what you put in your lunches,
+you can make it as healthy as you want, with some chicken and rice, or less healthy
+with some pasta. Either way, it's more convenient to bring a ready-made box every day.
+Get a step counter
+Getting a step counter is a perfect way to keep track of your progress and to challenge
+yourself. In the beginning, I started out with 8000 steps per day, just to see if I could
+make that by sitting down all day. It turned out that I could make that and I started to
+challenge myself. I set my goal at 10000 steps and kept going up until I had trouble
+reaching my goal. I'm currently at 12000 steps per day and I feel better about myself.
+I sleep better during the night because I exercise a lot more during the day and therefore
+I feel rested during the day. That also helps with the second step, reducing your coffee intake.
+Find other people to get healthy together
+Becoming healthy alone can be difficult. Nobody will stop you from being unhealthy at times
+and you can easily slip back into your old, bad habits. You'll be more likely to succeed
+when you have other people to help you stay motivated. This is why Sander and I are coming
+up with a concept to help developers to keep each other healthy.
+What have you tried to get healthy as a developer or office worker?
+Share your experiences with me on Twitter!</content>
+                            <summary>
+How to Stay Healthy as a Web Designer or Developer
+Us web designers and developers sit down all day long while we're at work.
+We don't move as much as we probably should. So many of us are probably not as healthy
+as we could and should be. I'll be giving you a few tips to get healthier and feel bet[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/running-shoes.jpg" medium="image" 
+                                type="image/jpeg" width="1200" height="800" />
+                          </entry>
+<entry>
+                            <title>How to Improve Your Working Day Little by Little</title>
+                            <link href="https://roelofjanelsinga.com/articles/how-to-improve-your-working-day"/>
+                            <id>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</id>
+                            <updated>2017-10-07T12:00:00+02:00</updated>
+                            <published>2017-10-07T12:00:00+02:00</published>
+                            <content>
+How to Improve Your Working Day Little by Little
+Everyone has a bad day every once in a while, but there are ways to reduce this amount.
+I put together a list of a few simple steps you can take to improve your days little by little.
+Have a good night's rest
+This doesn't necessarily mean sleep for a long time. It just means, sleep so you feel fully
+rested. There are a few ways to make this easier for yourself, but I've found that the easiest
+way is to use an app called Sleep Cycle. It tracks your sleep stages and can wake you up when
+you're in a less deep sleep, causing you to wake up feeling rested. A normal alarm could wake
+you up while you're in a deep sleep, this would cause you to wake up feeling tired and irritated.
+Wake up earlier
+Alongside waking up feeling rested it's also a good idea to wake up a bit earlier.
+You will have enough time to do everything at a slower pace. This way you'll feel less
+stressed and you can wake up a bit slower. I've been doing this for a while and it's very
+relaxing to be able to read something while you eat your breakfast and not having to hurry
+to go to work.
+Exercise for 5 minutes when you wake up
+If you're a person who hates waking up and is very slow and tired in the morning,
+try a 5-minute workout. You can do some push ups and some crunches,
+anything to get your body warm and active. This will make you feel awake.
+Are you still a little tired? Try a shower right after your workout,
+this will definitely wake you up quickly.
+Drink more water
+If you've read my previous blog about how to stay healthy as a developer,
+you'll know I love suggesting to drink more water. So I will do that again.
+Drinking water keeps your digestive system clean and will over time show other improvements,
+like a clearer skin. Being hydrated helps you concentrate better and get more work done.
+This is why you'll most likely feel better about your day. You were just more productive!
+Eat healthier
+I hate feeling bloated after a fast food meal, so I just went to get it less and less.
+This has helped me feel better after healthier meals and I feel ready to get to the next
+task of the day right after it. Healthy food doesn't have to be expensive like everyone
+claims it is. If you're smart about your meal prepping, it can even save you some money
+and you're being rewarded with feeling active and fresh after your meals.
+So I suggest you start looking for meal prepped lunches to bring to work and see what you
+think about it. If you like it, perfect, keep going. If you don't like it, well that's too bad,
+maybe you'll find another way!
+Eat breakfast
+Breakfast, the most important meal of the day. Seriously, eat breakfast.
+Feeling hungry is horrible and it even makes you feel tired. After a night's sleep,
+your body is empty, there is no more food to digest. This means that your body is
+running out of fuel quickly. When this happens, you get tired. And getting tired at work
+is just not good for your productivity. So please, eat a good and healthy breakfast.
+If you wake up early enough you'll have plenty of time for it anyway.
+A good base for your breakfast is some grains, maybe some oatmeal, along with a piece of fruit,
+like an apple. This will kickstart your body to be ready for a new day.
+Make a to-do list and do one item at a time
+When you do get to work and you're fully awake and feeling full from your breakfast,
+make a to-do list. This list will contain everything you do that day, in chronological order.
+This way you can start at the top of your list and work your way down.
+You'll feel great crossing off all the tasks you had planned.
+It'll feel amazing having done all or most of the tasks at the end of the day and you'll
+have visualized all the hard work you've done.
+Plan something fun in the evening
+Plan something for to do in the evening, you'll be looking forward to it all day.
+This will help you get through less good parts of your day and will make the good parts
+even better. This fun plan could be as simple as to walk outside and take pictures of the
+sunset, or maybe do a picnic in your garden, or read a good book by a campfire.
+It doesn't need to be a big thing, but it needs to be something you really enjoy doing.
+Do something new at least once per week
+Sometimes you just run out of things to do in the evening. When that happens it's time to
+look for a new thing to do. This can be done during the evening, or in your weekend.
+Do something you've never done before, or something you haven't done in a long time.
+Look for a fun restaurant, maybe do some painting, or build model planes, like me.
+This will broaden your activities list and you'll be able to build onto it.
+So if you're building model planes, you could move onto building cars or maybe making model
+airports or something along those lines. You can expand and experience new things and this
+can be very fun.
+Take breaks and plan downtime
+Every once in a while, our brains are just too stressed to be able to do anything or relax.
+This is a time where you need to plan breaks. During these times you are not allowed to
+think about the things you're stressing about. This can be very tough, but trust me,
+you'll appreciate it. After this downtime, you'll most likely think about your problem
+in a different way than you did before. This could benefit you with your problem.
+Learn to care about what you think, not what anyone else cares about
+You make you happy, other's don't. This one doesn't have as much of a direct
+impact as the others, but it will help you in the long run.
+When you stop caring about what other, non-relevant people think about you or anything you
+do, you'll feel a weight falling from your shoulders. You're living your life, not theirs.
+And they don't live your life. This could be tough to let go off,
+because it's something that's rooted deep in our culture these days, but once you do,
+you'll feel free. You won't have to please anyone, but you and the people you choose
+to listen to. It's a great feeling.
+I hope you've enjoyed this blog, share any of your own suggestions with me on
+Twitter.</content>
+                            <summary>
+How to Improve Your Working Day Little by Little
+Everyone has a bad day every once in a while, but there are ways to reduce this amount.
+I put together a list of a few simple steps you can take to improve your days little by little.
+Have a good night's rest
+This doesn't necessarily mean sleep for a[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/guy-with-confetti.jpg" medium="image" 
+                                type="image/jpeg" width="1500" height="1000" />
+                          </entry>
+<entry>
+                            <title>How to wake up more easily: 7 tips</title>
+                            <link href="https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips"/>
+                            <id>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</id>
+                            <updated>2017-10-18T12:00:00+02:00</updated>
+                            <published>2017-10-18T12:00:00+02:00</published>
+                            <content>
+How to wake up more easily: 7 tips
+Some people are night owls and others flourish in the morning, but all people deal with waking up.
+Some people are just better at it than others. But even night owls can find ways to wake up more
+easily in the morning. So I'll be giving you 7 simple tips to help you wake up more easily.
+You can take every single one of these tips as a small activity or improvement,
+they don't have to be done together to wake up more easily, but it does help.
+Get a different type of alarm
+An alarm that scares you awake in the morning seems like a great idea because you'll be awake
+instantly. However, you'll be irritated. Waking up more easily and naturally is all about
+feeling good when you wake up. There are a few ways to accomplish this, for example,
+a way to slowly wake you up over a period of time. A Philips Hue light wakes you up over
+a period of 30 or so minutes through a steadily increase in light intensity and a sound
+that progressively gets louder. This makes it feel like the sun is rising and it's time
+to get up and be active. Another way to do this is to use an app called Sleep Cycle,
+which I mentioned in my previous post about &quot;How to improve your working day&quot;.
+Sleep cycle uses your phone's sensors to measure when you're fast asleep or when you're
+almost awake. It will wake you up when you're almost awake and this will cause you to feel
+less tired than when you're rudely awakened by a loud noise.
+When your alarm goes off, get up
+When you snooze and go back to sleep, your sleep cycles will start again and won't have enough
+time to finish the cycle. This means that you'll be woken up by your alarm in the beginning
+stages of being deep asleep and you'll end up feeling tired and irritated. So when your alarm
+goes off, get out of bed. Literally, throw your blankets off you to avoid falling back to sleep.
+Get out of bed and start to slowly get active.
+Expose yourself to &quot;natural&quot; sunlight
+There are two different kinds of &quot;clocks&quot;, an external clock (24 hours per day) and an
+internal clock (your own day/night cycle). When you expose yourself to natural sunlight,
+you can effectively influence your internal clock. This means that you'll make your body
+feel it's time to get up, it'll help you energize yourself. The external clock is the 24
+hour day cycle and some people have a shorter or longer internal cycle, compared to the 24
+hours per day cycle, according to Chloe Fung Choi Yi. By triggering your body to wake up
+through light, you can try to synchronize your internal clock with the external clock.
+When your internal and external clocks are synchronized, it'll feel more natural to wake
+up at a certain time and this will make it easier to get out of bed.
+Drink a cup of water right after you wake up
+If you've read my previous two posts you'll know I like to recommend drinking water often.
+Drinking water is also a good way to help yourself wake up in the morning.
+It will kickstart your digestive system and will make you feel more hungry and more motivated
+to get up and have breakfast. According to some people (google it), drinking water helps
+you remember dreams more easily, so there you go, a fun little extra benefit if it's true.
+Get a regular sleeping schedule
+Humans have a natural tendency to see patterns. This used to be a survival instinct,
+for example, running away from lions without having to think about it. This means that our
+bodies and minds feel happier when we don't break patterns. Sleeping on a very irregular
+schedule is breaking a pattern. Your brain will have difficulty coping with this habit
+over a longer period of time. Sleeping on a regular schedule relaxes your mind and will,
+in turn, help you to wake up more easily and feel more rested.
+Design your bedroom for sleeping
+Sleep in a dark and quiet area without too many distractions, like screens.
+Artificial light, like lamps and screens, disrupts your sleep cycle.
+This means that you'll require more or less light than you normally would.
+This, in turn, means that waking up will be more difficult. So prepare yourself to go to
+sleep by turning off the lights and screens, except a candle perhaps.
+Candles don't have the same light intensity as other artificial light,
+so they will affect you less. I've been trying an alternative method, by using an app called
+Twilight. It dims your screen and makes it red after sunset. This red-ish light will
+help your eyes to prepare to go to sleep. This may be something you could try yourself too.
+Stop taking naps
+This goes along the same lines as getting a regular sleeping pattern.
+Taking naps is breaking your natural sleeping pattern. It may give you a short energy boost,
+but it will make it more difficult to sleep at night. This is why I recommend not taking any
+naps during the day. If you're really tired, just go to bed a little bit earlier,
+but not too early compared to normal.
+If you found these tips useful, consider sharing this post with your friends to help
+them wake up more easily as well. I know they'll appreciate feeling more rested
+just as much as you. If you have any tips that I may have missed, please let me know!
+You can contact me on Twitter (@RJElsinga) and Instagram (@roelof1001).</content>
+                            <summary>
+How to wake up more easily: 7 tips
+Some people are night owls and others flourish in the morning, but all people deal with waking up.
+Some people are just better at it than others. But even night owls can find ways to wake up more
+easily in the morning. So I'll be giving you 7 simple tips to help y[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" 
+                                type="image/jpeg" width="1350" height="900" />
+                          </entry>
+<entry>
                             <title>Improving development hiring</title>
                             <link href="https://roelofjanelsinga.com/articles/improving-development-hiring"/>
                             <id>https://roelofjanelsinga.com/articles/improving-development-hiring</id>
@@ -424,7 +1319,7 @@ He then had to email this entire list to all the other people who had to complet
 So by asking a very general question, I got very distorted answers,
 because that person simply didn't know any better than to write things down multiple times.
 Only through asking more and more questions, like: &quot;How do you do your job right now?
-Walk me through your process.” I figured out what the actual problem was.
+Walk me through your process.&quot; I figured out what the actual problem was.
 I saw several problems here: you have to enter tasks multiple times,
 you have to copy &amp; paste the tasks the tasks into an e-mail, there is no personalized task list for assignees,
 and the whole process just takes far too long.
@@ -477,10 +1372,10 @@ They just want to do their tasks as quickly as they can. When they're presented 
 their workflow will be interrupted and they won't be happy with this. Does this mean you can never
 redesign your application? No, of course not! You just have to do this very carefully, incrementally,
 and above all, slowly.
-The point is that they don't have to &quot;re-learn” your whole application, but only small parts at a time. 
+The point is that they don't have to &quot;re-learn&quot; your whole application, but only small parts at a time. 
 You want to make their experience better, not terrible. When you change features very slowly,
 you will make their experience better over time and you still get to redesign your application.
-If you really &quot;need” to redesign your application, consider versioning everything.
+If you really &quot;need&quot; to redesign your application, consider versioning everything.
 With this, I mean you start to support multiple environments, multiple versions of the application.
 This seems like a lot of work, but it doesn't have to be. You can simply let the users know that you'll be maintaining
 the current application and fix any bugs that may arise, but you won't add any new features.
@@ -643,26 +1538,26 @@ and build a livelihood for any employees I'll have (at some point).
 Work should be work, and free time should be free time. When you're working,
 you should be able to work uninterrupted and have a great working day, but then,
 when you're done, you have free time. During this free time, you shouldn't work,
-think about work, or be contacted about work. Here’s how I would manage this:
+think about work, or be contacted about work. Here's how I would manage this:
 40 hours
 40 hours of work per week is plenty of time to get a great amount of work done,
 but most people get interrupted too much to be able to actually work that amount of time.
 I think most people actually really work for 10 hours per week and never actually get close to 40.
-It’s not just in the interest of employees to work uninterrupted either.
+It's not just in the interest of employees to work uninterrupted either.
 Think about it, as an owner, do you really want to pay for 40 hours if you only get 10 hours of work?
-I didn’t think so.
+I didn't think so.
 Work-life balance
 The company culture will promote personal productivity,
-but at the same time making sure that you’re not working (including thinking about work) during your off-time,
+but at the same time making sure that you're not working (including thinking about work) during your off-time,
 weekends, and holidays. This means that every individual gets the chance to work how they want to work,
-where they want to work, and at what time. It also doesn’t matter how short or long you spend on a task,
-as long as it’s done at the deadline.
+where they want to work, and at what time. It also doesn't matter how short or long you spend on a task,
+as long as it's done at the deadline.
 Projects
-There will be no long projects because long projects drain anyone’s motivation.
+There will be no long projects because long projects drain anyone's motivation.
 The longest project will take 2 weeks. This seems very short, but any feature/project has a bare minimum.
-If it turns out that you need 4 weeks to complete the “full version” of the feature,
-start stripping the “nice to have” aspects and only build the bare minimum.
-Through iteration, you can always add the “nice-to-have” features at a later stage.
+If it turns out that you need 4 weeks to complete the &quot;full version&quot; of the feature,
+start stripping the &quot;nice to have&quot; aspects and only build the bare minimum.
+Through iteration, you can always add the &quot;nice-to-have&quot; features at a later stage.
 The bare minimum is no excuse for a non-working feature but challenges you to prioritize your work
 and skip all the bloat.</content>
                             <summary>
@@ -697,10 +1592,10 @@ The problems
 I've been on the brink of a burnout three times in 2018, three times.
 After the third time, I stopped accepting the fact that nothing was being done to
 prevent this from happening. So I took matters into my own hands and learned to say no.
-“Can you do this for me right now?” “No, I'm working on something else right now.
-I'll get to your task after I've finished mine.” This helped,
+&quot;Can you do this for me right now?&quot; &quot;No, I'm working on something else right now.
+I'll get to your task after I've finished mine.&quot; This helped,
 but also caused irritation and is not sustainable in the long run.
-Sometimes tasks just have to be done “right now”.
+Sometimes tasks just have to be done &quot;right now&quot;.
 Dealing with the high demand on you as an employee
 To be able to keep up with this speed, I had to find hobbies that had nothing
 to do with computers or sitting still in the same place for a longer period of time.
@@ -739,7 +1634,7 @@ Since we've moved away from Slack, we've been able to work much more efficiently
 Nobody expects an answer right away anymore and instead just waits until the other
 person has some free time to check the messages and formulates a thoughtful message.
 The fact that you can upload files in a specific spot, instead of a chronological chat,
-it helps to avoid irritation. “I sent you that last week”, doesn't really happen anymore.
+it helps to avoid irritation. &quot;I sent you that last week&quot;, doesn't really happen anymore.
 The internal communication has become much more pleasant.
 Library rules
 To minimize the interruptions, even more, we've worked out a few hours per day

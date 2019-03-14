@@ -116,7 +116,7 @@ class AtomFeedGenerator extends Command
                 if (isset($article->image)) {
                     $image_url = Canonical::getCanonicalDestination() . $article->image;
 
-                    $image_size = getimagesize($image_url);
+                    $image_size = getimagesize(url($article->image));
 
                     $image_string = "<media:content xmlns:media=\"http://search.yahoo.com/mrss/\" 
                                 url=\"{$image_url}\" medium=\"image\" 

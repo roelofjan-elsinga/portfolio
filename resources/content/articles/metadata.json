@@ -53,8 +53,48 @@
         "postDate": "2017-06-01"
     },
     {
+        "filename": "some-people-can-work-remotely.md",
+        "postDate": "2017-06-02"
+    },
+    {
+        "filename": "learned-building-single-page-applications.md",
+        "postDate": "2017-06-06"
+    },
+    {
+        "filename": "offline-accessibility-service-workers.md",
+        "postDate": "2017-06-09"
+    },
+    {
+        "filename": "build-bridges-api-based-structures.md",
+        "postDate": "2017-08-12"
+    },
+    {
+        "filename": "developer-tools-back-end-programmer.md",
+        "postDate": "2017-08-26"
+    },
+    {
+        "filename": "podcasts-for-creators.md",
+        "postDate": "2017-09-02"
+    },
+    {
         "filename": "battle-apples-oranges-angular-vs-react.md",
         "postDate": "2017-09-09"
+    },
+    {
+        "filename": "programming-books-worth-your-money.md",
+        "postDate": "2017-09-16"
+    },
+    {
+        "filename": "stay-healthy-web-designer-developer.md",
+        "postDate": "2017-09-30"
+    },
+    {
+        "filename": "how-to-improve-your-working-day.md",
+        "postDate": "2017-10-07"
+    },
+    {
+        "filename": "how-to-wake-up-more-easily-7-tips.md",
+        "postDate": "2017-10-18"
     },
     {
         "filename": "modernizing-log-part-1-conventional-rest-api-to-graphql.md",

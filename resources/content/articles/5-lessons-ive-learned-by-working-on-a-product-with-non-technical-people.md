@@ -20,7 +20,7 @@ He then had to email this entire list to all the other people who had to complet
 So by asking a very general question, I got very distorted answers, 
 because that person simply didn't know any better than to write things down multiple times. 
 Only through asking more and more questions, like: "How do you do your job right now? 
-Walk me through your process.” I figured out what the actual problem was. 
+Walk me through your process." I figured out what the actual problem was. 
 I saw several problems here: you have to enter tasks multiple times, 
 you have to copy & paste the tasks the tasks into an e-mail, there is no personalized task list for assignees, 
 and the whole process just takes far too long.
@@ -81,12 +81,12 @@ their workflow will be interrupted and they won't be happy with this. Does this 
 redesign your application? No, of course not! You just have to do this very carefully, incrementally, 
 and above all, slowly.
 
-The point is that they don't have to "re-learn” your whole application, but only small parts at a time. 
+The point is that they don't have to "re-learn" your whole application, but only small parts at a time. 
 
 You want to make their experience better, not terrible. When you change features very slowly, 
 you will make their experience better over time and you still get to redesign your application.
 
-If you really "need” to redesign your application, consider versioning everything. 
+If you really "need" to redesign your application, consider versioning everything. 
 With this, I mean you start to support multiple environments, multiple versions of the application. 
 This seems like a lot of work, but it doesn't have to be. You can simply let the users know that you'll be maintaining 
 the current application and fix any bugs that may arise, but you won't add any new features. 

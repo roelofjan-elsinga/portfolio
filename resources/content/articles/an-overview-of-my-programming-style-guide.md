@@ -2,11 +2,11 @@
 
 # An overview of my programming style guide
 
-I’m writing this style guide to make my own code more readable and maintainable. This guide attempts to cover all of the code I write and work with, so it will be expanded over time, as I find more things to document. So far, this guide covers Laravel (and PHP in general), and JavaScript.
+I'm writing this style guide to make my own code more readable and maintainable. This guide attempts to cover all of the code I write and work with, so it will be expanded over time, as I find more things to document. So far, this guide covers Laravel (and PHP in general), and JavaScript.
 
 ### 1. Laravel
 
-Since I mainly work with Laravel, I’ll base the PHP section of this guide on this Framework. I’ll describe things like setting up routes, dealing with service providers, name spacing, unit tests, and exposing API endpoints here. I will not get into how these work, because that’s beside the point of this post. All I’m doing here is describing how they should be written and formatted.
+Since I mainly work with Laravel, I'll base the PHP section of this guide on this Framework. I'll describe things like setting up routes, dealing with service providers, name spacing, unit tests, and exposing API endpoints here. I will not get into how these work, because that's beside the point of this post. All I'm doing here is describing how they should be written and formatted.
 
 #### 1.1 Routes
 

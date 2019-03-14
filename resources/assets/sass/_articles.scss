@@ -68,6 +68,15 @@
     
 }
 
+.inline-link {
+    color: #12283a;
+    font-weight: 700;
+    padding-bottom: .25rem;
+    text-decoration: none;
+    border-bottom-width: 2px;
+    border-color: #12283a;
+}
+
 .view-article {
 
     p {
@@ -75,18 +84,19 @@
         line-height: 1.75;
 
         a {
-            color: #12283a;
-            font-weight: 700;
-            padding-bottom: .25rem;
-            text-decoration: none;
-            border-bottom-width: 2px;
-            border-color: #12283a;
+            @extend .inline-link;
         }
 
     }
 
     ul {
         @apply text-lg mb-4;
+
+        li {
+            a {
+                @extend .inline-link;
+            }
+        }
     }
 
     .caption {
