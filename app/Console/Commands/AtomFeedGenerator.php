@@ -123,6 +123,8 @@ class AtomFeedGenerator extends Command
                                 type=\"{$image_size['mime']}\" width=\"{$image_size[0]}\" height=\"{$image_size[1]}\" />";
                 }
 
+                $summary = rtrim(mb_strimwidth($description, 0, 300))."[...]";
+
                 return "<entry>
                             <title>{$article->title}</title>
                             <link href=\"{$this->domain}/{$article->type}/{$url}\"/>
@@ -130,6 +132,7 @@ class AtomFeedGenerator extends Command
                             <updated>{$updatedAt->toAtomString()}</updated>
                             <published>{$createdAt->toAtomString()}</published>
                             <content>{$description}</content>
+                            <summary>{$summary}</summary>
                             {$image_string}
                           </entry>\n";
             })->implode('');
