@@ -45,7 +45,8 @@
     },
     {
         "filename": "how-to-index-a-single-page-application-built-in-angularjs.md",
-        "postDate": "2017-01-12"
+        "postDate": "2017-01-12",
+        "description": "Find out how to properly index a single page application for Google and other search engines with Prerender."
     },
     {
         "filename": "using-sass-rather-css.md",
