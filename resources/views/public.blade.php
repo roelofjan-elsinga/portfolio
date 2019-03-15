@@ -23,6 +23,10 @@
             <meta name="twitter:description" content="{{ $page->description }}">
             <meta name="twitter:image" content="{{ $page->image_large  }}">
 
+            @if(isset($page->canonical) && !is_null($page->canonical))
+                <link rel="canonical" href="{{$page->canonical}}" />
+            @endif
+
             <title>{{ $page->title }}</title>
 		@show
 
