@@ -22,6 +22,6 @@ Initially, I tried to merge all the static resources, but then I thought it was 
 
 The next step is to find a way to merge all dynamic resources into 1 or 2 requests as well. At least for the initial rendering. After the data has been loaded, any new data can be loaded through the normal API calls, because speed is no longer the main priority at that point. Since the additional requests after the first load will require user interaction to be triggered, loading times and calculations are less of a strain to the server, because it's easier than reloading all 19 resources it used to have.
 
-If you haven't read the previous part of this log, please do so through the following link, as it will give context to this log. https://medium.com/@roelofjanelsinga/modernizing-log-part-1-conventional-rest-api-to-graphql-f512cb07d2ab
+If you haven't read the previous part of this log, please do so through the following link, as it will give context to this log. [Modernizing log: Part 1, Conventional REST API to GraphQL](/articles/modernizing-log-part-1-conventional-rest-api-to-graphql)
 
 Do you have any tips on how I should approach merging the dynamic XHR requests? Let me know in the comments, I'd love to learn from you.

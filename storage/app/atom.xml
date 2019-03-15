@@ -4,7 +4,7 @@
     
               <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-03-14T21:17:51+01:00</updated>
+              <updated>2019-03-15T07:29:46+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1210,6 +1210,275 @@ easily in the morning. So I'll be giving you 7 simple tips to help y[...]</summa
                             <media:content xmlns:media="http://search.yahoo.com/mrss/" 
                                 url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" 
                                 type="image/jpeg" width="1350" height="900" />
+                          </entry>
+<entry>
+                            <title>Modernizing log: Part 1, Conventional REST API to GraphQL</title>
+                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql"/>
+                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</id>
+                            <updated>2018-03-14T12:00:00+01:00</updated>
+                            <published>2018-03-14T12:00:00+01:00</published>
+                            <content>
+Modernizing log: Part 1, Conventional REST API to GraphQL
+I’ve been working on a Laravel and AngularJS application for two years now.
+It’s slowly becoming more and more complex and it’s starting to become very
+difficult to manage. Every single Angular view needs at least 5 different
+resources to fully work and this is becoming a problem for our servers with a
+high visitor count.
+Lately, I’ve been reading about GraphQL and how you can perfectly query all the
+required data you need in a single HTTP request. This would solve a lot of
+problems I’m currently experiencing with PHP-FPM.
+So right now I’ll research and set up a testing page with a single HTTP
+request to GraphQL API endpoints. I’m going to see if this reduced the
+high server load I’m currently experiencing. Along with the server load,
+I’m going to have to measure the loading times for this single request.
+The current solution for a product page makes 20 different resource requests,
+but these requests are tiny, so the page loads quickly. However,
+with a high visitor load, this completely overloads PHP-FPM.
+So there are two things I’m going to have to test for now: server load
+(preferably seeing a huge reduction), and response times (preferably
+low enough to facilitate a quick page load).
+In the next post, I’ll document my findings.</content>
+                            <summary>
+Modernizing log: Part 1, Conventional REST API to GraphQL
+I’ve been working on a Laravel and AngularJS application for two years now.
+It’s slowly becoming more and more complex and it’s starting to become very
+difficult to manage. Every single Angular view needs at least 5 different
+resources to fu[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="533" />
+                          </entry>
+<entry>
+                            <title>Improving my programming skills at a full-time job</title>
+                            <link href="https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job"/>
+                            <id>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</id>
+                            <updated>2018-03-15T12:00:00+01:00</updated>
+                            <published>2018-03-15T12:00:00+01:00</published>
+                            <content>
+Improving my programming skills at a full-time job
+I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most certainly did not, and here's what I've learned since then.
+First of all, I switched to Linux. I started out programming on a laptop with Windows installed on it. I was very much against using Mac OSX as my main operating system (and I still am), so I never bought a Macbook. But Windows is simply horrific to work with if you're a programmer. This is why I switched to a Linux based operating system, Ubuntu in my case. This is one of the best things I could've done. Using Ubuntu as my primary system made me learn to use the terminal for most of my daily tasks. This, in turn, taught me valuable lessons about installing software on Ubuntu based servers.
+Second of all, I learned to use other languages than PHP and JavaScript. I was fairly familiar with JavaScript, so my knowledge was mainly PHP and JavaScript. To me, this is one of the best basis you can have to start building websites. Of course, you can change PHP to Python or Ruby, but any of those combinations is a great base to build from. From JavaScript and PHP, I went to learn bits and pieces of Python and Java. I learned some basic Python principles by interacting with the Raspberry Pi and I learned Java through Solr. Solr is a Java-based search engine, much like Elastic Search.
+Third of all, I started using Docker. Having switched to Ubuntu as my primary system, I was very familiar with the Unix environment. This made the switch to Docker 10 times easier. Writing Dockerfiles was a breeze once I understood the different types of commands, like RUN, CMD, and ADD. This makes developing with other people much easier, but it also makes deploying your application very easy.
+I know I'll continue to learn new things as I keep working and I'm excited to see what the future will bring.
+What are some of the things you've learned during your job that you thought you'd never learn or need?</content>
+                            <summary>
+Improving my programming skills at a full-time job
+I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most certainly did not, and here's what I've learned since then.
+First of all, I switched to[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="534" />
+                          </entry>
+<entry>
+                            <title>Docker isn't as difficult as I thought it was</title>
+                            <link href="https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was"/>
+                            <id>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</id>
+                            <updated>2018-03-16T12:00:00+01:00</updated>
+                            <published>2018-03-16T12:00:00+01:00</published>
+                            <content>
+Docker isn't as difficult as I thought it was
+When I looked into using Docker for my projects, I was very intimidated by &quot;the Dockerfile&quot;. This was until I realized that I've been doing a similar thing for a year outside of Docker.
+A year or so back, I wrote a full installation script that needed to be run on any new server to install any necessary software for a particular project. I thought this was the best thing in the world because with a single command I could install the entire application and all its dependencies.
+So it still confuses me that I thought Docker was difficult to understand. It's exactly the same concept as the full installation script, but instead of installing any software on the Host OS, you install it in a contained environment. So when I figured this out, I built a single Dockerfile for my projects, containing everything I needed to get started. Then I thought to myself, &quot;Docker is used as a container service, why do I use a single large container?&quot;. It felt like I wasn't using the software as intended. This is when I came across docker-compose.
+Docker compose manages multiple different containers for you through a docker-compose.yml file. Now I finally felt like I was taking full advantage of the different containers.
+An example of this can be found here:
+version: "2"
+services:
+  nginx:
+      build:
+          context: ./nginx
+      ports:
+          - "8080:80"
+      volumes:
+          - ../:/var/app
+  fpm:
+      build:
+          context: ./fpm
+      volumes:
+          - ../:/var/app
+      expose:
+          - "9000"
+  redis:
+      image: redis
+      expose:
+          - "6379"
+  solr:
+      image: solr:7.2.1-alpine
+      expose:
+          - "6379"
+      volumes:
+          - ./solr/search_core:/opt/solr/server/solr/search_core
+
+This file seems a bit strange if you've never worked with Docker or docker-compose before, but it's actually really simple. The version simply marks which version of Docker you'd like to use. The services block is where it get's interesting because this is where you define your different containers. As you can see, I have four different containers.
+The first service is nginx, because you'll need some kind of web server, and I like Nginx better than Apache. Nginx requires you to redirect any content to PHP, in contrast to Apache. This is why I also have a PHP container defined. The &quot;context&quot; argument here simply means that any configuration I'd like to do is located in a Dockerfile in the given location. In this Dockerfile I have defined what software the container should run.
+This is an example of the Dockerfile for the Nginx service:
+FROM nginx
+ADD ./default.conf /etc/nginx/conf.d/
+RUN echo "daemon off;" &gt;&gt; /etc/nginx/nginx.conf
+CMD service nginx start
+All this Dockerfile does it customize the default Nginx web server configuration. Then it tells Nginx to not run in daemon mode (because the docker image will stop working right away). The CMD directive simply starts the Nginx service. The configuration that's being applied to the Nginx container can be found here:
+server {
+    listen 80 default_server;
+    root /var/app/public;
+    index index.php index.html;
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_disable "msie6";
+    gzip_comp_level 6;
+    gzip_buffers     4 4k;
+    gzip_types text/css application/javascript text/javascript text/plain text/xml application/json application/x-font-opentype application/x-font-truetype application/x-font-ttf application/xml font/eot font/opentype font/otf image/svg+xml;
+    gzip_min_length 1000;
+    rewrite_log on;
+    # serve static files directly
+    location ~* \.(jpg|jpeg|gif|css|png|js|ico|html)$ {
+        access_log off;
+        expires max;
+        log_not_found off;
+    }
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+    location ~* \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass fpm:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+    location ~ /\.ht {
+        deny all;
+    }
+}
+This configuration makes sure that the web server serves the PHP files correctly and adds some caching headers to static files. All requests are forwarded to the PHP container through &quot;fastcgi_pass fpm:9000;&quot;. Obviously, this Nginx installation is not set up for SSL, but for development purposes, this has not been deemed necessary (yet).
+The third service is Redis, but as you can see, I defined an &quot;image&quot; argument here. This means that I'm using a pre-built Docker image and don't wish to make any adjustments (in this case, at least). I simply expose port 6379 to be able to monitor the service from my Host OS. This is not recommended in a production environment, because the outside would will be able to access it now. Docker provides internal pointers to this port, so you'll be able to use it in the other containers, without exposing it to the outside.
+The fourth service is again a pre-built Docker image, but this time I'm attaching a host volume, through &quot;volumes&quot;. What this means is that I'm allowing the Docker container to interact with a folder or folders on my Host OS. This way I'm able to use information from my own hard drive inside the container.
+Docker and docker-compose make it very simple to work together with colleagues on the same code because all the code runs in the exact same environment. It doesn't matter if they use Mac OSX, Windows or Linux, the application environment will always be identical.
+So if you've not tried Docker yet or you're intimidated by it, give it a try and don't give up. When you get it to work, it'll be a wonderfully simple experience to add functionality to your application. If you have any tips on how I can improve any of my examples here, please let me know! I love to learn more from you!</content>
+                            <summary>
+Docker isn't as difficult as I thought it was
+When I looked into using Docker for my projects, I was very intimidated by &quot;the Dockerfile&quot;. This was until I realized that I've been doing a similar thing for a year outside of Docker.
+A year or so back, I wrote a full installation script tha[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="533" />
+                          </entry>
+<entry>
+                            <title>Modernizing log: Part 2, GraphQL test results</title>
+                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results"/>
+                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</id>
+                            <updated>2018-03-19T12:00:00+01:00</updated>
+                            <published>2018-03-19T12:00:00+01:00</published>
+                            <content>
+Modernizing log: Part 2, GraphQL test results
+In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat this, I came up with the solution to combine some of these XHR requests into a single call. I wrote that I was going to do this through GraphQL API endpoints. It's a few days later now and I've done exactly what I described.
+First of all, I added a screenshot of the old situation. This screenshot includes the initial XHR requests and the asynchronous calls after the view has loaded.
+
+As you can see, this page requires 19 resource requests to be fully loaded, which is ridiculous. It even has a call that just gives up and returns an error 500.
+This page has two different types of resources: static resources, and dynamic resources. Most of the static resources are loaded before the view renders because they're simply there to display data on the view. The dynamic resources include pricing and data that will change as the state of the application changes. This also includes related products, as they will change with the state of the application (for this particular product).
+Realistically I'd be able to merge these 19 resource requests into 2 to 4 requests, or so I thought. So I set out to merge all the static resources first. The initial server set-up took some time, but once that was done, the data structure was a breeze to set up.
+The following screenshot shows the merged static resources (the first two).
+
+Initially, I tried to merge all the static resources, but then I thought it was illogical. The second request is a resource that shows data related to the logged in user and has nothing to do with the actual product. This is why I decided against merging it with the product resource. As you can see on the screenshots, I now &quot;only&quot; need 10 resource request. All static resources have been combined from 9 into 2 requests.
+The next step is to find a way to merge all dynamic resources into 1 or 2 requests as well. At least for the initial rendering. After the data has been loaded, any new data can be loaded through the normal API calls, because speed is no longer the main priority at that point. Since the additional requests after the first load will require user interaction to be triggered, loading times and calculations are less of a strain to the server, because it's easier than reloading all 19 resources it used to have.
+If you haven't read the previous part of this log, please do so through the following link, as it will give context to this log. Modernizing log: Part 1, Conventional REST API to GraphQL
+Do you have any tips on how I should approach merging the dynamic XHR requests? Let me know in the comments, I'd love to learn from you.</content>
+                            <summary>
+Modernizing log: Part 2, GraphQL test results
+In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat this, I came up with the solution to combine some of these XHR requests into a single call. I w[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="533" />
+                          </entry>
+<entry>
+                            <title>How I reduced the runtime of a Cronjob by 94%</title>
+                            <link href="https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94"/>
+                            <id>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</id>
+                            <updated>2018-04-26T12:00:00+02:00</updated>
+                            <published>2018-04-26T12:00:00+02:00</published>
+                            <content>
+How I reduced the runtime of a Cronjob by 94%
+We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronjob that took 36 hours and improved it to fully run in 2 hours. Let's get into how I did this!
+Clean up your code
+The first step was to clean up my code. Some scripts had to go through three or four methods to get the required data and be formatted properly. This did actually have a valid reason (when I first wrote the scripts): I wanted to avoid repeating code. I needed the data in similar formats that the other methods provided me, so I would simply grab that data and modify it to fit my needs instead of writing a new customized (but very similar) method to get the data how I need it right away.
+This worked but turned out to be very slow in the long run. I figured I'd rather have the quick and efficient code, instead of slow code that's not repeated anywhere. So I moved all code into a single method and kept reducing the code until it was clean. This already sped up the script by about 2 hours.
+Caching
+Another performance gain was achieved by caching as much data as I possibly could. If the data was unlikely to change throughout the life-cycle of the Cronjob and would be requested repeatedly, I added a caching layer on top of it. This didn't speed up the script as much as I thought it would, because not a lot of resources are repeated throughout the life-cycle. This did however, buy me a 30 minute boost. Not a complete waste of time, but not significant enough to really make a difference.
+Asynchronous jobs
+I achieved the biggest performance gain by moving some of the long-running parts of the script to asynchronous jobs. This includes jobs that interact with the database, image manipulation, and larger calculations. This sped up the script from about 33 hours to 2.5 hours. These processes had very little to do with the progression of the main script, so I decided to completely separate them from the main process into their own little-secluded tasks.
+The take away
+If there is a script you expect would take a long time, or at the very least has blocking processes, use asynchronous jobs. These jobs will be completed at their own time and will not block the progress of the main script. However, you will need to keep in mind that any data processed in these jobs are not available in your main process. If you absolutely need the data that the jobs generate for your main script, there is, unfortunately, no easy way to make this into an asynchronous job, because you simply can't expect something to be done exactly when you want it to be done. But if it's just some image manipulation or a lot of calculations that are not needed to progress the main script, make it asynchronous!
+If you have any questions or remarks, please leave me a comment and I'd love to help you out. If you have any tips on how to get better results than I described here, let me know too! I'd love to learn from you!</content>
+                            <summary>
+How I reduced the runtime of a Cronjob by 94%
+We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronjob that took 36 hours and improved it to fully run in 2 hours. Let's get into how I did this![...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="533" />
+                          </entry>
+<entry>
+                            <title>Modernizing log: Part 3, Optimizing GraphQL queries</title>
+                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries"/>
+                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</id>
+                            <updated>2018-05-02T12:00:00+02:00</updated>
+                            <published>2018-05-02T12:00:00+02:00</published>
+                            <content>
+Modernizing log: Part 3, Optimizing GraphQL queries
+In the last blog, I left you with some first testing results for a product page.
+If you haven't read it, you can do so by reading
+&quot;Modernizing log: Part 2, GraphQL test results&quot;. In that post,
+I described what I had grouped all static resources under two resource calls,
+instead of nine. Well, there are exciting updates that I will share with you now!
+First, let me refresh your memory about what results I've had so far.
+The initial situation was as follows:
+
+The results before implementing GraphQL
+As I mentioned in my last post, this page required 19 (data) resources,
+to be fully loaded. This was becoming a huge problem because the server would
+start to reject requests after viewing a few boats. This all had to do with the
+&quot;X-RateLimit-Limit&quot; header. In simple terms, the website requested too many data
+points in a given period of time.
+When I initially implemented GraphQL, I got a significant reduction of XHR
+requests. I went from 19 (data) resources, to &quot;only&quot; 10. See the screenshot
+below for these requests:
+
+The results after implementing GraphQL
+That situation looks a lot cleaner already right? Well, I wasn't done yet!
+All I did in that particular round of improvements, was grouping static resources,
+to the best of my abilities. However, I figured out that it's possible to
+batch GraphQL queries, so you only require a single XHR request to get multiple
+data sources. This is where I tried to gain the most progress. I've posted a
+screenshot with the results of that improvement below.
+
+The results after batching GraphQL queries
+There are several new things going on in this screenshot other than GraphQL.
+I've added cache busting for HTML templates. This adds the benefit that the
+clients only download HTML files when they've actually updated in a new build
+of the application. Additionally, the first two calls have nothing to do with
+the actual product page itself. They are simply optimizations to then chunking
+of translations for the website. Before, every user had to download all languages.
+Now, that's only one, unless the active language gets switched of course.
+Anyway, as you can see, all static resources have been combined into a single
+XHR request (the third request). The application then registers a page view and
+loads the user notifications for the first time (mind you, this is a hard refresh,
+not a simple state change). Lastly, all the dynamic resources are loaded.
+Which are now only three, instead of six. In total, this product page now needs
+six XHR requests, and that is including the registering of a page view and the
+initial user notifications. So since starting to implement GraphQL, I've gone
+from 19 to 6 requests.
+This page is done for now, until I find a way (and a need) to further optimize
+these resources. Do you have any tips on how I could further improve these
+requests? Let me know in the comments, I'd love to learn from you.</content>
+                            <summary>
+Modernizing log: Part 3, Optimizing GraphQL queries
+In the last blog, I left you with some first testing results for a product page.
+If you haven't read it, you can do so by reading
+&quot;Modernizing log: Part 2, GraphQL test results&quot;. In that post,
+I described what I had grouped all static re[...]</summary>
+                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
+                                url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" 
+                                type="image/jpeg" width="800" height="459" />
                           </entry>
 <entry>
                             <title>Improving development hiring</title>
