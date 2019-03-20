@@ -5,16 +5,16 @@ I listen to podcasts almost every single day, so I've compiled a list of my top 
 I usually listen to them on my way to and from work and they're an excellent way to learn something 
 by just listening to some knowledgable people speak. 
 
-1. Full stack radio
-2. Frontend Happy Hour
-3. Akimbo: A podcast from Seth Godin
-4. StarTalk Radio
-5. Rework
-6. The GaryVee Audio Experience
-7. Couples therapy with Candice and Casey
-8. The Six Figure Freelancer Audio-Course
-9. The Entrepreneurial Coder Podcast
-10. The Laracasts Snippet
+- [Full stack radio](http://www.fullstackradio.com/)
+- [Frontend Happy Hour](https://frontendhappyhour.com/)
+- [Akimbo: A podcast from Seth Godin](https://www.akimbo.me/)
+- [StarTalk Radio](https://www.startalkradio.net/)
+- [Rework](https://rework.fm/)
+- [The GaryVee Audio Experience](https://www.garyvaynerchuk.com/podcast/)
+- [Couples therapy with Candice and Casey](https://anchor.fm/couples-therapy)
+- [The Six Figure Freelancer Audio-Course](https://player.fm/series/the-six-figure-freelancer-audio-course)
+- [The Entrepreneurial Coder Podcast](https://www.ecpodcast.io/)
+- [The Laracasts Snippet](https://laracasts.com/podcast)
 
 As you can see, there is quite a pattern in those different podcasts: programming and business. 
 I mean there are two different ones, an interest of mine (space, science) and a podcast about 
