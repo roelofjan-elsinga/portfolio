@@ -347,7 +347,8 @@ class PublicController extends Controller
                 'description' => substr(strip_tags($article->description), 0, 160),
                 'image_large' => url($article->image),
                 'image_small' => url($article->image),
-                'keywords' => str_replace(' ', ',', $article->title)
+                'keywords' => str_replace(' ', ',', $article->title),
+                'canonical' => isset($article->canonical) ? $article->canonical : null
             ])
         ]);
     }
