@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: roelof
- * Date: 19-2-19
- * Time: 19:49
- */
 
 namespace Main\Classes;
 

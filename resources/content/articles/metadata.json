@@ -217,5 +217,10 @@
         "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
         "postDate": "2019-02-28",
         "description": "Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image."
+    },
+    {
+        "filename": "seo-and-personal-marketing-for-developers.md",
+        "postDate": "2019-03-21",
+        "description": "Find out how to get some quick SEO wins for your personal blog! This post is specifically aimed to developers, because we often have trouble selling ourselves."
     }
 ]
