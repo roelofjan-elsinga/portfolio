@@ -23,6 +23,10 @@
             <meta name="twitter:description" content="{{ $page->description }}">
             <meta name="twitter:image" content="{{ $page->image_large  }}">
 
+            @if(isset($page->canonical) && !is_null($page->canonical))
+                <link rel="canonical" href="{{$page->canonical}}" />
+            @endif
+
             <title>{{ $page->title }}</title>
 		@show
 
@@ -88,6 +92,35 @@
             @include('blocks.navigation')
 
         @show
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "https://www.roelofjanelsinga.com",
+          "name": "Roelof Jan Elsinga",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+31-6-2232-4113",
+            "contactType": "Customer service"
+          }
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Roelof Jan Elsinga",
+          "url": "https://roelofjanelsinga.com",
+          "sameAs": [
+            "https://twitter.com/RJElsinga",
+            "https://medium.com/@roelofjanelsinga",
+            "https://github.com/roelofjan-elsinga",
+            "https://www.linkedin.com/in/roelofjanelsinga/"
+          ]
+        }
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>

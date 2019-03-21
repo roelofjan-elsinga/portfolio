@@ -20,10 +20,6 @@
                 max-width: 300px;
             }
             
-            .read-box {
-                display: none;
-            }
-            
         }
         
         .content {
@@ -55,35 +51,12 @@
                 max-width: 100%;
                 display: flex;
                 
-                .read-box {
-                    flex: 1;
-                    display: block;
-                    position: relative;
-                    
-                    .read-link {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #3498db;
-                        color: white;
-                        
-                        &:hover, &:active {
-                            background-color: darken(#3498db, 10%);
-                            text-decoration: none;
-                        }
-                    }
-                }
-                
                 img {
                     flex: 1;
                     display: block;
                     max-width: 100%;
                     height: auto;
+                    object-fit: cover;
                 }
             }
             
@@ -95,6 +68,15 @@
     
 }
 
+.inline-link {
+    color: #12283a;
+    font-weight: 700;
+    padding-bottom: .25rem;
+    text-decoration: none;
+    border-bottom-width: 2px;
+    border-color: #12283a;
+}
+
 .view-article {
 
     p {
@@ -102,22 +84,27 @@
         line-height: 1.75;
 
         a {
-            color: #12283a;
-            font-weight: 700;
-            padding-bottom: .25rem;
-            text-decoration: none;
-            border-bottom-width: 2px;
-            border-color: #12283a;
+            @extend .inline-link;
         }
 
     }
 
     ul {
         @apply text-lg mb-4;
+
+        li {
+            a {
+                @extend .inline-link;
+            }
+        }
     }
 
     .caption {
         @apply block -mt-2 text-sm text-grey-dark text-center;
+
+        &.left {
+            @apply text-left;
+        }
     }
 
     .quote {
@@ -130,6 +117,14 @@
 
     h2 {
         @apply mt-8 mb-4;
+    }
+
+    code {
+        @apply bg-grey-light block p-8 break-words overflow-x-scroll;
+
+        @screen md {
+            @apply overflow-x-hidden;
+        }
     }
 
 }

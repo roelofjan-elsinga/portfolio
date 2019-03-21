@@ -9,4 +9,6 @@ time of writing the articles. This helps me to keep learning new things and impr
 I also write about some of 
 <a href="/passions" class="link link--underline">my passions</a> 
 other than programming. If you're interested in finding out what other hobbies I have, 
-you can go over to that page and have a look.
+you can go over to that page and have a look. 
+If you want to be the first to know about any of my posts, subscribe to my 
+<a href="https://roelofjanelsinga.com/feed" target="_blank" class="link link--underline">Atom feed</a>.

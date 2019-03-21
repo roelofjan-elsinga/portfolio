@@ -18,10 +18,10 @@ Also, the advice is at the bottom.*
 I've been on the brink of a burnout three times in 2018, *three times*. 
 After the third time, I stopped accepting the fact that nothing was being done to 
 prevent this from happening. So I took matters into my own hands and learned to say no. 
-“Can you do this for me right now?” “No, I'm working on something else right now. 
-I'll get to your task after I've finished mine.” This helped, 
+"Can you do this for me right now?" "No, I'm working on something else right now. 
+I'll get to your task after I've finished mine." This helped, 
 but also caused irritation and is not sustainable in the long run. 
-*Sometimes tasks just have to be done “right now”.*
+*Sometimes tasks just have to be done "right now".*
 
 ### Dealing with the high demand on you as an employee
 
@@ -71,7 +71,7 @@ Since we've moved away from Slack, we've been able to work much more efficiently
 Nobody expects an answer right away anymore and instead just waits until the other 
 person has some free time to check the messages and formulates a thoughtful message. 
 The fact that you can upload files in a specific spot, instead of a chronological chat, 
-it helps to avoid irritation. “I sent you that last week”, doesn't really happen anymore. 
+it helps to avoid irritation. "I sent you that last week", doesn't really happen anymore. 
 The internal communication has become much more pleasant.
 
 ### Library rules

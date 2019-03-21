@@ -1,8 +1,8 @@
 @extends('public')
 
 @section('content')
-    <div class="section h-full sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
-        <h1 class="font-bold text-4xl sm:text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
+    <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
+        <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
         <p class="text-lg sm:text-xl leading-loose">
             I love building products people can't wait to interact with. <br/>
             I get my motivation from building for and with actual users, <br />
