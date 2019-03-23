@@ -292,7 +292,8 @@ class PublicController extends Controller
                 'image_large' => url($article->image),
                 'image_small' => url($article->image),
                 'keywords' => str_replace(' ', ',', $article->title)
-            ])
+            ]),
+            'is_article' => false
         ]);
     }
 
@@ -349,7 +350,8 @@ class PublicController extends Controller
                 'image_small' => url($article->image),
                 'keywords' => str_replace(' ', ',', $article->title),
                 'canonical' => isset($article->canonical) ? $article->canonical : null
-            ])
+            ]),
+            'is_article' => true
         ]);
     }
 
