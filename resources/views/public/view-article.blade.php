@@ -52,6 +52,31 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Roelof Jan Elsinga",
+        "item": "{{route('home')}}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{$is_article ? 'Articles' : 'Passions'}}",
+        "item": "{{route($is_article ? 'articles.index' : 'passions.index')}}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{$article->title}}",
+        "item": "{{Request::url()}}"
+      }]
+    }
+    </script>
+
 @endsection
 
 @section('footer')

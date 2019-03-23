@@ -37,6 +37,25 @@
 
         </main>
     </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Roelof Jan Elsinga",
+        "item": "{{route('home')}}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{Route::currentRouteName() === 'articles.index' ? 'Articles' : 'Passions'}}",
+        "item": "{{route(Route::currentRouteName())}}"
+      }]
+    }
+    </script>
 @endsection
 
 @section('footer')
