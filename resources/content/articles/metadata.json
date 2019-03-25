@@ -222,5 +222,10 @@
         "filename": "seo-and-personal-marketing-for-developers.md",
         "postDate": "2019-03-21",
         "description": "Find out how to get some quick SEO wins for your personal blog! This post is specifically aimed to developers, because we often have trouble selling ourselves."
+    },
+    {
+        "filename": "why-i-dont-use-database-for-my-blog.md",
+        "postDate": "2019-03-25",
+        "description": "There are many amazing alternatives to using a database to store data for your website. Find out why I chose to use static files to store all content for my blog."
     }
 ]
