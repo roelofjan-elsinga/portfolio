@@ -227,5 +227,10 @@
         "filename": "why-i-dont-use-database-for-my-blog.md",
         "postDate": "2019-03-25",
         "description": "There are many amazing alternatives to using a database to store data for your website. Find out why I chose to use static files to store all content for my blog."
+    },
+    {
+        "filename": "how-to-generate-a-sitemap.md",
+        "postDate": "2019-03-29",
+        "description": "Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you."
     }
 ]
