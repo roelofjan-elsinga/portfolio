@@ -1,9 +1,8 @@
 !["How to generate a sitemap"](/images/articles/binoculars.jpeg)
 
 # How to generate a sitemap
-In a previous post, I mentioned in 
-[SEO and personal marketing for developers](/articles/seo-and-personal-marketing-for-developers) 
-that you need to generate a sitemap in order to submit all the important pages from your website 
+In a previous post, [SEO and personal marketing for developers](/articles/seo-and-personal-marketing-for-developers), 
+I mentioned that you need to generate a sitemap in order to submit all the important pages from your website 
 to Google Search Console. But how do you generate a sitemap? What does it look like? 
 These are the questions I'll answer in this post.
 

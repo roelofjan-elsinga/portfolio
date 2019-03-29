@@ -4,7 +4,7 @@
     
               <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-03-29T20:54:01+01:00</updated>
+              <updated>2019-03-29T21:05:23+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -2390,9 +2390,8 @@ for JSON/YAML/Markdown files? Simple! Portability, version control[...]</summary
                             <published>2019-03-29T12:00:00+01:00</published>
                             <content>
 How to generate a sitemap
-In a previous post, I mentioned in
-SEO and personal marketing for developers
-that you need to generate a sitemap in order to submit all the important pages from your website
+In a previous post, SEO and personal marketing for developers,
+I mentioned that you need to generate a sitemap in order to submit all the important pages from your website
 to Google Search Console. But how do you generate a sitemap? What does it look like?
 These are the questions I'll answer in this post.
 An example of a sitemap file
@@ -2453,11 +2452,10 @@ If you have any questions or any additions to this post, let me know on Twitter!
 I'm happy to help you or make changes to this post if you caught a mistake or have some better information I can add.</content>
                             <summary>
 How to generate a sitemap
-In a previous post, I mentioned in
-SEO and personal marketing for developers
-that you need to generate a sitemap in order to submit all the important pages from your website
+In a previous post, SEO and personal marketing for developers,
+I mentioned that you need to generate a sitemap in order to submit all the important pages from your website
 to Google Search Console. But how do you generate a sitemap? What does it look like?
-These are the[...]</summary>
+These are the qu[...]</summary>
                             <media:content xmlns:media="http://search.yahoo.com/mrss/" 
                                 url="https://roelofjanelsinga.com/images/articles/binoculars.jpeg" medium="image" 
                                 type="image/jpeg" width="1350" height="900" />
