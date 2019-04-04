@@ -4,6 +4,7 @@ namespace Main\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
@@ -304,15 +305,29 @@ class PublicController extends Controller
      */
     public function articles()
     {
+        $request = Request::capture();
+
         $articles = Metadata::forPath()
             ->sortByDesc('postDate')
             ->values();
 
         $articles = $this->mapArticlesForPath($articles);
 
+        $current_page = $request->get('page') ?? 1;
+
+        $page_articles = collect($articles)->forPage($current_page, 10);
+
+        $paginator = new LengthAwarePaginator($page_articles, count($articles), 10, $current_page, [
+            'path' => '/articles'
+        ]);
+
         return view('public.articles', [
             'content' => Markdown::parseResourcePath("content/blocks/articles.md"),
-            'articles' => $articles,
+            'articles' => $paginator,
+            'pagination_tags' => [
+                'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
+                'next' => $current_page < $paginator->lastPage() ? $paginator->url($current_page + 1) : null,
+            ],
             'view_route_name' => 'articles.view',
             'page' => $this->tagsParser->getTagsForPageName('articles')
         ]);

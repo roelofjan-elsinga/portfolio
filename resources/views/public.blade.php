@@ -32,7 +32,25 @@
 
         <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-        @if(\Main\Classes\Canonical::needsLink())
+        {{-- These are prev and next links for pagination --}}
+
+        @if(isset($pagination_tags['prev']) && !is_null($pagination_tags['prev']))
+            <link rel="prev" href="{{url($pagination_tags['prev'])}}" />
+        @endif
+
+        @if(isset($pagination_tags['next']) && !is_null($pagination_tags['next']))
+            <link rel="next" href="{{url($pagination_tags['next'])}}" />
+        @endif
+
+        {{-- If there is pagination, display the canonical link --}}
+
+        @if(isset($pagination_tags))
+            <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
+        @endif
+
+        {{-- Display the canonical URL if necessary and if it's not already included --}}
+
+        @if(!isset($pagination_tags) && \Main\Classes\Canonical::needsLink())
             <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
         @endif
 

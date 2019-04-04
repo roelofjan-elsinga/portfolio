@@ -35,6 +35,8 @@
 
             @endforeach
 
+            {!! $articles->links() !!}
+
         </main>
     </div>
 

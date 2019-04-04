@@ -53,6 +53,10 @@ class Canonical
 
         $destination = self::getCanonicalDestination();
 
-        return "{$destination}{$request->getRequestUri()}";
+        $full_url = "{$destination}{$request->getRequestUri()}";
+
+        $canonical_url = explode('?', $full_url);
+
+        return $canonical_url[0];
     }
 }
