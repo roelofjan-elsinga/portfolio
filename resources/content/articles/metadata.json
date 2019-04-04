@@ -232,5 +232,10 @@
         "filename": "how-to-generate-a-sitemap.md",
         "postDate": "2019-03-29",
         "description": "Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you."
+    },
+    {
+        "filename": "my-choice-of-configuraton-file-types.md",
+        "postDate": "2019-04-04",
+        "description": "Find out which file types I use for certain scenarios and which situations suit a specific file type best. We’ll dive into JSON, YAML, XML, and dotenv."
     }
 ]

@@ -72,6 +72,6 @@ Here you can enter the URL of the sitemap. Mine would be *"roelofjanelsinga.com/
 My domain is already entered in the form, so all I have to fill out is sitemap.xml. That's it, 
 Google can now find all of your pages and index them into the search systems. 
 
-If you have any questions or any additions to this post, let me know on Twitter! 
+If you have any questions or any additions to this post, let me know on [Twitter](https://twitter.com/RJElsinga)! 
 I'm happy to help you or make changes to this post if you caught a mistake or have some better information I can add.
 
