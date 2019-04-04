@@ -248,15 +248,29 @@ class PublicController extends Controller
      */
     public function passions()
     {
+        $request = Request::capture();
+
         $articles = Metadata::forPath('passions')
             ->sortByDesc('postDate')
             ->values();
 
         $articles = $this->mapArticlesForPath($articles, 'passions');
 
+        $current_page = $request->get('page') ?? 1;
+
+        $page_articles = collect($articles)->forPage($current_page, 10);
+
+        $paginator = new LengthAwarePaginator($page_articles, count($articles), 10, $current_page, [
+            'path' => '/passions'
+        ]);
+
         return view('public.articles', [
             'content' => Markdown::parseResourcePath("content/blocks/passions.md"),
-            'articles' => $articles,
+            'articles' => $paginator,
+            'pagination_tags' => [
+                'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
+                'next' => $current_page < $paginator->lastPage() ? $paginator->url($current_page + 1) : null,
+            ],
             'view_route_name' => 'passions.view',
             'page' => $this->tagsParser->getTagsForPageName('passions')
         ]);
