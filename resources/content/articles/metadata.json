@@ -237,5 +237,10 @@
         "filename": "my-choice-of-configuraton-file-types.md",
         "postDate": "2019-04-04",
         "description": "Find out which file types I use for certain scenarios and which situations suit a specific file type best. We’ll dive into JSON, YAML, XML, and dotenv."
+    },
+    {
+        "filename": "why-i-dont-have-comments-on-my-blog.md",
+        "postDate": "2019-04-10",
+        "description": "Find out why I haven't added a comment system on my blog. It has been left out very intentionally, maybe it's something you should consider too."
     }
 ]
