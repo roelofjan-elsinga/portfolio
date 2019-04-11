@@ -49,6 +49,28 @@ previews:
       If I can't do it through academic research, I'll do it through building a website for a great project.
     url: /portfolio/tracerlab
 
+  ankrd-media:
+    image:
+      url: /images/work/ankrd-media_1920x1080.jpg
+      alt: Ankrd Media homepage
+    title: Ankrd Media
+    description: >
+      Ankrd media is a small company that owns a few products, like Ankrd. It's aimed to managed the different
+      outlets of the Ankrd platform. I made this static website as a way to show what the company does.
+    url: /portfolio/ankrd-media
+
+  ankrd:
+    image:
+      url: /images/work/ankrd_1920x1080.jpg
+      alt: Ankrd homepage
+    title: Ankrd
+    description: >
+      Ankrd is a social media platform for colleges. It aims to be a central point where colleges can post events
+      and discuss topics. Every school has its own posts and members. This was the first application
+      that I created using the new version of Angular.
+    url: /portfolio/ankrd
+
+
   punchlisthero:
     image:
       url: /images/work/punchlisthero_1920x1080.jpg

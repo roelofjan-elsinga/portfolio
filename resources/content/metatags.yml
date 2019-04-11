@@ -1,4 +1,5 @@
 tags:
+
   home:
     keywords: roelof, jan, elsinga, portfolio, work, development, design
     description: >
@@ -8,6 +9,7 @@ tags:
     title: Roelof Jan - Full-stack web developer
     image_small:
     image_large:
+
   work:
     keywords: roelof, jan, elsinga, portfolio, work, development, design
     description: All my previous work can be found here
@@ -15,6 +17,7 @@ tags:
     title: My previous projects - Roelof Jan Elsinga
     image_small:
     image_large:
+
   articles:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
     description: >
@@ -25,6 +28,7 @@ tags:
     title: My articles - Roelof Jan Elsinga
     image_small:
     image_large:
+
   passions:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, passions, articles
     description: >
@@ -35,6 +39,7 @@ tags:
     title: My passions - Roelof Jan Elsinga
     image_small:
     image_large:
+
   404:
     keywords: roelof, jan, elsinga, portfolio, work, development, design, articles
     description: Uh oh! You've found a page I still have to create!
