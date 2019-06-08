@@ -81,3 +81,15 @@ previews:
       It does this by automating administrative tasks and making it simple to record issues and
       share them with trades.
     url: /portfolio/punchlisthero
+
+  plantcareforbeginners:
+    image:
+      url: /images/work/plantcareforbeginners_1920x1080.jpg
+      alt: Plant care for beginners homepage
+    title: Plant care for beginners
+    description: >
+      With Plant care for beginners I'm sharing my experiences about caring for plants. I want to help to
+      educate others about keeping their plants healthy and how to help them thrive. The goal is to write
+      about plants I actually care for myself, so I can write about all kinds of tips and tricks that you
+      may not know if you just copy and paste other guides.
+    url: /portfolio/plantcareforbeginners

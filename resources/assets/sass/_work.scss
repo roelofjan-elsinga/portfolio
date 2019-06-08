@@ -28,52 +28,5 @@
         margin-top: 16px;
       }
     }
-
-    #add-work {
-      color: #2980b9;
-      border: 5px dashed #2980b9;
-      background-color: rgba(0, 0, 0, 0);
-      height: 100%;
-      min-height: 100px;
-      width: 100%;
-      display: table;
-      transition-duration: .5s;
-
-      .fa {
-        font-size: 36px;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-      &:hover {
-        color: #ecf0f1;
-        background-color: #2980b9
-      }
-    }
-  }
-}
-
-.work-page {
-
-  .work {
-    border: 1px solid #e2e2e2;
-    padding: 16px;
-    margin-bottom: 16px;
-
-    img {
-      max-width: 100%;
-    }
-  }
-}
-
-.work-detail {
-  img {
-    max-width: 100%;
-  }
-
-  .more-link {
-    margin-top: 16px;
-    display: inline-block;
   }
 }

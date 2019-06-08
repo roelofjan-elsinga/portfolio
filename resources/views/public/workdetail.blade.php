@@ -25,10 +25,18 @@
 @endsection
 
 @section('content')
-    <div class="section paragraph-spacing py-8 sm:py-0">
 
-        {!! $work !!}
+    <div class="articles-page py-8 sm:py-0">
 
+        <main class="view-article paragraph-spacing">
+
+            <article>
+
+                {!! $work !!}
+
+            </article>
+
+        </main>
     </div>
 
     <script type="application/ld+json">
