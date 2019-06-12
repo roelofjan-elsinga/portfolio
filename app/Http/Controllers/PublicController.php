@@ -2,6 +2,7 @@
 
 namespace Main\Http\Controllers;
 
+use ContentParser\ContentParser;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -11,9 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
-use Main\Classes\Markdown;
 use Main\Classes\Metadata;
-use PHPHtmlParser\Dom;
 use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
@@ -29,11 +28,11 @@ class PublicController extends Controller
     {
         return view('public.index', [
             'works' => $this->getWorkPreviews(2),
-            'work' => Markdown::parseResourcePath("content/blocks/work.md"),
-            'social' => Markdown::parseResourcePath("content/blocks/social.md"),
-            'about' => Markdown::parseResourcePath("content/blocks/about.md"),
-            'contact' => Markdown::parseResourcePath("content/blocks/contact.md"),
-            'site_techniques' => Markdown::parseResourcePath("content/blocks/site_techniques.md")
+            'work' => ContentParser::forFile(resource_path("content/blocks/work.md"))->parse(),
+            'social' => ContentParser::forFile(resource_path("content/blocks/social.md"))->parse(),
+            'about' => ContentParser::forFile(resource_path("content/blocks/about.md"))->parse(),
+            'contact' => ContentParser::forFile(resource_path("content/blocks/contact.md"))->parse(),
+            'site_techniques' => ContentParser::forFile(resource_path("content/blocks/site_techniques.md"))->parse()
         ]);
     }
 
@@ -106,11 +105,12 @@ class PublicController extends Controller
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Exception
      */
     public function work()
     {
         return view('public.work', [
-            'content' => Markdown::parseResourcePath("content/blocks/work-page.md"),
+            'content' => ContentParser::forFile(resource_path("content/blocks/work-page.md"))->parse(),
             'works' => $this->getWorkPreviews(),
             'page' => $this->tagsParser->getTagsForPageName('work')
         ]);
@@ -199,7 +199,7 @@ class PublicController extends Controller
     private function mapArticlesForPath(Collection $articles, string $path = 'articles'): Collection
     {
         return $articles->map(function ($article) use ($path) {
-            $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
+            $content = ContentParser::forFile(resource_path("content/{$path}/{$article->filename}"))->parse();
 
             if (strlen($content) > 0) {
                 $title = $this->getTextBetweenTags($content, 'h1');
@@ -222,10 +222,11 @@ class PublicController extends Controller
      * @param $article
      * @param string $path
      * @return mixed
+     * @throws \Exception
      */
     public function mapArticleForViewing($article, string $path = 'articles')
     {
-        $content = Markdown::parseResourcePath("content/{$path}/{$article->filename}");
+        $content = ContentParser::forFile(resource_path("content/{$path}/{$article->filename}"))->parse();
 
         $article->content = $content;
 
@@ -245,6 +246,7 @@ class PublicController extends Controller
      * View the passions overview page
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Exception
      */
     public function passions()
     {
@@ -265,7 +267,7 @@ class PublicController extends Controller
         ]);
 
         return view('public.articles', [
-            'content' => Markdown::parseResourcePath("content/blocks/passions.md"),
+            'content' => ContentParser::forFile(resource_path("content/blocks/passions.md"))->parse(),
             'articles' => $paginator,
             'pagination_tags' => [
                 'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
@@ -316,6 +318,7 @@ class PublicController extends Controller
      * View the articles page
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Exception
      */
     public function articles()
     {
@@ -336,7 +339,7 @@ class PublicController extends Controller
         ]);
 
         return view('public.articles', [
-            'content' => Markdown::parseResourcePath("content/blocks/articles.md"),
+            'content' => ContentParser::forFile(resource_path("content/blocks/articles.md"))->parse(),
             'articles' => $paginator,
             'pagination_tags' => [
                 'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,

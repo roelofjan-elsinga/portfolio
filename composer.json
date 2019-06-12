@@ -10,7 +10,7 @@
     "require": {
         "php": ">=7.1.3",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.7.*",
+        "laravel/framework": "^5.8.0",
         "eventviva/php-image-resize": "1.5.*",
         "kartik-v/bootstrap-fileinput": "dev-master",
         "erusev/parsedown": "^1.7",
@@ -19,7 +19,9 @@
         "ext-json": "*",
         "ext-dom": "*",
         "ext-curl": "*",
-        "ext-zip": "*"
+        "ext-zip": "*",
+        "roelofjan-elsinga/sitemap-generator": "^0.2.0",
+        "roelofjan-elsinga/content-to-html-parser": "^0.1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
