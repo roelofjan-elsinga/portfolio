@@ -7,7 +7,7 @@
 @section('content')
     <div class="articles-page items paragraph-spacing pt-8 md:pt-0">
 
-        {!! $content !!}
+        {!! Block::get('articles') !!}
 
         <main class="articles my-8">
 
@@ -15,22 +15,18 @@
 
                 <article>
                     <div class="image">
-                        @isset($article->thumbnail)
-                            <img src="{{asset($article->thumbnail)}}" />
-                        @endisset
+                        <img src="{{asset($article->thumbnail)}}" />
                     </div>
 
                     <div class="content pt-8">
-                        @isset($article->title)
-                            <h3 class="pt-4 sm:pt-0">
-                                {{$article->title}}
-                            </h3>
-                        @endisset
+                        <h3 class="pt-4 sm:pt-0">
+                            {{$article->title}}
+                        </h3>
 
                         <span class="muted">Posted on: {!! $article->postDate !!}</span>
                     </div>
 
-                    <a href="{{isset($article->url) ? $article->url : route($view_route_name, $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
+                    <a href="{{!is_null($article->url()) ? $article->url : route($view_route_name, $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
                 </article>
 
             @endforeach
@@ -53,7 +49,7 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{Route::currentRouteName() === 'articles.index' ? 'Articles' : 'Passions'}}",
+        "name": "{{Route::currentRouteName() === 'articles' ? 'Articles' : 'Passions'}}",
         "item": "{{route(Route::currentRouteName())}}"
       }]
     }

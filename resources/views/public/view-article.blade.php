@@ -66,7 +66,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "{{$is_article ? 'Articles' : 'Passions'}}",
-        "item": "{{route($is_article ? 'articles.index' : 'passions.index')}}"
+        "item": "{{route($is_article ? 'articles' : 'passions.index')}}"
       },
       {
         "@type": "ListItem",

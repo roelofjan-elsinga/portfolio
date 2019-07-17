@@ -21,7 +21,9 @@
         "ext-curl": "*",
         "ext-zip": "*",
         "roelofjan-elsinga/sitemap-generator": "^0.2.0",
-        "roelofjan-elsinga/content-to-html-parser": "^0.1.0"
+        "roelofjan-elsinga/content-to-html-parser": "^0.1.0",
+        "roelofjan-elsinga/flat-file-cms-gui": "^0.3.2",
+        "rbdwllr/reallysimplejwt": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -38,7 +40,10 @@
         ],
         "psr-4": {
             "Main\\": "app/"
-        }
+        },
+        "files": [
+            "app/Http/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

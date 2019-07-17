@@ -1,33 +1,23 @@
 @extends('public')
 
 @section('content')
-    @if (count($errors) > 0)
-        <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    <div class="section text-center">
+        @if (session()->has('errors'))
+            <div class="bg-red-dark md:w-1/2 mx-auto text-white p-4 rounded mb-8">
+                <strong>Whoops!</strong> There were some problems with your input.
+            </div>
+        @endif
 
-    @if (isset($activated))
-        <div class="alert alert-success">
-            <strong>Success!</strong> Your account as been activated and you can now log in
-        </div>
-    @endif
+        {!! Form::open(['route' => 'auth.login', 'method' => 'post', 'class' => 'flex flex-col md:w-1/2 mx-auto', 'autocomplete' => false]) !!}
 
-    {!! Form::open(['route' => 'auth.postLogin', 'method' => 'post', 'class' => 'form-signin', 'id' => 'login']) !!}
-    {!! Form::email('email', null, ['class' => 'form-control', 'id' => 'inputEmail', 'placeholder' => 'Email address', 'autofocus', 'required' => 'required']) !!}
-    {!! Form::input('password', 'password', null, ['class' => 'form-control', 'id' => 'inputPassword', 'placeholder' => 'Password', 'required' => 'required']) !!}
-    <div class="checkbox">
-        <label>
-            {!! Form::checkbox('remember') !!} Keep me logged in
-        </label>
+            {!! Form::label('username', 'User name', ['class' => 'text-left mb-2 font-bold']) !!}
+            {!! Form::text('username', null, ['class' => 'flex-1 p-4 border mb-4 rounded', 'placeholder' => 'User name', 'autofocus', 'required' => 'required']) !!}
+
+            {!! Form::label('password', 'Password', ['class' => 'text-left mb-2 font-bold']) !!}
+            {!! Form::input('password', 'password', null, ['class' => 'flex-1 p-4 border mb-4 rounded', 'placeholder' => 'Password', 'required' => 'required']) !!}
+
+            {!! Form::submit('Log in', ['class' => 'flex-1 p-4 mt-4 bg-green text-white rounded']) !!}
+
+        {!! Form::close() !!}
     </div>
-
-    {!! Form::submit('Log in', ['class' => 'btn btn-lg btn-property-primary btn-block']) !!}
-
-    {!! Form::close() !!}
 @endsection

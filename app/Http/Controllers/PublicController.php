@@ -3,6 +3,7 @@
 namespace Main\Http\Controllers;
 
 use ContentParser\ContentParser;
+use FlatFileCms\Article;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -17,13 +18,6 @@ use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
 {
-    public function __construct()
-    {
-        parent::__construct();
-
-        View::share('page', $this->tagsParser->getTagsForPageName('home'));
-    }
-
     public function index()
     {
         return view('public.index', [
@@ -324,11 +318,11 @@ class PublicController extends Controller
     {
         $request = Request::capture();
 
-        $articles = Metadata::forPath()
-            ->sortByDesc('postDate')
+        $articles = Article::published()
+            ->sortByDesc(function (Article $article) {
+                return $article->rawPostDate();
+            })
             ->values();
-
-        $articles = $this->mapArticlesForPath($articles);
 
         $current_page = $request->get('page') ?? 1;
 
@@ -339,7 +333,6 @@ class PublicController extends Controller
         ]);
 
         return view('public.articles', [
-            'content' => ContentParser::forFile(resource_path("content/blocks/articles.md"))->parse(),
             'articles' => $paginator,
             'pagination_tags' => [
                 'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
@@ -358,15 +351,7 @@ class PublicController extends Controller
      */
     public function viewArticle(string $slug)
     {
-        $article = Metadata::forPath()
-            ->filter(function ($article) use ($slug) {
-                return $article->filename === "{$slug}.md";
-            })
-            ->values()
-            ->map(function ($article) {
-                return $this->mapArticleForViewing($article);
-            })
-            ->first();
+        $article = Article::forSlug($slug);
 
         if (is_null($article)) {
             return abort(404);
