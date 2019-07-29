@@ -1,0 +1,52 @@
+{
+    "tags": {
+        "home": {
+            "keywords": "roelof, jan, elsinga, portfolio, work, development, design",
+            "description": "Hello, I'm Roelof Jan. Full-stack web developer & Scrum master. I love building products people can't wait to interact with.\n",
+            "author": "Roelof Jan Elsinga",
+            "title": "Roelof Jan - Full-stack web developer",
+            "image_small": null,
+            "image_large": null
+        },
+        "work": {
+            "keywords": "roelof, jan, elsinga, portfolio, work, development, design",
+            "description": "All my previous work can be found here",
+            "author": "Roelof Jan Elsinga",
+            "title": "My previous projects - Roelof Jan Elsinga",
+            "image_small": null,
+            "image_large": null
+        },
+        "articles": {
+            "keywords": "roelof, jan, elsinga, portfolio, work, development, design, articles",
+            "description": "I've written several articles about things I was working on. Writing about my projects and problems helped me to reflect on my development choices and to keep learning new things and improving on old skills.\n",
+            "author": "Roelof Jan Elsinga",
+            "title": "My articles - Roelof Jan Elsinga",
+            "image_small": null,
+            "image_large": null
+        },
+        "passions": {
+            "keywords": "roelof, jan, elsinga, portfolio, work, development, design, passions, articles",
+            "description": "Here you can read about the things I do in my free-time. Unlike my blog posts about my professional development, these are about the other good things in life. My job keeps me glued to my computer for at least 8 hours per day so I try to find activities that have nothing to do with that.\n",
+            "author": "Roelof Jan Elsinga",
+            "title": "My passions - Roelof Jan Elsinga",
+            "image_small": null,
+            "image_large": null
+        },
+        "404": {
+            "keywords": "roelof, jan, elsinga, portfolio, work, development, design, articles",
+            "description": "Uh oh! You've found a page I still have to create!",
+            "author": "Roelof Jan Elsinga",
+            "title": "Uh oh! - Roelof Jan Elsinga",
+            "image_small": null,
+            "image_large": null
+        },
+        "default": {
+            "title": "Page title",
+            "keywords": "Keywords go here",
+            "description": "Page description",
+            "author": "Author name",
+            "image_small": "https://roelofjanelsinga.com/images/image_bw_sm.jpg",
+            "image_large": "https://roelofjanelsinga.com/images/image_bw_sm.jpg"
+        }
+    }
+}
