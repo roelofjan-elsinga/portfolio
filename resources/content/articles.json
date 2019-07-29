@@ -315,5 +315,13 @@
         "postDate": "2019-05-11",
         "description": "Find out how I discovered the online presence of my target audience and what my next steps are to finding a bigger audience.",
         "isPublished": true
+    },
+    {
+        "filename": "improve-performance-polymorphic-relationships-laravel.md",
+        "postDate": "2019-07-29",
+        "updateDate": "2019-07-29 07:18:49",
+        "description": "In this post I'm explaining how you can improve the query performance for polymorphic relationships in Laravel, find out how I did it.",
+        "isScheduled": false,
+        "isPublished": true
     }
 ]
