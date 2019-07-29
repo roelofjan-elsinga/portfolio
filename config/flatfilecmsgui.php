@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'middleware' => ['web'],
+    'middleware' => ['web', 'auth'],
 
     /*
     |--------------------------------------------------------------------------
@@ -60,5 +60,16 @@ return [
     |
     */
     'website_url' => '/',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Flat File CMS GUI Language
+    |--------------------------------------------------------------------------
+    |
+    | This is the language used for the dashboard.
+    | Currently supported: en, nl
+    |
+    */
+    'language' => 'en',
 
 ];
