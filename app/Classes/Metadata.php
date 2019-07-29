@@ -15,6 +15,16 @@ class Metadata
 {
     public static function forPath(string $path = 'articles'): Collection
     {
+        if ($path === 'articles') {
+            return collect(
+                json_decode(
+                    File::get(
+                        config('flatfilecms.articles.file_path')
+                    )
+                )
+            );
+        }
+
         return collect(
             json_decode(
                 File::get(
