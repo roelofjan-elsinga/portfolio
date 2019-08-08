@@ -1,4 +1,4 @@
-@extends('public', ['page' => \Main\Classes\TagsParser::instance()->getTagsForPageName('404')])
+@extends('public', ['page' => FlatFileCms\TagsParser::instance()->getTagsForPageName('404')])
 
 @section('navigation')
 
