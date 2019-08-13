@@ -323,5 +323,13 @@
         "description": "In this post I'm explaining how you can improve the query performance for polymorphic relationships in Laravel, find out how I did it.",
         "isScheduled": false,
         "isPublished": true
+    },
+    {
+        "filename": "first-steps-event-sourcing-php.md",
+        "postDate": "2019-08-13",
+        "updateDate": "2019-08-13 18:00:45",
+        "description": "I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value.",
+        "isScheduled": false,
+        "isPublished": true
     }
 ]
