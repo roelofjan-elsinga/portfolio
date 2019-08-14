@@ -331,5 +331,13 @@
         "description": "I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value.",
         "isScheduled": false,
         "isPublished": true
+    },
+    {
+        "filename": "recent-open-source-contributions-augustus-2019.md",
+        "postDate": "2019-08-15",
+        "updateDate": "2019-08-14 14:56:05",
+        "description": "Recently I've been quite active with contributing to open source projects on GitHub. Find out which packages I've contributed to and which packages of my own I've been maintaining.",
+        "isScheduled": true,
+        "isPublished": false
     }
 ]
