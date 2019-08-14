@@ -2,157 +2,187 @@
     {
         "filename": "researching-home-servers.md",
         "postDate": "2016-10-20",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "benefits-single-page-application.md",
         "postDate": "2016-10-27",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "the-future-of-machine-learning.md",
         "postDate": "2016-11-03",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "windows-or-linux.md",
         "postDate": "2016-11-10",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "isomorphic-javascript.md",
         "postDate": "2016-11-17",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "building-your-own-computer.md",
         "postDate": "2016-12-01",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "practical-use-vr-for-web.md",
         "postDate": "2016-12-08",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "indexeddb-caching-your-data-on-the-client-side.md",
         "postDate": "2016-12-15",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "use-software-for-what-its-made-and-benefit.md",
         "postDate": "2016-12-22",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "the-importance-of-server-side-caching.md",
         "postDate": "2016-12-29",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-to-see-if-your-application-works.md",
         "postDate": "2017-01-05",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-to-index-a-single-page-application-built-in-angularjs.md",
         "postDate": "2017-01-12",
         "description": "Find out how to properly index a single page application for Google and other search engines with Prerender.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "using-sass-rather-css.md",
         "postDate": "2017-06-01",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "some-people-can-work-remotely.md",
         "postDate": "2017-06-02",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "learned-building-single-page-applications.md",
         "postDate": "2017-06-06",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "offline-accessibility-service-workers.md",
         "postDate": "2017-06-09",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "build-bridges-api-based-structures.md",
         "postDate": "2017-08-12",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "developer-tools-back-end-programmer.md",
         "postDate": "2017-08-26",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "podcasts-for-creators.md",
         "postDate": "2017-09-02",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "battle-apples-oranges-angular-vs-react.md",
         "postDate": "2017-09-09",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "programming-books-worth-your-money.md",
         "postDate": "2017-09-16",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "stay-healthy-web-designer-developer.md",
         "postDate": "2017-09-30",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-to-improve-your-working-day.md",
         "postDate": "2017-10-07",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-to-wake-up-more-easily-7-tips.md",
         "postDate": "2017-10-18",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "modernizing-log-part-1-conventional-rest-api-to-graphql.md",
         "postDate": "2018-03-14",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-1-conventional-rest-api-to-graphql-f512cb07d2ab"
     },
     {
         "filename": "improving-my-programming-skills-at-a-full-time-job.md",
         "postDate": "2018-03-15",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/improving-my-programming-skills-at-a-full-time-job-e3f380c492b1"
     },
     {
         "filename": "docker-isnt-as-difficult-as-i-thought-it-was.md",
         "postDate": "2018-03-16",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/docker-isnt-as-difficult-as-i-thought-it-was-db2cdea06e21"
     },
     {
         "filename": "modernizing-log-part-2-graphql-test-results.md",
         "postDate": "2018-03-19",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-2-graphql-test-results-e8f3b2db676b"
     },
     {
         "filename": "how-i-sped-up-a-cronjob-by-94.md",
         "postDate": "2018-04-26",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/how-i-sped-up-a-cronjob-by-1800-e33e9ef073dd"
     },
     {
         "filename": "an-overview-of-my-programming-style-guide.md",
         "postDate": "2018-04-29",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/@roelofjanelsinga\/a-overview-of-my-programming-style-guide-a5537b6e8b52",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/a-overview-of-my-programming-style-guide-a5537b6e8b52"
@@ -160,12 +190,14 @@
     {
         "filename": "modernizing-log-part-3-optimizing-graphql-queries.md",
         "postDate": "2018-05-02",
+        "isScheduled": false,
         "isPublished": true,
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-3-optimizing-graphql-queries-bea400c86a3d"
     },
     {
         "filename": "angularjs-angular-v6-hybrid-finally.md",
         "postDate": "2018-06-01",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/@roelofjanelsinga\/angularjs-angular-v6-hybrid-finally-97ac37087de1",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/angularjs-angular-v6-hybrid-finally-97ac37087de1"
@@ -173,6 +205,7 @@
     {
         "filename": "how-to-start-using-the-terminal.md",
         "postDate": "2018-06-17",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/@roelofjanelsinga\/how-to-start-using-the-terminal-9116662bd5e",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/how-to-start-using-the-terminal-9116662bd5e"
@@ -180,6 +213,7 @@
     {
         "filename": "sharing-state-between-angularjs-and-angular-v6-with-redux.md",
         "postDate": "2018-07-04",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/itnext.io\/sharing-state-between-angularjs-and-angular-v6-with-redux-75e3abe7f4f3",
         "canonical": "https:\/\/itnext.io\/sharing-state-between-angularjs-and-angular-v6-with-redux-75e3abe7f4f3"
@@ -187,6 +221,7 @@
     {
         "filename": "enhance-your-dynamic-website-with-markdown.md",
         "postDate": "2018-07-10",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/@roelofjanelsinga\/enhance-your-dynamic-website-with-markdown-20f374ba2039",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/enhance-your-dynamic-website-with-markdown-20f374ba2039"
@@ -194,6 +229,7 @@
     {
         "filename": "sharing-the-ui-router-between-angularjs-and-angular-6.md",
         "postDate": "2018-07-22",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/itnext.io\/sharing-the-ui-router-between-angularjs-and-angular-6-84f6370ec557",
         "canonical": "https:\/\/itnext.io\/sharing-the-ui-router-between-angularjs-and-angular-6-84f6370ec557"
@@ -201,6 +237,7 @@
     {
         "filename": "apache-solr-tips-for-beginners-like-me.md",
         "postDate": "2018-08-06",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/itnext.io\/apache-solr-tips-for-beginners-like-me-b27201dcefcf",
         "canonical": "https:\/\/itnext.io\/apache-solr-tips-for-beginners-like-me-b27201dcefcf"
@@ -208,6 +245,7 @@
     {
         "filename": "i-need-a-mentor.md",
         "postDate": "2018-08-15",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/@roelofjanelsinga\/i-need-a-mentor-cfbfe948c47e",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/i-need-a-mentor-cfbfe948c47e"
@@ -215,6 +253,7 @@
     {
         "filename": "how-i-made-working-on-my-side-project-more-enjoyable.md",
         "postDate": "2018-10-17",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/nyc-design\/how-i-made-working-on-my-side-project-more-enjoyable-and-rewarding-a3ae8e1f3ae5",
         "canonical": "https:\/\/medium.com\/nyc-design\/how-i-made-working-on-my-side-project-more-enjoyable-and-rewarding-a3ae8e1f3ae5"
@@ -222,35 +261,41 @@
     {
         "filename": "development-sprint-workflows.md",
         "postDate": "2018-11-05",
+        "isScheduled": false,
         "isPublished": true,
         "url": "https:\/\/medium.com\/tubber-development\/development-sprint-workflows-55b21225b2f8",
         "canonical": "https:\/\/medium.com\/tubber-development\/development-sprint-workflows-55b21225b2f8"
     },
     {
         "filename": "plants-in-my-living-space.md",
-        "description": "Plants help me keep a calm mind and deal with stress. I keep the plants in my office and other living spaces for relaxation.",
         "postDate": "2019-01-28",
+        "description": "Plants help me keep a calm mind and deal with stress. I keep the plants in my office and other living spaces for relaxation.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "improving-development-hiring.md",
         "postDate": "2019-01-25",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people.md",
         "postDate": "2019-02-07",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "learning-to-speak-norwegian.md",
-        "description": "I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy.",
         "postDate": "2019-02-10",
+        "description": "I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "learn-to-say-no.md",
         "postDate": "2019-02-11",
+        "isScheduled": false,
         "isPublished": true
     },
     {
@@ -265,6 +310,7 @@
         "filename": "the-elephant-in-the-room-burnouts.md",
         "postDate": "2019-02-22",
         "description": "Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
@@ -272,66 +318,77 @@
         "postDate": "2019-02-26",
         "updateDate": "2019-03-13 07:26:00",
         "description": "When using a Polygon or MultiPolygon for searching on a SpatialField with IsWithin(), you can't use a square shape unless it's counter-clockwise.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
         "postDate": "2019-02-28",
         "description": "Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "my-top-10-favorite-podcasts.md",
-        "description": "I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.",
         "postDate": "2019-03-20",
+        "description": "I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "seo-and-personal-marketing-for-developers.md",
         "postDate": "2019-03-21",
         "description": "Find out how to get some quick SEO wins for your personal blog! This post is specifically aimed to developers, because we often have trouble selling ourselves.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "why-i-dont-use-database-for-my-blog.md",
         "postDate": "2019-03-25",
         "description": "There are many amazing alternatives to using a database to store data for your website. Find out why I chose to use static files to store all content for my blog.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "how-to-generate-a-sitemap.md",
         "postDate": "2019-03-29",
         "description": "Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "my-choice-of-configuraton-file-types.md",
         "postDate": "2019-04-04",
         "description": "Find out which file types I use for certain scenarios and which situations suit a specific file type best. We\u2019ll dive into JSON, YAML, XML, and dotenv.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "why-i-dont-have-comments-on-my-blog.md",
         "postDate": "2019-04-10",
         "description": "Find out why I haven't added a comment system on my blog. It has been left out very intentionally, maybe it's something you should consider too.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "5-reasons-to-start-using-ubuntu.md",
         "postDate": "2019-04-21",
         "description": "Find out what my top 5 reasons were to start using Ubuntu and why you should perhaps also use it as your primary operating system. Hint: It's amazing!",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "what-waking-up-at-6-taught-me.md",
         "postDate": "2019-05-01",
         "description": "Waking up at 6 every morning has been a very surprising improvement in my life, find out what impact it had on my day-to-day life.",
+        "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "discovering-the-online-presence-of-my-target-audience.md",
         "postDate": "2019-05-11",
         "description": "Find out how I discovered the online presence of my target audience and what my next steps are to finding a bigger audience.",
+        "isScheduled": false,
         "isPublished": true
     },
     {

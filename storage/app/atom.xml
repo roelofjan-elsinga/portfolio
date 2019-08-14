@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
-    
-              <title>Roelof Jan Elsinga</title>
+<title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-08-13T18:01:03+02:00</updated>
+              <updated>2019-08-14T20:18:21+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
               <id>https://roelofjanelsinga.com/</id>
               <link rel="self" href='https://roelofjanelsinga.com/feed'/>
-        <entry>
-                            <title>Researching Home Servers</title>
-                            <link href="https://roelofjanelsinga.com/articles/researching-home-servers"/>
-                            <id>https://roelofjanelsinga.com/articles/researching-home-servers</id>
-                            <updated>2016-10-20T12:00:00+02:00</updated>
-                            <published>2016-10-20T12:00:00+02:00</published>
-                            <content>
+<entry>
+                    <title>Researching Home Servers</title>
+                    <link href="https://roelofjanelsinga.com/articles/researching-home-servers"/>
+                    <id>https://roelofjanelsinga.com/articles/researching-home-servers</id>
+                    <updated>2016-10-20T12:00:00+02:00</updated>
+                    <published>2016-10-20T12:00:00+02:00</published>
+                    <content>
 Researching Home Servers
 Ever since I got a Raspberry Pi 2, in December 2015,
 I've been very interested in setting up a home server
@@ -43,23 +41,21 @@ built with FreeNAS, is quick, reliable, but also very energy efficient and low i
 More posts will follow on this and hopefully at that point I have more concrete ideas
 about system specifications, specific components I'd like to use and the estimated cost
 of this whole project.</content>
-                            <summary>
+                    <summary>
 Researching Home Servers
 Ever since I got a Raspberry Pi 2, in December 2015,
 I've been very interested in setting up a home server
 to be able to save all my files and access them from anywhere I want.
 Besides file storage I've been looking at ways to integrate this with my web development projects[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/video-streaming.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/video-streaming.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Benefits of a single page application</title>
-                            <link href="https://roelofjanelsinga.com/articles/benefits-single-page-application"/>
-                            <id>https://roelofjanelsinga.com/articles/benefits-single-page-application</id>
-                            <updated>2016-10-27T12:00:00+02:00</updated>
-                            <published>2016-10-27T12:00:00+02:00</published>
-                            <content>
+                    <title>Benefits of a single page application</title>
+                    <link href="https://roelofjanelsinga.com/articles/benefits-single-page-application"/>
+                    <id>https://roelofjanelsinga.com/articles/benefits-single-page-application</id>
+                    <updated>2016-10-27T12:00:00+02:00</updated>
+                    <published>2016-10-27T12:00:00+02:00</published>
+                    <content>
 Benefits of a single page application
 Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just plain Javascript and jQuery any more. More and more Javascript frameworks and libraries are being developed and are quickly taking over the roles of traditional web development techniques. The LAMP (Linux, Apache, MySQL, and PHP) stack is slowly losing ground to faster, more flexible ways of development, like the MEAN (MongoDB, ExpressJS, AngularJS, and NodeJS) stack. Javascript allows for quicker navigation through websites and applications and even allow developers to develop application for phones.
 Smoother user interactions
@@ -69,20 +65,18 @@ Second of all, a single page application generally takes up less bandwidth and l
 Convertable to a hybrid application
 And finally, the third benefit highlighted in this post, convertibility. More and more companies are bringing out applications for iPhone, Android, etc. these days. Often, these applications are made from scratch and are being built by iOS and Android developers. This is a very costly process, often costing 50.000+ for a single application. What if there was a way to convert your existing website into a mobile application, without a lot of extra development? Well with single page applications, made with Javascript, this is possible. There are countless of programs that can help you convert a simple website to a hybrid application, PhoneGap for example. This program essentially builds a shell around your website, allowing it to execute like a mobile application on your phone. A single page application, built on Javascript can easily be converted into such an application, as long as the underlying API endpoints are accessible by the application. Of course this will never be as smooth as an actual native mobile application, but it offers for a quick and easy way of testing out a mobile application.
 These points are just a few of many of the benefits of single page applications. But keep in mind that benefits always come with trade offs. There are also disadvantages of building single page applications, and these will be highlighted in a next blog post. The highlighted points in this article are some of the main parts I have encountered building several single page applications of the past year. I'm sure more advantages and disadvantages will show up, but only time will tell.</content>
-                            <summary>
+                    <summary>
 Benefits of a single page application
 Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just plain Javascript and jQuery any more. More and more Javascript frameworks and libraries are being dev[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>The future of machine learning</title>
-                            <link href="https://roelofjanelsinga.com/articles/the-future-of-machine-learning"/>
-                            <id>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</id>
-                            <updated>2016-11-03T12:00:00+01:00</updated>
-                            <published>2016-11-03T12:00:00+01:00</published>
-                            <content>
+                    <title>The future of machine learning</title>
+                    <link href="https://roelofjanelsinga.com/articles/the-future-of-machine-learning"/>
+                    <id>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</id>
+                    <updated>2016-11-03T12:00:00+01:00</updated>
+                    <published>2016-11-03T12:00:00+01:00</published>
+                    <content>
 The future of machine learning
 Machine learning has been getting a lot of attention the last few years. Without most of us knowing it, it's been taking over our lives. Webshops, social media, and our phones, they all make use of it in some way. It sounds scary, but do the advantages outweigh the disadvantages?
 I personally think that the advantages do outweigh the disadvantages. This is because machine learning, and with that big data, helps systems learn what you're like and how to help you the best it can. It will better know how to help you, adjust to you, and predict what you may be interested in. It takes a lot of faith in the system to allow it to collect data based on your behaviour within the system. But, if done correctly, this is a very valuable &quot;personal assistent&quot;. An example for machine learning comes from a presentation by Werner Vogels (CTO Amazon) at The Next Web Conference in Amsterdam. He mentioned that small things like emails with suggestions based on your search history already collect a large amount of data. At Amazon they analyse which emails with which products get opened and clicked or deleted. This way a system learns which products you most likely care about more than other products.
@@ -92,20 +86,18 @@ This is why I think machine learning will become much bigger than it already is.
 It will need to be secure
 With all this data comes a lot of risk as well. Keeping the data secure is very important for the integrity of the system it's being used for. Anyone from the outside would be able to learn anything and everything about a person without having met this person. This is a scary thought. Not only could this result in dangerous (stalking) situations, it could also cause private and professional harm if it turns out a person has a private interest in non conventional movies, products, or services. This could cause loss of image for people, groups, businesses, and communities.
 Machine learning and big data are incredibly useful when they are used in the right way. They can help make the lives of all kinds of people easier, but could also be a threat. Systems will be able to give very personalised advice, suggestions, and help in general. Security will need to be kept up-to-date at all times, because leaked data can cause harm on many different levels.</content>
-                            <summary>
+                    <summary>
 The future of machine learning
 Machine learning has been getting a lot of attention the last few years. Without most of us knowing it, it's been taking over our lives. Webshops, social media, and our phones, they all make use of it in some way. It sounds scary, but do the advantages outweigh the di[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/machine-learning.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/machine-learning.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Windows or Linux?</title>
-                            <link href="https://roelofjanelsinga.com/articles/windows-or-linux"/>
-                            <id>https://roelofjanelsinga.com/articles/windows-or-linux</id>
-                            <updated>2016-11-10T12:00:00+01:00</updated>
-                            <published>2016-11-10T12:00:00+01:00</published>
-                            <content>
+                    <title>Windows or Linux?</title>
+                    <link href="https://roelofjanelsinga.com/articles/windows-or-linux"/>
+                    <id>https://roelofjanelsinga.com/articles/windows-or-linux</id>
+                    <updated>2016-11-10T12:00:00+01:00</updated>
+                    <published>2016-11-10T12:00:00+01:00</published>
+                    <content>
 Windows or Linux?
 The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my entire life, coming from Windows 3.1 to the new Windows 10. You can say that I like my Windows OS's. On the other hand I'm also a web app developer and Linux based systems are perfect for running servers and they're just simply a joy to install new programs. How do I choose a system to stick with, or is a compromise between the two different systems possible?
 Advantages of Windows
@@ -123,20 +115,18 @@ As mentioned before, installing programs on a Linux based system can be done thr
 Compromise
 So is a compromise possible between Windows and Linux? Making use of all the advantages of both systems while filling the disadvantages. Well yes there is. There are two scenarios that come to mind for me. A dual boot system, meaning you have both a windows system installed on your harddrive, as well as a Linux based system. On starting your PC you can choose which operating system to use. This can be great when you want a real experience, no slow loading times, but a real Windows or real Linux environment. If, however, you don't want to deal with this, a virtual machine is a great option. What this allows you to do is boot up a Linux based system inside a window on your Windows based system. This way you don't have to bother with installing a seperate operating system on your system and you can easily switch between your Windows system and your Linux based system. This could be ideal for testing purposes, application development, or just quick tasks.
 So based on your needs you can go for either a Windows based system, a Linux based system or a combination between the two. Personally I have two different systems, one for Ubuntu (A Linux distro) and another one for Windows 10. This makes developing applications very easy, because I need some pieces of software that are only available on a Linux based system. I can just simply set up a connection between the two systems and they work with each other perfectly. But this is only an isolated example, there are a ton of different scenarios possible in which a combination of the two operating systems is a very desirable setup. But try and see for yourself. Give different distro's a try, try making connections, combine systems and see what you can do with them.</content>
-                            <summary>
+                    <summary>
 Windows or Linux?
 The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my entire life, coming from Windows 3.1 to the new Windows 10. You can say that I like my Windows OS's. On the other hand I'm al[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
-                            <link href="https://roelofjanelsinga.com/articles/isomorphic-javascript"/>
-                            <id>https://roelofjanelsinga.com/articles/isomorphic-javascript</id>
-                            <updated>2016-11-17T12:00:00+01:00</updated>
-                            <published>2016-11-17T12:00:00+01:00</published>
-                            <content>
+                    <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
+                    <link href="https://roelofjanelsinga.com/articles/isomorphic-javascript"/>
+                    <id>https://roelofjanelsinga.com/articles/isomorphic-javascript</id>
+                    <updated>2016-11-17T12:00:00+01:00</updated>
+                    <published>2016-11-17T12:00:00+01:00</published>
+                    <content>
 Isomorphic JavaScript: What is it and what can I do with it?
 JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user's input, send XHR requests to PHP (or Rails/Java/etc.), receive data from the server, and complete a task with the provided data. This is the way Javascript has been used for a long, long time. But then, in 2008, NodeJS was launched. NodeJS, most web developers have heard of it, is a JavaScript framework running on the server. This means that Javascript is not just on the client side any more, it can also be a full fledged server. This has many benefits, including the following: it's blazing fast, the front-end and backend use the same language, and code can easily be shared between the front-end and backend. But what does this really mean?
 A library called React
@@ -149,20 +139,18 @@ Loading speeds through caching
 Last but not least, loading speeds of pages can be drastically improved. Because NodeJS creates an HTML string on every page refresh, it can be very easily cached. This way Node can just look in the server memory and see if a cached version of the page exists. When it does, it can return this cached version instead of rendering the React view on the fly. Of course you should always set a maximum time between caches of pages, because otherwise it could be possible that your fancy updated pages will never actually be presented to the user and all your work will be for nothing. A good time guideline for pages that change often could be a few hours to a day. Other pages can be cached for a week or two. A good average is to cache pages for one day at a time, to make sure users get the updated experience soon enough, while still benefitting from the faster loading times of pages.
 Conclusion
 So what does it mean to share code between the server and the front-end? Well it means that user experiences are smooth, responds times are low, and implementing new features can be almost instantanious. There is no need to write the same logic twice (which I catch myself doing a lot in Angular), because the code for the front-end and backend is exactly the same. Because the code is exactly the same, SEO can be done easily, through server-side rendering, pages are always available, even after page refreshes, and page reloads can be made incredibly quick through page caching. Using the same language all across the application is quick, convenient, and it makes developing a delight, because you only need to know one language for everything.</content>
-                            <summary>
+                    <summary>
 Isomorphic JavaScript: What is it and what can I do with it?
 JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user's input, send XHR requests to PHP (or Rails/Java/etc.), receive data from the server, and complete a tas[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/its-better-together.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/its-better-together.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Building your own computer</title>
-                            <link href="https://roelofjanelsinga.com/articles/building-your-own-computer"/>
-                            <id>https://roelofjanelsinga.com/articles/building-your-own-computer</id>
-                            <updated>2016-12-01T12:00:00+01:00</updated>
-                            <published>2016-12-01T12:00:00+01:00</published>
-                            <content>
+                    <title>Building your own computer</title>
+                    <link href="https://roelofjanelsinga.com/articles/building-your-own-computer"/>
+                    <id>https://roelofjanelsinga.com/articles/building-your-own-computer</id>
+                    <updated>2016-12-01T12:00:00+01:00</updated>
+                    <published>2016-12-01T12:00:00+01:00</published>
+                    <content>
 Building your own computer
 Building your own computer? Why would you do that if you can simply buy one in the store? You'd be instantly ready to use it and you know it'll work. But you know what? That would be the simple way out wouldn't it be? Isn't understanding how a computer is made, how it works, what the different components are for way more interesting? Isn't it way more useful to have a computer that is made for the exact purpose you need it for, nothing more, nothing less? Wouldn't you want to be able to control every aspect of the computer itself, even the look, costs and extra's? Well that's exactly why you should build your own computer.
 Understanding
@@ -173,20 +161,18 @@ One application which really needs a combination of all the best components is a
 Of course there are more applications you may want to build a computer for. Maybe you just want a very simple computer for text editing. In this case you can go easy on all parts and go for the bare minimum your OS (Operating System) needs in order to function well. That's where building your own computer has another advantage. You can make it as cheap or as expensive as you want. You won't need to fit a budget around a choice, but you fit your choice around your budget. If you say that, for example, you want to spend 500 euros/dollars on a computer, but you want to be able to play video games on it without any problems. Well you start to select a graphics card that will run every single game you play or plan on playing. After you have figured out which graphics card fits your needs, you can select a processor, the amount of RAM you think you'll require (please go for at least 8GB these days), and then a motherboard that'll connect these pieces together perfectly. You can go for a cheap harddrive, but please don't cheap out on a power supply. A great quality power supply is your best friend and will keep your computer happy. Aim for an 80 plus bronze quality checkmark or higher. You can even select which case you'd want. This can really go either way, a really cheap case, or a very fancy, but expensive one. Just make sure the motherboard you picked out, and all the other components, will fit in your chosen case. Usually this is marked by motherboard size (ATX, mini-ATX, micro-ATX, etc.).
 Reflecting
 As you can see, the possibilities are endless. Even if you decide to change your mind on the purpose of your computer, upgrading is easy. Just add a quicker processor, a faster graphics card, an SSD or M.2 drive or whatever else you may need to get your desired machine. And because you built your computer yourself in the first place, you'll know exactly which parts will be compatible, or at least you'll be able to find out with a bit of Googling. So next time you're thinking of buying a new PC, but you don't want to take the easy way out, or have a very specific need or budget, think about making your own computer. It can be a lot of fun, a great learning moment, or just an interesting experience.</content>
-                            <summary>
+                    <summary>
 Building your own computer
 Building your own computer? Why would you do that if you can simply buy one in the store? You'd be instantly ready to use it and you know it'll work. But you know what? That would be the simple way out wouldn't it be? Isn't understanding how a computer is made, how it wor[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/construction.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/construction.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>What practical use can VR have for the web?</title>
-                            <link href="https://roelofjanelsinga.com/articles/practical-use-vr-for-web"/>
-                            <id>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</id>
-                            <updated>2016-12-08T12:00:00+01:00</updated>
-                            <published>2016-12-08T12:00:00+01:00</published>
-                            <content>
+                    <title>What practical use can VR have for the web?</title>
+                    <link href="https://roelofjanelsinga.com/articles/practical-use-vr-for-web"/>
+                    <id>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</id>
+                    <updated>2016-12-08T12:00:00+01:00</updated>
+                    <published>2016-12-08T12:00:00+01:00</published>
+                    <content>
 What practical use can VR have for the web?
 Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift and even the Gear VR are all trying to accomplish themselves. The Gear VR is aimed at usage on Samsung phones, and the HTC Vive is best used with Steam games. But could VR play a bigger role for different uses other than gaming? Yes, it definitely could, if done properly. Just have a look at the way Jaguar launched their new I-Pace electric SUV. They used VR to display and let people experience diagrams, sketches and other models. That is exactly what what VR is all about, experiencing an event, being in a place, feeling one with it. This all sounds very visionairy, but what are the actual practical applications for VR in the world?
 Stores
@@ -198,20 +184,18 @@ So what's stopping us? Well cost first of all. VR gear is expensive, computers a
 What about the future?
 If all of the previous conditions have been met, where would that VR? VR could potentially take over the role of the personal computer. It sounds like a very distant future, but with the rate hardware currently is being developed, and it only going quicker and quicker, this could be as quick as a few years. It will not happen over night, a lot of doubt will and ridicule will come with it, but this is nothing different from the development of mobile phones and personal computers. It's a cycle that will be repeated over and over again for every sort of technology, and VR is no different.
 Once, however it gets past this stage, when both hardware and software are developing quickly, efficiently, and are of high quality,spreading will start. When the costs of being able to use VR gear lower, it'll spread like a wildfire in a dried out countryside. VR will only become more prominent as more and more people are starting to experience real life applications for the use of VR. Once businesses are starting to use it to promote their services, helping customers and potential customers with their needs, it will get a real life application besides gaming and entertainment. It'll slowly become integrated in everyone's life. Keep in mind, this may be in the current state, with glasses headphones and controllers, but it very well may be more like hologrammic images of some sort. Either through Google Glass like products, or some other, newer invention. VR is coming, be ready for it.</content>
-                            <summary>
+                    <summary>
 What practical use can VR have for the web?
 Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift and even the Gear VR are all trying to accomplish themselves. The Gear VR is aimed at usage on Samsung phones, and the HTC Vive is best used with Steam games. But could VR play[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>IndexedDB: Caching your data on the client side</title>
-                            <link href="https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side"/>
-                            <id>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</id>
-                            <updated>2016-12-15T12:00:00+01:00</updated>
-                            <published>2016-12-15T12:00:00+01:00</published>
-                            <content>
+                    <title>IndexedDB: Caching your data on the client side</title>
+                    <link href="https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side"/>
+                    <id>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</id>
+                    <updated>2016-12-15T12:00:00+01:00</updated>
+                    <published>2016-12-15T12:00:00+01:00</published>
+                    <content>
 IndexedDB: Caching your data on the client side
 A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes. This worked perfectly for a long time, until the app grew larger and larger. At this point I had 5 to 10 XHR requests per view. This was easily achieveable in the beginning when it was 2 or 3. Most pages used the same data, the same non-changing data. This is when I started thinking about caching all of this data, making the experience for the user better, because the app would load faster. Not only the users are benefitting though, the server also gets less requests, causing it to perform better for concurrent users.
 Why no localStorage?
@@ -219,20 +203,18 @@ So why was localStorage not good any more? Well there are two simple reasons for
 Why would you cache the data on the client?
 But why use IndexedDB at all? Isn't it just another layer that you need to pay attention to when you're developing an application? Absolutely, but also look at what it can do for you, as a developer, your server, and your users. If done correctly, you can harnass IndexedDB to cache all your incomming &quot;static&quot; data. What this accomplishes is that you only have to load a specific resource once. When you loaded it from the server, you can save it and use the saved resource next time it's needed. This accomplishes two things. One, your server doesn't have to take duplicate requests from an individual user. Two, the requested page will load quicker, since the request to the server is no longer necessary and the resource is already saved to the RAM memory. This will be beneficial to the user experience of your application.
 If you use localStorage, IndexedDB or nothing at all, making an application as efficient as possible is very important. It's important for your users, but also for your server. Nothing is worse than overloading the server or causing a bad user experience. Whatever you do, make sure you do it well. If that means you will need to use a caching solution like localStorage, sessionStorag, or IndexedDB (WebSQL is deprecated, don't use it) go for what best fits your needs. Do you need something simple like keeping data close between views? Give localStorage or sessionStorage a try. It's excellent for small tasks. If you need a more complex caching solution, that is capable of saving larger sets of data and does not block the DOM, IndexedDB is exacly what you should be using. To make this even better, use it in combination with service workers and you're on your way to make a web application that's not only available when you're online, but also when you have no internet connection whatsoever.</content>
-                            <summary>
+                    <summary>
 IndexedDB: Caching your data on the client side
 A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes.[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Use software for what it's made, and you'll see the benefits!</title>
-                            <link href="https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit"/>
-                            <id>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</id>
-                            <updated>2016-12-22T12:00:00+01:00</updated>
-                            <published>2016-12-22T12:00:00+01:00</published>
-                            <content>
+                    <title>Use software for what it's made, and you'll see the benefits!</title>
+                    <link href="https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit"/>
+                    <id>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</id>
+                    <updated>2016-12-22T12:00:00+01:00</updated>
+                    <published>2016-12-22T12:00:00+01:00</published>
+                    <content>
 Use software for what it's made, and you'll see the benefits!
 You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from using SQL queries in a relational database to a piece of software that's designed for search: Solr. Don't get me wrong, SQL queries, or requests to any NoSQL database are perfectly fine if you have very specific search needs. For example: find the records belonging to this particular unique identifier. This is a wonderful solution. However, when your databases start to grow, the amount of documents belonging to this particular unique identifier grow and having to do more JOIN operations for relational databases, you'll start to find bottlenecks.
 What was the problem?
@@ -243,20 +225,18 @@ Solarium is a PHP library to interact with a Solr server. This was easily instal
 Was it worth it?
 So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents etc. This meant that I could replace most of my manual filtering in PHP with the built in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually, because relevant documents in my case were heavily dependent on distance between the requested location and the product. Solr does all of this for you, on the fly. Of course this bring a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
 I'm very happy I made the switch. Not only did it speed up search, but it also helped analyzing data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!</content>
-                            <summary>
+                    <summary>
 Use software for what it's made, and you'll see the benefits!
 You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>The importance of server-side caching</title>
-                            <link href="https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching"/>
-                            <id>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</id>
-                            <updated>2016-12-29T12:00:00+01:00</updated>
-                            <published>2016-12-29T12:00:00+01:00</published>
-                            <content>
+                    <title>The importance of server-side caching</title>
+                    <link href="https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching"/>
+                    <id>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</id>
+                    <updated>2016-12-29T12:00:00+01:00</updated>
+                    <published>2016-12-29T12:00:00+01:00</published>
+                    <content>
 The importance of server-side caching
 Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my understanding and interpretation of the term &quot;caching&quot; is. Caching for me means to temporarily save data in a very easy to read and easy to process format, so it can be retrieved effortlessly and used right away. What I'm really saying with this is that, data has been processed, formatted in a way your application will need it, and then saved to an entity. This entity can be several things, for example a flat database table, a file of some sort (.txt or .json for example), or memory in Memcached (Memcache for Windows) or Redis.
 It saves CPU cycles
@@ -266,40 +246,36 @@ But it doesn't just save hardware resources, it's also quicker. Think about it: 
 I mentioned user experience quickly before. There is nothing more annoying than long loading times and it will definitely make users leaving your website. Google said at their Chrome Dev Conference last year that if your app doesn't have a first draw (showing some kind of screen) within 3-5 seconds, 50% of visitors will leave your website. Now I'm not a user experience expert at all, so I can't confirm or deny this statement, but it makes sense. Often time I'll do the same thing. With that said, if you can make your app load quicker in any way, do it. If you have a lot of static data that needs to be loaded from a database upon first entry in your application, make sure to cache all of this. Make the first draw as quick as you can. When caching data to files or the database does not work well enough, try Memcached. When this is still not quick enough, go all out with Redis.
 Everything has disadvantages
 I can only praise caching and leave it at that, but that wouldn't paint the whole picture. Of course there are also disadvantages to it. For example, it's very tough to cache data that changes a lot. It's definitely possible, but you end of having to synchronize the cached data with the new data on every single (important) change. This makes it hell for developers. My rule of thumb on this is: when the data can change at least once a day or it will need to be available right away when changed, do not cache it. If, however, the data never really changes or you really need a performance boost for something, go ahead and cache it. Make it easier for yourself, not harder. The amount of times I was wondering why the page wasn't updating because of cache is too high. Learn from my mistakes and don't cache anything if you're working on that particular part of your application.</content>
-                            <summary>
+                    <summary>
 The importance of server-side caching
 Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my u[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/airshow.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/airshow.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>How to see if your application works</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</id>
-                            <updated>2017-01-05T12:00:00+01:00</updated>
-                            <published>2017-01-05T12:00:00+01:00</published>
-                            <content>
+                    <title>How to see if your application works</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</id>
+                    <updated>2017-01-05T12:00:00+01:00</updated>
+                    <published>2017-01-05T12:00:00+01:00</published>
+                    <content>
 How to see if your application works
 If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working flawlessly on your localhost and completely falling apart on your hosting server. I have definitely seen this happen to my applications a lot. I primarily work on a Windows machine, with a XAMPP installation for the server and database. This is how I test my applications and see if anything strange happens when I run it. When this is all perfect, I will deploy this to my remote server through Git. So far so good...until I pull the changes and see my application fall apart, because somehow an error or typo slipped in. One of the main things that I have seen happen to me is that file extensions of images, for example, are capitalized. On Windows this is no problem at all, it will run perfectly. However, Ubuntu (my main server OS) will start to throw errors. It will not find the image with the capitalized extension, because it doesn't exist. Only a version with a lowercase extension exists, but it's not the same and it just simply throws an error.
 It's things like that here and there, for serious, but also little things that can be different for each seperate OS. Throw in another developer in the mix and you can very well end up with a project that has to be flawless on Mac OS, Windows, and a Linux distro at the same time. This used to be a tedious process, until things like virtual machines and Docker came along. Docker is a virtual OS on your Host OS and it will be identical on all the different Host operating systems. This causes all environments to work identically on all the different machines. This is great, but it has it's limitations in my opinion. Before you start to shoot me down with my crazy ideas, hear me out. I use virtual machines to create fully fledged Ubuntu environments on all the different Host operating systems. But Roelof... that's just making things harder for yourself! Well yes, sort of. You will need to adjust all the different host operating systems to be able to work flawlessly with the virtual machine environment and that could be a tedious process, but it can also be easy once you have a single working machine. In my case I wrote an entire installation script to install a particular project (this is of course interchangable with other Git projects) in a folder, complete with Apache2, Redis, Solr and MySQL. So installing the entire environment is as easy as running a single command and following a few simple instructions.
 But why would you want a complete OS instead of just a lightweight Docker installation? Believe me, I tried to set up Docker and work with it like that, but I simply couldn't get it to work on my Windows machine and going with a virtual machine was just so much easier. Also, the installation process can be run on many different host operating systems and even on remote hosts. So the environment on all these machines is also identical. You don't have to think about bottlenecks in any way, shape, or form and it just works for me. Call me crazy, I won't blame you. Docker is probable far...far easier and I just overcomplicated it, but virtual machines do the exact same thing for me. Identical environments with identical permissions on all the different machines, so everything always works identically.
 NOTE:
 This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!</content>
-                            <summary>
+                    <summary>
 How to see if your application works
 If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working flawlessly on your localhost and completely falling apart on your hosting server. I have definitely se[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>How to index a single page application built in AngularJS</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</id>
-                            <updated>2017-01-12T12:00:00+01:00</updated>
-                            <published>2017-01-12T12:00:00+01:00</published>
-                            <content>
+                    <title>How to index a single page application built in AngularJS</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</id>
+                    <updated>2017-01-12T12:00:00+01:00</updated>
+                    <published>2017-01-12T12:00:00+01:00</published>
+                    <content>
 How to index a single page application built in AngularJS
 The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic Javascript. Single Page Applications are fantastic for the user experience, but of course it also has a few disadvantages, one of which is actually a user experience killer. I will describe the two disadvantages that I have found using AngularJS (I know, I haven't completely switched to Angular 2, calm yourselves) and a solution to combat both of these problems in this post. So to get started, the disadvantages that I have found: the initial page load takes long and causes users to leave your website and indexing your website, or any social media sharing is a pain. I know these issues have mostly been resolved with Angular 2, but I know a lot of people out there are still using AngularJS, so this is why this is still relevant.
 Disadvantages
@@ -309,20 +285,18 @@ Server-side rendering! Or not?
 So the (easy, not so easy) solution is to use server side rendering or prerendering. These terms are two very different things. For a framework like AngularJS, in which the controllers and directives are tightly coupled with the DOM (the HTML) server side rendering is almost impossible. So that option is out. That leaves us with prerendering pages. What does this mean? Well it means that the server serves a static version of the page when this is desired. This is the most useful for Facebook's open graph crawler, because it finally understands the data it's receiving. There is a title, description, tags, and images and it just works. A less and slightly strange solution could be to make the loading screens of your applications resemble the view it's about to serve. Right now there is one well-known prerender service available through prerender.io. I have been using their service for over a year and it works, well enough. It's open source and can be pulled from Github.
 I wanted something better
 However, I wanted something else, more of a Hybrid solution. Right now we use a sitemap generator that crawls all the pages and makes an enormous sitemap for Google. But to me this seems like two jobs that could be combined into one. I mean if you're crawling every single page on the website anyway, why not prerender all those pages at the same time? Well this is what I built. It's a solution that not only serves static pages when they're requested, but it's also a website indexer that's able to index any page on the fly in case it's not prerendered yet. So have I built this in Node? No I have not. I actually built the crawler in Python. Why? Well I've built a crawler in it before. That one was like most crawlers only able to index static pages. So I enhanced it with PhantomJS to be able to fully render dynamic pages and save them to a file. I then integrated this Python project in my Laravel project, synchronizing all of the cached pages to an S3 drive for swift requests. If you're interested to check it out, you can clone it from Github. If you think you can do better (and I think most of you can, because I'm a huge Python Noob), create pull requests to improve it with me. Anyway, this solution is able to crawl, index, and cache static files of the entire website, which I think is pretty cool!</content>
-                            <summary>
+                    <summary>
 How to index a single page application built in AngularJS
 The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic Javascript. Single Page Applications are fantastic for the user experience, but of c[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" 
-                                type="image/jpeg" width="1920" height="1080" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
 <entry>
-                            <title>Why I use SASS rather than just CSS</title>
-                            <link href="https://roelofjanelsinga.com/articles/using-sass-rather-css"/>
-                            <id>https://roelofjanelsinga.com/articles/using-sass-rather-css</id>
-                            <updated>2017-06-01T12:00:00+02:00</updated>
-                            <published>2017-06-01T12:00:00+02:00</published>
-                            <content>
+                    <title>Why I use SASS rather than just CSS</title>
+                    <link href="https://roelofjanelsinga.com/articles/using-sass-rather-css"/>
+                    <id>https://roelofjanelsinga.com/articles/using-sass-rather-css</id>
+                    <updated>2017-06-01T12:00:00+02:00</updated>
+                    <published>2017-06-01T12:00:00+02:00</published>
+                    <content>
 Why I use SASS rather than just CSS
 CSS to LESS
 When I first started out with web design &amp; development,
@@ -382,24 +356,22 @@ especially with Grunt having my back by compiling my main SASS file in the backg
 While using SASS it has reduced my frustrations with styling.
 It has made it easier, more efficient, and it gave me the opportunity to really structure the
 files how I want without having to load yet another file in my HTML file.</content>
-                            <summary>
+                    <summary>
 Why I use SASS rather than just CSS
 CSS to LESS
 When I first started out with web design &amp; development,
 CSS was this tool to make HTML pages look better.
 This was just before responsive web design started becoming the new industry standard for web
 design. Websites were zoomed out and broke on m[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" 
-                                type="image/jpeg" width="3240" height="2160" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" type="image/jpeg" width="3240" height="2160" />
+                  </entry>
 <entry>
-                            <title>Why some people can work remotely</title>
-                            <link href="https://roelofjanelsinga.com/articles/some-people-can-work-remotely"/>
-                            <id>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</id>
-                            <updated>2017-06-02T12:00:00+02:00</updated>
-                            <published>2017-06-02T12:00:00+02:00</published>
-                            <content>
+                    <title>Why some people can work remotely</title>
+                    <link href="https://roelofjanelsinga.com/articles/some-people-can-work-remotely"/>
+                    <id>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</id>
+                    <updated>2017-06-02T12:00:00+02:00</updated>
+                    <published>2017-06-02T12:00:00+02:00</published>
+                    <content>
 Why some people can work remotely
 Working remotely, we've all heard of it before. Simply said, you're working on something,
 but you're not actually in the office while you do it.
@@ -442,23 +414,21 @@ So if you think you may want to try something like this some time,
 try to start with a shorter period of time and see if you can do it.
 If you can, try longer, but don't try to force yourself to be productive if you know
 you don't have the discipline it takes to pull it off, it will not work.</content>
-                            <summary>
+                    <summary>
 Why some people can work remotely
 Working remotely, we've all heard of it before. Simply said, you're working on something,
 but you're not actually in the office while you do it.
 In some occasions this means you work from home for the day.
 In others maybe you're a freelancer and work for several di[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" 
-                                type="image/jpeg" width="1500" height="1000" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
+                  </entry>
 <entry>
-                            <title>What I've learned building Single page applications</title>
-                            <link href="https://roelofjanelsinga.com/articles/learned-building-single-page-applications"/>
-                            <id>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</id>
-                            <updated>2017-06-06T12:00:00+02:00</updated>
-                            <published>2017-06-06T12:00:00+02:00</published>
-                            <content>
+                    <title>What I've learned building Single page applications</title>
+                    <link href="https://roelofjanelsinga.com/articles/learned-building-single-page-applications"/>
+                    <id>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</id>
+                    <updated>2017-06-06T12:00:00+02:00</updated>
+                    <published>2017-06-06T12:00:00+02:00</published>
+                    <content>
 What I've learned building Single page applications
 Single Page Applications (SPA's) are amazing to build and work with,
 but there are a lot of disadvantages as well. This post describes some of the things that
@@ -508,22 +478,20 @@ When the application only loads one massive response, the pages need to wait bef
 they're ready to go. So when you structure the API endpoints in the backend,
 make sure to keep the responses small. This will help you break up the loading times so
 users using the application will have a smoother experience.</content>
-                            <summary>
+                    <summary>
 What I've learned building Single page applications
 Single Page Applications (SPA's) are amazing to build and work with,
 but there are a lot of disadvantages as well. This post describes some of the things that
 I have learned while building SPA's. It also contains tips to help developers building o[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" 
-                                type="image/jpeg" width="1500" height="1000" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
+                  </entry>
 <entry>
-                            <title>Offline accessibility with service workers</title>
-                            <link href="https://roelofjanelsinga.com/articles/offline-accessibility-service-workers"/>
-                            <id>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</id>
-                            <updated>2017-06-09T12:00:00+02:00</updated>
-                            <published>2017-06-09T12:00:00+02:00</published>
-                            <content>
+                    <title>Offline accessibility with service workers</title>
+                    <link href="https://roelofjanelsinga.com/articles/offline-accessibility-service-workers"/>
+                    <id>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</id>
+                    <updated>2017-06-09T12:00:00+02:00</updated>
+                    <published>2017-06-09T12:00:00+02:00</published>
+                    <content>
 Offline accessibility with service workers
 Web applications are great. They're fast, they can be used on all platforms and often feel
 like they're a real native application with accessibility .
@@ -588,23 +556,21 @@ Second of all, don't tell everyone, but it's much cheaper and easier to build we
 applications than it is to build native applications. That's what I call a win win situation.
 So to round up: use service workers to make your web application to behave more like a native
 application in less than optimal situations.</content>
-                            <summary>
+                    <summary>
 Offline accessibility with service workers
 Web applications are great. They're fast, they can be used on all platforms and often feel
 like they're a real native application with accessibility .
 But then, your internet stops working and you only had to check that little note you made
 earlier. Too ba[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" 
-                                type="image/jpeg" width="1500" height="1000" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
+                  </entry>
 <entry>
-                            <title>Build bridges with API based application structures</title>
-                            <link href="https://roelofjanelsinga.com/articles/build-bridges-api-based-structures"/>
-                            <id>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</id>
-                            <updated>2017-08-12T12:00:00+02:00</updated>
-                            <published>2017-08-12T12:00:00+02:00</published>
-                            <content>
+                    <title>Build bridges with API based application structures</title>
+                    <link href="https://roelofjanelsinga.com/articles/build-bridges-api-based-structures"/>
+                    <id>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</id>
+                    <updated>2017-08-12T12:00:00+02:00</updated>
+                    <published>2017-08-12T12:00:00+02:00</published>
+                    <content>
 Build bridges with API based application structures
 There is nothing more fun than working with API's during my work day.
 It's programming like any other day, but it's also so much more!
@@ -666,23 +632,21 @@ Zapier
 
 If you like to talk about this subject further, follow me on twitter @RJElsinga or
 Instagram @roelof1001.</content>
-                            <summary>
+                    <summary>
 Build bridges with API based application structures
 There is nothing more fun than working with API's during my work day.
 It's programming like any other day, but it's also so much more!
 It's connecting other services with your own, using them to enhance your application and
 making it much richer w[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" 
-                                type="image/jpeg" width="1280" height="853" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" type="image/jpeg" width="1280" height="853" />
+                  </entry>
 <entry>
-                            <title>Developer tools for a back-end programmer</title>
-                            <link href="https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer"/>
-                            <id>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</id>
-                            <updated>2017-08-26T12:00:00+02:00</updated>
-                            <published>2017-08-26T12:00:00+02:00</published>
-                            <content>
+                    <title>Developer tools for a back-end programmer</title>
+                    <link href="https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer"/>
+                    <id>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</id>
+                    <updated>2017-08-26T12:00:00+02:00</updated>
+                    <published>2017-08-26T12:00:00+02:00</published>
+                    <content>
 Developer tools for a back-end programmer
 Any developer will have a set of developer tools they swear by. A set of tools that does
 everything we need it to do. People can say that tools are interchangeable,
@@ -726,23 +690,21 @@ So there are a few tools I use on a day to day basis to make sure the developmen
 goes according to plan and the code you want published gets published in an orderly fashion.
 Because at the end of the day, you want local code running in a production environment.
 There is not just one way to get there, everyone will have their own way.</content>
-                            <summary>
+                    <summary>
 Developer tools for a back-end programmer
 Any developer will have a set of developer tools they swear by. A set of tools that does
 everything we need it to do. People can say that tools are interchangeable,
 and to an extend they certainly are. However, the set of tools a developer uses,
 often dicta[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" 
-                                type="image/jpeg" width="1080" height="720" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" type="image/jpeg" width="1080" height="720" />
+                  </entry>
 <entry>
-                            <title>Podcasts for creators and programmers</title>
-                            <link href="https://roelofjanelsinga.com/articles/podcasts-for-creators"/>
-                            <id>https://roelofjanelsinga.com/articles/podcasts-for-creators</id>
-                            <updated>2017-09-02T12:00:00+02:00</updated>
-                            <published>2017-09-02T12:00:00+02:00</published>
-                            <content>
+                    <title>Podcasts for creators and programmers</title>
+                    <link href="https://roelofjanelsinga.com/articles/podcasts-for-creators"/>
+                    <id>https://roelofjanelsinga.com/articles/podcasts-for-creators</id>
+                    <updated>2017-09-02T12:00:00+02:00</updated>
+                    <published>2017-09-02T12:00:00+02:00</published>
+                    <content>
 Podcasts for creators and programmers
 Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
 You can share your interests by talking to colleagues, go to meet-ups, or by simply listening to
@@ -799,22 +761,20 @@ If you want to talk about your favorite podcasts with us, or give us some sugges
 for podcasts, get in touch with us! You can follow me on Twitter @RJElsinga and on Instagram,
 be sure to check out Sander as well on Instagram! If you're interested in more of our posts,
 maybe to try to learn how to make more time for side projects!</content>
-                            <summary>
+                    <summary>
 Podcasts for creators and programmers
 Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
 You can share your interests by talking to colleagues, go to meet-ups, or by simply listening to
 podcasts. Which is what this post happens to be about, what a coin[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/microphone.jpg" medium="image" 
-                                type="image/jpeg" width="1013" height="675" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/microphone.jpg" medium="image" type="image/jpeg" width="1013" height="675" />
+                  </entry>
 <entry>
-                            <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
-                            <link href="https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react"/>
-                            <id>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</id>
-                            <updated>2017-09-09T12:00:00+02:00</updated>
-                            <published>2017-09-09T12:00:00+02:00</published>
-                            <content>
+                    <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
+                    <link href="https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react"/>
+                    <id>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</id>
+                    <updated>2017-09-09T12:00:00+02:00</updated>
+                    <published>2017-09-09T12:00:00+02:00</published>
+                    <content>
 The battle of apples and oranges: Angular vs React vs VueJS
 People keep asking about which framework to use (Angular, React, or VueJS),
 and which one is better. I can understand they want to know which one to use for
@@ -880,23 +840,21 @@ You can use any of these frameworks to make single page applications,
 or React and VueJS for some dynamic elements.
 If you like to talk about this subject further,
 follow me on twitter @RJElsinga or Instagram @roelof1001.</content>
-                            <summary>
+                    <summary>
 The battle of apples and oranges: Angular vs React vs VueJS
 People keep asking about which framework to use (Angular, React, or VueJS),
 and which one is better. I can understand they want to know which one to use for
 projects, but it's a silly question. It's comparing apples to oranges.
 I'll explai[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/apples.jpg" medium="image" 
-                                type="image/jpeg" width="1000" height="667" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/apples.jpg" medium="image" type="image/jpeg" width="1000" height="667" />
+                  </entry>
 <entry>
-                            <title>Are programming books worth your money?</title>
-                            <link href="https://roelofjanelsinga.com/articles/programming-books-worth-your-money"/>
-                            <id>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</id>
-                            <updated>2017-09-16T12:00:00+02:00</updated>
-                            <published>2017-09-16T12:00:00+02:00</published>
-                            <content>
+                    <title>Are programming books worth your money?</title>
+                    <link href="https://roelofjanelsinga.com/articles/programming-books-worth-your-money"/>
+                    <id>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</id>
+                    <updated>2017-09-16T12:00:00+02:00</updated>
+                    <published>2017-09-16T12:00:00+02:00</published>
+                    <content>
 Are programming books worth your money?
 You've all seen programming books on the internet or in bookstores. But most of us know
 that those books are usually not relevant anymore, most of them are outdated.
@@ -942,23 +900,21 @@ for is something that you'll end up using a lot of the time, otherwise you'll fo
 about it and you will have wasted your time.
 Have you found amazing programming books that have helped you to learn a new language?
 Share them with me on Twitter!</content>
-                            <summary>
+                    <summary>
 Are programming books worth your money?
 You've all seen programming books on the internet or in bookstores. But most of us know
 that those books are usually not relevant anymore, most of them are outdated.
 So should you buy them? I think you should, but there are a few conditions.
 Maturity of the l[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/book-top.jpg" medium="image" 
-                                type="image/jpeg" width="1000" height="667" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-top.jpg" medium="image" type="image/jpeg" width="1000" height="667" />
+                  </entry>
 <entry>
-                            <title>How to Stay Healthy as a Web Designer or Developer</title>
-                            <link href="https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer"/>
-                            <id>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</id>
-                            <updated>2017-09-30T12:00:00+02:00</updated>
-                            <published>2017-09-30T12:00:00+02:00</published>
-                            <content>
+                    <title>How to Stay Healthy as a Web Designer or Developer</title>
+                    <link href="https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer"/>
+                    <id>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</id>
+                    <updated>2017-09-30T12:00:00+02:00</updated>
+                    <published>2017-09-30T12:00:00+02:00</published>
+                    <content>
 How to Stay Healthy as a Web Designer or Developer
 Us web designers and developers sit down all day long while we're at work.
 We don't move as much as we probably should. So many of us are probably not as healthy
@@ -1018,22 +974,20 @@ when you have other people to help you stay motivated. This is why Sander and I 
 up with a concept to help developers to keep each other healthy.
 What have you tried to get healthy as a developer or office worker?
 Share your experiences with me on Twitter!</content>
-                            <summary>
+                    <summary>
 How to Stay Healthy as a Web Designer or Developer
 Us web designers and developers sit down all day long while we're at work.
 We don't move as much as we probably should. So many of us are probably not as healthy
 as we could and should be. I'll be giving you a few tips to get healthier and feel bet[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/running-shoes.jpg" medium="image" 
-                                type="image/jpeg" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/running-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
 <entry>
-                            <title>How to Improve Your Working Day Little by Little</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-improve-your-working-day"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</id>
-                            <updated>2017-10-07T12:00:00+02:00</updated>
-                            <published>2017-10-07T12:00:00+02:00</published>
-                            <content>
+                    <title>How to Improve Your Working Day Little by Little</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-improve-your-working-day"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</id>
+                    <updated>2017-10-07T12:00:00+02:00</updated>
+                    <published>2017-10-07T12:00:00+02:00</published>
+                    <content>
 How to Improve Your Working Day Little by Little
 Everyone has a bad day every once in a while, but there are ways to reduce this amount.
 I put together a list of a few simple steps you can take to improve your days little by little.
@@ -1118,23 +1072,21 @@ you'll feel free. You won't have to please anyone, but you and the people you ch
 to listen to. It's a great feeling.
 I hope you've enjoyed this blog, share any of your own suggestions with me on
 Twitter.</content>
-                            <summary>
+                    <summary>
 How to Improve Your Working Day Little by Little
 Everyone has a bad day every once in a while, but there are ways to reduce this amount.
 I put together a list of a few simple steps you can take to improve your days little by little.
 Have a good night's rest
 This doesn't necessarily mean sleep for a[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/guy-with-confetti.jpg" medium="image" 
-                                type="image/jpeg" width="1500" height="1000" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-with-confetti.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
+                  </entry>
 <entry>
-                            <title>How to wake up more easily: 7 tips</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</id>
-                            <updated>2017-10-18T12:00:00+02:00</updated>
-                            <published>2017-10-18T12:00:00+02:00</published>
-                            <content>
+                    <title>How to wake up more easily: 7 tips</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</id>
+                    <updated>2017-10-18T12:00:00+02:00</updated>
+                    <published>2017-10-18T12:00:00+02:00</published>
+                    <content>
 How to wake up more easily: 7 tips
 Some people are night owls and others flourish in the morning, but all people deal with waking up.
 Some people are just better at it than others. But even night owls can find ways to wake up more
@@ -1202,22 +1154,20 @@ If you found these tips useful, consider sharing this post with your friends to 
 them wake up more easily as well. I know they'll appreciate feeling more rested
 just as much as you. If you have any tips that I may have missed, please let me know!
 You can contact me on Twitter (@RJElsinga) and Instagram (@roelof1001).</content>
-                            <summary>
+                    <summary>
 How to wake up more easily: 7 tips
 Some people are night owls and others flourish in the morning, but all people deal with waking up.
 Some people are just better at it than others. But even night owls can find ways to wake up more
 easily in the morning. So I'll be giving you 7 simple tips to help y[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="900" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" type="image/jpeg" width="1350" height="900" />
+                  </entry>
 <entry>
-                            <title>Modernizing log: Part 1, Conventional REST API to GraphQL</title>
-                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql"/>
-                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</id>
-                            <updated>2018-03-14T12:00:00+01:00</updated>
-                            <published>2018-03-14T12:00:00+01:00</published>
-                            <content>
+                    <title>Modernizing log: Part 1, Conventional REST API to GraphQL</title>
+                    <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql"/>
+                    <id>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</id>
+                    <updated>2018-03-14T12:00:00+01:00</updated>
+                    <published>2018-03-14T12:00:00+01:00</published>
+                    <content>
 Modernizing log: Part 1, Conventional REST API to GraphQL
 I’ve been working on a Laravel and AngularJS application for two years now.
 It’s slowly becoming more and more complex and it’s starting to become very
@@ -1238,23 +1188,21 @@ So there are two things I’m going to have to test for now: server load
 (preferably seeing a huge reduction), and response times (preferably
 low enough to facilitate a quick page load).
 In the next post, I’ll document my findings.</content>
-                            <summary>
+                    <summary>
 Modernizing log: Part 1, Conventional REST API to GraphQL
 I’ve been working on a Laravel and AngularJS application for two years now.
 It’s slowly becoming more and more complex and it’s starting to become very
 difficult to manage. Every single Angular view needs at least 5 different
 resources to fu[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="533" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg" medium="image" type="image/jpeg" width="800" height="533" />
+                  </entry>
 <entry>
-                            <title>Improving my programming skills at a full-time job</title>
-                            <link href="https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job"/>
-                            <id>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</id>
-                            <updated>2018-03-15T12:00:00+01:00</updated>
-                            <published>2018-03-15T12:00:00+01:00</published>
-                            <content>
+                    <title>Improving my programming skills at a full-time job</title>
+                    <link href="https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job"/>
+                    <id>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</id>
+                    <updated>2018-03-15T12:00:00+01:00</updated>
+                    <published>2018-03-15T12:00:00+01:00</published>
+                    <content>
 Improving my programming skills at a full-time job
 I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most certainly did not, and here's what I've learned since then.
 First of all, I switched to Linux. I started out programming on a laptop with Windows installed on it. I was very much against using Mac OSX as my main operating system (and I still am), so I never bought a Macbook. But Windows is simply horrific to work with if you're a programmer. This is why I switched to a Linux based operating system, Ubuntu in my case. This is one of the best things I could've done. Using Ubuntu as my primary system made me learn to use the terminal for most of my daily tasks. This, in turn, taught me valuable lessons about installing software on Ubuntu based servers.
@@ -1262,21 +1210,19 @@ Second of all, I learned to use other languages than PHP and JavaScript. I was f
 Third of all, I started using Docker. Having switched to Ubuntu as my primary system, I was very familiar with the Unix environment. This made the switch to Docker 10 times easier. Writing Dockerfiles was a breeze once I understood the different types of commands, like RUN, CMD, and ADD. This makes developing with other people much easier, but it also makes deploying your application very easy.
 I know I'll continue to learn new things as I keep working and I'm excited to see what the future will bring.
 What are some of the things you've learned during your job that you thought you'd never learn or need?</content>
-                            <summary>
+                    <summary>
 Improving my programming skills at a full-time job
 I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most certainly did not, and here's what I've learned since then.
 First of all, I switched to[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="534" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg" medium="image" type="image/jpeg" width="800" height="534" />
+                  </entry>
 <entry>
-                            <title>Docker isn't as difficult as I thought it was</title>
-                            <link href="https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was"/>
-                            <id>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</id>
-                            <updated>2018-03-16T12:00:00+01:00</updated>
-                            <published>2018-03-16T12:00:00+01:00</published>
-                            <content>
+                    <title>Docker isn't as difficult as I thought it was</title>
+                    <link href="https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was"/>
+                    <id>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</id>
+                    <updated>2018-03-16T12:00:00+01:00</updated>
+                    <published>2018-03-16T12:00:00+01:00</published>
+                    <content>
 Docker isn't as difficult as I thought it was
 When I looked into using Docker for my projects, I was very intimidated by &quot;the Dockerfile&quot;. This was until I realized that I've been doing a similar thing for a year outside of Docker.
 A year or so back, I wrote a full installation script that needed to be run on any new server to install any necessary software for a particular project. I thought this was the best thing in the world because with a single command I could install the entire application and all its dependencies.
@@ -1356,21 +1302,19 @@ The third service is Redis, but as you can see, I defined an &quot;image&quot; a
 The fourth service is again a pre-built Docker image, but this time I'm attaching a host volume, through &quot;volumes&quot;. What this means is that I'm allowing the Docker container to interact with a folder or folders on my Host OS. This way I'm able to use information from my own hard drive inside the container.
 Docker and docker-compose make it very simple to work together with colleagues on the same code because all the code runs in the exact same environment. It doesn't matter if they use Mac OSX, Windows or Linux, the application environment will always be identical.
 So if you've not tried Docker yet or you're intimidated by it, give it a try and don't give up. When you get it to work, it'll be a wonderfully simple experience to add functionality to your application. If you have any tips on how I can improve any of my examples here, please let me know! I love to learn more from you!</content>
-                            <summary>
+                    <summary>
 Docker isn't as difficult as I thought it was
 When I looked into using Docker for my projects, I was very intimidated by &quot;the Dockerfile&quot;. This was until I realized that I've been doing a similar thing for a year outside of Docker.
 A year or so back, I wrote a full installation script tha[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="533" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg" medium="image" type="image/jpeg" width="800" height="533" />
+                  </entry>
 <entry>
-                            <title>Modernizing log: Part 2, GraphQL test results</title>
-                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results"/>
-                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</id>
-                            <updated>2018-03-19T12:00:00+01:00</updated>
-                            <published>2018-03-19T12:00:00+01:00</published>
-                            <content>
+                    <title>Modernizing log: Part 2, GraphQL test results</title>
+                    <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results"/>
+                    <id>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</id>
+                    <updated>2018-03-19T12:00:00+01:00</updated>
+                    <published>2018-03-19T12:00:00+01:00</published>
+                    <content>
 Modernizing log: Part 2, GraphQL test results
 In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat this, I came up with the solution to combine some of these XHR requests into a single call. I wrote that I was going to do this through GraphQL API endpoints. It's a few days later now and I've done exactly what I described.
 First of all, I added a screenshot of the old situation. This screenshot includes the initial XHR requests and the asynchronous calls after the view has loaded.
@@ -1384,20 +1328,18 @@ Initially, I tried to merge all the static resources, but then I thought it was 
 The next step is to find a way to merge all dynamic resources into 1 or 2 requests as well. At least for the initial rendering. After the data has been loaded, any new data can be loaded through the normal API calls, because speed is no longer the main priority at that point. Since the additional requests after the first load will require user interaction to be triggered, loading times and calculations are less of a strain to the server, because it's easier than reloading all 19 resources it used to have.
 If you haven't read the previous part of this log, please do so through the following link, as it will give context to this log. Modernizing log: Part 1, Conventional REST API to GraphQL
 Do you have any tips on how I should approach merging the dynamic XHR requests? Let me know in the comments, I'd love to learn from you.</content>
-                            <summary>
+                    <summary>
 Modernizing log: Part 2, GraphQL test results
 In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat this, I came up with the solution to combine some of these XHR requests into a single call. I w[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="533" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg" medium="image" type="image/jpeg" width="800" height="533" />
+                  </entry>
 <entry>
-                            <title>How I reduced the runtime of a Cronjob by 94%</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94"/>
-                            <id>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</id>
-                            <updated>2018-04-26T12:00:00+02:00</updated>
-                            <published>2018-04-26T12:00:00+02:00</published>
-                            <content>
+                    <title>How I reduced the runtime of a Cronjob by 94%</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94"/>
+                    <id>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</id>
+                    <updated>2018-04-26T12:00:00+02:00</updated>
+                    <published>2018-04-26T12:00:00+02:00</published>
+                    <content>
 How I reduced the runtime of a Cronjob by 94%
 We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronjob that took 36 hours and improved it to fully run in 2 hours. Let's get into how I did this!
 Clean up your code
@@ -1410,20 +1352,18 @@ I achieved the biggest performance gain by moving some of the long-running parts
 The take away
 If there is a script you expect would take a long time, or at the very least has blocking processes, use asynchronous jobs. These jobs will be completed at their own time and will not block the progress of the main script. However, you will need to keep in mind that any data processed in these jobs are not available in your main process. If you absolutely need the data that the jobs generate for your main script, there is, unfortunately, no easy way to make this into an asynchronous job, because you simply can't expect something to be done exactly when you want it to be done. But if it's just some image manipulation or a lot of calculations that are not needed to progress the main script, make it asynchronous!
 If you have any questions or remarks, please leave me a comment and I'd love to help you out. If you have any tips on how to get better results than I described here, let me know too! I'd love to learn from you!</content>
-                            <summary>
+                    <summary>
 How I reduced the runtime of a Cronjob by 94%
 We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronjob that took 36 hours and improved it to fully run in 2 hours. Let's get into how I did this![...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="533" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" type="image/jpeg" width="800" height="533" />
+                  </entry>
 <entry>
-                            <title>Modernizing log: Part 3, Optimizing GraphQL queries</title>
-                            <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries"/>
-                            <id>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</id>
-                            <updated>2018-05-02T12:00:00+02:00</updated>
-                            <published>2018-05-02T12:00:00+02:00</published>
-                            <content>
+                    <title>Modernizing log: Part 3, Optimizing GraphQL queries</title>
+                    <link href="https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries"/>
+                    <id>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</id>
+                    <updated>2018-05-02T12:00:00+02:00</updated>
+                    <published>2018-05-02T12:00:00+02:00</published>
+                    <content>
 Modernizing log: Part 3, Optimizing GraphQL queries
 In the last blog, I left you with some first testing results for a product page.
 If you haven't read it, you can do so by reading
@@ -1470,44 +1410,21 @@ from 19 to 6 requests.
 This page is done for now, until I find a way (and a need) to further optimize
 these resources. Do you have any tips on how I could further improve these
 requests? Let me know in the comments, I'd love to learn from you.</content>
-                            <summary>
+                    <summary>
 Modernizing log: Part 3, Optimizing GraphQL queries
 In the last blog, I left you with some first testing results for a product page.
 If you haven't read it, you can do so by reading
 &quot;Modernizing log: Part 2, GraphQL test results&quot;. In that post,
 I described what I had grouped all static re[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" 
-                                type="image/jpeg" width="800" height="459" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" type="image/jpeg" width="800" height="459" />
+                  </entry>
 <entry>
-                            <title>Improving development hiring</title>
-                            <link href="https://roelofjanelsinga.com/articles/improving-development-hiring"/>
-                            <id>https://roelofjanelsinga.com/articles/improving-development-hiring</id>
-                            <updated>2019-01-25T12:00:00+01:00</updated>
-                            <published>2019-01-25T12:00:00+01:00</published>
-                            <content>
-Improving development hiring
-When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
-1. Trial period of a few weeks
-Let the developer work together with your developers in a team on real projects, just as if the developer was already hired. Coding is only 5% of the job. Communication skills, team work, and culture fit are so much more important. A person can learn how to code, but not learn how to be a team player, and a person to perfectly for in your company. Hire based on team fit, not just coding skills.
-2. Open source work
-Has the applicant worked on any personal projects? Perfect! Use that to judge the programming skills. It's much better to look at code that a person enjoyed writing then code that's being forced into a limited timeframe. Look at how they comment their code, and whether they take care of something simple as a consistent coding style and formatting. A passionate and organized developer is what you want, don't judge them by the forced positivity of a coding test.</content>
-                            <summary>
-Improving development hiring
-When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
-1. Trial period of a few[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/keyboard.jpg" medium="image" 
-                                type="image/jpeg" width="1080" height="715" />
-                          </entry>
-<entry>
-                            <title>Plants in my living space</title>
-                            <link href="https://roelofjanelsinga.com/passions/plants-in-my-living-space"/>
-                            <id>https://roelofjanelsinga.com/passions/plants-in-my-living-space</id>
-                            <updated>2019-01-28T12:00:00+01:00</updated>
-                            <published>2019-01-28T12:00:00+01:00</published>
-                            <content>
+                    <title>Plants in my living space</title>
+                    <link href="https://roelofjanelsinga.com/articles/plants-in-my-living-space"/>
+                    <id>https://roelofjanelsinga.com/articles/plants-in-my-living-space</id>
+                    <updated>2019-01-28T12:00:00+01:00</updated>
+                    <published>2019-01-28T12:00:00+01:00</published>
+                    <content>
 Plants in my living space
 I've found that having plants in spaces you are a lot, like the office, relax me.
 Workdesign
@@ -1554,24 +1471,41 @@ This can cause some problems for some plants that like to be in moist soil at al
 because they'll dry out too quickly. So to combat this dry air,
 the humidifier will help to raise the humidity and provide these plants with a more pleasant environment.
 Of course, I don't have enough humidifiers to take care of all of my plants, so I also spray some of the plants with some water.</content>
-                            <summary>
+                    <summary>
 Plants in my living space
 I've found that having plants in spaces you are a lot, like the office, relax me.
 Workdesign
 published a study to support this.
 One of them is that having plants in a workplace reduces concentration problems by 23%
 and fatigue by 30%. It also helps to reduce coughs, sore t[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/passions/fittonia.png" medium="image" 
-                                type="image/png" width="1280" height="720" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fittonia.png" medium="image" type="image/png" width="1280" height="720" />
+                  </entry>
 <entry>
-                            <title>5 Lessons I've learned by working on a product with non-technical people</title>
-                            <link href="https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people"/>
-                            <id>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</id>
-                            <updated>2019-02-07T12:00:00+01:00</updated>
-                            <published>2019-02-07T12:00:00+01:00</published>
-                            <content>
+                    <title>Improving development hiring</title>
+                    <link href="https://roelofjanelsinga.com/articles/improving-development-hiring"/>
+                    <id>https://roelofjanelsinga.com/articles/improving-development-hiring</id>
+                    <updated>2019-01-25T12:00:00+01:00</updated>
+                    <published>2019-01-25T12:00:00+01:00</published>
+                    <content>
+Improving development hiring
+When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
+1. Trial period of a few weeks
+Let the developer work together with your developers in a team on real projects, just as if the developer was already hired. Coding is only 5% of the job. Communication skills, team work, and culture fit are so much more important. A person can learn how to code, but not learn how to be a team player, and a person to perfectly for in your company. Hire based on team fit, not just coding skills.
+2. Open source work
+Has the applicant worked on any personal projects? Perfect! Use that to judge the programming skills. It's much better to look at code that a person enjoyed writing then code that's being forced into a limited timeframe. Look at how they comment their code, and whether they take care of something simple as a consistent coding style and formatting. A passionate and organized developer is what you want, don't judge them by the forced positivity of a coding test.</content>
+                    <summary>
+Improving development hiring
+When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
+1. Trial period of a few[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboard.jpg" medium="image" type="image/jpeg" width="1080" height="715" />
+                  </entry>
+<entry>
+                    <title>5 Lessons I've learned by working on a product with non-technical people</title>
+                    <link href="https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people"/>
+                    <id>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</id>
+                    <updated>2019-02-07T12:00:00+01:00</updated>
+                    <published>2019-02-07T12:00:00+01:00</published>
+                    <content>
 5 Lessons I've learned by working on a product with non-technical people
 For the past 4 or so years, I've been working on a product with non-technical people, for non-technical people,
 PunchlistHero.
@@ -1654,24 +1588,22 @@ The old version is just a separate branch in the Git repository, so any updates 
 What have you learned from your experiences?
 Do you have any other tips or have you experienced working with non-technical people differently?
 Let me know! I'd love to get in touch on Twitter and get your take on this topic!</content>
-                            <summary>
+                    <summary>
 5 Lessons I've learned by working on a product with non-technical people
 For the past 4 or so years, I've been working on a product with non-technical people, for non-technical people,
 PunchlistHero.
 Here are the 5 lessons I've learned from this.
 1. Ask questions
 To get started with any work, you n[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/light_bulbs.jpeg" medium="image" 
-                                type="image/jpeg" width="1351" height="901" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/light_bulbs.jpeg" medium="image" type="image/jpeg" width="1351" height="901" />
+                  </entry>
 <entry>
-                            <title>Learning to speak Norwegian</title>
-                            <link href="https://roelofjanelsinga.com/passions/learning-to-speak-norwegian"/>
-                            <id>https://roelofjanelsinga.com/passions/learning-to-speak-norwegian</id>
-                            <updated>2019-02-10T12:00:00+01:00</updated>
-                            <published>2019-02-10T12:00:00+01:00</published>
-                            <content>
+                    <title>Learning to speak Norwegian</title>
+                    <link href="https://roelofjanelsinga.com/articles/learning-to-speak-norwegian"/>
+                    <id>https://roelofjanelsinga.com/articles/learning-to-speak-norwegian</id>
+                    <updated>2019-02-10T12:00:00+01:00</updated>
+                    <published>2019-02-10T12:00:00+01:00</published>
+                    <content>
 Learning to speak Norwegian
 Disclaimer: I just like to learn new languages, I don’t actually have any degrees for them.
 Learning a new language is very exciting. I like to do it because it puts my own language to the test.
@@ -1725,23 +1657,21 @@ What about you?
 Have you tried to learn a new language or do you want to? Are you bi-lingual or maybe even multi-lingual?
 How do you learn to use these languages? Let me know what your experiences are on Twitter!
 I'd love to hear from you!</content>
-                            <summary>
+                    <summary>
 Learning to speak Norwegian
 Disclaimer: I just like to learn new languages, I don’t actually have any degrees for them.
 Learning a new language is very exciting. I like to do it because it puts my own language to the test.
 I like to compare the grammar and the words when and where I can.
 This helps[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/passions/pencil_paper.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="900" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/pencil_paper.jpeg" medium="image" type="image/jpeg" width="1350" height="900" />
+                  </entry>
 <entry>
-                            <title>Learn to say NO</title>
-                            <link href="https://roelofjanelsinga.com/articles/learn-to-say-no"/>
-                            <id>https://roelofjanelsinga.com/articles/learn-to-say-no</id>
-                            <updated>2019-02-11T12:00:00+01:00</updated>
-                            <published>2019-02-11T12:00:00+01:00</published>
-                            <content>
+                    <title>Learn to say NO</title>
+                    <link href="https://roelofjanelsinga.com/articles/learn-to-say-no"/>
+                    <id>https://roelofjanelsinga.com/articles/learn-to-say-no</id>
+                    <updated>2019-02-11T12:00:00+01:00</updated>
+                    <published>2019-02-11T12:00:00+01:00</published>
+                    <content>
 Learn to say NO
 When working on tasks during a work day, you can often get distracted by other tasks that need to
 be completed while you're working on something else. As this keeps going on for a while,
@@ -1784,23 +1714,21 @@ Saying NO on a majority of the requests will help you to control the expectation
 If you say YES all the time, you'll have too many people depending on you at the same time
 and you'll most likely let a majority of them down.
 Try to avoid this at all costs, just say no.</content>
-                            <summary>
+                    <summary>
 Learn to say NO
 When working on tasks during a work day, you can often get distracted by other tasks that need to
 be completed while you're working on something else. As this keeps going on for a while,
 you'll have 10 tasks, of which you completed none. How will you feel at the end of the day?
 You'[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/clock.jpg" medium="image" 
-                                type="image/jpeg" width="1350" height="900" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock.jpg" medium="image" type="image/jpeg" width="1350" height="900" />
+                  </entry>
 <entry>
-                            <title>Company culture - productive and pleasant for all</title>
-                            <link href="https://roelofjanelsinga.com/articles/company-culture"/>
-                            <id>https://roelofjanelsinga.com/articles/company-culture</id>
-                            <updated>2019-07-17T10:05:21+02:00</updated>
-                            <published>2019-02-14T12:00:00+01:00</published>
-                            <content>
+                    <title>Company culture - productive and pleasant for all</title>
+                    <link href="https://roelofjanelsinga.com/articles/company-culture"/>
+                    <id>https://roelofjanelsinga.com/articles/company-culture</id>
+                    <updated>2019-07-17T10:05:21+02:00</updated>
+                    <published>2019-02-14T12:00:00+01:00</published>
+                    <content>
 Company culture - productive and pleasant for all
 I want to build a company, never take any outside investments,
 and build a livelihood for any employees I'll have (at some point).
@@ -1829,23 +1757,21 @@ start stripping the &quot;nice to have&quot; aspects and only build the bare min
 Through iteration, you can always add the &quot;nice-to-have&quot; features at a later stage.
 The bare minimum is no excuse for a non-working feature but challenges you to prioritize your work
 and skip all the bloat.</content>
-                            <summary>
+                    <summary>
 Company culture - productive and pleasant for all
 I want to build a company, never take any outside investments,
 and build a livelihood for any employees I'll have (at some point).
 Work should be work, and free time should be free time. When you're working,
 you should be able to work uninterrupted[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/office.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="901" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/office.jpeg" medium="image" type="image/jpeg" width="1350" height="901" />
+                  </entry>
 <entry>
-                            <title>The elephant in the room: burnouts</title>
-                            <link href="https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts"/>
-                            <id>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</id>
-                            <updated>2019-02-22T12:00:00+01:00</updated>
-                            <published>2019-02-22T12:00:00+01:00</published>
-                            <content>
+                    <title>The elephant in the room: burnouts</title>
+                    <link href="https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts"/>
+                    <id>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</id>
+                    <updated>2019-02-22T12:00:00+01:00</updated>
+                    <published>2019-02-22T12:00:00+01:00</published>
+                    <content>
 I dislike all the negative images about burnouts,
 so here's a calm one
 The elephant in the room: burnouts
@@ -1940,24 +1866,22 @@ I'd like to give a huge shout out to my coworkers for embracing the changes
 I've implemented. It makes a work day much more productive and pleasant.
 Since the start of writing this post and with all the implemented changes,
 I haven't felt anything but productive at work.</content>
-                            <summary>
+                    <summary>
 I dislike all the negative images about burnouts,
 so here's a calm one
 The elephant in the room: burnouts
 Programming languages are evolving lightning fast, businesses are ever demanding,
 and employees are being pushed to the edge.
 Today's businesses are increasingly built to push people towards a[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/meditation.jpeg" medium="image" 
-                                type="image/jpeg" width="1393" height="879" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/meditation.jpeg" medium="image" type="image/jpeg" width="1393" height="879" />
+                  </entry>
 <entry>
-                            <title>How to search "the whole world" with Solr Spatial Search</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</id>
-                            <updated>2019-03-13T07:26:00+01:00</updated>
-                            <published>2019-02-26T12:00:00+01:00</published>
-                            <content>
+                    <title>How to search "the whole world" with Solr Spatial Search</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</id>
+                    <updated>2019-03-13T07:26:00+01:00</updated>
+                    <published>2019-02-26T12:00:00+01:00</published>
+                    <content>
 How to search &quot;the whole world&quot; with Solr Spatial Search
 As it turns out, when using a Polygon or MultiPolygon for searching on a SpatialField
 with IsWithin(), you can't use a square shape. Unless you use it in a
@@ -2002,22 +1926,20 @@ so there is no point in going past those maximum values.
 I wasted three hours on this, so you don't have to! Let me know on
 Twitter if you've ever been stuck on a bug
 like this that seems easy, but you end up spending hours on it anyway!</content>
-                            <summary>
+                    <summary>
 How to search &quot;the whole world&quot; with Solr Spatial Search
 As it turns out, when using a Polygon or MultiPolygon for searching on a SpatialField
 with IsWithin(), you can't use a square shape. Unless you use it in a
 counter-clockwise manner, which didn't work for me. According to the WKT sta[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/solr_logo.png" medium="image" 
-                                type="image/png" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/solr_logo.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
 <entry>
-                            <title>How I reduced my docker image by 55%</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent"/>
-                            <id>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</id>
-                            <updated>2019-02-28T12:00:00+01:00</updated>
-                            <published>2019-02-28T12:00:00+01:00</published>
-                            <content>
+                    <title>How I reduced my docker image by 55%</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent"/>
+                    <id>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</id>
+                    <updated>2019-02-28T12:00:00+01:00</updated>
+                    <published>2019-02-28T12:00:00+01:00</published>
+                    <content>
 How I reduced my docker image by 55%
 A smaller docker image has all kinds of benefits, for one,
 it'll download more quickly when you're deploying your application to a new location,
@@ -2062,23 +1984,21 @@ This brought my image size down to its final 555mb.
 Do you have any more tips on reducing docker images further?
 Make sure to contact me on Twitter! I can always use advice on these matters,
 as I'm still learning new things every single day.</content>
-                            <summary>
+                    <summary>
 How I reduced my docker image by 55%
 A smaller docker image has all kinds of benefits, for one,
 it'll download more quickly when you're deploying your application to a new location,
 or you're deploying an updated image to existing applications.
 Being able to quickly updated images is very important[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/steel_tower.jpeg" medium="image" 
-                                type="image/jpeg" width="1200" height="798" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/steel_tower.jpeg" medium="image" type="image/jpeg" width="1200" height="798" />
+                  </entry>
 <entry>
-                            <title>My top 10 favorite podcasts</title>
-                            <link href="https://roelofjanelsinga.com/passions/my-top-10-favorite-podcasts"/>
-                            <id>https://roelofjanelsinga.com/passions/my-top-10-favorite-podcasts</id>
-                            <updated>2019-03-20T12:00:00+01:00</updated>
-                            <published>2019-03-20T12:00:00+01:00</published>
-                            <content>
+                    <title>My top 10 favorite podcasts</title>
+                    <link href="https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts"/>
+                    <id>https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts</id>
+                    <updated>2019-03-20T12:00:00+01:00</updated>
+                    <published>2019-03-20T12:00:00+01:00</published>
+                    <content>
 My top 10 favorite podcasts
 I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.
 I usually listen to them on my way to and from work and they're an excellent way to learn something
@@ -2148,7 +2068,7 @@ better my relationship or different ways to communicate certain things.
 It's interesting to see another couple go through certain processes and learn from their mistakes.
 Do you have any good podcasts you listen to occasionally? Do you listen to any of these podcasts,
 if so, what do you think of them?</content>
-                            <summary>
+                    <summary>
 My top 10 favorite podcasts
 I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.
 I usually listen to them on my way to and from work and they're an excellent way to learn something
@@ -2156,17 +2076,15 @@ by just listening to some knowledgable people speak.
 
 Full stack radio
 F[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/passions/headphones.jpeg" medium="image" 
-                                type="image/jpeg" width="1346" height="903" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/headphones.jpeg" medium="image" type="image/jpeg" width="1346" height="903" />
+                  </entry>
 <entry>
-                            <title>SEO and personal marketing for developers</title>
-                            <link href="https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers"/>
-                            <id>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</id>
-                            <updated>2019-03-21T12:00:00+01:00</updated>
-                            <published>2019-03-21T12:00:00+01:00</published>
-                            <content>
+                    <title>SEO and personal marketing for developers</title>
+                    <link href="https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers"/>
+                    <id>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</id>
+                    <updated>2019-03-21T12:00:00+01:00</updated>
+                    <published>2019-03-21T12:00:00+01:00</published>
+                    <content>
 SEO and personal marketing for developers
 In January of 2019, I stopped posting my blog posts on Medium and started to
 post them on my own website. This was primarily because I like to
@@ -2283,23 +2201,21 @@ Do you have any other steps you feel I need to include in this post? Let me know
 Twitter!
 I'm still learning new things about this process every day, so any new insights are appreciated.
 If you want to be notified when I publish new posts, subscribe to my mailing list or to my RSS feed!</content>
-                            <summary>
+                    <summary>
 SEO and personal marketing for developers
 In January of 2019, I stopped posting my blog posts on Medium and started to
 post them on my own website. This was primarily because I like to
 own my own content and be in control over every aspect of it.
 Moving away from Medium meant that I lost the vast a[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/google-analytics.png" medium="image" 
-                                type="image/jpeg" width="1355" height="897" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/google-analytics.png" medium="image" type="image/jpeg" width="1355" height="897" />
+                  </entry>
 <entry>
-                            <title>Why I don't use a database for my blog</title>
-                            <link href="https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog"/>
-                            <id>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</id>
-                            <updated>2019-03-25T12:00:00+01:00</updated>
-                            <published>2019-03-25T12:00:00+01:00</published>
-                            <content>
+                    <title>Why I don't use a database for my blog</title>
+                    <link href="https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog"/>
+                    <id>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</id>
+                    <updated>2019-03-25T12:00:00+01:00</updated>
+                    <published>2019-03-25T12:00:00+01:00</published>
+                    <content>
 Why I don't use a database for my blog
 A database is a go-to way to store data for most developers,
 and for a great reason: It's really great at retaining data.
@@ -2372,23 +2288,21 @@ freeing and makes creating content a true pleasure.
 Have you ever worked on a project that didn't use a traditional database
 to store content? What are your experiences with it? Did you enjoy it or
 absolutely despises it? Let me know on Twitter!</content>
-                            <summary>
+                    <summary>
 Why I don't use a database for my blog
 A database is a go-to way to store data for most developers,
 and for a great reason: It's really great at retaining data.
 Then why did I decide to not use a database for my blog and instead opt
 for JSON/YAML/Markdown files? Simple! Portability, version control[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/stack_wood.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="901" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/stack_wood.jpeg" medium="image" type="image/jpeg" width="1350" height="901" />
+                  </entry>
 <entry>
-                            <title>How to generate a sitemap</title>
-                            <link href="https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap"/>
-                            <id>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</id>
-                            <updated>2019-03-29T12:00:00+01:00</updated>
-                            <published>2019-03-29T12:00:00+01:00</published>
-                            <content>
+                    <title>How to generate a sitemap</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</id>
+                    <updated>2019-03-29T12:00:00+01:00</updated>
+                    <published>2019-03-29T12:00:00+01:00</published>
+                    <content>
 How to generate a sitemap
 In a previous post, SEO and personal marketing for developers,
 I mentioned that you need to generate a sitemap in order to submit all the important pages from your website
@@ -2450,23 +2364,21 @@ My domain is already entered in the form, so all I have to fill out is sitemap.x
 Google can now find all of your pages and index them into the search systems. 
 If you have any questions or any additions to this post, let me know on Twitter!
 I'm happy to help you or make changes to this post if you caught a mistake or have some better information I can add.</content>
-                            <summary>
+                    <summary>
 How to generate a sitemap
 In a previous post, SEO and personal marketing for developers,
 I mentioned that you need to generate a sitemap in order to submit all the important pages from your website
 to Google Search Console. But how do you generate a sitemap? What does it look like?
 These are the qu[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/binoculars.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="900" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/binoculars.jpeg" medium="image" type="image/jpeg" width="1350" height="900" />
+                  </entry>
 <entry>
-                            <title>My choice of configuration file types</title>
-                            <link href="https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types"/>
-                            <id>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</id>
-                            <updated>2019-04-04T12:00:00+02:00</updated>
-                            <published>2019-04-04T12:00:00+02:00</published>
-                            <content>
+                    <title>My choice of configuration file types</title>
+                    <link href="https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types"/>
+                    <id>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</id>
+                    <updated>2019-04-04T12:00:00+02:00</updated>
+                    <published>2019-04-04T12:00:00+02:00</published>
+                    <content>
 My choice of configuration file types
 Configuration, people love it and people hate it. You can change the behavior of your application with it and
 customize it to your needs. When this is over lunch complicated, you get frustrated if there is no documentation.
@@ -2545,22 +2457,20 @@ If you're looking to keep track of simple data, choose a dotenv file.
 Are you using any other file type for configuration? If so, why are you using this file type specifically?
 I'd love to hear your take on this subject! Let me know on Twitter
 what you use to configure your applications.</content>
-                            <summary>
+                    <summary>
 My choice of configuration file types
 Configuration, people love it and people hate it. You can change the behavior of your application with it and
 customize it to your needs. When this is over lunch complicated, you get frustrated if there is no documentation.
 So how do you choose which file types[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/post-in-json.png" medium="image" 
-                                type="image/png" width="1200" height="698" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/post-in-json.png" medium="image" type="image/png" width="1200" height="698" />
+                  </entry>
 <entry>
-                            <title>Why I don't have comments on my blog</title>
-                            <link href="https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog"/>
-                            <id>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</id>
-                            <updated>2019-04-10T12:00:00+02:00</updated>
-                            <published>2019-04-10T12:00:00+02:00</published>
-                            <content>
+                    <title>Why I don't have comments on my blog</title>
+                    <link href="https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog"/>
+                    <id>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</id>
+                    <updated>2019-04-10T12:00:00+02:00</updated>
+                    <published>2019-04-10T12:00:00+02:00</published>
+                    <content>
 Why I don't have comments on my blog
 When I moved from Medium to my personal blog, I didn't just leave the platform with all of its built-in sharing
 opportunities behind. I also left the comments behind. This was done intentionally and I'm writing this to explain
@@ -2629,22 +2539,20 @@ these short few minutes with my content. This section may be a bit redundant, bu
 I'd like to direct you to my Twitter profile or to the homepage of my website,
 where you'll find my e-mail. If you are using comments on your own blog posts, why?
 If you don't, what are your reasons? I'd love to hear from you! </content>
-                            <summary>
+                    <summary>
 Why I don't have comments on my blog
 When I moved from Medium to my personal blog, I didn't just leave the platform with all of its built-in sharing
 opportunities behind. I also left the comments behind. This was done intentionally and I'm writing this to explain
 why I've left out a comment system.[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/heart-zero-likes.jpeg" medium="image" 
-                                type="image/jpeg" width="1350" height="900" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/heart-zero-likes.jpeg" medium="image" type="image/jpeg" width="1350" height="900" />
+                  </entry>
 <entry>
-                            <title>5 reasons to start using Ubuntu</title>
-                            <link href="https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu"/>
-                            <id>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</id>
-                            <updated>2019-04-21T12:00:00+02:00</updated>
-                            <published>2019-04-21T12:00:00+02:00</published>
-                            <content>
+                    <title>5 reasons to start using Ubuntu</title>
+                    <link href="https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu"/>
+                    <id>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</id>
+                    <updated>2019-04-21T12:00:00+02:00</updated>
+                    <published>2019-04-21T12:00:00+02:00</published>
+                    <content>
 5 reasons to start using Ubuntu
 Most people know Ubuntu as a server operating system (OS), however,
 it can also be used as a desktop environment. This post describes several reasons why you
@@ -2726,23 +2634,21 @@ What about you?
 What are the reasons you started to use Ubuntu? If you haven't used it yet, why not?
 Let me know on Twitter because I love hearing the
 stories of others regarding this amazing operating system.</content>
-                            <summary>
+                    <summary>
 5 reasons to start using Ubuntu
 Most people know Ubuntu as a server operating system (OS), however,
 it can also be used as a desktop environment. This post describes several reasons why you
 should use Ubuntu as a desktop OS over something like Windows or Mac.
 Here are some of the reasons I chose to[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/ubuntu_logo.png" medium="image" 
-                                type="image/png" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ubuntu_logo.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
 <entry>
-                            <title>What waking up at 6 every morning has taught me</title>
-                            <link href="https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me"/>
-                            <id>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</id>
-                            <updated>2019-05-01T12:00:00+02:00</updated>
-                            <published>2019-05-01T12:00:00+02:00</published>
-                            <content>
+                    <title>What waking up at 6 every morning has taught me</title>
+                    <link href="https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me"/>
+                    <id>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</id>
+                    <updated>2019-05-01T12:00:00+02:00</updated>
+                    <published>2019-05-01T12:00:00+02:00</published>
+                    <content>
 The internet loves cats, and this one is still sleeping. Photo by Alexandru Zdrobău.
 What waking up at 6 every morning has taught me
 All the videos and articles on this subject we're being very positive on waking up early,
@@ -2812,22 +2718,20 @@ Have you ever tried to get into the habit of getting up earlier?
 How did it go? How was the experience for you? If it was positive, what did you use all of this extra
 time for? If it was negative, why didn't it go the way you expected to? Let me know on
 Twitter!</content>
-                            <summary>
+                    <summary>
 The internet loves cats, and this one is still sleeping. Photo by Alexandru Zdrobău.
 What waking up at 6 every morning has taught me
 All the videos and articles on this subject we're being very positive on waking up early,
 so I decided to give it a try. I was skeptical before I started, but as soon[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/sleeping_cat.jpeg" medium="image" 
-                                type="image/jpeg" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/sleeping_cat.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
 <entry>
-                            <title>Discovering the online presence of my target audience</title>
-                            <link href="https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience"/>
-                            <id>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</id>
-                            <updated>2019-05-11T12:00:00+02:00</updated>
-                            <published>2019-05-11T12:00:00+02:00</published>
-                            <content>
+                    <title>Discovering the online presence of my target audience</title>
+                    <link href="https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience"/>
+                    <id>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</id>
+                    <updated>2019-05-11T12:00:00+02:00</updated>
+                    <published>2019-05-11T12:00:00+02:00</published>
+                    <content>
 Discovering the online presence of my target audience
 I've started a new blog about plants:
 Plant care for beginners. It's very different than
@@ -2879,23 +2783,21 @@ Do you have any advice for me what I could do to find the online presence of my 
 more easily? Perhaps you have any questions for me about this topic. You can reach me on
 Twitter or, if you're interested in plants,
 also on Instagram @plantcareforbeginners.</content>
-                            <summary>
+                    <summary>
 Discovering the online presence of my target audience
 I've started a new blog about plants:
 Plant care for beginners. It's very different than
 what I normally write about, but too often I heard that people don't know how to take care
 of their plants, or &quot;they just keep dying&quot;. I've had my[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/snake_plant.jpg" medium="image" 
-                                type="image/jpeg" width="1200" height="799" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/snake_plant.jpg" medium="image" type="image/jpeg" width="1200" height="799" />
+                  </entry>
 <entry>
-                            <title>Improve query performance for polymorphic relationships in Laravel</title>
-                            <link href="https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel"/>
-                            <id>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</id>
-                            <updated>2019-07-29T07:18:49+02:00</updated>
-                            <published>2019-07-29T12:00:00+02:00</published>
-                            <content>
+                    <title>Improve query performance for polymorphic relationships in Laravel</title>
+                    <link href="https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel"/>
+                    <id>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</id>
+                    <updated>2019-07-29T07:18:49+02:00</updated>
+                    <published>2019-07-29T12:00:00+02:00</published>
+                    <content>
 Improve query performance for polymorphic relationships in Laravel
 This post is for developers who make use of polymorphic relationships in Laravel and have noticed
 some performance issues. This post assumes you’re using MySQL or PostgreSQL. If you’re still reading this,
@@ -2959,22 +2861,20 @@ This means that I’m creating an index called subject which contains a combinat
 The index called causer contains a combination of causer_id and causer_type. After you’ve migrated this migration,
 you should have very quick queries again.
 I hope you found this post useful, it certainly helped me solve some querying problems.</content>
-                            <summary>
+                    <summary>
 Improve query performance for polymorphic relationships in Laravel
 This post is for developers who make use of polymorphic relationships in Laravel and have noticed
 some performance issues. This post assumes you’re using MySQL or PostgreSQL. If you’re still reading this,
 it means you are in this si[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/start-sprint-race.jpeg" medium="image" 
-                                type="image/jpeg" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/start-sprint-race.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
 <entry>
-                            <title>Taking the first steps with event sourcing in PHP</title>
-                            <link href="https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php"/>
-                            <id>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</id>
-                            <updated>2019-08-13T18:00:45+02:00</updated>
-                            <published>2019-08-13T12:00:00+02:00</published>
-                            <content>
+                    <title>Taking the first steps with event sourcing in PHP</title>
+                    <link href="https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php"/>
+                    <id>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</id>
+                    <updated>2019-08-13T18:00:45+02:00</updated>
+                    <published>2019-08-13T12:00:00+02:00</published>
+                    <content>
 Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of event sourcing for you? I'll explain those values in this post.
 Preserving valuable data
@@ -2985,12 +2885,10 @@ The ability to revert and replay changes
 The fact that event sourcing allows you to record every single event taken place since the beginning, also allows you to look at a situation as if you were in the past. It's very similar to git log, where you can see what has been changed by whom and when. This can also be done with event sourcing and it really helps to be able to understand why some data is the way it is, simply by looking at the changes through time. Event sourcing also allows you to simply choose a desired state of the data and then treat that as the latest version, effectively removing all changes taken place after that situation. This is comparable to reverting a branch to a certain commit in Git. 
 All-in-all, I'm very impressed with the concept of event sourcing and I hope to implement it more and more in certain cases. The fact that all the valuable data is preserved and you have Git-like abilities with data in some sort of database or file system is very powerful. 
 I've written this post, because I like to keep myself up-to-date about my progress in skills. I've seen great gains in my programming skills since I've started to write blog posts and this motivates me to keep learning. </content>
-                            <summary>
+                    <summary>
 Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of e[...]</summary>
-                            <media:content xmlns:media="http://search.yahoo.com/mrss/" 
-                                url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" 
-                                type="image/jpeg" width="1200" height="800" />
-                          </entry>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
 
 </feed>

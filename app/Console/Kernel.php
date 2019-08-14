@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-//        $schedule->command('inspire')->hourly();
+        $schedule->command('flatfilecms:publish:posts ')->dailyAt("12:00");
     }
 
     protected function commands()

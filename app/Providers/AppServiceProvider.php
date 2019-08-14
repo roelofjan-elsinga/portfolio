@@ -2,6 +2,7 @@
 
 namespace Main\Providers;
 
+use FlatFileCms\Publish\Console\SitemapCreator;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(SitemapCreator::class, function () {
+            return new \Main\Console\Commands\SitemapCreator();
+        });
     }
 }
