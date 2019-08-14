@@ -1,4 +1,4 @@
-!["Pencil and paper"](/images/passions/pencil_paper.jpeg)
+!["Pencil and paper"](/images/articles/pencil_paper.jpeg)
 
 # Learning to speak Norwegian
 

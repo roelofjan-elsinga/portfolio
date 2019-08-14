@@ -1,4 +1,4 @@
-!["Parlour palm"](/images/passions/fittonia.png)
+!["Parlour palm"](/images/articles/fittonia.png)
 
 # Plants in my living space
 
@@ -28,7 +28,7 @@ The plants that like to be dry will get water, maybe once a week, some even once
 Some of the plants in this room need bright, but indirect sunlight. 
 So one corner of the room has partial shading because of curtains.
 
-!["A parlour palm"](/images/passions/parlour-palm.png)
+!["A parlour palm"](/images/articles/parlour-palm.png)
 
 This is my parlour palm in the sunny room.
 
@@ -48,7 +48,7 @@ As you can see in the picture above, there are two glass jars with water and pro
 I'm growing a few small cuttings in water, this way I can see the plants grow roots until they're ready for some soil. 
 This is definitely not a requirement for propagating spider plants, but I like to be able to see the growing roots.
 
-!["The shady room"](/images/passions/plants_dark_room.jpg)
+!["The shady room"](/images/articles/plants_dark_room.jpg)
 
 This is my shady office, I use the LED strips to provide the plants with some additional light.
 

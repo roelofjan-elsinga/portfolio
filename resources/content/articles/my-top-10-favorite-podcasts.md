@@ -1,4 +1,4 @@
-![My top 10 favorite podcasts](/images/passions/headphones.jpeg)
+![My top 10 favorite podcasts](/images/articles/headphones.jpeg)
 
 # My top 10 favorite podcasts
 I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones. 

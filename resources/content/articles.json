@@ -227,6 +227,12 @@
         "canonical": "https:\/\/medium.com\/tubber-development\/development-sprint-workflows-55b21225b2f8"
     },
     {
+        "filename": "plants-in-my-living-space.md",
+        "description": "Plants help me keep a calm mind and deal with stress. I keep the plants in my office and other living spaces for relaxation.",
+        "postDate": "2019-01-28",
+        "isPublished": true
+    },
+    {
         "filename": "improving-development-hiring.md",
         "postDate": "2019-01-25",
         "isPublished": true
@@ -234,6 +240,12 @@
     {
         "filename": "5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people.md",
         "postDate": "2019-02-07",
+        "isPublished": true
+    },
+    {
+        "filename": "learning-to-speak-norwegian.md",
+        "description": "I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy.",
+        "postDate": "2019-02-10",
         "isPublished": true
     },
     {
@@ -266,6 +278,12 @@
         "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
         "postDate": "2019-02-28",
         "description": "Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image.",
+        "isPublished": true
+    },
+    {
+        "filename": "my-top-10-favorite-podcasts.md",
+        "description": "I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.",
+        "postDate": "2019-03-20",
         "isPublished": true
     },
     {
