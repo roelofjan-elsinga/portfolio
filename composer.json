@@ -12,9 +12,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^5.8.0",
         "eventviva/php-image-resize": "1.5.*",
-        "kartik-v/bootstrap-fileinput": "dev-master",
         "erusev/parsedown": "^1.7",
-        "laravelcollective/html": "^5.4.0",
+        "laravelcollective/html": "^5.8.0",
         "symfony/yaml": "^4.2",
         "ext-json": "*",
         "ext-dom": "*",
@@ -24,7 +23,7 @@
         "roelofjan-elsinga/content-to-html-parser": "^0.1.0",
         "roelofjan-elsinga/flat-file-cms-gui": "^0.10.0",
         "rbdwllr/reallysimplejwt": "^2.0",
-        "roelofjan-elsinga/flat-file-cms": "^0.10.0"
+        "roelofjan-elsinga/flat-file-cms": "^0.10.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -60,7 +59,8 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
+            "@php artisan package:discover",
+            "php artisan set-permissions"
         ]
     },
     "config": {
