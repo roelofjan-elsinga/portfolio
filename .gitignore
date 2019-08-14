@@ -6,3 +6,4 @@ Homestead.json
 .idea
 scss/
 package-lock.json
+symlink-packages.sh
