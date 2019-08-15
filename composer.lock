@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce869cfa11fce1b482e6d2156697c6d8",
+    "content-hash": "361b4d23b870840b6bd40cb85f13c385",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1471,16 +1471,16 @@
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms-gui",
-            "version": "0.10.0",
+            "version": "0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/flat-file-cms-gui.git",
-                "reference": "f40959781cbe7d57c0e2cc988966218eac7744d0"
+                "reference": "850e2cd7cc486f0dd2c773ff9ca475895a44221f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-gui/zipball/f40959781cbe7d57c0e2cc988966218eac7744d0",
-                "reference": "f40959781cbe7d57c0e2cc988966218eac7744d0",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-gui/zipball/850e2cd7cc486f0dd2c773ff9ca475895a44221f",
+                "reference": "850e2cd7cc486f0dd2c773ff9ca475895a44221f",
                 "shasum": ""
             },
             "require": {
@@ -1528,7 +1528,7 @@
                 "laravel",
                 "user interface"
             ],
-            "time": "2019-08-14T06:55:53+00:00"
+            "time": "2019-08-15T06:16:21+00:00"
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms-publish",

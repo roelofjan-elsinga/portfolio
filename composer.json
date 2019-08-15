@@ -20,7 +20,7 @@
         "ext-curl": "*",
         "ext-zip": "*",
         "roelofjan-elsinga/content-to-html-parser": "^0.1.0",
-        "roelofjan-elsinga/flat-file-cms-gui": "^0.10.0",
+        "roelofjan-elsinga/flat-file-cms-gui": "^0.10.1",
         "rbdwllr/reallysimplejwt": "^2.0",
         "roelofjan-elsinga/flat-file-cms": "^0.10.4",
         "roelofjan-elsinga/flat-file-cms-publish": "^0.2.1"
