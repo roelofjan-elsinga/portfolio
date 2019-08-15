@@ -23,7 +23,7 @@
         "roelofjan-elsinga/flat-file-cms-gui": "^0.10.0",
         "rbdwllr/reallysimplejwt": "^2.0",
         "roelofjan-elsinga/flat-file-cms": "^0.10.3",
-        "roelofjan-elsinga/flat-file-cms-publish": "^0.2.0"
+        "roelofjan-elsinga/flat-file-cms-publish": "^0.2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

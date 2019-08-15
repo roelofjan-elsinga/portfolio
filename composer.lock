@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f8dd130370cdf489834d43774608657",
+    "content-hash": "afef25e5dbf118a935810dfe51775508",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1532,16 +1532,16 @@
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms-publish",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/flat-file-cms-publish.git",
-                "reference": "dc4e8ccb61c3710927b710a8c94d1c7a691f252f"
+                "reference": "37cf6f886e0515a87ee6872b906dfe0a26eb78f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-publish/zipball/dc4e8ccb61c3710927b710a8c94d1c7a691f252f",
-                "reference": "dc4e8ccb61c3710927b710a8c94d1c7a691f252f",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-publish/zipball/37cf6f886e0515a87ee6872b906dfe0a26eb78f5",
+                "reference": "37cf6f886e0515a87ee6872b906dfe0a26eb78f5",
                 "shasum": ""
             },
             "require": {
@@ -1586,7 +1586,7 @@
                 "file",
                 "laravel"
             ],
-            "time": "2019-08-14T18:07:45+00:00"
+            "time": "2019-08-15T05:15:33+00:00"
         },
         {
             "name": "roelofjan-elsinga/sitemap-generator",
