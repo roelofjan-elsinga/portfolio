@@ -410,9 +410,17 @@
     {
         "filename": "recent-open-source-contributions-augustus-2019.md",
         "postDate": "2019-08-15",
-        "updateDate": "2019-08-14 14:56:05",
+        "updateDate": "2019-08-15 19:39:50",
         "description": "Recently I've been quite active with contributing to open source projects on GitHub. Find out which packages I've contributed to and which packages of my own I've been maintaining.",
-        "isScheduled": true,
+        "isScheduled": false,
+        "isPublished": true
+    },
+    {
+        "filename": "automatic-api-stub-generator.md",
+        "postDate": "2019-08-21",
+        "updateDate": "2019-08-16 16:26:36",
+        "description": "Building an automatic API Stub generator for PHP",
+        "isScheduled": false,
         "isPublished": false
     }
 ]

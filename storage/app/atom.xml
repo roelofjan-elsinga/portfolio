@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-08-14T20:18:21+02:00</updated>
+              <updated>2019-08-16T06:45:49+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -2889,6 +2889,39 @@ I've written this post, because I like to keep myself up-to-date about my progre
 Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of e[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>My recent open source contributions (August 2019)</title>
+                    <link href="https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019"/>
+                    <id>https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019</id>
+                    <updated>2019-08-15T19:39:50+02:00</updated>
+                    <published>2019-08-15T12:00:00+02:00</published>
+                    <content>
+My recent open source contributions (August 2019)
+Recently I've been quite active with contributing to open source projects on GitHub. Part of the reason is the necessity to move other projects forward and the proposed changes allow me to do so. Another reason is that and I have great admiration for the software packages and would like to contribute to make them better, not just for me, but for everyone else.
+My recent contributions were made to the following repositories:
+
+spatie/laravel-activitylog
+agaros/laravel-onesky
+
+I'm very glad I could contribute in a meaningful way, by actually suggesting internal changes and building them to work for other people as well. 
+My own packages
+Of course, I've also been working on my own packages, by adding new features, writing tests, and fixing bugs. For some of the packages I've also added an integration with TravisCI to be able to automatically test the packages and make sure everything still works. All of my own packages include:
+
+roelofjan-elsinga/content-to-html-parser
+roelofjan-elsinga/sitemap-generator
+roelofjan-elsinga/atom-feed-generator
+tubber/model-indexer
+roelofjan-elsinga/flat-file-cms
+roelofjan-elsinga/flat-file-cms-gui
+roelofjan-elsinga/flat-file-cms-publish
+
+roelofjan-elsinga/flat-file-cms and roelofjan-elsinga/flat-file-cms-gui are currently my biggest packages. The flat-file-cms is a simple packages that allows you to have a drop-in flat file CMS in Laravel. The flat-file-cms-gui is simply an administration dashboard that allows you to interact with the CMS in a Graphical User Interface (GUI). There will be extra packages to supplement the flat-file-cms, like flat-file-cms-auto-publish and flat-file-cms-seo. These will be added as separate packages, because I'd like to keep the core package clean and focused on the content itself. The GUI package is simply a graphical representation of the core CMS package, and could also be replaced by a completely different graphical implementation. It simply serves as &quot;the official GUI&quot;, nothing more, nothing less.
+I hope you've gotten better insights into what I've been working on in the past few weeks and I hope you'll come back for a future update. Let me know what you think of this format of blog posts by contacting me on Twitter.</content>
+                    <summary>
+My recent open source contributions (August 2019)
+Recently I've been quite active with contributing to open source projects on GitHub. Part of the reason is the necessity to move other projects forward and the proposed changes allow me to do so. Another reason is that and I have great admiration fo[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/starry-sky.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 
 </feed>
