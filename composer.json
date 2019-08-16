@@ -20,10 +20,10 @@
         "ext-curl": "*",
         "ext-zip": "*",
         "roelofjan-elsinga/content-to-html-parser": "^0.1.0",
-        "roelofjan-elsinga/flat-file-cms-gui": "^0.10.1",
+        "roelofjan-elsinga/flat-file-cms-gui": "^0.11.0",
         "rbdwllr/reallysimplejwt": "^2.0",
         "roelofjan-elsinga/flat-file-cms": "^0.10.4",
-        "roelofjan-elsinga/flat-file-cms-publish": "^0.2.1"
+        "roelofjan-elsinga/flat-file-cms-publish": "^0.2.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
