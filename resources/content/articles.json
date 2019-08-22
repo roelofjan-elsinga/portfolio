@@ -416,10 +416,26 @@
         "isPublished": true
     },
     {
-        "filename": "automatic-api-stub-generator.md",
+        "filename": "building-automatic-api-stub-or-mocks-php.md",
         "postDate": "2019-08-21",
-        "updateDate": "2019-08-16 16:26:36",
-        "description": "Building an automatic API Stub generator for PHP",
+        "updateDate": "2019-08-20 17:28:53",
+        "description": "Testing your code is essential if you want to write code that doesn't break your application. Find out how I'm going to use automatic stubs to test the implementation of API's instead of the actual API calls.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    {
+        "filename": "how-becoming-better-communicator.md",
+        "postDate": "2019-08-28",
+        "updateDate": "2019-08-20 19:54:26",
+        "description": "I'm trying to become a more skilled communicator to my peers and non-technical people. In this post, you'll find out how I'm attempting to do this.",
+        "isScheduled": true,
+        "isPublished": false
+    },
+    {
+        "filename": "how-write-blog-post-in-5-steps.md",
+        "postDate": "2019-09-04",
+        "updateDate": "2019-08-22 13:30:54",
+        "description": "How I write my blog posts",
         "isScheduled": false,
         "isPublished": false
     }
