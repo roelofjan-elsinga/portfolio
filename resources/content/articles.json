@@ -432,11 +432,11 @@
         "isPublished": false
     },
     {
-        "filename": "how-write-blog-post-in-5-steps.md",
+        "filename": "how-to-write-blog-posts-in-6-steps.md",
         "postDate": "2019-09-04",
-        "updateDate": "2019-08-22 13:30:54",
-        "description": "How I write my blog posts",
-        "isScheduled": false,
+        "updateDate": "2019-08-25 20:20:39",
+        "description": "Writing blog posts can be a difficult if you don't write a lot and don't know where to start. Find out how I write blog posts and maybe it'll help you to get started too.",
+        "isScheduled": true,
         "isPublished": false
     }
 ]
