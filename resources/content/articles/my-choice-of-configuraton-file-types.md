@@ -1,6 +1,8 @@
 ![My choice of configuration file types](/images/articles/post-in-json.png)
 
-# My choice of configuration file types
+# How to Pick Right Configuration File Type for Your Project
+> Understand & learn about different configuration file types available to setup your project in workspace.
+
 Configuration, people love it and people hate it. You can change the behavior of your application with it and 
 customize it to your needs. When this is over lunch complicated, you get frustrated if there is no documentation. 
 So how do you choose which file types to use for this? There is no easy answer to this, 

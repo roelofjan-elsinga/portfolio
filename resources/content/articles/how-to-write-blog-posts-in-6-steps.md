@@ -1,6 +1,6 @@
 !["Writing on a laptop"](/images/articles/writing-on-a-laptop.jpeg)
 <span class="caption">A photo by <a href="https://unsplash.com/@glenncarstenspeters">Glenn Carstens-Peters</a></span>
-# How I write my blog posts in 6 steps
+# How I write my blog posts: 6 steps
 Writing blogs can be a daunting task if you're not someone that writes a lot. I used to be this person, but I learned to enjoy writing by regularly writing. The act of writing helped me improve my skills and after a while, I started to enjoy it more and more. Now, almost 3 years after I've written my first blog post, I can look back at old posts and see the progress I've made since then. These are all motivating factors to keep writing blog posts. But what is my process? How do I write these posts? I've come up with a few simple steps anyone could follow: 
 
 1. Find a topic

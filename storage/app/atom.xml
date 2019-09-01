@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-08-21T12:00:02+02:00</updated>
+              <updated>2019-08-28T12:00:02+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -190,21 +190,21 @@ Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift a
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
                   </entry>
 <entry>
-                    <title>IndexedDB: Caching your data on the client side</title>
+                    <title>IndexedDB: Caching your data on the client-side</title>
                     <link href="https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side"/>
                     <id>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</id>
-                    <updated>2016-12-15T12:00:00+01:00</updated>
+                    <updated>2019-08-26T13:18:19+02:00</updated>
                     <published>2016-12-15T12:00:00+01:00</published>
                     <content>
-IndexedDB: Caching your data on the client side
-A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes. This worked perfectly for a long time, until the app grew larger and larger. At this point I had 5 to 10 XHR requests per view. This was easily achieveable in the beginning when it was 2 or 3. Most pages used the same data, the same non-changing data. This is when I started thinking about caching all of this data, making the experience for the user better, because the app would load faster. Not only the users are benefitting though, the server also gets less requests, causing it to perform better for concurrent users.
+IndexedDB: Caching your data on the client-side
+A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes. This worked perfectly for a long time until the app grew larger and larger. At this point, I had 5 to 10 XHR requests per view. This was easily achievable in the beginning when it was 2 or 3. Most pages used the same data, the same non-changing data. This is when I started thinking about caching all of this data, making the experience for the user better, because the app would load faster. Not only the users are benefitting though, but the server also gets fewer requests, causing it to perform better for concurrent users.
 Why no localStorage?
-So why was localStorage not good any more? Well there are two simple reasons for this. First of all, the limited storage space. LocalStorage data can only be saved as a string. The string lengths can only be so long before errors will start to occur. IndexedDB on the other hand saves data as actual objects. This way data can instantly be used in the applicaion. Besides saving data as objects instead of string, IndexedDB is asynchronous. This is important because it doesn't block the DOM. Not blocking the DOM is important when larger tasks are being processed and you don't want to confuse the user with a non-responsive application. LocalStorage and SessionStorage are both synchronous and do block the DOM, but they're not supposed to be used for larger tasks. IndexedDB is better for this task.
+So why was localStorage not good anymore? Well, there are two simple reasons for this. First of all, the limited storage space. LocalStorage data can only be saved as a string. The string lengths can only be so long before errors will start to occur. IndexedDB, on the other hand, saves data as actual objects. This way data can instantly be used in the application. Besides saving data as objects instead of a string, IndexedDB is asynchronous. This is important because it doesn't block the DOM. Not blocking the DOM is important when larger tasks are being processed and you don't want to confuse the user with a non-responsive application. LocalStorage and SessionStorage are both synchronous and do block the DOM, but they're not supposed to be used for larger tasks. IndexedDB is better for this task.
 Why would you cache the data on the client?
-But why use IndexedDB at all? Isn't it just another layer that you need to pay attention to when you're developing an application? Absolutely, but also look at what it can do for you, as a developer, your server, and your users. If done correctly, you can harnass IndexedDB to cache all your incomming &quot;static&quot; data. What this accomplishes is that you only have to load a specific resource once. When you loaded it from the server, you can save it and use the saved resource next time it's needed. This accomplishes two things. One, your server doesn't have to take duplicate requests from an individual user. Two, the requested page will load quicker, since the request to the server is no longer necessary and the resource is already saved to the RAM memory. This will be beneficial to the user experience of your application.
-If you use localStorage, IndexedDB or nothing at all, making an application as efficient as possible is very important. It's important for your users, but also for your server. Nothing is worse than overloading the server or causing a bad user experience. Whatever you do, make sure you do it well. If that means you will need to use a caching solution like localStorage, sessionStorag, or IndexedDB (WebSQL is deprecated, don't use it) go for what best fits your needs. Do you need something simple like keeping data close between views? Give localStorage or sessionStorage a try. It's excellent for small tasks. If you need a more complex caching solution, that is capable of saving larger sets of data and does not block the DOM, IndexedDB is exacly what you should be using. To make this even better, use it in combination with service workers and you're on your way to make a web application that's not only available when you're online, but also when you have no internet connection whatsoever.</content>
+But why use IndexedDB at all? Isn't it just another layer that you need to pay attention to when you're developing an application? Absolutely, but also look at what it can do for you, as a developer, your server, and your users. If done correctly, you can harness IndexedDB to cache all your incoming &quot;static&quot; data. What this accomplishes is that you only have to load a specific resource once. When you loaded it from the server, you can save it and use the saved resource next time it's needed. This accomplishes two things. One, your server doesn't have to take duplicate requests from an individual user. Two, the requested page will load quicker, since the request to the server is no longer necessary and the resource is already saved to the RAM memory. This will be beneficial to the user experience of your application.
+If you use localStorage, IndexedDB or nothing at all, making an application as efficient as possible is very important. It's important for your users, but also for your server. Nothing is worse than overloading the server or causing a bad user experience. Whatever you do, make sure you do it well. If that means you will need to use a caching solution like localStorage, sessionStorage, or IndexedDB (WebSQL is deprecated, don't use it) go for what best fits your needs. Do you need something simple like keeping data close between views? Give localStorage or sessionStorage a try. It's excellent for small tasks. If you need a more complex caching solution, that is capable of saving larger sets of data and does not block the DOM, IndexedDB is exactly what you should be using. To make this even better, use it in combination with service workers and you're on your way to make a web application that's not only available when you're online, but also when you have no internet connection whatsoever.</content>
                     <summary>
-IndexedDB: Caching your data on the client side
+IndexedDB: Caching your data on the client-side
 A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes.[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
                   </entry>
@@ -212,40 +212,40 @@ A few months ago I started saving data in the browser. It wasn't for performance
                     <title>Use software for what it's made, and you'll see the benefits!</title>
                     <link href="https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit"/>
                     <id>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</id>
-                    <updated>2016-12-22T12:00:00+01:00</updated>
+                    <updated>2019-08-26T14:36:28+02:00</updated>
                     <published>2016-12-22T12:00:00+01:00</published>
                     <content>
 Use software for what it's made, and you'll see the benefits!
-You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from using SQL queries in a relational database to a piece of software that's designed for search: Solr. Don't get me wrong, SQL queries, or requests to any NoSQL database are perfectly fine if you have very specific search needs. For example: find the records belonging to this particular unique identifier. This is a wonderful solution. However, when your databases start to grow, the amount of documents belonging to this particular unique identifier grow and having to do more JOIN operations for relational databases, you'll start to find bottlenecks.
+You! Yes, you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from using SQL queries in a relational database to a piece of software that's designed for search: Solr. Don't get me wrong, SQL queries or requests to any NoSQL database are perfectly fine if you have very specific search needs. For example: find the records belonging to this particular unique identifier. This is a wonderful solution. However, when your databases start to grow, the number of documents belonging to this particular unique identifier grow and having to do more JOIN operations for relational databases, you'll start to find bottlenecks.
 What was the problem?
-JOIN operations in particular was an issue for me, the shear amount of data that needed to be filtered destroyed my search performances. Often having to wait for 10 or more seconds before receiving any data whatsoever. My first solution was to make one enormous flat table in my SQL database. My thought behind this was to eliminate the JOIN queries to boost performance. This worked really well for months, it started with about 5000 records, which is an easy task to say the least. However this slowly grew over the months to a table of 200,000+ records. It was at this point I saw a slight performance hit, going from 2 to 4-6 seconds per request. This was definitely still less than before, but it was too slow for me. I eventually decided to make the switch when I had to implement real time pricing for products. This meant calculating discounts, user credits, and a list of other things on the fly...for thousands of records. You can imagine the enormous hit this must've been. My search request times went from 4-6 seconds to about 45 seconds. This was the point at which I stopped, stood back, and made the decision to use two different systems, each designed for the purpose it serves. The relational database to save data, keeping it well structured, and Solr to index documents and make them searchable.
+JOIN operations, in particular, was an issue for me, the sheer amount of data that needed to be filtered destroyed my search performances. Often having to wait for 10 or more seconds before receiving any data whatsoever. My first solution was to make one enormous flat table in my SQL database. My thought behind this was to eliminate the JOIN queries to boost performance. This worked really well for months, it started with about 5000 records, which is an easy task, to say the least. However, this slowly grew over the months to a table of 200,000+ records. It was at this point I saw a slight performance hit, going from 2 to 4-6 seconds per request. This was definitely still less than before, but it was too slow for me. I eventually decided to make the switch when I had to implement real-time pricing for products. This meant calculating discounts, user credits, and a list of other things on the fly...for thousands of records. You can imagine the enormous hit this must've been. My search request times went from 4-6 seconds to about 45 seconds. This was the point at which I stopped, stood back, and made the decision to use two different systems, each designed for the purpose it serves. The relational database to save data, keeping it well structured, and Solr to index documents and make them searchable.
 The solution
-Now, if you know me, you know that I'm not the most technical programmer alive. I know how to do a bit of everything and aren't the best at all of them. However, I am someone that does not give up easily. Starting to learn how to set up Solr and Solarium (PHP library) was definitely not an easy task. In my opinion I missed a lot of the documentation that I'm used to. I use Laravel and Laravel Lumen on a daily basis and these PHP (micro) frameworks are wonderfully documented. To start with the whole process, I set up a virtual Ubuntu box. I was already familiar with the Java programming language (on which Solr is built), so at least I wasn't completely clueless. Anyway, I set up the Solr server and created my first collection. This took me about 4 hours, because to the life of me, I couldn't find the command for it and kept trying to use the GUI in the browser. After I found the command for it though, I was off to a flying start. I set up a username and password for it and then got started on Solarium.
+Now, if you know me, you know that I'm not the most technical programmer alive. I know how to do a bit of everything and aren't the best at all of them. However, I am someone that does not give up easily. Starting to learn how to set up Solr and Solarium (PHP library) was definitely not an easy task. In my opinion, I missed a lot of the documentation that I'm used to. I use Laravel and Laravel Lumen on a daily basis and these PHP (micro) frameworks are wonderfully documented. To start with the whole process, I set up a virtual Ubuntu box. I was already familiar with the Java programming language (on which Solr is built), so at least I wasn't completely clueless. Anyway, I set up the Solr server and created my first collection. This took me about 4 hours because I couldn't find the command for it and kept trying to use the GUI in the browser. After I found the command for it though, I was off to a flying start. I set up a username and password for it and then got started on Solarium.
 Solarium is a PHP library to interact with a Solr server. This was easily installed through Composer. The configuration in Laravel itself was also very simplistic and I got a working connection with my Solr server within 30 minutes. But then I had to populate this brand new Solr server with data to index. I followed the Solarium documentation and was struggling. It's a useful guide, but it could be much more extensive to really help people that just start out with the library. However, once I finally got the first documents indexed, it was very easy to create new collections and populate these with documents.
 Was it worth it?
-So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents etc. This meant that I could replace most of my manual filtering in PHP with the built in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually, because relevant documents in my case were heavily dependent on distance between the requested location and the product. Solr does all of this for you, on the fly. Of course this bring a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
-I'm very happy I made the switch. Not only did it speed up search, but it also helped analyzing data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!</content>
+So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents, etc. This meant that I could replace most of my manual filtering in PHP with the built-in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually because relevant documents in my case were heavily dependent on the distance between the requested location and the product. Solr does all of this for you, on the fly. Of course, this brings a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
+I'm very happy I made the switch. Not only did it speed up the search, but it also helped to analyze data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!</content>
                     <summary>
 Use software for what it's made, and you'll see the benefits!
-You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from[...]</summary>
+You! Yes, you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
                   </entry>
 <entry>
                     <title>The importance of server-side caching</title>
                     <link href="https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching"/>
                     <id>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</id>
-                    <updated>2016-12-29T12:00:00+01:00</updated>
+                    <updated>2019-08-26T14:40:04+02:00</updated>
                     <published>2016-12-29T12:00:00+01:00</published>
                     <content>
 The importance of server-side caching
-Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my understanding and interpretation of the term &quot;caching&quot; is. Caching for me means to temporarily save data in a very easy to read and easy to process format, so it can be retrieved effortlessly and used right away. What I'm really saying with this is that, data has been processed, formatted in a way your application will need it, and then saved to an entity. This entity can be several things, for example a flat database table, a file of some sort (.txt or .json for example), or memory in Memcached (Memcache for Windows) or Redis.
+Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my understanding and interpretation of the term &quot;caching&quot; is. Caching for me means to temporarily save data in a very easy to read and easy to process format, so it can be retrieved effortlessly and used right away. What I'm really saying with this is that data has been processed, formatted in a way your application will need it, and then saved to an entity. This entity can be several things, for example, a flat database table, a file of some sort (.txt or .json for example), or memory in Memcached (Memcache for Windows) or Redis.
 It saves CPU cycles
-So with that said, let's get right to it. As I mentioned in the previous paragraph, caching is important for your hardware. Not necessarily for the lifespan of it, but more for the resources that can be used for other tasks. If you'd have to query a database multiple times with it returning the same result, you found a task to cache. Instead of constantly retrieving the same (static) data and processing it in the same way, thus wasting CPU/RAM resources, is costly. Instead you can cache the data on the first request, and serve the data from the caching layer afterwards. If you do this, you have just saved CPU/RAM resources that can be used for other tasks.
+So with that said, let's get right to it. As I mentioned in the previous paragraph, caching is important for your hardware. Not necessarily for the lifespan of it, but more for the resources that can be used for other tasks. If you'd have to query a database multiple times with it returning the same result, you found a task to use cache. Instead of constantly retrieving the same (static) data and processing it in the same way, thus wasting CPU/RAM resources, is costly. Instead, you can cache the data on the first request, and serve the data from the caching layer afterward. If you do this, you have just saved CPU/RAM resources that can be used for other tasks.
 It makes your application faster
 But it doesn't just save hardware resources, it's also quicker. Think about it: querying data from the database, processing this data, formatting the data to make it ready for usage versus requesting the data from a caching layer and receiving this data. This speed boost can significantly reduce loading times of your application, making the user experience better. I remember the huge difference in retrieval time between non-cached data and cached data. Non-cached could easily take 5 or 6 seconds on a single task, while the cached data was retrieved within a second. For most simple tasks this is still very slow, but it at least shows a significant decrease in loading times. This particular caching job caused a homepage of my app to be loaded a full 3 to 4 seconds faster. And this was before I switched from file caching to Redis caching, decreasing the cached requests by at least 50%.
-I mentioned user experience quickly before. There is nothing more annoying than long loading times and it will definitely make users leaving your website. Google said at their Chrome Dev Conference last year that if your app doesn't have a first draw (showing some kind of screen) within 3-5 seconds, 50% of visitors will leave your website. Now I'm not a user experience expert at all, so I can't confirm or deny this statement, but it makes sense. Often time I'll do the same thing. With that said, if you can make your app load quicker in any way, do it. If you have a lot of static data that needs to be loaded from a database upon first entry in your application, make sure to cache all of this. Make the first draw as quick as you can. When caching data to files or the database does not work well enough, try Memcached. When this is still not quick enough, go all out with Redis.
+I mentioned the user experience quickly before. There is nothing more annoying than long loading times and it will definitely make users leaving your website. Google said at their Chrome Dev Conference last year that if your app doesn't have a first draw (showing some kind of screen) within 3-5 seconds, 50% of visitors will leave your website. Now I'm not a user experience expert at all, so I can't confirm or deny this statement, but it makes sense. Often time I'll do the same thing. With that said, if you can make your app load quicker in any way, do it. If you have a lot of static data that needs to be loaded from a database upon first entry in your application, make sure to cache all of this. Make the first draw as quick as you can. When caching data to files or the database does not work well enough, try Memcached. When this is still not quick enough, go all out with Redis.
 Everything has disadvantages
-I can only praise caching and leave it at that, but that wouldn't paint the whole picture. Of course there are also disadvantages to it. For example, it's very tough to cache data that changes a lot. It's definitely possible, but you end of having to synchronize the cached data with the new data on every single (important) change. This makes it hell for developers. My rule of thumb on this is: when the data can change at least once a day or it will need to be available right away when changed, do not cache it. If, however, the data never really changes or you really need a performance boost for something, go ahead and cache it. Make it easier for yourself, not harder. The amount of times I was wondering why the page wasn't updating because of cache is too high. Learn from my mistakes and don't cache anything if you're working on that particular part of your application.</content>
+I can only praise caching and leave it at that, but that wouldn't paint the whole picture. Of course, there are also disadvantages to it. For example, it's very tough to cache data that changes a lot. It's definitely possible, but you end of having to synchronize the cached data with the new data on every single (important) change. This makes it hell for developers. My rule of thumb on this is: when the data can change at least once a day or it will need to be available right away when changed, do not cache it. If, however, the data never really changes or you really need a performance boost for something, go ahead and cache it. Make it easier for yourself, not harder. The amount of times I was wondering why the page wasn't updating because of cache is too high. Learn from my mistakes and don't cache anything if you're working on that particular part of your application.</content>
                     <summary>
 The importance of server-side caching
 Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my u[...]</summary>
@@ -273,152 +273,75 @@ If you've ever built an application on a different operating system (OS) than th
                     <title>How to index a single page application built in AngularJS</title>
                     <link href="https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs"/>
                     <id>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</id>
-                    <updated>2017-01-12T12:00:00+01:00</updated>
+                    <updated>2019-08-26T17:36:43+02:00</updated>
                     <published>2017-01-12T12:00:00+01:00</published>
                     <content>
 How to index a single page application built in AngularJS
-The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic Javascript. Single Page Applications are fantastic for the user experience, but of course it also has a few disadvantages, one of which is actually a user experience killer. I will describe the two disadvantages that I have found using AngularJS (I know, I haven't completely switched to Angular 2, calm yourselves) and a solution to combat both of these problems in this post. So to get started, the disadvantages that I have found: the initial page load takes long and causes users to leave your website and indexing your website, or any social media sharing is a pain. I know these issues have mostly been resolved with Angular 2, but I know a lot of people out there are still using AngularJS, so this is why this is still relevant.
+The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic JavaScript. Single Page Applications are fantastic for the user experience, but of course, it also has a few disadvantages, one of which is actually a user experience killer. I will describe the two disadvantages that I have found using AngularJS (I know, I haven't completely switched to Angular 2, calm yourselves) and a solution to combat both of these problems in this post. So to get started, the disadvantages that I have found: the initial page load takes long which causes users to leave your website and indexing your website, or any social media sharing is a pain. I know these issues have mostly been resolved with Angular 2, but I know a lot of people out there are still using AngularJS, so this is why this is still relevant.
 Disadvantages
-So the first disadvantage: the initial page load takes ages. This depends completely on the complexity of the app, but the one I work on is very complex, so it takes a good 4 - 5 seconds for the first draw to happen. This means that the user has a white screen of nothingness for about 5 seconds before the application actually bootstraps and shows a page. This is annoying, because it seems like the website is broken, therefore people leave your website before it's even loaded. A super simple way to at least let the users know that the page is loading...is to show a loading symbol. This very simple chance may retain some of the users that otherwise would've left your website. So that's step one. Step 2 is to either lazy load parts of your application, or to make sure the scripts load as quickly as they possible can, through a CDN or a static domain for example. These changes make leave the user with a white screen (with a loader in it) for about 3 seconds before the application has loaded and is ready for the user. It's a huge improvement, but it's not quite there yet.
-The second disadvantage is the dynamic nature of a single page application. This means that none of the content on the pages is actually...well on the pages. The pages don't even exist. Everything is loaded on runtime. This causes the long initial load, but the swift interface after the scripts have loaded. It's also a very bad thing for SEO. Search engines and web crawlers are simply not built or prepared to deal with dynamic websites. They don't seem to understand that websites these days are very dynamic and often need to load a lot of javascript before the even work. If we take the Facebook and Twitter social cards as an example... well you won't see a page title, or a description, or a featured picture, or even any meta tags. The Facebook open graph crawler simply doesn't understand what to do with your web app.
+So the first disadvantage: the initial page load takes ages. This depends completely on the complexity of the app, but the one I work on is very complex, so it takes a good 4 - 5 seconds for the first draw to happen. This means that the user has a white screen of nothingness for about 5 seconds before the application actually bootstraps and shows a page. This is annoying, because it seems like the website is broken, therefore people leave your website before it's even loaded. A super simple way to at least let the users know that the page is loading...is to show a loading symbol. This very simple chance may retain some of the users that otherwise would've left your website. So that's step one. Step 2 is to either lazy load parts of your application or to make sure the scripts load as quickly as they possibly can, through a CDN or a static domain for example. These changes make leave the user with a white screen (with a loader in it) for about 3 seconds before the application has loaded and is ready for the user. It's a huge improvement, but it's not quite there yet.
+The second disadvantage is the dynamic nature of a single page application. This means that none of the content on the pages is actually...well on the pages. The pages don't even exist. Everything is loaded on runtime. This causes the long initial load, but the swift interface after the scripts have loaded. It's also a very bad thing for SEO. Search engines and web crawlers are simply not built or prepared to deal with dynamic websites. They don't seem to understand that websites these days are very dynamic and often need to load a lot of javascript before they even work. If we take the Facebook and Twitter social cards as an example... well you won't see a page title, or a description, or a featured picture, or even any meta tags. The Facebook open graph crawler simply doesn't understand what to do with your web app.
 Server-side rendering! Or not?
-So the (easy, not so easy) solution is to use server side rendering or prerendering. These terms are two very different things. For a framework like AngularJS, in which the controllers and directives are tightly coupled with the DOM (the HTML) server side rendering is almost impossible. So that option is out. That leaves us with prerendering pages. What does this mean? Well it means that the server serves a static version of the page when this is desired. This is the most useful for Facebook's open graph crawler, because it finally understands the data it's receiving. There is a title, description, tags, and images and it just works. A less and slightly strange solution could be to make the loading screens of your applications resemble the view it's about to serve. Right now there is one well-known prerender service available through prerender.io. I have been using their service for over a year and it works, well enough. It's open source and can be pulled from Github.
+So the (easy, not so easy) solution is to use server-side rendering or prerendering. These terms are two very different things. For a framework like AngularJS, in which the controllers and directives are tightly coupled with the DOM (the HTML) server-side rendering is almost impossible. So that option is out. That leaves us with prerendering pages. What does this mean? Well, it means that the server serves a static version of the page when this is desired. This is the most useful for Facebook's open graph crawler because it finally understands the data it's receiving. There is a title, description, tags, and images and it just works. A less and slightly strange solution could be to make the loading screens of your applications resemble the view it's about to serve. Right now there is one well-known prerender service available through prerender.io. I have been using their service for over a year and it works, well enough. It's open-source and can be pulled from Github.
 I wanted something better
-However, I wanted something else, more of a Hybrid solution. Right now we use a sitemap generator that crawls all the pages and makes an enormous sitemap for Google. But to me this seems like two jobs that could be combined into one. I mean if you're crawling every single page on the website anyway, why not prerender all those pages at the same time? Well this is what I built. It's a solution that not only serves static pages when they're requested, but it's also a website indexer that's able to index any page on the fly in case it's not prerendered yet. So have I built this in Node? No I have not. I actually built the crawler in Python. Why? Well I've built a crawler in it before. That one was like most crawlers only able to index static pages. So I enhanced it with PhantomJS to be able to fully render dynamic pages and save them to a file. I then integrated this Python project in my Laravel project, synchronizing all of the cached pages to an S3 drive for swift requests. If you're interested to check it out, you can clone it from Github. If you think you can do better (and I think most of you can, because I'm a huge Python Noob), create pull requests to improve it with me. Anyway, this solution is able to crawl, index, and cache static files of the entire website, which I think is pretty cool!</content>
+However, I wanted something else, more of a Hybrid solution. Right now we use a sitemap generator that crawls all the pages and makes an enormous sitemap for Google. But to me, this seems like two jobs that could be combined into one. I mean if you're crawling every single page on the website anyway, why not prerender all those pages at the same time? Well, this is what I built. It's a solution that not only serves static pages when they're requested, but it's also a website indexer that's able to index any page on the fly in case it's not prerendered yet. So have I built this in Node? No, I have not. I actually built the crawler in Python. Why? Well, I've built a crawler in it before. That one was like most crawlers only able to index static pages. So I enhanced it with PhantomJS to be able to fully render dynamic pages and save them to a file. I then integrated this Python project in my Laravel project, synchronizing all of the cached pages to an S3 drive for swift requests. If you're interested to check it out, you can clone it from Github. If you think you can do better (and I think most of you can, because I'm a huge Python Noob), create pull requests to improve it with me. Anyway, this solution is able to crawl, index, and cache static files of the entire website, which I think is pretty cool!</content>
                     <summary>
 How to index a single page application built in AngularJS
-The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic Javascript. Single Page Applications are fantastic for the user experience, but of c[...]</summary>
+The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic JavaScript. Single Page Applications are fantastic for the user experience, but of c[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
                   </entry>
 <entry>
                     <title>Why I use SASS rather than just CSS</title>
                     <link href="https://roelofjanelsinga.com/articles/using-sass-rather-css"/>
                     <id>https://roelofjanelsinga.com/articles/using-sass-rather-css</id>
-                    <updated>2017-06-01T12:00:00+02:00</updated>
+                    <updated>2019-08-26T17:43:46+02:00</updated>
                     <published>2017-06-01T12:00:00+02:00</published>
                     <content>
 Why I use SASS rather than just CSS
 CSS to LESS
 When I first started out with web design &amp; development,
-CSS was this tool to make HTML pages look better.
-This was just before responsive web design started becoming the new industry standard for web
-design. Websites were zoomed out and broke on mobile devices, but this was normal at that time.
-The first time I started learning about the media queries within css was when I was introduced
-to Twitter Bootstrap, which I still use to this day. I still use this, because nowadays
-I'm more of a web developer than a web designer, so most css is not done by me any more.
-Anyway, Twitter Bootstrap got me into using more of the features CSS3 offers.
-During my internship I started to look for ways to make writing CSS more efficient,
-because I caught myself copying and pasting styles constantly.
-This is where I discovered LESS. LESS gave me what I wanted at the time, nested CSS.
-This helped me to reduce copying and pasting CSS for the most part.
+CSS was this tool to make HTML pages look better. This was just before responsive web design started becoming the new industry standard for web design. Websites were zoomed out and broke on mobile devices, but this was normal at that time. The first time I started learning about the media queries within CSS was when I was introduced to Twitter Bootstrap, which I still use to this day. I still use this, because nowadays I'm more of a web developer than a web designer, so most CSS is not done by me anymore. Anyway, Twitter Bootstrap got me into using more of the features CSS3 offers. During my internship, I started to look for ways to make writing CSS more efficient, because I caught myself copying and pasting styles constantly. This is where I discovered LESS. LESS gave me what I wanted at the time, nested CSS. This helped me to reduce copying and pasting CSS for the most part.
 LESS to SASS
-Yet I felt like LESS wasn't quite there yet after I'd been using it for a few months.
-Jerke and a guy I worked with, led me to starting out with SASS.
-This is where I knew I found what I was looking for all along. SASS offers nested CSS,
-but also functions and mixins. This helped me to (almost) never copy CSS again.
-One of the great things I have been using a lot more lately are functions.
-These help me to calculate exactly what margins, widths and heights should be.
-Obviously since I discovered Flexbox this has been used less, but it still has its applications.
-Before, when I started out with LESS, I used a program called Panda to compile my CSS files.
-This all changed when I switched to SASS. This is where Grunt came in.
-Grunt constantly watches and compiles my SASS files, so I can instantly test the changes
-I have made.
+Yet I felt like LESS wasn't quite there yet after I'd been using it for a few months. Jerke and a guy I worked with, led me to start out with SASS. This is where I knew I found what I was looking for all along. SASS offers nested CSS, but also functions and mixins. This helped me to (almost) never copy CSS again. One of the great things I have been using a lot more lately is functions. These help me to calculate exactly what margins, widths, and heights should be. Obviously, since I discovered Flexbox this has been used less, but it still has its applications.
+Before, when I started out with LESS, I used a program called Panda to compile my CSS files. This all changed when I switched to SASS. This is where Grunt came in. Grunt constantly watches and compiles my SASS files, so I can instantly test the changes I have made.
 A single file
-But back to using SASS rather than CSS. One of the advantages of using SASS (and LESS) is that
-I can easily include all &quot;modules&quot; (files) in one main file. This way I can make
-Grunt/Gulp/Webpack watch for changes in all files, when it detects this, it compiles one new file.
-This helps to keep the file loading on the website efficient,
-but it doesn't trade efficiency for ease of use. What I mean with this is that when I was using
-normal CSS files, I needed to create multiple files to keep different functionalities separated.
-Obviously this is not the way I wanted to work. With SASS it loads one single file,
-that is made up out of an unlimited amount of separate files.
-These I can easily manage these different files, while Grunt does all the compiling for me.
-That way ease of use is not compromised.
+But back to using SASS rather than CSS. One of the advantages of using SASS (and LESS) is that I can easily include all &quot;modules&quot; (files) in one main file. This way I can make Grunt/Gulp/Webpack watch for changes in all files when it detects this, it compiles one new file. This helps to keep the file loading on the website efficient, but it doesn't trade efficiency for ease of use. What I mean with this is that when I was using normal CSS files, I needed to create multiple files to keep different functionalities separated. Obviously, this is not the way I wanted to work. With SASS it loads one single file, that is made up out of an unlimited amount of separate files. These I can easily manage these different files, while Grunt does all the compiling for me. That way ease of use is not compromised.
 Mixins
-Another important thing about SASS that I mentioned earlier was the ability to use mixins in
-my files. This means that I can make standard &quot;classes&quot; within the SASS files and easily
-include these in styling for other elements. For example: I want to make an orange button.
-In plain CSS you could make two different classes, one being &quot;.button&quot; and one being
-&quot;.orange-button&quot;. The button class could make up the shape, font, and border styles.
-The orange-button class could just make the button orange and implement custom hover styles.
-What a mixin does is simpler. A mixin could be defined, taking two arguments,
-color and hover-color. Then in the orange-button class the mixin could be called by using:
-button(orange, a-darker-orange). This reduces code and in my opinion makes it easier to
-quickly style different elements.
+Another important thing about SASS that I mentioned earlier was the ability to use mixins in my files. This means that I can make standard &quot;classes&quot; within the SASS files and easily include these in styling for other elements. For example I want to make an orange button.
+In plain CSS you could make two different classes, one being &quot;.button&quot; and one being &quot;.orange-button&quot;. The button class could make up the shape, font, and border styles. The orange-button class could just make the button orange and implement custom hover styles. What a mixin does is simpler. A mixin could be defined, taking two arguments, color and hover-color. Then in the orange-button class, the mixin could be called by using: button(orange, a-darker-orange). This reduces code and in my opinion, makes it easier to quickly style different elements.
 Manageable
-Using SASS has made styling websites for me much more fun again. Before I started to use SASS
-I hated it, because I knew I needed to work in yet another file.
-I had to include this file in the HTML file and it was just tedious.
-Then I'm not even talking about the enormous CSS files that I was already using.
-Then I had to try to find the right class or ID and hope for the best this doesn't actually
-change anything else. Using SASS has made working on specific elements much more manageable,
-especially with Grunt having my back by compiling my main SASS file in the background.
-While using SASS it has reduced my frustrations with styling.
-It has made it easier, more efficient, and it gave me the opportunity to really structure the
-files how I want without having to load yet another file in my HTML file.</content>
+Using SASS has made styling websites for me much more fun again. Before I started to use SASS I hated it, because I knew I needed to work in yet another file. I had to include this file in the HTML file and it was just tedious. Then I'm not even talking about the enormous CSS files that I was already using. Then I had to try to find the right class or ID and hope for the best this doesn't actually change anything else. Using SASS has made working on specific elements much more manageable,
+especially with Grunt having my back by compiling my main SASS file in the background. While using SASS it has reduced my frustrations with styling.
+It has made it easier, more efficient, and it gave me the opportunity to really structure the files how I want without having to load yet another file in my HTML file.</content>
                     <summary>
 Why I use SASS rather than just CSS
 CSS to LESS
 When I first started out with web design &amp; development,
-CSS was this tool to make HTML pages look better.
-This was just before responsive web design started becoming the new industry standard for web
-design. Websites were zoomed out and broke on m[...]</summary>
+CSS was this tool to make HTML pages look better. This was just before responsive web design started becoming the new industry standard for web design. Websites were zoomed out and broke on m[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" type="image/jpeg" width="3240" height="2160" />
                   </entry>
 <entry>
                     <title>Why some people can work remotely</title>
                     <link href="https://roelofjanelsinga.com/articles/some-people-can-work-remotely"/>
                     <id>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</id>
-                    <updated>2017-06-02T12:00:00+02:00</updated>
+                    <updated>2019-08-26T18:52:41+02:00</updated>
                     <published>2017-06-02T12:00:00+02:00</published>
                     <content>
 Why some people can work remotely
-Working remotely, we've all heard of it before. Simply said, you're working on something,
-but you're not actually in the office while you do it.
-In some occasions this means you work from home for the day.
-In others maybe you're a freelancer and work for several different companies from your
-own office instead of theirs. Or maybe you're taking a trip but you still want to work.
-There are many different ways to work abroad. Let me tell you about my experiences.
+Working remotely, we've all heard of it before. Simply said, you're working on something, but you're not actually in the office while you do it. In some occasions this means you work from home for the day.
+In others maybe you're a freelancer and work for several different companies from your own office instead of theirs. Or maybe you're taking a trip but you still want to work. There are many different ways to work abroad. Let me tell you about my experiences.
 My experiment
-I work for a company, but my girlfriend lives in the United States. You might think,
-well tough luck, I guess you'll only see her during the holidays.
-Wrong. I asked my boss and colleagues if they would mind if I worked from another country.
-They were fine with it, it wasn't the first time. The first time was only 2 weeks,
-it wasn't a long time, but it was an experiment. An experiment whether I could work remotely
-or not. In my opinion it worked really well. I got up at normal times and worked from 9
-til 5, just 6 hours later than normal due to time zones. I found a quiet place that I could
-work at, but still Skype with my colleagues to discuss some things.
-So after this experiment I was wondering if I could do the same, but for a longer period of time.
+I work for a company, but my girlfriend lives in the United States. You might think, well tough luck, I guess you'll only see her during the holidays. Wrong. I asked my boss and colleagues if they would mind if I worked from another country. They were fine with it, it wasn't the first time. The first time was only 2 weeks, it wasn't a long time, but it was an experiment. An experiment whether I could work remotely or not. In my opinion, it worked really well. I got up at normal times and worked from 9 till 5, just 6 hours later than normal due to time zones. I found a quiet place that I could work at, but still Skype with my colleagues to discuss some things. So after this experiment I was wondering if I could do the same, but for a longer period of time.
 Second trial
-This longer period of time presented itself in march of 2017.
-I asked if I could once again work from abroad, but a little longer this time.
-My boss gave me permission so I booked my trip, my 9 week long trip.
-For some this may seem like a very long time, and it is.
-But I knew that if I found the right environment, I could work just as well abroad as I
-would in the office. And I found this environment in the same library I used during the
-previous experiment. I worked from 8 to 4, so only a 5 hour difference with my colleagues
-and this worked well. We didn't need a lot of skype meetings,
-because I knew what was expected of me. We learned to communicate with each other really
-well through Jira and Slack, so everyone could move on with their work as usual.
-A small adjustment it took for me was to set up a small development server,
-so I could test the same code my colleagues were testing, but through the internet
-instead of a simple local network.
+This longer period of time presented itself in march of 2017. I asked if I could once again work from abroad, but a little longer this time. My boss gave me permission so I booked my trip, a 9 week-long trip.
+For some this may seem like a very long time, and it is. But I knew that if I found the right environment, I could work just as well abroad as I
+would in the office. And I found this environment in the same library I used during the previous experiment. I worked from 8 to 4, so only a 5-hour difference with my colleagues and this worked well. We didn't need a lot of skype meetings, because I knew what was expected of me. We learned to communicate with each other really well through Jira and Slack, so everyone could move on with their work as usual. A small adjustment it took for me was to set up a small development server,
+so I could test the same code my colleagues were testing, but through the internet instead of a simple local network.
 Advice for some of you travelers
-So for me the experiments worked out really well, I knew I had enough discipline to
-keep working on schedule, not take unnecessary breaks, or treat the whole thing as a
-long vacation. But the experiment also worked out well, because my colleagues
-were fine with it and they were able to adjust to the new situation instantly and flawlessly.
-Working abroad only works if the whole team is aboard and is able to work in a non-traditional
-setting, or at least is able to adjust to the new situation pretty easily.
-So if you think you may want to try something like this some time,
-try to start with a shorter period of time and see if you can do it.
-If you can, try longer, but don't try to force yourself to be productive if you know
-you don't have the discipline it takes to pull it off, it will not work.</content>
+So for me, the experiments worked out really well, I knew I had enough discipline to keep working on a schedule, not taking unnecessary breaks, or treat the whole thing as a long vacation. But the experiment also worked out well, because my colleagues were fine with it and they were able to adjust to the new situation instantly and flawlessly. Working abroad only works if the whole team is aboard and is able to work in a non-traditional setting, or at least is able to adjust to the new situation pretty easily. So if you think you may want to try something like this sometime, try to start with a shorter period of time and see if you can do it. If you can, try longer, but don't try to force yourself to be productive if you know you don't have the discipline it takes to pull it off, it will not work.</content>
                     <summary>
 Why some people can work remotely
-Working remotely, we've all heard of it before. Simply said, you're working on something,
-but you're not actually in the office while you do it.
-In some occasions this means you work from home for the day.
+Working remotely, we've all heard of it before. Simply said, you're working on something, but you're not actually in the office while you do it. In some occasions this means you work from home for the day.
 In others maybe you're a freelancer and work for several di[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
                   </entry>
@@ -426,203 +349,68 @@ In others maybe you're a freelancer and work for several di[...]</summary>
                     <title>What I've learned building Single page applications</title>
                     <link href="https://roelofjanelsinga.com/articles/learned-building-single-page-applications"/>
                     <id>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</id>
-                    <updated>2017-06-06T12:00:00+02:00</updated>
+                    <updated>2019-08-26T18:59:07+02:00</updated>
                     <published>2017-06-06T12:00:00+02:00</published>
                     <content>
 What I've learned building Single page applications
-Single Page Applications (SPA's) are amazing to build and work with,
-but there are a lot of disadvantages as well. This post describes some of the things that
-I have learned while building SPA's. It also contains tips to help developers building or
-thinking about building SPA's.
-So first up is the challenge of having proper titles, meta tags, and general SEO requirements.
-In some Javascript frameworks (like ReactJS and Angular) this problem has already been solved.
-Some older generations of Javascript frameworks like AngularJS (version 1.x),
-this problem still persists. When you don't do anything to properly generate SEO
-tags/titles/texts, Google and Facebook will simply not find anything for your website
-apart from the URL.
+Single Page Applications (SPA's) are amazing to build and work with, but there are a lot of disadvantages as well. This post describes some of the things that I have learned while building SPA's. It also contains tips to help developers building or thinking about building SPA's.
+So first up is the challenge of having proper titles, meta tags, and general SEO requirements. In some Javascript frameworks (like ReactJS and Angular) this problem has already been solved. Some older generations of Javascript frameworks like AngularJS (version 1.x), this problem still persists. When you don't do anything to properly generate SEO tags/titles/texts, Google and Facebook will simply not find anything for your website apart from the URL.
 Meta tags with Javascript
-A very simple, but in some situations pretty tricky solution would be to use prerender.io.
-This service uses PhantomJS to render an entire webpage, to show titles, tags, and texts.
-This way, when Google or Facebook crawl your website, they will see all the proper information
-they need for search results or Facebook's open graph cards. At my job we use this service,
-but not without any problems. First of all, you need to make sure you're using HTML5
-polyfills for everything. This is because we made use of Javascripts Promises,
-but PhantomJS didn't recognize what this meant, so it simply didn't render our pages,
-causing us to pull out our hair over it. When we discovered Promises were the problem,
-we switched to using Angular's $q promise instead solving the problem.
-So if SEO is very important to you and your application, make sure the framework you choose
-has a built-in functionality to render your pages properly for Facebook, Google, etc.
-A great starting point would be to use Angular2 or ReactJS.
+A very simple, but in some situations pretty tricky solution would be to use prerender.io. This service uses PhantomJS to render an entire webpage, to show titles, tags, and texts. This way, when Google or Facebook crawl your website, they will see all the proper information they need for search results or Facebook's open graph cards. At my job we use this service, but not without any problems. First of all, you need to make sure you're using HTML5 polyfills for everything. This is because we made use of Javascripts Promises, but PhantomJS didn't recognize what this meant, so it simply didn't render our pages, causing us to pull out our hair over it. When we discovered Promises were the problem, we switched to using Angular's $q promise instead of solving the problem. So if SEO is very important to you and your application, make sure the framework you choose has built-in functionality to render your pages properly for Facebook, Google, etc. A great starting point would be to use Angular2 or ReactJS.
 File organization
-Another thing I have learned is that file structures are incredibly important.
-Consistency in file and code placement is important. What does this mean?
-Well this means that code and modules need to be separated by function, not by type.
-What this means is that you shouldn't put all controllers in one folder,
-all services in another folder and all directives in yet another.
-What I'm saying is that you should put all code, templates, etc. belonging to a
-specific functionality in a seperate folder. This may seem tough to start out with,
-and for small applications this is not necessary, but for large applications,
-this makes your life so much easier. The amount of times it took me so long
-I just gave up and did a full on text search over all files to find the one
-I needed is too high. If I had started to structure my filesystem like this from the
-beginning I could simply find the folder that belonged to that specific functionality
-and have all the code I needed right there. It's a real time-saver.
+Another thing I have learned is that file structures are incredibly important. Consistency in file and code placement is important. What does this mean? Well, this means that code and modules need to be separated by function, not by type. What this means is that you shouldn't put all controllers in one folder, all services in another folder and all directives in yet another. What I'm saying is that you should put all code, templates, etc. belonging to specific functionality in a separate folder. This may seem tough to start out with, and for small applications, this is not necessary, but for large applications, this makes your life so much easier. The number of times it took me so long I just gave up and did a full-on text search over all files to find the one I needed is too high. If I had started to structure my filesystem like this from the beginning I could simply find the folder that belonged to that specific function and have all the code I needed right there. It's a real time-saver.
 API calls
-The last thing I have learned while building SPA's is that the API structure in your
-back-end is incredibly important. Starting out I wrote a single API call for each page,
-collecting a lot of data in one server response. This is slow and is the wrong way to go.
-The asynchronous nature of SPA's makes it easier to use several smaller API calls to get the
-data you need. While you have one request in a queue, other processes can still take place.
-This helps me to load screens and it's data much quicker than waiting for larger requests.
-When the application only loads one massive response, the pages need to wait before
-they're ready to go. So when you structure the API endpoints in the backend,
-make sure to keep the responses small. This will help you break up the loading times so
-users using the application will have a smoother experience.</content>
+The last thing I have learned while building SPA's is that the API structure in your back-end is incredibly important. Starting out I wrote a single API call for each page, collecting a lot of data in one server response. This is slow and is the wrong way to go. The asynchronous nature of SPA's makes it easier to use several smaller API calls to get the data you need. While you have one request in a queue, other processes can still take place. This helps me to load screens and it's data much quicker than waiting for larger requests. When the application only loads one massive response, the pages need to wait before they're ready to go. So when you structure the API endpoints in the backend, make sure to keep the responses small. This will help you break up the loading times so users using the application will have a smoother experience.</content>
                     <summary>
 What I've learned building Single page applications
-Single Page Applications (SPA's) are amazing to build and work with,
-but there are a lot of disadvantages as well. This post describes some of the things that
-I have learned while building SPA's. It also contains tips to help developers building o[...]</summary>
+Single Page Applications (SPA's) are amazing to build and work with, but there are a lot of disadvantages as well. This post describes some of the things that I have learned while building SPA's. It also contains tips to help developers building o[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
                   </entry>
 <entry>
                     <title>Offline accessibility with service workers</title>
                     <link href="https://roelofjanelsinga.com/articles/offline-accessibility-service-workers"/>
                     <id>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</id>
-                    <updated>2017-06-09T12:00:00+02:00</updated>
+                    <updated>2019-08-26T19:13:36+02:00</updated>
                     <published>2017-06-09T12:00:00+02:00</published>
                     <content>
 Offline accessibility with service workers
-Web applications are great. They're fast, they can be used on all platforms and often feel
-like they're a real native application with accessibility .
-But then, your internet stops working and you only had to check that little note you made
-earlier. Too bad, you can't connect to the application and you can't see that note you made
-earlier, bummer! Service workers to the rescue!
+Web applications are great. They're fast, they can be used on all platforms and often feel like they're a real native application with accessibility. But then, your internet stops working and you only had to check that little note you made earlier. Too bad, you can't connect to the application and you can't see that note you made earlier bummer! Service workers to the rescue!
 To really make web applications competitive against native applications,
-you'll need to simulate or even enhance the expected behaviour of such apps.
-This means that the app should feel quick and responsive, you should be able to
-access it whenever and wherever you want and it should benefit you when you need it.
-So let's split this expected behaviour in three sections: quick and responsive,
-accessible whenever and wherever, and personal benefit.
+you'll need to simulate or even enhance the expected behaviour of such apps. This means that the app should feel quick and responsive, you should be able to access it whenever and wherever you want and it should benefit you when you need it. So let's split this expected behaviour into three sections: quick and responsive, accessible whenever and wherever, and personal benefit.
 Quick and responsive
-One aspect of a native application over a web application is usually that the native
-application feels quicker. You don't have to wait for something to appear on your screen,
-whereas for web applications you often have to wait for data to show content on your screen.
-This is a deal breaker for a lot of people. A true app should be quick.
-One solution for this is browser caching through Nginx or Apache through Cache-Control
-and Expire in your response headers. The browser will attempt to cache the requested
-resources in the browser, thus making the second load of your application nearly instantaneous.
-This is an amazing first step, because your application instantly feels a lot faster.
-However, the browser will still need to request data from the server to even receive
-response headers, which isn't possible when you don't have any internet.
-This is where service workers play a huge role.
+One aspect of a native application over a web application is usually that the native application feels quicker. You don't have to wait for something to appear on your screen, whereas for web applications you often have to wait for data to show content on your screen. This is a deal breaker for a lot of people. A true app should be quick. One solution for this is browser caching through Nginx or Apache through Cache-Control and Expire in your response headers. The browser will attempt to cache the requested resources in the browser, thus making the second load of your application nearly instantaneous. This is an amazing first step because your application instantly feels a lot faster. However, the browser will still need to request data from the server to even receive response headers, which isn't possible when you don't have any internet. This is where service workers play a huge role.
 Accessible whenever, wherever
-I mentioned in the previous paragraph that browser caching is a great way to reduce
-bootstrapping time, but it won't work if you're not connected to the internet.
-Service workers are the solution here. A service worker essentially is a middle man,
-built into the browser. This middle man can intercept any request made from the browser
-to the server and customize its behaviour. This sounds a little vague, but hang in there.
-You have to imagine that this middle man is receiving a request from you (through the browser).
-The worker will then look in its memory to see if you've requested this resources before.
-This resource can be anything from a JS file to a CSS file, HTML, image, etc.
-If the worker does find the resource in its memory, it will return this.
-Did you see what just happened? The request never touched the server.
-It requested something and the service worker returned a cached version of the requested
-resource. You can create a web application like this that is available,
-even when you're not connected to the internet.
+I mentioned in the previous paragraph that browser caching is a great way to reduce bootstrapping time, but it won't work if you're not connected to the internet. Service workers are the solution here. A service worker essentially is a middle man, built into the browser. This middle man can intercept any request made from the browser to the server and customize its behaviour. This sounds a little vague, but hang in there. You have to imagine that this middle man is receiving a request from you (through the browser). The worker will then look in its memory to see if you've requested this resources before. This resource can be anything from a JS file to a CSS file, HTML, image, etc. If the worker does find the resource in its memory, it will return this. Did you see what just happened? The request never touched the server. It requested something and the service worker returned a cached version of the requested resource. You can create a web application like this that is available, even when you're not connected to the internet.
 Offline accessibility is only one of the benefits of service workers.
 Imagine you're in a remote location and you're connected to the internet,
-but your connection is incredibly slow. Normally when you're offline the website will
-fail to load straight off the bat, but not this time. It will attempt to download all
-the resources like it normally would, with a slow connection. This can cause the website
-to load in 3 minutes instead of 3 seconds, which is a terrible user experience.
-Tadaa! Another task for the service worker. This little worker will recognize the
-situation and will return the cached version instead of attempting to request the resource
-from the server. The load time is once again three seconds! Service worker out!
+but your connection is incredibly slow. Normally when you're offline the website will fail to load straight off the bat, but not this time. It will attempt to download all the resources like it normally would, with a slow connection. This can cause the website to load in 3 minutes instead of 3 seconds, which is terrible user experience. Tadaa! Another task for the service worker. This little worker will recognize the situation and will return the cached version instead of attempting to request the resource from the server. The load time is once again three seconds! Service worker out!
 Personal benefit
-That offline web application is great and everything, but if you still need internet to save
-data, your web application will still fail its purpose. It'll look like it's working,
-but in reality it doesn't do anything else besides being pretty and fast.
-The solution here is maybe not the most obvious to some of you, but you can make use of a
-fantastic feature of HTML5 called IndexedDB. This is an in-browser database that can
-contain json objects in a simple key-value pair database. When your app is unable to
-save any data to your actual database, it can use IndexedDB as an offline fallback and
-synchronize with your server at a later point in time when you do have an internet connection.
-What does this mean for your app? Well it means that it looks pretty, it's fast,
-and it's actually fully functional. This will get your web application to be more
-and more competitive with native applications. First of all, your application will
-behave like a normal native application, no matter what the situation might be.
-Second of all, don't tell everyone, but it's much cheaper and easier to build web
-applications than it is to build native applications. That's what I call a win win situation.
-So to round up: use service workers to make your web application to behave more like a native
-application in less than optimal situations.</content>
+That offline web application is great and everything, but if you still need the internet to save data, your web application will still fail its purpose. It'll look like it's working, but in reality, it doesn't do anything else besides being pretty and fast. The solution here is maybe not the most obvious to some of you, but you can make use of a fantastic feature of HTML5 called IndexedDB. This is an in-browser database that can contain JSON objects in a simple key-value pair database. When your app is unable to save any data to your actual database, it can use IndexedDB as an offline fallback and synchronize with your server at a later point in time when you do have an internet connection.
+What does this mean for your app? Well it means that it looks pretty, it's fast, and it's actually fully functional. This will get your web application to be more and more competitive with native applications. First of all, your application will behave like a normal native application, no matter what the situation might be. Second of all, don't tell everyone, but it's much cheaper and easier to build web applications than it is to build native applications. That's what I call a win-win situation. So to round up: use service workers to make your web application to behave more like a native application in less than optimal situations.</content>
                     <summary>
 Offline accessibility with service workers
-Web applications are great. They're fast, they can be used on all platforms and often feel
-like they're a real native application with accessibility .
-But then, your internet stops working and you only had to check that little note you made
-earlier. Too ba[...]</summary>
+Web applications are great. They're fast, they can be used on all platforms and often feel like they're a real native application with accessibility. But then, your internet stops working and you only had to check that little note you made earlier. Too bad[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" type="image/jpeg" width="1500" height="1000" />
                   </entry>
 <entry>
                     <title>Build bridges with API based application structures</title>
                     <link href="https://roelofjanelsinga.com/articles/build-bridges-api-based-structures"/>
                     <id>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</id>
-                    <updated>2017-08-12T12:00:00+02:00</updated>
+                    <updated>2019-08-26T19:27:19+02:00</updated>
                     <published>2017-08-12T12:00:00+02:00</published>
                     <content>
 Build bridges with API based application structures
-There is nothing more fun than working with API's during my work day.
-It's programming like any other day, but it's also so much more!
-It's connecting other services with your own, using them to enhance your application and
-making it much richer with functionalities. You're essentially using other
-fine-tuned services to benefit your own service and sometimes to offload some aspects of
-your application, like social login buttons through Google, Facebook, and Github.
-I mentioned in an earlier post &quot;What I've learned building Single page applications&quot;
-a little bit about how I've been using API calls during my day.
-I'd like to clarify one thing before we dive into my fascinations with API's.
-I see an API call as any form of data transfer between two different applications,
-so it's not limited to HTTP.
+There is nothing more fun than working with API's during my workday.
+It's programming like any other day, but it's also so much more! It's connecting other services with your own, using them to enhance your application and making it much richer with functionalities. You're essentially using other fine-tuned services to benefit your own service and sometimes to offload some aspects of your application, like social login buttons through Google, Facebook, and Github. I mentioned in an earlier post &quot;What I've learned building Single page applications&quot; a little bit about how I've been using API calls during my day. I'd like to clarify one thing before we dive into my fascinations with API's. I see an API call as any form of data transfer between two different applications, so it's not limited to HTTP.
 What I'm using right now
-Currently I'm working on a project that involves 4 major connections so far,
-and it's only just started. My application connects to Sendgrid for sending of all
-my system emails, Zapier for offloading data to other services
-(there are literally 750 applications connected to it, it's wonderful),
-GraphCMS for the content management of the application, and Tubbber for all
-search and database related functionalities. So what does my application actually
-do by itself? Not all that much, except using all the different API's to
-give different kinds of data some context.
+Currently, I'm working on a project that involves 4 major connections so far, and has only just started. My application connects to Sendgrid for sending of all my system emails, Zapier for offloading data to other services (there are literally 750 applications connected to it, it's wonderful), GraphCMS for the content management of the application, and Tubbber for all search and database related functionalities. So what does my application actually do by itself? Not all that much, except using all the different API's to give different kinds of data context.
 API based structures are gaining popularity
-This has type of application architecture has become more popular in the last few years.
-A few years ago, all aspects of your application or platform were combined in one big package,
-applications nowadays are more broken up, they're more modular.
-This means that each individual component has a very specific task, one task it can do
-really well. You'll notice that testing these functionalities is a lot easier as well,
-which is another added benefit.
+This type of application architecture has become more popular in the last few years. A few years ago, all aspects of your application or platform were combined in one big package, applications nowadays are more broken up, they're more modular. This means that each individual component has a very specific task, one task it can do really well. You'll notice that testing these functionalities is a lot easier as well, which is another added benefit.
 Spreading risks
-This is a huge benefit to larger corporate systems, because when one of these services breaks,
-your applications can still partially run normally. If you cache all data going to and from all
-your API calls, your users may not even experience any problems at all when one of the
-components of your architecture goes down. Not only does this architecture spread the
-risks of losing different components, it also spreads hardware usage,
-meaning you can downgrade your main server to a smaller size, since it won't need to do
-everything in one place any more. If you're lucky, you can use all your connecting
-components for free and it just saves you money.
+This is a huge benefit to larger corporate systems because when one of these services breaks, your applications can still partially run normally. If you cache all data going to and from all your API calls, your users may not even experience any problems at all when one of the components of your architecture goes down. Not only does this architecture spread the risks of losing different components, but it also spreads hardware usage, meaning you can downgrade your main server to a smaller size since it won't need to do everything in one place anymore. If you're lucky, you can use all your connecting components for free and it just saves you money.
 It fascinates me
-An aspect of this whole architecture that fascinates me a lot is the fact that all
-these applications can work together flawlessly. The applications could be using completely
-different programming languages, yet they work together. As long as they share a
-common data structure or are at least able to parse the same data (JSON, XML),
-they will be compatible. I can provide one great example of this is, because
-I built a search engine for my work. This search engine utilizes Solr,
-which is built on top of Java. I built the main system with PHP, but through JSON exchanges
-I can get information easily.
-I like API's, because with only a few simple lines of code, you can trigger a huge
-calculation elsewhere. This event will then return get the exact data you requested,
-the only thing you have to do is ask. You can also use an array of API's to
-improve all the connected applications, not just your own application.
-For example, you can grab data from Facebook and use it to enrich your own data.
-You can then use this data to enrich data in a program like Google tag manager or Salesforce.
+An aspect of this whole architecture that fascinates me a lot is the fact that all these applications can work together flawlessly. The applications could be using completely different programming languages, yet they work together. As long as they share a common data structure or are at least able to parse the same data (JSON, XML), they will be compatible. I can provide one great example of this is, because I built a search engine for my work. This search engine utilizes Solr, which is built on top of Java. I built the main system with PHP, but through JSON exchanges I can get information easily.
+I like API's, because, with only a few simple lines of code, you can trigger a huge calculation elsewhere. This event will then return get the exact data you requested, the only thing you have to do is ask. You can also use an array of API's to improve all the connected applications, not just your own application. For example, you can grab data from Facebook and use it to enrich your own data. You can then use this data to enrich data in a program like Google tag manager or Salesforce.
 API's are amazing to me, so I want to share some platforms to start with. Have a look at:
 
 Facebook
@@ -630,72 +418,34 @@ Instagram
 Twitter
 Zapier
 
-If you like to talk about this subject further, follow me on twitter @RJElsinga or
-Instagram @roelof1001.</content>
+If you like to talk about this subject further, follow me on twitter @RJElsinga or Instagram @roelof1001.</content>
                     <summary>
 Build bridges with API based application structures
-There is nothing more fun than working with API's during my work day.
-It's programming like any other day, but it's also so much more!
-It's connecting other services with your own, using them to enhance your application and
-making it much richer w[...]</summary>
+There is nothing more fun than working with API's during my workday.
+It's programming like any other day, but it's also so much more! It's connecting other services with your own, using them to enhance your application and making it much richer wi[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" type="image/jpeg" width="1280" height="853" />
                   </entry>
 <entry>
                     <title>Developer tools for a back-end programmer</title>
                     <link href="https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer"/>
                     <id>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</id>
-                    <updated>2017-08-26T12:00:00+02:00</updated>
+                    <updated>2019-08-27T08:16:22+02:00</updated>
                     <published>2017-08-26T12:00:00+02:00</published>
                     <content>
 Developer tools for a back-end programmer
-Any developer will have a set of developer tools they swear by. A set of tools that does
-everything we need it to do. People can say that tools are interchangeable,
-and to an extend they certainly are. However, the set of tools a developer uses,
-often dictate the workflow. With that said, I'd like to move to the part where I tell
-you which tools I use on a daily basis.
+Any developer will have a set of developer tools they swear by. A set of tools that does everything we need it to do. People can say that tools are interchangeable, and to an extent they certainly are. However, the set of tools a developer uses, often dictate the workflow. With that said, I'd like to move to the part where I tell you which tools I use on a daily basis.
 My developer tools
-One of my main programming tools is an IDE called PHPStorm, which I think almost all
-programmers have at least heard of. The editor comes with built-in terminals,
-which I find a really useful feature. I usually use 3 or 4 terminals at the same
-time and the editor makes it very easy to manage all of them. Another useful feature
-it has that I use a lot is the search functionalities. You can use a few keywords to
-search for the string in your whole project and it makes developing easier and less tedious.
+One of my main programming tools is an IDE called PHPStorm, which I think almost all programmers have at least heard of. The editor comes with built-in terminals, which I find a really useful feature. I usually use 3 or 4 terminals at the same time and the editor makes it very easy to manage all of them. Another useful feature it has that I use a lot is the search functionalities. You can use a few keywords to search for the string in your whole project and it makes developing easier and less tedious.
 Updating and managing code
-If, for any reason, I ever need to change any live code, I use the command line editor
-Nano or Atom combined with Filezilla. Luckily I don't resort to going down this route too
-often, because any mistakes will immediately be reflected in production.
-Normally I change all the things I need locally and get it into production through
-Git and Github, which are two of the other tools that I use on a daily basis.
-Along with Git there is of course NPM and Composer to get all the required packages
-in my projects. If you're not using package managers for your projects in 2017,
-you should check it out. It makes keeping your applications up-to-date a breeze.
-It also means you can take advantage of thousands of open source packages that have
-been built by other people.
+If for any reason, I ever need to change any live code, I use the command-line editor Nano or Atom combined with Filezilla. Luckily I don't resort to going down this route too often, because any mistakes will immediately be reflected in production. Normally I change all the things I need locally and get it into production through Git and Github, which are two of the other tools that I use on a daily basis. Along with Git, there is, of course, NPM and Composer to get all the required packages in my projects. If you're not using package managers for your projects in 2017, you should check it out. It makes keeping your applications up-to-date a breeze. It also means you can take advantage of thousands of open source packages that have been built by other people.
 Testing
-Testing is a very important part of the build process. Luckily Laravel, the PHP framework
-I use for most of my projects, has PHPUnit support built-in. This means that writing tests
-and test classes is very easy. With a few simple lines of code you will always know if the
-methods you write act as you intended them to act. This is a very good process to run
-before you're ready to publish your code, just to make sure what you wrote actually works.
+Testing is a very important part of the build process. Luckily Laravel, the PHP framework I use for most of my projects, has PHPUnit support built-in. This means that writing tests is very easy. With a few simple lines of code, you will always know if the methods you write act as you intended them to act. This is a very good process to run before you're ready to publish your code, just to make sure what you wrote actually works.
 Browsers
-Sometimes you just really need a browser to test your application. For example while
-building SPA's I use the Chrome Developer tools almost 100% of the time.
-There are two browsers I test in and see if everything goes according to plan.
-The first is of course Google Chrome and the second is Firefox with the Firebug plugin installed.
-This comes with a console and a network tab to see if there are any logged errors and to
-see what data your browser actually loads or receives from the server.
-This is very useful for debugging and making sure the browser receives the data you need
-it to receive.
-So there are a few tools I use on a day to day basis to make sure the development process
-goes according to plan and the code you want published gets published in an orderly fashion.
-Because at the end of the day, you want local code running in a production environment.
-There is not just one way to get there, everyone will have their own way.</content>
+Sometimes you just really need a browser to test your application. For example while building SPA's I use the Chrome Developer tools almost 100% of the time. There are two browsers I test in and see if everything goes according to plan. The first is, of course, Google Chrome and the second is Firefox with the Firebug plugin installed. This comes with a console and a network tab to see if there are any logged errors and to see what data your browser actually loads or receives from the server. This is very useful for debugging and making sure the browser receives the data you need it to receive.
+So there are a few tools I use on a day to day basis to make sure the development process goes according to plan and the code you want to be published gets published in an orderly fashion. Because at the end of the day, you want local code running in a production environment. There is not just one way to get there, everyone will have their own way.</content>
                     <summary>
 Developer tools for a back-end programmer
-Any developer will have a set of developer tools they swear by. A set of tools that does
-everything we need it to do. People can say that tools are interchangeable,
-and to an extend they certainly are. However, the set of tools a developer uses,
-often dicta[...]</summary>
+Any developer will have a set of developer tools they swear by. A set of tools that does everything we need it to do. People can say that tools are interchangeable, and to an extent they certainly are. However, the set of tools a developer uses, often dicta[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" type="image/jpeg" width="1080" height="720" />
                   </entry>
 <entry>
@@ -2943,6 +2693,41 @@ At this point I'm not quite sure what I'll go with. Once I've implemented a solu
 Building automatic API Stubs and/or using Mocks in PHP
 Testing your code is essential if you want to write code that doesn't break your application. You should use tests as an assurance that your code does what it's supposed to do, nothing more, nothing less. When you have code that interacts with[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboards-bw.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>How I'm trying to become a better communicator</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-becoming-better-communicator"/>
+                    <id>https://roelofjanelsinga.com/articles/how-becoming-better-communicator</id>
+                    <updated>2019-08-20T19:54:26+02:00</updated>
+                    <published>2019-08-28T12:00:00+02:00</published>
+                    <content>
+Illustration created by stockgiu
+How I'm trying to become a better communicator
+I'm trying to become a more skilled communicator to my peers and non-technical people. Being a good communicator is vital to work well in a team. By writing more often I'm hoping to improve my abilities to transform thoughts into comprehensive sentences. By writing for different audiences, I'm attempting to figure out what kind of word choices help to communicate my thoughts in more effective ways.
+There are several ways I'm attempting to communicate my ideas, technical solutions, and progress. These are as follows:
+
+Writing blog posts
+Publishing README files as blog posts (these will follow in the next few weeks)
+Writing a lot of documentation for code I've written
+Writing, writing, writing
+
+Writing blog posts
+As you might have noticed, I've published a few blog posts in the past few weeks. These are mostly used to help me track my progress over time. However, like code, ideas and solutions become vague over time. By learning to improve my writing I hope to communicate my ideas more clearly, so I can keep understanding what I was talking about when I originally wrote the text.
+When looking back at my very first posts on this blog, I can already see very clear improvements. My posts have gotten a better outline, containing actual introductions and conclusions. Reading through the posts has become easier. Even though English isn't my first language, you can tell that my grammar and general language skills have improved. This just goes to show how important it is to revise your work after you've written down your thoughts. In a year or two, I will look at this post and think: &quot;I was so naive, look at how much I've improved since then&quot;. And those kinds of thoughts are exactly why I write blog posts because measuring progress can be a real motivator.
+Publishing README files as blog posts
+Laravel, a great PHP framework, became popular because it had great documentation. When you're able to communicate what you can do with a piece of software, people are more likely to pick it up. When you have a great piece of software, but you're the only one that knows how it works, you'll most likely be the only one that will be using it. 
+This is why I'm making it a point to document a lot and do it well. Of course, I can always improve, which is why I'm going to publish my documentation here as blog posts. This will help me to keep revising and improving upon myself. I revise my blog posts quite a lot throughout a couple of days and I should follow the same process for documentation of my README files.
+Writing a lot of documentation for code I've written
+Any time I write software, I try to document how it works and why the code exists. The reasoning is usually the deciding factor for keeping or replacing pieces of software, so making my intentions clear help when refactoring inevitably becomes necessary. Let's backtrack a little bit...making my intentions clear when writing software has a side effect. This side effect is that other people read your reasoning and might think &quot;Hold on a minute, this can be done much more easily&quot;. In this case, my documentation has done its job, because it has made the software better.
+Being able to discuss your ideas with peers, in any way you can, be it face-to-face, written or a phone call, helps you iron out your ideas and solutions. So when you get better at communicating, your peers will be able to help you quicker and more effectively. Part of this process is formulating what you're trying to accomplish. If you've been practicing by putting your thoughts into words, this will be much easier than when you've been inside your head the whole time. Sometimes by writing down your thoughts, you've already solved the problem you've had in the first place. So making a habit out of putting thoughts into words, formulating precise questions, and asking your peers for help, will ultimately make you a better developer and colleague.
+Writing, writing, writing
+&quot;Practice makes perfect&quot; is what they say. I have to agree with this. Sure, you can have a lot of talent and be a very good writer, whether it is technical writing or creative writing. When you never write, you won't become a better writer. The same goes for programming, if you only follow tutorials but never actually write a piece of software, you're never going to get better at it. The only way to improve your skills is to put them into practice and repeat, repeat, repeat. With that said, if you want to become a better (written) communicator, you have to...well... communicate. You have to make the mistakes and learn from them. I've made plenty of mistakes trying to improve my communication skills and I've done my best to learn from them and improve myself. 
+Do you have any tips for me? How can I improve my writing? Let me know on Twitter, I'd love to hear from you!</content>
+                    <summary>
+Illustration created by stockgiu
+How I'm trying to become a better communicator
+I'm trying to become a more skilled communicator to my peers and non-technical people. Being a good communicator is vital to work well in a team. By writing more often I'm hoping to improve my abilities to transform tho[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/teamwork.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 
 </feed>

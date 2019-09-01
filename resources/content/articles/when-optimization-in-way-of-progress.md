@@ -1,0 +1,1 @@
+# When is optimization getting in the way of progress

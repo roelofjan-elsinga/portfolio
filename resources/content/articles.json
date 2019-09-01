@@ -44,18 +44,24 @@
     {
         "filename": "indexeddb-caching-your-data-on-the-client-side.md",
         "postDate": "2016-12-15",
+        "updateDate": "2019-08-26 13:18:19",
+        "description": "A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that ne",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "use-software-for-what-its-made-and-benefit.md",
         "postDate": "2016-12-22",
+        "updateDate": "2019-08-26 14:36:28",
+        "description": "You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it ",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "the-importance-of-server-side-caching.md",
         "postDate": "2016-12-29",
+        "updateDate": "2019-08-26 14:40:04",
+        "description": "Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your h",
         "isScheduled": false,
         "isPublished": true
     },
@@ -68,6 +74,7 @@
     {
         "filename": "how-to-index-a-single-page-application-built-in-angularjs.md",
         "postDate": "2017-01-12",
+        "updateDate": "2019-08-26 17:36:43",
         "description": "Find out how to properly index a single page application for Google and other search engines with Prerender.",
         "isScheduled": false,
         "isPublished": true
@@ -75,36 +82,48 @@
     {
         "filename": "using-sass-rather-css.md",
         "postDate": "2017-06-01",
+        "updateDate": "2019-08-26 17:43:46",
+        "description": "When I first started out with web design & development,\r\nCSS was this tool to make HTML pages look better.\r\nThis was just before responsive web design started bec",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "some-people-can-work-remotely.md",
         "postDate": "2017-06-02",
+        "updateDate": "2019-08-26 18:52:41",
+        "description": "Working remotely, we've all heard of it before. Simply said, you're working on something,\r\nbut you're not actually in the office while you do it.\r\nIn some occasio",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "learned-building-single-page-applications.md",
         "postDate": "2017-06-06",
+        "updateDate": "2019-08-26 18:59:07",
+        "description": "Single Page Applications (SPA's) are amazing to build and work with,\r\nbut there are a lot of disadvantages as well. This post describes some of the things that\r\nI",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "offline-accessibility-service-workers.md",
         "postDate": "2017-06-09",
+        "updateDate": "2019-08-26 19:13:36",
+        "description": "Web applications are great. They're fast, they can be used on all platforms and often feel\r\nlike they're a real native application with accessibility .\r\nBut then,",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "build-bridges-api-based-structures.md",
         "postDate": "2017-08-12",
+        "updateDate": "2019-08-26 19:27:19",
+        "description": "There is nothing more fun than working with API's during my work day.\r\nIt's programming like any other day, but it's also so much more!\r\nIt's connecting other ser",
         "isScheduled": false,
         "isPublished": true
     },
     {
         "filename": "developer-tools-back-end-programmer.md",
         "postDate": "2017-08-26",
+        "updateDate": "2019-08-27 08:16:22",
+        "description": "Any developer will have a set of developer tools they swear by. A set of tools that does\r\neverything we need it to do. People can say that tools are interchangea",
         "isScheduled": false,
         "isPublished": true
     },
@@ -123,6 +142,8 @@
     {
         "filename": "programming-books-worth-your-money.md",
         "postDate": "2017-09-16",
+        "updateDate": "2019-09-01 10:36:48",
+        "description": "You've all seen programming books on the internet or in bookstores. But most of us know\r\nthat those books are usually not relevant anymore, most of them are outd",
         "isScheduled": false,
         "isPublished": true
     },
@@ -352,6 +373,7 @@
     {
         "filename": "how-to-generate-a-sitemap.md",
         "postDate": "2019-03-29",
+        "updateDate": "2019-09-01 10:55:15",
         "description": "Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you.",
         "isScheduled": false,
         "isPublished": true
@@ -359,6 +381,7 @@
     {
         "filename": "my-choice-of-configuraton-file-types.md",
         "postDate": "2019-04-04",
+        "updateDate": "2019-08-30 20:13:53",
         "description": "Find out which file types I use for certain scenarios and which situations suit a specific file type best. We\u2019ll dive into JSON, YAML, XML, and dotenv.",
         "isScheduled": false,
         "isPublished": true
@@ -428,15 +451,46 @@
         "postDate": "2019-08-28",
         "updateDate": "2019-08-20 19:54:26",
         "description": "I'm trying to become a more skilled communicator to my peers and non-technical people. In this post, you'll find out how I'm attempting to do this.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     {
         "filename": "how-to-write-blog-posts-in-6-steps.md",
         "postDate": "2019-09-04",
-        "updateDate": "2019-08-25 20:20:39",
+        "updateDate": "2019-08-26 17:26:03",
         "description": "Writing blog posts can be a difficult if you don't write a lot and don't know where to start. Find out how I write blog posts and maybe it'll help you to get started too.",
         "isScheduled": true,
+        "isPublished": false
+    },
+    {
+        "filename": "my-thoughts-on-vpns.md",
+        "postDate": "2019-09-11",
+        "updateDate": "2019-08-31 18:21:19",
+        "description": "Find out why I think you should use a VPN for your internet usage. If you like to browse any and all websites and be anonymous at the same time, you might benefit from using a VPN.",
+        "isScheduled": true,
+        "isPublished": false
+    },
+    {
+        "filename": "why-built-my-own-cms.md",
+        "postDate": "2019-09-18",
+        "updateDate": "2019-08-27 21:18:17",
+        "description": "Why I built my own CMS",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "when-optimization-in-way-of-progress.md",
+        "postDate": "2019-09-25",
+        "updateDate": "2019-08-27 08:18:36",
+        "description": "When is optimization getting in the way of progress",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "open-source-contributions-september-2019.md",
+        "postDate": "2019-09-25",
+        "description": "Open source contributions (September 2019)",
+        "isScheduled": false,
         "isPublished": false
     }
 ]
