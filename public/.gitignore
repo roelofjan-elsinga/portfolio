@@ -3,3 +3,4 @@ mix.js.map
 sitemap.xml
 sw.js
 precache*
+vendor/*
