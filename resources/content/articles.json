@@ -459,8 +459,8 @@
         "postDate": "2019-09-04",
         "updateDate": "2019-08-26 17:26:03",
         "description": "Writing blog posts can be a difficult if you don't write a lot and don't know where to start. Find out how I write blog posts and maybe it'll help you to get started too.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     {
         "filename": "my-thoughts-on-vpns.md",
@@ -473,15 +473,15 @@
     {
         "filename": "why-built-my-own-cms.md",
         "postDate": "2019-09-18",
-        "updateDate": "2019-08-27 21:18:17",
+        "updateDate": "2019-09-03 12:55:48",
         "description": "Why I built my own CMS",
         "isScheduled": false,
         "isPublished": false
     },
     {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-09-25",
-        "updateDate": "2019-08-27 08:18:36",
+        "postDate": "2019-10-02",
+        "updateDate": "2019-09-04 11:02:09",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -489,7 +489,16 @@
     {
         "filename": "open-source-contributions-september-2019.md",
         "postDate": "2019-09-25",
+        "updateDate": "2019-09-04 14:12:40",
         "description": "Open source contributions (September 2019)",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "get-rid-of-open-offices.md",
+        "postDate": "2019-10-09",
+        "updateDate": "2019-09-04 11:02:24",
+        "description": "Getting rid of open offices",
         "isScheduled": false,
         "isPublished": false
     }
