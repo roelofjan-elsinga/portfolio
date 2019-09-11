@@ -18,32 +18,72 @@
 
     <div class="section" id="work">
 
-        {!! $work !!}
+        {!! Block::get('work') !!}
 
-        <div class="items mt-12">
-            @foreach($works as $index => $project)
+        <div class="mt-12">
 
-                <div class="col-md-3 element work">
-                    <div class="work-item">
-                        <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+            @foreach($works->chunk(2) as $items)
 
-                        <h3>{{$project['title']}}</h3>
+                <div class="items block md:flex -mx-2">
 
-                        <p class="mb-4">{{$project['description']}}</p>
+                    @foreach($items as $project)
 
-                        <a href="{{$project['url']}}" class="link">Read more</a>
-                    </div>
+                        <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
+                            <h3>{{$project['title']}}</h3>
+
+                            <p class="mb-4 mt-2 flex-auto">{{$project['description']}}</p>
+
+                            <a href="{{$project['url']}}" class="text-blue-darkest font-bold pb-2 no-underline">View project</a>
+                        </div>
+
+                    @endforeach
+
                 </div>
 
             @endforeach
+
         </div>
 
         <a href="{{ route('public.work') }}"
-           class="text-xl font-bold pt-8 link link--underline inline-block">Click here for all my work</a>
+           class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
+    </div>
 
+    <section class="section mt-32">
+
+        {!! Block::get('open_source_contributions') !!}
+
+        <div class="mt-12">
+
+            @foreach($projects->chunk(2) as $items)
+
+                <div class="items block md:flex -mx-2">
+
+                    @foreach($items as $project)
+
+                        <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
+                            <h3>{{$project['name']}}</h3>
+
+                            <p class="mb-4 mt-2 flex-auto">{{$project['description']}}</p>
+
+                            <a href="{{$project['github_url']}}" target="_blank" class="text-blue-darkest font-bold pb-2 no-underline">View project</a>
+                        </div>
+
+                    @endforeach
+
+                </div>
+
+            @endforeach
+
+        </div>
+
+        <a href="{{ route('public.open_source') }}"
+           class="text-xl font-bold pt-8 link link--underline inline-block">View more open source contributions</a>
+    </section>
+
+    <div class="section">
         <div class="items paragraph-spacing my-32 text-xl">
 
-            {!! $site_techniques !!}
+            {!! Block::get('site_techniques') !!}
 
         </div>
     </div>
@@ -52,37 +92,9 @@
 
         <div class="items paragraph-spacing my-32 text-xl">
 
-            {!! $social !!}
+            {!! Block::get('social') !!}
 
-            <p class="mt-8">
-                Email address
-                <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
-                   class="link link--underline">roelofjanelsinga@gmail.com</a>
-            </p>
-
-            <p>
-                Twitter
-                <a href="https://twitter.com/RJElsinga"
-                   class="link link--underline" target="_blank">RJElsinga</a>
-            </p>
-
-            <p>
-                Medium
-                <a href="https://medium.com/@roelofjanelsinga"
-                   class="link link--underline" target="_blank">@roelofjanelsinga</a>
-            </p>
-
-            <p>
-                Github
-                <a href="https://github.com/roelofjan-elsinga"
-                   class="link link--underline" target="_blank">roelofjan-elsinga</a>
-            </p>
-
-            <p>
-                LinkedIn
-                <a href="https://www.linkedin.com/in/roelofjanelsinga/"
-                   class="link link--underline" target="_blank">roelofjanelsinga</a>
-            </p>
+            {!! Block::get('social_links') !!}
         </div>
 
     </div>

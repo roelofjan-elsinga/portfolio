@@ -21,12 +21,10 @@ class PublicController extends Controller
     public function index()
     {
         return view('public.index', [
-            'works' => $this->getWorkPreviews(2),
-            'work' => ContentParser::forFile(resource_path("content/blocks/work.md"))->parse(),
-            'social' => ContentParser::forFile(resource_path("content/blocks/social.md"))->parse(),
+            'works' => $this->getWorkPreviews(4),
+            'projects' => $this->getWorkPreviews(4, 'content/open_source/previews.yml'),
             'about' => ContentParser::forFile(resource_path("content/blocks/about.md"))->parse(),
             'contact' => ContentParser::forFile(resource_path("content/blocks/contact.md"))->parse(),
-            'site_techniques' => ContentParser::forFile(resource_path("content/blocks/site_techniques.md"))->parse()
         ]);
     }
 
@@ -34,19 +32,20 @@ class PublicController extends Controller
      * Parse the previews.yml file to retrieve work preview data
      *
      * @param int $amount
-     * @return array
+     * @param string $preview_path
+     * @return Collection
      */
-    private function getWorkPreviews(int $amount = 0): array
+    private function getWorkPreviews(int $amount = 0, string $preview_path = 'content/work/previews.yml'): Collection
     {
-        $work = Yaml::parseFile(resource_path('content/work/previews.yml'));
+        $work = Yaml::parseFile(resource_path($preview_path));
 
         $previews = array_reverse($work['previews']);
 
         if ($amount > 0) {
-            return array_slice($previews, 0, $amount);
+            return Collection::make(array_slice($previews, 0, $amount));
         }
 
-        return $previews;
+        return Collection::make($previews);
     }
 
     /**
@@ -107,6 +106,14 @@ class PublicController extends Controller
             'content' => ContentParser::forFile(resource_path("content/blocks/work-page.md"))->parse(),
             'works' => $this->getWorkPreviews(),
             'page' => $this->tagsParser->getTagsForPageName('work')
+        ]);
+    }
+
+    public function open_source()
+    {
+        return view('public.open_source', [
+            'projects' => $this->getWorkPreviews(0, 'content/open_source/previews.yml'),
+            'page' => $this->tagsParser->getTagsForPageName('open_source')
         ]);
     }
 

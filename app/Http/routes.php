@@ -12,11 +12,13 @@ Route::get('passions/{slug}', function ($slug) {
 });
 
 Route::get('feed', ['as' => 'feed', 'uses' => 'PublicController@atomFeed']);
-Route::post('/contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
+Route::post('contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 
 
-Route::get('/portfolio', ['as' => 'public.work', 'uses' => 'PublicController@work']);
-Route::get('/portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicController@workDetail']);
+Route::get('open-source-contributions', ['as' => 'public.open_source', 'uses' => 'PublicController@open_source']);
+
+Route::get('portfolio', ['as' => 'public.work', 'uses' => 'PublicController@work']);
+Route::get('portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicController@workDetail']);
 
 /*Resources*/
 Route::resource('public', 'PublicController');

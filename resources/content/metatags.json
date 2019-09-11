@@ -16,6 +16,14 @@
             "image_small": null,
             "image_large": null
         },
+        "open_source": {
+            "keywords": "roelof, jan, elsinga, portfolio, open source, development, design",
+            "description": "All my contributions to open source projects can be found here.",
+            "author": "Roelof Jan Elsinga",
+            "title": "Open source contributions - Roelof Jan Elsinga",
+            "image_small": null,
+            "image_large": null
+        },
         "articles": {
             "keywords": "roelof, jan, elsinga, portfolio, work, development, design, articles",
             "description": "I've written several articles about things I was working on. Writing about my projects and problems helped me to reflect on my development choices and to keep learning new things and improving on old skills.\n",

@@ -1,1 +1,1 @@
-<h2 class="text-3xl">Some of my previous projects</h2>
+<h2 class="text-3xl">Recent projects</h2>
