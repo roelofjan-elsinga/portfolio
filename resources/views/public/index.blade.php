@@ -29,6 +29,8 @@
                     @foreach($items as $project)
 
                         <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
+                            <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+
                             <h3>{{$project['title']}}</h3>
 
                             <p class="mb-4 mt-2 flex-auto">{{$project['description']}}</p>
@@ -47,6 +49,45 @@
         <a href="{{ route('public.work') }}"
            class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
     </div>
+
+    <div class="section">
+        <div class="items paragraph-spacing my-32 text-lg bg-blue-darkest text-white rounded p-4">
+
+            {!! Block::get('my_tech_stack') !!}
+
+        </div>
+    </div>
+
+    <section class="section mt-32 articles">
+
+        {!! Block::get('articles_homepage') !!}
+
+        <div class="mt-12">
+            @foreach($blog_posts as $article)
+
+                <article>
+                    <div class="image">
+                        <img src="{{asset($article->thumbnail)}}" />
+                    </div>
+
+                    <div class="content pt-8">
+                        <h3 class="pt-4 sm:pt-0">
+                            {{$article->title}}
+                        </h3>
+
+                        <span class="muted">Posted on: {!! $article->postDate !!}</span>
+                    </div>
+
+                    <a href="{{!is_null($article->url()) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
+                </article>
+
+            @endforeach
+        </div>
+
+        <a href="{{ route('articles.index') }}"
+           class="text-xl font-bold pt-8 link link--underline inline-block">View more blog posts</a>
+
+    </section>
 
     <section class="section mt-32">
 
@@ -81,7 +122,7 @@
     </section>
 
     <div class="section">
-        <div class="items paragraph-spacing my-32 text-xl">
+        <div class="items paragraph-spacing my-32 text-lg bg-blue-darkest text-white rounded p-4">
 
             {!! Block::get('site_techniques') !!}
 

@@ -5,29 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('meta')
-            <meta name="keywords" content="{{ $page->keywords }}">
-            <meta name="description" content="{{ $page->description }}">
-            <meta name="author" content="{{ $page->author }}">
+            <meta name="keywords" content="{{ $page->keywords ?? $page->keywords() }}">
+            <meta name="description" content="{{ $page->description ?? $page->description() }}">
+            <meta name="author" content="{{ $page->author ?? $page->author() }}">
 
             <link rel="author" href="https://plus.google.com/u/0/+RoelofJanElsinga"/>
 
-            <meta property="og:title" content="{{ $page->title }}"/>
+            <meta property="og:title" content="{{ $page->title ?? $page->title() }}"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content="{{ $page->image_small }}"/>
+            <meta property="og:image" content="{{ $page->image_small ?? $page->thumbnail() }}"/>
             <meta property="og:url" content="{{ Request::url() }}"/>
-            <meta property="og:description" content="{{ $page->description }}"/>
+            <meta property="og:description" content="{{ $page->description ?? $page->description() }}"/>
 
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:url" content="{{ Request::url() }}">
-            <meta name="twitter:title" content="{{ $page->title }}">
-            <meta name="twitter:description" content="{{ $page->description }}">
-            <meta name="twitter:image" content="{{ $page->image_large  }}">
+            <meta name="twitter:title" content="{{ $page->title ?? $page->title() }}">
+            <meta name="twitter:description" content="{{ $page->description ?? $page->description() }}">
+            <meta name="twitter:image" content="{{ $page->image_large ?? $page->image()  }}">
 
-            @if(isset($page->canonical) && !is_null($page->canonical))
+            @if((isset($page->canonical) && !is_null($page->canonical)))
                 <link rel="canonical" href="{{$page->canonical}}" />
             @endif
 
-            <title>{{ $page->title }}</title>
+            @if((method_exists($page, 'canonicalLink') && !is_null($page->canonicalLink())))
+                <link rel="canonical" href="{{$page->canonicalLink()}}" />
+            @endif
+
+            <title>{{ $page->title ?? $page->title() }}</title>
 		@show
 
         <link rel="dns-prefetch" href="https://www.google-analytics.com">
