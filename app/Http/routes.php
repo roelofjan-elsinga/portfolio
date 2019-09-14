@@ -23,3 +23,5 @@ Route::get('portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicCo
 
 /*Resources*/
 Route::resource('public', 'PublicController');
+
+Route::get('/{slug}', ['as' => 'page', 'uses' => 'PageController@showPage'])->where('slug', '.*');
