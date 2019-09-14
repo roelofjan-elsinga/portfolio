@@ -50,6 +50,14 @@
            class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
     </div>
 
+    <div class="section">
+        <div class="items paragraph-spacing my-32 text-lg bg-blue-darkest text-white rounded p-4">
+
+            {!! Block::get('my_tech_stack') !!}
+
+        </div>
+    </div>
+
     <section class="section mt-32 articles">
 
         {!! Block::get('articles_homepage') !!}

@@ -1,4 +1,4 @@
-@extends($page->templateName())
+@extends('public')
 
 @section('navigation')
 
@@ -8,8 +8,10 @@
 
 @section('content')
 
-    <main class="paragraph-spacing">
-        {!! $page->content() !!}
-    </main>
+    <div class="articles-page">
+        <main class="view-article paragraph-spacing">
+            {!! $page->content() !!}
+        </main>
+    </div>
 
 @endsection

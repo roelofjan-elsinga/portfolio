@@ -15,5 +15,22 @@
         "category": "home",
         "menu_name": "",
         "sidebar": ""
+    },
+    {
+        "title": "My tech stack",
+        "filename": "my-tech-stack.md",
+        "description": "Find out which technologies I've worked with and what I can use to help you with your projects.",
+        "postDate": "",
+        "isPublished": true,
+        "isScheduled": false,
+        "summary": "Find out which technologies I've worked with and what I can use to help you with your projects.",
+        "template_name": "flatfilecmsgui::templates.default",
+        "updateDate": "2019-09-14 16:03:08",
+        "in_menu": false,
+        "is_homepage": false,
+        "image": "",
+        "category": "home",
+        "menu_name": "",
+        "sidebar": ""
     }
 ]
