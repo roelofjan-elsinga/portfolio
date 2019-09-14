@@ -1,6 +1,7 @@
 <?php
 
-Route::redirect('/login', '/cms/login');
+Route::redirect('login', 'cms/login');
+Route::redirect('blog', 'articles');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
 Route::get('articles', ['as' => 'articles', 'uses' => 'PublicController@articles']);
