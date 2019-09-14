@@ -21,10 +21,13 @@ class PublicController extends Controller
     public function index()
     {
         return view('public.index', [
-            'works' => $this->getWorkPreviews(4),
+            'works' => $this->getWorkPreviews(2),
             'projects' => $this->getWorkPreviews(4, 'content/open_source/previews.yml'),
-            'about' => ContentParser::forFile(resource_path("content/blocks/about.md"))->parse(),
-            'contact' => ContentParser::forFile(resource_path("content/blocks/contact.md"))->parse(),
+            'blog_posts' => Article::published()
+                ->sortByDesc(function (Article $article) {
+                    return $article->rawPostDate();
+                })
+                ->take(2)
         ]);
     }
 

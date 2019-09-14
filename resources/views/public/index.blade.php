@@ -50,6 +50,37 @@
            class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
     </div>
 
+    <section class="section mt-32 articles">
+
+        {!! Block::get('articles_homepage') !!}
+
+        <div class="mt-12">
+            @foreach($blog_posts as $article)
+
+                <article>
+                    <div class="image">
+                        <img src="{{asset($article->thumbnail)}}" />
+                    </div>
+
+                    <div class="content pt-8">
+                        <h3 class="pt-4 sm:pt-0">
+                            {{$article->title}}
+                        </h3>
+
+                        <span class="muted">Posted on: {!! $article->postDate !!}</span>
+                    </div>
+
+                    <a href="{{!is_null($article->url()) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
+                </article>
+
+            @endforeach
+        </div>
+
+        <a href="{{ route('articles.index') }}"
+           class="text-xl font-bold pt-8 link link--underline inline-block">View more blog posts</a>
+
+    </section>
+
     <section class="section mt-32">
 
         {!! Block::get('open_source_contributions') !!}
