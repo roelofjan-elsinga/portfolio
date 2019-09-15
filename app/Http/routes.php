@@ -1,7 +1,7 @@
 <?php
 
-Route::redirect('login', 'cms/login');
-Route::redirect('blog', 'articles');
+Route::permanentRedirect('login', 'cms/login');
+Route::permanentRedirect('blog', 'articles');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
 Route::get('articles', ['as' => 'articles', 'uses' => 'PublicController@articles']);
@@ -15,6 +15,7 @@ Route::get('passions/{slug}', function ($slug) {
 Route::get('feed', ['as' => 'feed', 'uses' => 'PublicController@atomFeed']);
 Route::post('contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 
+Route::get('resume', ['as' => 'resume.show', 'uses' => 'ResumeController@browser']);
 
 Route::get('open-source-contributions', ['as' => 'public.open_source', 'uses' => 'PublicController@open_source']);
 

@@ -1,0 +1,85 @@
+{
+  "name": "Roelof Jan Elsinga",
+  "photo_url": "/images/image_bw.jpg",
+  "current_title": "Full-stack developer",
+  "experiences": [
+    {
+      "dates": "Jan 2016 - Present",
+      "company": "Tubber",
+      "location": "Groningen, The Netherlands",
+      "job_title": "Lead developer",
+      "key_activities": [
+        "Developing the platform",
+        "Maintaining the architecture",
+        "Automating the sales process"
+      ]
+    },
+    {
+      "dates": "Oct 2015 - Oct 2017",
+      "company": "Roelof Jan Elsinga",
+      "location": "Groningen, The Netherlands",
+      "job_title": "Freelancer",
+      "key_activities": [
+        "Developing web applications",
+        "Creating websites"
+      ]
+    },
+    {
+      "dates": "Feb 2015 - Jun 2017",
+      "company": "Spin Internet Media",
+      "location": "Willemstad, Curaҫao",
+      "job_title": "Back-end Development Intern",
+      "key_activities": [
+        "Learning PHP Frameworks",
+        "Building a real-estate website"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Hanzehogeschool Groningen",
+      "location": "Groningen, The Netherlands",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field_of_study": "Interactive Media & Technologies",
+      "dates": "2012 – 2016"
+    },
+    {
+      "school": "Hope College",
+      "location": "Holland, Michigan, USA",
+      "degree": "Study abroad",
+      "field_of_study": "Computer science",
+      "dates": "2014 - 2014"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "name": "English",
+      "fluency": "Fluent/Native"
+    },
+    {
+      "name": "Norwegian",
+      "fluency": "Proficient"
+    }
+  ],
+  "skills": [
+    "PHP",
+    "Laravel",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "AngularJS",
+    "ReactJS",
+    "Redis",
+    "Apache 2",
+    "Nginx",
+    "Docker",
+    "Ubuntu",
+    "Continuous Integration (TravisCI)",
+    "Apache Solr 6.0+",
+    "PHPUnit 6+"
+  ]
+}

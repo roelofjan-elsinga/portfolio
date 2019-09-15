@@ -14,7 +14,9 @@ const {GenerateSW} = require('workbox-webpack-plugin');
  |
  */
 
-mix.sass('resources/assets/sass/front.scss', 'public/css/')
+mix
+    .sass('resources/assets/sass/front.scss', 'public/css/')
+    .sass('resources/assets/sass/resume.scss', 'public/css/')
     .options({
         processCssUrls: false,
         postCss: [ tailwindcss('./tailwind.js') ],
