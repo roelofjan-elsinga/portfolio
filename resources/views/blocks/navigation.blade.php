@@ -7,8 +7,7 @@
         </a>
 
         <ul class="block flex-1 flex items-center justify-end">
-            <li class="mx-2 hidden sm:inline-block"><a class="link" href="{{ isset($is_external) ? route('home') : '' }}#work">Work</a></li>
-            <li class="mx-2 hidden sm:inline-block"><a class="link" href="{{ isset($is_external) ? route('home') : '' }}#social">Social</a></li>
+            <li class="mx-2 inline-block"><a class="link" href="{{route('resume.show')}}">My CV</a></li>
             <li class="inline-block mx-2"><a class="link" href="{{route('articles')}}">Blog</a></li>
             <li class="inline-block mx-2">
                 <a class="link" href="{{route('feed')}}">
