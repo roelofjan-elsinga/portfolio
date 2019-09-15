@@ -1,0 +1,7 @@
+# Why is a simple script often harder to write?
+If you're just starting out, you often want to come up with complex solutions to problems. Sometimes you do this to learn a new skill or to show off your problem solving skills. Complex solutions are often perceived as knowing a lot and being good at something. This is sometimes a valid assumption, but in a large majority of the time a simple solution is exactly what you want to write and this often requires a lot of skill, let me explain why.
+
+## Seeing a simple solution is a skill you need to practice
+You can look at any problem and come up with some kind of solution, anyone can do this. What separates you from the rest is when you can do this in the simplest way possible. You might wonder, but why is this important? Well if everyone understands the code you've written, it's easy to maintain and won't cause a lot of confusion. Simple code is likely to survive refactoring after refactoring. Seeing the simplest solution is a skill you need to practice, because it's the result of filtering many solutions in your head and coming up with the best fitting one. 
+
+If you make a mistake and pick a difficult solution, it might bite you later on in the process. This definitely doesn't mean, only make the right choices. In fact, it's the opposite, make mistakes and a lot of them. You learn from mistakes and you'll never make the mistake again after you've figured out what went wrong and why.

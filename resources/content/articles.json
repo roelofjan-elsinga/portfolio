@@ -425,7 +425,7 @@
     {
         "filename": "first-steps-event-sourcing-php.md",
         "postDate": "2019-08-13",
-        "updateDate": "2019-08-13 18:00:45",
+        "updateDate": "2019-09-04 21:32:54",
         "description": "I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value.",
         "isScheduled": false,
         "isPublished": true
@@ -467,21 +467,21 @@
         "postDate": "2019-09-11",
         "updateDate": "2019-08-31 18:21:19",
         "description": "Find out why I think you should use a VPN for your internet usage. If you like to browse any and all websites and be anonymous at the same time, you might benefit from using a VPN.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     {
         "filename": "why-built-my-own-cms.md",
         "postDate": "2019-09-18",
-        "updateDate": "2019-09-03 12:55:48",
-        "description": "Why I built my own CMS",
-        "isScheduled": false,
+        "updateDate": "2019-09-08 16:13:57",
+        "description": "I've always been against building my own CMS. Find out why I decided to build my own CMS anyway and what motivated me to build modules for it.",
+        "isScheduled": true,
         "isPublished": false
     },
     {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-10-02",
-        "updateDate": "2019-09-04 11:02:09",
+        "postDate": "2019-10-09",
+        "updateDate": "2019-09-13 14:00:25",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -489,9 +489,9 @@
     {
         "filename": "open-source-contributions-september-2019.md",
         "postDate": "2019-09-25",
-        "updateDate": "2019-09-04 14:12:40",
-        "description": "Open source contributions (September 2019)",
-        "isScheduled": false,
+        "updateDate": "2019-09-14 14:08:03",
+        "description": "In this post I explain which open-source project I contributed to in september of 2019. It's been a very interesting month and I've learned a lot of new things.",
+        "isScheduled": true,
         "isPublished": false
     },
     {
@@ -499,6 +499,29 @@
         "postDate": "2019-10-09",
         "updateDate": "2019-09-04 11:02:24",
         "description": "Getting rid of open offices",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "struggling-with-micro-optimizations-large-scale-data-processing.md",
+        "postDate": "2019-10-02",
+        "updateDate": "2019-09-14 14:38:05",
+        "description": "I'm struggling with micro optimizations on large scale data processing. Find out in what way I'm trying to improve the runtime of the calculations by saving processing cycles.",
+        "isScheduled": true,
+        "isPublished": false
+    },
+    {
+        "filename": "why-simple-script-harder-to-write.md",
+        "postDate": "2019-10-30",
+        "updateDate": "2019-09-12 13:45:23",
+        "description": "Why is a simple script often harder to write?",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "job-satisfaction.md",
+        "postDate": "2020-02-01",
+        "description": "Job satisfaction",
         "isScheduled": false,
         "isPublished": false
     }

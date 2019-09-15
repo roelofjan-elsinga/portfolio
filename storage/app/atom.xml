@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-09-04T12:00:03+02:00</updated>
+              <updated>2019-09-11T12:00:03+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -2559,19 +2559,19 @@ it means you are in this si[...]</summary>
                     <title>Taking the first steps with event sourcing in PHP</title>
                     <link href="https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php"/>
                     <id>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</id>
-                    <updated>2019-08-13T18:00:45+02:00</updated>
+                    <updated>2019-09-04T21:32:54+02:00</updated>
                     <published>2019-08-13T12:00:00+02:00</published>
                     <content>
 Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of event sourcing for you? I'll explain those values in this post.
 Preserving valuable data
-When using event sourcing, as opposed to a traditional CRUD system, you're saving events instead of data. This has the benefit that you can keep track of any and all data changes over time. The key aspect here is over time. Because in a traditional application, you only know the state of the data right now. You don't know what it looked like yesterday or last week, but only what it looks like now. For many cases this is perfectly fine, but for some other processes, like keeping track of transactions, you need the history of data changes. By using event sourcing, you preserve data. You never make changes to data, you simply amend a new version of the data.
+When using event sourcing, as opposed to a traditional CRUD system, you're saving events instead of data. This has the benefit that you can keep track of any and all data changes over time. The key aspect here is over time. Because in a traditional application, you only know the state of the data right now. You don't know what it looked like yesterday or last week, but only what it looks like now. For many cases, this is perfectly fine, but for some other processes, like keeping track of transactions, you need the history of data changes. By using event sourcing, you preserve data. You never make changes to data, you simply amend a new version of the data.
 Generating reports after the fact
-When using a traditional way of keeping track of your data, you only know what your data looks like right now. This makes it very difficult to write reports about things that happened in the past, because you don't actually have the data. The thing you'll have to tell your superiors is: I can't do that or it won't be accurate, but I've implemented it and it'll be possible for next quarter. This is a situation you'd rather not find yourself in. Event sourcing allows you to generate reports or projections about anything that has already happened and is recorded, and also about events that still need to take place. This is one of the aspects of event sourcing that really blew my mind when I started to understand the concept.
+When using a traditional way of keeping track of your data, you only know what your data looks like right now. This makes it very difficult to write reports about things that happened in the past because you don't actually have the data. The thing you'll have to tell your superiors is: I can't do that or it won't be accurate, but I've implemented it and it'll be possible for next quarter. This is a situation you'd rather not find yourself in. Event sourcing allows you to generate reports or projections about anything that has already happened and is recorded, and also about events that still need to take place. This is one of the aspects of event sourcing that really blew my mind when I started to understand the concept.
 The ability to revert and replay changes
 The fact that event sourcing allows you to record every single event taken place since the beginning, also allows you to look at a situation as if you were in the past. It's very similar to git log, where you can see what has been changed by whom and when. This can also be done with event sourcing and it really helps to be able to understand why some data is the way it is, simply by looking at the changes through time. Event sourcing also allows you to simply choose a desired state of the data and then treat that as the latest version, effectively removing all changes taken place after that situation. This is comparable to reverting a branch to a certain commit in Git. 
 All-in-all, I'm very impressed with the concept of event sourcing and I hope to implement it more and more in certain cases. The fact that all the valuable data is preserved and you have Git-like abilities with data in some sort of database or file system is very powerful. 
-I've written this post, because I like to keep myself up-to-date about my progress in skills. I've seen great gains in my programming skills since I've started to write blog posts and this motivates me to keep learning. </content>
+I've written this post because I like to keep myself up-to-date about my progress in skills. I've seen great gains in my programming skills since I've started to write blog posts and this motivates me to keep learning. </content>
                     <summary>
 Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of e[...]</summary>
@@ -2727,6 +2727,41 @@ A photo by Glenn Carstens-Peters
 How I write my blog posts: 6 steps
 Writing blogs can be a daunting task if you're not someone that writes a lot. I used to be this person, but I learned to enjoy writing by regularly writing. The act of writing helped me improve my skills and after a while, I starte[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/writing-on-a-laptop.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>My thoughts about using a VPN during everyday life</title>
+                    <link href="https://roelofjanelsinga.com/articles/my-thoughts-on-vpns"/>
+                    <id>https://roelofjanelsinga.com/articles/my-thoughts-on-vpns</id>
+                    <updated>2019-08-31T18:21:19+02:00</updated>
+                    <published>2019-09-11T12:00:00+02:00</published>
+                    <content>
+My thoughts about using a VPN during everyday life
+For the past month, I've been using a VPN for all of my internet usage, including my work laptop and mobile phone. It's been a fascinating experiment and here are some reasons why I think you should give it a try:
+
+You can browse content that's exclusive to a certain country
+You're anonymous
+You're more secure
+
+Browsing country exclusive content
+When moving between the USA and The Netherlands, I missed content from the other country. While in The Netherlands, I couldn't watch some shows on Netflix I could watch in the USA. While in the USA, I couldn't access some Dutch music on Spotify. I missed the content I was able to access just a few days earlier, only because I went to another country. This was unacceptable to me because it's still me and it's still the same devices. I want to be able to access any and all content, no matter where I am. A VPN allows me to do this. It simply lets me select a country I want to pretend I'm from and I can browse the internet as if I'm actually in that country. This allows me to bypass certain checks to get straight to the content. The internet should be an open place. Transparency is a good thing (most of the time) and being able to bypass country checks makes the internet a more open space. 
+Anonymity
+When using a VPN, a good VPN, it will hide your actual IP address to any server you're connecting to at all times. This has the main benefit that your browser behavior can't be tracked to you personally. You're anonymous until you decide not to be, by logging into an application for example. Anonymity is good for a few reasons, the most well-known is to make it nearly impossible for advertisers to track you. Another important reason is the fact that your IP address is hidden, this means it's difficult for hackers to track your movements and finding out where you're located.
+Eluding advertisers
+Going hand in hand with anonymity is eluding the advertisers. When advertisers can't track your movements, they can't use your data to send you targeted ads. This doesn't mean you don't get ads, but it means that you get ads that don't apply to your browsing behavior. This is cool to me because it shows they really can't track me. I've never liked the fact that people use an aggregate of data to make assumptions about what you like. It's very ironic to me that it's part of my job, but that's more related to on-site tracking. Are you ready for a paragraph full of &quot;radical&quot; ideas? If so, read the next paragraph, if not, just skip it.
+The little conspiracy theorist in me wrote the following paragraph
+When you're tracking users across multiple websites, feeding the data warehouses, and using this to find out who your users are and what they like, you have a lot of power in your hands, which could be used for evil. What I push for instead is tracking on-site behavior only and allow people to opt-in for this, not opt-out. This way you can serve your customers better for what they came for. This is one of the reasons the GDPR laws in the European Union are great. Give the power of data back to the people that provide the data. When you're in another geographic area, you may not have these protections, which is why a VPN makes perfect sense. If you can't control if you're sending your data to websites, make sure the data they collect from you is useless, because they can't track it back to you.
+Security
+If you think simply hiding behind a VPN isn't enough to protect your devices, you can find a VPN that proxies your data through 2 or more servers before reaching its destination. This adds many layers between you and those you want to keep out. If this is still not enough, you can choose a VPN which allows you to route your traffic through onion networks. This will make you impossible to track but is also slower. But you get the point, there are a lot of options to make yourself anonymous and you can choose how far you want to go with this. 
+Before I was using a VPN, I used to route my internet access through the Tor network while abroad. Different internet laws could have the effect that you're doing something completely legal in one country but is illegal in another (for example, downloading through torrents). To avoid this altogether, I made sure I was hidden. When I went to the USA, there were rumors that the government was working on a system where they could tap into anyone's internet usage. This felt like a huge privacy breach to me and I wasn't comfortable with this. I have nothing to hide, but it doesn't feel right that somebody is spying on you, just because they can. When using a VPN it's impossible to &quot;tap into&quot; your data, since any and all data exchanges with the internet are encrypted. This means only the VPN provider knows who you are and theoretically what you do, but from that point on, no one else does.
+Conclusion
+A VPN is great, you're anonymous and secure. It's possible to access any and all location-based content, so you won't have a problem when hitting that &quot;Unavailable in your area&quot; message because you can pretend you're from another area and try again. You'll be able to use more of the internet and hide at the same time. Advertisers won't be able to use your browsing behavior to be able to send your advertisements. So if you get concerned some companies seem to be following you with ads, you should use a VPN and you'll instantly see them disappear. 
+Do you use a VPN? Which one are you using? Let's discuss them on Twitter!</content>
+                    <summary>
+My thoughts about using a VPN during everyday life
+For the past month, I've been using a VPN for all of my internet usage, including my work laptop and mobile phone. It's been a fascinating experiment and here are some reasons why I think you should give it a try:
+
+You can browse content that's exc[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/surveillance-camera.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 
 </feed>
