@@ -1,14 +1,60 @@
 <html>
 <head>
-    <title>
-        CV Roelof Jan Elsinga
-    </title>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="resume">
+    <meta name="description" content="Are you wondering what my skills are and what I've worked on before? You'll read all about it on my CV.">
+    <meta name="author" content="Roelof Jan Elsinga">
+
+    <link rel="author" href="https://plus.google.com/u/0/+RoelofJanElsinga"/>
+
+    <meta property="og:title" content="My CV - Roelof Jan Elsinga"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{{asset($resume['photo_url'])}}"/>
+    <meta property="og:url" content="{{ Request::url() }}"/>
+    <meta property="og:description" content="Are you wondering what my skills are and what I've worked on before? You'll read all about it on my CV."/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ Request::url() }}">
+    <meta name="twitter:title" content="My CV - Roelof Jan Elsinga">
+    <meta name="twitter:description" content="Are you wondering what my skills are and what I've worked on before? You'll read all about it on my CV.">
+    <meta name="twitter:image" content="{{asset($resume['photo_url'])}}">
+
+    <title>My CV - Roelof Jan Elsinga</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/icons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/icons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/icons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/icons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/icons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/icons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="36x36"  href="{{ asset('images/icons/android-icon-36x36.png') }}">
+    <link rel="icon" type="image/png" sizes="48x48"  href="{{ asset('images/icons/android-icon-48x48.png') }}">
+    <link rel="icon" type="image/png" sizes="72x72"  href="{{ asset('images/icons/android-icon-72x72.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96"  href="{{ asset('images/icons/android-icon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="144x144"  href="{{ asset('images/icons/android-icon-144x144.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/icons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/icons/favicon-96x96.png') }}">
+    <link rel="icon" href="{{ asset('images/icons/favicon.ico') }}">
+    <link rel="manifest" href="{{ asset('images/icons/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-70x70.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-144x144.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-150x150.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-310x310.png') }}">
+    <meta name="theme-color" content="#ffffff">
+
     <link href="{{mix('css/resume.css')}}" rel="stylesheet"/>
 </head>
 
-<body class="container mx-auto pt-8 text-blue-darkest">
+<body class="container mx-auto md:pt-8 text-blue-darkest">
 
     <main class="bg-white p-8">
 
@@ -29,7 +75,7 @@
 
         </div>
 
-        <div class="flex flex-col md:flex-row my-8">
+        <div class="flex flex-col md:flex-row my-4 md:my-8">
 
             <div class="flex-1">
                 <h2>
@@ -70,7 +116,7 @@
                 @endforeach
             </div>
 
-            <div class="flex-1">
+            <div class="flex-1 my-8 md:my-0">
 
                 <h2>Education</h2>
 
@@ -105,7 +151,7 @@
         </div>
 
         <div>
-            <h2 class="mt-8 mb-4">Skills</h2>
+            <h2 class="mt-4 md:mt-8 mb-4">Skills</h2>
 
             <ul class="list-reset -m-1">
                 @foreach($resume['skills'] as $skill)

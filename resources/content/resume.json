@@ -1,13 +1,13 @@
 {
   "name": "Roelof Jan Elsinga",
   "photo_url": "/images/image_bw.jpg",
-  "current_title": "Full-stack developer",
+  "current_title": "Lead / Full-stack developer",
   "experiences": [
     {
       "dates": "Jan 2016 - Present",
       "company": "Tubber",
       "location": "Groningen, The Netherlands",
-      "job_title": "Lead developer",
+      "job_title": "Lead / Full-stack developer",
       "key_activities": [
         "Developing the platform",
         "Maintaining the architecture",
@@ -80,6 +80,12 @@
     "Ubuntu",
     "Continuous Integration (TravisCI)",
     "Apache Solr 6.0+",
-    "PHPUnit 6+"
+    "PHPUnit 6+",
+    "SCSS",
+    "TailwindCSS",
+    "Webpack",
+    "Gulp",
+    "Grunt",
+    "Node.js"
   ]
 }
