@@ -32,8 +32,8 @@ return [
 
     'canonical' => [
 
-        'destination' => env('CANONICAL_BASE')
+        'destination' => env('CANONICAL_BASE'),
 
-    ]
+    ],
 
 ];

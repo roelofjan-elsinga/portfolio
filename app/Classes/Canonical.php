@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 class Canonical
 {
-
     /**
-     * Determine whether the current request needs a canonical link
+     * Determine whether the current request needs a canonical link.
      *
      * @return bool
      */
@@ -22,18 +21,19 @@ class Canonical
     }
 
     /**
-     * Get the base request of the current request
+     * Get the base request of the current request.
      *
      * @param Request $request
+     *
      * @return string
      */
     private static function getBaseUrl(Request $request): string
     {
-        return str_replace($request->getRequestUri(), "", $request->url());
+        return str_replace($request->getRequestUri(), '', $request->url());
     }
 
     /**
-     * Get the destination of the canonical link
+     * Get the destination of the canonical link.
      *
      * @return string
      */
@@ -43,7 +43,7 @@ class Canonical
     }
 
     /**
-     * Generate a canonical link for the current request
+     * Generate a canonical link for the current request.
      *
      * @return string
      */

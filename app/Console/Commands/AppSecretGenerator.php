@@ -4,8 +4,6 @@ namespace Main\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 class AppSecretGenerator extends Command
 {
@@ -38,13 +36,14 @@ class AppSecretGenerator extends Command
 
         if ($this->option('show')) {
             $this->line('<comment>'.$key.'</comment>');
+
             return;
         }
 
         // Next, we will replace the application key in the environment file so it is
         // automatically setup for this developer. This key gets generated using a
         // secure random byte generator and is later base64 encoded for storage.
-        if (! $this->setKeyInEnvironmentFile($key)) {
+        if (!$this->setKeyInEnvironmentFile($key)) {
             return;
         }
 
@@ -60,22 +59,24 @@ class AppSecretGenerator extends Command
      */
     protected function generateRandomKey()
     {
-        $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-=+?";
+        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-=+?';
         $password = substr(str_shuffle($chars), 0, 32);
+
         return $password;
     }
 
     /**
      * Set the application key in the environment file.
      *
-     * @param  string  $key
+     * @param string $key
+     *
      * @return bool
      */
     protected function setKeyInEnvironmentFile($key)
     {
         $currentKey = $this->laravel['config']['app.secret'];
 
-        if (strlen($currentKey) !== 0 && (! $this->confirmToProceed())) {
+        if (strlen($currentKey) !== 0 && (!$this->confirmToProceed())) {
             return false;
         }
 
@@ -87,7 +88,8 @@ class AppSecretGenerator extends Command
     /**
      * Write a new environment file with the given key.
      *
-     * @param  string  $key
+     * @param string $key
+     *
      * @return void
      */
     protected function writeNewEnvironmentFileWith($key)

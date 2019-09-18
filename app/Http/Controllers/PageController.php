@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Main\Http\Controllers;
 
 use FlatFileCms\Page;
@@ -10,11 +9,11 @@ use Illuminate\Http\Response;
 
 class PageController
 {
-
     /**
-     * Show the requested page or return 404
+     * Show the requested page or return 404.
      *
      * @param string $slug
+     *
      * @return Response|RedirectResponse
      */
     public function showPage(string $slug)
@@ -32,14 +31,15 @@ class PageController
         }
 
         return view('public.view-page', [
-            'page' => $page
+            'page' => $page,
         ]);
     }
 
     /**
-     * Determine whether the request URL can be redirected to the proper nested URL
+     * Determine whether the request URL can be redirected to the proper nested URL.
      *
      * @param string $slug
+     *
      * @return RedirectResponse|null
      */
     private function getRedirectResponseForPage(string $slug): ?RedirectResponse

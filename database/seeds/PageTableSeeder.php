@@ -3,8 +3,10 @@
 use Illuminate\Database\Seeder;
 use Main\Models\Page;
 
-class PageTableSeeder extends Seeder{
-    public function run(){
+class PageTableSeeder extends Seeder
+{
+    public function run()
+    {
         Page::create(['name' => 'home', 'slug' => 'home', 'title' => 'Welcome', 'content' => 'I\'m Roelof, and this is my portfolio.', 'keywords' => 'roelof, jan, elsinga', 'description' => 'This is the homepage of Roelof Jan Elsinga', 'user_id' => 1, 'image_large' => '', 'image_small' => '']);
 
         Page::create(['name' => 'work', 'slug' => 'work', 'title' => 'Work', 'content' => 'My previous work is displayed in this section. Hover over the images to get a summary of what the project was about.', 'keywords' => 'roelof, jan, elsinga', 'description' => 'This is the homepage of Roelof Jan Elsinga', 'user_id' => 1, 'image_large' => '', 'image_small' => '']);
