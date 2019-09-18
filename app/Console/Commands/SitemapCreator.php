@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Main\Console\Commands;
 
 use SitemapGenerator\SitemapGenerator;
@@ -8,9 +7,8 @@ use Symfony\Component\Yaml\Yaml;
 
 class SitemapCreator extends \FlatFileCms\Publish\Console\SitemapCreator
 {
-
     /**
-     * Overwrite the base implementation and add additional URL's
+     * Overwrite the base implementation and add additional URL's.
      *
      * @param SitemapGenerator $generator
      */
@@ -24,7 +22,7 @@ class SitemapCreator extends \FlatFileCms\Publish\Console\SitemapCreator
     }
 
     /**
-     * Get the urls of the portfolio items
+     * Get the urls of the portfolio items.
      *
      * @return array
      */
