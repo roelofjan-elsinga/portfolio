@@ -475,13 +475,13 @@
         "postDate": "2019-09-18",
         "updateDate": "2019-09-08 16:13:57",
         "description": "I've always been against building my own CMS. Find out why I decided to build my own CMS anyway and what motivated me to build modules for it.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-10-09",
-        "updateDate": "2019-09-13 14:00:25",
+        "postDate": "2020-02-06",
+        "updateDate": "2019-09-26 07:00:21",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -491,13 +491,13 @@
         "postDate": "2019-09-25",
         "updateDate": "2019-09-14 14:08:03",
         "description": "In this post I explain which open-source project I contributed to in september of 2019. It's been a very interesting month and I've learned a lot of new things.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     {
         "filename": "get-rid-of-open-offices.md",
-        "postDate": "2019-10-09",
-        "updateDate": "2019-09-04 11:02:24",
+        "postDate": "2020-02-08",
+        "updateDate": "2019-09-26 07:00:39",
         "description": "Getting rid of open offices",
         "isScheduled": false,
         "isPublished": false
@@ -512,16 +512,32 @@
     },
     {
         "filename": "why-simple-script-harder-to-write.md",
-        "postDate": "2019-10-30",
-        "updateDate": "2019-09-12 13:45:23",
+        "postDate": "2019-10-16",
+        "updateDate": "2019-09-26 07:00:05",
         "description": "Why is a simple script often harder to write?",
-        "isScheduled": false,
+        "isScheduled": true,
         "isPublished": false
     },
     {
         "filename": "job-satisfaction.md",
         "postDate": "2020-02-01",
         "description": "Job satisfaction",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    {
+        "filename": "portfolio-updates-september-2019.md",
+        "postDate": "2019-10-09",
+        "updateDate": "2019-09-17 07:10:06",
+        "description": "Portfolio updates for September 2019",
+        "isScheduled": true,
+        "isPublished": false
+    },
+    {
+        "filename": "how-to-write-good-documentation.md",
+        "postDate": "2020-02-08",
+        "updateDate": "2019-09-26 07:00:51",
+        "description": "How to write good documentation",
         "isScheduled": false,
         "isPublished": false
     }
