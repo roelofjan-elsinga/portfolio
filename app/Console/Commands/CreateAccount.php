@@ -31,13 +31,14 @@ class CreateAccount extends Command
         $user = [
             'username' => $this->option('username'),
             'password' => bcrypt($this->option('password')),
-            'role' => $this->option('role')
+            'role'     => $this->option('role'),
         ];
 
         $file_path = "accounts/{$this->option('username')}.json";
 
         if (Storage::exists($file_path)) {
-            $this->warn("User account already exists!");
+            $this->warn('User account already exists!');
+
             return;
         }
 

@@ -17,23 +17,25 @@ class User
     }
 
     /**
-     * Create a user instance from an array
+     * Create a user instance from an array.
      *
      * @param array $user
+     *
      * @return User
      */
-    public static function fromArray(array $user): User
+    public static function fromArray(array $user): self
     {
         return new static($user);
     }
 
     /**
-     * Create a user instance from a Request
+     * Create a user instance from a Request.
      *
      * @param Request $request
+     *
      * @return User|null
      */
-    public static function fromRequest(Request $request): ?User
+    public static function fromRequest(Request $request): ?self
     {
         if (!self::hasAuthorizationHeaders($request)) {
             return null;
@@ -41,11 +43,11 @@ class User
 
         $token = self::getTokenFromHeaders($request);
 
-        if (! self::hasValidToken($token)) {
+        if (!self::hasValidToken($token)) {
             return null;
         }
 
-        if (! Storage::exists("authentication/{$token}")) {
+        if (!Storage::exists("authentication/{$token}")) {
             return null;
         }
 
@@ -55,9 +57,10 @@ class User
     }
 
     /**
-     * Determine if the request headers contain Authorization headers
+     * Determine if the request headers contain Authorization headers.
      *
      * @param Request $request
+     *
      * @return bool
      */
     private static function hasAuthorizationHeaders(Request $request): bool
@@ -66,9 +69,10 @@ class User
     }
 
     /**
-     * Get the user token from the request headers
+     * Get the user token from the request headers.
      *
      * @param Request $request
+     *
      * @return string
      */
     private static function getTokenFromHeaders(Request $request): string
@@ -82,6 +86,7 @@ class User
 
     /**
      * @param string $token
+     *
      * @return bool
      */
     private static function hasValidToken(string $token): bool
@@ -90,7 +95,7 @@ class User
     }
 
     /**
-     * Get the username of this user
+     * Get the username of this user.
      *
      * @return string
      */
@@ -100,21 +105,22 @@ class User
     }
 
     /**
-     * Logout this user
+     * Logout this user.
      *
      * @param Request $request
+     *
      * @return null
      */
     public static function logout(Request $request)
     {
         if (!self::hasAuthorizationHeaders($request)) {
-            return null;
+            return;
         }
 
         $token = self::getTokenFromHeaders($request);
 
-        if (! self::hasValidToken($token)) {
-            return null;
+        if (!self::hasValidToken($token)) {
+            return;
         }
 
         try {

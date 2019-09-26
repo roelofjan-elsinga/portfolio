@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Main\Http\Controllers;
 
 class ResumeController
@@ -8,7 +7,7 @@ class ResumeController
     public function browser()
     {
         return view('resume.show', [
-            'resume' => $this->getResumeFromFile()
+            'resume' => $this->getResumeFromFile(),
         ]);
     }
 

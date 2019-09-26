@@ -19,7 +19,7 @@ return [
          * */
         'additional_paths' => [
             resource_path('content/open_source'),
-        ]
+        ],
 
     ],
 
