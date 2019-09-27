@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/roelofjan-elsinga/portfolio.svg)](https://travis-ci.com/roelofjan-elsinga/portfolio)
 [![Code coverage](https://codecov.io/gh/roelofjan-elsinga/portfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/roelofjan-elsinga/portfolio)
-![StyleCI Status](https://github.styleci.io/repos/192778142/shield)
+[![StyleCI Status](https://github.styleci.io/repos/102637581/shield)](https://github.styleci.io/repos/102637581)
 
 This is the repository for the portfolio of Roelof Jan Elsinga. To view this website, 
 go to <https://roelofjanelsinga.com>.

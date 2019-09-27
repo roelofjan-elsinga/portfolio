@@ -6,6 +6,7 @@ php:
 
 before_script:
 - composer install
+- touch storage/logs/laravel.log
 
 script:
 - ./vendor/bin/phpunit --coverage-clover=coverage.xml
