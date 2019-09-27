@@ -540,5 +540,13 @@
         "description": "How to write good documentation",
         "isScheduled": false,
         "isPublished": false
+    },
+    {
+        "filename": "how-to-fix-cors-headers-single-page-application.md",
+        "postDate": "2019-09-27",
+        "updateDate": "2019-09-27 08:42:18",
+        "description": "In this post I'll explain how you can fix CORS headers for usage in a single page application. I give code examples with comments for Nginx and Apache.",
+        "isScheduled": false,
+        "isPublished": true
     }
 ]
