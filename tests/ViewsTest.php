@@ -24,7 +24,7 @@ class ViewsTest extends TestCase
     public function testPassionsPageLoads()
     {
         $this->get('/passions')
-            ->assertOk();
+            ->assertRedirect('/articles');
     }
 
     public function testPortfolioPageLoads()
@@ -42,7 +42,7 @@ class ViewsTest extends TestCase
     public function testViewPassionLoads()
     {
         $this->get('/passions/plants-in-my-living-space')
-            ->assertOk();
+            ->assertRedirect('/articles/plants-in-my-living-space');
     }
 
     public function testViewPortfolioLoads()
@@ -60,7 +60,7 @@ class ViewsTest extends TestCase
     public function testViewNonExistentPassionReturns404()
     {
         $this->get('/passions/working-too-hard')
-            ->assertNotFound();
+            ->assertRedirect('/articles/working-too-hard');
     }
 
     public function testViewNonExistentPortfolioReturns404()

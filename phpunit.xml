@@ -19,9 +19,16 @@
         </whitelist>
     </filter>
     <php>
+        <env name="APP_URL" value="http://localhost:8080"/>
         <env name="APP_ENV" value="testing"/>
-        <env name="CACHE_DRIVER" value="array"/>
+        <env name="APP_KEY" value="base64:tNsqDJuhH8HGtFXPUojSjTFroOEzAtMxt6YfEgqHJhI="/>
+        <env name="APP_DEBUG" value="false"/>
+
+        <env name="CACHE_DRIVER" value="file"/>
         <env name="SESSION_DRIVER" value="array"/>
-        <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="QUEUE_DRIVER" value="array"/>
+        <env name="MAIL_DRIVER" value="log"/>
+
+        <env name="LOG_CHANNEL" value="single"/>
     </php>
 </phpunit>
