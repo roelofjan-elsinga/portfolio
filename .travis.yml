@@ -1,19 +1,14 @@
 language: php
 
 php:
-  - 7.1
-  - 7.2
-  - 7.3
+- 7.2
+- 7.3
 
-env:
-  - CANONICAL_BASE=https://roelofjanelsinga.com APP_NAME=roelofjanelsinga APP_ENV=production
-
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.3
-  - export PATH="$HOME/.yarn/bin:$PATH"
+before_script:
+- composer install
 
 script:
-  - composer install
-  - yarn
-  - npm run prod
-  - ./vendor/bin/phpunit
+- ./vendor/bin/phpunit --coverage-clover=coverage.xml
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
