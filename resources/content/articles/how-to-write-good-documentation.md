@@ -21,7 +21,7 @@ You've gathered a small list of things to document, great! Now we can move onto 
 7. Write documentation that is easy to contribute to
 8. Write documentation that is easy to find
 
-This list was compiled in a great article called [The eight rules of good documentation](https://www.oreilly.com/ideas/the-eight-rules-of-good-documentation){_target=blank} by Adam Scott. For an in-depth explanation of each of these concepts, I'd like to point you to that article.
+This list was compiled in a great article called [The eight rules of good documentation](https://www.oreilly.com/ideas/the-eight-rules-of-good-documentation) by Adam Scott. For an in-depth explanation of each of these concepts, I'd like to point you to that article.
 
 These rules might seem very obvious, but you'd be surprised how often these rules are not kept in mind when writing documentation. When explaining concepts, you should use a very friendly tone. You want people to read about your software and you shouldn't make them feel less of a developer for not immediately understanding your code. You should also go into detail, giving wide ranging examples of how to implement the software, but not writing the same thing ten times. 
 
