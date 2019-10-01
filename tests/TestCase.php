@@ -2,6 +2,9 @@
 
 namespace Tests;
 
+use Illuminate\Foundation\Mix;
+use Tests\Mocks\MockMix;
+
 class TestCase extends \Illuminate\Foundation\Testing\TestCase
 {
     /**
@@ -23,5 +26,12 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
         return $app;
+    }
+
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->swap(Mix::class, new MockMix());
     }
 }
