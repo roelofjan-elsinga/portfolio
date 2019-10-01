@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "af5b228d7f8ee45dd2009408dbda85cf",
+    "content-hash": "813eb01e89fb36f0eccc578d0158033c",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -292,6 +292,50 @@
                 "parser"
             ],
             "time": "2019-03-17T18:48:37+00:00"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2015-11-01T10:19:22+00:00"
         },
         {
             "name": "eventviva/php-image-resize",
@@ -1480,20 +1524,20 @@
         },
         {
             "name": "roelofjan-elsinga/content-to-html-parser",
-            "version": "0.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/content-to-html-parser.git",
-                "reference": "b60790c2e9951a4f7fb22f56b05eea256ca3bfba"
+                "reference": "9bbd584ee0d371aa95e4d7d5828b67ef073fc555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/content-to-html-parser/zipball/b60790c2e9951a4f7fb22f56b05eea256ca3bfba",
-                "reference": "b60790c2e9951a4f7fb22f56b05eea256ca3bfba",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/content-to-html-parser/zipball/9bbd584ee0d371aa95e4d7d5828b67ef073fc555",
+                "reference": "9bbd584ee0d371aa95e4d7d5828b67ef073fc555",
                 "shasum": ""
             },
             "require": {
-                "erusev/parsedown": "^1.7",
+                "erusev/parsedown-extra": "^0.7.1",
                 "php": ">=7.2.0"
             },
             "require-dev": {
@@ -1506,6 +1550,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Roelof Jan Elsinga",
@@ -1513,20 +1560,20 @@
                 }
             ],
             "description": "This package converts content from strings or files to HTML strings to be rendered on a page",
-            "time": "2019-06-12T08:36:40+00:00"
+            "time": "2019-09-23T14:01:06+00:00"
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms",
-            "version": "0.13.1",
+            "version": "0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/flat-file-cms.git",
-                "reference": "26a12f07db36d847b77e03acfb31146b74b343ea"
+                "reference": "8671065a38a9ae5d42f02e376bd76d2dba63efde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms/zipball/26a12f07db36d847b77e03acfb31146b74b343ea",
-                "reference": "26a12f07db36d847b77e03acfb31146b74b343ea",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms/zipball/8671065a38a9ae5d42f02e376bd76d2dba63efde",
+                "reference": "8671065a38a9ae5d42f02e376bd76d2dba63efde",
                 "shasum": ""
             },
             "require": {
@@ -1534,7 +1581,7 @@
                 "ext-json": "*",
                 "illuminate/console": "^5.7",
                 "illuminate/support": "^5.7",
-                "roelofjan-elsinga/content-to-html-parser": "^0.1.0"
+                "roelofjan-elsinga/content-to-html-parser": "^0.4.0"
             },
             "require-dev": {
                 "brainmaestro/composer-git-hooks": "^2.7",
@@ -1584,7 +1631,7 @@
                 "file",
                 "laravel"
             ],
-            "time": "2019-09-04T18:05:56+00:00"
+            "time": "2019-09-27T07:53:24+00:00"
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms-gui",
@@ -3876,16 +3923,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031"
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/4eff936d83eb809bde2c57a3cea0ee9643769031",
-                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/b3453f75fd23d9fd41685f2148f4abeacabc6405",
+                "reference": "b3453f75fd23d9fd41685f2148f4abeacabc6405",
                 "shasum": ""
             },
             "require": {
@@ -3899,7 +3946,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -3937,7 +3984,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-08-07T15:01:07+00:00"
+            "time": "2019-09-30T08:30:27+00:00"
         },
         {
             "name": "myclabs/deep-copy",
