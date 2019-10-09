@@ -1665,16 +1665,16 @@
         },
         {
             "name": "roelofjan-elsinga/flat-file-cms-publish",
-            "version": "0.2.5",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/flat-file-cms-publish.git",
-                "reference": "e5883b3c1c8fcb9acdf9cbaed818d9137cb6f551"
+                "reference": "bb45bea1b1d5ac059d21ae35a797539020ac4caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-publish/zipball/e5883b3c1c8fcb9acdf9cbaed818d9137cb6f551",
-                "reference": "e5883b3c1c8fcb9acdf9cbaed818d9137cb6f551",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/flat-file-cms-publish/zipball/bb45bea1b1d5ac059d21ae35a797539020ac4caa",
+                "reference": "bb45bea1b1d5ac059d21ae35a797539020ac4caa",
                 "shasum": ""
             },
             "require": {
@@ -1731,7 +1731,7 @@
                 "file",
                 "laravel"
             ],
-            "time": "2019-09-04T18:15:48+00:00"
+            "time": "2019-10-09T14:23:43+00:00"
         },
         {
             "name": "roelofjan-elsinga/sitemap-generator",
