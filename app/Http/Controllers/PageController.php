@@ -49,10 +49,6 @@ class PageController
         if (!is_null($page)) {
             $taxonomy = Taxonomy::byName($page->category());
 
-            if (is_null($taxonomy)) {
-                return null;
-            }
-
             return redirect()->to("{$taxonomy->fullUrl()}/{$slug}", 301);
         }
 

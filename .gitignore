@@ -7,3 +7,4 @@ Homestead.json
 scss/
 package-lock.json
 symlink-packages.sh
+coverage/
