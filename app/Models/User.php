@@ -18,9 +18,4 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $table = 'users';
     protected $fillable = ['name', 'email', 'password'];
     protected $hidden = ['password', 'remember_token'];
-
-    public function page()
-    {
-        return $this->hasMany('Main\Models\Page', 'user_id', 'id');
-    }
 }

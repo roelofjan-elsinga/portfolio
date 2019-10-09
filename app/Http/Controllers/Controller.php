@@ -20,8 +20,5 @@ class Controller extends BaseController
     {
         $this->tagsParser = new TagsParser();
         View::share('page', $this->tagsParser->getTagsForPageName('home'));
-        View::share('pages', Page::all()->filter(function (Page $page) {
-            return $page->isPublished() && $page->isInMenu();
-        }));
     }
 }

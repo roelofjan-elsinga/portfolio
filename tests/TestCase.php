@@ -3,6 +3,9 @@
 namespace Tests;
 
 use Illuminate\Foundation\Mix;
+use Illuminate\Support\Facades\Config;
+use org\bovigo\vfs\vfsStream;
+use org\bovigo\vfs\vfsStreamDirectory;
 use Tests\Mocks\MockMix;
 
 class TestCase extends \Illuminate\Foundation\Testing\TestCase
@@ -13,6 +16,11 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
      * @var string
      */
     protected $baseUrl = 'http://localhost';
+
+    /**
+     * @var  vfsStreamDirectory
+     */
+    protected $fs;
 
     /**
      * Creates the application.
@@ -33,5 +41,15 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         parent::setUp();
 
         $this->swap(Mix::class, new MockMix());
+
+        $this->fs = vfsStream::setup('root', 0777, [
+            'content' => [
+                'pages' => []
+            ]
+        ]);
+
+        Config::set('flatfilecms.pages.file_path', "{$this->fs->getChild('content')->url()}/pages.json");
+        Config::set('flatfilecms.pages.folder_path', "{$this->fs->getChild('content')->url()}/pages");
+        Config::set('flatfilecms.taxonomy.file_path', "{$this->fs->getChild('content')->url()}/taxonomy.json");
     }
 }

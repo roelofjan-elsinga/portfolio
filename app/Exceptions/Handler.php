@@ -31,7 +31,8 @@ class Handler extends ExceptionHandler
      *
      * @param \Exception $e
      *
-     * @return void
+     * @return mixed
+     * @throws Exception
      */
     public function report(Exception $e)
     {
@@ -48,10 +49,6 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof ModelNotFoundException) {
-            $e = new NotFoundHttpException($e->getMessage(), $e);
-        }
-
         return parent::render($request, $e);
     }
 }
