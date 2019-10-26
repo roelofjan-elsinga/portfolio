@@ -91,3 +91,13 @@ previews:
       With Plant care for beginners I'm sharing my experiences about caring for plants. I want to help to
       educate others about keeping their plants healthy and how to help them thrive.
     url: /portfolio/plantcareforbeginners
+
+  aloiacms:
+    image:
+      url: /images/work/aloiacms_1920x1080.png
+      alt: AloiaCMS homepage
+    title: AloiaCMS
+    description: >
+      Aloia CMS is a drop-in flat file CMS built on top of Laravel. You won't need to rebuild your entire application
+      to be able to offer CMS capabilities, you can simply include the CMS as a library and start writing.
+    url: /portfolio/aloiacms
