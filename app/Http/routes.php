@@ -13,7 +13,6 @@ Route::get('passions/{slug}', function ($slug) {
 });
 
 Route::get('feed', ['as' => 'feed', 'uses' => 'PublicController@atomFeed']);
-Route::post('contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 
 Route::get('resume', ['as' => 'resume.show', 'uses' => 'ResumeController@browser']);
 

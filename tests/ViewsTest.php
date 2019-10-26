@@ -11,61 +11,83 @@ class ViewsTest extends TestCase
      */
     public function testHomepageLoads()
     {
-        $this->get('/')
+        $this
+            ->get('/')
+            ->assertViewIs('public.index')
              ->assertOk();
+    }
+
+    public function test_open_source_page_loads()
+    {
+        $this
+            ->get(route('public.open_source'))
+            ->assertViewIs('public.open_source')
+            ->assertOk();
     }
 
     public function testArticlesPageLoads()
     {
-        $this->get('/articles')
+        $this
+            ->get('/articles')
+            ->assertViewIs('public.articles')
             ->assertOk();
     }
 
     public function testPassionsPageLoads()
     {
-        $this->get('/passions')
+        $this
+            ->get('/passions')
             ->assertRedirect('/articles');
     }
 
     public function testPortfolioPageLoads()
     {
-        $this->get('/portfolio')
+        $this
+            ->get('/portfolio')
             ->assertOk();
     }
 
     public function testViewArticleLoads()
     {
-        $this->get('/articles/company-culture')
+        $this
+            ->get('/articles/company-culture')
+            ->assertViewIs('public.view-article')
             ->assertOk();
     }
 
     public function testViewPassionLoads()
     {
-        $this->get('/passions/plants-in-my-living-space')
+        $this
+            ->get('/passions/plants-in-my-living-space')
             ->assertRedirect('/articles/plants-in-my-living-space');
     }
 
     public function testViewPortfolioLoads()
     {
-        $this->get('/portfolio/punchlisthero')
+        $this
+            ->get('/portfolio/punchlisthero')
+            ->assertViewIs('public.workdetail')
             ->assertOk();
     }
 
     public function testViewNonExistentArticleReturns404()
     {
-        $this->get('/articles/the-post-i-never-wrote')
+        $this
+            ->get('/articles/the-post-i-never-wrote')
             ->assertNotFound();
     }
 
     public function testViewNonExistentPassionReturns404()
     {
-        $this->get('/passions/working-too-hard')
+        $this
+            ->get('/passions/working-too-hard')
             ->assertRedirect('/articles/working-too-hard');
     }
 
     public function testViewNonExistentPortfolioReturns404()
     {
-        $this->get('/portfolio/a-company-i-dont-like')
+        $this
+            ->get('/portfolio/a-company-i-dont-like')
             ->assertNotFound();
     }
 }

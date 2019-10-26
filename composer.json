@@ -8,18 +8,16 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.1.3",
+        "php": ">=7.2",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^5.8.0",
-        "eventviva/php-image-resize": "1.5.*",
+        "laravel/framework": "^5.8",
         "erusev/parsedown": "^1.7",
-        "laravelcollective/html": "^5.8.0",
+        "laravelcollective/html": "^5.8",
         "symfony/yaml": "^4.2",
         "ext-json": "*",
         "ext-dom": "*",
         "ext-curl": "*",
         "ext-zip": "*",
-        "rbdwllr/reallysimplejwt": "^2.0",
         "roelofjan-elsinga/content-to-html-parser": "~0.1",
         "roelofjan-elsinga/flat-file-cms-gui": "~0.11",
         "roelofjan-elsinga/flat-file-cms": "~0.11",
@@ -32,7 +30,9 @@
         "filp/whoops": "~2.0",
         "nunomaduro/collision": "^2.0",
         "symfony/dom-crawler": "~4.0",
-        "friendsofphp/php-cs-fixer": "^2.14"
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "spatie/phpunit-watcher": "^1.12",
+        "mikey179/vfsstream": "^1.6"
     },
     "autoload": {
         "classmap": [
@@ -40,10 +40,7 @@
         ],
         "psr-4": {
             "Main\\": "app/"
-        },
-        "files": [
-            "app/Http/helpers.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
