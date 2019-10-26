@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-09-27T08:42:18+02:00</updated>
+              <updated>2019-10-23T12:00:02+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -2860,6 +2860,100 @@ Last month I've created a blog post mentioning my open-source contributions for 
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-working-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
+                    <title>Struggling with micro-optimizations on large scale data processing</title>
+                    <link href="https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing"/>
+                    <id>https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing</id>
+                    <updated>2019-09-14T14:38:05+02:00</updated>
+                    <published>2019-10-02T12:00:00+02:00</published>
+                    <content>
+Struggling with micro-optimizations on large scale data processing
+Recently I worked on a problem that didn't seem solvable. It was a problem that a bit difficult to explain, but let me try. A process exists which is calculating a price, including discounts, seasonal pricing, blocked dates, etc. This means it's quite a long process because there are hundreds of variables that could impact the final price. When you request a single price, for a given date including a stay duration (price per day and pricing per week, etc.) it'll give you an answer quite quickly, usually within 120ms. This is pretty good for a single calculation, but what if you have to do thousands? That's when it becomes problematic.
+Thousands of calculations: every millisecond counts
+When you're calculating something 1000's of times, every millisecond adds up to seconds. Let's take the 120ms as a normal calculation speed for a single calculation and see what happens when we're calculating this 5000 times. 
+5000 * 120ms = 600.000 ms = 600 seconds = 10 minutes
+As you can see, that's quite a long time to do 5000 calculations, so let's see what happens when we improve the calculation speed by just 1 millisecond:
+5000 * 119ms = 595.000 ms = 595 seconds = 9 minutes and 55 seconds
+As you can see, a small improvement of 1 ms already has an impact of 5 seconds. Of course, in the big picture, what is 5 seconds on 10 minutes? Not as much as you'd like of course.
+What is the problem?
+So these numbers are nice, but what does it mean? Well, I'm working on a system that continuously indexes large amounts of documents into a search engine running on Apache Solr. The indexing process goes well, the search engine works well, but the calculation stage, when creating these documents is the real bottleneck. As the variables to calculate the price change often, prices have to be calculated for each day, for all available stay durations. You might be wondering what this looks like, let me try to visualize this with some data:
+Imagine you have available dates on a random date like 2019-09-14 and the first blocked date is at 2019-09-21, you can still make a booking for 1 day, all the way up to 1 week (check-in and check-out can happen on the same day), but you can't make a booking for 2 weeks, as the second week is already blocked off. This means that we need to calculate prices for 2019-09-14 for the following stay durations: 1, 2, 3, 4, 5, 6, 7. This is 7 calculations for a single day. For the 2019-09-15 we need to calculate prices for the following stay durations: 1, 2, 3, 4, 5, 6. As you can see, we won't need to calculate the price for 7 days, because you won't be able to make a booking for 7 days, as the last day would be blocked by another booking.
+We can't simply use the price for 1 day and multiply this by 7 to get the week price, because sometimes a discount only applies to a booking that's 1 week or more, which means that you'd display a price that's much too high for a week if you just multiplied the day price. Long story short, we need to calculate the price for each stay duration separately to make sure it's accurate.
+What I've already tried
+There are a few things I've already tried, including:
+
+Deferring calculations to asynchronous processes
+Making assumptions about the consistency of the pricing and caching pricing
+
+Deferring calculations to asynchronous processes was an absolute disaster, because this did several things that caused huge problems in other areas, including flooding the task queue with tasks (30k - 40k tasks that blocked other tasks for longer periods of times) and writing to the search engine far too often. Writing to the search engine often, in very small batches takes a long time because it's an HTTP request and the search index needs to be rebuilt often. This needs to be batched into larger chunks to achieve better performance.
+Making assumptions about the consistency of the pricing and caching pricing works quite well, but you can't guarantee the data indexed is correct. The way I implemented this was as follows: The price throughout the week rarely changes, so when I'm calculating a price for 2019-09-14, I cache this and apply this to the date range 2019-09-14 until 2019-09-20. This has the benefit that you have to do 7 times fewer calculations, but it also allows for possible errors in pricing. This would result in a total calculation time of:
+( 5000 / 7 ) * 120ms = 85.800 ms = 85.8 seconds = 1 minute and 25.8 seconds
+This is much better but has its trade-offs.
+I'm still looking for a better solution
+For now, the problem has been &quot;solved&quot;, but this is not a good permanent solution. Ideally, this process wouldn't take longer than 5 seconds, but I have no solution that would help achieve this as of yet. If you have any ideas on how to improve this process, please let me know. It's very difficult to shave off a few milliseconds for the single calculation, but this might be a possible solution. Of course, eliminating unnecessary calculations is even better. Programming isn't all about finding amazing solutions, you also really struggle to deal with something all the time. This is why I've written this post. I'm trying to highlight that I'm struggling with some tasks all the time. 
+If you'd like to get in contact with me about this, possibly with some advice for me, you can contact me on Twitter or send me an e-mail at roelofjanelsinga@gmail.com.</content>
+                    <summary>
+Struggling with micro-optimizations on large scale data processing
+Recently I worked on a problem that didn't seem solvable. It was a problem that a bit difficult to explain, but let me try. A process exists which is calculating a price, including discounts, seasonal pricing, blocked dates, etc. Th[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Why is a simple script often harder to write?</title>
+                    <link href="https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write"/>
+                    <id>https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write</id>
+                    <updated>2019-09-29T20:59:06+02:00</updated>
+                    <published>2019-10-16T12:00:00+02:00</published>
+                    <content>
+Why is a simple script often harder to write?
+If you're just starting out, you often want to come up with complex solutions to problems. Sometimes you do this to learn a new skill or to show off your problem-solving skills. Complex solutions are often perceived as knowing a lot and being good at something. This is sometimes a valid assumption, but in a large majority of the time a simple solution is exactly what you want to write and this often requires a lot of skill, let me explain why.
+Seeing a simple solution takes practice
+You can look at any problem and come up with some kind of solution, anyone can do this. What separates you from the rest is when you can do this in the simplest way possible. You might wonder, but why is this important? Well if everyone understands the code you've written, it's easy to maintain and won't cause a lot of confusion. Simple code is likely to survive multiple rounds of refactoring. Seeing the simplest solution is a skill you need to practice because it's the result of filtering many solutions in your head and coming up with the best fitting one. 
+If you make a mistake and pick a difficult solution, it might bite you later on in the process. This definitely doesn't mean, only make the right choices. In fact, it's the opposite, make mistakes and a lot of them. You learn from mistakes and you'll never make the mistake again after you've figured out what went wrong and why. Often times, you might write an overcomplicated solution. This has the effect that the efficiency of your script might be a lower priority and it loses you X amount of time every time it runs. This solution needs to be refactored a few times by the one who originally wrote it to serve as a great learning opportunity. Every time the script is refactored, you will learn something new and gradually you'll figure out how to write complex scripts in a very simple and maintainable way. 
+Putting the script into a larger context
+Senior engineers are often more concerned with the architecture of the application overall. This often means they're great at separating different concerns into different scripts. For example, a script might be used in slightly different ways in 3-4 locations. Instead of constantly adding to this number with yet another implementation of the same script, perhaps it's better to standardize how to use the script, extract it into a class and use the class instead. If you really need a different use for it, create a class that extends the base class or write an adapter. The point is, senior engineers have done this countless times, so they're very likely to recognize a scenario where a script might be extracted into a class and will do so from the start. Engineers that don't yet have the experience of extracting a script like that for many times might just copy/paste the same script, adjust it in a few places and be satisfied with the result. Not knowing that same script might haunt them in the future. But when it starts to haunt you, you'll have a great learning experiment and you'll make the same mistake less often.
+Learn through making mistakes
+In short, being able to go through all possible solutions in your head and picking the simplest, most maintainable solution is a
+skill that you need to practice. It's difficult and you will make mistakes, but making mistakes is necessary. You need to make mistakes to figure out what works and what doesn't work. You can always ask more experienced engineers, but until you really understand why something works the way it works, you won't really remember what you did last time you occurred a certain scenario. So fail often and learn from your mistakes quickly.
+If you have anything you'd like to add to this post, please contact me on Twitter. I'd love to learn from your experiences and would like to pass your knowledge on to others.</content>
+                    <summary>
+Why is a simple script often harder to write?
+If you're just starting out, you often want to come up with complex solutions to problems. Sometimes you do this to learn a new skill or to show off your problem-solving skills. Complex solutions are often perceived as knowing a lot and being good at so[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/spider-web-with-drips-of-water.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Portfolio updates for September 2019</title>
+                    <link href="https://roelofjanelsinga.com/articles/portfolio-updates-september-2019"/>
+                    <id>https://roelofjanelsinga.com/articles/portfolio-updates-september-2019</id>
+                    <updated>2019-10-11T17:08:33+02:00</updated>
+                    <published>2019-10-09T12:00:00+02:00</published>
+                    <content>
+Portfolio updates for September 2019
+In September I've updated my portfolio in a few places. My main motivation behind this was to display a more complete selection of what I have done and what I'm currently working on. As I've been quite active writing blog posts lately, I've made sure to include those on the homepage as well. 
+These are the things I've changed on my portfolio:
+
+Added dark blocks
+Added CV to the website
+Added &quot;My tech stack&quot;
+Hooked up the Flat file CMS to manage my pages
+Added recent blog posts to the homepage
+Added dark blocks to split the content into sections
+
+As you can see, the changes are all about giving an excerpt about what I've been working on and grouping these things. The dark blocks, for example, are there to split the content into smaller sections instead of making one long content block that sees no end. This was a result of me not being the best at designing and wanting to bring the attention of the visitor back to the content.
+Why I added my CV to the website
+I've added my CV quite prominently on the website, this is done intentionally because this hopefully cuts down on the number of times I have to put together a CV. Putting together a CV is not something I enjoy, so making it into a technical challenge I've actually enjoyed the process of going through it. The benefit now is that I never have to make one again. The only thing left to do is to make it possible to download the CV as a PDF and then that section is done.
+My tech stack
+My tech stack is a page that displays what I'm comfortable using in production projects and what I'd love to learn more about. In the future, I might turn this into a page that displays what projects I'm currently working on and which tech stacks I'm using for the project. This way I can track my progress with certain technologies and the ways I'm implementing these. 
+I hooked up my Flat File CMS to manage my pages
+Before, all pages (except for the blog posts) were Blade templates that needed to be edited in a code editor. This is a great way to build websites, but not a great way to manage content. Since my Flat File CMS was already integrated into the website for the blog posts, I decided to also allow it to manage some of the pages. This means I can now manage the content of &quot;My tech stack&quot; and  &quot;The techniques I used to build this website&quot; from my phone.
+Added blog posts to the homepage
+My blog posts are the biggest section of my portfolio website. Most software behind the screens is set up to deal with automatic publishing, editing the blog posts and automating image manipulation. So you could say that I'm running my portfolio website on my blog and not the other way around. Because of this, I found it was only fitting that I display blog posts on different parts of my website as well as the sections on /articles. Adding more than 2 seemed a bit excessive though, so, for now, it displays the two most recent posts.
+As you can see, there aren't a lot of changes, but there is potential for much more. The fact that it's now also possible for me to manage more content from my phone, or any computer on which I don't have access to a terminal and my web server, is amazing. I loved making my life easier with little optimizations like this. I've written much more about this in my blog post &quot;Why I built my own CMS&quot;, which is essentially all about making my life easier.
+Do you have any tips on other things I should display on my portfolio website? Let me know on Twitter and I'll try to implement your suggestions.</content>
+                    <summary>
+Portfolio updates for September 2019
+In September I've updated my portfolio in a few places. My main motivation behind this was to display a more complete selection of what I have done and what I'm currently working on. As I've been quite active writing blog posts lately, I've made sure to include[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/new-homepage-in-september-2019.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
                     <title>How to fix CORS headers in a single page application</title>
                     <link href="https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application"/>
                     <id>https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application</id>
@@ -2933,6 +3027,141 @@ I hope this post helped solve the problem, I know I got stuck with this for a fe
 How to fix CORS headers in a single page application
 Making cross-domain XHR requests can be a pain when building a web application as a single page application, fully written in JavaScript. Your browser will send an additional request to your server, a so called Preflight request. This request won[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/private-mailbox.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Creating an efficient CI pipeline with CircleCI, Docker, and Laravel</title>
+                    <link href="https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker"/>
+                    <id>https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker</id>
+                    <updated>2019-10-04T13:51:55+02:00</updated>
+                    <published>2019-10-23T12:00:00+02:00</published>
+                    <content>
+Creating an efficient CI pipeline with CircleCI, Docker, and Laravel
+Efficient and fast CI pipelines are great because you quickly know if your application behaves the way it does, by running automated tests. Having pipelines that take a long time to complete have the disadvantage that people might start to ignore the status checks if something needs to be fixed quickly. This is something you want to avoid, so I've compiled a way to run PHPUnit tests in a very simple environment without having to install any composer dependencies.
+Setting up a docker compose environment for CI
+When your application is dependent on a lot of different services, you want to mock most of these or run them in RAM memory.  For database tests for example, you often want to use an in-memory SQLite database. However, in my case this was impossible as the application was dependent on certain geolocation functions (ST_AsText, ST_MPolyFromText, ST_IsValid, etc.). These are not available for SQLite, so instead a MySQL server with a mounted tmpfs volume storage device will have to do. This simply means that we're using a MySQL server, which is tricked into using RAM memory as a storage device. This results into lightning fast reading and writing operations. You get the functionality of a MySQL server with the performance of a in-memory SQLite database.
+You can very easily do this in docker. I'm using a docker-compose.yml file, but you can also do this in the terminal with the docker commands. This is how I've done it in docker-compose:
+version: "2.3"
+services:
+
+  mysql:
+    image: mysql:5.7
+    tmpfs: /var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: testing_database
+      MYSQL_USER: testing_user
+      MYSQL_PASSWORD: testing_password
+    networks:
+    - front
+
+networks:
+  front:
+The special things in this configuration are the tmpfs key and the networks. The tmpfs key tells the docker container to place the /var/lib/mysql folder into RAM memory. This is the folder than contains all the data that's stored in the databases. The networks key is important, because we'll come back to that in a minute. For now, you just have to create a new network and make sure the mysql container is part of that network. This network has the name &quot;front&quot;. This is important for later.
+Creating a docker image for your PHP environment
+Since it's not really possible to cache installed programs and extensions in CircleCI (installed through apt-get install), the only other way is to create an docker image that contains all required programs and extensions. When you build this docker image, the layers will be cached and you'll be able to run the docker image in mere seconds, even though it includes all software you need to build your application. If you install these applications on the virtual machine within CircleCI, this could take up to 5 minutes and that's just preparing the testing environment. Using a provisioned docker image, you can download it in 10 seconds and run commands 3 seconds later.
+Since I'm testing a Laravel application, I can use the following Dockerfile to install any and all composer dependencies and run any and all artisan commands:
+FROM debian:9.7-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    &amp;&amp; apt-get install -y --no-install-recommends apt-transport-https lsb-release ca-certificates wget build-essential \
+    &amp;&amp; wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
+    &amp;&amp; sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" &gt; /etc/apt/sources.list.d/php.list' \
+    &amp;&amp; apt-get update \
+    &amp;&amp; apt-get install -y --no-install-recommends php7.3 php7.3-fpm php7.3-mysql mcrypt php7.3-gd curl \
+       php7.3-curl php7.3-mbstring php7.3-xml php7.3-soap php7.3-zip php-zmq php7.3-bcmath php-pcov unzip \
+    &amp;&amp; curl -s https://getcomposer.org/installer | php \
+    &amp;&amp; mv composer.phar /usr/bin/composer \
+    &amp;&amp; apt-get clean \
+    &amp;&amp; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+VOLUME /var/app
+
+WORKDIR /var/app
+
+EXPOSE 9000
+As you can see here, I'm using the Debian slim image instead of Ubuntu 18.04 (or any other version). This is done with the sole reason that the Debian image is 50 - 60% smaller in size, which means it'll download much faster. Instead of downloading 900mb, CircleCI will &quot;only&quot; have to download 300mb. This Dockerfile installs all PHP dependencies I need and the latest installation of Composer.
+This Dockerfile is also available for download, you can pull it by running:
+docker pull roelofjanelsinga/test-suite
+Running tests by using the new Docker image
+When setting up the application in CircleCI, we'll need to install all Composer dependencies and generate an APP_KEY before running any tests. We can very easily install the composer dependencies without installing composer on the virtual machine, because we have the docker image. Run the following command to install all composer dependencies:
+docker run --rm \
+    -u $(id -u):$(id -g) \
+    -v `pwd`:`pwd` -w `pwd` \
+    --network=$(docker network ls | grep front | awk '{print $2}') \
+    roelofjanelsinga/test-suite \
+    composer install
+Let's go through this command line by line:
+docker run --rm: This will run a command and remove itself after the command has finished.
+-u $(id -u):$(id -g): This will run the container with the same user as your current user (ex: 1000:1000). This avoids any incorrect file permissions.
+-v `pwd`:`pwd` -w `pwd`: These are backticks, not quotation marks! This will mount the current directory in the same location in the docker container and set the working directory to that folder. This means that all commands will be run in that folder.
+--network=$(docker network ls | grep front | awk '{print $2}'): This is where the networks key from earlier comes in. The command: $(docker network ls | grep front | awk '{print $2}') returns the name of the network you created in the docker-compose.yml file. If you haven't named your network &quot;front&quot; in the earlier steps, be sure the replace it in this command. Normally docker-compose will name your network something along the lines of: prefix_front. However, this is not a guarantee, so by running docker network ls we get the actual name. This part of the command attaches the docker images to the network. This will allow you to connect to the mysql server through the docker network.
+roelofjanelsinga/test-suite: This is where you specify the container to run. I'm simply using the container we've created earlier. CircleCI won't have this container installed locally and will download it. This is why I'm using Debian slim instead of Ubuntu, just to make this process run more quickly.
+composer install: This is the command we're running. This will install all composer dependencies using the software we've install inside the docker container. Since we mounted the current directory into the docker container and we're running the command in that directory, this will write all composer files to the storage layer in the virtual machine.
+Caching composer dependencies
+Installing composer dependencies takes a while depending on how many dependencies you have installed. To avoid doing this every time, we will cache these dependencies:
+- save_cache:
+    key: my-project-composer-dep-{{ checksum "composer.lock" }}
+    paths:
+    - ~/my-project/vendor
+This will save the installed dependencies and will only restore it when you make any changes to the list of composer dependencies you have. When you have cache available, you can restore it as well, let's add this in a step before we're installing the composer dependencies. This means composer will see the dependencies are already installed and skip the installation.
+- restore_cache:
+    keys:
+    - my-project-composer-dep-{{ checksum "composer.lock" }}
+Putting everything together
+Now that we've discussed everything that's related to using Docker to improve your CI pipeline performance, I'll show you the full configuration and how you could use it in your own projects:
+version: 2
+jobs:
+  Test-PHP:
+    machine:
+      image: ubuntu-1604:201903-01
+    working_directory: ~/my-project
+    steps:
+    - checkout
+    - restore_cache:
+        keys:
+        - my-project-composer-dep-{{ checksum "composer.lock" }}
+    - run:
+        name: Starting docker-compose services
+        command: |
+          echo "Starting docker-compose"
+          docker-compose -f docker-compose-ci.yml up -d
+    - run:
+        name: Install Composer dependencies
+        command: |
+          mv .env.testing.example .env.testing
+          docker run --rm \
+            -u $(id -u):$(id -g) \
+            -v `pwd`:`pwd` -w `pwd` \
+            --network=$(docker network ls | grep front | awk '{print $2}') \
+            roelofjanelsinga/test-suite \
+            composer install
+          docker run --rm \
+            -u $(id -u):$(id -g) \
+            -v `pwd`:`pwd` -w `pwd` \
+            --network=$(docker network ls | grep front | awk '{print $2}') \
+            roelofjanelsinga/test-suite \
+            php artisan key:generate
+    - save_cache:
+        key: my-project-composer-dep-{{ checksum "composer.lock" }}
+        paths:
+        - ~/my-project/vendor
+    - run:
+        name: Run PHPUnit tests
+        command: |
+          docker run --rm \
+            -u $(id -u):$(id -g) \
+            -v `pwd`:`pwd` -w `pwd` \
+            --network=$(docker network ls | grep front | awk '{print $2}') \
+            roelofjanelsinga/test-suite \
+            ./vendor/bin/phpunit
+As you can see, all commands to interact with the applications are run through the docker container. We're installing composer dependencies, generating a application key, and running PHPUnit tests in the docker image. This makes it so the virtual machine (ubuntu) doesn't need to install anything, because docker is already preinstalled. They only thing the virtual machine does is pulling the latest changes from a git repository. Everything else is managed through the docker container.
+I hope this helps you improve the efficiency of your CI pipelines. If you have any questions or suggestions to make this configuration better, please let me know on Twitter.</content>
+                    <summary>
+Creating an efficient CI pipeline with CircleCI, Docker, and Laravel
+Efficient and fast CI pipelines are great because you quickly know if your application behaves the way it does, by running automated tests. Having pipelines that take a long time to complete have the disadvantage that people might[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/circleci-docker-laravel.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 
 </feed>

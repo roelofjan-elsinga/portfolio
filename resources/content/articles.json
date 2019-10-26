@@ -480,8 +480,8 @@
     },
     "66": {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-10-23",
-        "updateDate": "2019-09-29 21:28:16",
+        "postDate": "2019-10-30",
+        "updateDate": "2019-10-03 13:59:51",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -507,31 +507,31 @@
         "postDate": "2019-10-02",
         "updateDate": "2019-09-14 14:38:05",
         "description": "I'm struggling with micro optimizations on large scale data processing. Find out in what way I'm trying to improve the runtime of the calculations by saving processing cycles.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "70": {
         "filename": "why-simple-script-harder-to-write.md",
         "postDate": "2019-10-16",
         "updateDate": "2019-09-29 20:59:06",
         "description": "Why is a simple script often harder to write? Find out why it's much more difficult to write a simple script that solves a complicated problem than writing an elaborate solution.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "72": {
         "filename": "portfolio-updates-september-2019.md",
         "postDate": "2019-10-09",
-        "updateDate": "2019-09-17 07:10:06",
+        "updateDate": "2019-10-11 17:08:33",
         "description": "Portfolio updates for September 2019",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "73": {
         "filename": "how-to-write-good-documentation.md",
         "postDate": "2019-10-30",
-        "updateDate": "2019-10-01 13:48:01",
-        "description": "How to write good documentation",
-        "isScheduled": false,
+        "updateDate": "2019-10-14 13:33:35",
+        "description": "In this post, I go through the steps you can take to write good documentation. You can use these in any kind of project and will allow others to help you when you need it.",
+        "isScheduled": true,
         "isPublished": false
     },
     "74": {
@@ -543,9 +543,25 @@
         "isPublished": true
     },
     "75": {
-        "filename": "creating-efficient-ci-cd-pipelines-with-docker.md",
+        "filename": "creating-efficient-ci-pipelines-with-docker.md",
         "postDate": "2019-10-23",
-        "description": "Creating an efficient CI\/CD pipeline with CircleCI and Docker",
+        "updateDate": "2019-10-23 14:26:10",
+        "description": "Find out what I've done to improve the efficiency in the CI pipeline with CircleCI and Docker for a PHP application. You won't even have to install any software yourself.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "76": {
+        "filename": "100-test-coverage-why-or-why-not.md",
+        "postDate": "2019-11-06",
+        "updateDate": "2019-10-22 14:23:16",
+        "description": "100% test coverage: Why or why not?",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "77": {
+        "filename": "exploration-of-event-storming.md",
+        "postDate": "2020-02-29",
+        "description": "Exploration of event storming",
         "isScheduled": false,
         "isPublished": false
     }
