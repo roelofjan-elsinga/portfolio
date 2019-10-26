@@ -32,5 +32,22 @@
         "category": "home",
         "menu_name": "",
         "sidebar": ""
+    },
+    {
+        "title": "Algemene voorwaarden",
+        "filename": "algemene-voorwaarden.md",
+        "description": "Algemene voorwaarden",
+        "postDate": "",
+        "isPublished": true,
+        "isScheduled": false,
+        "summary": "Algemene voorwaarden",
+        "template_name": "flatfilecmsgui::templates.default",
+        "updateDate": "2019-10-26 13:06:59",
+        "in_menu": false,
+        "is_homepage": false,
+        "image": "",
+        "category": "home",
+        "menu_name": "",
+        "sidebar": ""
     }
 ]

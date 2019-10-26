@@ -1,3 +1,3 @@
 ## Let's work together
 
-Connect with me through e-mail or social media to work with me.
+Connect with me and let's see how I can help you:

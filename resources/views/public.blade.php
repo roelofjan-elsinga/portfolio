@@ -111,7 +111,7 @@
 
             @include('blocks.mailchimp_form')
 
-            @include('blocks.navigation')
+            @include('blocks.business_details')
 
         @show
 
