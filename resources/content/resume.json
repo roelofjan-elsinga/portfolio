@@ -9,19 +9,20 @@
       "location": "Groningen, The Netherlands",
       "job_title": "Lead / Full-stack developer",
       "key_activities": [
-        "Developing the platform",
-        "Maintaining the architecture",
-        "Automating the sales process"
+        "Developing a real-time search engine for 12.000+ boats",
+        "Building a scalable production environment with Docker Swarm",
+        "Automating the sales process using Event sourcing",
+        "Improving code quality through automated testing with Docker and CircleCI"
       ]
     },
     {
-      "dates": "Oct 2015 - Oct 2017",
+      "dates": "Oct 2015 - Present",
       "company": "Roelof Jan Elsinga",
       "location": "Groningen, The Netherlands",
       "job_title": "Freelancer",
       "key_activities": [
-        "Developing web applications",
-        "Creating websites"
+        "Developing high performance web applications",
+        "Building AloiaCMS and other open source packages"
       ]
     },
     {

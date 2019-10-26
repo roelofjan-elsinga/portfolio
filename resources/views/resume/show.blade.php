@@ -100,7 +100,7 @@
                             <p class="mt-2 text-lg">
                                 {{$experience['job_title']}}
                             </p>
-                            <div class="mt-2 print:hidden">
+                            <div class="mt-2 print:hidden pr-2">
                                 <strong>Key activities</strong>
 
                                 <ul class="block mt-2">
