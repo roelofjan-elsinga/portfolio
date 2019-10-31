@@ -51,7 +51,7 @@
     </div>
 
     <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-blue-darkest text-white rounded p-4">
+        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
 
             {!! Block::get('my_tech_stack') !!}
 
@@ -122,7 +122,7 @@
     </section>
 
     <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-blue-darkest text-white rounded p-4">
+        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
 
             {!! Block::get('site_techniques') !!}
 

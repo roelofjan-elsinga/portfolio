@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    <div class="section paragraph-spacing">
+    <div class="section paragraph-spacing pt-8 md:pt-16 md:pt-0">
 
         {!! $content !!}
 
@@ -25,7 +25,7 @@
 
                             <p class="mb-4 mt-2 flex-auto">{{$project['description']}}</p>
 
-                            <a href="{{$project['url']}}" class="text-blue-darkest font-bold pb-2 no-underline">View project</a>
+                            <a href="{{$project['url']}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
                         </div>
 
                     @endforeach

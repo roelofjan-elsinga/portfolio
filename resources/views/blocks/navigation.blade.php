@@ -3,7 +3,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold"
            href="{{ isset($is_external) ? route('home') : '' }}#home">
-            Roelof Jan
+            <img src="{{asset('images/logo/logo_small.png')}}" class="w-32 md:w-48" />
         </a>
 
         <ul class="block flex-1 flex items-center justify-end">

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="articles-page items paragraph-spacing pt-8 md:pt-0">
+    <div class="articles-page items paragraph-spacing pt-8 md:pt-16 md:pt-0">
 
         {!! Block::get('articles') !!}
 
