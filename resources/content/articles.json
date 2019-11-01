@@ -218,9 +218,10 @@
     "31": {
         "filename": "angularjs-angular-v6-hybrid-finally.md",
         "postDate": "2018-06-01",
+        "updateDate": "2019-11-01 08:22:02",
+        "description": "After 2.5 years it's finally time to make this happen! We're upgrading an AngularJS application to Angular (v6+). Follow along and by the end you'll have a working hybrid application.",
         "isScheduled": false,
         "isPublished": true,
-        "url": "https:\/\/medium.com\/@roelofjanelsinga\/angularjs-angular-v6-hybrid-finally-97ac37087de1",
         "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/angularjs-angular-v6-hybrid-finally-97ac37087de1"
     },
     "32": {
@@ -531,8 +532,8 @@
         "postDate": "2019-10-30",
         "updateDate": "2019-10-14 13:33:35",
         "description": "In this post, I go through the steps you can take to write good documentation. You can use these in any kind of project and will allow others to help you when you need it.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "74": {
         "filename": "how-to-fix-cors-headers-single-page-application.md",
