@@ -181,7 +181,7 @@ class PublicController extends Controller
                 'image_large' => url($article->image),
                 'image_small' => url($article->image),
                 'keywords'    => str_replace(' ', ',', $article->title),
-                'canonical'   => isset($article->canonical) ? $article->canonical : null,
+                'canonical'   => $article->canonicalLink ?? null,
             ]),
             'is_article' => true,
         ]);
