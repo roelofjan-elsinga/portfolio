@@ -21,7 +21,8 @@
         "roelofjan-elsinga/content-to-html-parser": "~0.1",
         "roelofjan-elsinga/flat-file-cms-gui": "~0.11",
         "roelofjan-elsinga/flat-file-cms": "~0.11",
-        "roelofjan-elsinga/flat-file-cms-publish": "~0.2"
+        "roelofjan-elsinga/flat-file-cms-publish": "~0.2",
+        "brainmaestro/composer-git-hooks": "^2.8"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -48,6 +49,8 @@
         }
     },
     "scripts": {
+        "post-install-cmd": "vendor/bin/cghooks add --ignore-lock",
+        "post-update-cmd": "vendor/bin/cghooks update",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -62,5 +65,17 @@
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "echo committing as $(git config user.name)",
+                "./vendor/bin/php-cs-fixer fix . --rules=@PSR2",
+                "git add"
+            ],
+            "post-merge": [
+                "composer install"
+            ]
+        }
     }
 }
