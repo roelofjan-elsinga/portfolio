@@ -481,8 +481,8 @@
     },
     "66": {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-11-13",
-        "updateDate": "2019-11-02 15:04:30",
+        "postDate": "2020-02-29",
+        "updateDate": "2019-11-06 16:31:10",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -568,24 +568,26 @@
     },
     "79": {
         "filename": "how-to-host-on-github-pages.md",
-        "postDate": "2019-11-18",
-        "updateDate": "2019-11-05 12:57:44",
+        "postDate": "2020-02-29",
+        "updateDate": "2019-11-06 16:31:20",
         "description": "How to host a lightning fast website on Github Pages",
         "isScheduled": false,
         "isPublished": false
     },
     "80": {
         "filename": "how-to-host-on-netlify.md",
-        "postDate": "2019-11-25",
+        "postDate": "2020-02-29",
+        "updateDate": "2019-11-06 16:31:28",
         "description": "How to host a lightning fast website on Netlify",
         "isScheduled": false,
         "isPublished": false
     },
     "81": {
-        "filename": "what-documentation-to-add-to-open-source-project-aloia-cms.md",
+        "filename": "creating-documentation-website-for-my-open-source-package-aloia-cms.md",
         "postDate": "2019-11-27",
-        "description": "What documentation should I add to my open source project Aloia CMS?",
-        "isScheduled": false,
+        "updateDate": "2019-11-06 16:30:56",
+        "description": "Creating a documentation website for my open source package Aloia CMS",
+        "isScheduled": true,
         "isPublished": false
     }
 }
