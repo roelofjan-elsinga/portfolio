@@ -1,6 +1,6 @@
-![AloiaCMS](/images/work/aloiacms_1920x1080.png "AloiaCMS homepage")
+![Aloia CMS](/images/work/aloiacms_1920x1080.png "Aloia CMS homepage")
 
-# AloiaCMS
+# Aloia CMS
 
 AloiaCMS is a drop-in flat file CMS built on top of Laravel. You won't need to rebuild your entire 
 application to be able to offer CMS capabilities, you can simply include the CMS as a library and start 
@@ -29,9 +29,10 @@ it turned out, it's extremely simple.
 Getting the first few pages online was a breeze and the development process is very pleasant.
 
 ## Documentation
-When I get further into developing the CMS and with it, the website, I will host all documentation 
-on the website, so it's easy to maintain and it doesn't polute the main repositories with distributed 
-documentation parts. Everything will be in 1 place...to make everyone's life a little bit easier.
+Besides serving as a landing page website, the website also contains documentation. 
+Writing this documentation is an ongoing project, but the website serves as a place where you can 
+find any official plugins, extra resources, and detailed documentation for the CMS. 
+You can find the documentation [by clicking here](https://aloiacms.com/documentation).
 
 ## Tools used
 I used the following tools to create this website:
