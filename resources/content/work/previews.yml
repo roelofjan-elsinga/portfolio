@@ -95,9 +95,9 @@ previews:
   aloiacms:
     image:
       url: /images/work/aloiacms_1920x1080.png
-      alt: AloiaCMS homepage
-    title: AloiaCMS
+      alt: Aloia CMS homepage
+    title: Aloia CMS
     description: >
       Aloia CMS is a drop-in flat file CMS built on top of Laravel. You won't need to rebuild your entire application
       to be able to offer CMS capabilities, you can simply include the CMS as a library and start writing.
-    url: /portfolio/aloiacms
+    url: /portfolio/aloia-cms
