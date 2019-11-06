@@ -559,11 +559,11 @@
         "isPublished": false
     },
     "78": {
-        "filename": "how-we-use-netlify-to-quickly-deliver-new-content.md",
-        "postDate": "2019-11-06",
-        "updateDate": "2019-11-05 11:05:43",
-        "description": "How we use Netlify to deliver new content quickly",
-        "isScheduled": false,
+        "filename": "using-netlify-to-simplify-the-ci-cd-pipeline-with-angular.md",
+        "postDate": "2019-11-13",
+        "updateDate": "2019-11-06 15:57:13",
+        "description": "In this post I describe how I transformed a mono repository platform to a platform with two distinct applications and using Netlify to simplify the CI\/CD pipeline with Angular. ",
+        "isScheduled": true,
         "isPublished": false
     },
     "79": {
@@ -578,6 +578,13 @@
         "filename": "how-to-host-on-netlify.md",
         "postDate": "2019-11-25",
         "description": "How to host a lightning fast website on Netlify",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "81": {
+        "filename": "what-documentation-to-add-to-open-source-project-aloia-cms.md",
+        "postDate": "2019-11-27",
+        "description": "What documentation should I add to my open source project Aloia CMS?",
         "isScheduled": false,
         "isPublished": false
     }
