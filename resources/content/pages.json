@@ -25,7 +25,7 @@
         "isScheduled": false,
         "summary": "Find out which technologies I've worked with and what I can use to help you with your projects.",
         "template_name": "flatfilecmsgui::templates.default",
-        "updateDate": "2019-09-14 16:03:08",
+        "updateDate": "2019-11-06 08:09:01",
         "in_menu": false,
         "is_homepage": false,
         "image": "",

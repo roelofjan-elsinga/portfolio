@@ -481,8 +481,8 @@
     },
     "66": {
         "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2019-10-30",
-        "updateDate": "2019-10-03 13:59:51",
+        "postDate": "2019-11-13",
+        "updateDate": "2019-11-02 15:04:30",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -494,14 +494,6 @@
         "description": "In this post I explain which open-source project I contributed to in september of 2019. It's been a very interesting month and I've learned a lot of new things.",
         "isScheduled": false,
         "isPublished": true
-    },
-    "68": {
-        "filename": "get-rid-of-open-offices.md",
-        "postDate": "2019-11-06",
-        "updateDate": "2019-09-29 21:28:48",
-        "description": "Getting rid of open offices",
-        "isScheduled": false,
-        "isPublished": false
     },
     "69": {
         "filename": "struggling-with-micro-optimizations-large-scale-data-processing.md",
@@ -554,15 +546,38 @@
     "76": {
         "filename": "100-test-coverage-why-or-why-not.md",
         "postDate": "2019-11-06",
-        "updateDate": "2019-10-22 14:23:16",
-        "description": "100% test coverage: Why or why not?",
+        "updateDate": "2019-11-02 15:26:40",
+        "description": "100% test coverage: Why or why not? But first, what does 100% test coverage mean? Let's explore the topic in this post and I'll tell you my thoughts about it afterwards.",
         "isScheduled": false,
-        "isPublished": false
+        "isPublished": true
     },
     "77": {
         "filename": "exploration-of-event-storming.md",
         "postDate": "2020-02-29",
         "description": "Exploration of event storming",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "78": {
+        "filename": "how-we-use-netlify-to-quickly-deliver-new-content.md",
+        "postDate": "2019-11-06",
+        "updateDate": "2019-11-05 11:05:43",
+        "description": "How we use Netlify to deliver new content quickly",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "79": {
+        "filename": "how-to-host-on-github-pages.md",
+        "postDate": "2019-11-18",
+        "updateDate": "2019-11-05 12:57:44",
+        "description": "How to host a lightning fast website on Github Pages",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "80": {
+        "filename": "how-to-host-on-netlify.md",
+        "postDate": "2019-11-25",
+        "description": "How to host a lightning fast website on Netlify",
         "isScheduled": false,
         "isPublished": false
     }

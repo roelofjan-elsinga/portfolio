@@ -13,10 +13,12 @@ I've been a web developer for several years and over the years I've worked with 
 - Apache 2
 - Nginx
 - Docker
-- Linux (Ubuntu 14.04+ specifically)
+- Linux based systems (Ubuntu, CentOS, Fedora)
 - Continuous Integration
 - Apache Solr 6.0+
 - PHPUnit 6+
+- GitHub Pages
+- Netlify
 
 ## Happy to learn more about:
 - AWS infrastructure, I've worked with it but it's still magic sometimes.
