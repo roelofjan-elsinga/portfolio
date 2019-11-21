@@ -482,7 +482,7 @@
     "66": {
         "filename": "when-optimization-in-way-of-progress.md",
         "postDate": "2020-02-29",
-        "updateDate": "2019-11-06 16:31:10",
+        "updateDate": "2019-11-20 22:55:29",
         "description": "When is optimization getting in the way of progress",
         "isScheduled": false,
         "isPublished": false
@@ -563,15 +563,15 @@
         "postDate": "2019-11-13",
         "updateDate": "2019-11-06 15:57:13",
         "description": "In this post I describe how I transformed a mono repository platform to a platform with two distinct applications and using Netlify to simplify the CI\/CD pipeline with Angular. ",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "79": {
         "filename": "how-to-host-on-github-pages.md",
-        "postDate": "2020-02-29",
-        "updateDate": "2019-11-06 16:31:20",
-        "description": "How to host a lightning fast website on Github Pages",
-        "isScheduled": false,
+        "postDate": "2019-11-27",
+        "updateDate": "2019-11-20 23:38:58",
+        "description": "In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.",
+        "isScheduled": true,
         "isPublished": false
     },
     "80": {
@@ -584,10 +584,10 @@
     },
     "81": {
         "filename": "creating-documentation-website-for-my-open-source-package-aloia-cms.md",
-        "postDate": "2019-11-27",
-        "updateDate": "2019-11-06 16:30:56",
+        "postDate": "2019-11-20",
+        "updateDate": "2019-11-18 03:06:32",
         "description": "Creating a documentation website for my open source package Aloia CMS",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     }
 }
