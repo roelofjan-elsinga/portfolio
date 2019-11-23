@@ -22,7 +22,8 @@
         "roelofjan-elsinga/flat-file-cms-gui": "~0.11",
         "roelofjan-elsinga/flat-file-cms": "~0.11",
         "roelofjan-elsinga/flat-file-cms-publish": "~0.2",
-        "brainmaestro/composer-git-hooks": "^2.8"
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "nesbot/carbon": "2.25.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
