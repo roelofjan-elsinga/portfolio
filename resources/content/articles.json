@@ -571,8 +571,8 @@
         "postDate": "2019-11-27",
         "updateDate": "2019-11-20 23:38:58",
         "description": "In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "80": {
         "filename": "how-to-host-on-netlify.md",

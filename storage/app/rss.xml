@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 27 Nov 2019 08:32:22 GMT</pubDate>
+              <pubDate>Wed, 27 Nov 2019 17:42:56 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -886,6 +886,18 @@ For the past few years, I've maintained a mono repository for my day job. This r
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/netlify-and-angular.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+How to host a lightning-fast website on Github Pages
+When you have a website that's either static or doesn't require a database, you have a lot of options when it comes to hosting your website. One of them is hosting your website right out of your GitHub repository through GitHub pages. In this pos[...] (...)</description>
+                    <title>How to host a lightning-fast website on Github Pages</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</guid>
+                    
+                    <pubDate>Wed, 27 Nov 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>
 Creating a documentation website for my open-source package Aloia CMS
