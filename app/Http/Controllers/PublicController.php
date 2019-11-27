@@ -205,12 +205,31 @@ class PublicController extends Controller
         return $class;
     }
 
+    /**
+     * Display the Atom feed
+     *
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     public function atomFeed()
     {
         $atom_feed = Storage::get('atom.xml');
 
         return response($atom_feed, 200, [
             'Content-Type' => 'application/atom+xml',
+        ]);
+    }
+
+    /**
+     * Display the RSS feed
+     *
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
+    public function rssFeed()
+    {
+        $rss_feed = Storage::get('rss.xml');
+
+        return response($rss_feed, 200, [
+            'Content-Type' => 'application/rss+xml',
         ]);
     }
 }
