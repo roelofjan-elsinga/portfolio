@@ -3,7 +3,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="block flex-1 flex items-center text-blue-darkest no-underline text-2xl font-bold"
            href="{{ isset($is_external) ? route('home') : '' }}#home">
-            <img src="{{asset('images/logo/logo_small.png')}}" class="w-32 md:w-48" />
+            <img src="{{asset('images/logo/logo_small.png')}}" class="w-32 md:w-48" alt="Logo Roelof Jan Elsinga" />
         </a>
 
         <ul class="block flex-1 flex items-center justify-end">
@@ -11,7 +11,7 @@
             <li class="inline-block mx-2"><a class="link" href="{{route('articles')}}">Blog</a></li>
             <li class="inline-block mx-2">
                 <a class="link" href="{{route('feed')}}">
-                    <img src="{{asset('images/icons/rss-feed.svg')}}" class="h-4" />
+                    <img src="{{asset('images/icons/rss-feed.svg')}}" class="h-4" content="RSS Feed logo" />
                 </a>
             </li>
         </ul>

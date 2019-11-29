@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
-        <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12">Hello, I'm Roelof Jan. <br/> Full-stack web developer <br /> & Scrum master</h1>
+        <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12">Full-stack web developer <br /> & Scrum master</h1>
         <p class="text-lg sm:text-xl leading-loose">
-            I love building products people can't wait to interact with. <br/>
+            I'm a full-stack web developer who loves building products for real people. <br/>
             I get my motivation from building for and with actual users, <br />
             finding their likes and dislikes, and constantly improving. <br />
             I can help you with developing web applications.
@@ -29,7 +29,7 @@
                     @foreach($items as $project)
 
                         <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
-                            <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+                            <img src="{{$project['image']['url']}}" alt="{{$project['title']}}" />
 
                             <h3 class="pt-4">{{$project['title']}}</h3>
 
@@ -67,7 +67,7 @@
 
                 <article>
                     <div class="image">
-                        <img src="{{asset($article->thumbnail)}}" />
+                        <img src="{{asset($article->thumbnail)}}" alt="{{$article->title}}" />
                     </div>
 
                     <div class="content pt-8">
