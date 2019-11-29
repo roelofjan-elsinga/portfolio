@@ -20,6 +20,7 @@ return [
         'additional_paths' => [
             resource_path('content/open_source'),
             storage_path('app/atom.xml'),
+            storage_path('app/rss.xml'),
             storage_path('app/sitemap.xml')
         ],
 
