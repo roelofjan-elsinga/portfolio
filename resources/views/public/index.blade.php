@@ -4,15 +4,15 @@
     <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
         <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12">Full-stack web developer <br /> & Scrum master</h1>
         <p class="text-lg sm:text-xl leading-loose">
-            I'm a full-stack web developer who loves building products for real people. <br/>
-            I get my motivation from building for and with actual users, <br />
-            finding their likes and dislikes, and constantly improving. <br />
-            I can help you with developing web applications.
+            I specialize in: <br />
+            ⚡ Building lighting fast web applications <br />
+            🔒 Building secure web applications <br />
+            🔥 Building easy-to-maintain web applications
         </p>
 
-        <p>
-            <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
-               class="text-xl font-bold pt-8 link link--underline inline-block">roelofjanelsinga@gmail.com</a>
+        <p class="pt-8">
+            <span class="text-lg sm:text-xl inline-block mb-4">Send me a message: </span> <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
+               class="text-lg sm:text-xl font-bold link link--underline inline-block">roelofjanelsinga@gmail.com</a>
         </p>
     </div> 
 
