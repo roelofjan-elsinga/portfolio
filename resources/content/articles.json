@@ -589,5 +589,36 @@
         "description": "Creating a documentation website for my open source package Aloia CMS",
         "isScheduled": false,
         "isPublished": true
+    },
+    "82": {
+        "filename": "event-sourcing-single-source-truth.md",
+        "postDate": "2019-12-04",
+        "updateDate": "2019-11-28 20:44:17",
+        "description": "Event sourcing: The single source of truth. In this post I'll explain my reasoning for calling event sourcing the single source of truth. Spoiler alert: It is a very beneficial practice for decentralized applications.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "83": {
+        "filename": "rss-atom-feed-why-should-have-for-blog.md",
+        "postDate": "2019-12-11",
+        "updateDate": "2019-12-05 19:04:25",
+        "description": "RSS feed: Why you should have one for your blog",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "84": {
+        "filename": "blogging-as-software-engineer.md",
+        "postDate": "2020-02-29",
+        "description": "Blogging as a software engineer",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "85": {
+        "filename": "linux-how-it-saved-my-old-laptop.md",
+        "postDate": "2019-12-18",
+        "updateDate": "2019-12-04 07:20:27",
+        "description": "Linux: How it saved my old laptop. I this post I'm going to talk about my transition from using Windows for everything to using Linux for everything and how this impacted my decision to revive an old laptop that I thought was broken.",
+        "isScheduled": true,
+        "isPublished": false
     }
 }
