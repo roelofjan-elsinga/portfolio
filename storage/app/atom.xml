@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2019-12-04T12:00:02+01:00</updated>
+              <updated>2019-12-18T12:00:02+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -3485,6 +3485,103 @@ All I can say now is that you should have a look at this concept and try it out 
 Event sourcing: The single source of truth
 Event sourcing is a very fascinating concept in programming. I think it could be used as a single source of truth for a wide range of decentralized applications. Event sourcing is a concept that took me quite a while to get my head around because it's very[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-running-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>RSS/Atom feed: Why you should have one for your blog</title>
+                    <link href="https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog"/>
+                    <id>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</id>
+                    <updated>2019-12-10T09:49:08+01:00</updated>
+                    <published>2019-12-11T12:00:00+01:00</published>
+                    <content>
+RSS/Atom feed: Why you should have one for your blog
+RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways to syndicate your content across platforms. A lot of people have heard about RSS in some way or another, but fewer people know Atom. Atom is just a more modern version of RSS, but they serve the same purpose: Sharing updates from a source to different destinations. In this post, I'll explain why you should be using a feed, be it Atom or RSS, for your blog. If you're wondering what the differences are between RSS and Atom, you can read about it on Wikipedia.
+Syndication? What does that mean?
+Before I continue, it might be a good idea to explain what syndication actually means. In the journalism world, according to Dictionary.com, a syndicate is an agency that acquires content from different sources and distributes that content for simultaneous publication in many different channels (newspapers, websites, etc.). This means a central location can acquire content from all kinds of different locations and then publish that content from a single source to a lot of different places. So to put this in perspective for this blog: This blog contains content from different sources, in this case: me, the writer, and publishes this to a lot of different sources at the same time. So syndication is the process of acquiring and then publishing the content. If you need some more information, the link to Dictionary.com mentioned earlier shows more meanings. Now, let's get into why you should have a syndication feed for your blog.
+Spreading your blog posts far and wide
+When you're hosting your blog by yourself, or even when you host it on a website like wordpress.com, you will hopefully publish posts regularly. To reach the maximum amount of people, it's best to post your blog posts in as many places as possible. For example when this blog post publishes, it's automatically posted to dev.to, MailChimp, Pinterest, and several RSS readers. So when I publish a post, not only does it appear on my blog, it will be visible in many more places to reach a much larger audience. This is partly because my audience most likely has no clue this blog even exists, but it's also a convenience for them because they get to read my blogs in the places they already visit. So it's a win-win because my content gets read and people don't have to go out of their way to consume my content. 
+An easy way for a content creator to reach the target audience is to go to the places where the target audience hangs out. Manually posting your content there could take a lot of time depending on the number of channels you're going through. So being able to do this automatically relieves a lot of pain and saves you a lot of time.
+Automation is exciting
+A lot of services can consume and produce an RSS or Atom feed. This makes automation incredibly simple because you only have to update the feed on your blog and all these other services will pick it up. They will then perform some task for you. You don't have to manually tell those services that you published a new post, they will retrieve it from your website. This means that you don't have to do anything yourself when you want to share your blog posts. This is in contrast with sending API requests to other platforms telling them an update is available. You don't have to write any implementation details for sharing your content, but rather, you can use this standardized system to create the feed in one place and then hang back and relax until the other services request the feed and pick up your content. 
+But...RSS is dead, right?
+A lot of people think syndication feeds are this outdated technology people used a decade ago. I used to be one of those people until I discovered it's true potential. Syndication feeds allow you to tailor your newsfeed exactly the way you want it to. Instead of going through a newsfeed that's been created by something like a newspaper, where you see every single news article, you can pick and choose which channels you would like to see. This sounds oddly familiar, doesn't it? It sounds like a social media platform, where you decide who you want to follow and hear more from. 
+So really, syndication feeds are very modern but get a bad reputation &quot;because it's so old and rusty&quot;. Do you know how Spotify, Apple Podcasts, Sticher, and all the other podcast players know which episodes are within a podcast? That's right, RSS. If you've been on Facebook and Twitter in the last year or two, you'll have noticed that you keep missing posts of your friends and people you follow. &quot;I posted this yesterday, didn't you see it?&quot; is what has probably been asked a lot in the past two years. The fact is that no, that person probably hasn't seen your post. This is because news feeds are no longer sorted chronologically, but they go through an algorithm and are sorted by maximum engagement. 
+The platforms are trying to keep you on the platform, so they're trying to push content you'll most likely interact with. If you're tired of this, you can sometimes change the settings to show the news feed in chronological order. If not, you always have the option to subscribe to a syndication feed (most platforms have them, just use your favorite search engine). This way, the content is always chronological. You have more things to do in a day than to be on Twitter and Facebook, unless that's your job of course. So take control of your news feed, consume some of the newest pieces of content and get on with your day. So in a way, syndication feeds are a great way to break out of the engagement trap and get on with your day.
+Is implementing a syndication feed difficult?
+After reading this far, you might be convinced that a syndication feed is a great thing to have, but now you wonder if it's difficult to implement in your blog. If you're hosting your blog on a blogging service, you most likely already have an RSS or Atom feed for your content. Just look through your settings or use a search engine to find out where to get the link for it. If you're hosting your own custom website, there are open source solutions for this. If you're using PHP and/or my open source CMS, then you can use one of the following packages to help you create your syndication feeds:
+
+Atom Feed Generator (plain PHP)
+RSS Feed Generator (plain PHP)
+AloiaCMS Publishing Module (plugin for my CMS)
+
+In the first two links, you'll also find some examples of what an Atom and RSS feed looks like, so you can always create a feed by hand if you don't want to use any generator or server scripts.
+Conclusion
+We're here, at the end. I hope I've convinced or at least informed you about using a syndication feed for your blog. It has helped me out a lot already and adding new content to it is an automatic process for my CMS, so I don't even have to worry about it anymore. When my posts get published, they automatically get shared with 4 different platforms and those platforms perform tasks automatically, so I can forget about them. By having these syndication feeds, I can focus on writing blog posts and leave the sharing of content to my CMS. If this is something you're looking for as well, I'd highly recommend to embrace this &quot;old&quot; technology and use it for what it does best: sharing your content.
+If you have any questions you can contact me on Twitter and I'll do my best to answer them for you. If you are looking for an open-source PHP content management system, I'd like to direct you to the website: AloiaCMS. You can install it yourself for free.</content>
+                    <summary>
+RSS/Atom feed: Why you should have one for your blog
+RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways to syndicate your content across platforms. A lot of people have heard about RSS in some way or another, but fewer people know Atom. Atom is just a more modern versio[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rss-logo.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Linux: How it saved my old laptop</title>
+                    <link href="https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop"/>
+                    <id>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</id>
+                    <updated>2019-12-04T07:20:27+01:00</updated>
+                    <published>2019-12-18T12:00:00+01:00</published>
+                    <content>
+Linux: How it saved my old laptop
+Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people, because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able to delete anything I want to and I hate pre-installed advertisements and bloatware. This is one of the reasons I've gravitated towards Linux based systems. But before we get to that step, I'd like to tell you my history with Windows and why I moved away from it. 
+Back when I used Windows
+Back when I used Windows on my computers, I had to reinstall it every once in a while to get rid of viruses, to replace any corrupt files, and to get a speed boost when launching my operating system. I thought this was very normal and most of my friends also went through this process every few months or so. This was fine for Windows XP and Windows 7,  the installation was quite quick and after the installation had completed everything would work with some minimal installations. Everything was good in Windows land. 
+But then, Windows 8 appeared from the shadows. It was the long awaited successor of the amazing Windows 7...what would Microsoft do to top this? Well, they dropped the ball unfortunately. Windows 8, I think we can all agree, was ahead of its time and therefore not well received. It was also much slower compared to Windows 7, so it felt like a downgrade instead of an upgrade. Not long after, Microsoft came with Windows 10 and gave everyone who was currently using Windows 7 and Windows 8 a free upgrade. Windows 10 was quicker and much smoother, it didn't get into your way as much as Windows 8. Peace was once again returned to Windows land, well sort of.
+My trusted laptop died
+Then my trusted laptop, running Windows 10 died. It had the perfect web development setup running XAMPP and everything was carefully crafted to work the way I wanted it. But it was all lost. When I got my new laptop, I had to go through the Windows 10 setup, eager to get into the desktop environment and set up my work environment the way it was on my fallen laptop. The set-up began and didn't seem to end, it took a good 20 minutes between turning on my laptop and seeing the desktop for the first time. I hated every minute of it, because I wanted to get back into my workflow, but the operating system got in my way. This is when I decided I had enough of Windows. It was no longer a convience to me, but a burden.
+For work I had worked on a virtual machine for a while. A virtual machine running Ubuntu. I had gotten very familiar with it and decided I wanted to work with it all the time, not just at work for some specific tasks. I created a partition on my new laptop and created a Windows/Ubuntu dual boot, just in case I ever wanted to go back to Windows. Spoiler alert: I never touched Windows again and ended up removing the installation within 6 months. Ubuntu was my new operating system.
+Ubuntu: The new work horse
+I installed Ubuntu on my new laptop for the first time. It was an exciting moment, because I knew I probably wouldn't go back to using Windows. After the installation, which only took about 20 minutes, I could instantly get back into my work. I knew I had made the right choice and quickly installed everything I needed through the command line and got back to work, as if it had always been this way. 
+Fast forward a year and I never felt the need to reinstall Ubuntu because it became too slow or because I had caught a nasty virus. The system still felt as quick and stable as the day I had installed it. At this point in time, Windows wasn't even on my radar any more. The Windows partition had been wiped to serve as extra storage for some of my web projects. This is also the time where I started to come up with an idea. I was convinced my old laptop was still working, it just needed some serious help.
+Reviving my old laptop
+Reviving my old laptop was no simple task, but I was determined to see it through. After creating a bootable USB and charging the laptop for a few hours, I pressed the power button. And as expected, the laptop turned on. But that was all it did, because Windows couldn't find a boot drive, even though the drive in the laptop worked. After this happened, I plugged in the USB drive, restarted the laptop and booted from the USB drive. 
+The installation took about 20 minutes and afterwards I had a fully working system. The installation fixed the connection to the boot drive and I'm still not sure why this ever broken on the Windows installation. I had a working laptop, again after it had been on my shelf for about two years. Ubuntu made the laptop usable again, I could actually boot up in a desktop environment.
+Finding a distro for the older hardware
+Even though Ubuntu was installed and the laptop was able to boot again, it wasn't the best user experience. The laptop was 4 years old at this point and it had gotten slower. It's by no means a low-end system, but it's also not very fast. This meant that running Ubuntu was still too slow for my liking, I needed something that took up less resources. This is how I landed upon Fedora. Fedora seemed to perform a little bit better, but it was still too slower. I thought to myself: &quot;There must be a distro that takes low enough resources to be able to run smoothly on this laptop&quot;. It took a while, but I have found one: EndeavourOS.
+EndeavourOS is essentially an Arch Linux installation that installs the bare essentials for you. This means it also has a graphical user interface for the installation process, instead of the command line installation Arch Linux has. It installs a modified XFCE desktop environment, a file manager, a browser, and some few other essentials. It's distro built on top of Arch Linux that tries to stay as close to Arch Linux as possible. The lack of bloatware means it's fast, really fast. It's the smoothest user experience of any of the other distro's I've installed on this laptop and while using it I often don't even realize I'm working on my old laptop. 
+The fact that I don't even notice I'm working on a different laptop is exactly what I'm looking for in a distro. The whole installation took 10-15 minutes, it was surprisingly quick. Afterwards, I could instantly get it what I wanted to do and didn't have to wait on anything. It really has become a system as I like to see it: simple, fast, and doesn't get into your way at all. The EndeavourOS experiment is not over, because I will continue to use it until it no longer fits my needs. This whole blog post was written and edited from that old laptop. The laptop that was forgotten about and discarded as being broken. That laptop has a new life now with a very bright future.
+Thank you for making it this far, I hope you enjoyed reading this post. It was great writing about the past and bringing back all the good and bad memories and I'm very hopeful about the future. If you have any questions about EndeavourOS, you can send me a tweet or DM me at Twitter and I will do my best to answer your question.</content>
+                    <summary>
+Linux: How it saved my old laptop
+Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people, because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able t[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/endeavouros-screenshot.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Proxy API calls to your server during Angular development</title>
+                    <link href="https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development"/>
+                    <id>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</id>
+                    <updated>2019-12-11T12:00:00+01:00</updated>
+                    <published>2019-12-11T12:00:00+01:00</published>
+                    <content>
+Proxy API calls to your server during Angular development
+When you're developing an Angular application, you'll most likely use &quot;ng serve&quot; to display your application. When you're trying to request data through API calls to &quot;/api/some/resource&quot; you get a 404 response. But why? Well Angular sends the API request to http://localhost:4200/api/some/resource. Because you're not specifying a domain in your services, just a path, Angular will send the request to the current domain, which is fine for development, but will break in development.
+This is where the built-in proxy comes into play. When you're using &quot;ng serve&quot;, you're serving the application at http://localhost:4200. This means the services will call the API at http://localhost:4200/api/some/resource, however, your API server doesn't exist at that URL and returns a 404 for everything. Your API server is served at something like http://localhost:8000/api/some/resource. By creating this proxy, the development server accepts the requests at port 4200 and sends them to port 8000 behind the scenes. So now you get your data instead of a 404.
+The code for this to work
+This is the config you would be using for the situation I painted here:
+{
+  "/api": {
+    "target": "http://localhost:8000",
+    "secure": false
+  }
+}
+This config should be placed in a new file called: &quot;proxy.conf.json&quot; and you should place this in the src folder of your Angular project. Next, you need to point to this file in &quot;angular.json&quot;. Open the file and search for the &quot;serve&quot; section. Here you can add a &quot;proxyConfig&quot; key to the options. You should end up with something similar to this:
+"serve": {
+    "builder": "...",
+    "options": {
+        "proxyConfig": "src/proxy.conf.json"
+    }
+}</content>
+                    <summary>
+Proxy API calls to your server during Angular development
+When you're developing an Angular application, you'll most likely use &quot;ng serve&quot; to display your application. When you're trying to request data through API calls to &quot;/api/some/resource&quot; you get a 404 response. But why? W[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/angular-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 
 </feed>

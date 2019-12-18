@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 04 Dec 2019 11:00:02 GMT</pubDate>
+              <pubDate>Wed, 18 Dec 2019 11:00:02 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -922,6 +922,42 @@ Event sourcing is a very fascinating concept in programming. I think it could be
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-running-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+RSS/Atom feed: Why you should have one for your blog
+RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways to syndicate your content across platforms. A lot of people have heard about RSS in some way or another, but fewer people know Atom. Atom is just a more modern versio[...] (...)</description>
+                    <title>RSS/Atom feed: Why you should have one for your blog</title>
+                    <link>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</link>
+                    <guid>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</guid>
+                    
+                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rss-logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Linux: How it saved my old laptop
+Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people, because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able t[...] (...)</description>
+                    <title>Linux: How it saved my old laptop</title>
+                    <link>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</link>
+                    <guid>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</guid>
+                    
+                    <pubDate>Wed, 18 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/endeavouros-screenshot.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Proxy API calls to your server during Angular development
+When you're developing an Angular application, you'll most likely use "ng serve" to display your application. When you're trying to request data through API calls to "/api/some/resource" you get a 404 response. But why? W[...] (...)</description>
+                    <title>Proxy API calls to your server during Angular development</title>
+                    <link>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</link>
+                    <guid>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</guid>
+                    
+                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/angular-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>
