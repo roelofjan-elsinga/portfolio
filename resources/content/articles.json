@@ -601,16 +601,17 @@
     "83": {
         "filename": "rss-atom-feed-why-should-have-for-blog.md",
         "postDate": "2019-12-11",
-        "updateDate": "2019-12-05 19:04:25",
-        "description": "RSS feed: Why you should have one for your blog",
+        "updateDate": "2019-12-10 09:49:08",
+        "description": "RSS\/Atom feed: Why you should have one for your blog. In this post I talk about why you should have syndication feeds for your blog. You can easily and quickly share your content to many different platforms without doing any of the work yourself.",
         "isScheduled": false,
-        "isPublished": false
+        "isPublished": true
     },
     "84": {
-        "filename": "blogging-as-software-engineer.md",
-        "postDate": "2020-02-29",
-        "description": "Blogging as a software engineer",
-        "isScheduled": false,
+        "filename": "top-10-reasons-to-start-blogging-as-software-engineer.md",
+        "postDate": "2019-12-25",
+        "updateDate": "2019-12-10 12:54:38",
+        "description": "In this post I go over the top 10 reasons why I believe software engineers would benefit from blogging. But remember: If you're not writing blog posts you're not any less of a software developer.",
+        "isScheduled": true,
         "isPublished": false
     },
     "85": {
@@ -618,7 +619,14 @@
         "postDate": "2019-12-18",
         "updateDate": "2019-12-04 07:20:27",
         "description": "Linux: How it saved my old laptop. I this post I'm going to talk about my transition from using Windows for everything to using Linux for everything and how this impacted my decision to revive an old laptop that I thought was broken.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "86": {
+        "filename": "proxy-api-calls-to-your-server-during-angular-development.md",
+        "postDate": "2019-12-11",
+        "description": "In this post, I'm showing you how you can proxy API calls to your server during Angular development and make the development process very painless.",
+        "isScheduled": false,
+        "isPublished": true
     }
 }
