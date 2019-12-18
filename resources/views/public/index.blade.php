@@ -69,21 +69,7 @@
         <div class="mt-12">
             @foreach($blog_posts as $article)
 
-                <article>
-                    <div class="image">
-                        <img src="{{asset($article->thumbnail)}}" alt="{{$article->title}}" />
-                    </div>
-
-                    <div class="content pt-8">
-                        <h3 class="pt-4 sm:pt-0 mb-2">
-                            {{$article->title}}
-                        </h3>
-
-                        <span class="muted">Posted on: {!! $article->postDate !!}</span>
-                    </div>
-
-                    <a href="{{!is_null($article->url()) ? $article->url : route('articles.view', $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
-                </article>
+                @include('blocks.article_preview', ['article' => $article])
 
             @endforeach
         </div>

@@ -5,29 +5,17 @@
 @endsection
 
 @section('content')
-    <div class="articles-page items paragraph-spacing pt-8 md:pt-16 md:pt-0">
+    <div class="articles-page items pt-8">
 
-        {!! Block::get('articles') !!}
+        <div class="paragraph-spacing">
+            {!! Block::get('articles') !!}
+        </div>
 
         <main class="articles my-8">
 
             @foreach($articles as $article)
 
-                <article>
-                    <div class="image">
-                        <img src="{{asset($article->thumbnail)}}" />
-                    </div>
-
-                    <div class="content pt-8">
-                        <h3 class="pt-4 sm:pt-0">
-                            {{$article->title}}
-                        </h3>
-
-                        <span class="muted">Posted on: {!! $article->postDate !!}</span>
-                    </div>
-
-                    <a href="{{!is_null($article->url()) ? $article->url : route($view_route_name, $article->slug)}}" {{isset($article->url) ? "target='_blank'" : ''}} class="desktop-link"></a>
-                </article>
+                @include('blocks.article_preview', ['article' => $article])
 
             @endforeach
 
@@ -49,7 +37,7 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{Route::currentRouteName() === 'articles' ? 'Articles' : 'Passions'}}",
+        "name": "Blog",
         "item": "{{route(Route::currentRouteName())}}"
       }]
     }
