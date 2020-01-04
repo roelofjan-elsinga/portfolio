@@ -13,8 +13,7 @@
         "is_homepage": false,
         "image": "",
         "category": "home",
-        "menu_name": "",
-        "sidebar": ""
+        "menu_name": ""
     },
     {
         "title": "My tech stack",
@@ -30,8 +29,7 @@
         "is_homepage": false,
         "image": "",
         "category": "home",
-        "menu_name": "",
-        "sidebar": ""
+        "menu_name": ""
     },
     {
         "title": "Algemene voorwaarden",
@@ -47,7 +45,22 @@
         "is_homepage": false,
         "image": "",
         "category": "home",
+        "menu_name": ""
+    },
+    {
+        "title": "Who am I?",
+        "filename": "about-me.md",
+        "description": "On this page, I explain who I am and how I got to be where I am today. My path is a path of discovery and rediscovery and is still leading me in surprising directions.",
+        "postDate": "",
+        "isPublished": true,
+        "isScheduled": false,
+        "summary": "On this page, I explain who I am and how I got to be where I am today. My path is a path of discovery and rediscovery and is still leading me in surprising directions.",
+        "template_name": "flatfilecmsgui::templates.default",
+        "in_menu": false,
+        "is_homepage": false,
+        "image": "",
+        "category": "home",
         "menu_name": "",
-        "sidebar": ""
+        "meta_data": []
     }
 ]
