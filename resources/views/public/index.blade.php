@@ -11,8 +11,8 @@
         </p>
 
         <p class="pt-8">
-            <span class="text-lg sm:text-xl inline-block mb-4">Send me a message: </span> <a href="mailto:roelofjanelsinga@gmail.com?subject=Hi%20Roelof Jan!"
-               class="text-lg sm:text-xl font-bold link link--underline inline-block">roelofjanelsinga@gmail.com</a>
+            <span class="text-lg sm:text-xl inline-block mb-4">Send me a message: </span> <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
+               class="text-lg sm:text-xl font-bold link link--underline inline-block">hello@roelofjanelsinga.com</a>
         </p>
     </div> 
 
