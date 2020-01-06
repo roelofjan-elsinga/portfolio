@@ -1,4 +1,1 @@
-## Contact
-
-If you have any questions, you can leave a message below and 
-I'll get back to you as soon as possible.
+Or if you prefer a quick message you can leave it below.

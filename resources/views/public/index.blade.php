@@ -13,6 +13,8 @@
         <p class="pt-8">
             <span class="text-lg sm:text-xl inline-block mb-4">Send me a message: </span> <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
                class="text-lg sm:text-xl font-bold link link--underline inline-block">hello@roelofjanelsinga.com</a>
+
+            @include('blocks.contact_confirmation')
         </p>
     </div> 
 
@@ -126,6 +128,14 @@
             {!! Block::get('social') !!}
 
             {!! Block::get('social_links') !!}
+
+            <div class="mt-8">
+                {!! Block::get('contact') !!}
+
+                @include('blocks.contact_confirmation')
+
+                @include('blocks.contact_form')
+            </div>
         </div>
 
     </div>
