@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 18 Dec 2019 11:00:02 GMT</pubDate>
+              <pubDate>Wed, 01 Jan 2020 11:00:02 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -936,8 +936,20 @@ RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways 
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rss-logo.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>
+Top 10 reasons to start blogging as a software engineer
+Blogging is an amazing thing to do for software engineers. I like to write blog posts for a lot of reasons, but a few of those reasons are more important than others. This is why I've created my top 10 reasons why software engineers should sta[...] (...)</description>
+                    <title>Top 10 reasons to start blogging as a software engineer</title>
+                    <link>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</link>
+                    <guid>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</guid>
+                    
+                    <pubDate>Wed, 25 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fireworks-in-water.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
 Linux: How it saved my old laptop
-Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people, because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able t[...] (...)</description>
+Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able to[...] (...)</description>
                     <title>Linux: How it saved my old laptop</title>
                     <link>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</link>
                     <guid>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</guid>
@@ -958,6 +970,19 @@ When you're developing an Angular application, you'll most likely use "ng serve"
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/angular-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Photo by James Pond on Unsplash
+How to reclaim your privacy on the internet
+You get tracked on most websites, your information and behavior aren't yours to keep anymore. This is the sad truth of the modern internet. I admit I'm guilty of this too, in fact, you're probably being tracked right now. I[...] (...)</description>
+                    <title>How to reclaim your privacy on the internet</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</guid>
+                    
+                    <pubDate>Wed, 01 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/a-lego-character-protecting-itself-from-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>

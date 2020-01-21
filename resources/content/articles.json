@@ -611,13 +611,13 @@
         "postDate": "2019-12-25",
         "updateDate": "2019-12-10 12:54:38",
         "description": "In this post I go over the top 10 reasons why I believe software engineers would benefit from blogging. But remember: If you're not writing blog posts you're not any less of a software developer.",
-        "isScheduled": true,
-        "isPublished": false
+        "isScheduled": false,
+        "isPublished": true
     },
     "85": {
         "filename": "linux-how-it-saved-my-old-laptop.md",
         "postDate": "2019-12-18",
-        "updateDate": "2019-12-04 07:20:27",
+        "updateDate": "2019-12-18 17:28:57",
         "description": "Linux: How it saved my old laptop. I this post I'm going to talk about my transition from using Windows for everything to using Linux for everything and how this impacted my decision to revive an old laptop that I thought was broken.",
         "isScheduled": false,
         "isPublished": true
@@ -628,5 +628,21 @@
         "description": "In this post, I'm showing you how you can proxy API calls to your server during Angular development and make the development process very painless.",
         "isScheduled": false,
         "isPublished": true
+    },
+    "87": {
+        "filename": "how-to-reclaim-your-privacy-on-the-internet.md",
+        "postDate": "2020-01-01",
+        "updateDate": "2020-01-01 11:24:51",
+        "description": "In this post I'm giving you four different steps you can take to reclaim your privacy on the internet. You can take all of these steps, but also just some of them. Any steps you take will be an improvement already.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "88": {
+        "filename": "guide-to-lightweight-linux-distributions.md",
+        "postDate": "2020-01-01",
+        "updateDate": "2020-01-01 11:34:02",
+        "description": "A guide to lightweight Linux distributions",
+        "isScheduled": false,
+        "isPublished": false
     }
 }

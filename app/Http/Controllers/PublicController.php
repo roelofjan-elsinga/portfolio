@@ -2,7 +2,6 @@
 
 namespace Main\Http\Controllers;
 
-use Carbon\Carbon;
 use ContentParser\ContentParser;
 use FlatFileCms\Article;
 use Illuminate\Http\RedirectResponse;
@@ -12,6 +11,8 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use Main\Http\Requests\ContactRequest;
+use Main\Mail\ContactMail;
 use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
@@ -231,5 +232,19 @@ class PublicController extends Controller
         return response($rss_feed, 200, [
             'Content-Type' => 'application/rss+xml',
         ]);
+    }
+
+    public function contact(ContactRequest $request)
+    {
+        Mail::to('roelofjanelsinga@gmail.com')
+            ->send(
+                new ContactMail(
+                    $request->get('name'),
+                    $request->get('email'),
+                    $request->get('message')
+                )
+            );
+
+        return redirect()->back()->with('contact_success', true);
     }
 }
