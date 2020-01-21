@@ -480,12 +480,12 @@
         "isPublished": true
     },
     "66": {
-        "filename": "when-optimization-in-way-of-progress.md",
-        "postDate": "2020-02-29",
-        "updateDate": "2019-11-20 22:55:29",
-        "description": "When is optimization getting in the way of progress",
+        "filename": "how-to-optimize-your-product-without-blocking-progress.md",
+        "postDate": "2020-01-08",
+        "updateDate": "2020-01-07 19:29:01",
+        "description": "In this post I go over how you can optimize your product without blocking progress along the way. A lot of people can get stuck on features that might be meaningless to the product. Through data you can prioritize features and improvements, which will guide your work towards a specific goal.",
         "isScheduled": false,
-        "isPublished": false
+        "isPublished": true
     },
     "67": {
         "filename": "open-source-contributions-september-2019.md",
@@ -639,9 +639,32 @@
     },
     "88": {
         "filename": "guide-to-lightweight-linux-distributions.md",
-        "postDate": "2020-01-01",
-        "updateDate": "2020-01-01 11:34:02",
+        "postDate": "2020-02-29",
+        "updateDate": "2020-01-05 14:53:38",
         "description": "A guide to lightweight Linux distributions",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "89": {
+        "filename": "linux-rolling-releases-versus-snapshot-releases.md",
+        "postDate": "2020-01-15",
+        "updateDate": "2020-01-15 16:34:51",
+        "description": "In this post I explain the differences between a rolling release and a snapshot release distro. This post is aimed at people that are just starting out with Linux of want to explore and make the switch to Linux.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "90": {
+        "filename": "linux-desktop-environments.md",
+        "postDate": "2020-01-22",
+        "updateDate": "2020-01-16 20:28:57",
+        "description": "Linux: Desktop environments",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "91": {
+        "filename": "guide-to-ubuntu-distros.md",
+        "postDate": "2020-01-29",
+        "description": "Guide to ubuntu flavors",
         "isScheduled": false,
         "isPublished": false
     }

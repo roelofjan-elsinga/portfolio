@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 01 Jan 2020 11:00:02 GMT</pubDate>
+              <pubDate>Wed, 15 Jan 2020 13:25:11 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -778,6 +778,19 @@ I've always been against building my own content management system (CMS). When a
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/screenshot-flat-file-cms-dashboard.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>
+Photo by Isaac Smith on Unsplash
+How to optimize your product without blocking progress
+When building a product it's often top priority to get a first version out of the door. When testing out an idea, getting a prototype in front of people is the most important part of the process. Without a produ[...] (...)</description>
+                    <title>How to optimize your product without blocking progress</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</guid>
+                    
+                    <pubDate>Wed, 08 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/drawn-graph.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
 Applying patches to a package to make progress with your application.
 Open source contributions (September 2019)
 Last month I've created a blog post mentioning my open-source contributions for august 2019. I found this was a great way to keep track of everything I've learned that month, so I've dec[...] (...)</description>
@@ -983,6 +996,18 @@ You get tracked on most websites, your information and behavior aren't yours to 
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/a-lego-character-protecting-itself-from-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Linux: Rolling releases vs Snapshot releases
+There are many, many Linux distros out there and it's both amazing and confusing! It's going hand in hand with the open source way of thinking: Don't like it? Fork it and improve it! That's exactly what the enormous amount of Linux distros stands for. Pe[...] (...)</description>
+                    <title>Linux: Rolling releases vs Snapshot releases</title>
+                    <link>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</link>
+                    <guid>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</guid>
+                    
+                    <pubDate>Wed, 15 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/linux-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>
