@@ -74,7 +74,7 @@
             @endforeach
         </div>
 
-        <a href="{{ route('articles.index') }}"
+        <a href="{{ route('articles') }}"
            class="text-xl font-bold pt-8 link link--underline inline-block">View more blog posts</a>
 
     </section>
