@@ -655,17 +655,34 @@
     },
     "90": {
         "filename": "linux-desktop-environments.md",
-        "postDate": "2020-01-22",
-        "updateDate": "2020-01-16 20:28:57",
+        "postDate": "2020-02-05",
+        "updateDate": "2020-01-29 09:05:30",
         "description": "Linux: Desktop environments",
         "isScheduled": false,
         "isPublished": false
     },
     "91": {
         "filename": "guide-to-ubuntu-distros.md",
-        "postDate": "2020-01-29",
+        "postDate": "2020-02-12",
+        "updateDate": "2020-01-29 09:05:40",
         "description": "Guide to ubuntu flavors",
         "isScheduled": false,
         "isPublished": false
+    },
+    "92": {
+        "filename": "the-impact-of-migrating-from-php-to-golang.md",
+        "postDate": "2020-01-22",
+        "updateDate": "2020-01-22 10:16:53",
+        "description": "Find out how I reduced the execution time of a script by 99%. In this post I go over the impact of migrating from PHP to Golang. I recently migrated a business process from PHP to Golang and it had more benefits than just a performance increase.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "93": {
+        "filename": "what-i-learned-from-publishing-my-first-golang-package.md",
+        "postDate": "2020-01-29",
+        "updateDate": "2020-01-29 10:04:21",
+        "description": "In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal.",
+        "isScheduled": false,
+        "isPublished": true
     }
 }

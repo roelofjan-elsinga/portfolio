@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 15 Jan 2020 13:25:11 GMT</pubDate>
+              <pubDate>Wed, 29 Jan 2020 11:00:02 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -1008,6 +1008,32 @@ There are many, many Linux distros out there and it's both amazing and confusing
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/linux-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+PHP logo by Colin Viebrock (CC BY-SA 4.0)
+The impact of migrating from PHP to Golang
+Recently I migrated a large business process from PHP to Golang for several reasons. You might not expect this, but I didn't make this choice without good reason. I didn't do the switch to learn the language. Befor[...] (...)</description>
+                    <title>The impact of migrating from PHP to Golang</title>
+                    <link>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</link>
+                    <guid>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</guid>
+                    
+                    <pubDate>Wed, 22 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/php-plus-golang.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Box icon made by Freepik from www.flaticon.com
+What I learned from publishing my first Golang package
+Earlier this week (January 27th, 2020) I published my first public Golang package. I don't know if it's any good and if it's even structured as it should be. Nonetheless, the package has already he[...] (...)</description>
+                    <title>What I learned from publishing my first Golang package</title>
+                    <link>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</link>
+                    <guid>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</guid>
+                    
+                    <pubDate>Wed, 29 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-packages.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>
