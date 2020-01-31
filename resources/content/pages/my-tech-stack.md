@@ -2,27 +2,32 @@
 I've been a web developer for several years and over the years I've worked with quite a few different technologies. Some technologies I've used because they were essential to the projects I've worked on and others were just part of a fun exploratory project to learn new skills. I'll describe them on this page in levels of confidence.
 
 ## Very comfortable using:
-- PHP
+- PHP (+migrating projects to newer versions)
 - Laravel (as a specific framework for PHP)
 - Golang (+testing)
 - JavaScript
 - TypeScript
 - Angular
 - AngularJS
+- Amazon EC2
+- Amazon RDS
+- DigitalOcean Droplets
 - ReactJS
 - Redis
 - Apache 2
 - Nginx
 - Docker
+- Docker Swarm
 - Linux based systems (Ubuntu, CentOS, Fedora, Arch)
-- CI/CD
+- CI/CD (Travis CI, CircleCI)
 - Apache Solr 6.0+
 - PHPUnit 6+
 - GitHub Pages
 - Netlify
+- Jekyll
 
 ## Happy to learn more about:
-- AWS infrastructure, I've worked with it but it's still magic sometimes.
-- ElasticSearch, I've focused on Apache Solr, but see the potential in this technology.
-- Varnish, I know how to use it in production, but there is so much left to learn.
-- Unit testing in JavaScript projects, I've used it but want to learn how to do it much more in-depth
+- AWS infrastructure: I've worked with it but there is so much more.
+- ElasticSearch: I've focused on Apache Solr, but see the potential in this technology.
+- Varnish: I know how to use it in production, but there is so much left to learn.
+- Unit testing in JavaScript projects: I've know how to do it, just not the best practices yet.
