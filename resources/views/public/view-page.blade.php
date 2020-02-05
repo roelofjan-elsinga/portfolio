@@ -10,7 +10,7 @@
 
     <div class="articles-page">
         <main class="view-article paragraph-spacing">
-            {!! $page->content() !!}
+            {!! $page->body() !!}
         </main>
     </div>
 

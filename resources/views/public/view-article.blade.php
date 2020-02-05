@@ -13,9 +13,9 @@
 
             <article>
 
-                {!! $article->content !!}
+                {!! $article->body() !!}
 
-                <span class="text-sm text-grey-dark">Posted on: {!! $article->postDate !!}</span>
+                <span class="text-sm text-grey-dark">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
 
             </article>
 
@@ -30,9 +30,9 @@
         "@type": "WebPage",
         "@id": "https://google.com/article"
       },
-      "dateModified": "{{$article->rawUpdatedDate->toIso8601String()}}",
-      "datePublished": "{{$article->rawPostDate->toIso8601String()}}",
-      "headline": "{{$article->title}}",
+      "dateModified": "{{$article->getUpdateDate()->toIso8601String()}}",
+      "datePublished": "{{$article->getPostDate()->toIso8601String()}}",
+      "headline": "{{$article->title()}}",
       "author": {
         "@type": "Person",
         "name": "Roelof Jan Elsinga"
@@ -46,7 +46,7 @@
         }
       },
       "image": [
-        "{{url($article->image)}}"
+        "{{url($article->image())}}"
       ],
       "description": "{{$page->description}}"
     }
@@ -71,7 +71,7 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "{{$article->title}}",
+        "name": "{{$article->title()}}",
         "item": "{{Request::url()}}"
       }]
     }

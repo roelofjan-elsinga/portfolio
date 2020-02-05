@@ -3,7 +3,7 @@
 namespace Main\Http\Controllers;
 
 use ContentParser\ContentParser;
-use FlatFileCms\Article;
+use FlatFileCms\Models\Article;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -24,7 +24,7 @@ class PublicController extends Controller
             'projects'   => $this->getWorkPreviews(4, 'content/open_source/previews.yml'),
             'blog_posts' => Article::published()
                 ->sortByDesc(function (Article $article) {
-                    return $article->rawPostDate();
+                    return $article->getPostDate();
                 })
                 ->take(2),
         ]);
@@ -135,7 +135,7 @@ class PublicController extends Controller
 
         $articles = Article::published()
             ->sortByDesc(function (Article $article) {
-                return $article->rawPostDate();
+                return $article->getPostDate();
             })
             ->values();
 
@@ -167,22 +167,22 @@ class PublicController extends Controller
      */
     public function viewArticle(string $slug)
     {
-        $article = Article::forSlug($slug);
+        $article = Article::find($slug);
 
-        if (is_null($article)) {
+        if (!$article->exists()) {
             return abort(404);
         }
 
         return view('public.view-article', [
             'article' => $article,
             'page'    => $this->arrayToClass([
-                'title'       => "{$article->title} - Roelof Jan Elsinga",
+                'title'       => "{$article->title()} - Roelof Jan Elsinga",
                 'author'      => 'Roelof Jan Elsinga',
-                'description' => substr(strip_tags($article->description), 0, 160),
-                'image_large' => url($article->image),
-                'image_small' => url($article->image),
-                'keywords'    => str_replace(' ', ',', $article->title),
-                'canonical'   => $article->canonicalLink ?? null,
+                'description' => substr(strip_tags($article->description()), 0, 160),
+                'image_large' => url($article->image()),
+                'image_small' => url($article->image()),
+                'keywords'    => str_replace(' ', ',', $article->title()),
+                'canonical'   => $article->canonicalLink(),
             ]),
             'is_article' => true,
         ]);
