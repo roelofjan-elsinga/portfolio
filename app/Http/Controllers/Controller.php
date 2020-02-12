@@ -2,6 +2,7 @@
 
 namespace Main\Http\Controllers;
 
+use FlatFileCms\Models\MetaTag;
 use FlatFileCms\TagsParser;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -13,11 +14,8 @@ class Controller extends BaseController
 {
     use DispatchesJobs, ValidatesRequests, AuthorizesRequests;
 
-    protected $tagsParser;
-
     public function __construct()
     {
-        $this->tagsParser = new TagsParser();
-        View::share('page', $this->tagsParser->getTagsForPageName('home'));
+        View::share('page', MetaTag::find('home'));
     }
 }

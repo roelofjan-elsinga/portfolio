@@ -4,6 +4,7 @@ namespace Main\Http\Controllers;
 
 use ContentParser\ContentParser;
 use FlatFileCms\Models\Article;
+use FlatFileCms\Models\MetaTag;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -22,12 +23,12 @@ class PublicController extends Controller
     public function index()
     {
         return view('public.index', [
-            'works'      => Work::all()
+            'works' => Work::all()
                 ->sortByDesc(function (Work $work) {
                     return $work->publish_date;
                 })
                 ->take(2),
-            'projects'   => OpenSource::all()
+            'projects' => OpenSource::all()
                 ->filter(function (OpenSource $project) {
                     return $project->featured;
                 })
@@ -44,46 +45,19 @@ class PublicController extends Controller
     }
 
     /**
-     * Parse the content from Markdown files.
-     *
-     * @param string $path
-     * @return array
-     */
-    private function getContent(string $path): array
-    {
-        $parser = new \Parsedown();
-
-        $path = resource_path($path);
-
-        $strings = [];
-
-        if (File::isFile($path)) {
-            $file = File::get($path);
-            $strings[] = [
-                'filename' => $path,
-                'text'     => $parser->parse($file),
-            ];
-        }
-
-        $strings = array_reverse($strings);
-
-        return $strings;
-    }
-
-    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws \Exception
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function work()
     {
         return view('public.work', [
             'content' => ContentParser::forFile(resource_path('content/blocks/work-page.md'))->parse(),
-            'works'   => Work::all()
+            'works' => Work::all()
                 ->sortByDesc(function (Work $work) {
                     return $work->publish_date;
                 }),
-            'page'    => $this->tagsParser->getTagsForPageName('work'),
+            'page' => MetaTag::find('work'),
         ]);
     }
 
@@ -94,7 +68,7 @@ class PublicController extends Controller
                 ->sortByDesc(function (OpenSource $project) {
                     return $project->publish_date;
                 }),
-            'page'     => $this->tagsParser->getTagsForPageName('open_source'),
+            'page' => MetaTag::find('open_source'),
         ]);
     }
 
@@ -103,7 +77,7 @@ class PublicController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|RedirectResponse|\Illuminate\View\View
      */
-    public function workDetail(string $slug)
+    public function showWork(string $slug)
     {
         $work = Work::find($slug);
 
@@ -113,14 +87,14 @@ class PublicController extends Controller
 
         return view('public.workdetail', [
             'title' => ucfirst(str_replace('-', ' ', $slug)),
-            'work'  => $work->body(),
-            'page'  => $this->arrayToClass([
-                'title'       => $work->title,
-                'author'      => 'Roelof Jan Elsinga',
+            'work' => $work->body(),
+            'page' => $this->arrayToClass([
+                'title' => $work->title,
+                'author' => 'Roelof Jan Elsinga',
                 'description' => $work->description,
                 'image_large' => url($work->image()),
                 'image_small' => url($work->image()),
-                'keywords'    => str_replace(' ', ',', $work->title)
+                'keywords' => str_replace(' ', ',', $work->title)
             ]),
         ]);
     }
@@ -128,9 +102,9 @@ class PublicController extends Controller
     /**
      * View the articles page.
      *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws \Exception
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function articles()
     {
@@ -151,13 +125,13 @@ class PublicController extends Controller
         ]);
 
         return view('public.articles', [
-            'articles'        => $paginator,
+            'articles' => $paginator,
             'pagination_tags' => [
                 'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
                 'next' => $current_page < $paginator->lastPage() ? $paginator->url($current_page + 1) : null,
             ],
             'view_route_name' => 'articles.view',
-            'page'            => $this->tagsParser->getTagsForPageName('articles'),
+            'page' => MetaTag::find('articles'),
         ]);
     }
 
@@ -168,7 +142,7 @@ class PublicController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function viewArticle(string $slug)
+    public function showArticle(string $slug)
     {
         $article = Article::find($slug);
 
@@ -178,14 +152,14 @@ class PublicController extends Controller
 
         return view('public.view-article', [
             'article' => $article,
-            'page'    => $this->arrayToClass([
-                'title'       => $article->title(),
-                'author'      => 'Roelof Jan Elsinga',
+            'page' => $this->arrayToClass([
+                'title' => $article->title(),
+                'author' => 'Roelof Jan Elsinga',
                 'description' => substr(strip_tags($article->description()), 0, 160),
                 'image_large' => url($article->image()),
                 'image_small' => url($article->image()),
-                'keywords'    => str_replace(' ', ',', $article->title()),
-                'canonical'   => $article->canonicalLink(),
+                'keywords' => str_replace(' ', ',', $article->title()),
+                'canonical' => $article->canonicalLink(),
             ]),
             'is_article' => true,
         ]);
