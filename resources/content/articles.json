@@ -640,7 +640,7 @@
     "88": {
         "filename": "guide-to-lightweight-linux-distributions.md",
         "postDate": "2020-02-29",
-        "updateDate": "2020-01-05 14:53:38",
+        "updateDate": "2020-02-05 08:52:14",
         "description": "A guide to lightweight Linux distributions",
         "isScheduled": false,
         "isPublished": false
@@ -655,16 +655,16 @@
     },
     "90": {
         "filename": "linux-desktop-environments.md",
-        "postDate": "2020-02-05",
-        "updateDate": "2020-01-29 09:05:30",
+        "postDate": "2020-02-19",
+        "updateDate": "2020-02-05 10:36:41",
         "description": "Linux: Desktop environments",
         "isScheduled": false,
         "isPublished": false
     },
     "91": {
         "filename": "guide-to-ubuntu-distros.md",
-        "postDate": "2020-02-12",
-        "updateDate": "2020-01-29 09:05:40",
+        "postDate": "2020-02-29",
+        "updateDate": "2020-02-12 11:06:55",
         "description": "Guide to ubuntu flavors",
         "isScheduled": false,
         "isPublished": false
@@ -682,6 +682,21 @@
         "postDate": "2020-01-29",
         "updateDate": "2020-01-29 10:04:21",
         "description": "In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "94": {
+        "filename": "aloia-cms-the-road-to-version-1-0.md",
+        "postDate": "2020-02-05",
+        "updateDate": "2020-02-06 08:44:36",
+        "description": "In this post, I reflect on some of the recent changes I've planned and implemented into Aloia CMS. The release of version 1.0 is close and is all about simplying workflows and getting out of the way.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "95": {
+        "filename": "building-my-personal-cloud-after-4-years.md",
+        "postDate": "2020-02-12",
+        "description": "In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine.",
         "isScheduled": false,
         "isPublished": true
     }
