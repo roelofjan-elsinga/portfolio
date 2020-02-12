@@ -2,7 +2,6 @@
 
 namespace Main\Http\Controllers;
 
-use FlatFileCms\Page;
 use FlatFileCms\TagsParser;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

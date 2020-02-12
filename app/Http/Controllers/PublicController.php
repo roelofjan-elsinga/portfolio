@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Main\Http\Requests\ContactRequest;
 use Main\Mail\ContactMail;
+use Main\Models\OpenSource;
+use Main\Models\Work;
 use Symfony\Component\Yaml\Yaml;
 
 class PublicController extends Controller
@@ -20,35 +22,25 @@ class PublicController extends Controller
     public function index()
     {
         return view('public.index', [
-            'works'      => $this->getWorkPreviews(2),
-            'projects'   => $this->getWorkPreviews(4, 'content/open_source/previews.yml'),
+            'works'      => Work::all()
+                ->sortByDesc(function (Work $work) {
+                    return $work->publish_date;
+                })
+                ->take(2),
+            'projects'   => OpenSource::all()
+                ->filter(function (OpenSource $project) {
+                    return $project->featured;
+                })
+                ->sortByDesc(function (OpenSource $project) {
+                    return $project->publish_date;
+                })
+                ->take(4),
             'blog_posts' => Article::published()
                 ->sortByDesc(function (Article $article) {
                     return $article->getPostDate();
                 })
                 ->take(2),
         ]);
-    }
-
-    /**
-     * Parse the previews.yml file to retrieve work preview data.
-     *
-     * @param int    $amount
-     * @param string $preview_path
-     *
-     * @return Collection
-     */
-    private function getWorkPreviews(int $amount = 0, string $preview_path = 'content/work/previews.yml'): Collection
-    {
-        $work = Yaml::parseFile(resource_path($preview_path));
-
-        $previews = array_reverse($work['previews']);
-
-        if ($amount > 0) {
-            return Collection::make(array_slice($previews, 0, $amount));
-        }
-
-        return Collection::make($previews);
     }
 
     /**
@@ -87,7 +79,10 @@ class PublicController extends Controller
     {
         return view('public.work', [
             'content' => ContentParser::forFile(resource_path('content/blocks/work-page.md'))->parse(),
-            'works'   => $this->getWorkPreviews(),
+            'works'   => Work::all()
+                ->sortByDesc(function (Work $work) {
+                    return $work->publish_date;
+                }),
             'page'    => $this->tagsParser->getTagsForPageName('work'),
         ]);
     }
@@ -95,7 +90,10 @@ class PublicController extends Controller
     public function open_source()
     {
         return view('public.open_source', [
-            'projects' => $this->getWorkPreviews(0, 'content/open_source/previews.yml'),
+            'projects' => OpenSource::all()
+                ->sortByDesc(function (OpenSource $project) {
+                    return $project->publish_date;
+                }),
             'page'     => $this->tagsParser->getTagsForPageName('open_source'),
         ]);
     }
@@ -107,18 +105,23 @@ class PublicController extends Controller
      */
     public function workDetail(string $slug)
     {
-        $contents = $this->getContent("content/work/{$slug}.md");
+        $work = Work::find($slug);
 
-        if (count($contents) === 0) {
+        if (!$work->exists()) {
             return abort(404);
         }
 
-        $content = $contents[0];
-
         return view('public.workdetail', [
             'title' => ucfirst(str_replace('-', ' ', $slug)),
-            'work'  => $content['text'],
-            'page'  => $this->tagsParser->getTagsForPageName('work'),
+            'work'  => $work->body(),
+            'page'  => $this->arrayToClass([
+                'title'       => $work->title,
+                'author'      => 'Roelof Jan Elsinga',
+                'description' => $work->description,
+                'image_large' => url($work->image()),
+                'image_small' => url($work->image()),
+                'keywords'    => str_replace(' ', ',', $work->title)
+            ]),
         ]);
     }
 
@@ -176,7 +179,7 @@ class PublicController extends Controller
         return view('public.view-article', [
             'article' => $article,
             'page'    => $this->arrayToClass([
-                'title'       => "{$article->title()} - Roelof Jan Elsinga",
+                'title'       => $article->title(),
                 'author'      => 'Roelof Jan Elsinga',
                 'description' => substr(strip_tags($article->description()), 0, 160),
                 'image_large' => url($article->image()),

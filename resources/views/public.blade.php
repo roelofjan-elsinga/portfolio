@@ -31,7 +31,7 @@
                 <link rel="canonical" href="{{$page->canonicalLink()}}" />
             @endif
 
-            <title>{{ $page->title ?? $page->title() }}</title>
+            <title>{{ $page->title ?? $page->title() }} - Roelof Jan Elsinga</title>
 		@show
 
         <link rel="dns-prefetch" href="https://www.google-analytics.com">

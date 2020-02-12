@@ -19,13 +19,12 @@
         "ext-curl": "*",
         "ext-zip": "*",
         "roelofjan-elsinga/content-to-html-parser": "~0.1",
-        "roelofjan-elsinga/flat-file-cms-gui": "~0.11",
-        "roelofjan-elsinga/flat-file-cms": "~0.11",
-        "roelofjan-elsinga/flat-file-cms-publish": "~0.2",
+        "roelofjan-elsinga/flat-file-cms": "1.0.0-alpha.1 as 0.17.0",
         "brainmaestro/composer-git-hooks": "^2.8",
         "nesbot/carbon": "2.25.1",
         "symfony/translation": "4.3.5",
-        "guzzlehttp/guzzle": "^6.5"
+        "guzzlehttp/guzzle": "^6.5",
+        "roelofjan-elsinga/flat-file-cms-gui": "^0.13.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
