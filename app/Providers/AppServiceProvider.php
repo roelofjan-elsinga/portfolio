@@ -2,7 +2,7 @@
 
 namespace Main\Providers;
 
-use FlatFileCms\Publish\Console\SitemapCreator;
+use AloiaCms\Publish\Console\SitemapCreator;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 

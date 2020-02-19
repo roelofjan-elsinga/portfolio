@@ -4,6 +4,7 @@
 namespace Tests;
 
 use Illuminate\Support\Facades\Config;
+use org\bovigo\vfs\vfsStream;
 
 class SitemapCreatorTest extends TestCase
 {
@@ -11,20 +12,15 @@ class SitemapCreatorTest extends TestCase
     {
         parent::setUp();
 
-        if (!is_dir(__DIR__.'/test')) {
-            mkdir(__DIR__.'/test');
+        $path = vfsStream::url('root/content/test');
+
+        if (!is_dir($path)) {
+            mkdir($path);
         }
 
         Config::set('flatfilecms-publish.site_url', 'http://localhost');
-        Config::set('flatfilecms-publish.sitemap_file_path', __DIR__.'/test/sitemap-original.xml');
-        Config::set('flatfilecms-publish.sitemap_target_file_path', __DIR__.'/test/sitemap.xml');
-    }
-
-    public function tearDown(): void
-    {
-        parent::tearDown();
-
-        $this->recursively_remove_directory(__DIR__.'/test');
+        Config::set('flatfilecms-publish.sitemap_file_path', $path . '/sitemap-original.xml');
+        Config::set('flatfilecms-publish.sitemap_target_file_path', $path . '/sitemap.xml');
     }
 
     public function test_portfolio_items_are_added_to_sitemap()

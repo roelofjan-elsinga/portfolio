@@ -2,8 +2,8 @@
 
 namespace Main\Http\Controllers;
 
-use FlatFileCms\Models\MetaTag;
-use FlatFileCms\TagsParser;
+use AloiaCms\Models\MetaTag;
+use AloiaCms\TagsParser;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;

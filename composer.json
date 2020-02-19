@@ -24,7 +24,7 @@
         "nesbot/carbon": "2.25.1",
         "symfony/translation": "4.3.5",
         "guzzlehttp/guzzle": "^6.5",
-        "roelofjan-elsinga/flat-file-cms-gui": "^0.13.0"
+        "roelofjan-elsinga/aloia-cms": "^1.0",
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

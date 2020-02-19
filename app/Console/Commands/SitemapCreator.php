@@ -2,10 +2,10 @@
 
 namespace Main\Console\Commands;
 
+use Main\Models\Work;
 use SitemapGenerator\SitemapGenerator;
-use Symfony\Component\Yaml\Yaml;
 
-class SitemapCreator extends \FlatFileCms\Publish\Console\SitemapCreator
+class SitemapCreator extends \AloiaCms\Publish\Console\SitemapCreator
 {
     /**
      * Overwrite the base implementation and add additional URL's.
@@ -28,11 +28,9 @@ class SitemapCreator extends \FlatFileCms\Publish\Console\SitemapCreator
      */
     private function getPortfolioUrls(): array
     {
-        $projects = Yaml::parseFile(resource_path('content/work/previews.yml'));
-
-        return collect($projects['previews'])
-            ->map(function ($preview) {
-                return $preview['url'];
+        return Work::all()
+            ->map(function (Work $work) {
+                return $work->url;
             })
             ->toArray();
     }

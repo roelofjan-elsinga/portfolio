@@ -3,8 +3,8 @@
 namespace Main\Http\Controllers;
 
 use ContentParser\ContentParser;
-use FlatFileCms\Models\Article;
-use FlatFileCms\Models\MetaTag;
+use AloiaCms\Models\Article;
+use AloiaCms\Models\MetaTag;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;

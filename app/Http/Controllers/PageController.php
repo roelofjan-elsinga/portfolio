@@ -2,7 +2,7 @@
 
 namespace Main\Http\Controllers;
 
-use FlatFileCms\Models\Page;
+use AloiaCms\Models\Page;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 

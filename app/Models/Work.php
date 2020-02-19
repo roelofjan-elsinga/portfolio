@@ -2,7 +2,7 @@
 
 namespace Main\Models;
 
-use FlatFileCms\Models\Model;
+use AloiaCms\Models\Model;
 
 class Work extends Model
 {
