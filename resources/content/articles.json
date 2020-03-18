@@ -640,7 +640,7 @@
     "88": {
         "filename": "guide-to-lightweight-linux-distributions.md",
         "postDate": "2020-02-29",
-        "updateDate": "2020-01-05 14:53:38",
+        "updateDate": "2020-02-05 08:52:14",
         "description": "A guide to lightweight Linux distributions",
         "isScheduled": false,
         "isPublished": false
@@ -655,16 +655,16 @@
     },
     "90": {
         "filename": "linux-desktop-environments.md",
-        "postDate": "2020-02-05",
-        "updateDate": "2020-01-29 09:05:30",
+        "postDate": "2020-03-25",
+        "updateDate": "2020-02-21 09:20:08",
         "description": "Linux: Desktop environments",
         "isScheduled": false,
         "isPublished": false
     },
     "91": {
         "filename": "guide-to-ubuntu-distros.md",
-        "postDate": "2020-02-12",
-        "updateDate": "2020-01-29 09:05:40",
+        "postDate": "2020-02-29",
+        "updateDate": "2020-02-12 11:06:55",
         "description": "Guide to ubuntu flavors",
         "isScheduled": false,
         "isPublished": false
@@ -682,6 +682,61 @@
         "postDate": "2020-01-29",
         "updateDate": "2020-01-29 10:04:21",
         "description": "In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "94": {
+        "filename": "aloia-cms-the-road-to-version-1-0.md",
+        "postDate": "2020-02-05",
+        "updateDate": "2020-02-06 08:44:36",
+        "description": "In this post, I reflect on some of the recent changes I've planned and implemented into Aloia CMS. The release of version 1.0 is close and is all about simplying workflows and getting out of the way.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "95": {
+        "filename": "building-my-personal-cloud-after-4-years.md",
+        "postDate": "2020-02-12",
+        "updateDate": "2020-02-13 12:34:32",
+        "description": "In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "96": {
+        "filename": "how-to-setup-personal-cloud-raspberrypi-nextcloud.md",
+        "postDate": "2020-02-19",
+        "updateDate": "2020-02-21 14:21:49",
+        "description": "In this post, I go over the steps you have to take to set up an internet-facing personal cloud using nothing more than a Raspberry Pi, Nextcloud, and an external hard drive.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "97": {
+        "filename": "why-documentation-is-more-important-than-code.md",
+        "postDate": "2020-02-26",
+        "updateDate": "2020-02-27 17:35:49",
+        "description": "In this post I go over some point why documentation is (almost) more important than code for any application. If you want new people to get up to speed quickly and have them contribute quicker, you might want to document the macro, meso, and micro aspects of your application.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "98": {
+        "filename": "my-favorite-feature-in-peppermint-os.md",
+        "postDate": "2020-03-04",
+        "description": "Peppermint OS is a lightweight and flexible Linux distribution. I've installed it on one of my laptops to replace Ubuntu to see what it's all about. In this post, I go over one of my favorite features in Peppermint OS that you can use right after starting it up for the first time.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "99": {
+        "filename": "how-added-elasticsearch-to-laravel-minimal-hardware.md",
+        "postDate": "2020-03-11",
+        "updateDate": "2020-03-11 16:33:17",
+        "description": "In this post, I go over the steps I have taken to add Elasticsearch to an existing Laravel application on very minimal hardware resources. I also discuss the hurdles I had to overcome to achieve this.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "100": {
+        "filename": "how-to-setup-gpg-signing-keys-in-github.md",
+        "postDate": "2020-03-18",
+        "updateDate": "2020-03-18 14:35:22",
+        "description": "If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system.",
         "isScheduled": false,
         "isPublished": true
     }

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-01-29T12:00:02+01:00</updated>
+              <updated>2020-03-18T14:35:22+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -3869,6 +3869,330 @@ Box icon made by Freepik from www.flaticon.com
 What I learned from publishing my first Golang package
 Earlier this week (January 27th, 2020) I published my first public Golang package. I don't know if it's any good and if it's even structured as it should be. Nonetheless, the package has already he[...]</summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-packages.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Aloia CMS: The road to version 1.0</title>
+                    <link href="https://roelofjanelsinga.com/articles/aloia-cms-the-road-to-version-1-0"/>
+                    <id>https://roelofjanelsinga.com/articles/aloia-cms-the-road-to-version-1-0</id>
+                    <updated>2020-02-06T08:44:36+01:00</updated>
+                    <published>2020-02-05T12:00:00+01:00</published>
+                    <content>
+Aloia CMS: The road to version 1.0
+If you've been reading my blog posts for a longer time, you might remember that I'm working on a CMS, something I never thought I would do. In this post, I will go over my reasons why I'm building my own CMS again because they've changed a little bit since the last time I wrote about it. This post is a little different than my other posts as I usually pick a topic and do a deep-dive. This is more of an announcement and reflection in one in the past few weeks while working on Aloia CMS.
+I've published a short announcement on the Aloia CMS website where I explain that the first stable version is not far away. You can read about &quot;The road to version 1.0&quot; on the Aloia CMS website. This post is not about the internal changes of the CMS, because frankly, they're not all worked out yet. Over the past few weeks, I've worked on the project quite a lot because there were things that annoyed me about the internal structure and expandability of the CMS.
+Scratch your own itch
+Over the past few weeks, I've worked at making the CMS less of a headache for myself. I claim the project is all about developer experience and relieving the headache of dealing with content when working with a CMS. If you never look at the source code, the CMS is quite nice to use, until you want to update the content. Retrieving data is simple and straightforward. This all comes from the fact that the CMS was designed to convert Markdown files to PHP classes and HTML code. That part of the project received a lot of attention because I've been building websites on top of the CMS. The quicker I can create and maintain websites the better. Recently I've been looking at adding features to some of the websites that run on the CMS and came to the conclusion that it's going to cause a lot of headaches. 
+The included content types (Page, Article, Content block and Meta tags) dictated everything in the CMS and were wired throughout the code. This allowed me to very quickly create websites that dealt with these content types. On the other hand, adding new content types meant I had to add more code to the CMS itself. There was no way to extend the base functionality from the CMS and create your own implementation in your projects. This was never a problem because I didn't need to do that. But now, with the planned features on some of the websites, I need a way to extend the base system and create new content types in the systems that use the CMS. This is where the first stable version comes in: get out of the way and allow the developer to extend the CMS if needed. 
+Streamlining internal processes
+Another reason to go for a major version change is to be able to apply some breaking changes. Currently, you need at least 2 files to be able to display an article (like this one): a config file, and a markdown file with the content. This was initially done because of two reasons: 1. keeping content and metadata separate and 2. I didn't know front matter existed. It wasn't until I started to work with Jekyll for the Aloia CMS website that I found out what front matter was and how powerful it was. This helped me realize that keeping content and metadata separate was a terrible idea. The metadata is about the content and only that content. If you were to see it as a database relationship it's a 1 to 1 relationship. There really isn't a point in keeping it separate. Being able to combine these two into a single file allowed me to create a very extensible system. All content types now have exactly the same structure: front matter and content in a single file. This means I can create a base layer that parses the front matter and keeps it in memory as attributes and keep the content separately.
+The included content types are now all extending the base layer, which means adding new content types is as simple as adding a new class to your system and pointing it to a folder. From there you can interact with the content types however you want: retrieving and updating/saving is taken care of for you. The fact that everything extends the base class makes maintenance much simpler: a change in one part will be applied to everything.
+An updated version of &quot;Why I'm building my own CMS&quot;
+In an earlier post &quot;Why I built my own CMS&quot; I described why I built my own CMS and why I never expected I would do that (again). Most developers, including myself, find building a CMS very tedious because it's a boring task since it's often a lot of copy/paste work. I've now changed my mind a little bit, as most of the copy/paste work is either done or isn't needed for this project. Since my CMS doesn't come with a user interface I don't really have to do a lot of copy/paste. When starting this project, when it wasn't a standalone CMS yet, I never intended to build a full-blown CMS, so I never had that negative mindset when developing the project. Now that all content has the same format, I let the code work for me and not the other way around. 
+I realized when working on these recent changes and getting ready for the 1.x release, that I'm creating a product that works perfectly for my workflow. Any time I can do something to improve my workflow and get on with my day, I'm enthusiastic about making the change. That's also one of the reasons why I work on Linux 95% of the time: it does what I need it to and doesn't get in my way. The CMS is built to be painless and take away the burden of managing content, so if I can help myself and others achieve that goal I'm happy to do it. 
+Conclusion
+I've been working on making my CMS work for the developer, rather than the other way around. I've made a lot of changes to allow the developer to shape the CMS around his or her workflow and be easy to extend and interact with. My primary goal for the CMS is to make managing content a breeze and to just get out of the way. The content is the most important part of the CMS, not the bells and whistles. If you want feature-rich content management systems, there are plenty of them out there and I'm happy to point you to some of them. Aloia CMS is for you if you want a lean content management system that integrates into your Laravel project, manages your content, can be extended with your own features, and just doesn't bother you.</content>
+                    <summary>
+Aloia CMS: The road to version 1.0
+If you've been reading my blog posts for a longer time, you might remember that I'm working on a CMS, something I never thought I would do. In this post, I will go over my reasons why I'm building my own CMS again because they've changed a little bit since the las[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/aloia-cms-version-1.0.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Building my personal cloud after 4 years</title>
+                    <link href="https://roelofjanelsinga.com/articles/building-my-personal-cloud-after-4-years"/>
+                    <id>https://roelofjanelsinga.com/articles/building-my-personal-cloud-after-4-years</id>
+                    <updated>2020-02-13T12:34:32+01:00</updated>
+                    <published>2020-02-12T12:00:00+01:00</published>
+                    <content>
+Building my personal cloud after 4 years
+About 4 years ago I wrote my very first blog post &quot;Researching home servers&quot;. In that post I talked about my Raspberry Pi 2 and using FreeNas to accomplish my goals of building my own file server at home and access it from anywhere. Well, it has finally happened and I didn't use FreeNas to accomplish this. 
+The Raspberry Pi
+In order for a Raspberry Pi to work in this setup, I needed the latest version, the Raspberry Pi 4 4GB. This new version of the Raspberry Pi has USB 3.0 and built-in Wi-Fi. This makes it the ideal machine to run all the time, as it doesn't consume a lot of energy, but still be powerful enough to deal with multiple reads and writes at the same time. I specifically looked for a way to use Wi-Fi instead of ethernet to connect the Raspberry Pi to the network. This might be a controversial choice because a lot of the time you should use a cable to get the best internet speeds. I don't like to mess around with cables and the wireless connection is just as fast as the wired connection for my devices. The fewer cables the better in this case.
+An 8TB external hard drive
+The micro SD card on the Raspberry Pi is only 16GB and that's obviously not enough to be able to store all of my data from my machines. So I went for a future proof hard drive that won't be full for at least a few years. The external hard drive connects to the Pi through USB 3.0 and is mounted into the Partition table under &quot;/etc/fstab&quot;. This helps with the reliability of the availability of the hard drive. By mounting it in the filesystem it could be unmounted at any point and you wouldn't be able to store any data in it anymore. Actually adding the hard drive as a partition ensures it's available where you say it should be available unless something goes wrong that is.
+The software to connect it all
+To connect the external hard drive to the Pi and make it available in the network I use Nextcloud. This is meant as a local Dropbox-like environment. So no FreeNas like I was initially thinking of using. Unlike FreeNas where you can create a Samba share and map this as a network drive in your operating system, Nextcloud works through an app or through the browser. This is where you can use it just like you would Google Drive and Dropbox. I chose this solution because I wanted something that took the least effort. I had tried OpenMediaVault as well, but this disabled the network capabilities on the Raspberry Pi and I had to reinstall Raspbian. 
+Another reason I went for Nextcloud is the fact that you can install the software through Snap packages, which means I'm no longer bound to a specific Linux distribution. Initially, I tried to run Ubuntu Mate and Ubuntu server on the Raspberry Pi 4 but this didn't go as well as I expected. I went with Raspbian because it's lightweight and developed by the Raspberry Pi team themselves, which means it has to work with all models. 
+The fact that I can now run my personal cloud on a Linux machine, as opposed to FreeNas which is FreeBSD based, means that I'm very comfortable tweaking and installing things. If something goes wrong, I know how to fix it. I never took this into account when I wrote the other post 4 years ago.
+Exposing it to the internet
+Exposing this set-up to the internet is something I'm not looking forward to and that's why I haven't done that yet. I want to research how to expose something from my home network to the internet a bit more first. I want to be sure that I've at least taken basic security measures to make sure my data and network are safe. So if you have any tips, besides using SSL because that's obvious, I'm very interested to hear what your solutions are.
+Conclusion
+This whole experiment was very nostalgic because I went through a lot of the things I went through 4 years ago. And the fact that this post relates to the very first blog post I've ever written was surprising. I long thought that post would be a dead-end, but as it turns out it was just a very long and slow journey. In the end, I ended up with a Raspberry Pi 4 4GB with an 8TB external hard drive running Nextcloud on my home network. I can now move all of my data to that disk and keep the important data as a second backup on a separate external hard drive. This all relates to the saying that if you have the data once, you have none of it. So far I haven't exposed this set-up to the internet yet, because I want to make sure I'm being safe with it before exposing myself to all kinds of malicious traffic.</content>
+                    <summary>
+Building my personal cloud after 4 years
+About 4 years ago I wrote my very first blog post &quot;Researching home servers&quot;. In that post I talked about my Raspberry Pi 2 and using FreeNas to accomplish my goals of building my own file server at home and access it from anywhere. Well, it has fi[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>How to set up a personal cloud using a Raspberry Pi and Nextcloud</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</id>
+                    <updated>2020-02-21T14:21:49+01:00</updated>
+                    <published>2020-02-19T12:00:00+01:00</published>
+                    <content>
+How to set up a personal cloud using a Raspberry Pi and Nextcloud
+Setting up your personal cloud has never been easier than now and it allows you to stop relying on big cloud providers like Google and Dropbox. In this post I will go over the following aspects of this set-up:
+
+The requirements before we can get started
+Installing the required software on your Raspberry Pi
+Plugging in your external hard drive
+Mount your hard drive in the file system
+Enabling the &quot;External storages&quot; plugin in Nextcloud
+Exposing your Nextcloud installation to the internet
+
+The requirements before we can get started
+
+Raspberry Pi (3 or 4, but preferably 4) with power cable
+Micro SD card with Raspbian
+External hard drive, preferably externally powered
+Time / Motivation to set it up (an important step, it took me 4 years)
+
+Installing the required software on your Raspberry Pi
+You can find a Raspberry Pi image on the internet that allows you to have Nextcloud set up already. This is great, but this is not something I used. I use a Raspberry Pi 4 4gb, which means I can run multiple services besides Nextcloud on a single machine, so I wanted the operating system to be as plain/vanilla as possible. Luckily, there are many ways to install Nextcloud and one of them is to use Snaps. This is a way to very easily install applications in their own container, which means they're generally safer than installing them directly into your operating system. This only applies if the snap doesn't use classic mode, which this snap luckily does not.
+If you want to install snaps on your Raspberry Pi running Raspbian, you need to install snap itself first. You can do this by running the following command:
+sudo apt-get install snapd
+Once this has finished, you can install snaps on your Raspberry pi, just as you would on any other Linux distribution. To install the Nextcloud snap, run this command:
+sudo snap install nextcloud
+After this finishes you have Nextcloud installed onto your Raspberry Pi. All that's left to do is run the program. You can do this through the snap command:
+sudo snap run nextcloud
+You now have a running Nextcloud instance. To access this instance on another computer in your network, you'll need to figure out what your local IP address is. You can find this on the Raspberry Pi by running:
+ifconfig
+and looking for an IP address that starts with &quot;inet 192.168&quot;. If you type this IP address into your browser on another device in your network, you'll get the page to create an account on your Nextcloud installation.
+Plugging in your external hard drive
+Now that you have your Nextcloud installed and running on the Raspberry Pi, it's time to plug in your external hard drive. This is the part where I recommend using a Raspberry Pi 4 instead of the Raspberry Pi 3. The Raspberry Pi 4 has 2 USB3.0 ports and the Raspberry Pi 3 only has USB2.0 ports. The USB3.0 ports will make sure you can read and write your data 10 times faster than the older ports. You can still use your Raspberry Pi 3 though, but the result won't be as fast as it could be. 
+You can now plug in your external hard drive and run the following command on your Raspberry Pi:
+lsblk
+Find your hard drive in the list. This is most likely the device with &quot;sda&quot; as a name. Verify this by looking at the size of the disk in the same row. For me this says 7.3T, as I have an 8TB drive.
+Write down the device name, as we'll need this for later.
+Mount your hard drive in the file system
+Now that we know the name of our hard drive, we'll mount it in the file system, so we can tell Nextcloud where to save the files. First of, we're going to create a folder for the hard drive to live, you can do this as follows:
+sudo mkdir /media/harddrive1
+You can name this folder differently if you want, but make sure to remember this name, because we'll need it for the following step. Now that you created a folder where your hard drive will live, it's time to mount it into the file sytem. This is easier than it sounds, but you will need the terminal for this. We're going to mount the hard drive in the &quot;/etc/fstab&quot; file, which means the hard drive will automatically be mounted when you restart your Raspberry Pi. To do this, run the following command:
+sudo nano /etc/fstab
+A file will be opened in the terminal. You will see two rows that start with &quot;PARTUUID&quot;. Move your cursor down with the arrow keys and create a new line under those two lines. Next copy and paste the following snippet in there. To copy and paste, you'll most likely have to copy the text and right-click in the terminal to paste. Most terminals don't support pasting with &quot;CTRL + V&quot;.
+/dev/sda1   /media/harddrive1   auto    uid=1000,gid=1000,noatime 0 0
+Let me explain what happens here:
+
+
+/dev/sda1 is the name of the hard drive, the sda1 part is what you saw when you ran the &quot;lsblk&quot; command, so be sure this is correct
+
+
+/media/harddrive1 is the folder you created earlier. So if you chose a different name, be sure to enter that here
+
+
+uid=1000,gid=1000 is the id of the current user and the id of the group. If you've created a different user than the default user that came with Raspbian, find out the uid by running:
+
+
+id -u
+and the gid by running:
+id -g
+and fill those in the line instead of 1000.
+You have now mounted the hard drive in the file system. It's time to go back into Nextcloud.
+Enabling the &quot;External storages&quot; plugin in Nextcloud
+You've installed Nextcloud and mounted the hard drive into the file system of your Raspberry Pi. Next, you need to go into your Nextcloud dashboard and click on your user in the top right. A menu will appear and you need to click on &quot;Apps&quot;. On the new screen, you click on &quot;Disabled apps&quot; in the menu on the left side. Next, click on the &quot;Enable&quot; button on the &quot;External storage support&quot; entry. This will enable the ability to use external storage in Nextcloud, such as your external hard drive.
+When the plugin is enabled, click on your user in the top right again and choose &quot;Settings&quot; this time. On the left side, you'll get a menu and under &quot;Administration&quot; you'll find &quot;External storages&quot;. Click on that and you'll see a new page where you can add external storages. To be able to add your external hard drive, choose a name for &quot;Folder name&quot;. This could be anything you want. I simply named it &quot;Hard drive&quot;. In the drop-down with &quot;Add storage&quot;, select the option &quot;Local&quot;. The form will change and you'll be able to fill in more information. You can skip all of the fields except &quot;Configuration&quot;. This is where you fill in the folder you created earlier, so if you've been following the examples, this should be:
+/media/harddrive1
+Once you've filled that in, you can press the checkmark at the end of the form and a green checkmark will appear at the beginning of your form. You can now go back to your files by pressing the Nextcloud logo in the top left. Your hard drive should now be visible in the list of files and folders.
+Exposing your Nextcloud installation to the internet
+You now have a fully functional Nextcloud installation, but it's only accessible from within your own network. In a lot of cases, this is enough and you can stop reading any further. But if you want to be able to access your Nextcloud from anywhere in the world, keep on reading. 
+I won't cover all of these steps in detail, as some are optional and others are different for everyone. These are the general steps of exposing your Nextcloud instance to the internet and at least have some basic protection. Also, another thing to keep in mind is that I've been able to do this part because I could use a domain name that I owned and I'm not sure how to do this if you don't have a domain name you can use for this.
+The steps are:
+
+
+Open port 80 and 443 on your router and point them to the machine running Nextcloud
+
+
+Point a domain name to your external IP address, use a service like https://whatismyipaddress.com/ to find your external IP address. 
+
+
+Run this command to enable HTTPS in Nextcloud: 
+
+
+sudo /snap/bin/nextcloud.enable-https lets-encrypt
+
+Add the domain you selected as a trusted domain using this command: 
+
+sudo snap run nextcloud.occ config:system:set trusted_domains 1 --value=your.fancy.domain
+
+Restart Nextcloud using: 
+
+sudo snap restart nextcloud
+You can now go to the domain you used earlier and see your Nextcloud instance, complete with SSL. Your installation is now available from anywhere in the world and you have some basic security measures set up, so your connection to and from Nextcloud is secure. Any further steps are also new to me, so I won't be able to help you with this yet. Hopefully, in the future I can add to this post to add extra security measures and to make sure your data is even safer than it is now.
+I hope this post helped you to set up your Nextcloud instance and expose it to the internet. If you have any questions, you can contact me on Twitter and I'll do my best to help you out.</content>
+                    <summary>
+How to set up a personal cloud using a Raspberry Pi and Nextcloud
+Setting up your personal cloud has never been easier than now and it allows you to stop relying on big cloud providers like Google and Dropbox. In this post I will go over the following aspects of this set-up:
+
+The requirements befor[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Why documentation is (almost) more important than code</title>
+                    <link href="https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code"/>
+                    <id>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</id>
+                    <updated>2020-02-27T17:35:49+01:00</updated>
+                    <published>2020-02-26T12:00:00+01:00</published>
+                    <content>
+Why documentation is (almost) more important than code
+Code is great and it makes your application do the things it needs to do. But what happens when you hire a new person on the team or you start to use new technologies to accomplish your goals? You need some kind of reference to explain the flows within the application code base and code is usually not great at providing this overview. You need proper documentation to explain the code, company jargon, and application flows. In this post, I'll go over three levels of documentation that you have in an ideal world. I understand the ideal situation is rarely the reality, so in that case, use bits and pieces of these levels.
+The levels I'll be talking about are the following:
+
+Macro-level: What does that jargon mean and how does the business work?
+Meso level: How do processes flow through our application?
+Micro-level: How does this code work and why is it here?
+
+What does that jargon mean and how does the business work?
+When you're new to a team, you won't understand some words that the people around you use on a daily basis. This is normal. At some point, you'll need to know what they mean to be able to contribute to the business and specifically the application. In other words, you need to know what the domains in the company are. Domains are a concept from DDD (Domain-driven design). This means that you structure your code into very specific use cases of your application. The language used here is business-specific, not programming language-specific. This means that if you're talking about a specific domain, let's go with &quot;Checking out&quot;, you can talk to anyone in the company and they'll be able to understand what you're talking about. 
+Okay...so what does that mean? Well, it means that you need to document all the domains that exist in your application and in your business. New hires won't exactly know how your business works in detail, so documenting the different domains and jargon will allow them to quickly get up to speed when talking to anyone in the company. By specifying exactly what each domain and jargon means, you leave no room for confusion about what the other person might refer to.
+Let's go through an example:
+While [domain] I encountered a bug in the system. 
+You can replace domain with something specific to the business, in this case, let's use &quot;Checking out&quot;. This makes: While checking out I encountered a bug in the system.
+When you don't have a clear application structure and no documentation about how to process goes through your application, you're going to spend a lot of time searching through code to find where the bug occurred. When you have a very clear application structure but no documentation, you'll at least know in which section to look for any bugs. You won't know exactly where, but the scope of your search is greatly reduced. When you don't have a clear application structure, but your documentation is great, you'll be able to pinpoint the right place to fix the bug and if you have both a clear application structure and great documentation, you'll have the bug fixed in no time.
+So documenting domain and jargon language helps you to get your new hires up to speed quickly, but it also helps to solve bugs more quickly. 
+How do processes flow through our application?
+When you're new to a codebase, it can be very difficult to figure out how processes flow. You can find entry points and responses quite easily, but finding out how processes work by simply looking at code is very difficult. Finding the main processes within a system is usually easier to find if the application is structured well. If the main purposes of the system aren't immediately clear by glancing at the folder structure, this is something you should document.
+Having very good documentation but a very messy system is still acceptable because at least there is a clear path through the application if you can reference a manual. If you have clear documentation and a very clear application structure, then you have a unicorn on your hands and you should do everything in your power to maintain this. You can do this by continuously writing documentation, writing tests, and refactoring code that isn't up to the standard that has been set. 
+So the main goal of documentation is to explain how the application works, but you're also supposed to document your code right? Correct, but that's only one of the levels you should document. So let's get to that right now.
+How does this code work and why is it here?
+We're finally there the easiest, but often overlooked part of this documentation journey. Documenting code is what most teams do, but not all teams do this as effectively as they could. I've encountered my own documentation mistakes plenty of times. This is where I use self-documenting method names in my code, but then add a comment that essentially copies the method name. 
+For example: 
+generateTransactionObjectForPurchase
+with the amazing comment:
+This method generates a transaction object for a purchase
+Then I just think to myself: &quot;Great, that literally told me nothing about why this is needed&quot;. A much better comment would be something along the lines of:
+We need to generate specific transactions from this purchase to be able 
+to submit this to a payment provider.
+It still stays true to the method name, but it explains why this part of the process is necessary and where it fits into the flow. When the time comes when this gets refactored, the developer knows why this code is here and what purpose it serves. It could happen that the code is no longer necessary, in which case you can just delete it. But if the documentation doesn't explain this, you won't know if it's needed without specifically going through the code. This developer might be you a year down the line, so do yourself a huge favor and explain why code is there. It's fine if the explanation spans multiple lines because it'll only help you to debug the current situation quicker.
+Conclusion
+In this post I've explained why documentation is very important for a project on three different levels:
+
+Macro-level: What does the company jargon mean and how does the business work?
+Meso level: How do processes flow through our application?
+Micro-level: How does this code work, why is it here, and where does it fit in the process flow?
+
+Documentation is important to get new hires up to speed with the company jargon, the application flows, and the code, to make communication between different people within the company go more smoothly, and to be able to locate and solve bugs quicker. 
+Having an application structure that very clear to understand by just looking at folder names is very difficult and takes time. If you can't take care of that (right away), having great documentation will still help new hires to contribute to the application faster. 
+If you have anything to add to this post, I'd love to hear from you on Twitter!</content>
+                    <summary>
+Why documentation is (almost) more important than code
+Code is great and it makes your application do the things it needs to do. But what happens when you hire a new person on the team or you start to use new technologies to accomplish your goals? You need some kind of reference to explain the flow[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-pages.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>My favorite feature in Peppermint OS</title>
+                    <link href="https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os"/>
+                    <id>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</id>
+                    <updated>2020-03-04T12:00:00+01:00</updated>
+                    <published>2020-03-04T12:00:00+01:00</published>
+                    <content>
+My favorite feature in Peppermint OS
+Peppermint OS is a lightweight Linux distribution, it only consumes about 330mb of RAM on idle. This means it's a great choice for older and/or less powerful devices, but it's also amazing for the high-end devices. If you run this on your higher-end devices, Peppermint OS is blazing fast. But that's not one of my favorite things about Peppermint OS, even though it's amazing. My favorite feature of Peppermint OS is ICE, a simple SSB manager. In this post, I go over what ICE is and why it's absolutely amazing.
+What is ICE?
+Ice is a simple SSB manager. So what does that mean? SSB stands for Single Site Browser, which essentially means that you open a browser, to view one website and one website only. This seems very counterproductive, but let me explain why this is such a cool concept. With ICE, you can essentially create an application that starts a browser in a container to load the website you've specified. This means that any data you save within that container, won't be shared with other containers. It's a bit like a docker container or snap package running on your operating system, but for websites.
+Why is ICE amazing?
+Before I had ever used Peppermint OS I had to open a browser and type in the URL of a service I wanted to use. If I was lucky, there was a snap package or native application available, so I could simply search for the application I wanted. When I had a snap package, everything was fine, but I still had to install an application that took up space. On my phone I had the feature to install websites onto my phone, so why wouldn't this be available on desktop systems? Well, that is pretty much was ICE does. You can give it a name, fill in a URL and tell it to load the favicon from the website you've specified. When you submit the form, you have a new application in your menu. 
+This allows me to very quickly access all the online services I use, like Netflix, Prime Video, Nextcloud, Notion, and many more. I never have to install an application to make these services appear, because it opens these websites in Firefox, which was already installed. With ICE I can create applications from any and all services that I use only and search for them inside of my start menu. This makes accessing these applications very easy and quick.
+How does ICE fit into my current workflow?
+I've explained what ICE is and why it's amazing, but how does this fit into my current workflow? Well, I've been using Linux, but specifically Ubuntu for a few years now and I know that I can press the Windows button on my keyboard to open the start menu. In most distros that I've used for the past few years, you can start to type and it'll automatically show you the applications that match your search terms. This is great because I never have to use the mouse to go through menus. When I can create shortcuts to online services through the browser, I don't even have to open the browser first and go to the website, but instead, I search in my menu and press enter. This has helped me to be much more efficient with launching the applications I need on a daily basis. 
+The fact that Peppermint OS has such a low memory usage, and I have installed it on a higher-end device, makes the whole process: from pressing the start menu button, searching for the application, and seeing the application on my screen; take mere seconds. Even for people that haven't used Peppermint OS or even Linux before will understand how the start menu works and where the custom applications are.
+Conclusion
+Using ICE SSB in my current workflow has increased my productivity a lot. I don't have to spend time going through menus to launch the application I want to launch. I don't even have to manually open a browser and navigating to a frequently used website anymore. I can do all of these tasks from my keyboard. The fact that this great piece of software is already installed when you open Peppermint OS for the first time, makes the whole OS a huge productivity hack for me. If you're interested in installing this software on any distro that's not Peppermint OS, you're in luck, that's possible. I've found that it works reasonably well in Ubuntu with Gnome, but I do miss the blazing-fast performance Peppermint OS gives me at times.</content>
+                    <summary>
+My favorite feature in Peppermint OS
+Peppermint OS is a lightweight Linux distribution, it only consumes about 330mb of RAM on idle. This means it's a great choice for older and/or less powerful devices, but it's also amazing for the high-end devices. If you run this on your higher-end devices, Pep[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ice-on-peppermint-os.jpg" medium="image" type="image/jpeg" width="1200" height="799" />
+                  </entry>
+<entry>
+                    <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware"/>
+                    <id>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</id>
+                    <updated>2020-03-11T16:33:17+01:00</updated>
+                    <published>2020-03-11T12:00:00+01:00</published>
+                    <content>
+How I added Elasticsearch to a Laravel application on a server with minimal resources
+Recently I've replaced the search functionality on cro-tool.com from a database-driven search engine to Elasticsearch. This wasn't an easy process and there were several hurdles to overcome, but the final result was worth all the effort it took to put this together.
+Let's start at the beginning. Before this transition, I had to specify which fields I wanted to search in, how these results should be ordered on the search page, and how the fields should be matched (LIKE %%, etc.). This meant a lot of manual work went on to displaying search results correctly. Joins and where clauses were used to find records, but what happens when none of the results matched the SQL query? Well, there were no results. SQL databases don't really understand relevancy in records, so it took manual work to accomplish something similar to what's already built-in into dedicated search engines.
+Elasticsearch to the rescue
+The last problem I highlighted in the previous paragraph, displaying relevant search results, was something I wanted to solve because I'd rather show less relevant search results than no search results at all. A search engine is great at enabling you to do this. To find a good option for a search engine, I looked at my own experience. I work with Apache Solr on a daily basis and I love using it. But I also know it can be heavy on the resources. So I went with Elasticsearch instead. I knew the server resources were very limited, so going with an actual search engine was already a gamble. I thought that Elasticsearch was lower on resource usage, but this thought is based on thin air and I haven't actually checked if this is accurate. 
+I knew Laravel has an official package, called laravel/scout, which has a few implementations that enable you to use Elasticsearch as the search engine, instead of Algolia. This was another reason for me to use Elasticsearch because it'd be able to quickly integrate it into the existing Laravel application, without rewriting a lot of the existing logic.
+Integration Elasticsearch in Laravel
+I knew I was going to use Elasticsearch and I knew I was going to use laravel/scout, so I searched for a composer package to connect these two and found matchish/laravel-scout-elasticsearch. It seems to be fully featured and even allows you to customize the request before it is sent to the search engine, perfect!
+After installing the package and publishing the configuration files I went to work and set up the code needed to be able to index documents into Elasticsearch.
+Setting up Elasticsearch
+If you know me, you know I'm a huge fan of Docker and docker-compose. So naturally I set up the docker-compose.yml file to launch an Elasticsearch server for me, this is the configuration I used:
+version: "2.3"
+services:
+  elasticsearch:
+    image: elasticsearch:7.6.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - ./storage/elasticsearch:/usr/share/elasticsearch/data
+As you can see, I tell the Java runtime engine to only use 256mb of RAM. This is a very small amount, but the data set is not very large and I'm dealing with a server with low resources. The docker-compose file also tells the Elasticsearch container to open up port 9200, but only on the localhost. I don't want to open this server to the internet and only applications on the same machine can access it directly. As you can see, I've included a volume, so all data in Elasticsearch will be written to the storage/elasticsearch folder in your Laravel application. This folder obviously contains a .gitignore file, because I don't want this data in my Git repository.
+Deploying the new search engine
+When the search functionality was converted from database queries to API requests to Elasticsearch, it was time to deploy everything. Everything went well...until I tried to run the Elasticsearch docker container. The server didn't have enough RAM to run the Java Runtime and the container refused to launch. This was the moment I had to get creative with my solutions.
+Solving memory issues
+I had two options: upgrade the server or migrate the current Apache installation to Nginx. I chose the latter for the following reason: Apache uses more RAM, even when no one is visiting the website. It spawns workers and keeps them open until new visitors are there to use them. Nginx, on the other hand, is able to spawn workers as they're needed. This means that if there is no one on the website, it's not spawning any workers and that means it runs much lighter on idle. When there are more visitors, Apache keeps spawning workers for new visitors and this adds up over time. Nginx uses these workers much more efficiently and is able to serve these visitors with fewer resources. This is why I thought that switching to Nginx might give me enough free resources to be able to launch Elasticsearch.
+After the migration, I was indeed able to launch Elasticsearch, as the RAM usage was several times lower using Nginx than Apache. Even when multiple people were visiting the website, the RAM usage stayed under control. This is partly because I specified the maximum amount of memory the Java Runtime is allowed to use for Elasticsearch.
+Conclusion
+Running Elasticsearch on a server with low resources is possible, but it's not something that's going to be easy to accomplish at all times. For this particular situation, I had to migrate the current Apache installation to Nginx in order to launch the Elasticsearch container with Docker. The final result is great because you get the functionality of a full-blown search engine on server hardware that would otherwise not even be considered to be enough. Of course, this is not a permanent solution, because as soon as the website gets busier, the server resources will need to be upgraded. This solution does allow me to drag that process out a little bit longer though, and that's never a bad thing.</content>
+                    <summary>
+How I added Elasticsearch to a Laravel application on a server with minimal resources
+Recently I've replaced the search functionality on cro-tool.com from a database-driven search engine to Elasticsearch. This wasn't an easy process and there were several hurdles to overcome, but the final result w[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cro-tool-homepage.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>How to set up GPG signing keys with Git in Github</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</id>
+                    <updated>2020-03-18T14:35:22+01:00</updated>
+                    <published>2020-03-18T12:00:00+01:00</published>
+                    <content>
+How to set up GPG signing keys with Git in Github
+If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. After you've completed these steps, the commits you've done will have a &quot;Verified&quot; flag in GitHub. 
+Before we get into it, it's probably a good idea to explain what the verified tag means. It means that when you commit code, the commit is signed with a key, the GPG key. This key contains information about you, like your name and e-mail address. When you submit your public key in GitHub, GitHub can verify that the signed commit was created by your account. All it means is that anyone with access to the repository can see that the commit was made on your system by somehow who knows the passphrase to unlock your public key. Ideally, this can only be you. It's a way to verify that you were the one creating the commit and no one else.
+Now let's get into the steps you need to take to get this GPG key and start getting the &quot;Verified&quot; flag. For this post I'm focusing on how to do this on a Linux distribution, because that's what I use on a daily basis. You can find out how to do this for your preferred platform on the Github help pages. 
+Step 1: Check if you have any keys available
+You can find out if you already have a GPG key by running the following command:
+gpg --list-secret-keys --keyid-format LONG
+If you have no keys available, or you want to create a new one, go to step 2. Otherwise you can skip ahead to step 3.
+Step 2: Generate a new GPG key
+When generating a new GPG key, you'll need to fill out some personal information. This information will be used by GitHub to verify that it was you who made the commit. To generate a new key, run the following command:
+gpg --full-generate-key
+It will prompt you for some options. When it asks for which type of key, select the default choice (RSA and RSA). Then it will ask you for the key size, fill in 4096. Then it will ask you when you want this key to expire. I went for 0 (never expire), but you can choose another one if you need to.
+Then it will ask for your name and e-mail address, along with a comment. The comment can be used to identify the key. For example, fill in your company name if you're on your company computer. When filling out your e-mail address, make sure it's the same e-mail address you used to sign up for GitHub.
+When you go to the next step, you need to fill out a passphrase (or password). Choose one that you can't guess easily. Preferably use a random password generator with 16 or more characters. Be sure to save this passphrase somewhere, because you will need to fill it in when you commit your changes. 
+Step 3: Submit your key to GitHub
+When you're here you already had a GPG key or you just created a new one. Let's verify if your system can see your key by running the command from step 1 once again:
+gpg --list-secret-keys --keyid-format LONG
+If you see your key, you're ready to submit it to GitHub. When running that command you should see a section that starts with &quot;sec&quot; like below:
+sec   rsa4096/gpgIdentifier 2020-03-18 [SC]
+Copy the &quot;gpgIdentifier&quot; part of that line (no rsa4096/ attached), because this represents the identifier for your GPG key. I replaced my key in that last line to make clear what you're looking for. We're going to use that identifier to find out what your public GPG key is. This public key is what we'll submit to GitHub. Using the identifier, run the command below:
+gpg --armor --export gpgIdentifier
+You should now see your public code, starting with &quot;-----BEGIN PGP PUBLIC KEY BLOCK-----&quot; and ending with &quot;-----END PGP PUBLIC KEY BLOCK---—&quot;. Copy this entire key, including the lines I mentioned in the last sentence. 
+Now that you have this code, go to GitHub → Settings → SSH and GPG Keys. Now you have to scroll to the bottom until you get to the GPG keys section and then press &quot;New GPG key&quot;. In the next form, paste your GPG key and save.
+Step 4: Configure Git to use your GPG key to sign commits
+You now have generated a GPG key and submitted the public key of this to GitHub. The last thing left to do is tell Git to use your key to sign your commits. You have two options: Do this for a specific repository or do this for all your repositories. Remember the gpgIdentifier from the last step? We need that one last time, so be sure to copy that again.
+First, we need to tell Git that we want to sign commits. To only enable signing commits for the current repository, run this command:
+git config commit.gpgsign true
+To enable signing for all repositories in your system, run:
+git config --global commit.gpgsign true
+Now that Git know we want to sign commits, we need to specify which GPG key we want to use for this. Again, you can do this for specific repositories or for all repositories on your system. To Tell git to use the GPG key we just created for the current repository, run:
+git config user.signingkey gpgIdentifier
+If you want to do this for all your repositories, run this command:
+git config --global user.signingkey gpgIdentifier
+Git now knows that we want to sign commits and which GPG key to use to do this. Now when you commit code, you will need to enter your passphrase, but in order to do this properly, you need to tell your GPG agent how you want to input this passphrase. A simple trick is to add an environment variable to your ~/.bash_profile or ~/.profile by running these two commands:
+test -r ~/.bash_profile &amp;&amp; echo 'export GPG_TTY=$(tty)' &gt;&gt; ~/.bash_profile
+echo 'export GPG_TTY=$(tty)' &gt;&gt; ~/.profile
+All that's left to do is write code and commit your changes. When you commit, your system will ask you for a passphrase. This is the passphrase you filled in when generating the GPG key, so fill that in. I'm using Ubuntu and when prompting for my passphrase, they give you an option to save this passphrase so you won't have to fill it in every time you create a commit. You can do this or not do this. It's obviously safer to fill in your passphrase all the time, but it also takes longer. I'll leave it up to you which you prefer.
+When you push your changes to GitHub, you will now see that beautiful &quot;Verified&quot; flag on your commits.</content>
+                    <summary>
+How to set up GPG signing keys with Git in Github
+If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. After you've completed these steps, the commits you'[...]</summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/lock-on-blue-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 
 </feed>
