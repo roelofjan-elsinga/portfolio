@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-04-21'
 url: 5-reasons-to-start-using-ubuntu
 ---
-
 !["5 reasons to start using Ubuntu"](/images/articles/ubuntu_logo.png)
 
 # 5 reasons to start using Ubuntu

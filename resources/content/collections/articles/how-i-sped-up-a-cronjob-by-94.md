@@ -5,7 +5,6 @@ canonical: 'https://medium.com/@roelofjanelsinga/how-i-sped-up-a-cronjob-by-1800
 post_date: '2018-04-26'
 url: how-i-sped-up-a-cronjob-by-94
 ---
-
 !["Sand walker"](/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg)
 
 # How I reduced the runtime of a Cronjob by 94%

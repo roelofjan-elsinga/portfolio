@@ -6,7 +6,6 @@ is_published: true
 post_date: '2017-06-02'
 url: some-people-can-work-remotely
 ---
-
 ![Why some people can work remotely](/images/articles/guy-on-rock.jpg)
 
 # Why some people can work remotely

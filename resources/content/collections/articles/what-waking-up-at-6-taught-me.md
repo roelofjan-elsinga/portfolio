@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-05-01'
 url: what-waking-up-at-6-taught-me
 ---
-
 ![""](/images/articles/sleeping_cat.jpeg)
 <span class="caption">The internet loves cats, and this one is still sleeping. Photo by Alexandru Zdrobău.</span>
 

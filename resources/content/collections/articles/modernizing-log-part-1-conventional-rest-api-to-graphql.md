@@ -5,7 +5,6 @@ canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-1-conventi
 post_date: '2018-03-14'
 url: modernizing-log-part-1-conventional-rest-api-to-graphql
 ---
-
 !["Books"](/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg)
 
 # Modernizing log: Part 1, Conventional REST API to GraphQL

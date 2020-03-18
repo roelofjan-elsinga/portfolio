@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-04-10'
 url: why-i-dont-have-comments-on-my-blog
 ---
-
 !["Why I don't have comments on my blog"](/images/articles/heart-zero-likes.jpeg)
 
 # Why I don't have comments on my blog

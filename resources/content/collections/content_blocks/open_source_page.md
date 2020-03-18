@@ -1,7 +1,6 @@
 ---
 identifier: open_source_page
 ---
-
 # Open source contributions
 
 I've actively been contributing to open source projects since 2019. 

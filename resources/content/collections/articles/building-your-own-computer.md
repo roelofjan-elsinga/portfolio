@@ -4,7 +4,6 @@ is_published: true
 post_date: '2016-12-01'
 url: building-your-own-computer
 ---
-
 ![Building your own computer](/images/articles/construction.jpg)
 
 # Building your own computer

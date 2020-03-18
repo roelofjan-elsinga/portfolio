@@ -6,7 +6,6 @@ is_published: true
 post_date: '2017-08-12'
 url: build-bridges-api-based-structures
 ---
-
 ![Build bridges with API based application structures](/images/articles/bridge-forest.jpg)
 
 # Build bridges with API based application structures

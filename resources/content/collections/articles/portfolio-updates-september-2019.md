@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-10-09'
 url: portfolio-updates-september-2019
 ---
-
 !["New homepage in september 2019"](/images/articles/new-homepage-in-september-2019.png)
 # Portfolio updates for September 2019
 

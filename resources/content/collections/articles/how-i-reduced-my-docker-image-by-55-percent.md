@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-02-28'
 url: how-i-reduced-my-docker-image-by-55-percent
 ---
-
 ![How I reduced my docker image by 55%](/images/articles/steel_tower.jpeg)
 
 # How I reduced my docker image by 55%

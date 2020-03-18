@@ -4,7 +4,6 @@ is_published: true
 post_date: '2017-09-09'
 url: battle-apples-oranges-angular-vs-react
 ---
-
 ![The battle of apples and oranges: Angular vs React vs VueJS](/images/articles/apples.jpg)
 
 # The battle of apples and oranges: Angular vs React vs VueJS

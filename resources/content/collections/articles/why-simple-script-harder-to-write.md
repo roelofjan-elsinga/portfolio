@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-10-16'
 url: why-simple-script-harder-to-write
 ---
-
 !["Spider web with drips of water"](/images/articles/spider-web-with-drips-of-water.jpeg)
 # Why is a simple script often harder to write?
 If you're just starting out, you often want to come up with complex solutions to problems. Sometimes you do this to learn a new skill or to show off your problem-solving skills. Complex solutions are often perceived as knowing a lot and being good at something. This is sometimes a valid assumption, but in a large majority of the time a simple solution is exactly what you want to write and this often requires a lot of skill, let me explain why.

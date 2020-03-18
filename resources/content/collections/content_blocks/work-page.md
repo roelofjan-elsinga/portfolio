@@ -1,7 +1,6 @@
 ---
 identifier: work-page
 ---
-
 # My previous projects
 
 I've worked on several (public) projects before. These are the ones I can show you.

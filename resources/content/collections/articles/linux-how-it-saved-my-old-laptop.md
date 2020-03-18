@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-12-18'
 url: linux-how-it-saved-my-old-laptop
 ---
-
 !["Endeavouros screenshot"](/images/articles/endeavouros-screenshot.png)
 # Linux: How it saved my old laptop
 Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able to delete anything I want to and I hate pre-installed advertisements and bloatware. This is one of the reasons I've gravitated towards Linux based systems. But before we get to that step, I'd like to tell you my history with Windows and why I moved away from it.

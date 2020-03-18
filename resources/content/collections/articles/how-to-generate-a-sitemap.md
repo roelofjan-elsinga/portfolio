@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-03-29'
 url: how-to-generate-a-sitemap
 ---
-
 !["How to generate a sitemap"](/images/articles/binoculars.jpeg)
 
 # How to generate a sitemap

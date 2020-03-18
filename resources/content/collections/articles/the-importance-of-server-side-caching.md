@@ -6,7 +6,6 @@ is_published: true
 post_date: '2016-12-29'
 url: the-importance-of-server-side-caching
 ---
-
 ![The importance of server-side caching](/images/articles/airshow.jpg)
 
 # The importance of server-side caching

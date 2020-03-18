@@ -1,7 +1,6 @@
 ---
 identifier: passions
 ---
-
 # My passions
 
 Here you can read about all the things I do in my free-time. 

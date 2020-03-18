@@ -6,7 +6,6 @@ canonical: 'https://medium.com/@roelofjanelsinga/a-overview-of-my-programming-st
 post_date: '2018-04-29'
 external_url: 'https://medium.com/@roelofjanelsinga/a-overview-of-my-programming-style-guide-a5537b6e8b52'
 ---
-
 !["A lonely road"](/images/articles/0_xDUpNBbkXsdnMj4i.jpeg)
 
 # An overview of my programming style guide

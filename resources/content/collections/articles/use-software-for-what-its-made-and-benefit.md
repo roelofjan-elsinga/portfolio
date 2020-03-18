@@ -6,7 +6,6 @@ is_published: true
 post_date: '2016-12-22'
 url: use-software-for-what-its-made-and-benefit
 ---
-
 ![Archive](/images/articles/archive.jpg)
 
 # Use software for what it's made, and you'll see the benefits!

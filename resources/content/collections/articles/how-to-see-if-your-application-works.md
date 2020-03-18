@@ -4,7 +4,6 @@ is_published: true
 post_date: '2017-01-05'
 url: how-to-see-if-your-application-works
 ---
-
 ![How to see if your application works](/images/articles/gears.jpg)
 
 # How to see if your application works

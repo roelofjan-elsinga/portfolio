@@ -6,7 +6,6 @@ is_published: true
 post_date: '2020-01-22'
 url: the-impact-of-migrating-from-php-to-golang
 ---
-
 !["PHP plus Golang"](/images/articles/php-plus-golang.jpg)
 <span class="caption">PHP logo by Colin Viebrock <a href="https://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0)</a></span>
 # The impact of migrating from PHP to Golang

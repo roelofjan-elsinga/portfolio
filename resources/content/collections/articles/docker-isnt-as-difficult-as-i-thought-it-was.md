@@ -5,7 +5,6 @@ canonical: 'https://medium.com/@roelofjanelsinga/docker-isnt-as-difficult-as-i-t
 post_date: '2018-03-16'
 url: docker-isnt-as-difficult-as-i-thought-it-was
 ---
-
 !["Containers"](/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg)
 
 # Docker isn't as difficult as I thought it was

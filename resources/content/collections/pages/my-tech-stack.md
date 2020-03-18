@@ -3,7 +3,7 @@ title: 'My tech stack'
 description: 'Find out which technologies I''ve worked with and what I can use to help you with your projects.'
 summary: 'Find out which technologies I''ve worked with and what I can use to help you with your projects.'
 template_name: 'flatfilecmsgui::templates.default'
-update_date: '2020-03-04 14:39:05'
+update_date: '2020-01-31 16:09:05'
 in_menu: false
 is_homepage: false
 image: 'https://roelofjanelsinga.com/images/logo/logo_banner.jpg'
@@ -12,12 +12,9 @@ menu_name: ''
 post_date: ''
 is_published: true
 is_scheduled: false
-url: my-tech-stack
-meta_data: null
-author: null
-canonical: ''
-keywords: null
+url: /my-tech-stack
 ---
+
 # My tech stack
 I've been a web developer for several years and over the years I've worked with quite a few different technologies. Some technologies I've used because they were essential to the projects I've worked on and others were just part of a fun exploratory project to learn new skills. I'll describe them on this page in levels of confidence.
 

@@ -6,7 +6,6 @@ is_published: true
 post_date: '2017-09-16'
 url: programming-books-worth-your-money
 ---
-
 ![Are programming books worth your money?](/images/articles/book-top.jpg)
 
 # Are programming books worth your money?

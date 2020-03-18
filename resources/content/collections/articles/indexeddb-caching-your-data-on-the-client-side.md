@@ -6,7 +6,6 @@ is_published: true
 post_date: '2016-12-15'
 url: indexeddb-caching-your-data-on-the-client-side
 ---
-
 ![IndexedDB](/images/articles/speed.jpg)
 
 # IndexedDB: Caching your data on the client-side

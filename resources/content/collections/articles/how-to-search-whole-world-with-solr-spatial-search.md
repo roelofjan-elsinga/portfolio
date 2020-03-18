@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-02-26'
 url: how-to-search-whole-world-with-solr-spatial-search
 ---
-
 ![Solr logo](/images/articles/solr_logo.png)
 
 # How to search "the whole world" with Solr Spatial Search

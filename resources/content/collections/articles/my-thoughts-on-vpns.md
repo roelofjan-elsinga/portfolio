@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-09-11'
 url: my-thoughts-on-vpns
 ---
-
 !["Surveillance camera"](/images/articles/surveillance-camera.jpeg)
 # My thoughts about using a VPN during everyday life
 For the past month, I've been using a VPN for all of my internet usage, including my work laptop and mobile phone. It's been a fascinating experiment and here are some reasons why I think you should give it a try:

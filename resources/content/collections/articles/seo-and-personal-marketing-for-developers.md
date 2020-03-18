@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-03-21'
 url: seo-and-personal-marketing-for-developers
 ---
-
 ![SEO and personal marketing for developers](/images/articles/google-analytics.png)
 
 # SEO and personal marketing for developers

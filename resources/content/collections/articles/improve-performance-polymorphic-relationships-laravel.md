@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-07-29'
 url: improve-performance-polymorphic-relationships-laravel
 ---
-
 !["Start sprint race"](/images/articles/start-sprint-race.jpeg)
 
 # Improve query performance for polymorphic relationships in Laravel

@@ -12,9 +12,8 @@ menu_name: ''
 post_date: ''
 is_published: true
 is_scheduled: false
-url: algemene-voorwaarden
+url: /algemene-voorwaarden
 ---
-
 
 # Algemene voorwaarden
 

@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-05-11'
 url: discovering-the-online-presence-of-my-target-audience
 ---
-
 !["Discovering the online presence of my target audience"](/images/articles/snake_plant.jpg)
 
 # Discovering the online presence of my target audience

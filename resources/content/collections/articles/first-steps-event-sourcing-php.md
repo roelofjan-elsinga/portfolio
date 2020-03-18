@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-08-13'
 url: first-steps-event-sourcing-php
 ---
-
 !["Explore"](/images/articles/explore.jpg)
 # Taking the first steps with event sourcing in PHP
 I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of event sourcing for you? I'll explain those values in this post.

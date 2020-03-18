@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-11-06'
 url: 100-test-coverage-why-or-why-not
 ---
-
 !["Unpeeling a banana"](/images/articles/unpeeling-a-banana.jpeg)
 <span class="caption">Photo by Carlos Alberto Gómez Iñiguez</span>
 

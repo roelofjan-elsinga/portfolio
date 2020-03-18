@@ -6,7 +6,6 @@ is_published: true
 post_date: '2019-04-04'
 url: my-choice-of-configuraton-file-types
 ---
-
 ![My choice of configuration file types](/images/articles/post-in-json.png)
 
 # How to Pick Right Configuration File Type for Your Project

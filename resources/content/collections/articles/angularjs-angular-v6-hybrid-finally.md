@@ -7,7 +7,6 @@ canonical: 'https://medium.com/@roelofjanelsinga/angularjs-angular-v6-hybrid-fin
 post_date: '2018-06-01'
 url: angularjs-angular-v6-hybrid-finally
 ---
-
 !["Sports car"](/images/articles/0_2YOcp3G2ZLewVVIl.jpeg)
 
 # AngularJS + Angular (v6) hybrid (finally!)

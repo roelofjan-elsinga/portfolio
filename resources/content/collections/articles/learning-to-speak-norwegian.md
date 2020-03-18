@@ -5,7 +5,6 @@ is_published: true
 post_date: '2019-02-10'
 url: learning-to-speak-norwegian
 ---
-
 !["Pencil and paper"](/images/articles/pencil_paper.jpeg)
 
 # Learning to speak Norwegian
