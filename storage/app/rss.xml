@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 12 Feb 2020 11:00:02 GMT</pubDate>
+              <pubDate>Wed, 18 Mar 2020 13:35:22 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -1058,6 +1058,68 @@ About 4 years ago I wrote my very first blog post "Researching home servers". In
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+How to set up a personal cloud using a Raspberry Pi and Nextcloud
+Setting up your personal cloud has never been easier than now and it allows you to stop relying on big cloud providers like Google and Dropbox. In this post I will go over the following aspects of this set-up:
+
+The requirements befor[...] (...)</description>
+                    <title>How to set up a personal cloud using a Raspberry Pi and Nextcloud</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</guid>
+                    
+                    <pubDate>Wed, 19 Feb 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+Why documentation is (almost) more important than code
+Code is great and it makes your application do the things it needs to do. But what happens when you hire a new person on the team or you start to use new technologies to accomplish your goals? You need some kind of reference to explain the flow[...] (...)</description>
+                    <title>Why documentation is (almost) more important than code</title>
+                    <link>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</guid>
+                    
+                    <pubDate>Wed, 26 Feb 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-pages.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+My favorite feature in Peppermint OS
+Peppermint OS is a lightweight Linux distribution, it only consumes about 330mb of RAM on idle. This means it's a great choice for older and/or less powerful devices, but it's also amazing for the high-end devices. If you run this on your higher-end devices, Pep[...] (...)</description>
+                    <title>My favorite feature in Peppermint OS</title>
+                    <link>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</guid>
+                    
+                    <pubDate>Wed, 04 Mar 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ice-on-peppermint-os.jpg" medium="image" type="image/jpeg" width="1200" height="799"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+How I added Elasticsearch to a Laravel application on a server with minimal resources
+Recently I've replaced the search functionality on cro-tool.com from a database-driven search engine to Elasticsearch. This wasn't an easy process and there were several hurdles to overcome, but the final result w[...] (...)</description>
+                    <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>
+                    <link>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</guid>
+                    
+                    <pubDate>Wed, 11 Mar 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cro-tool-homepage.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>
+How to set up GPG signing keys with Git in Github
+If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. After you've completed these steps, the commits you'[...] (...)</description>
+                    <title>How to set up GPG signing keys with Git in Github</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</guid>
+                    
+                    <pubDate>Wed, 18 Mar 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/lock-on-blue-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>
