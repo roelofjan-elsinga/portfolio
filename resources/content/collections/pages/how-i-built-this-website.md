@@ -12,7 +12,7 @@ menu_name: ''
 post_date: ''
 is_published: true
 is_scheduled: false
-url: /how-i-built-this-website
+url: how-i-built-this-website
 ---
 
 

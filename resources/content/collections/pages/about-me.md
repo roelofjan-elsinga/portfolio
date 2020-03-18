@@ -12,7 +12,7 @@ meta_data: {  }
 post_date: ''
 is_published: true
 is_scheduled: false
-url: /about-me
+url: about-me
 ---
 
 
