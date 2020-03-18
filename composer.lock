@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "364b4fc89bf1856078d94a72f62e7717",
+    "content-hash": "860de4d26855f23ef8abe248f67a76b8",
     "packages": [
         {
             "name": "brainmaestro/composer-git-hooks",
@@ -1822,12 +1822,17 @@
         },
         {
             "name": "roelofjan-elsinga/aloia-cms-gui",
-            "version": "dev-cms-upgrade",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roelofjan-elsinga/aloia-cms-gui.git",
+                "reference": "b1b6fb597bc0e0e8b6849350b627a7beee4619e6"
+            },
             "dist": {
-                "type": "path",
-                "url": "../flat-file-cms-ui",
-                "reference": "b622f87798f2c279990fd5f10b391304433322f1",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/aloia-cms-gui/zipball/b1b6fb597bc0e0e8b6849350b627a7beee4619e6",
+                "reference": "b1b6fb597bc0e0e8b6849350b627a7beee4619e6",
+                "shasum": ""
             },
             "require": {
                 "genealabs/laravel-caffeine": "^0.8.3",
@@ -1863,29 +1868,17 @@
                 },
                 "laravel": {
                     "providers": [
-                        "FlatFileCms\\GUI\\FlatFileCmsServiceProvider"
+                        "AloiaCms\\GUI\\ServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "FlatFileCms\\GUI\\": "src/",
-                    "FlatFileCms\\GUI\\Tests\\": "tests/"
+                    "AloiaCms\\GUI\\": "src/",
+                    "AloiaCms\\GUI\\Tests\\": "tests/"
                 }
             },
-            "autoload-dev": {
-                "classmap": [
-                    "tests/TestCase.php"
-                ]
-            },
-            "scripts": {
-                "post-install-cmd": [
-                    "vendor/bin/cghooks add --ignore-lock"
-                ],
-                "post-update-cmd": [
-                    "vendor/bin/cghooks update"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1901,7 +1894,8 @@
                 "file",
                 "laravel",
                 "user interface"
-            ]
+            ],
+            "time": "2020-03-18T14:58:53+00:00"
         },
         {
             "name": "roelofjan-elsinga/aloia-cms-publish",
@@ -6635,9 +6629,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "roelofjan-elsinga/aloia-cms-gui": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
