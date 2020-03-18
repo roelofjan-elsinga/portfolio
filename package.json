@@ -12,14 +12,16 @@
     "php:lint": "./vendor/bin/php-cs-fixer fix -v --config=./.php_cs.dist --path-mode=intersection"
   },
   "devDependencies": {
+    "acorn": "^6.4.1",
     "cross-env": "^5.1",
     "husky": "^1.3.1",
-    "jquery": "^3.4.1",
     "laravel-mix": "^4.0.14",
     "laravel-mix-purgecss": "^4.0.0",
     "lint-staged": "^8.1.4",
+    "minimist": "^1.2.2",
     "sass": "^1.16.0",
     "sass-loader": "7.*",
+    "serialize-javascript": "^2.1.1",
     "tailwindcss": "^0.7.3",
     "workbox-webpack-plugin": "^3.6.3"
   },
@@ -33,8 +35,5 @@
       "npm run php:lint",
       "git add"
     ]
-  },
-  "dependencies": {
-    "lodash": "^4.17.13"
   }
 }
