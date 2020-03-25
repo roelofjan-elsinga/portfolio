@@ -1,5 +1,5 @@
 ---
-update_date: '2020-03-18 14:35:22'
+update_date: '2020-03-19 11:01:41'
 description: 'If you''ve ever used a Github integration, then you''ll now you can verify your Git commits. In this post, I''ll go over the steps you need to take to accomplish this for your own development system.'
 is_scheduled: false
 is_published: true
@@ -79,7 +79,7 @@ To enable signing for all repositories in your system, run:
 git config --global commit.gpgsign true
 ```
 
-Now that Git know we want to sign commits, we need to specify which GPG key we want to use for this. Again, you can do this for specific repositories or for all repositories on your system. To Tell git to use the GPG key we just created for the current repository, run:
+Now that Git knows we want to sign commits, we need to specify which GPG key we want to use for this. Again, you can do this for specific repositories or for all repositories on your system. To Tell git to use the GPG key we just created for the current repository, run:
 
 ```bash
 git config user.signingkey gpgIdentifier
