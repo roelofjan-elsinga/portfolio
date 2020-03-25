@@ -1,25 +1,29 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "roelofjan-elsinga/portfolio",
+    "description": "Portfolio website for Roelof Jan Elsinga",
     "keywords": [
-        "framework",
+        "portfolio",
         "laravel"
     ],
     "license": "MIT",
-    "type": "project",
+    "type": "website",
     "require": {
-        "php": ">=7.1.3",
+        "php": ">=7.2",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.7.*",
-        "eventviva/php-image-resize": "1.5.*",
-        "kartik-v/bootstrap-fileinput": "dev-master",
+        "laravel/framework": "^5.8",
         "erusev/parsedown": "^1.7",
-        "laravelcollective/html": "^5.4.0",
-        "symfony/yaml": "^4.2",
+        "laravelcollective/html": "^5.8",
+        "symfony/yaml": "^5.0",
         "ext-json": "*",
         "ext-dom": "*",
         "ext-curl": "*",
-        "ext-zip": "*"
+        "ext-zip": "*",
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "nesbot/carbon": "2.25.1",
+        "symfony/translation": "4.3.5",
+        "guzzlehttp/guzzle": "^6.5",
+        "roelofjan-elsinga/aloia-cms": "^1.0",
+        "roelofjan-elsinga/aloia-cms-gui": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -28,7 +32,9 @@
         "filp/whoops": "~2.0",
         "nunomaduro/collision": "^2.0",
         "symfony/dom-crawler": "~4.0",
-        "friendsofphp/php-cs-fixer": "^2.14"
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "spatie/phpunit-watcher": "^1.12",
+        "mikey179/vfsstream": "^1.6"
     },
     "autoload": {
         "classmap": [
@@ -39,11 +45,13 @@
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "scripts": {
+        "post-install-cmd": "vendor/bin/cghooks add --ignore-lock",
+        "post-update-cmd": "vendor/bin/cghooks update",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -52,10 +60,23 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
+            "@php artisan package:discover",
+            "php artisan aloiacms:set-permissions"
         ]
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "echo committing as $(git config user.name)",
+                "./vendor/bin/php-cs-fixer fix . --rules=@PSR2",
+                "git add"
+            ],
+            "post-merge": [
+                "composer install"
+            ]
+        }
     }
 }

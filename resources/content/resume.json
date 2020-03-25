@@ -1,0 +1,102 @@
+{
+  "name": "Roelof Jan Elsinga",
+  "photo_url": "/images/image_bw.jpg",
+  "current_title": "Lead / Full-stack developer",
+  "experiences": [
+    {
+      "dates": "Jan 2016 - Present",
+      "company": "Tubber",
+      "location": "Groningen, The Netherlands",
+      "job_title": "Lead developer",
+      "key_activities": [
+        "Developing a real-time search engine for 12.000+ boats",
+        "Building a scalable production environment with Docker Swarm",
+        "Automating the sales process using Event sourcing",
+        "Improving code quality through automated testing with Docker and CircleCI",
+	"Near real-time indexing of millions of availability and pricing documents into Apache Solr"
+      ]
+    },
+    {
+      "dates": "Oct 2015 - Present",
+      "company": "Roelof Jan Elsinga",
+      "location": "Groningen, The Netherlands",
+      "job_title": "Freelancer",
+      "key_activities": [
+        "Developing high performance web applications",
+        "Building AloiaCMS and other open source packages"
+      ]
+    },
+    {
+      "dates": "Feb 2015 - Jun 2017",
+      "company": "Spin Internet Media",
+      "location": "Willemstad, Curaҫao",
+      "job_title": "Back-end Development Intern",
+      "key_activities": [
+        "Learning PHP Frameworks",
+        "Building a real-estate website"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Hanzehogeschool Groningen",
+      "location": "Groningen, The Netherlands",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field_of_study": "Interactive Media & Technologies",
+      "dates": "2012 – 2016"
+    },
+    {
+      "school": "Hope College",
+      "location": "Holland, Michigan, USA",
+      "degree": "Study abroad",
+      "field_of_study": "Computer science",
+      "dates": "2014 - 2014"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "name": "English",
+      "fluency": "Fluent/Native"
+    },
+    {
+      "name": "Norwegian",
+      "fluency": "Proficient"
+    }
+  ],
+  "skills": [
+    "PHP",
+    "Laravel",
+    "Golang (+testing)",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "AngularJS",
+    "Amazon EC2",
+    "Amazon RDS",
+    "DigitalOcean",
+    "ReactJS",
+    "Redis",
+    "Apache 2",
+    "Nginx",
+    "Docker",
+    "Docker Swarm",
+    "Ubuntu",
+    "CentOS",
+    "CI/CD (Travis CI, CircleCI)",
+    "Apache Solr 6.0+",
+    "PHPUnit 6+",
+    "Netlify",
+    "GitHub Pages",
+    "Jekyll",
+    "SCSS",
+    "TailwindCSS",
+    "Webpack",
+    "Gulp",
+    "Grunt",
+    "Node.js"
+  ]
+}

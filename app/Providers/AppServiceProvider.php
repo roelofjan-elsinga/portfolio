@@ -2,6 +2,8 @@
 
 namespace Main\Providers;
 
+use AloiaCms\Publish\Console\SitemapCreator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Paginator::defaultView('public.pagination');
+
+        Paginator::defaultSimpleView('public.pagination');
     }
 
     /**
@@ -23,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(SitemapCreator::class, function () {
+            return new \Main\Console\Commands\SitemapCreator();
+        });
     }
 }

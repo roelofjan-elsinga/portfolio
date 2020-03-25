@@ -30,6 +30,11 @@ return [
 
     'cloud' => 's3',
 
+    'permissions' => [
+        'user'  => env('FILE_OWNER', 'www-data'),
+        'group' => env('FILE_GROUP', 'www-data'),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Filesystem Disks

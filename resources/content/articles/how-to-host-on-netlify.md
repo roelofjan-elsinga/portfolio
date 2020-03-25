@@ -1,0 +1,1 @@
+# How to host a lightning fast website on Netlify

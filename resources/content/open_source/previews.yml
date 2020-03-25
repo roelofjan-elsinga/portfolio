@@ -1,0 +1,64 @@
+previews:
+
+  model-indexer:
+    name: tubber/model-indexer
+    github_url: https://github.com/roelofjan-elsinga/model-indexer
+    description: >
+      This package makes it simple to index large amounts of data to Solr.
+
+  content-to-html-parser:
+    name: roelofjan-elsinga/content-to-html-parser
+    github_url: https://github.com/roelofjan-elsinga/content-to-html-parser
+    description: >
+      This package converts content from strings or files to HTML strings to be rendered on a page.
+
+  sitemap-generator:
+    name: roelofjan-elsinga/sitemap-generator
+    github_url: https://github.com/roelofjan-elsinga/sitemap-generator
+    description: >
+      This package helps you to very easily generate a sitemap for your website.
+
+  atom-feed-generator:
+    name: roelofjan-elsinga/atom-feed-generator
+    github_url: https://github.com/roelofjan-elsinga/atom-feed-generator
+    description: >
+      This package helps you to very easily generate an Atom Feed for your website.
+
+  url-language-extractor:
+    name: roelofjan-elsinga/url-language-extractor
+    github_url: https://github.com/roelofjan-elsinga/url-language-extractor
+    description: >
+      This package helps you to resolve the language in a URL.
+
+  laravel-onesky:
+    name: roelofjan-elsinga/laravel-onesky
+    github_url: https://github.com/roelofjan-elsinga/laravel-onesky
+    description: >
+      A seamless integration between Laravel and the Onesky API.
+      By using artisan commands you can easily push new phrases ready for translation and pull translated phrases ready for production.
+
+  solarium-luke:
+    name: roelofjan-elsinga/solarium-luke
+    github_url: https://github.com/roelofjan-elsinga/solarium-luke
+    description: >
+      A Luke request handler to Solarium.
+      This package currently supports Solarium 5.x.
+
+  flat-file-cms:
+    name: roelofjan-elsinga / flat-file-cms
+    github_url: https://github.com/roelofjan-elsinga/flat-file-cms
+    description: >
+      This package contains a drop-in CMS that uses files to store its contents.
+
+  flat-file-cms-gui:
+    name: roelofjan-elsinga / flat-file-cms-gui
+    github_url: https://github.com/roelofjan-elsinga/flat-file-cms-gui
+    description: >
+      This package includes the latest version of the Flat File CMS, Authentication, User creation, Media management and
+      the ability to manage the data used by the Flat File CMS package in a clear and visual web environment.
+
+  flat-file-cms-publish:
+    name: roelofjan-elsinga / flat-file-cms-publish
+    github_url: https://github.com/roelofjan-elsinga/flat-file-cms-publish
+    description: >
+      This is a self publishing module for Flat File CMS.

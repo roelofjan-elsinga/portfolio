@@ -17,6 +17,7 @@ return [
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
+        'endpoint' => 'api.eu.mailgun.net'
     ],
 
     'mandrill' => [
@@ -30,7 +31,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => Main\User::class,
+        'model'  => Main\Models\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

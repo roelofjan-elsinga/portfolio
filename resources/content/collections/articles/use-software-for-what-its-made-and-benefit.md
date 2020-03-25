@@ -1,0 +1,29 @@
+---
+update_date: '2019-08-26 14:36:28'
+description: 'You! Yes you there! Are you still using SQL queries to perform search requests in your database? How''s that going for you? It''s not as quick as you''d expect it '
+is_scheduled: false
+is_published: true
+post_date: '2016-12-22'
+url: use-software-for-what-its-made-and-benefit
+---
+![Archive](/images/articles/archive.jpg)
+
+# Use software for what it's made, and you'll see the benefits!
+
+You! Yes, you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from using SQL queries in a relational database to a piece of software that's designed for search: Solr. Don't get me wrong, SQL queries or requests to any NoSQL database are perfectly fine if you have very specific search needs. For example: find the records belonging to this particular unique identifier. This is a wonderful solution. However, when your databases start to grow, the number of documents belonging to this particular unique identifier grow and having to do more JOIN operations for relational databases, you'll start to find bottlenecks.
+
+### What was the problem?
+
+JOIN operations, in particular, was an issue for me, the sheer amount of data that needed to be filtered destroyed my search performances. Often having to wait for 10 or more seconds before receiving any data whatsoever. My first solution was to make one enormous flat table in my SQL database. My thought behind this was to eliminate the JOIN queries to boost performance. This worked really well for months, it started with about 5000 records, which is an easy task, to say the least. However, this slowly grew over the months to a table of 200,000+ records. It was at this point I saw a slight performance hit, going from 2 to 4-6 seconds per request. This was definitely still less than before, but it was too slow for me. I eventually decided to make the switch when I had to implement real-time pricing for products. This meant calculating discounts, user credits, and a list of other things on the fly...for thousands of records. You can imagine the enormous hit this must've been. My search request times went from 4-6 seconds to about 45 seconds. This was the point at which I stopped, stood back, and made the decision to use two different systems, each designed for the purpose it serves. The relational database to save data, keeping it well structured, and Solr to index documents and make them searchable.
+
+### The solution
+
+Now, if you know me, you know that I'm not the most technical programmer alive. I know how to do a bit of everything and aren't the best at all of them. However, I am someone that does not give up easily. Starting to learn how to set up Solr and Solarium (PHP library) was definitely not an easy task. In my opinion, I missed a lot of the documentation that I'm used to. I use Laravel and Laravel Lumen on a daily basis and these PHP (micro) frameworks are wonderfully documented. To start with the whole process, I set up a virtual Ubuntu box. I was already familiar with the Java programming language (on which Solr is built), so at least I wasn't completely clueless. Anyway, I set up the Solr server and created my first collection. This took me about 4 hours because I couldn't find the command for it and kept trying to use the GUI in the browser. After I found the command for it though, I was off to a flying start. I set up a username and password for it and then got started on Solarium.
+
+Solarium is a PHP library to interact with a Solr server. This was easily installed through Composer. The configuration in Laravel itself was also very simplistic and I got a working connection with my Solr server within 30 minutes. But then I had to populate this brand new Solr server with data to index. I followed the Solarium documentation and was struggling. It's a useful guide, but it could be much more extensive to really help people that just start out with the library. However, once I finally got the first documents indexed, it was very easy to create new collections and populate these with documents.
+
+### Was it worth it?
+
+So you might be wondering, well that's great and all, but did it actually help you with your project and was it worth it? To answer this question: Yes it did help my search performance. I went from 45 seconds to 600ms - 1.8 seconds. Pretty amazing performance boost right? And was it worth it? Absolutely! Besides being incredibly fast with normal search requests, you can very easily create facets, apply filters, group documents, etc. This meant that I could replace most of my manual filtering in PHP with the built-in filtering in Solr, further improving the search experience. Solr automatically sorts documents, so the most relevant documents will be displayed at the top. Before I had to do all of that manually because relevant documents in my case were heavily dependent on the distance between the requested location and the product. Solr does all of this for you, on the fly. Of course, this brings a lot of configuration in the form of search queries, but the possibilities are virtually limitless.
+
+I'm very happy I made the switch. Not only did it speed up the search, but it also helped to analyze data, create reports, and speed up different parts of the application. Besides the obvious boost in speed, it also relieved my server load. The enormous SQL queries were putting a strain on my server, partially due to my own incompetence sometimes, but also due to the larger dataset. Solr took the strain on the server away, so now it can focus on more important things, like helping the user have a good experience within the application. So if you face the same problem, definitely give Solr a try and see if it benefits you in the same way it did me!

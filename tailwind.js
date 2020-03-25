@@ -127,7 +127,9 @@ let colors = {
     'pink-light': '#fa7ea8',
     'pink-lighter': '#ffbbca',
     'pink-lightest': '#ffebef',
-}
+
+    'theme-dark': '#4fabfe'
+};
 
 module.exports = {
 
@@ -170,7 +172,8 @@ module.exports = {
         'sm': '576px',
         'md': '768px',
         'lg': '992px',
-        'xl': '1200px',
+        // 'xl': '1200px',
+        'print': {'raw': 'print'}
     },
 
 
@@ -498,6 +501,7 @@ module.exports = {
         '32': '8rem',
         '48': '12rem',
         '64': '16rem',
+        '128': '32rem',
         '1/2': '50%',
         '1/3': '33.33333%',
         '2/3': '66.66667%',

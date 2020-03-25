@@ -5,63 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('meta')
-            <meta name="keywords" content="{{ $page->keywords }}">
-            <meta name="description" content="{{ $page->description }}">
-            <meta name="author" content="{{ $page->author }}">
+            <meta name="description" content="{{ $page->description ?? $page->description() }}">
+            <meta name="author" content="{{ $page->author ?? $page->author() }}">
 
             <link rel="author" href="https://plus.google.com/u/0/+RoelofJanElsinga"/>
 
-            <meta property="og:title" content="{{ $page->title }}"/>
+            <meta property="og:title" content="{{ $page->title ?? $page->title() }}"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content="{{ $page->image_small }}"/>
+            <meta property="og:image" content="{{ $page->image_url ?? $page->thumbnail()}}"/>
             <meta property="og:url" content="{{ Request::url() }}"/>
-            <meta property="og:description" content="{{ $page->description }}"/>
+            <meta property="og:description" content="{{ $page->description ?? $page->description() }}"/>
 
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:url" content="{{ Request::url() }}">
-            <meta name="twitter:title" content="{{ $page->title }}">
-            <meta name="twitter:description" content="{{ $page->description }}">
-            <meta name="twitter:image" content="{{ $page->image_large  }}">
+            <meta name="twitter:title" content="{{ $page->title ?? $page->title() }}">
+            <meta name="twitter:description" content="{{ $page->description ?? $page->description() }}">
+            <meta name="twitter:image" content="{{ $page->image_url ?? $page->image()  }}">
 
-            @if(isset($page->canonical) && !is_null($page->canonical))
+            @if((isset($page->canonical) && !is_null($page->canonical)))
                 <link rel="canonical" href="{{$page->canonical}}" />
             @endif
 
-            <title>{{ $page->title }}</title>
+            @if((method_exists($page, 'canonicalLink') && !is_null($page->canonicalLink())))
+                <link rel="canonical" href="{{$page->canonicalLink()}}" />
+            @endif
+
+            <title>{{ $page->title ?? $page->title() }} - Roelof Jan Elsinga</title>
 		@show
 
         <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-        @if(\Main\Classes\Canonical::needsLink())
+        {{-- These are prev and next links for pagination --}}
+
+        @if(isset($pagination_tags['prev']) && !is_null($pagination_tags['prev']))
+            <link rel="prev" href="{{url($pagination_tags['prev'])}}" />
+        @endif
+
+        @if(isset($pagination_tags['next']) && !is_null($pagination_tags['next']))
+            <link rel="next" href="{{url($pagination_tags['next'])}}" />
+        @endif
+
+        {{-- If there is pagination, display the canonical link --}}
+
+        @if(isset($pagination_tags))
             <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
         @endif
 
-		<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
-		<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
-		<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/icons/apple-icon-72x72.png') }}">
-		<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/icons/apple-icon-76x76.png') }}">
-		<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/icons/apple-icon-114x114.png') }}">
-		<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/icons/apple-icon-120x120.png') }}">
-		<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/icons/apple-icon-144x144.png') }}">
-		<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/icons/apple-icon-152x152.png') }}">
-		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/apple-icon-180x180.png') }}">
-		<link rel="icon" type="image/png" sizes="36x36"  href="{{ asset('images/icons/android-icon-36x36.png') }}">
-		<link rel="icon" type="image/png" sizes="48x48"  href="{{ asset('images/icons/android-icon-48x48.png') }}">
-		<link rel="icon" type="image/png" sizes="72x72"  href="{{ asset('images/icons/android-icon-72x72.png') }}">
-		<link rel="icon" type="image/png" sizes="96x96"  href="{{ asset('images/icons/android-icon-96x96.png') }}">
-		<link rel="icon" type="image/png" sizes="144x144"  href="{{ asset('images/icons/android-icon-144x144.png') }}">
-		<link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('images/icons/android-icon-192x192.png') }}">
+        {{-- Display the canonical URL if necessary and if it's not already included --}}
+
+        @if(!isset($pagination_tags) && \Main\Classes\Canonical::needsLink())
+            <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
+        @endif
+
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icons/favicon-16x16.png') }}">
-		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon-32x32.png') }}">
-		<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/icons/favicon-96x96.png') }}">
-		<link rel="icon" href="{{ asset('images/icons/favicon.ico') }}">
-		<link rel="manifest" href="{{ asset('images/icons/manifest.json') }}">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-70x70.png') }}">
-		<meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-144x144.png') }}">
-		<meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-150x150.png') }}">
-		<meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-310x310.png') }}">
-		<meta name="theme-color" content="#ffffff">
+        <link rel="manifest" href="{{ asset('images/icons/site.webmanifest') }}">
+        <link rel="mask-icon" href="{{ asset('images/icons/safari-pinned-tab.svg') }}" color="#4fabfe">
+        <link rel="shortcut icon" href="{{ asset('images/icons/favicon.ico') }}">
+        <meta name="msapplication-TileColor" content="#4fabfe">
+        <meta name="msapplication-config" content="{{ asset('images/icons/browserconfig.xml') }}">
+        <meta name="theme-color" content="#ffffff">
 
         <!-- Bootstrap -->
         @section('stylesheets')
@@ -89,7 +93,7 @@
 
             @include('blocks.mailchimp_form')
 
-            @include('blocks.navigation')
+            @include('blocks.business_details')
 
         @show
 
@@ -142,12 +146,22 @@
 
             gtag('config', 'UA-49160339-1');
         </script>
+{{--        <script>--}}
+{{--            if('serviceWorker' in navigator) {--}}
+{{--                navigator.serviceWorker--}}
+{{--                    .register('/sw.js')--}}
+{{--                    .then(function() { console.log("Service Worker Registered"); });--}}
+{{--            }--}}
+{{--        </script>--}}
         <script>
-            if('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                    .register('/sw.js')
-                    .then(function() { console.log("Service Worker Registered"); });
-            }
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1254063,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
     </body>
 </html>

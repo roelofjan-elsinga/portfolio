@@ -84,6 +84,8 @@ return [
 
     'key' => env('APP_KEY', 'SomeRandomString'),
 
+    'secret' => env('APP_SECRET', 'SomeRandomString'),
+
     'cipher' => 'AES-256-CBC',
 
     /*

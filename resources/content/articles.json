@@ -1,0 +1,743 @@
+{
+    "0": {
+        "filename": "researching-home-servers.md",
+        "postDate": "2016-10-20",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "1": {
+        "filename": "benefits-single-page-application.md",
+        "postDate": "2016-10-27",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "2": {
+        "filename": "the-future-of-machine-learning.md",
+        "postDate": "2016-11-03",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "3": {
+        "filename": "windows-or-linux.md",
+        "postDate": "2016-11-10",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "4": {
+        "filename": "isomorphic-javascript.md",
+        "postDate": "2016-11-17",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "5": {
+        "filename": "building-your-own-computer.md",
+        "postDate": "2016-12-01",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "6": {
+        "filename": "practical-use-vr-for-web.md",
+        "postDate": "2016-12-08",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "7": {
+        "filename": "indexeddb-caching-your-data-on-the-client-side.md",
+        "postDate": "2016-12-15",
+        "updateDate": "2019-08-26 13:18:19",
+        "description": "A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that ne",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "8": {
+        "filename": "use-software-for-what-its-made-and-benefit.md",
+        "postDate": "2016-12-22",
+        "updateDate": "2019-08-26 14:36:28",
+        "description": "You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it ",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "9": {
+        "filename": "the-importance-of-server-side-caching.md",
+        "postDate": "2016-12-29",
+        "updateDate": "2019-08-26 14:40:04",
+        "description": "Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your h",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "10": {
+        "filename": "how-to-see-if-your-application-works.md",
+        "postDate": "2017-01-05",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "11": {
+        "filename": "how-to-index-a-single-page-application-built-in-angularjs.md",
+        "postDate": "2017-01-12",
+        "updateDate": "2019-08-26 17:36:43",
+        "description": "Find out how to properly index a single page application for Google and other search engines with Prerender.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "12": {
+        "filename": "using-sass-rather-css.md",
+        "postDate": "2017-06-01",
+        "updateDate": "2019-08-26 17:43:46",
+        "description": "When I first started out with web design & development,\r\nCSS was this tool to make HTML pages look better.\r\nThis was just before responsive web design started bec",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "13": {
+        "filename": "some-people-can-work-remotely.md",
+        "postDate": "2017-06-02",
+        "updateDate": "2019-08-26 18:52:41",
+        "description": "Working remotely, we've all heard of it before. Simply said, you're working on something,\r\nbut you're not actually in the office while you do it.\r\nIn some occasio",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "14": {
+        "filename": "learned-building-single-page-applications.md",
+        "postDate": "2017-06-06",
+        "updateDate": "2019-08-26 18:59:07",
+        "description": "Single Page Applications (SPA's) are amazing to build and work with,\r\nbut there are a lot of disadvantages as well. This post describes some of the things that\r\nI",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "15": {
+        "filename": "offline-accessibility-service-workers.md",
+        "postDate": "2017-06-09",
+        "updateDate": "2019-08-26 19:13:36",
+        "description": "Web applications are great. They're fast, they can be used on all platforms and often feel\r\nlike they're a real native application with accessibility .\r\nBut then,",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "16": {
+        "filename": "build-bridges-api-based-structures.md",
+        "postDate": "2017-08-12",
+        "updateDate": "2019-08-26 19:27:19",
+        "description": "There is nothing more fun than working with API's during my work day.\r\nIt's programming like any other day, but it's also so much more!\r\nIt's connecting other ser",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "17": {
+        "filename": "developer-tools-back-end-programmer.md",
+        "postDate": "2017-08-26",
+        "updateDate": "2019-08-27 08:16:22",
+        "description": "Any developer will have a set of developer tools they swear by. A set of tools that does\r\neverything we need it to do. People can say that tools are interchangea",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "18": {
+        "filename": "podcasts-for-creators.md",
+        "postDate": "2017-09-02",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "19": {
+        "filename": "battle-apples-oranges-angular-vs-react.md",
+        "postDate": "2017-09-09",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "20": {
+        "filename": "programming-books-worth-your-money.md",
+        "postDate": "2017-09-16",
+        "updateDate": "2019-09-01 10:36:48",
+        "description": "You've all seen programming books on the internet or in bookstores. But most of us know\r\nthat those books are usually not relevant anymore, most of them are outd",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "21": {
+        "filename": "stay-healthy-web-designer-developer.md",
+        "postDate": "2017-09-30",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "22": {
+        "filename": "how-to-improve-your-working-day.md",
+        "postDate": "2017-10-07",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "23": {
+        "filename": "how-to-wake-up-more-easily-7-tips.md",
+        "postDate": "2017-10-18",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "24": {
+        "filename": "modernizing-log-part-1-conventional-rest-api-to-graphql.md",
+        "postDate": "2018-03-14",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-1-conventional-rest-api-to-graphql-f512cb07d2ab"
+    },
+    "25": {
+        "filename": "improving-my-programming-skills-at-a-full-time-job.md",
+        "postDate": "2018-03-15",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/improving-my-programming-skills-at-a-full-time-job-e3f380c492b1"
+    },
+    "26": {
+        "filename": "docker-isnt-as-difficult-as-i-thought-it-was.md",
+        "postDate": "2018-03-16",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/docker-isnt-as-difficult-as-i-thought-it-was-db2cdea06e21"
+    },
+    "27": {
+        "filename": "modernizing-log-part-2-graphql-test-results.md",
+        "postDate": "2018-03-19",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-2-graphql-test-results-e8f3b2db676b"
+    },
+    "28": {
+        "filename": "how-i-sped-up-a-cronjob-by-94.md",
+        "postDate": "2018-04-26",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/how-i-sped-up-a-cronjob-by-1800-e33e9ef073dd"
+    },
+    "29": {
+        "filename": "an-overview-of-my-programming-style-guide.md",
+        "postDate": "2018-04-29",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/@roelofjanelsinga\/a-overview-of-my-programming-style-guide-a5537b6e8b52",
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/a-overview-of-my-programming-style-guide-a5537b6e8b52"
+    },
+    "30": {
+        "filename": "modernizing-log-part-3-optimizing-graphql-queries.md",
+        "postDate": "2018-05-02",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/modernizing-log-part-3-optimizing-graphql-queries-bea400c86a3d"
+    },
+    "31": {
+        "filename": "angularjs-angular-v6-hybrid-finally.md",
+        "postDate": "2018-06-01",
+        "updateDate": "2019-11-01 08:22:02",
+        "description": "After 2.5 years it's finally time to make this happen! We're upgrading an AngularJS application to Angular (v6+). Follow along and by the end you'll have a working hybrid application.",
+        "isScheduled": false,
+        "isPublished": true,
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/angularjs-angular-v6-hybrid-finally-97ac37087de1"
+    },
+    "32": {
+        "filename": "how-to-start-using-the-terminal.md",
+        "postDate": "2018-06-17",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/@roelofjanelsinga\/how-to-start-using-the-terminal-9116662bd5e",
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/how-to-start-using-the-terminal-9116662bd5e"
+    },
+    "33": {
+        "filename": "sharing-state-between-angularjs-and-angular-v6-with-redux.md",
+        "postDate": "2018-07-04",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/itnext.io\/sharing-state-between-angularjs-and-angular-v6-with-redux-75e3abe7f4f3",
+        "canonical": "https:\/\/itnext.io\/sharing-state-between-angularjs-and-angular-v6-with-redux-75e3abe7f4f3"
+    },
+    "34": {
+        "filename": "enhance-your-dynamic-website-with-markdown.md",
+        "postDate": "2018-07-10",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/@roelofjanelsinga\/enhance-your-dynamic-website-with-markdown-20f374ba2039",
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/enhance-your-dynamic-website-with-markdown-20f374ba2039"
+    },
+    "35": {
+        "filename": "sharing-the-ui-router-between-angularjs-and-angular-6.md",
+        "postDate": "2018-07-22",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/itnext.io\/sharing-the-ui-router-between-angularjs-and-angular-6-84f6370ec557",
+        "canonical": "https:\/\/itnext.io\/sharing-the-ui-router-between-angularjs-and-angular-6-84f6370ec557"
+    },
+    "36": {
+        "filename": "apache-solr-tips-for-beginners-like-me.md",
+        "postDate": "2018-08-06",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/itnext.io\/apache-solr-tips-for-beginners-like-me-b27201dcefcf",
+        "canonical": "https:\/\/itnext.io\/apache-solr-tips-for-beginners-like-me-b27201dcefcf"
+    },
+    "37": {
+        "filename": "i-need-a-mentor.md",
+        "postDate": "2018-08-15",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/@roelofjanelsinga\/i-need-a-mentor-cfbfe948c47e",
+        "canonical": "https:\/\/medium.com\/@roelofjanelsinga\/i-need-a-mentor-cfbfe948c47e"
+    },
+    "38": {
+        "filename": "how-i-made-working-on-my-side-project-more-enjoyable.md",
+        "postDate": "2018-10-17",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/nyc-design\/how-i-made-working-on-my-side-project-more-enjoyable-and-rewarding-a3ae8e1f3ae5",
+        "canonical": "https:\/\/medium.com\/nyc-design\/how-i-made-working-on-my-side-project-more-enjoyable-and-rewarding-a3ae8e1f3ae5"
+    },
+    "39": {
+        "filename": "development-sprint-workflows.md",
+        "postDate": "2018-11-05",
+        "isScheduled": false,
+        "isPublished": true,
+        "url": "https:\/\/medium.com\/tubber-development\/development-sprint-workflows-55b21225b2f8",
+        "canonical": "https:\/\/medium.com\/tubber-development\/development-sprint-workflows-55b21225b2f8"
+    },
+    "40": {
+        "filename": "plants-in-my-living-space.md",
+        "postDate": "2019-01-28",
+        "description": "Plants help me keep a calm mind and deal with stress. I keep the plants in my office and other living spaces for relaxation.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "41": {
+        "filename": "improving-development-hiring.md",
+        "postDate": "2019-01-25",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "42": {
+        "filename": "5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people.md",
+        "postDate": "2019-02-07",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "43": {
+        "filename": "learning-to-speak-norwegian.md",
+        "postDate": "2019-02-10",
+        "description": "I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "44": {
+        "filename": "learn-to-say-no.md",
+        "postDate": "2019-02-11",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "45": {
+        "filename": "company-culture.md",
+        "postDate": "2019-02-14",
+        "updateDate": "2019-07-17 10:05:21",
+        "description": "Work should be work, and free time should be free time. When you're working, you should be able to work uninterrupted and have a great working day, but then, when you're done, you have free time.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "46": {
+        "filename": "the-elephant-in-the-room-burnouts.md",
+        "postDate": "2019-02-22",
+        "description": "Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "47": {
+        "filename": "how-to-search-whole-world-with-solr-spatial-search.md",
+        "postDate": "2019-02-26",
+        "updateDate": "2019-03-13 07:26:00",
+        "description": "When using a Polygon or MultiPolygon for searching on a SpatialField with IsWithin(), you can't use a square shape unless it's counter-clockwise.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "48": {
+        "filename": "how-i-reduced-my-docker-image-by-55-percent.md",
+        "postDate": "2019-02-28",
+        "description": "Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "49": {
+        "filename": "my-top-10-favorite-podcasts.md",
+        "postDate": "2019-03-20",
+        "description": "I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "50": {
+        "filename": "seo-and-personal-marketing-for-developers.md",
+        "postDate": "2019-03-21",
+        "description": "Find out how to get some quick SEO wins for your personal blog! This post is specifically aimed to developers, because we often have trouble selling ourselves.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "51": {
+        "filename": "why-i-dont-use-database-for-my-blog.md",
+        "postDate": "2019-03-25",
+        "description": "There are many amazing alternatives to using a database to store data for your website. Find out why I chose to use static files to store all content for my blog.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "52": {
+        "filename": "how-to-generate-a-sitemap.md",
+        "postDate": "2019-03-29",
+        "updateDate": "2019-09-01 10:55:15",
+        "description": "Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "53": {
+        "filename": "my-choice-of-configuraton-file-types.md",
+        "postDate": "2019-04-04",
+        "updateDate": "2019-08-30 20:13:53",
+        "description": "Find out which file types I use for certain scenarios and which situations suit a specific file type best. We\u2019ll dive into JSON, YAML, XML, and dotenv.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "54": {
+        "filename": "why-i-dont-have-comments-on-my-blog.md",
+        "postDate": "2019-04-10",
+        "description": "Find out why I haven't added a comment system on my blog. It has been left out very intentionally, maybe it's something you should consider too.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "55": {
+        "filename": "5-reasons-to-start-using-ubuntu.md",
+        "postDate": "2019-04-21",
+        "description": "Find out what my top 5 reasons were to start using Ubuntu and why you should perhaps also use it as your primary operating system. Hint: It's amazing!",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "56": {
+        "filename": "what-waking-up-at-6-taught-me.md",
+        "postDate": "2019-05-01",
+        "description": "Waking up at 6 every morning has been a very surprising improvement in my life, find out what impact it had on my day-to-day life.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "57": {
+        "filename": "discovering-the-online-presence-of-my-target-audience.md",
+        "postDate": "2019-05-11",
+        "description": "Find out how I discovered the online presence of my target audience and what my next steps are to finding a bigger audience.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "58": {
+        "filename": "improve-performance-polymorphic-relationships-laravel.md",
+        "postDate": "2019-07-29",
+        "updateDate": "2019-07-29 07:18:49",
+        "description": "In this post I'm explaining how you can improve the query performance for polymorphic relationships in Laravel, find out how I did it.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "59": {
+        "filename": "first-steps-event-sourcing-php.md",
+        "postDate": "2019-08-13",
+        "updateDate": "2019-09-04 21:32:54",
+        "description": "I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "60": {
+        "filename": "recent-open-source-contributions-augustus-2019.md",
+        "postDate": "2019-08-15",
+        "updateDate": "2019-08-15 19:39:50",
+        "description": "Recently I've been quite active with contributing to open source projects on GitHub. Find out which packages I've contributed to and which packages of my own I've been maintaining.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "61": {
+        "filename": "building-automatic-api-stub-or-mocks-php.md",
+        "postDate": "2019-08-21",
+        "updateDate": "2019-08-20 17:28:53",
+        "description": "Testing your code is essential if you want to write code that doesn't break your application. Find out how I'm going to use automatic stubs to test the implementation of API's instead of the actual API calls.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "62": {
+        "filename": "how-becoming-better-communicator.md",
+        "postDate": "2019-08-28",
+        "updateDate": "2019-08-20 19:54:26",
+        "description": "I'm trying to become a more skilled communicator to my peers and non-technical people. In this post, you'll find out how I'm attempting to do this.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "63": {
+        "filename": "how-to-write-blog-posts-in-6-steps.md",
+        "postDate": "2019-09-04",
+        "updateDate": "2019-08-26 17:26:03",
+        "description": "Writing blog posts can be a difficult if you don't write a lot and don't know where to start. Find out how I write blog posts and maybe it'll help you to get started too.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "64": {
+        "filename": "my-thoughts-on-vpns.md",
+        "postDate": "2019-09-11",
+        "updateDate": "2019-08-31 18:21:19",
+        "description": "Find out why I think you should use a VPN for your internet usage. If you like to browse any and all websites and be anonymous at the same time, you might benefit from using a VPN.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "65": {
+        "filename": "why-built-my-own-cms.md",
+        "postDate": "2019-09-18",
+        "updateDate": "2019-09-08 16:13:57",
+        "description": "I've always been against building my own CMS. Find out why I decided to build my own CMS anyway and what motivated me to build modules for it.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "66": {
+        "filename": "how-to-optimize-your-product-without-blocking-progress.md",
+        "postDate": "2020-01-08",
+        "updateDate": "2020-01-07 19:29:01",
+        "description": "In this post I go over how you can optimize your product without blocking progress along the way. A lot of people can get stuck on features that might be meaningless to the product. Through data you can prioritize features and improvements, which will guide your work towards a specific goal.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "67": {
+        "filename": "open-source-contributions-september-2019.md",
+        "postDate": "2019-09-25",
+        "updateDate": "2019-09-14 14:08:03",
+        "description": "In this post I explain which open-source project I contributed to in september of 2019. It's been a very interesting month and I've learned a lot of new things.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "69": {
+        "filename": "struggling-with-micro-optimizations-large-scale-data-processing.md",
+        "postDate": "2019-10-02",
+        "updateDate": "2019-09-14 14:38:05",
+        "description": "I'm struggling with micro optimizations on large scale data processing. Find out in what way I'm trying to improve the runtime of the calculations by saving processing cycles.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "70": {
+        "filename": "why-simple-script-harder-to-write.md",
+        "postDate": "2019-10-16",
+        "updateDate": "2019-09-29 20:59:06",
+        "description": "Why is a simple script often harder to write? Find out why it's much more difficult to write a simple script that solves a complicated problem than writing an elaborate solution.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "72": {
+        "filename": "portfolio-updates-september-2019.md",
+        "postDate": "2019-10-09",
+        "updateDate": "2019-10-11 17:08:33",
+        "description": "Portfolio updates for September 2019",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "73": {
+        "filename": "how-to-write-good-documentation.md",
+        "postDate": "2019-10-30",
+        "updateDate": "2019-10-14 13:33:35",
+        "description": "In this post, I go through the steps you can take to write good documentation. You can use these in any kind of project and will allow others to help you when you need it.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "74": {
+        "filename": "how-to-fix-cors-headers-single-page-application.md",
+        "postDate": "2019-09-27",
+        "updateDate": "2019-09-27 08:42:18",
+        "description": "In this post I'll explain how you can fix CORS headers for usage in a single page application. I give code examples with comments for Nginx and Apache.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "75": {
+        "filename": "creating-efficient-ci-pipelines-with-docker.md",
+        "postDate": "2019-10-23",
+        "updateDate": "2019-10-23 14:26:10",
+        "description": "Find out what I've done to improve the efficiency in the CI pipeline with CircleCI and Docker for a PHP application. You won't even have to install any software yourself.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "76": {
+        "filename": "100-test-coverage-why-or-why-not.md",
+        "postDate": "2019-11-06",
+        "updateDate": "2019-11-02 15:26:40",
+        "description": "100% test coverage: Why or why not? But first, what does 100% test coverage mean? Let's explore the topic in this post and I'll tell you my thoughts about it afterwards.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "77": {
+        "filename": "exploration-of-event-storming.md",
+        "postDate": "2020-02-29",
+        "description": "Exploration of event storming",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "78": {
+        "filename": "using-netlify-to-simplify-the-ci-cd-pipeline-with-angular.md",
+        "postDate": "2019-11-13",
+        "updateDate": "2019-11-06 15:57:13",
+        "description": "In this post I describe how I transformed a mono repository platform to a platform with two distinct applications and using Netlify to simplify the CI\/CD pipeline with Angular. ",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "79": {
+        "filename": "how-to-host-on-github-pages.md",
+        "postDate": "2019-11-27",
+        "updateDate": "2019-11-20 23:38:58",
+        "description": "In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "80": {
+        "filename": "how-to-host-on-netlify.md",
+        "postDate": "2020-02-29",
+        "updateDate": "2019-11-06 16:31:28",
+        "description": "How to host a lightning fast website on Netlify",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "81": {
+        "filename": "creating-documentation-website-for-my-open-source-package-aloia-cms.md",
+        "postDate": "2019-11-20",
+        "updateDate": "2019-11-18 03:06:32",
+        "description": "Creating a documentation website for my open source package Aloia CMS",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "82": {
+        "filename": "event-sourcing-single-source-truth.md",
+        "postDate": "2019-12-04",
+        "updateDate": "2019-11-28 20:44:17",
+        "description": "Event sourcing: The single source of truth. In this post I'll explain my reasoning for calling event sourcing the single source of truth. Spoiler alert: It is a very beneficial practice for decentralized applications.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "83": {
+        "filename": "rss-atom-feed-why-should-have-for-blog.md",
+        "postDate": "2019-12-11",
+        "updateDate": "2019-12-10 09:49:08",
+        "description": "RSS\/Atom feed: Why you should have one for your blog. In this post I talk about why you should have syndication feeds for your blog. You can easily and quickly share your content to many different platforms without doing any of the work yourself.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "84": {
+        "filename": "top-10-reasons-to-start-blogging-as-software-engineer.md",
+        "postDate": "2019-12-25",
+        "updateDate": "2019-12-10 12:54:38",
+        "description": "In this post I go over the top 10 reasons why I believe software engineers would benefit from blogging. But remember: If you're not writing blog posts you're not any less of a software developer.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "85": {
+        "filename": "linux-how-it-saved-my-old-laptop.md",
+        "postDate": "2019-12-18",
+        "updateDate": "2019-12-18 17:28:57",
+        "description": "Linux: How it saved my old laptop. I this post I'm going to talk about my transition from using Windows for everything to using Linux for everything and how this impacted my decision to revive an old laptop that I thought was broken.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "86": {
+        "filename": "proxy-api-calls-to-your-server-during-angular-development.md",
+        "postDate": "2019-12-11",
+        "description": "In this post, I'm showing you how you can proxy API calls to your server during Angular development and make the development process very painless.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "87": {
+        "filename": "how-to-reclaim-your-privacy-on-the-internet.md",
+        "postDate": "2020-01-01",
+        "updateDate": "2020-01-01 11:24:51",
+        "description": "In this post I'm giving you four different steps you can take to reclaim your privacy on the internet. You can take all of these steps, but also just some of them. Any steps you take will be an improvement already.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "88": {
+        "filename": "guide-to-lightweight-linux-distributions.md",
+        "postDate": "2020-02-29",
+        "updateDate": "2020-02-05 08:52:14",
+        "description": "A guide to lightweight Linux distributions",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "89": {
+        "filename": "linux-rolling-releases-versus-snapshot-releases.md",
+        "postDate": "2020-01-15",
+        "updateDate": "2020-01-15 16:34:51",
+        "description": "In this post I explain the differences between a rolling release and a snapshot release distro. This post is aimed at people that are just starting out with Linux of want to explore and make the switch to Linux.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "90": {
+        "filename": "linux-desktop-environments.md",
+        "postDate": "2020-03-25",
+        "updateDate": "2020-02-21 09:20:08",
+        "description": "Linux: Desktop environments",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "91": {
+        "filename": "guide-to-ubuntu-distros.md",
+        "postDate": "2020-02-29",
+        "updateDate": "2020-02-12 11:06:55",
+        "description": "Guide to ubuntu flavors",
+        "isScheduled": false,
+        "isPublished": false
+    },
+    "92": {
+        "filename": "the-impact-of-migrating-from-php-to-golang.md",
+        "postDate": "2020-01-22",
+        "updateDate": "2020-01-22 10:16:53",
+        "description": "Find out how I reduced the execution time of a script by 99%. In this post I go over the impact of migrating from PHP to Golang. I recently migrated a business process from PHP to Golang and it had more benefits than just a performance increase.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "93": {
+        "filename": "what-i-learned-from-publishing-my-first-golang-package.md",
+        "postDate": "2020-01-29",
+        "updateDate": "2020-01-29 10:04:21",
+        "description": "In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "94": {
+        "filename": "aloia-cms-the-road-to-version-1-0.md",
+        "postDate": "2020-02-05",
+        "updateDate": "2020-02-06 08:44:36",
+        "description": "In this post, I reflect on some of the recent changes I've planned and implemented into Aloia CMS. The release of version 1.0 is close and is all about simplying workflows and getting out of the way.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "95": {
+        "filename": "building-my-personal-cloud-after-4-years.md",
+        "postDate": "2020-02-12",
+        "updateDate": "2020-02-13 12:34:32",
+        "description": "In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "96": {
+        "filename": "how-to-setup-personal-cloud-raspberrypi-nextcloud.md",
+        "postDate": "2020-02-19",
+        "updateDate": "2020-02-21 14:21:49",
+        "description": "In this post, I go over the steps you have to take to set up an internet-facing personal cloud using nothing more than a Raspberry Pi, Nextcloud, and an external hard drive.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "97": {
+        "filename": "why-documentation-is-more-important-than-code.md",
+        "postDate": "2020-02-26",
+        "updateDate": "2020-02-27 17:35:49",
+        "description": "In this post I go over some point why documentation is (almost) more important than code for any application. If you want new people to get up to speed quickly and have them contribute quicker, you might want to document the macro, meso, and micro aspects of your application.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "98": {
+        "filename": "my-favorite-feature-in-peppermint-os.md",
+        "postDate": "2020-03-04",
+        "description": "Peppermint OS is a lightweight and flexible Linux distribution. I've installed it on one of my laptops to replace Ubuntu to see what it's all about. In this post, I go over one of my favorite features in Peppermint OS that you can use right after starting it up for the first time.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "99": {
+        "filename": "how-added-elasticsearch-to-laravel-minimal-hardware.md",
+        "postDate": "2020-03-11",
+        "updateDate": "2020-03-11 16:33:17",
+        "description": "In this post, I go over the steps I have taken to add Elasticsearch to an existing Laravel application on very minimal hardware resources. I also discuss the hurdles I had to overcome to achieve this.",
+        "isScheduled": false,
+        "isPublished": true
+    },
+    "100": {
+        "filename": "how-to-setup-gpg-signing-keys-in-github.md",
+        "postDate": "2020-03-18",
+        "updateDate": "2020-03-18 14:35:22",
+        "description": "If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system.",
+        "isScheduled": false,
+        "isPublished": true
+    }
+}

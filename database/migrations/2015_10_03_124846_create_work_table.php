@@ -3,9 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateWorkTable extends Migration{
-    public function up(){
-        Schema::create('works', function (Blueprint $table){
+class CreateWorkTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('works', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('slug');
@@ -20,7 +22,8 @@ class CreateWorkTable extends Migration{
         });
     }
 
-    public function down(){
+    public function down()
+    {
         Schema::drop('works');
     }
 }

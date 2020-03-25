@@ -7,23 +7,29 @@
 @endsection
 
 @section('content')
-    <div class="section paragraph-spacing">
+    <div class="section paragraph-spacing pt-8 md:pt-16 md:pt-0">
 
         {!! $content !!}
 
         <div class="items mt-12">
-            @foreach($works as $index => $project)
+            @foreach($works->chunk(2) as $projects)
 
-                <div class="element work">
-                    <div class="work-item">
-                        <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+                <div class="items block md:flex -mx-2">
 
-                        <h3>{{$project['title']}}</h3>
+                    @foreach($projects as $project)
 
-                        <p class="mb-4">{{$project['description']}}</p>
+                        <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
+                            <img src="{{$project->image_url}}" alt="{{$project->image_alt}}" />
 
-                        <a href="{{$project['url']}}" class="link">Read more</a>
-                    </div>
+                            <h3>{{$project->title}}</h3>
+
+                            <p class="mb-4 mt-2 flex-auto">{{$project->description}}</p>
+
+                            <a href="{{$project->url}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
+                        </div>
+
+                    @endforeach
+
                 </div>
 
             @endforeach
@@ -49,12 +55,4 @@
       }]
     }
     </script>
-@endsection
-
-@section('footer')
-
-    @include('blocks.mailchimp_form')
-
-    @include('blocks.navigation', ['is_external' => true])
-
 @endsection
