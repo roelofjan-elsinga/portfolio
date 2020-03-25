@@ -4,6 +4,9 @@
 namespace Tests;
 
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Storage;
+use Main\Models\Work;
+use org\bovigo\vfs\vfsStream;
 
 class SitemapCreatorTest extends TestCase
 {
@@ -11,32 +14,34 @@ class SitemapCreatorTest extends TestCase
     {
         parent::setUp();
 
-        if (!is_dir(__DIR__.'/test')) {
-            mkdir(__DIR__.'/test');
-        }
+        Storage::fake('sitemap');
 
-        Config::set('flatfilecms-publish.site_url', 'http://localhost');
-        Config::set('flatfilecms-publish.sitemap_file_path', __DIR__.'/test/sitemap-original.xml');
-        Config::set('flatfilecms-publish.sitemap_target_file_path', __DIR__.'/test/sitemap.xml');
-    }
+        $path = storage_path('framework/testing/disks/sitemap');
 
-    public function tearDown(): void
-    {
-        parent::tearDown();
-
-        $this->recursively_remove_directory(__DIR__.'/test');
+        Config::set('aloiacms-publish.site_url', 'http://localhost');
+        Config::set('aloiacms-publish.sitemap_file_path', $path . '/sitemap-original.xml');
+        Config::set('aloiacms-publish.sitemap_target_file_path', $path . '/sitemap.xml');
     }
 
     public function test_portfolio_items_are_added_to_sitemap()
     {
-        $this->assertFalse(file_exists(Config::get('flatfilecms-publish.sitemap_file_path')));
-        $this->assertFalse(file_exists(Config::get('flatfilecms-publish.sitemap_target_file_path')));
+        Work::find('testing')
+            ->setMatter([
+                'image_url' => 'https://roelofjanelsinga.com/images/logo/logo_banner.jpg',
+                'image_alt' => 'Logo banner',
+                'title' => 'Testing',
+                'description' => 'Description',
+                'url' => '/testing'
+            ])
+            ->setBody('# Testing')
+            ->save();
+
+        Storage::disk('sitemap')->assertMissing(['sitemap-original.xml', 'sitemap.xml']);
 
         $this
-            ->artisan('flatfilecms:publish:sitemap')
+            ->artisan('aloiacms:publish:sitemap')
             ->assertExitCode(0);
 
-        $this->assertTrue(file_exists(Config::get('flatfilecms-publish.sitemap_file_path')));
-        $this->assertTrue(file_exists(Config::get('flatfilecms-publish.sitemap_target_file_path')));
+        Storage::disk('sitemap')->assertExists(['sitemap-original.xml', 'sitemap.xml']);
     }
 }

@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('meta')
-            <meta name="keywords" content="{{ $page->keywords ?? $page->keywords() }}">
             <meta name="description" content="{{ $page->description ?? $page->description() }}">
             <meta name="author" content="{{ $page->author ?? $page->author() }}">
 
@@ -13,7 +12,7 @@
 
             <meta property="og:title" content="{{ $page->title ?? $page->title() }}"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image" content="{{ $page->image_small ?? $page->thumbnail() }}"/>
+            <meta property="og:image" content="{{ $page->image_url ?? $page->thumbnail()}}"/>
             <meta property="og:url" content="{{ Request::url() }}"/>
             <meta property="og:description" content="{{ $page->description ?? $page->description() }}"/>
 
@@ -21,7 +20,7 @@
             <meta name="twitter:url" content="{{ Request::url() }}">
             <meta name="twitter:title" content="{{ $page->title ?? $page->title() }}">
             <meta name="twitter:description" content="{{ $page->description ?? $page->description() }}">
-            <meta name="twitter:image" content="{{ $page->image_large ?? $page->image()  }}">
+            <meta name="twitter:image" content="{{ $page->image_url ?? $page->image()  }}">
 
             @if((isset($page->canonical) && !is_null($page->canonical)))
                 <link rel="canonical" href="{{$page->canonical}}" />
@@ -31,7 +30,7 @@
                 <link rel="canonical" href="{{$page->canonicalLink()}}" />
             @endif
 
-            <title>{{ $page->title ?? $page->title() }}</title>
+            <title>{{ $page->title ?? $page->title() }} - Roelof Jan Elsinga</title>
 		@show
 
         <link rel="dns-prefetch" href="https://www.google-analytics.com">

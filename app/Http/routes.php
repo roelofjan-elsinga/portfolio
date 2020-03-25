@@ -6,7 +6,7 @@ Route::permanentRedirect('blog', 'articles');
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
 Route::post('contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
 Route::get('articles', ['as' => 'articles', 'uses' => 'PublicController@articles']);
-Route::get('articles/{slug}', ['as' => 'articles.view', 'uses' => 'PublicController@viewArticle']);
+Route::get('articles/{slug}', ['as' => 'articles.view', 'uses' => 'PublicController@showArticle']);
 Route::permanentRedirect('/passions', '/articles');
 
 Route::get('passions/{slug}', function ($slug) {
@@ -21,7 +21,7 @@ Route::get('resume', ['as' => 'resume.show', 'uses' => 'ResumeController@browser
 Route::get('open-source-contributions', ['as' => 'public.open_source', 'uses' => 'PublicController@open_source']);
 
 Route::get('portfolio', ['as' => 'public.work', 'uses' => 'PublicController@work']);
-Route::get('portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicController@workDetail']);
+Route::get('portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicController@showWork']);
 
 /*Resources*/
 Route::resource('public', 'PublicController');

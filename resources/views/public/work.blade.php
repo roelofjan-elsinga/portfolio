@@ -19,13 +19,13 @@
                     @foreach($projects as $project)
 
                         <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
-                            <img src="{{$project['image']['url']}}" alt="{{$project['image']['url']}}" />
+                            <img src="{{$project->image_url}}" alt="{{$project->image_alt}}" />
 
-                            <h3>{{$project['title']}}</h3>
+                            <h3>{{$project->title}}</h3>
 
-                            <p class="mb-4 mt-2 flex-auto">{{$project['description']}}</p>
+                            <p class="mb-4 mt-2 flex-auto">{{$project->description}}</p>
 
-                            <a href="{{$project['url']}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
+                            <a href="{{$project->url}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
                         </div>
 
                     @endforeach

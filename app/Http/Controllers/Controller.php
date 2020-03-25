@@ -2,8 +2,8 @@
 
 namespace Main\Http\Controllers;
 
-use FlatFileCms\Page;
-use FlatFileCms\TagsParser;
+use AloiaCms\Models\MetaTag;
+use AloiaCms\TagsParser;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -14,11 +14,8 @@ class Controller extends BaseController
 {
     use DispatchesJobs, ValidatesRequests, AuthorizesRequests;
 
-    protected $tagsParser;
-
     public function __construct()
     {
-        $this->tagsParser = new TagsParser();
-        View::share('page', $this->tagsParser->getTagsForPageName('home'));
+        View::share('page', MetaTag::find('home'));
     }
 }

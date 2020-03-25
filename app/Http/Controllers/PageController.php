@@ -2,8 +2,7 @@
 
 namespace Main\Http\Controllers;
 
-use FlatFileCms\Page;
-use FlatFileCms\Taxonomy\Taxonomy;
+use AloiaCms\Models\Page;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 
@@ -18,40 +17,28 @@ class PageController
      */
     public function showPage(string $slug)
     {
-        $page = Page::forSlug($slug, true);
+        $page = Page::find($slug);
 
-        if (is_null($page)) {
-            $redirect = $this->getRedirectResponseForPage($slug);
+        if (!$page->exists()) {
+            $page = Page::published()
+                ->filter(function (Page $page) use ($slug) {
+                    return $page->url() === $slug;
+                })
+                ->first();
 
-            if (!is_null($redirect)) {
-                return $redirect;
+            if (is_null($page)) {
+                abort(404);
             }
+        }
 
-            abort(404);
+        $slug_matches_url = $page->url() === $slug || $page->url() === "/{$slug}";
+
+        if (!$slug_matches_url) {
+            return redirect()->route('page', $page->url());
         }
 
         return view('public.view-page', [
             'page' => $page,
         ]);
-    }
-
-    /**
-     * Determine whether the request URL can be redirected to the proper nested URL.
-     *
-     * @param string $slug
-     *
-     * @return RedirectResponse|null
-     */
-    private function getRedirectResponseForPage(string $slug): ?RedirectResponse
-    {
-        $page = Page::forSlug($slug);
-
-        if (!is_null($page)) {
-            $taxonomy = Taxonomy::byName($page->category());
-
-            return redirect()->to("{$taxonomy->fullUrl()}/{$slug}", 301);
-        }
-
-        return null;
     }
 }

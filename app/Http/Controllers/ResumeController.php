@@ -13,11 +13,10 @@ class ResumeController
 
     private function getResumeFromFile(): array
     {
-        return json_decode(
-            file_get_contents(
-                resource_path('content/resume.json')
-            ),
-            true
-        );
+        $file_path = resource_path('content/resume.json');
+
+        $file_contents = file_get_contents($file_path);
+
+        return json_decode($file_contents, true);
     }
 }

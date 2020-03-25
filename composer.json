@@ -1,31 +1,29 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "roelofjan-elsinga/portfolio",
+    "description": "Portfolio website for Roelof Jan Elsinga",
     "keywords": [
-        "framework",
+        "portfolio",
         "laravel"
     ],
     "license": "MIT",
-    "type": "project",
+    "type": "website",
     "require": {
         "php": ">=7.2",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^5.8",
         "erusev/parsedown": "^1.7",
         "laravelcollective/html": "^5.8",
-        "symfony/yaml": "^4.2",
+        "symfony/yaml": "^5.0",
         "ext-json": "*",
         "ext-dom": "*",
         "ext-curl": "*",
         "ext-zip": "*",
-        "roelofjan-elsinga/content-to-html-parser": "~0.1",
-        "roelofjan-elsinga/flat-file-cms-gui": "~0.11",
-        "roelofjan-elsinga/flat-file-cms": "~0.11",
-        "roelofjan-elsinga/flat-file-cms-publish": "~0.2",
         "brainmaestro/composer-git-hooks": "^2.8",
         "nesbot/carbon": "2.25.1",
         "symfony/translation": "4.3.5",
-        "guzzlehttp/guzzle": "^6.5"
+        "guzzlehttp/guzzle": "^6.5",
+        "roelofjan-elsinga/aloia-cms": "^1.0",
+        "roelofjan-elsinga/aloia-cms-gui": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -63,7 +61,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
-            "php artisan flatfilecms:set-permissions"
+            "php artisan aloiacms:set-permissions"
         ]
     },
     "config": {
