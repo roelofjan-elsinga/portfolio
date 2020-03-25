@@ -2,6 +2,9 @@
 
 namespace Tests;
 
+use AloiaCms\Models\MetaTag;
+use Illuminate\Contracts\Console\Kernel;
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Mix;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
@@ -26,13 +29,13 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
     /**
      * Creates the application.
      *
-     * @return \Illuminate\Foundation\Application
+     * @return Application
      */
     public function createApplication()
     {
-        $app = require __DIR__.'/../bootstrap/app.php';
+        $app = require __DIR__ . '/../bootstrap/app.php';
 
-        $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+        $app->make(Kernel::class)->bootstrap();
 
         return $app;
     }
@@ -56,21 +59,15 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         Config::set('aloiacms.taxonomy.file_path', "{$this->fs->getChild('content')->url()}/taxonomy.json");
     }
 
-    protected function recursively_remove_directory($dir)
+    protected function create404Tags()
     {
-        if (is_dir($dir)) {
-            $objects = scandir($dir);
-            foreach ($objects as $object) {
-                if ($object != "." && $object != "..") {
-                    if (filetype($dir."/".$object) == "dir") {
-                        $this->recursively_remove_directory($dir."/".$object);
-                    } else {
-                        unlink($dir."/".$object);
-                    }
-                }
-            }
-            reset($objects);
-            rmdir($dir);
-        }
+        MetaTag::find('404')
+            ->setMatter([
+                'title' => 'Title',
+                'description' => "Description",
+                'author' => 'Author',
+                'image_url' => 'https://roelofjanelsinga.com/images/logo/logo_banner.jpg',
+            ])
+            ->save();
     }
 }
