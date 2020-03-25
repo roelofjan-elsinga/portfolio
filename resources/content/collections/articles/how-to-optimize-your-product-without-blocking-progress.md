@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-01-08'
 url: how-to-optimize-your-product-without-blocking-progress
 ---
+
 !["Drawn graph"](/images/articles/drawn-graph.jpg)
 <span class="caption">Photo by Isaac Smith on Unsplash</span>
 # How to optimize your product without blocking progress

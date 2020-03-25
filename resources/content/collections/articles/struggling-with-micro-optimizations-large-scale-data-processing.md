@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-10-02'
 url: struggling-with-micro-optimizations-large-scale-data-processing
 ---
+
 !["Clock on the wall"](/images/articles/clock-on-the-wall.jpeg)
 # Struggling with micro-optimizations on large scale data processing
 

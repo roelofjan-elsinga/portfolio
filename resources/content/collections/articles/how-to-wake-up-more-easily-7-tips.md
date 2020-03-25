@@ -4,6 +4,7 @@ is_published: true
 post_date: '2017-10-18'
 url: how-to-wake-up-more-easily-7-tips
 ---
+
 ![How to wake up more easily: 7 tips](/images/articles/rooster.jpeg)
 
 # How to wake up more easily: 7 tips

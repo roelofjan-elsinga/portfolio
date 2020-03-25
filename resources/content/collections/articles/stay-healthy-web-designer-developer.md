@@ -4,6 +4,7 @@ is_published: true
 post_date: '2017-09-30'
 url: stay-healthy-web-designer-developer
 ---
+
 ![How to Stay Healthy as a Web Designer or Developer](/images/articles/running-shoes.jpg)
 
 # How to Stay Healthy as a Web Designer or Developer

@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-02-26'
 url: why-documentation-is-more-important-than-code
 ---
+
 !["Book pages"](/images/articles/book-pages.jpeg)
 # Why documentation is (almost) more important than code
 Code is great and it makes your application do the things it needs to do. But what happens when you hire a new person on the team or you start to use new technologies to accomplish your goals? You need some kind of reference to explain the flows within the application code base and code is usually not great at providing this overview. You need proper documentation to explain the code, company jargon, and application flows. In this post, I'll go over three levels of documentation that you have in an ideal world. I understand the ideal situation is rarely the reality, so in that case, use bits and pieces of these levels.

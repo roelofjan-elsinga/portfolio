@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-03-18'
 url: how-to-setup-gpg-signing-keys-in-github
 ---
+
 !["Lock on blue wall"](/images/articles/lock-on-blue-wall.jpeg)
 # How to set up GPG signing keys with Git in Github
 

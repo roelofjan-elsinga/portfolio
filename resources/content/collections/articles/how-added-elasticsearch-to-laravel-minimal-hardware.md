@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-03-11'
 url: how-added-elasticsearch-to-laravel-minimal-hardware
 ---
+
 !["Cro tool homepage"](/images/articles/cro-tool-homepage.jpg)
 # How I added Elasticsearch to a Laravel application on a server with minimal resources
 

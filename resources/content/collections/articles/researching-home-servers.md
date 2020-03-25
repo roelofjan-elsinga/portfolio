@@ -4,6 +4,7 @@ is_published: true
 post_date: '2016-10-20'
 url: researching-home-servers
 ---
+
 ![Video streaming](/images/articles/video-streaming.jpg "Researching Home Servers")
 
 # Researching Home Servers

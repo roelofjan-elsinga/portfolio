@@ -6,6 +6,7 @@ is_published: true
 post_date: '2017-01-12'
 url: how-to-index-a-single-page-application-built-in-angularjs
 ---
+
 ![Magnifier](/images/articles/magnifier.jpg)
 
 # How to index a single page application built in AngularJS

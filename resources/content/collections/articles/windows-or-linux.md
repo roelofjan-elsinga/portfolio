@@ -4,6 +4,7 @@ is_published: true
 post_date: '2016-11-10'
 url: windows-or-linux
 ---
+
 ![Windows or Linux?](/images/articles/deer.jpg "Windows or Linux?")
 
 # Windows or Linux?

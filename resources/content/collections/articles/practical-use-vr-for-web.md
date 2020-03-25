@@ -4,6 +4,7 @@ is_published: true
 post_date: '2016-12-08'
 url: practical-use-vr-for-web
 ---
+
 ![Television](/images/articles/television.jpg)
 
 # What practical use can VR have for the web?

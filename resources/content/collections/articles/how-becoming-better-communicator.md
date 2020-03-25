@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-08-28'
 url: how-becoming-better-communicator
 ---
+
 !["Teamwork"](/images/articles/teamwork.jpg)
 <span class="caption"><a class="link" style="border-bottom-width:0;" href="https://www.freepik.com/free-photos-vectors/business">Illustration created by stockgiu</a></span>
 # How I'm trying to become a better communicator

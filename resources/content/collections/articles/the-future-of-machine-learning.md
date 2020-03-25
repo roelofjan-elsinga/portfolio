@@ -4,6 +4,7 @@ is_published: true
 post_date: '2016-11-03'
 url: the-future-of-machine-learning
 ---
+
 ![The future of machine learning](/images/articles/machine-learning.jpg "The future of machine learning")
 
 # The future of machine learning

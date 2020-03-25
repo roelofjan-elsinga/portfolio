@@ -5,6 +5,7 @@ is_published: true
 post_date: '2019-02-22'
 url: the-elephant-in-the-room-burnouts
 ---
+
 ![Meditation](/images/articles/meditation.jpeg "The elephant in the room: burnouts")
 <span class="caption">I dislike all the negative images about burnouts, 
 so here's a calm one</span>

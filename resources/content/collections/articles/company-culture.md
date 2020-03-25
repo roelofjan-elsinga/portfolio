@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-02-14'
 url: company-culture
 ---
+
 !["Offices"](/images/articles/office.jpeg)
 
 # Company culture - productive and pleasant for all

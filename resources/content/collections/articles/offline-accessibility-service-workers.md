@@ -6,6 +6,7 @@ is_published: true
 post_date: '2017-06-09'
 url: offline-accessibility-service-workers
 ---
+
 ![Offline accessibility with service workers](/images/articles/guy-swimming.jpg)
 
 # Offline accessibility with service workers

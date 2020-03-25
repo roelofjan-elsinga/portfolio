@@ -6,6 +6,7 @@ is_published: false
 post_date: '2020-03-25'
 url: linux-desktop-environments
 ---
+
 # Linux: Desktop environments
 Desktop environment?! What is a desktop environment? A desktop environment is a set of rules that determine the look and feel of your desktop computer. Usually this determines what the layout of your screen is, where the taskbar goes, and which basic programs are installed on your computer. If those words don't mean anything to you, not to worry. I had now clue desktop environments existed for the first year I used Linux. I thought the default look and feel of Ubuntu was what Linux looked like. This is why I'm adding screenshots of each of the desktop environments I'm talking about in this blog post. 
 

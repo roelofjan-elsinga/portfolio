@@ -4,6 +4,7 @@ is_published: true
 post_date: '2019-02-11'
 url: learn-to-say-no
 ---
+
 !["Clock"](/images/articles/clock.jpg)
 
 # Learn to say NO

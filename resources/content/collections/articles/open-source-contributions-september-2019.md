@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-09-25'
 url: open-source-contributions-september-2019
 ---
+
 !["People working together"](/images/articles/people-working-together.jpeg)
 <span class="caption">Applying patches to a package to make progress with your application.</span>
 # Open source contributions (September 2019)

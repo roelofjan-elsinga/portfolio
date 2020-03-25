@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-02-05'
 url: aloia-cms-the-road-to-version-1-0
 ---
+
 !["Aloia CMS version 1.0"](/images/articles/aloia-cms-version-1.0.jpg)
 # Aloia CMS: The road to version 1.0
 If you've been reading my blog posts for a longer time, you might remember that I'm working on a CMS, something I never thought I would do. In this post, I will go over my reasons why I'm building my own CMS again because they've changed a little bit since the last time I wrote about it. This post is a little different than my other posts as I usually pick a topic and do a deep-dive. This is more of an announcement and reflection in one in the past few weeks while working on Aloia CMS.

@@ -3,882 +3,11 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 18 Mar 2020 13:35:22 GMT</pubDate>
+              <pubDate>Wed, 25 Mar 2020 14:45:13 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
-<item><description>
-Researching Home Servers
-Ever since I got a Raspberry Pi 2, in December 2015,
-I've been very interested in setting up a home server
-to be able to save all my files and access them from anywhere I want.
-Besides file storage I've been looking at ways to integrate this with my web development projects[...] (...)</description>
-                    <title>Researching Home Servers</title>
-                    <link>https://roelofjanelsinga.com/articles/researching-home-servers</link>
-                    <guid>https://roelofjanelsinga.com/articles/researching-home-servers</guid>
-                    
-                    <pubDate>Thu, 20 Oct 2016 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/video-streaming.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Benefits of a single page application
-Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just plain Javascript and jQuery any more. More and more Javascript frameworks and libraries are being dev[...] (...)</description>
-                    <title>Benefits of a single page application</title>
-                    <link>https://roelofjanelsinga.com/articles/benefits-single-page-application</link>
-                    <guid>https://roelofjanelsinga.com/articles/benefits-single-page-application</guid>
-                    
-                    <pubDate>Thu, 27 Oct 2016 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-The future of machine learning
-Machine learning has been getting a lot of attention the last few years. Without most of us knowing it, it's been taking over our lives. Webshops, social media, and our phones, they all make use of it in some way. It sounds scary, but do the advantages outweigh the di[...] (...)</description>
-                    <title>The future of machine learning</title>
-                    <link>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</link>
-                    <guid>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</guid>
-                    
-                    <pubDate>Thu, 03 Nov 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/machine-learning.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Windows or Linux?
-The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my entire life, coming from Windows 3.1 to the new Windows 10. You can say that I like my Windows OS's. On the other hand I'm al[...] (...)</description>
-                    <title>Windows or Linux?</title>
-                    <link>https://roelofjanelsinga.com/articles/windows-or-linux</link>
-                    <guid>https://roelofjanelsinga.com/articles/windows-or-linux</guid>
-                    
-                    <pubDate>Thu, 10 Nov 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Isomorphic JavaScript: What is it and what can I do with it?
-JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user's input, send XHR requests to PHP (or Rails/Java/etc.), receive data from the server, and complete a tas[...] (...)</description>
-                    <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
-                    <link>https://roelofjanelsinga.com/articles/isomorphic-javascript</link>
-                    <guid>https://roelofjanelsinga.com/articles/isomorphic-javascript</guid>
-                    
-                    <pubDate>Thu, 17 Nov 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/its-better-together.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Building your own computer
-Building your own computer? Why would you do that if you can simply buy one in the store? You'd be instantly ready to use it and you know it'll work. But you know what? That would be the simple way out wouldn't it be? Isn't understanding how a computer is made, how it wor[...] (...)</description>
-                    <title>Building your own computer</title>
-                    <link>https://roelofjanelsinga.com/articles/building-your-own-computer</link>
-                    <guid>https://roelofjanelsinga.com/articles/building-your-own-computer</guid>
-                    
-                    <pubDate>Thu, 01 Dec 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/construction.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-What practical use can VR have for the web?
-Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift and even the Gear VR are all trying to accomplish themselves. The Gear VR is aimed at usage on Samsung phones, and the HTC Vive is best used with Steam games. But could VR play[...] (...)</description>
-                    <title>What practical use can VR have for the web?</title>
-                    <link>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</link>
-                    <guid>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</guid>
-                    
-                    <pubDate>Thu, 08 Dec 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-IndexedDB: Caching your data on the client-side
-A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that needs to be available to the web app and the user at any point, even after simple refreshes.[...] (...)</description>
-                    <title>IndexedDB: Caching your data on the client-side</title>
-                    <link>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</link>
-                    <guid>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</guid>
-                    
-                    <pubDate>Thu, 15 Dec 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Use software for what it's made, and you'll see the benefits!
-You! Yes, you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it to be right? This was the main problem why I decided to make the switch from[...] (...)</description>
-                    <title>Use software for what it's made, and you'll see the benefits!</title>
-                    <link>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</link>
-                    <guid>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</guid>
-                    
-                    <pubDate>Thu, 22 Dec 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-The importance of server-side caching
-Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your hardware, but also for your users. Before I explain my thoughts on caching, I should mention what my u[...] (...)</description>
-                    <title>The importance of server-side caching</title>
-                    <link>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</link>
-                    <guid>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</guid>
-                    
-                    <pubDate>Thu, 29 Dec 2016 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/airshow.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to see if your application works
-If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working flawlessly on your localhost and completely falling apart on your hosting server. I have definitely se[...] (...)</description>
-                    <title>How to see if your application works</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</guid>
-                    
-                    <pubDate>Thu, 05 Jan 2017 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to index a single page application built in AngularJS
-The age (read: a few years) old question...how do you index a single page application? I have covered this topic briefly in a previous post about Isomorphic JavaScript. Single Page Applications are fantastic for the user experience, but of c[...] (...)</description>
-                    <title>How to index a single page application built in AngularJS</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</guid>
-                    
-                    <pubDate>Thu, 12 Jan 2017 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why I use SASS rather than just CSS
-CSS to LESS
-When I first started out with web design &amp; development,
-CSS was this tool to make HTML pages look better. This was just before responsive web design started becoming the new industry standard for web design. Websites were zoomed out and broke on m[...] (...)</description>
-                    <title>Why I use SASS rather than just CSS</title>
-                    <link>https://roelofjanelsinga.com/articles/using-sass-rather-css</link>
-                    <guid>https://roelofjanelsinga.com/articles/using-sass-rather-css</guid>
-                    
-                    <pubDate>Thu, 01 Jun 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" type="image/jpeg" width="3240" height="2160"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why some people can work remotely
-Working remotely, we've all heard of it before. Simply said, you're working on something, but you're not actually in the office while you do it. In some occasions this means you work from home for the day.
-In others maybe you're a freelancer and work for several di[...] (...)</description>
-                    <title>Why some people can work remotely</title>
-                    <link>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</link>
-                    <guid>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</guid>
-                    
-                    <pubDate>Fri, 02 Jun 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-What I've learned building Single page applications
-Single Page Applications (SPA's) are amazing to build and work with, but there are a lot of disadvantages as well. This post describes some of the things that I have learned while building SPA's. It also contains tips to help developers building o[...] (...)</description>
-                    <title>What I've learned building Single page applications</title>
-                    <link>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</link>
-                    <guid>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</guid>
-                    
-                    <pubDate>Tue, 06 Jun 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Offline accessibility with service workers
-Web applications are great. They're fast, they can be used on all platforms and often feel like they're a real native application with accessibility. But then, your internet stops working and you only had to check that little note you made earlier. Too bad[...] (...)</description>
-                    <title>Offline accessibility with service workers</title>
-                    <link>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</link>
-                    <guid>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</guid>
-                    
-                    <pubDate>Fri, 09 Jun 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Build bridges with API based application structures
-There is nothing more fun than working with API's during my workday.
-It's programming like any other day, but it's also so much more! It's connecting other services with your own, using them to enhance your application and making it much richer wi[...] (...)</description>
-                    <title>Build bridges with API based application structures</title>
-                    <link>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</link>
-                    <guid>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</guid>
-                    
-                    <pubDate>Sat, 12 Aug 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" type="image/jpeg" width="1280" height="853"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Developer tools for a back-end programmer
-Any developer will have a set of developer tools they swear by. A set of tools that does everything we need it to do. People can say that tools are interchangeable, and to an extent they certainly are. However, the set of tools a developer uses, often dicta[...] (...)</description>
-                    <title>Developer tools for a back-end programmer</title>
-                    <link>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</link>
-                    <guid>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</guid>
-                    
-                    <pubDate>Sat, 26 Aug 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" type="image/jpeg" width="1080" height="720"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Podcasts for creators and programmers
-Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
-You can share your interests by talking to colleagues, go to meet-ups, or by simply listening to
-podcasts. Which is what this post happens to be about, what a coin[...] (...)</description>
-                    <title>Podcasts for creators and programmers</title>
-                    <link>https://roelofjanelsinga.com/articles/podcasts-for-creators</link>
-                    <guid>https://roelofjanelsinga.com/articles/podcasts-for-creators</guid>
-                    
-                    <pubDate>Sat, 02 Sep 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/microphone.jpg" medium="image" type="image/jpeg" width="1013" height="675"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-The battle of apples and oranges: Angular vs React vs VueJS
-People keep asking about which framework to use (Angular, React, or VueJS),
-and which one is better. I can understand they want to know which one to use for
-projects, but it's a silly question. It's comparing apples to oranges.
-I'll explai[...] (...)</description>
-                    <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
-                    <link>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</link>
-                    <guid>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</guid>
-                    
-                    <pubDate>Sat, 09 Sep 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/apples.jpg" medium="image" type="image/jpeg" width="1000" height="667"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Are programming books worth your money?
-You've all seen programming books on the internet or in bookstores. But most of us know that those books are usually not relevant anymore, most of them are outdated. So should you buy them? I think you should, but there are a few conditions.
-Maturity of the l[...] (...)</description>
-                    <title>Are programming books worth your money?</title>
-                    <link>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</link>
-                    <guid>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</guid>
-                    
-                    <pubDate>Sat, 16 Sep 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-top.jpg" medium="image" type="image/jpeg" width="1000" height="667"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to Stay Healthy as a Web Designer or Developer
-Us web designers and developers sit down all day long while we're at work.
-We don't move as much as we probably should. So many of us are probably not as healthy
-as we could and should be. I'll be giving you a few tips to get healthier and feel bet[...] (...)</description>
-                    <title>How to Stay Healthy as a Web Designer or Developer</title>
-                    <link>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</link>
-                    <guid>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</guid>
-                    
-                    <pubDate>Sat, 30 Sep 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/running-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to Improve Your Working Day Little by Little
-Everyone has a bad day every once in a while, but there are ways to reduce this amount.
-I put together a list of a few simple steps you can take to improve your days little by little.
-Have a good night's rest
-This doesn't necessarily mean sleep for a[...] (...)</description>
-                    <title>How to Improve Your Working Day Little by Little</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</guid>
-                    
-                    <pubDate>Sat, 07 Oct 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-with-confetti.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to wake up more easily: 7 tips
-Some people are night owls and others flourish in the morning, but all people deal with waking up.
-Some people are just better at it than others. But even night owls can find ways to wake up more
-easily in the morning. So I'll be giving you 7 simple tips to help y[...] (...)</description>
-                    <title>How to wake up more easily: 7 tips</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</guid>
-                    
-                    <pubDate>Wed, 18 Oct 2017 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Modernizing log: Part 1, Conventional REST API to GraphQL
-I’ve been working on a Laravel and AngularJS application for two years now.
-It’s slowly becoming more and more complex and it’s starting to become very
-difficult to manage. Every single Angular view needs at least 5 different
-resources to fu[...] (...)</description>
-                    <title>Modernizing log: Part 1, Conventional REST API to GraphQL</title>
-                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</link>
-                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</guid>
-                    
-                    <pubDate>Wed, 14 Mar 2018 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Improving my programming skills at a full-time job
-I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most certainly did not, and here's what I've learned since then.
-First of all, I switched to[...] (...)</description>
-                    <title>Improving my programming skills at a full-time job</title>
-                    <link>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</link>
-                    <guid>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</guid>
-                    
-                    <pubDate>Thu, 15 Mar 2018 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg" medium="image" type="image/jpeg" width="800" height="534"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Docker isn't as difficult as I thought it was
-When I looked into using Docker for my projects, I was very intimidated by "the Dockerfile". This was until I realized that I've been doing a similar thing for a year outside of Docker.
-A year or so back, I wrote a full installation script tha[...] (...)</description>
-                    <title>Docker isn't as difficult as I thought it was</title>
-                    <link>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</link>
-                    <guid>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</guid>
-                    
-                    <pubDate>Fri, 16 Mar 2018 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Modernizing log: Part 2, GraphQL test results
-In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat this, I came up with the solution to combine some of these XHR requests into a single call. I w[...] (...)</description>
-                    <title>Modernizing log: Part 2, GraphQL test results</title>
-                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</link>
-                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</guid>
-                    
-                    <pubDate>Mon, 19 Mar 2018 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How I reduced the runtime of a Cronjob by 94%
-We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronjob that took 36 hours and improved it to fully run in 2 hours. Let's get into how I did this![...] (...)</description>
-                    <title>How I reduced the runtime of a Cronjob by 94%</title>
-                    <link>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</guid>
-                    
-                    <pubDate>Thu, 26 Apr 2018 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Modernizing log: Part 3, Optimizing GraphQL queries
-In the last blog, I left you with some first testing results for a product page.
-If you haven't read it, you can do so by reading
-"Modernizing log: Part 2, GraphQL test results". In that post,
-I described what I had grouped all static re[...] (...)</description>
-                    <title>Modernizing log: Part 3, Optimizing GraphQL queries</title>
-                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</link>
-                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</guid>
-                    
-                    <pubDate>Wed, 02 May 2018 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" type="image/jpeg" width="800" height="459"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-AngularJS + Angular (v6) hybrid (finally!)
-It's finally time to make this happen! I've been running and maintaining a website for about 2.5 years now. This website is built with AngularJS (v1.6.9). This works reasonably well, but nothing compared to the newer versions of Angular. So I finally took[...] (...)</description>
-                    <title>AngularJS + Angular (v6) hybrid (finally!)</title>
-                    <link>https://roelofjanelsinga.com/articles/angularjs-angular-v6-hybrid-finally</link>
-                    <guid>https://roelofjanelsinga.com/articles/angularjs-angular-v6-hybrid-finally</guid>
-                    
-                    <pubDate>Fri, 01 Jun 2018 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_2YOcp3G2ZLewVVIl.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Plants in my living space
-I've found that having plants in spaces you are a lot, like the office, relax me.
-Workdesign
-published a study to support this.
-One of them is that having plants in a workplace reduces concentration problems by 23%
-and fatigue by 30%. It also helps to reduce coughs, sore t[...] (...)</description>
-                    <title>Plants in my living space</title>
-                    <link>https://roelofjanelsinga.com/articles/plants-in-my-living-space</link>
-                    <guid>https://roelofjanelsinga.com/articles/plants-in-my-living-space</guid>
-                    
-                    <pubDate>Mon, 28 Jan 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fittonia.png" medium="image" type="image/png" width="1280" height="720"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Improving development hiring
-When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better ways to figure out if someone is a good fit for the job, the team, and the company:
-1. Trial period of a few[...] (...)</description>
-                    <title>Improving development hiring</title>
-                    <link>https://roelofjanelsinga.com/articles/improving-development-hiring</link>
-                    <guid>https://roelofjanelsinga.com/articles/improving-development-hiring</guid>
-                    
-                    <pubDate>Fri, 25 Jan 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboard.jpg" medium="image" type="image/jpeg" width="1080" height="715"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-5 Lessons I've learned by working on a product with non-technical people
-For the past 4 or so years, I've been working on a product with non-technical people, for non-technical people,
-PunchlistHero.
-Here are the 5 lessons I've learned from this.
-1. Ask questions
-To get started with any work, you n[...] (...)</description>
-                    <title>5 Lessons I've learned by working on a product with non-technical people</title>
-                    <link>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</link>
-                    <guid>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</guid>
-                    
-                    <pubDate>Thu, 07 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/light_bulbs.jpeg" medium="image" type="image/jpeg" width="1351" height="901"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Learning to speak Norwegian
-Disclaimer: I just like to learn new languages, I don’t actually have any degrees for them.
-Learning a new language is very exciting. I like to do it because it puts my own language to the test.
-I like to compare the grammar and the words when and where I can.
-This helps[...] (...)</description>
-                    <title>Learning to speak Norwegian</title>
-                    <link>https://roelofjanelsinga.com/articles/learning-to-speak-norwegian</link>
-                    <guid>https://roelofjanelsinga.com/articles/learning-to-speak-norwegian</guid>
-                    
-                    <pubDate>Sun, 10 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/pencil_paper.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Learn to say NO
-When working on tasks during a work day, you can often get distracted by other tasks that need to
-be completed while you're working on something else. As this keeps going on for a while,
-you'll have 10 tasks, of which you completed none. How will you feel at the end of the day?
-You'[...] (...)</description>
-                    <title>Learn to say NO</title>
-                    <link>https://roelofjanelsinga.com/articles/learn-to-say-no</link>
-                    <guid>https://roelofjanelsinga.com/articles/learn-to-say-no</guid>
-                    
-                    <pubDate>Mon, 11 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock.jpg" medium="image" type="image/jpeg" width="1350" height="900"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Company culture - productive and pleasant for all
-I want to build a company, never take any outside investments,
-and build a livelihood for any employees I'll have (at some point).
-Work should be work, and free time should be free time. When you're working,
-you should be able to work uninterrupted[...] (...)</description>
-                    <title>Company culture - productive and pleasant for all</title>
-                    <link>https://roelofjanelsinga.com/articles/company-culture</link>
-                    <guid>https://roelofjanelsinga.com/articles/company-culture</guid>
-                    
-                    <pubDate>Thu, 14 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/office.jpeg" medium="image" type="image/jpeg" width="1350" height="901"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-I dislike all the negative images about burnouts,
-so here's a calm one
-The elephant in the room: burnouts
-Programming languages are evolving lightning fast, businesses are ever demanding,
-and employees are being pushed to the edge.
-Today's businesses are increasingly built to push people towards a[...] (...)</description>
-                    <title>The elephant in the room: burnouts</title>
-                    <link>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</link>
-                    <guid>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</guid>
-                    
-                    <pubDate>Fri, 22 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/meditation.jpeg" medium="image" type="image/jpeg" width="1393" height="879"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to search "the whole world" with Solr Spatial Search
-As it turns out, when using a Polygon or MultiPolygon for searching on a SpatialField
-with IsWithin(), you can't use a square shape. Unless you use it in a
-counter-clockwise manner, which didn't work for me. According to the WKT sta[...] (...)</description>
-                    <title>How to search "the whole world" with Solr Spatial Search</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</guid>
-                    
-                    <pubDate>Tue, 26 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/solr_logo.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How I reduced my docker image by 55%
-A smaller docker image has all kinds of benefits, for one,
-it'll download more quickly when you're deploying your application to a new location,
-or you're deploying an updated image to existing applications.
-Being able to quickly updated images is very important[...] (...)</description>
-                    <title>How I reduced my docker image by 55%</title>
-                    <link>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</guid>
-                    
-                    <pubDate>Thu, 28 Feb 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/steel_tower.jpeg" medium="image" type="image/jpeg" width="1200" height="798"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-My top 10 favorite podcasts
-I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones.
-I usually listen to them on my way to and from work and they're an excellent way to learn something
-by just listening to some knowledgable people speak. 
-
-Full stack radio
-F[...] (...)</description>
-                    <title>My top 10 favorite podcasts</title>
-                    <link>https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts</link>
-                    <guid>https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts</guid>
-                    
-                    <pubDate>Wed, 20 Mar 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/headphones.jpeg" medium="image" type="image/jpeg" width="1346" height="903"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-SEO and personal marketing for developers
-In January of 2019, I stopped posting my blog posts on Medium and started to
-post them on my own website. This was primarily because I like to
-own my own content and be in control over every aspect of it.
-Moving away from Medium meant that I lost the vast a[...] (...)</description>
-                    <title>SEO and personal marketing for developers</title>
-                    <link>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</link>
-                    <guid>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</guid>
-                    
-                    <pubDate>Thu, 21 Mar 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/google-analytics.png" medium="image" type="image/jpeg" width="1355" height="897"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why I don't use a database for my blog
-A database is a go-to way to store data for most developers,
-and for a great reason: It's really great at retaining data.
-Then why did I decide to not use a database for my blog and instead opt
-for JSON/YAML/Markdown files? Simple! Portability, version control[...] (...)</description>
-                    <title>Why I don't use a database for my blog</title>
-                    <link>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</link>
-                    <guid>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</guid>
-                    
-                    <pubDate>Mon, 25 Mar 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/stack_wood.jpeg" medium="image" type="image/jpeg" width="1350" height="901"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to generate a sitemap
-In a previous post, SEO and personal marketing for developers, I mentioned that you need to generate a sitemap in order to submit all the important pages from your website to the Google Search Console. But how do you generate a sitemap? What does it look like? These are th[...] (...)</description>
-                    <title>How to generate a sitemap</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</guid>
-                    
-                    <pubDate>Fri, 29 Mar 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/binoculars.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to Pick Right Configuration File Type for Your Project
-
-Understand &amp; learn about different configuration file types available to setup your project in workspace.
-
-Configuration, people love it and people hate it. You can change the behavior of your application with it and
-customize it to yo[...] (...)</description>
-                    <title>How to Pick Right Configuration File Type for Your Project</title>
-                    <link>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</link>
-                    <guid>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</guid>
-                    
-                    <pubDate>Thu, 04 Apr 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/post-in-json.png" medium="image" type="image/png" width="1200" height="698"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why I don't have comments on my blog
-When I moved from Medium to my personal blog, I didn't just leave the platform with all of its built-in sharing
-opportunities behind. I also left the comments behind. This was done intentionally and I'm writing this to explain
-why I've left out a comment system.[...] (...)</description>
-                    <title>Why I don't have comments on my blog</title>
-                    <link>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</link>
-                    <guid>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</guid>
-                    
-                    <pubDate>Wed, 10 Apr 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/heart-zero-likes.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-5 reasons to start using Ubuntu
-Most people know Ubuntu as a server operating system (OS), however,
-it can also be used as a desktop environment. This post describes several reasons why you
-should use Ubuntu as a desktop OS over something like Windows or Mac.
-Here are some of the reasons I chose to[...] (...)</description>
-                    <title>5 reasons to start using Ubuntu</title>
-                    <link>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</link>
-                    <guid>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</guid>
-                    
-                    <pubDate>Sun, 21 Apr 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ubuntu_logo.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-The internet loves cats, and this one is still sleeping. Photo by Alexandru Zdrobău.
-What waking up at 6 every morning has taught me
-All the videos and articles on this subject we're being very positive on waking up early,
-so I decided to give it a try. I was skeptical before I started, but as soon[...] (...)</description>
-                    <title>What waking up at 6 every morning has taught me</title>
-                    <link>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</link>
-                    <guid>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</guid>
-                    
-                    <pubDate>Wed, 01 May 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/sleeping_cat.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Discovering the online presence of my target audience
-I've started a new blog about plants:
-Plant care for beginners. It's very different than
-what I normally write about, but too often I heard that people don't know how to take care
-of their plants, or "they just keep dying". I've had my[...] (...)</description>
-                    <title>Discovering the online presence of my target audience</title>
-                    <link>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</link>
-                    <guid>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</guid>
-                    
-                    <pubDate>Sat, 11 May 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/snake_plant.jpg" medium="image" type="image/jpeg" width="1200" height="799"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Improve query performance for polymorphic relationships in Laravel
-This post is for developers who make use of polymorphic relationships in Laravel and have noticed
-some performance issues. This post assumes you’re using MySQL or PostgreSQL. If you’re still reading this,
-it means you are in this si[...] (...)</description>
-                    <title>Improve query performance for polymorphic relationships in Laravel</title>
-                    <link>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</link>
-                    <guid>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</guid>
-                    
-                    <pubDate>Mon, 29 Jul 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/start-sprint-race.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Taking the first steps with event sourcing in PHP
-I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. So you might be wondering, what is the biggest value of e[...] (...)</description>
-                    <title>Taking the first steps with event sourcing in PHP</title>
-                    <link>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</link>
-                    <guid>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</guid>
-                    
-                    <pubDate>Tue, 13 Aug 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-My recent open source contributions (August 2019)
-Recently I've been quite active with contributing to open source projects on GitHub. Part of the reason is the necessity to move other projects forward and the proposed changes allow me to do so. Another reason is that and I have great admiration fo[...] (...)</description>
-                    <title>My recent open source contributions (August 2019)</title>
-                    <link>https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019</link>
-                    <guid>https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019</guid>
-                    
-                    <pubDate>Thu, 15 Aug 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/starry-sky.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Building automatic API Stubs and/or using Mocks in PHP
-Testing your code is essential if you want to write code that doesn't break your application. You should use tests as an assurance that your code does what it's supposed to do, nothing more, nothing less. When you have code that interacts with[...] (...)</description>
-                    <title>Building automatic API Stubs and/or using Mocks in PHP</title>
-                    <link>https://roelofjanelsinga.com/articles/building-automatic-api-stub-or-mocks-php</link>
-                    <guid>https://roelofjanelsinga.com/articles/building-automatic-api-stub-or-mocks-php</guid>
-                    
-                    <pubDate>Wed, 21 Aug 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboards-bw.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Illustration created by stockgiu
-How I'm trying to become a better communicator
-I'm trying to become a more skilled communicator to my peers and non-technical people. Being a good communicator is vital to work well in a team. By writing more often I'm hoping to improve my abilities to transform tho[...] (...)</description>
-                    <title>How I'm trying to become a better communicator</title>
-                    <link>https://roelofjanelsinga.com/articles/how-becoming-better-communicator</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-becoming-better-communicator</guid>
-                    
-                    <pubDate>Wed, 28 Aug 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/teamwork.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-A photo by Glenn Carstens-Peters
-How I write my blog posts: 6 steps
-Writing blogs can be a daunting task if you're not someone that writes a lot. I used to be this person, but I learned to enjoy writing by regularly writing. The act of writing helped me improve my skills and after a while, I starte[...] (...)</description>
-                    <title>How I write my blog posts: 6 steps</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-write-blog-posts-in-6-steps</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-write-blog-posts-in-6-steps</guid>
-                    
-                    <pubDate>Wed, 04 Sep 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/writing-on-a-laptop.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-My thoughts about using a VPN during everyday life
-For the past month, I've been using a VPN for all of my internet usage, including my work laptop and mobile phone. It's been a fascinating experiment and here are some reasons why I think you should give it a try:
-
-You can browse content that's exc[...] (...)</description>
-                    <title>My thoughts about using a VPN during everyday life</title>
-                    <link>https://roelofjanelsinga.com/articles/my-thoughts-on-vpns</link>
-                    <guid>https://roelofjanelsinga.com/articles/my-thoughts-on-vpns</guid>
-                    
-                    <pubDate>Wed, 11 Sep 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/surveillance-camera.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why I built my own CMS
-I've always been against building my own content management system (CMS). When anyone asked me to build something like it, I just went with off-the-shelf solutions like WordPress. This was always enough for me because I wasn't building the websites for myself. I was always co[...] (...)</description>
-                    <title>Why I built my own CMS</title>
-                    <link>https://roelofjanelsinga.com/articles/why-built-my-own-cms</link>
-                    <guid>https://roelofjanelsinga.com/articles/why-built-my-own-cms</guid>
-                    
-                    <pubDate>Wed, 18 Sep 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/screenshot-flat-file-cms-dashboard.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Photo by Isaac Smith on Unsplash
-How to optimize your product without blocking progress
-When building a product it's often top priority to get a first version out of the door. When testing out an idea, getting a prototype in front of people is the most important part of the process. Without a produ[...] (...)</description>
-                    <title>How to optimize your product without blocking progress</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</guid>
-                    
-                    <pubDate>Wed, 08 Jan 2020 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/drawn-graph.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Applying patches to a package to make progress with your application.
-Open source contributions (September 2019)
-Last month I've created a blog post mentioning my open-source contributions for august 2019. I found this was a great way to keep track of everything I've learned that month, so I've dec[...] (...)</description>
-                    <title>Open source contributions (September 2019)</title>
-                    <link>https://roelofjanelsinga.com/articles/open-source-contributions-september-2019</link>
-                    <guid>https://roelofjanelsinga.com/articles/open-source-contributions-september-2019</guid>
-                    
-                    <pubDate>Wed, 25 Sep 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-working-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Struggling with micro-optimizations on large scale data processing
-Recently I worked on a problem that didn't seem solvable. It was a problem that a bit difficult to explain, but let me try. A process exists which is calculating a price, including discounts, seasonal pricing, blocked dates, etc. Th[...] (...)</description>
-                    <title>Struggling with micro-optimizations on large scale data processing</title>
-                    <link>https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing</link>
-                    <guid>https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing</guid>
-                    
-                    <pubDate>Wed, 02 Oct 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why is a simple script often harder to write?
-If you're just starting out, you often want to come up with complex solutions to problems. Sometimes you do this to learn a new skill or to show off your problem-solving skills. Complex solutions are often perceived as knowing a lot and being good at so[...] (...)</description>
-                    <title>Why is a simple script often harder to write?</title>
-                    <link>https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write</link>
-                    <guid>https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write</guid>
-                    
-                    <pubDate>Wed, 16 Oct 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/spider-web-with-drips-of-water.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Portfolio updates for September 2019
-In September I've updated my portfolio in a few places. My main motivation behind this was to display a more complete selection of what I have done and what I'm currently working on. As I've been quite active writing blog posts lately, I've made sure to include[...] (...)</description>
-                    <title>Portfolio updates for September 2019</title>
-                    <link>https://roelofjanelsinga.com/articles/portfolio-updates-september-2019</link>
-                    <guid>https://roelofjanelsinga.com/articles/portfolio-updates-september-2019</guid>
-                    
-                    <pubDate>Wed, 09 Oct 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/new-homepage-in-september-2019.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to write good documentation
-Writing documentation is often more important than writing code itself. Why? Well, if no one knows how to use your code, no one will use it. You need to be able to explain how your code works and why it works the way it does. This way, other developers will know how[...] (...)</description>
-                    <title>How to write good documentation</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-write-good-documentation</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-write-good-documentation</guid>
-                    
-                    <pubDate>Wed, 30 Oct 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/blank-page.jpg" medium="image" type="image/jpeg" width="1200" height="795"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to fix CORS headers in a single page application
-Making cross-domain XHR requests can be a pain when building a web application as a single page application, fully written in JavaScript. Your browser will send an additional request to your server, a so called Preflight request. This request won[...] (...)</description>
-                    <title>How to fix CORS headers in a single page application</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application</guid>
-                    
-                    <pubDate>Fri, 27 Sep 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/private-mailbox.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Creating an efficient CI pipeline with CircleCI, Docker, and Laravel
-Efficient and fast CI pipelines are great because you quickly know if your application behaves the way it does, by running automated tests. Having pipelines that take a long time to complete have the disadvantage that people might[...] (...)</description>
-                    <title>Creating an efficient CI pipeline with CircleCI, Docker, and Laravel</title>
-                    <link>https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker</link>
-                    <guid>https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker</guid>
-                    
-                    <pubDate>Wed, 23 Oct 2019 10:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/circleci-docker-laravel.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Photo by Carlos Alberto Gómez Iñiguez
-100% test coverage: Why or why not?
-The magical moment is finally there, you've written the tests and the screen says "100% coverage". You're happy, all tests pass and your code will never be bad again. But is that really what 100% test coverage means[...] (...)</description>
+<item><description>100% test coverage: Why or why not? But first, what does 100% test coverage mean? Let's explore the topic in this post and I'll tell you my thoughts about it afterwards. (...)</description>
                     <title>100% test coverage: Why or why not?</title>
                     <link>https://roelofjanelsinga.com/articles/100-test-coverage-why-or-why-not</link>
                     <guid>https://roelofjanelsinga.com/articles/100-test-coverage-why-or-why-not</guid>
@@ -888,156 +17,28 @@ The magical moment is finally there, you've written the tests and the screen say
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/unpeeling-a-banana.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Using Netlify to simplify the CI/CD pipeline with Angular
-For the past few years, I've maintained a mono repository for my day job. This repository included a complete Laravel application and a complete Angular application (first AngularJS, later Angular). This all worked well together but became m[...] (...)</description>
-                    <title>Using Netlify to simplify the CI/CD pipeline with Angular</title>
-                    <link>https://roelofjanelsinga.com/articles/using-netlify-to-simplify-the-ci-cd-pipeline-with-angular</link>
-                    <guid>https://roelofjanelsinga.com/articles/using-netlify-to-simplify-the-ci-cd-pipeline-with-angular</guid>
+<item><description>To get started with any work, you need to know what to do. In order to find out what the actual problem the person is facing,
+you have to ask questions, a lot o (...)</description>
+                    <title>5 Lessons I've learned by working on a product with non-technical people</title>
+                    <link>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</link>
+                    <guid>https://roelofjanelsinga.com/articles/5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people</guid>
                     
-                    <pubDate>Wed, 13 Nov 2019 11:00:00 GMT</pubDate>
+                    <pubDate>Thu, 07 Feb 2019 11:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/netlify-and-angular.png" medium="image" type="image/png" width="1200" height="800"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/light_bulbs.jpeg" medium="image" type="image/jpeg" width="1351" height="901"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to host a lightning-fast website on Github Pages
-When you have a website that's either static or doesn't require a database, you have a lot of options when it comes to hosting your website. One of them is hosting your website right out of your GitHub repository through GitHub pages. In this pos[...] (...)</description>
-                    <title>How to host a lightning-fast website on Github Pages</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</guid>
+<item><description>Find out what my top 5 reasons were to start using Ubuntu and why you should perhaps also use it as your primary operating system. Hint: It's amazing! (...)</description>
+                    <title>5 reasons to start using Ubuntu</title>
+                    <link>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</link>
+                    <guid>https://roelofjanelsinga.com/articles/5-reasons-to-start-using-ubuntu</guid>
                     
-                    <pubDate>Wed, 27 Nov 2019 11:00:00 GMT</pubDate>
+                    <pubDate>Sun, 21 Apr 2019 10:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ubuntu_logo.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Creating a documentation website for my open-source package Aloia CMS
-As some of you might know, I've been working on a content management system. I've described Why I built my own CMS in an earlier post. Then, after I wrote How to write good documentation I thought to myself: "I just wrote ab[...] (...)</description>
-                    <title>Creating a documentation website for my open-source package Aloia CMS</title>
-                    <link>https://roelofjanelsinga.com/articles/creating-documentation-website-for-my-open-source-package-aloia-cms</link>
-                    <guid>https://roelofjanelsinga.com/articles/creating-documentation-website-for-my-open-source-package-aloia-cms</guid>
-                    
-                    <pubDate>Wed, 20 Nov 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/aloia-cms-documentation-website.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Event sourcing: The single source of truth
-Event sourcing is a very fascinating concept in programming. I think it could be used as a single source of truth for a wide range of decentralized applications. Event sourcing is a concept that took me quite a while to get my head around because it's very[...] (...)</description>
-                    <title>Event sourcing: The single source of truth</title>
-                    <link>https://roelofjanelsinga.com/articles/event-sourcing-single-source-truth</link>
-                    <guid>https://roelofjanelsinga.com/articles/event-sourcing-single-source-truth</guid>
-                    
-                    <pubDate>Wed, 04 Dec 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-running-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-RSS/Atom feed: Why you should have one for your blog
-RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways to syndicate your content across platforms. A lot of people have heard about RSS in some way or another, but fewer people know Atom. Atom is just a more modern versio[...] (...)</description>
-                    <title>RSS/Atom feed: Why you should have one for your blog</title>
-                    <link>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</link>
-                    <guid>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</guid>
-                    
-                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rss-logo.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Top 10 reasons to start blogging as a software engineer
-Blogging is an amazing thing to do for software engineers. I like to write blog posts for a lot of reasons, but a few of those reasons are more important than others. This is why I've created my top 10 reasons why software engineers should sta[...] (...)</description>
-                    <title>Top 10 reasons to start blogging as a software engineer</title>
-                    <link>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</link>
-                    <guid>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</guid>
-                    
-                    <pubDate>Wed, 25 Dec 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fireworks-in-water.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Linux: How it saved my old laptop
-Windows comes pre-installed on almost all consumer non-mac laptops on the market at the moment. This is fine for most people because it serves a very wide target audience. However, I'm not one of those people. I like to control everything on my computer, be able to[...] (...)</description>
-                    <title>Linux: How it saved my old laptop</title>
-                    <link>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</link>
-                    <guid>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</guid>
-                    
-                    <pubDate>Wed, 18 Dec 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/endeavouros-screenshot.png" medium="image" type="image/png" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Proxy API calls to your server during Angular development
-When you're developing an Angular application, you'll most likely use "ng serve" to display your application. When you're trying to request data through API calls to "/api/some/resource" you get a 404 response. But why? W[...] (...)</description>
-                    <title>Proxy API calls to your server during Angular development</title>
-                    <link>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</link>
-                    <guid>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</guid>
-                    
-                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/angular-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Photo by James Pond on Unsplash
-How to reclaim your privacy on the internet
-You get tracked on most websites, your information and behavior aren't yours to keep anymore. This is the sad truth of the modern internet. I admit I'm guilty of this too, in fact, you're probably being tracked right now. I[...] (...)</description>
-                    <title>How to reclaim your privacy on the internet</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</guid>
-                    
-                    <pubDate>Wed, 01 Jan 2020 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/a-lego-character-protecting-itself-from-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Linux: Rolling releases vs Snapshot releases
-There are many, many Linux distros out there and it's both amazing and confusing! It's going hand in hand with the open source way of thinking: Don't like it? Fork it and improve it! That's exactly what the enormous amount of Linux distros stands for. Pe[...] (...)</description>
-                    <title>Linux: Rolling releases vs Snapshot releases</title>
-                    <link>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</link>
-                    <guid>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</guid>
-                    
-                    <pubDate>Wed, 15 Jan 2020 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/linux-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-PHP logo by Colin Viebrock (CC BY-SA 4.0)
-The impact of migrating from PHP to Golang
-Recently I migrated a large business process from PHP to Golang for several reasons. You might not expect this, but I didn't make this choice without good reason. I didn't do the switch to learn the language. Befor[...] (...)</description>
-                    <title>The impact of migrating from PHP to Golang</title>
-                    <link>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</link>
-                    <guid>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</guid>
-                    
-                    <pubDate>Wed, 22 Jan 2020 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/php-plus-golang.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Box icon made by Freepik from www.flaticon.com
-What I learned from publishing my first Golang package
-Earlier this week (January 27th, 2020) I published my first public Golang package. I don't know if it's any good and if it's even structured as it should be. Nonetheless, the package has already he[...] (...)</description>
-                    <title>What I learned from publishing my first Golang package</title>
-                    <link>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</link>
-                    <guid>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</guid>
-                    
-                    <pubDate>Wed, 29 Jan 2020 11:00:00 GMT</pubDate>
-                    
-                    
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-packages.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
-                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Aloia CMS: The road to version 1.0
-If you've been reading my blog posts for a longer time, you might remember that I'm working on a CMS, something I never thought I would do. In this post, I will go over my reasons why I'm building my own CMS again because they've changed a little bit since the las[...] (...)</description>
+<item><description>In this post, I reflect on some of the recent changes I've planned and implemented into Aloia CMS. The release of version 1.0 is close and is all about simplying workflows and getting out of the way. (...)</description>
                     <title>Aloia CMS: The road to version 1.0</title>
                     <link>https://roelofjanelsinga.com/articles/aloia-cms-the-road-to-version-1-0</link>
                     <guid>https://roelofjanelsinga.com/articles/aloia-cms-the-road-to-version-1-0</guid>
@@ -1047,9 +48,81 @@ If you've been reading my blog posts for a longer time, you might remember that 
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/aloia-cms-version-1.0.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Building my personal cloud after 4 years
-About 4 years ago I wrote my very first blog post "Researching home servers". In that post I talked about my Raspberry Pi 2 and using FreeNas to accomplish my goals of building my own file server at home and access it from anywhere. Well, it has fi[...] (...)</description>
+<item><description>I'm writing this style guide to make my own code more readable and maintainable. This guide attempts to cover all of the code I write and work with, so it will  (...)</description>
+                    <title>An overview of my programming style guide</title>
+                    <link>https://roelofjanelsinga.com/articles/an-overview-of-my-programming-style-guide</link>
+                    <guid>https://roelofjanelsinga.com/articles/an-overview-of-my-programming-style-guide</guid>
+                    
+                    <pubDate>Sun, 29 Apr 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_xDUpNBbkXsdnMj4i.jpeg" medium="image" type="image/jpeg" width="800" height="531"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>After 2.5 years it's finally time to make this happen! We're upgrading an AngularJS application to Angular (v6+). Follow along and by the end you'll have a working hybrid application. (...)</description>
+                    <title>AngularJS + Angular (v6) hybrid (finally!)</title>
+                    <link>https://roelofjanelsinga.com/articles/angularjs-angular-v6-hybrid-finally</link>
+                    <guid>https://roelofjanelsinga.com/articles/angularjs-angular-v6-hybrid-finally</guid>
+                    
+                    <pubDate>Fri, 01 Jun 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_2YOcp3G2ZLewVVIl.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>Apache Solr tips for beginners like me</title>
+                    <link>https://roelofjanelsinga.com/articles/apache-solr-tips-for-beginners-like-me</link>
+                    <guid>https://roelofjanelsinga.com/articles/apache-solr-tips-for-beginners-like-me</guid>
+                    
+                    <pubDate>Mon, 06 Aug 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_mJ-ox89d-Xd-lTW9xUKKDQ.png" medium="image" type="image/png" width="800" height="400"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>People keep asking about which framework to use (Angular, React, or VueJS),
+and which one is better. I can understand they want to know which one to use for
+pro (...)</description>
+                    <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
+                    <link>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</link>
+                    <guid>https://roelofjanelsinga.com/articles/battle-apples-oranges-angular-vs-react</guid>
+                    
+                    <pubDate>Sat, 09 Sep 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/apples.jpg" medium="image" type="image/jpeg" width="1000" height="667"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just  (...)</description>
+                    <title>Benefits of a single page application</title>
+                    <link>https://roelofjanelsinga.com/articles/benefits-single-page-application</link>
+                    <guid>https://roelofjanelsinga.com/articles/benefits-single-page-application</guid>
+                    
+                    <pubDate>Thu, 27 Oct 2016 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>There is nothing more fun than working with API's during my work day.
+It's programming like any other day, but it's also so much more!
+It's connecting other ser (...)</description>
+                    <title>Build bridges with API based application structures</title>
+                    <link>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</link>
+                    <guid>https://roelofjanelsinga.com/articles/build-bridges-api-based-structures</guid>
+                    
+                    <pubDate>Sat, 12 Aug 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bridge-forest.jpg" medium="image" type="image/jpeg" width="1280" height="853"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Testing your code is essential if you want to write code that doesn't break your application. Find out how I'm going to use automatic stubs to test the implementation of API's instead of the actual API calls. (...)</description>
+                    <title>Building automatic API Stubs and/or using Mocks in PHP</title>
+                    <link>https://roelofjanelsinga.com/articles/building-automatic-api-stub-or-mocks-php</link>
+                    <guid>https://roelofjanelsinga.com/articles/building-automatic-api-stub-or-mocks-php</guid>
+                    
+                    <pubDate>Wed, 21 Aug 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboards-bw.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine. (...)</description>
                     <title>Building my personal cloud after 4 years</title>
                     <link>https://roelofjanelsinga.com/articles/building-my-personal-cloud-after-4-years</link>
                     <guid>https://roelofjanelsinga.com/articles/building-my-personal-cloud-after-4-years</guid>
@@ -1057,49 +130,120 @@ About 4 years ago I wrote my very first blog post "Researching home servers". In
                     <pubDate>Wed, 12 Feb 2020 11:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to set up a personal cloud using a Raspberry Pi and Nextcloud
-Setting up your personal cloud has never been easier than now and it allows you to stop relying on big cloud providers like Google and Dropbox. In this post I will go over the following aspects of this set-up:
-
-The requirements befor[...] (...)</description>
-                    <title>How to set up a personal cloud using a Raspberry Pi and Nextcloud</title>
-                    <link>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</link>
-                    <guid>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</guid>
+<item><description>Building your own computer? Why would you do that if you can simply buy one in the store? You'd be instantly ready to use it and you know it'll work. But you kn (...)</description>
+                    <title>Building your own computer</title>
+                    <link>https://roelofjanelsinga.com/articles/building-your-own-computer</link>
+                    <guid>https://roelofjanelsinga.com/articles/building-your-own-computer</guid>
                     
-                    <pubDate>Wed, 19 Feb 2020 11:00:00 GMT</pubDate>
+                    <pubDate>Thu, 01 Dec 2016 11:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-+-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/construction.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-Why documentation is (almost) more important than code
-Code is great and it makes your application do the things it needs to do. But what happens when you hire a new person on the team or you start to use new technologies to accomplish your goals? You need some kind of reference to explain the flow[...] (...)</description>
-                    <title>Why documentation is (almost) more important than code</title>
-                    <link>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</link>
-                    <guid>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</guid>
+<item><description>Work should be work, and free time should be free time. When you're working, you should be able to work uninterrupted and have a great working day, but then, when you're done, you have free time. (...)</description>
+                    <title>Company culture - productive and pleasant for all</title>
+                    <link>https://roelofjanelsinga.com/articles/company-culture</link>
+                    <guid>https://roelofjanelsinga.com/articles/company-culture</guid>
                     
-                    <pubDate>Wed, 26 Feb 2020 11:00:00 GMT</pubDate>
+                    <pubDate>Thu, 14 Feb 2019 11:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-pages.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/office.jpeg" medium="image" type="image/jpeg" width="1350" height="901"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-My favorite feature in Peppermint OS
-Peppermint OS is a lightweight Linux distribution, it only consumes about 330mb of RAM on idle. This means it's a great choice for older and/or less powerful devices, but it's also amazing for the high-end devices. If you run this on your higher-end devices, Pep[...] (...)</description>
-                    <title>My favorite feature in Peppermint OS</title>
-                    <link>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</link>
-                    <guid>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</guid>
+<item><description>Creating a documentation website for my open source package Aloia CMS (...)</description>
+                    <title>Creating a documentation website for my open-source package Aloia CMS</title>
+                    <link>https://roelofjanelsinga.com/articles/creating-documentation-website-for-my-open-source-package-aloia-cms</link>
+                    <guid>https://roelofjanelsinga.com/articles/creating-documentation-website-for-my-open-source-package-aloia-cms</guid>
                     
-                    <pubDate>Wed, 04 Mar 2020 11:00:00 GMT</pubDate>
+                    <pubDate>Wed, 20 Nov 2019 11:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ice-on-peppermint-os.jpg" medium="image" type="image/jpeg" width="1200" height="799"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/aloia-cms-documentation-website.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How I added Elasticsearch to a Laravel application on a server with minimal resources
-Recently I've replaced the search functionality on cro-tool.com from a database-driven search engine to Elasticsearch. This wasn't an easy process and there were several hurdles to overcome, but the final result w[...] (...)</description>
+<item><description>Find out what I've done to improve the efficiency in the CI pipeline with CircleCI and Docker for a PHP application. You won't even have to install any software yourself. (...)</description>
+                    <title>Creating an efficient CI pipeline with CircleCI, Docker, and Laravel</title>
+                    <link>https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker</link>
+                    <guid>https://roelofjanelsinga.com/articles/creating-efficient-ci-pipelines-with-docker</guid>
+                    
+                    <pubDate>Wed, 23 Oct 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/circleci-docker-laravel.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Any developer will have a set of developer tools they swear by. A set of tools that does
+everything we need it to do. People can say that tools are interchangea (...)</description>
+                    <title>Developer tools for a back-end programmer</title>
+                    <link>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</link>
+                    <guid>https://roelofjanelsinga.com/articles/developer-tools-back-end-programmer</guid>
+                    
+                    <pubDate>Sat, 26 Aug 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/hammers.jpg" medium="image" type="image/jpeg" width="1080" height="720"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>Development sprint workflows</title>
+                    <link>https://roelofjanelsinga.com/articles/development-sprint-workflows</link>
+                    <guid>https://roelofjanelsinga.com/articles/development-sprint-workflows</guid>
+                    
+                    <pubDate>Mon, 05 Nov 2018 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_tWzT65t5CidslLRb.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how I discovered the online presence of my target audience and what my next steps are to finding a bigger audience. (...)</description>
+                    <title>Discovering the online presence of my target audience</title>
+                    <link>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</link>
+                    <guid>https://roelofjanelsinga.com/articles/discovering-the-online-presence-of-my-target-audience</guid>
+                    
+                    <pubDate>Sat, 11 May 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/snake_plant.jpg" medium="image" type="image/jpeg" width="1200" height="799"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When I looked into using Docker for my projects, I was very intimidated by "the Dockerfile". This was until I realized that I've been doing a similar thing for  (...)</description>
+                    <title>Docker isn't as difficult as I thought it was</title>
+                    <link>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</link>
+                    <guid>https://roelofjanelsinga.com/articles/docker-isnt-as-difficult-as-i-thought-it-was</guid>
+                    
+                    <pubDate>Fri, 16 Mar 2018 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>Enhance your dynamic website with markdown</title>
+                    <link>https://roelofjanelsinga.com/articles/enhance-your-dynamic-website-with-markdown</link>
+                    <guid>https://roelofjanelsinga.com/articles/enhance-your-dynamic-website-with-markdown</guid>
+                    
+                    <pubDate>Tue, 10 Jul 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_kKGLR-yGRohuWGkI.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Event sourcing: The single source of truth. In this post I'll explain my reasoning for calling event sourcing the single source of truth. Spoiler alert: It is a very beneficial practice for decentralized applications. (...)</description>
+                    <title>Event sourcing: The single source of truth</title>
+                    <link>https://roelofjanelsinga.com/articles/event-sourcing-single-source-truth</link>
+                    <guid>https://roelofjanelsinga.com/articles/event-sourcing-single-source-truth</guid>
+                    
+                    <pubDate>Wed, 04 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-running-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value. (...)</description>
+                    <title>Taking the first steps with event sourcing in PHP</title>
+                    <link>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</link>
+                    <guid>https://roelofjanelsinga.com/articles/first-steps-event-sourcing-php</guid>
+                    
+                    <pubDate>Tue, 13 Aug 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post, I go over the steps I have taken to add Elasticsearch to an existing Laravel application on very minimal hardware resources. I also discuss the hurdles I had to overcome to achieve this. (...)</description>
                     <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>
                     <link>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</link>
                     <guid>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</guid>
@@ -1109,9 +253,149 @@ Recently I've replaced the search functionality on cro-tool.com from a database-
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cro-tool-homepage.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>
-How to set up GPG signing keys with Git in Github
-If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. After you've completed these steps, the commits you'[...] (...)</description>
+<item><description>Aloia CMS is a CMS I'm currently actively developing, so this post is a very obvious milestone in this process.
+I love writing blog posts, that's why you see on (...)</description>
+                    <title>How Aloia CMS has made me more productive</title>
+                    <link>https://roelofjanelsinga.com/articles/how-aloia-cms-made-me-more-productive</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-aloia-cms-made-me-more-productive</guid>
+                    
+                    <pubDate>Wed, 25 Mar 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rotating-cogs.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I'm trying to become a more skilled communicator to my peers and non-technical people. In this post, you'll find out how I'm attempting to do this. (...)</description>
+                    <title>How I'm trying to become a better communicator</title>
+                    <link>https://roelofjanelsinga.com/articles/how-becoming-better-communicator</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-becoming-better-communicator</guid>
+                    
+                    <pubDate>Wed, 28 Aug 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/teamwork.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>How I made working on my side project more enjoyable and rewarding</title>
+                    <link>https://roelofjanelsinga.com/articles/how-i-made-working-on-my-side-project-more-enjoyable</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-i-made-working-on-my-side-project-more-enjoyable</guid>
+                    
+                    <pubDate>Wed, 17 Oct 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_JYGU_MEBZaJfWw4HnQtvcg.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how I reduced my docker image from 1.04gb to 555mb. Hint: It involved removing a lot of unnecessary applications and choosing a smaller base image. (...)</description>
+                    <title>How I reduced my docker image by 55%</title>
+                    <link>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-i-reduced-my-docker-image-by-55-percent</guid>
+                    
+                    <pubDate>Thu, 28 Feb 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/steel_tower.jpeg" medium="image" type="image/jpeg" width="1200" height="798"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronj (...)</description>
+                    <title>How I reduced the runtime of a Cronjob by 94%</title>
+                    <link>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-i-sped-up-a-cronjob-by-94</guid>
+                    
+                    <pubDate>Thu, 26 Apr 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I'll explain how you can fix CORS headers for usage in a single page application. I give code examples with comments for Nginx and Apache. (...)</description>
+                    <title>How to fix CORS headers in a single page application</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-fix-cors-headers-single-page-application</guid>
+                    
+                    <pubDate>Fri, 27 Sep 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/private-mailbox.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you. (...)</description>
+                    <title>How to generate a sitemap</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-generate-a-sitemap</guid>
+                    
+                    <pubDate>Fri, 29 Mar 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/binoculars.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll. (...)</description>
+                    <title>How to host a lightning-fast website on Github Pages</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</guid>
+                    
+                    <pubDate>Wed, 27 Nov 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Everyone has a bad day every once in a while, but there are ways to reduce this amount.
+I put together a list of a few simple steps you can take to improve your (...)</description>
+                    <title>How to Improve Your Working Day Little by Little</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-improve-your-working-day</guid>
+                    
+                    <pubDate>Sat, 07 Oct 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-with-confetti.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how to properly index a single page application for Google and other search engines with Prerender. (...)</description>
+                    <title>How to index a single page application built in AngularJS</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-index-a-single-page-application-built-in-angularjs</guid>
+                    
+                    <pubDate>Thu, 12 Jan 2017 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/magnifier.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I go over how you can optimize your product without blocking progress along the way. A lot of people can get stuck on features that might be meaningless to the product. Through data you can prioritize features and improvements, which will guide your work towards a specific goal. (...)</description>
+                    <title>How to optimize your product without blocking progress</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-optimize-your-product-without-blocking-progress</guid>
+                    
+                    <pubDate>Wed, 08 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/drawn-graph.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I'm giving you four different steps you can take to reclaim your privacy on the internet. You can take all of these steps, but also just some of them. Any steps you take will be an improvement already. (...)</description>
+                    <title>How to reclaim your privacy on the internet</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-reclaim-your-privacy-on-the-internet</guid>
+                    
+                    <pubDate>Wed, 01 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/a-lego-character-protecting-itself-from-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When using a Polygon or MultiPolygon for searching on a SpatialField with IsWithin(), you can't use a square shape unless it's counter-clockwise. (...)</description>
+                    <title>How to search "the whole world" with Solr Spatial Search</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-search-whole-world-with-solr-spatial-search</guid>
+                    
+                    <pubDate>Tue, 26 Feb 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/solr_logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working  (...)</description>
+                    <title>How to see if your application works</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-see-if-your-application-works</guid>
+                    
+                    <pubDate>Thu, 05 Jan 2017 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. (...)</description>
                     <title>How to set up GPG signing keys with Git in Github</title>
                     <link>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</link>
                     <guid>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</guid>
@@ -1120,6 +404,583 @@ If you've ever used a Github integration, then you'll now you can verify your Gi
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/lock-on-blue-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post, I go over the steps you have to take to set up an internet-facing personal cloud using nothing more than a Raspberry Pi, Nextcloud, and an external hard drive. (...)</description>
+                    <title>How to set up a personal cloud using a Raspberry Pi and Nextcloud</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-setup-personal-cloud-raspberrypi-nextcloud</guid>
+                    
+                    <pubDate>Wed, 19 Feb 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi-nextcloud.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>How to start using the terminal</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-start-using-the-terminal</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-start-using-the-terminal</guid>
+                    
+                    <pubDate>Sun, 17 Jun 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_mxwl0_gdFfhnpXeh8RozCA.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Some people are night owls and others flourish in the morning, but all people deal with waking up.
+Some people are just better at it than others. But even night (...)</description>
+                    <title>How to wake up more easily: 7 tips</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-wake-up-more-easily-7-tips</guid>
+                    
+                    <pubDate>Wed, 18 Oct 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rooster.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Writing blog posts can be a difficult if you don't write a lot and don't know where to start. Find out how I write blog posts and maybe it'll help you to get started too. (...)</description>
+                    <title>How I write my blog posts: 6 steps</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-write-blog-posts-in-6-steps</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-write-blog-posts-in-6-steps</guid>
+                    
+                    <pubDate>Wed, 04 Sep 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/writing-on-a-laptop.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post, I go through the steps you can take to write good documentation. You can use these in any kind of project and will allow others to help you when you need it. (...)</description>
+                    <title>How to write good documentation</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-write-good-documentation</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-write-good-documentation</guid>
+                    
+                    <pubDate>Wed, 30 Oct 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/blank-page.jpg" medium="image" type="image/jpeg" width="1200" height="795"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>I need a mentor</title>
+                    <link>https://roelofjanelsinga.com/articles/i-need-a-mentor</link>
+                    <guid>https://roelofjanelsinga.com/articles/i-need-a-mentor</guid>
+                    
+                    <pubDate>Wed, 15 Aug 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TcogNTpW0nsvsQaO.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I'm explaining how you can improve the query performance for polymorphic relationships in Laravel, find out how I did it. (...)</description>
+                    <title>Improve query performance for polymorphic relationships in Laravel</title>
+                    <link>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</link>
+                    <guid>https://roelofjanelsinga.com/articles/improve-performance-polymorphic-relationships-laravel</guid>
+                    
+                    <pubDate>Mon, 29 Jul 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/start-sprint-race.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When applying to development jobs, you're often asked to do a coding test to prove that you know what you're doing. I think this is terrible and here are better (...)</description>
+                    <title>Improving development hiring</title>
+                    <link>https://roelofjanelsinga.com/articles/improving-development-hiring</link>
+                    <guid>https://roelofjanelsinga.com/articles/improving-development-hiring</guid>
+                    
+                    <pubDate>Fri, 25 Jan 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboard.jpg" medium="image" type="image/jpeg" width="1080" height="715"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I've been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most (...)</description>
+                    <title>Improving my programming skills at a full-time job</title>
+                    <link>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</link>
+                    <guid>https://roelofjanelsinga.com/articles/improving-my-programming-skills-at-a-full-time-job</guid>
+                    
+                    <pubDate>Thu, 15 Mar 2018 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg" medium="image" type="image/jpeg" width="800" height="534"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>A few months ago I started saving data in the browser. It wasn't for performance reason, but for functional reasons. I used LocalStorage for saving data that ne (...)</description>
+                    <title>IndexedDB: Caching your data on the client-side</title>
+                    <link>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</link>
+                    <guid>https://roelofjanelsinga.com/articles/indexeddb-caching-your-data-on-the-client-side</guid>
+                    
+                    <pubDate>Thu, 15 Dec 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speed.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user's input, send XHR requests (...)</description>
+                    <title>Isomorphic JavaScript: What is it and what can I do with it?</title>
+                    <link>https://roelofjanelsinga.com/articles/isomorphic-javascript</link>
+                    <guid>https://roelofjanelsinga.com/articles/isomorphic-javascript</guid>
+                    
+                    <pubDate>Thu, 17 Nov 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/its-better-together.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When working on tasks during a work day, you can often get distracted by other tasks that need to
+be completed while you're working on something else. As this k (...)</description>
+                    <title>Learn to say NO</title>
+                    <link>https://roelofjanelsinga.com/articles/learn-to-say-no</link>
+                    <guid>https://roelofjanelsinga.com/articles/learn-to-say-no</guid>
+                    
+                    <pubDate>Mon, 11 Feb 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock.jpg" medium="image" type="image/jpeg" width="1350" height="900"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Single Page Applications (SPA's) are amazing to build and work with,
+but there are a lot of disadvantages as well. This post describes some of the things that
+I (...)</description>
+                    <title>What I've learned building Single page applications</title>
+                    <link>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</link>
+                    <guid>https://roelofjanelsinga.com/articles/learned-building-single-page-applications</guid>
+                    
+                    <pubDate>Tue, 06 Jun 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy. (...)</description>
+                    <title>Learning to speak Norwegian</title>
+                    <link>https://roelofjanelsinga.com/articles/learning-to-speak-norwegian</link>
+                    <guid>https://roelofjanelsinga.com/articles/learning-to-speak-norwegian</guid>
+                    
+                    <pubDate>Sun, 10 Feb 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/pencil_paper.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Linux: How it saved my old laptop. I this post I'm going to talk about my transition from using Windows for everything to using Linux for everything and how this impacted my decision to revive an old laptop that I thought was broken. (...)</description>
+                    <title>Linux: How it saved my old laptop</title>
+                    <link>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</link>
+                    <guid>https://roelofjanelsinga.com/articles/linux-how-it-saved-my-old-laptop</guid>
+                    
+                    <pubDate>Wed, 18 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/endeavouros-screenshot.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I explain the differences between a rolling release and a snapshot release distro. This post is aimed at people that are just starting out with Linux of want to explore and make the switch to Linux. (...)</description>
+                    <title>Linux: Rolling releases vs Snapshot releases</title>
+                    <link>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</link>
+                    <guid>https://roelofjanelsinga.com/articles/linux-rolling-releases-versus-snapshot-releases</guid>
+                    
+                    <pubDate>Wed, 15 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/linux-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Iâve been working on a Laravel and AngularJS application for two years now.
+Itâs slowly becoming more and more complex and itâs starting to becom (...)</description>
+                    <title>Modernizing log: Part 1, Conventional REST API to GraphQL</title>
+                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</link>
+                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-1-conventional-rest-api-to-graphql</guid>
+                    
+                    <pubDate>Wed, 14 Mar 2018 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat th (...)</description>
+                    <title>Modernizing log: Part 2, GraphQL test results</title>
+                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</link>
+                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-2-graphql-test-results</guid>
+                    
+                    <pubDate>Mon, 19 Mar 2018 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>First, let me refresh your memory about what results I've had so far.
+The initial situation was as follows: (...)</description>
+                    <title>Modernizing log: Part 3, Optimizing GraphQL queries</title>
+                    <link>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</link>
+                    <guid>https://roelofjanelsinga.com/articles/modernizing-log-part-3-optimizing-graphql-queries</guid>
+                    
+                    <pubDate>Wed, 02 May 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" type="image/jpeg" width="800" height="459"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out which file types I use for certain scenarios and which situations suit a specific file type best. We’ll dive into JSON, YAML, XML, and dotenv. (...)</description>
+                    <title>How to Pick Right Configuration File Type for Your Project</title>
+                    <link>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-choice-of-configuraton-file-types</guid>
+                    
+                    <pubDate>Thu, 04 Apr 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/post-in-json.png" medium="image" type="image/png" width="1200" height="698"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Peppermint OS is a lightweight and flexible Linux distribution. I've installed it on one of my laptops to replace Ubuntu to see what it's all about. In this post, I go over one of my favorite features in Peppermint OS that you can use right after starting it up for the first time. (...)</description>
+                    <title>My favorite feature in Peppermint OS</title>
+                    <link>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-favorite-feature-in-peppermint-os</guid>
+                    
+                    <pubDate>Wed, 04 Mar 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ice-on-peppermint-os.jpg" medium="image" type="image/jpeg" width="1200" height="799"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out why I think you should use a VPN for your internet usage. If you like to browse any and all websites and be anonymous at the same time, you might benefit from using a VPN. (...)</description>
+                    <title>My thoughts about using a VPN during everyday life</title>
+                    <link>https://roelofjanelsinga.com/articles/my-thoughts-on-vpns</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-thoughts-on-vpns</guid>
+                    
+                    <pubDate>Wed, 11 Sep 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/surveillance-camera.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I listen to podcasts almost every single day, so I've compiled a list of my top 10 favorite ones. (...)</description>
+                    <title>My top 10 favorite podcasts</title>
+                    <link>https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-top-10-favorite-podcasts</guid>
+                    
+                    <pubDate>Wed, 20 Mar 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/headphones.jpeg" medium="image" type="image/jpeg" width="1346" height="903"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Web applications are great. They're fast, they can be used on all platforms and often feel
+like they're a real native application with accessibility .
+But then, (...)</description>
+                    <title>Offline accessibility with service workers</title>
+                    <link>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</link>
+                    <guid>https://roelofjanelsinga.com/articles/offline-accessibility-service-workers</guid>
+                    
+                    <pubDate>Fri, 09 Jun 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-swimming.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I explain which open-source project I contributed to in september of 2019. It's been a very interesting month and I've learned a lot of new things. (...)</description>
+                    <title>Open source contributions (September 2019)</title>
+                    <link>https://roelofjanelsinga.com/articles/open-source-contributions-september-2019</link>
+                    <guid>https://roelofjanelsinga.com/articles/open-source-contributions-september-2019</guid>
+                    
+                    <pubDate>Wed, 25 Sep 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/people-working-together.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Plants help me keep a calm mind and deal with stress. I keep the plants in my office and other living spaces for relaxation. (...)</description>
+                    <title>Plants in my living space</title>
+                    <link>https://roelofjanelsinga.com/articles/plants-in-my-living-space</link>
+                    <guid>https://roelofjanelsinga.com/articles/plants-in-my-living-space</guid>
+                    
+                    <pubDate>Mon, 28 Jan 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fittonia.png" medium="image" type="image/png" width="1280" height="720"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.
+You can share your interests by talking to colleagues, go to m (...)</description>
+                    <title>Podcasts for creators and programmers</title>
+                    <link>https://roelofjanelsinga.com/articles/podcasts-for-creators</link>
+                    <guid>https://roelofjanelsinga.com/articles/podcasts-for-creators</guid>
+                    
+                    <pubDate>Sat, 02 Sep 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/microphone.jpg" medium="image" type="image/jpeg" width="1013" height="675"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Portfolio updates for September 2019 (...)</description>
+                    <title>Portfolio updates for September 2019</title>
+                    <link>https://roelofjanelsinga.com/articles/portfolio-updates-september-2019</link>
+                    <guid>https://roelofjanelsinga.com/articles/portfolio-updates-september-2019</guid>
+                    
+                    <pubDate>Wed, 09 Oct 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/new-homepage-in-september-2019.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Virtual Reality is getting some exposure lately. The HTC Vive, the Oculus Rift and even the Gear VR are all trying to accomplish themselves. The Gear VR is aime (...)</description>
+                    <title>What practical use can VR have for the web?</title>
+                    <link>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</link>
+                    <guid>https://roelofjanelsinga.com/articles/practical-use-vr-for-web</guid>
+                    
+                    <pubDate>Thu, 08 Dec 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/television.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>You've all seen programming books on the internet or in bookstores. But most of us know
+that those books are usually not relevant anymore, most of them are outd (...)</description>
+                    <title>Are programming books worth your money?</title>
+                    <link>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</link>
+                    <guid>https://roelofjanelsinga.com/articles/programming-books-worth-your-money</guid>
+                    
+                    <pubDate>Sat, 16 Sep 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-top.jpg" medium="image" type="image/jpeg" width="1000" height="667"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post, I'm showing you how you can proxy API calls to your server during Angular development and make the development process very painless. (...)</description>
+                    <title>Proxy API calls to your server during Angular development</title>
+                    <link>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</link>
+                    <guid>https://roelofjanelsinga.com/articles/proxy-api-calls-to-your-server-during-angular-development</guid>
+                    
+                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/angular-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Recently I've been quite active with contributing to open source projects on GitHub. Find out which packages I've contributed to and which packages of my own I've been maintaining. (...)</description>
+                    <title>My recent open source contributions (August 2019)</title>
+                    <link>https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019</link>
+                    <guid>https://roelofjanelsinga.com/articles/recent-open-source-contributions-augustus-2019</guid>
+                    
+                    <pubDate>Thu, 15 Aug 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/starry-sky.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Ever since I got a Raspberry Pi 2, in December 2015,
+I've been very interested in setting up a home server
+to be able to save all my files and access them from  (...)</description>
+                    <title>Researching Home Servers</title>
+                    <link>https://roelofjanelsinga.com/articles/researching-home-servers</link>
+                    <guid>https://roelofjanelsinga.com/articles/researching-home-servers</guid>
+                    
+                    <pubDate>Thu, 20 Oct 2016 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/video-streaming.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>RSS/Atom feed: Why you should have one for your blog. In this post I talk about why you should have syndication feeds for your blog. You can easily and quickly share your content to many different platforms without doing any of the work yourself. (...)</description>
+                    <title>RSS/Atom feed: Why you should have one for your blog</title>
+                    <link>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</link>
+                    <guid>https://roelofjanelsinga.com/articles/rss-atom-feed-why-should-have-for-blog</guid>
+                    
+                    <pubDate>Wed, 11 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/rss-logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how to get some quick SEO wins for your personal blog! This post is specifically aimed to developers, because we often have trouble selling ourselves. (...)</description>
+                    <title>SEO and personal marketing for developers</title>
+                    <link>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</link>
+                    <guid>https://roelofjanelsinga.com/articles/seo-and-personal-marketing-for-developers</guid>
+                    
+                    <pubDate>Thu, 21 Mar 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/google-analytics.png" medium="image" type="image/jpeg" width="1355" height="897"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>Sharing state between AngularJS and Angular v6 with Redux</title>
+                    <link>https://roelofjanelsinga.com/articles/sharing-state-between-angularjs-and-angular-v6-with-redux</link>
+                    <guid>https://roelofjanelsinga.com/articles/sharing-state-between-angularjs-and-angular-v6-with-redux</guid>
+                    
+                    <pubDate>Wed, 04 Jul 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_kfcO2AhkejlxgZXF4XeHRQ.png" medium="image" type="image/png" width="1200" height="600"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description> (...)</description>
+                    <title>Sharing the UI router between AngularJS and Angular 6</title>
+                    <link>https://roelofjanelsinga.com/articles/sharing-the-ui-router-between-angularjs-and-angular-6</link>
+                    <guid>https://roelofjanelsinga.com/articles/sharing-the-ui-router-between-angularjs-and-angular-6</guid>
+                    
+                    <pubDate>Sun, 22 Jul 2018 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_aHsiNjXOAw0Cbq-P8nO8bw.png" medium="image" type="image/png" width="800" height="400"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Working remotely, we've all heard of it before. Simply said, you're working on something,
+but you're not actually in the office while you do it.
+In some occasio (...)</description>
+                    <title>Why some people can work remotely</title>
+                    <link>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</link>
+                    <guid>https://roelofjanelsinga.com/articles/some-people-can-work-remotely</guid>
+                    
+                    <pubDate>Fri, 02 Jun 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/guy-on-rock.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Us web designers and developers sit down all day long while we're at work.
+We don't move as much as we probably should. So many of us are probably not as health (...)</description>
+                    <title>How to Stay Healthy as a Web Designer or Developer</title>
+                    <link>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</link>
+                    <guid>https://roelofjanelsinga.com/articles/stay-healthy-web-designer-developer</guid>
+                    
+                    <pubDate>Sat, 30 Sep 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/running-shoes.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I'm struggling with micro optimizations on large scale data processing. Find out in what way I'm trying to improve the runtime of the calculations by saving processing cycles. (...)</description>
+                    <title>Struggling with micro-optimizations on large scale data processing</title>
+                    <link>https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing</link>
+                    <guid>https://roelofjanelsinga.com/articles/struggling-with-micro-optimizations-large-scale-data-processing</guid>
+                    
+                    <pubDate>Wed, 02 Oct 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time. (...)</description>
+                    <title>The elephant in the room: burnouts</title>
+                    <link>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</link>
+                    <guid>https://roelofjanelsinga.com/articles/the-elephant-in-the-room-burnouts</guid>
+                    
+                    <pubDate>Fri, 22 Feb 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/meditation.jpeg" medium="image" type="image/jpeg" width="1393" height="879"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Machine learning has been getting a lot of attention the last few years. Without most of us knowing it, it's been taking over our lives. Webshops, social media, (...)</description>
+                    <title>The future of machine learning</title>
+                    <link>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</link>
+                    <guid>https://roelofjanelsinga.com/articles/the-future-of-machine-learning</guid>
+                    
+                    <pubDate>Thu, 03 Nov 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/machine-learning.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out how I reduced the execution time of a script by 99%. In this post I go over the impact of migrating from PHP to Golang. I recently migrated a business process from PHP to Golang and it had more benefits than just a performance increase. (...)</description>
+                    <title>The impact of migrating from PHP to Golang</title>
+                    <link>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</link>
+                    <guid>https://roelofjanelsinga.com/articles/the-impact-of-migrating-from-php-to-golang</guid>
+                    
+                    <pubDate>Wed, 22 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/php-plus-golang.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Yes! I know! Another caching post! But caching is very, very important! With that out of the way, I'd like to explain why it's so important. Not just for your h (...)</description>
+                    <title>The importance of server-side caching</title>
+                    <link>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</link>
+                    <guid>https://roelofjanelsinga.com/articles/the-importance-of-server-side-caching</guid>
+                    
+                    <pubDate>Thu, 29 Dec 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/airshow.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I go over the top 10 reasons why I believe software engineers would benefit from blogging. But remember: If you're not writing blog posts you're not any less of a software developer. (...)</description>
+                    <title>Top 10 reasons to start blogging as a software engineer</title>
+                    <link>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</link>
+                    <guid>https://roelofjanelsinga.com/articles/top-10-reasons-to-start-blogging-as-software-engineer</guid>
+                    
+                    <pubDate>Wed, 25 Dec 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/fireworks-in-water.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>You! Yes you there! Are you still using SQL queries to perform search requests in your database? How's that going for you? It's not as quick as you'd expect it  (...)</description>
+                    <title>Use software for what it's made, and you'll see the benefits!</title>
+                    <link>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</link>
+                    <guid>https://roelofjanelsinga.com/articles/use-software-for-what-its-made-and-benefit</guid>
+                    
+                    <pubDate>Thu, 22 Dec 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/archive.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I describe how I transformed a mono repository platform to a platform with two distinct applications and using Netlify to simplify the CI/CD pipeline with Angular.  (...)</description>
+                    <title>Using Netlify to simplify the CI/CD pipeline with Angular</title>
+                    <link>https://roelofjanelsinga.com/articles/using-netlify-to-simplify-the-ci-cd-pipeline-with-angular</link>
+                    <guid>https://roelofjanelsinga.com/articles/using-netlify-to-simplify-the-ci-cd-pipeline-with-angular</guid>
+                    
+                    <pubDate>Wed, 13 Nov 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/netlify-and-angular.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When I first started out with web design &amp; development,
+CSS was this tool to make HTML pages look better.
+This was just before responsive web design started bec (...)</description>
+                    <title>Why I use SASS rather than just CSS</title>
+                    <link>https://roelofjanelsinga.com/articles/using-sass-rather-css</link>
+                    <guid>https://roelofjanelsinga.com/articles/using-sass-rather-css</guid>
+                    
+                    <pubDate>Thu, 01 Jun 2017 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/macbook-colors.jpg" medium="image" type="image/jpeg" width="3240" height="2160"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal. (...)</description>
+                    <title>What I learned from publishing my first Golang package</title>
+                    <link>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</link>
+                    <guid>https://roelofjanelsinga.com/articles/what-i-learned-from-publishing-my-first-golang-package</guid>
+                    
+                    <pubDate>Wed, 29 Jan 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-packages.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Waking up at 6 every morning has been a very surprising improvement in my life, find out what impact it had on my day-to-day life. (...)</description>
+                    <title>What waking up at 6 every morning has taught me</title>
+                    <link>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</link>
+                    <guid>https://roelofjanelsinga.com/articles/what-waking-up-at-6-taught-me</guid>
+                    
+                    <pubDate>Wed, 01 May 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/sleeping_cat.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>I've always been against building my own CMS. Find out why I decided to build my own CMS anyway and what motivated me to build modules for it. (...)</description>
+                    <title>Why I built my own CMS</title>
+                    <link>https://roelofjanelsinga.com/articles/why-built-my-own-cms</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-built-my-own-cms</guid>
+                    
+                    <pubDate>Wed, 18 Sep 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/screenshot-flat-file-cms-dashboard.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In this post I go over some point why documentation is (almost) more important than code for any application. If you want new people to get up to speed quickly and have them contribute quicker, you might want to document the macro, meso, and micro aspects of your application. (...)</description>
+                    <title>Why documentation is (almost) more important than code</title>
+                    <link>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-documentation-is-more-important-than-code</guid>
+                    
+                    <pubDate>Wed, 26 Feb 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/book-pages.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Find out why I haven't added a comment system on my blog. It has been left out very intentionally, maybe it's something you should consider too. (...)</description>
+                    <title>Why I don't have comments on my blog</title>
+                    <link>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-i-dont-have-comments-on-my-blog</guid>
+                    
+                    <pubDate>Wed, 10 Apr 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/heart-zero-likes.jpeg" medium="image" type="image/jpeg" width="1350" height="900"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>There are many amazing alternatives to using a database to store data for your website. Find out why I chose to use static files to store all content for my blog. (...)</description>
+                    <title>Why I don't use a database for my blog</title>
+                    <link>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-i-dont-use-database-for-my-blog</guid>
+                    
+                    <pubDate>Mon, 25 Mar 2019 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/stack_wood.jpeg" medium="image" type="image/jpeg" width="1350" height="901"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Why is a simple script often harder to write? Find out why it's much more difficult to write a simple script that solves a complicated problem than writing an elaborate solution. (...)</description>
+                    <title>Why is a simple script often harder to write?</title>
+                    <link>https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write</link>
+                    <guid>https://roelofjanelsinga.com/articles/why-simple-script-harder-to-write</guid>
+                    
+                    <pubDate>Wed, 16 Oct 2019 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/spider-web-with-drips-of-water.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my enti (...)</description>
+                    <title>Windows or Linux?</title>
+                    <link>https://roelofjanelsinga.com/articles/windows-or-linux</link>
+                    <guid>https://roelofjanelsinga.com/articles/windows-or-linux</guid>
+                    
+                    <pubDate>Thu, 10 Nov 2016 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>

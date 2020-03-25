@@ -5,6 +5,7 @@ is_published: true
 post_date: '2019-03-25'
 url: why-i-dont-use-database-for-my-blog
 ---
+
 !["Why I don't use a database for my blog"](/images/articles/stack_wood.jpeg)
 
 # Why I don't use a database for my blog

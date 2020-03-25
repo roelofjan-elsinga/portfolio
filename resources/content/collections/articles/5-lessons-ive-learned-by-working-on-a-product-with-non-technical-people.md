@@ -4,6 +4,7 @@ is_published: true
 post_date: '2019-02-07'
 url: 5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people
 ---
+
 !["Light bulbs"](/images/articles/light_bulbs.jpeg)
 
 # 5 Lessons I've learned by working on a product with non-technical people

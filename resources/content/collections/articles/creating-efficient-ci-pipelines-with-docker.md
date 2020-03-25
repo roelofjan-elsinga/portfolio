@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-10-23'
 url: creating-efficient-ci-pipelines-with-docker
 ---
+
 !["Circleci docker laravel"](/images/articles/circleci-docker-laravel.png)
 # Creating an efficient CI pipeline with CircleCI, Docker, and Laravel
 Efficient and fast CI pipelines are great because you quickly know if your application behaves the way it does, by running automated tests. Having pipelines that take a long time to complete have the disadvantage that people might start to ignore the status checks if something needs to be fixed quickly. This is something you want to avoid, so I've compiled a way to run PHPUnit tests in a very simple environment without having to install any composer dependencies.

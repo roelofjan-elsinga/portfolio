@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-09-27'
 url: how-to-fix-cors-headers-single-page-application
 ---
+
 !["Private mailbox"](/images/articles/private-mailbox.jpeg)
 # How to fix CORS headers in a single page application
 Making cross-domain XHR requests can be a pain when building a web application as a single page application, fully written in JavaScript. Your browser will send an additional request to your server, a so called Preflight request. This request won't have the normal request type you're used to (GET, POST, PUT, DELETE), but it'll have type OPTIONS. **But what does it mean and how do you solve it?**

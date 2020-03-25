@@ -5,6 +5,7 @@ is_published: false
 post_date: '2020-02-29'
 url: exploration-of-event-storming
 ---
+
 # Exploration of event storming
 
 Domain Event, it's like telling I story (I did this and then this happened)

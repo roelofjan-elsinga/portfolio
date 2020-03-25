@@ -6,6 +6,7 @@ is_published: true
 post_date: '2017-08-26'
 url: developer-tools-back-end-programmer
 ---
+
 ![Developer tools for a back-end programmer](/images/articles/hammers.jpg)
 
 # Developer tools for a back-end programmer

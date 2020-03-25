@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-01-01'
 url: how-to-reclaim-your-privacy-on-the-internet
 ---
+
 !["A lego character protecting itself from shoes"](/images/articles/a-lego-character-protecting-itself-from-shoes.jpg)
 <span class="caption">Photo by James Pond on Unsplash</span>
 # How to reclaim your privacy on the internet

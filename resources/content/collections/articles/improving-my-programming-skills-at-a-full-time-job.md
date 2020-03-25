@@ -5,6 +5,7 @@ canonical: 'https://medium.com/@roelofjanelsinga/improving-my-programming-skills
 post_date: '2018-03-15'
 url: improving-my-programming-skills-at-a-full-time-job
 ---
+
 !["Fireworks"](/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg)
 
 # Improving my programming skills at a full-time job

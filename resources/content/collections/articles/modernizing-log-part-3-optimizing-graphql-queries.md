@@ -5,6 +5,7 @@ canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-3-optimizi
 post_date: '2018-05-02'
 url: modernizing-log-part-3-optimizing-graphql-queries
 ---
+
 !["Sports car"](/images/articles/0_TZbsjFf22AO6FfeA.jpeg)
 
 # Modernizing log: Part 3, Optimizing GraphQL queries

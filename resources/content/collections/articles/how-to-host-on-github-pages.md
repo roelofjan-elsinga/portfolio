@@ -6,6 +6,7 @@ is_published: true
 post_date: '2019-11-27'
 url: how-to-host-on-github-pages
 ---
+
 !["Github logo"](/images/articles/github-logo.png)
 # How to host a lightning-fast website on Github Pages
 When you have a website that's either static or doesn't require a database, you have a lot of options when it comes to hosting your website. One of them is hosting your website right out of your GitHub repository through GitHub pages. In this post, I'm going to explain what GitHub Pages is and how you can use it to host your website on the reliable GitHub servers, for free. Yes, that's right, hosting a website on GitHub pages is free, but only when using a public repository.  

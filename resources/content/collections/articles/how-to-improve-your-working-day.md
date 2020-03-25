@@ -4,6 +4,7 @@ is_published: true
 post_date: '2017-10-07'
 url: how-to-improve-your-working-day
 ---
+
 ![How to Improve Your Working Day Little by Little](/images/articles/guy-with-confetti.jpg)
 
 # How to Improve Your Working Day Little by Little

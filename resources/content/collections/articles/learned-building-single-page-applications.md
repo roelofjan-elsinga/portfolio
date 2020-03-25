@@ -6,6 +6,7 @@ is_published: true
 post_date: '2017-06-06'
 url: learned-building-single-page-applications
 ---
+
 ![What I've learned building Single page applications](/images/articles/girl-on-laptop.jpg)
 
 # What I've learned building Single page applications

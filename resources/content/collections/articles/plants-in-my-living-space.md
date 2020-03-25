@@ -5,6 +5,7 @@ is_published: true
 post_date: '2019-01-28'
 url: plants-in-my-living-space
 ---
+
 !["Parlour palm"](/images/articles/fittonia.png)
 
 # Plants in my living space

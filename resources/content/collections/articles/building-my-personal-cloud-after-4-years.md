@@ -6,6 +6,7 @@ is_published: true
 post_date: '2020-02-12'
 url: building-my-personal-cloud-after-4-years
 ---
+
 !["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-nextcloud.png)
 # Building my personal cloud after 4 years
 

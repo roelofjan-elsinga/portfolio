@@ -4,6 +4,7 @@ is_published: true
 post_date: '2016-10-27'
 url: benefits-single-page-application
 ---
+
 ![Manhattan at nigh](/images/articles/manhattan.jpg "Benefits of a single page application")
 
 # Benefits of a single page application

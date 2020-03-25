@@ -4,6 +4,7 @@ is_published: true
 post_date: '2019-01-25'
 url: improving-development-hiring
 ---
+
 ![Keyboard](/images/articles/keyboard.jpg)
 
 # Improving development hiring

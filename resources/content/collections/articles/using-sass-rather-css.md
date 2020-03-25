@@ -6,6 +6,7 @@ is_published: true
 post_date: '2017-06-01'
 url: using-sass-rather-css
 ---
+
 ![Why I use SASS rather than just CSS](/images/articles/macbook-colors.jpg)
 
 # Why I use SASS rather than just CSS

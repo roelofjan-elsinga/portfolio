@@ -5,6 +5,7 @@ canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-2-graphql-
 post_date: '2018-03-19'
 url: modernizing-log-part-2-graphql-test-results
 ---
+
 !["Flower bulbs"](/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg)
 
 # Modernizing log: Part 2, GraphQL test results
