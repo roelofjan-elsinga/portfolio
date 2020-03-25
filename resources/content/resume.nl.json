@@ -4,44 +4,44 @@
   "current_title": "Lead / Full-stack developer",
   "experiences": [
     {
-      "dates": "Jan 2016 - Present",
+      "dates": "Jan 2016 - Nu",
       "company": "Tubber",
-      "location": "Groningen, The Netherlands",
+      "location": "Groningen, Nederland",
       "job_title": "Lead developer",
       "key_activities": [
-        "Developing a real-time search engine for 12.000+ boats",
-        "Building a scalable production environment with Docker Swarm",
-        "Automating the sales process using Event sourcing",
-        "Improving code quality through automated testing with Docker and CircleCI",
-	    "Near real-time indexing of millions of availability and pricing documents into Apache Solr"
+        "Ontwikkelen van een real-time zoekmachine voor 12.000+ boten",
+        "Ontwikkelen van een schaalbare Docker swarm productie omgeving",
+        "Automatiseren van het sales proces d.m.v. Event sourcing",
+        "Verbeteren van de kwaliteit van de code d.m.v. automatische tests in Docker en CircleCI",
+        "Real-time indexeren van miljoenen beschikbaarheid en pricing documenten in Apache Solr"
       ]
     },
     {
-      "dates": "Oct 2015 - Present",
+      "dates": "Okt 2015 - Nu",
       "company": "Roelof Jan Elsinga",
-      "location": "Groningen, The Netherlands",
+      "location": "Groningen, Nederland",
       "job_title": "Freelancer",
       "key_activities": [
-        "Developing high performance web applications",
-        "Building Aloia CMS and other open source packages",
-	    "Writing blog posts (800+ monthly readers)"
+        "Ontwikkelen van high performance web applicaties",
+        "Bouwen van Aloia CMS en andere open-source software bundels",
+        "Schrijven van blog posts (800+ maandelijkse lezers)"
       ]
     },
     {
       "dates": "Feb 2015 - Jun 2017",
       "company": "Spin Internet Media",
       "location": "Willemstad, Curaҫao",
-      "job_title": "Back-end Development Intern",
+      "job_title": "Back-end Development Stagiair",
       "key_activities": [
-        "Learning PHP Frameworks (Laravel and Phalcon)",
-        "Building a real-estate website"
+        "Leren werken met PHP Frameworks, waaronder Laravel en Phalcon",
+        "Ontwikkelen van websites"
       ]
     }
   ],
   "education": [
     {
       "school": "Hanzehogeschool Groningen",
-      "location": "Groningen, The Netherlands",
+      "location": "Groningen, Nederland",
       "degree": "Bachelor of Science (B.Sc.)",
       "field_of_study": "Interactive Media & Technologies",
       "dates": "2012 – 2016"
@@ -56,22 +56,22 @@
   ],
   "languages": [
     {
-      "name": "Dutch",
-      "fluency": "Native"
+      "name": "Nederlands",
+      "fluency": "Moedertaal"
     },
     {
-      "name": "English",
-      "fluency": "Fluent/Native"
+      "name": "Engels",
+      "fluency": "Vloeiend"
     },
     {
-      "name": "Norwegian",
-      "fluency": "Proficient"
+      "name": "Noors",
+      "fluency": "Basis"
     }
   ],
   "skills": [
     "PHP",
     "Laravel",
-    "Golang (+testing)",
+    "Golang (+testen)",
     "JavaScript",
     "TypeScript",
     "Angular",

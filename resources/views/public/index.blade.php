@@ -6,8 +6,8 @@
         <p class="text-lg sm:text-xl leading-loose">
             I specialize in: <br />
             ⚡ Building lighting fast web applications <br />
-            🔒 Building secure web applications <br />
-            🔥 Building easy-to-maintain web applications
+            🔒 Making them secure <br />
+            🔥 And making them scalable
         </p>
 
         <p class="pt-8">

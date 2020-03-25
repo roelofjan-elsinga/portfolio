@@ -17,7 +17,7 @@ class PublicTest extends TestCase
 
         $this
             ->get(route('feed'))
-            ->assertSee('testing')
+            ->assertSee('test')
             ->assertOk();
     }
 
@@ -29,7 +29,7 @@ class PublicTest extends TestCase
 
         $this
             ->get(route('feed.rss'))
-            ->assertSee('testing')
+            ->assertSee('test')
             ->assertOk();
     }
 

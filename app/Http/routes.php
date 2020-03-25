@@ -17,6 +17,7 @@ Route::get('feed', ['as' => 'feed', 'uses' => 'PublicController@atomFeed']);
 Route::get('feed/rss', ['as' => 'feed.rss', 'uses' => 'PublicController@rssFeed']);
 
 Route::get('resume', ['as' => 'resume.show', 'uses' => 'ResumeController@browser']);
+Route::get('mijn-cv', ['as' => 'resume.show_dutch', 'uses' => 'ResumeController@browserDutch']);
 
 Route::get('open-source-contributions', ['as' => 'public.open_source', 'uses' => 'PublicController@open_source']);
 

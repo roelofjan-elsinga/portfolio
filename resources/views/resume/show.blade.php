@@ -22,7 +22,7 @@
     <meta name="twitter:description" content="Are you wondering what my skills are and what I've worked on before? You'll read all about it on my CV.">
     <meta name="twitter:image" content="{{asset($resume['photo_url'])}}">
 
-    <title>My CV - Roelof Jan Elsinga</title>
+    <title>@lang('resume.title') - Roelof Jan Elsinga</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/icons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/icons/apple-icon-60x60.png') }}">
@@ -67,6 +67,8 @@
 
                 <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-blue-darkest underline">roelofjanelsinga@gmail.com</a></p>
                 <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-blue-darkest underline">https://roelofjanelsinga.com</a></p>
+                <p><strong>Resume (English):</strong> <a href="{{route('resume.show')}}" class="text-blue-darkest underline">{{route('resume.show')}}</a></p>
+                <p><strong>CV (Nederlands):</strong> <a href="{{route('resume.show_dutch')}}" class="text-blue-darkest underline">{{route('resume.show_dutch')}}</a></p>
             </div>
 
             <div class="flex-1 md:text-right print:hidden">
@@ -79,7 +81,7 @@
 
             <div class="flex-1 block w-full print:w-1/2 print:inline-block">
                 <h2>
-                    Experience
+                    @lang('resume.experience')
                 </h2>
 
                 @foreach($resume['experiences'] as $experience)
@@ -101,7 +103,7 @@
                                 {{$experience['job_title']}}
                             </p>
                             <div class="mt-2 print:hidden pr-2">
-                                <strong>Key activities</strong>
+                                <strong>@lang('resume.key_activities')</strong>
 
                                 <ul class="block mt-2">
                                     @foreach($experience['key_activities'] as $activity)
@@ -118,7 +120,7 @@
 
             <div class="flex-1 my-8 md:my-0 print:my-4 print:w-1/2 print:inline-block">
 
-                <h2>Education</h2>
+                <h2>@lang('resume.education')</h2>
 
                 @foreach($resume['education'] as $education)
 
@@ -151,7 +153,7 @@
         </div>
 
         <div>
-            <h2 class="mt-4 md:mt-8 mb-4">Skills</h2>
+            <h2 class="mt-4 md:mt-8 mb-4">@lang('resume.skills')</h2>
 
             <ul class="list-reset -m-1">
                 @foreach($resume['skills'] as $skill)
