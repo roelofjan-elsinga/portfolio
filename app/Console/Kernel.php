@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('flatfilecms:publish:posts ')->dailyAt('12:00');
+        $schedule->command('aloiacms:publish:posts')->dailyAt('12:00');
     }
 
     protected function commands()
