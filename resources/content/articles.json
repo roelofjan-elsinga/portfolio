@@ -735,7 +735,7 @@
     "100": {
         "filename": "how-to-setup-gpg-signing-keys-in-github.md",
         "postDate": "2020-03-18",
-        "updateDate": "2020-03-18 14:35:22",
+        "updateDate": "2020-03-19 11:01:41",
         "description": "If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system.",
         "isScheduled": false,
         "isPublished": true
