@@ -71,7 +71,7 @@ To enable signing for all repositories in your system, run:
 git config --global commit.gpgsign true
 ```
 
-Now that Git know we want to sign commits, we need to specify which GPG key we want to use for this. Again, you can do this for specific repositories or for all repositories on your system. To Tell git to use the GPG key we just created for the current repository, run:
+Now that Git knows we want to sign commits, we need to specify which GPG key we want to use for this. Again, you can do this for specific repositories or for all repositories on your system. To Tell git to use the GPG key we just created for the current repository, run:
 
 ```bash
 git config user.signingkey gpgIdentifier
