@@ -6,7 +6,7 @@ is_published: true
 post_date: '2020-02-12'
 url: building-my-personal-cloud-after-4-years
 ---
-!["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-+-nextcloud.png)
+!["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-nextcloud.png)
 # Building my personal cloud after 4 years
 
 About 4 years ago I wrote my very first blog post ["Researching home servers"]([https://roelofjanelsinga.com/articles/researching-home-servers](https://roelofjanelsinga.com/articles/researching-home-servers)). In that post I talked about my Raspberry Pi 2 and using FreeNas to accomplish my goals of building my own file server at home and access it from anywhere. Well, it has finally happened and I didn't use FreeNas to accomplish this. 

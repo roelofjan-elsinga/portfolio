@@ -6,7 +6,7 @@ is_published: true
 post_date: '2020-02-19'
 url: how-to-setup-personal-cloud-raspberrypi-nextcloud
 ---
-!["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-+-nextcloud.png)
+!["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-nextcloud.png)
 # How to set up a personal cloud using a Raspberry Pi and Nextcloud
 
 Setting up your personal cloud has never been easier than now and it allows you to stop relying on big cloud providers like Google and Dropbox. In this post I will go over the following aspects of this set-up:
