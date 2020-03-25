@@ -8,3 +8,4 @@ scss/
 package-lock.json
 symlink-packages.sh
 coverage/
+.phpunit.result.cache
