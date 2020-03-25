@@ -82,7 +82,7 @@ class PublicController extends Controller
         $work = Work::find($slug);
 
         if (!$work->exists()) {
-            return abort(404);
+            abort(404);
         }
 
         return view('public.workdetail', [
@@ -92,8 +92,7 @@ class PublicController extends Controller
                 'title' => $work->title,
                 'author' => 'Roelof Jan Elsinga',
                 'description' => $work->description,
-                'image_large' => url($work->image()),
-                'image_small' => url($work->image()),
+                'image_url' => url($work->image()),
                 'keywords' => str_replace(' ', ',', $work->title)
             ]),
         ]);
@@ -147,7 +146,7 @@ class PublicController extends Controller
         $article = Article::find($slug);
 
         if (!$article->exists()) {
-            return abort(404);
+            abort(404);
         }
 
         return view('public.view-article', [

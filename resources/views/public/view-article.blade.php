@@ -30,7 +30,7 @@
         "@type": "WebPage",
         "@id": "https://google.com/article"
       },
-      "dateModified": "{{$article->getUpdateDate()->toIso8601String()}}",
+      "dateModified": "{{!is_null($article->getUpdateDate()) ? $article->getUpdateDate()->toIso8601String() : $article->getPostDate()->toIso8601String()}}",
       "datePublished": "{{$article->getPostDate()->toIso8601String()}}",
       "headline": "{{$article->title()}}",
       "author": {

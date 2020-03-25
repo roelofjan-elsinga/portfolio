@@ -10,7 +10,7 @@ class PublicTest extends TestCase
     {
         Storage::fake('atom');
 
-        file_put_contents(storage_path('framework/testing/disks/atom/atom.xml'), 'test');
+        Storage::disk('atom')->put('atom.xml', 'test');
 
         $this
             ->get(route('feed'))

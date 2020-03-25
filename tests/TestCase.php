@@ -46,12 +46,14 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         $this->fs = vfsStream::setup('root', 0777, [
             'content' => [
                 'pages' => []
-            ]
+            ],
+            'collections' => []
         ]);
 
-        Config::set('flatfilecms.pages.file_path', "{$this->fs->getChild('content')->url()}/pages.json");
-        Config::set('flatfilecms.pages.folder_path', "{$this->fs->getChild('content')->url()}/pages");
-        Config::set('flatfilecms.taxonomy.file_path', "{$this->fs->getChild('content')->url()}/taxonomy.json");
+        Config::set('aloiacms.collections_path', $this->fs->getChild('collections')->url());
+        Config::set('aloiacms.pages.file_path', "{$this->fs->getChild('content')->url()}/pages.json");
+        Config::set('aloiacms.pages.folder_path', "{$this->fs->getChild('content')->url()}/pages");
+        Config::set('aloiacms.taxonomy.file_path', "{$this->fs->getChild('content')->url()}/taxonomy.json");
     }
 
     protected function recursively_remove_directory($dir)

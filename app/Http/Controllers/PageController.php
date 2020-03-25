@@ -31,6 +31,12 @@ class PageController
             }
         }
 
+        $slug_matches_url = $page->url() === $slug || $page->url() === "/{$slug}";
+
+        if (!$slug_matches_url) {
+            return redirect()->route('page', $page->url());
+        }
+
         return view('public.view-page', [
             'page' => $page,
         ]);

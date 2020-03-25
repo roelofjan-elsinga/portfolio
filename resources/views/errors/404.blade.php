@@ -1,4 +1,4 @@
-@extends('public', ['page' => FlatFileCms\TagsParser::instance()->getTagsForPageName('404')])
+@extends('public', ['page' => \AloiaCms\Models\MetaTag::find('404')])
 
 @section('navigation')
 
