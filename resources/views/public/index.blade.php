@@ -41,7 +41,7 @@
 
                                     <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
 
-                                    <span class="text-blue-darkest font-bold pb-2 no-underline">View project</span>
+                                    <span class="text-blue-darkest font-bold pb-2 link">View project</span>
 
                                 </section>
                             </a>
@@ -108,7 +108,7 @@
 
                                 <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
 
-                                <span class="text-blue-darkest font-bold pb-2 no-underline">View project</span>
+                                <span class="text-blue-darkest font-bold pb-2 link">View project</span>
 
                             </a>
 

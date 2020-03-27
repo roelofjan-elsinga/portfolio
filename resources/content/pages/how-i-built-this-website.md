@@ -6,8 +6,8 @@ I've built this website with a few different technologies. Some of them I use mo
 I've used <a href="https://laravel.com/" class="link link--underline">Laravel</a> 
 to keep everything in place and to serve the content on this website. I've been using Laravel for every single project for the past 4 years and keep discovering new features every day.
 
-#### Flat File CMS
-Flat File CMS is my own content management system and I use it to make it much easier for me to manage my content when I'm not close to my laptop. This way I can create and update content from my phone, while I'm not at home, or really any other scenario. If you're interested to find out more, you can look at the project on <a href="https://github.com/roelofjan-elsinga/flat-file-cms" class="link link--underline">GitHub</a>.
+#### Aloia CMS
+Aloia CMS is a drop-in flat file content management system and I use it to make it easier for me to manage my content when I'm not close to my laptop. This way I can create and update content from my phone, while I'm not at home, or really any other scenario. If you're interested to find out more, you can look at the project on <a href="https://aloiacms.com" class="link link--underline">aloiacms.com</a>.
 
 #### Tailwindcss + SCSS
 I'm a full-stack web developer and no front-end developer, so I know how to CSS, because it's part of my job. However, I don't find writing CSS enjoyable or 
