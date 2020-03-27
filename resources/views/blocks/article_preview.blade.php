@@ -1,17 +1,20 @@
-<article>
-    <div class="image">
-        <img src="{{asset($article->thumbnail())}}" />
-    </div>
+<article class="shadow mb-4 rounded hover:shadow-md duration-200 bg-white" style="transition-duration: 0.2s">
+    <a
+        href="{{!is_null($article->externalUrl()) ? $article->externalUrl() : route('articles.view', $article->slug())}}"
+        {{!is_null($article->externalUrl()) ? "target='_blank'" : ''}}
+        class="flex text-blue-darkest no-underline flex-col md:flex-row">
 
-    <div class="content pt-8">
-        <h3 class="pt-4 sm:pt-0 mb-4 font-bold text-theme-dark">
-            {{$article->title()}}
-        </h3>
+        <img src="{{asset($article->thumbnail())}}" class="w-full md:max-w-350"/>
 
-        <p class="mb-4 leading-normal">{{$article->description()}}</p>
+        <div class="flex-1 pt-6 pb-4 px-4">
+            <h3 class="mb-4 font-bold text-black">
+                {{$article->title()}}
+            </h3>
 
-        <span class="text-grey-dark text-sm">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
-    </div>
+            <p class="mb-4 leading-normal">{{$article->description()}}</p>
 
-    <a href="{{!is_null($article->externalUrl()) ? $article->externalUrl() : route('articles.view', $article->slug())}}" {{!is_null($article->externalUrl()) ? "target='_blank'" : ''}} class="desktop-link"></a>
+            <span class="text-grey-dark text-sm">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
+        </div>
+
+    </a>
 </article>
