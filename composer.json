@@ -15,11 +15,11 @@
         "ext-zip": "*",
         "laravel/framework": "^6.0",
         "symfony/translation": "4.3.5",
+        "brainmaestro/composer-git-hooks": "^2.8",
         "roelofjan-elsinga/aloia-cms": "^2.0",
-        "roelofjan-elsinga/aloia-cms-gui": "^2.0"
+        "roelofjan-elsinga/aloia-cms-gui": "^3.1"
     },
     "require-dev": {
-        "brainmaestro/composer-git-hooks": "^2.8",
         "phpunit/phpunit": "^8.5",
         "nunomaduro/collision": "^2.0",
         "symfony/dom-crawler": "^4.0",
