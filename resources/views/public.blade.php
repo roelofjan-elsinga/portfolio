@@ -79,7 +79,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-blue-darkest px-4 lg:px-0">
+    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-theme-darkest px-4 lg:px-0">
 
         @section('navigation')
 

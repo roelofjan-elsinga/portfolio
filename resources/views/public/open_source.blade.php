@@ -24,7 +24,7 @@
 
                         <p class="mb-4 flex-auto leading-normal">{{$project->description}}</p>
 
-                        <a href="{{$project->github_url}}" target="_blank" class="text-blue-darkest font-bold pb-2 no-underline">View project</a>
+                        <a href="{{$project->github_url}}" target="_blank" class="text-blue-900 font-bold pb-2 no-underline">View project</a>
                     </div>
 
                 @endforeach

@@ -4,14 +4,14 @@ html {
 }
 
 .link {
-    color: #12283a;
+    @apply text-theme-darkest;
     font-weight: 700;
     padding-bottom: .25rem;
     text-decoration: none;
 
     &:hover, &--underline {
         border-bottom-width: 2px;
-        border-color: #12283a;
+        @apply border-theme-darkest;
     }
 
     &--light {

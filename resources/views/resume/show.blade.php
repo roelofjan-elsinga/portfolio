@@ -54,21 +54,21 @@
     <link href="{{mix('css/resume.css')}}" rel="stylesheet"/>
 </head>
 
-<body class="container mx-auto md:pt-8 text-blue-darkest">
+<body class="container mx-auto md:pt-8 text-black">
 
     <main class="bg-white p-8">
 
         <div class="flex flex-col md:flex-row">
 
             <div class="flex-1 leading-loose">
-                <h1 class="text-4xl">{{$resume['name']}}</h1>
+                <h1 class="text-4xl leading-tight mb-4">{{$resume['name']}}</h1>
 
-                <h2 class="text-2xl text-theme-dark mb-4">{{$resume['current_title']}}</h2>
+                <h2 class="text-2xl text-theme-600 mb-4">{{$resume['current_title']}}</h2>
 
-                <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-blue-darkest underline">roelofjanelsinga@gmail.com</a></p>
-                <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-blue-darkest underline">https://roelofjanelsinga.com</a></p>
-                <p><strong>Resume (English):</strong> <a href="{{route('resume.show')}}" class="text-blue-darkest underline">{{route('resume.show')}}</a></p>
-                <p><strong>CV (Nederlands):</strong> <a href="{{route('resume.show_dutch')}}" class="text-blue-darkest underline">{{route('resume.show_dutch')}}</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-blue-900 underline">roelofjanelsinga@gmail.com</a></p>
+                <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-blue-900 underline">https://roelofjanelsinga.com</a></p>
+                <p><strong>Resume (English):</strong> <a href="{{route('resume.show')}}" class="text-blue-900 underline">{{route('resume.show')}}</a></p>
+                <p><strong>CV (Nederlands):</strong> <a href="{{route('resume.show_dutch')}}" class="text-blue-900 underline">{{route('resume.show_dutch')}}</a></p>
             </div>
 
             <div class="flex-1 md:text-right print:hidden">
@@ -88,15 +88,15 @@
 
                     <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
                         <div class="w-48">
-                            <div class="bg-blue-darkest text-white rounded p-2 inline-block mb-4 lg:mb-0">
+                            <div class="bg-blue-900 text-white rounded p-2 inline-block mb-4 lg:mb-0">
                                 {{$experience['dates']}}
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-dark font-black w-full md:w-auto">
+                            <h3 class="text-lg text-theme-600 font-black w-full md:w-auto">
                                 {{$experience['company']}}
                             </h3>
-                            <p class="mt-2 text-grey-dark italic">
+                            <p class="mt-2 text-grey-600 italic">
                                 {{$experience['location']}}
                             </p>
                             <p class="mt-2 text-lg">
@@ -105,7 +105,7 @@
                             <div class="mt-2 print:hidden pr-2">
                                 <strong>@lang('resume.key_activities')</strong>
 
-                                <ul class="block mt-2">
+                                <ul class="block mt-2 ml-4 list-disc">
                                     @foreach($experience['key_activities'] as $activity)
                                         <li>{{$activity}}</li>
                                     @endforeach
@@ -126,15 +126,15 @@
 
                     <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
                         <div class="w-32">
-                            <div class="bg-blue-darkest text-white rounded p-2 inline-block mb-4 lg:mb-0">
+                            <div class="bg-blue-900 text-white rounded p-2 inline-block mb-4 lg:mb-0">
                                 {{$education['dates']}}
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-dark font-black">
+                            <h3 class="text-lg text-theme-600 font-black">
                                 {{$education['school']}}
                             </h3>
-                            <p class="mt-2 text-grey-dark italic">
+                            <p class="mt-2 text-grey-600 italic">
                                 {{$education['location']}}
                             </p>
                             <p class="mt-2 text-lg">
@@ -155,10 +155,10 @@
         <div>
             <h2 class="mt-4 md:mt-8 mb-4">@lang('resume.skills')</h2>
 
-            <ul class="list-reset -m-1">
+            <ul class="-m-1">
                 @foreach($resume['skills'] as $skill)
 
-                    <li class="m-1 inline-block bg-blue-lighter rounded p-2">
+                    <li class="m-1 inline-block bg-blue-200 rounded p-2">
                         {{$skill}}
                     </li>
 

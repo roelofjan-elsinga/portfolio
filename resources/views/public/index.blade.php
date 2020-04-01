@@ -1,8 +1,8 @@
 @extends('public')
 
 @section('content')
-    <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-blue-darkest border-blue-darkest">
-        <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12">Full-stack web developer <br /> & Scrum master</h1>
+    <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-blue-900 border-blue-900">
+        <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12 leading-snug">Full-stack web developer <br /> & Scrum master</h1>
 
         <h4 class="text-xl mb-4">I specialize in</h4>
         <p class="text-lg sm:text-xl leading-loose">
@@ -32,7 +32,7 @@
                     @foreach($items as $project)
 
                         <div class="flex-1 border m-2 rounded shadow flex flex-col hover:shadow-md" style="transition-duration: 0.2s">
-                            <a class="text-blue-darkest no-underline" href="{{$project->url}}">
+                            <a class="text-blue-900 no-underline" href="{{$project->url}}">
                                 <img src="{{$project->image_url}}" alt="{{$project->image_alt}}" class="mt-4" />
 
                                 <section class="p-4">
@@ -41,7 +41,7 @@
 
                                     <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
 
-                                    <span class="text-blue-darkest font-bold pb-2 link">View project</span>
+                                    <span class="text-blue-900 font-bold pb-2 link">View project</span>
 
                                 </section>
                             </a>
@@ -64,7 +64,7 @@
     </div>
 
     <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+        <div class="items paragraph-spacing my-32 text-lg bg-theme-600 text-white rounded p-4">
 
             {!! Block::get('my_tech_stack') !!}
 
@@ -102,13 +102,13 @@
 
                         <article class="flex-1 border p-4 m-2 rounded shadow flex flex-col hover:shadow-md duration-200" style="transition-duration: 0.2s">
 
-                            <a href="{{$project->github_url}}" target="_blank" class="text-blue-darkest no-underline">
+                            <a href="{{$project->github_url}}" target="_blank" class="text-blue-900 no-underline">
 
                                 <h3>{{$project->name}}</h3>
 
                                 <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
 
-                                <span class="text-blue-darkest font-bold pb-2 link">View project</span>
+                                <span class="text-blue-900 font-bold pb-2 link">View project</span>
 
                             </a>
 
@@ -127,7 +127,7 @@
     </section>
 
     <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+        <div class="items paragraph-spacing my-32 text-lg bg-theme-600 text-white rounded p-4">
 
             {!! Block::get('site_techniques') !!}
 

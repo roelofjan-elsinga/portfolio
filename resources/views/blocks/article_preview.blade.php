@@ -2,7 +2,7 @@
     <a
         href="{{!is_null($article->externalUrl()) ? $article->externalUrl() : route('articles.view', $article->slug())}}"
         {{!is_null($article->externalUrl()) ? "target='_blank'" : ''}}
-        class="flex text-blue-darkest no-underline flex-col md:flex-row">
+        class="flex text-blue-900 no-underline flex-col md:flex-row">
 
         <img src="{{asset($article->thumbnail())}}" class="w-full md:max-w-350"/>
 
@@ -13,7 +13,7 @@
 
             <p class="mb-4 leading-normal">{{$article->description()}}</p>
 
-            <span class="text-grey-dark text-sm">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
+            <span class="text-grey-600 text-sm">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
         </div>
 
     </a>

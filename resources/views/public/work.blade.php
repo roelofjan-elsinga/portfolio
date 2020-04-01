@@ -25,7 +25,7 @@
 
                             <p class="mb-4 mt-2 flex-auto">{{$project->description}}</p>
 
-                            <a href="{{$project->url}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
+                            <a href="{{$project->url}}" class="text-theme-600 font-bold pb-2 underline">View project</a>
                         </div>
 
                     @endforeach

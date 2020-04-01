@@ -19,7 +19,7 @@ mix
     .sass('resources/assets/sass/resume.scss', 'public/css/')
     .options({
         processCssUrls: false,
-        postCss: [ tailwindcss('./tailwind.js') ],
+        postCss: [ require('tailwindcss') ],
     })
     .purgeCss({
         extensions: ['html', 'js', 'php', 'md'],
