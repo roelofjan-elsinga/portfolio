@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 25 Mar 2020 14:45:13 GMT</pubDate>
+              <pubDate>Wed, 01 Apr 2020 18:06:45 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -16,6 +16,16 @@
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/unpeeling-a-banana.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Prioritizing is difficult, but there are some tricks to make this easier on yourself. This post contains a few tips to make it easier to choose the next new feature. (...)</description>
+                    <title>3 things you can do to choose which feature to work on next</title>
+                    <link>https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on</link>
+                    <guid>https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on</guid>
+                    
+                    <pubDate>Wed, 01 Apr 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/man-with-too-many-choices.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>To get started with any work, you need to know what to do. In order to find out what the actual problem the person is facing,
 you have to ask questions, a lot o (...)</description>
@@ -396,7 +406,7 @@ I put together a list of a few simple steps you can take to improve your (...)</
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. (...)</description>
-                    <title>How to set up GPG signing keys with Git in Github</title>
+                    <title>How to get the verified flag on your commits in GitHub</title>
                     <link>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</link>
                     <guid>https://roelofjanelsinga.com/articles/how-to-setup-gpg-signing-keys-in-github</guid>
                     
