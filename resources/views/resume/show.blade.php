@@ -63,7 +63,7 @@
             <div class="flex-1 leading-loose">
                 <h1 class="text-4xl leading-tight mb-4">{{$resume['name']}}</h1>
 
-                <h2 class="text-2xl text-theme-600 mb-4">{{$resume['current_title']}}</h2>
+                <h2 class="text-2xl text-theme-dark mb-4">{{$resume['current_title']}}</h2>
 
                 <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-blue-900 underline">roelofjanelsinga@gmail.com</a></p>
                 <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-blue-900 underline">https://roelofjanelsinga.com</a></p>
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-600 font-black w-full md:w-auto">
+                            <h3 class="text-lg text-theme-dark font-black w-full md:w-auto">
                                 {{$experience['company']}}
                             </h3>
                             <p class="mt-2 text-grey-600 italic">
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-600 font-black">
+                            <h3 class="text-lg text-theme-dark font-black">
                                 {{$education['school']}}
                             </h3>
                             <p class="mt-2 text-grey-600 italic">
