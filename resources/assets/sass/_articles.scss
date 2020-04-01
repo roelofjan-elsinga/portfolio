@@ -23,13 +23,17 @@
     }
 
     ul {
-        @apply text-lg mb-4;
+        @apply list-disc text-lg mb-4;
 
         li {
             a {
                 @extend .inline-link;
             }
         }
+    }
+
+    ol {
+        @apply list-decimal text-lg mb-4;
     }
 
     .caption {
