@@ -54,6 +54,10 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
             "php artisan aloiacms:set-permissions"
+        ],
+        "publish": [
+            "composer install",
+            "php artisan aloiacmsgui:publish:assets"
         ]
     },
     "config": {
