@@ -56,7 +56,7 @@
             "php artisan aloiacms:set-permissions"
         ],
         "publish": [
-            "composer install",
+            "composer install --no-dev",
             "php artisan aloiacmsgui:publish:assets"
         ]
     },
@@ -72,7 +72,7 @@
                 "git add"
             ],
             "post-merge": [
-                "composer install"
+                "composer run publish"
             ]
         }
     }
