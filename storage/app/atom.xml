@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-04-01T20:06:45+02:00</updated>
+              <updated>2020-04-08T16:09:33+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -49,13 +49,13 @@
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/unpeeling-a-banana.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
-                    <title>3 things you can do to choose which feature to work on next</title>
+                    <title>3 things to do to prioritize new features</title>
                     <link href="https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on"/>
                     <id>https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on</id>
-                    <updated>2020-04-01T20:06:44+02:00</updated>
+                    <updated>2020-04-03T07:35:47+02:00</updated>
                     <published>2020-04-01T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/man-with-too-many-choices.jpeg" alt="&quot;Man with too many choices&quot;" /></p>
-<h1>3 things you can do to choose which feature to work on next</h1>
+<h1>3 things to do to prioritize new features</h1>
 <p>Prioritizing is difficult, especially when you have many different things you could do. Choosing the next feature to work on for your web application feels like prioritizing tasks, they all seem important and there is no way you can do multiple at once. In this post, I'll go over a few simple things you can do to choose the next new feature you should work on.</p>
 <h2>Don't build anything until it hurts</h2>
 <p>When building an application there are always at least five things you want to implement at the same time. As a challenge to yourself, you should try to not build any of them and see which one of them starts to hurt you first. By hurting you I mean the following: it takes you more time to do something because the feature isn't there. Features are all about allowing you to do something quicker. </p>
@@ -1646,6 +1646,47 @@ like this that seems easy, but you end up spending hours on it anyway!</p>]]></c
 This is Roelof from the future (January 2019)! Wow! Docker is indeed so much easier to use than a virtual machine. If you're reading this, don't bother to work with a virtual machine and use Docker right away. Implementing it into your existing workflow is much...much easier!</strong></p>]]></content>
                     <summary><![CDATA[If you've ever built an application on a different operating system (OS) than the OS of your web hosting you will know the phenomenon of an application working ]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
+<entry>
+                    <title>How to set a static IP on a Raspberry Pi</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi</id>
+                    <updated>2020-04-08T16:09:31+02:00</updated>
+                    <published>2020-04-08T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/raspberry-pi.jpeg" alt="Raspberry Pi" /></p>
+<h1>How to set a static IP on a Raspberry Pi</h1>
+<p>Raspberry Pi's are getting faster and can do more things in your house than ever before. If you've ever tried to set up a service on your Raspberry Pi, you know that one of the most important things you need for everything to work is the IP address of your Raspberry Pi. If you don't use static IP addresses for your services, the IP will reset after every reboot of the credit card-sized computer. This could make it so your services are no longer reachable and you have to go out of your way to update the new IP address in all places that you set it before. But luckily there is a very easy solution to avoid this situation: a static IP address. </p>
+<p>Setting a static IP on a Raspberry Pi has a lot of benefits and is actually quite easy. In this post, I'll take you through 3 steps to get this working on your credit card-sized computer. Before we get to those steps, I'll explain what a static IP address actually is and why there are several ways of achieving the same result.</p>
+<h2>What is a static IP address?</h2>
+<p>A static IP address means that your devices will have the same IP address on your LAN at all times, even after rebooting the computer. This has the benefit that you always know which services live at which IP address and it allows you to build complex systems using all kinds of devices. </p>
+<h2>What are some ways to set a static IP address?</h2>
+<p>I mentioned that there are multiple ways to set a static IP address. One of them is to assign an IP address inside of your router for your device. This is usually the best way to do this because it avoids any IP conflicts. The router will be the one to assign the IP addresses and there won't be any duplicates. </p>
+<p>There is another way, and that's the way we'll go through in this post: assigning a static IP address inside of the device. This means that the device will ask the router to assign it to the requested IP address. So in simple terms, instead of the router telling the device: &quot;Hey, you're 192.168.1.10&quot; the device asks the router &quot;Can I be 192.168.1.10, please?&quot;. This could cause IP conflicts if you have a lot of different devices that all need to be managed through the router. But I've personally only seen this in large office buildings and not in my own home.</p>
+<h2>Setting a static IP address in your Raspberry Pi</h2>
+<p>Now that you know what we're going to do, let's actually do it! First, start your Raspberry Pi by plugging it in and open a terminal. You can do this either through the device itself of SSH, but I recommend doing it through the device itself.</p>
+<p>Open the configuration:</p>
+<pre><code class="language-bash">nano /etc/dhcpcd.conf</code></pre>
+<p>Now go all the way to the bottom of the file and add these lines:</p>
+<pre><code class="language-bash">interface wlan0
+static ip_address=192.168.1.10/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1</code></pre>
+<p>Let's go through this line by line:</p>
+<ul>
+<li>interface wlan0: We're targeting the Wi-Fi connection, for wired use eth0 instead of wlan0</li>
+<li>static ip_address=192.168.1.10/24: We're setting the static IP to: 192.168.1.10. You can change this to any IP address you prefer.</li>
+<li>static routers=192.168.0.1: Here you fill in the IP address of your router, this can differ for you, so be sure to check this.</li>
+<li>static domain_name_servers=192.168.0.1: Set the name_server to your router as well. This makes sure that your Raspberry Pi will let the router resolve any network connectivity you might have.</li>
+</ul>
+<p>When you've added/updated those values, you can save the file and run the last command to make these changes take effect:</p>
+<pre><code class="language-bash">sudo systemctl restart dhcpcd</code></pre>
+<p>This will restart the network service and request your static IP. If you don't have any network connectivity within 10-20 seconds you might have run into an IP conflict and you'll have to repeat the previous steps, selecting a different static IP address.</p>
+<p>If you do this through SSH, you will be logged out after you run the last command, because the device will temporarily be disconnected from the network. After 10-20 seconds you can log in using the static IP you've selected.</p>
+<h2>Conclusion</h2>
+<p>Setting a static IP address in your Raspberry Pi is a simple 3 step process and has countless of benefits. One of them is that it makes your services easier to find within your network. You'll be able to find any existing services on the same IP address, even after restarting your Raspberry Pi.</p>
+<p>If you have any questions or suggestions on how to do this more easily, you can find me on <a href="https://twitter.com/RJElsinga">Twitter</a>.</p>]]></content>
+                    <summary><![CDATA[Setting a static IP on a Raspberry Pi has a lot of benefits and is actually quite easy. In this post, I'll take you through 3 steps to get this working on your credit card-sized computer.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>How to get the verified flag on your commits in GitHub</title>

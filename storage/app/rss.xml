@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 01 Apr 2020 18:06:45 GMT</pubDate>
+              <pubDate>Wed, 08 Apr 2020 14:09:33 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -18,7 +18,7 @@
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/unpeeling-a-banana.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Prioritizing is difficult, but there are some tricks to make this easier on yourself. This post contains a few tips to make it easier to choose the next new feature. (...)</description>
-                    <title>3 things you can do to choose which feature to work on next</title>
+                    <title>3 things to do to prioritize new features</title>
                     <link>https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on</link>
                     <guid>https://roelofjanelsinga.com/articles/3-things-to-do-to-choose-next-feature-to-work-on</guid>
                     
@@ -404,6 +404,16 @@ I put together a list of a few simple steps you can take to improve your (...)</
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Setting a static IP on a Raspberry Pi has a lot of benefits and is actually quite easy. In this post, I'll take you through 3 steps to get this working on your credit card-sized computer. (...)</description>
+                    <title>How to set a static IP on a Raspberry Pi</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi</guid>
+                    
+                    <pubDate>Wed, 08 Apr 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>If you've ever used a Github integration, then you'll now you can verify your Git commits. In this post, I'll go over the steps you need to take to accomplish this for your own development system. (...)</description>
                     <title>How to get the verified flag on your commits in GitHub</title>
