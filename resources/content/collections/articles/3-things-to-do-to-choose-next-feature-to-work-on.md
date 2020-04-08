@@ -3,11 +3,10 @@ description: 'Prioritizing is difficult, but there are some tricks to make this 
 post_date: '2020-04-01'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-01 20:06:44'
+update_date: '2020-04-03 07:35:47'
 ---
-
 !["Man with too many choices"](/images/articles/man-with-too-many-choices.jpeg)
-# 3 things you can do to choose which feature to work on next
+# 3 things to do to prioritize new features
 
 Prioritizing is difficult, especially when you have many different things you could do. Choosing the next feature to work on for your web application feels like prioritizing tasks, they all seem important and there is no way you can do multiple at once. In this post, I'll go over a few simple things you can do to choose the next new feature you should work on.
 
