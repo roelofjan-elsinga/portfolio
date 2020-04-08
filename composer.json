@@ -16,7 +16,7 @@
         "laravel/framework": "^6.0",
         "symfony/translation": "4.3.5",
         "brainmaestro/composer-git-hooks": "^2.8",
-        "roelofjan-elsinga/aloia-cms": "^2.0",
+        "roelofjan-elsinga/aloia-cms": "^3.1",
         "roelofjan-elsinga/aloia-cms-gui": "^3.1"
     },
     "require-dev": {

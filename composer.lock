@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e468d6e291393cefe99a08c43ff2cca",
+    "content-hash": "7f7e750ad8308afb53529effd22ef224",
     "packages": [
         {
             "name": "brainmaestro/composer-git-hooks",
@@ -1423,23 +1423,24 @@
         },
         {
             "name": "roelofjan-elsinga/aloia-cms",
-            "version": "2.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roelofjan-elsinga/aloia-cms.git",
-                "reference": "8b94d3c4c5b27fcab0a28b128d68aef0357ee082"
+                "reference": "73e3518cf92ad6a2cc76cf057fcab90267258e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roelofjan-elsinga/aloia-cms/zipball/8b94d3c4c5b27fcab0a28b128d68aef0357ee082",
-                "reference": "8b94d3c4c5b27fcab0a28b128d68aef0357ee082",
+                "url": "https://api.github.com/repos/roelofjan-elsinga/aloia-cms/zipball/73e3518cf92ad6a2cc76cf057fcab90267258e34",
+                "reference": "73e3518cf92ad6a2cc76cf057fcab90267258e34",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-json": "*",
-                "illuminate/console": "^6.0",
-                "illuminate/support": "^6.0",
+                "illuminate/console": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0",
+                "php": ">=7.2.5",
                 "roelofjan-elsinga/content-to-html-parser": "^0.5",
                 "spatie/yaml-front-matter": "^2.0",
                 "symfony/yaml": "^5.0"
@@ -1448,8 +1449,8 @@
                 "brainmaestro/composer-git-hooks": "^2.7",
                 "friendsofphp/php-cs-fixer": "^2.15",
                 "mikey179/vfsstream": "^1.6",
-                "orchestra/testbench": "^3.8",
-                "phpunit/phpunit": "^8.3",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.5",
                 "spatie/phpunit-watcher": "^1.22"
             },
             "type": "library",
@@ -1495,7 +1496,7 @@
                 "file",
                 "laravel"
             ],
-            "time": "2020-03-25T10:55:24+00:00"
+            "time": "2020-04-08T09:11:20+00:00"
         },
         {
             "name": "roelofjan-elsinga/aloia-cms-gui",
@@ -4102,6 +4103,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -4148,6 +4150,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
