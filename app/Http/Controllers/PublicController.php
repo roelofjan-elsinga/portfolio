@@ -2,6 +2,7 @@
 
 namespace Main\Http\Controllers;
 
+use AloiaCms\Models\ContentBlock;
 use ContentParser\ContentParser;
 use AloiaCms\Models\Article;
 use AloiaCms\Models\MetaTag;
@@ -49,7 +50,6 @@ class PublicController extends Controller
     public function work()
     {
         return view('public.work', [
-            'content' => ContentParser::forFile(resource_path('content/blocks/work-page.md'))->parse(),
             'works' => Work::all()
                 ->sortByDesc(function (Work $work) {
                     return $work->publish_date;

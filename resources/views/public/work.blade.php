@@ -7,26 +7,20 @@
 @endsection
 
 @section('content')
-    <div class="section paragraph-spacing pt-8 md:pt-16 md:pt-0">
+    <div class="section">
 
-        {!! $content !!}
+        <div class="paragraph-spacing mb-4">
+            {!! Block::get('work-page') !!}
+        </div>
 
-        <div class="items mt-12">
-            @foreach($works->chunk(2) as $projects)
+        <div class="items">
+            @foreach($works->chunk(2) as $items)
 
                 <div class="items block md:flex -mx-2">
 
-                    @foreach($projects as $project)
+                    @foreach($items as $project)
 
-                        <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
-                            <img src="{{$project->image_url}}" alt="{{$project->image_alt}}" />
-
-                            <h3>{{$project->title}}</h3>
-
-                            <p class="mb-4 mt-2 flex-auto">{{$project->description}}</p>
-
-                            <a href="{{$project->url}}" class="text-theme-dark font-bold pb-2 underline">View project</a>
-                        </div>
+                        @include('blocks.project_block', ['project' => $project])
 
                     @endforeach
 

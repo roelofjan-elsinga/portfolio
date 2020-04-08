@@ -9,7 +9,7 @@
 @section('content')
     <div class="section">
 
-        <div class="paragraph-spacing">
+        <div class="paragraph-spacing mb-4">
             {!! Block::get('open_source_page') !!}
         </div>
 
@@ -19,13 +19,7 @@
 
                 @foreach($items as $project)
 
-                    <div class="flex-1 border p-4 m-2 rounded shadow flex flex-col">
-                        <h3 class="mt-0 mb-4">{{$project->name}}</h3>
-
-                        <p class="mb-4 flex-auto leading-normal">{{$project->description}}</p>
-
-                        <a href="{{$project->github_url}}" target="_blank" class="text-theme-darkest font-bold pb-2 no-underline">View project</a>
-                    </div>
+                    @include('blocks.open_source_block', ['project' => $project])
 
                 @endforeach
 

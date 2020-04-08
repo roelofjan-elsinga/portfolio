@@ -31,21 +31,7 @@
 
                     @foreach($items as $project)
 
-                        <div class="flex-1 border m-2 rounded shadow flex flex-col hover:shadow-md" style="transition-duration: 0.2s">
-                            <a class="text-theme-darkest no-underline" href="{{$project->url}}">
-                                <img src="{{$project->image_url}}" alt="{{$project->image_alt}}" class="mt-4" />
-
-                                <section class="p-4">
-
-                                    <h3 class="pt-4">{{$project->title}}</h3>
-
-                                    <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
-
-                                    <span class="text-theme-darkest font-bold pb-2 link">View project</span>
-
-                                </section>
-                            </a>
-                        </div>
+                        @include('blocks.project_block', ['project' => $project])
 
                     @endforeach
 
@@ -100,19 +86,7 @@
 
                     @foreach($items as $project)
 
-                        <article class="flex-1 border p-4 m-2 rounded shadow flex flex-col hover:shadow-md duration-200" style="transition-duration: 0.2s">
-
-                            <a href="{{$project->github_url}}" target="_blank" class="text-theme-darkest no-underline">
-
-                                <h3>{{$project->name}}</h3>
-
-                                <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
-
-                                <span class="text-theme-darkest font-bold pb-2 link">View project</span>
-
-                            </a>
-
-                        </article>
+                        @include('blocks.open_source_block', ['project' => $project])
 
                     @endforeach
 
