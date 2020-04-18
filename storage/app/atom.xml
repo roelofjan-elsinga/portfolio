@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-04-08T16:09:33+02:00</updated>
+              <updated>2020-04-15T13:37:19+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1031,6 +1031,45 @@ CMD service nginx start</code></pre>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
+                    <title>GitHub Pages: Static web hosting made simple</title>
+                    <link href="https://roelofjanelsinga.com/articles/github-pages-static-web-hosting-made-simple"/>
+                    <id>https://roelofjanelsinga.com/articles/github-pages-static-web-hosting-made-simple</id>
+                    <updated>2020-04-15T13:37:17+02:00</updated>
+                    <published>2020-04-15T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/github-logo.png" alt="GitHub logo" /></p>
+<h1>GitHub Pages: Static web hosting made simple</h1>
+<p>Most developers use some kind of version control system (VCS). One of the most well-known VCS is Git and one of the most well-known services to host Git repositories is GitHub. Hosting websites has been one of those things that have been a pain for many developers for many years, but it doesn't have to be that way. You don't have to deal with SSH, FTP, or some other way to interact with a server just to host a static content website. There is a solution when you use GitHub to host your Git repository: GitHub Pages. I've written about GitHub pages before, about <a href="https://roelofjanelsinga.com/articles/how-to-host-on-github-pages">How to host a lightning-fast website on Github Pages</a>. This post is not about how to host your website on GitHub Pages, but why you should consider doing so.</p>
+<h2>A quick recap: What is GitHub Pages?</h2>
+<p>GitHub Pages is a service provided by GitHub to host your static website straight from your repository on the GitHub servers. This can be a static website in many different shapes: </p>
+<ul>
+<li>a website built with HTML, CSS, and JS files</li>
+<li>a website built with a static site generator like Jekyll</li>
+<li>a website that's dynamic on the client side using JavaScript</li>
+</ul>
+<p>As long as your website can be displayed by opening HTML files, your website can be considered a static website and you can host it on GitHub Pages.</p>
+<h2>Why host on Github Pages?</h2>
+<p>There are many benefits by hosting your website on GitHub pages. Some of these are:</p>
+<ul>
+<li>Reliance on the stable GitHub back-end</li>
+<li>Simplified deployment</li>
+<li>It's free (for public repositories)</li>
+</ul>
+<p>For this post I'm going to focus on the deployment aspect of these benefits. The ease with which anyone can now deploy changes to their website is really great, so I consider that the most important benefit.</p>
+<p>Deploying changes becomes very simple because all you have to do as a developer or designer is push your website to a specific branch in your Git repository. When setting up GitHub Pages for your repository, following the steps I outlined in <a href="https://roelofjanelsinga.com/articles/how-to-host-on-github-pages">How to host a lightning-fast website on Github Pages</a>, you will have specified the branch on which you want to host your website. Often times this is &quot;master&quot; or &quot;gh-pages&quot;. Personally, I prefer to use &quot;master&quot;. Anything that's on &quot;master&quot; is what I consider to be published already, so putting that thought into practice and using the master branch as &quot;live&quot; on GitHub pages is the correct approach. If your project is more than just a website, you can consider &quot;gh-pages&quot; as your default deployment branch.</p>
+<h2>How could hosting on GitHub Pages impact your workflow?</h2>
+<p>By using the master branch of your repository as your published website, it means that any time you push your code to the repository it will be published nearly instantly. This has the benefit that you can now start to practice continuous deployment. You don't have to do anything manually after pushing your code, because GitHub takes care of this. This leaves you free to do other things, like writing more code. This also alleviates the pain of having to use SSH or FTP to publish your changes. Anyone with access to the repository is now able to contribute to your project. This includes people that otherwise may not have the technical skills to publish changes. This empowers you, your contributors, and/or your team. In this regard, GitHub Pages helps people feel like they can help out.</p>
+<p>Because you can only host static websites on GitHub Pages, it means you will be able to work in the same environment on your local machine as on GitHub Pages. Mistakes that you make locally will show up on your website. This also means that fixing bugs is simple because anything that's broken on your website will also be broken in your local environment. </p>
+<p>It comes down to this: your development cycles can become shorter. The time between writing code on your machine to it showing up on your website can become much shorter. Developers no longer have to worry about publishing code and content writers are now empowered to publish the changes they need to, without relying on the development team.</p>
+<h2>Examples of websites hosted on GitHub Pages</h2>
+<p>This post wouldn't be complete without some examples of different types of static websites hosted on Github Pages. We'll look at two different examples. One is created using Jekyll, a static site generator and the other is built using static assets, such as HTML, CSS, and JS files. These websites could be good examples to follow when hosting your own websites on GitHub Pages.</p>
+<p><a href="https://aloiacms.com">Aloia CMS</a> is a project using Jekyll, a static site generator. You can view the <a href="https://aloiacms.com">website</a> and <a href="https://github.com/roelofjan-elsinga/aloia-cms-website">source code on GitHub</a>. </p>
+<p><a href="https://sandervolbeda.com/">Sander Volbeda</a> is a great example of a portfolio website using just HTML, CSS, and JS files to create a static website. You can also view the source code for that project on <a href="https://github.com/sandervolbeda/personal-website">GitHub</a>.</p>
+<p>Updating both of these websites is as simple as pushing your changes to the master branch. GitHub takes care of the rest.</p>
+<p>If you're looking at finding a simpler way to host your static websites, you should give GitHub Pages a try. It simplifies your development cycles and allows technical, but also less technical team members to contribute to the project directly.</p>]]></content>
+                    <summary><![CDATA[Static web hosting has been a pain point for many developers for years, but it doesn't have to be painful. In this post, we go over how you can use GitHub pages to improve your development cycles and empower everyone to publish content.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
                     <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>
                     <link href="https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware"/>
                     <id>https://roelofjanelsinga.com/articles/how-added-elasticsearch-to-laravel-minimal-hardware</id>
@@ -1648,13 +1687,13 @@ This is Roelof from the future (January 2019)! Wow! Docker is indeed so much eas
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/gears.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
                   </entry>
 <entry>
-                    <title>How to set a static IP on a Raspberry Pi</title>
+                    <title>How to set a static IP address on a Raspberry Pi</title>
                     <link href="https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi"/>
                     <id>https://roelofjanelsinga.com/articles/how-to-set-static-ip-on-raspberry-pi</id>
-                    <updated>2020-04-08T16:09:31+02:00</updated>
+                    <updated>2020-04-08T16:10:33+02:00</updated>
                     <published>2020-04-08T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/raspberry-pi.jpeg" alt="Raspberry Pi" /></p>
-<h1>How to set a static IP on a Raspberry Pi</h1>
+<h1>How to set a static IP address on a Raspberry Pi</h1>
 <p>Raspberry Pi's are getting faster and can do more things in your house than ever before. If you've ever tried to set up a service on your Raspberry Pi, you know that one of the most important things you need for everything to work is the IP address of your Raspberry Pi. If you don't use static IP addresses for your services, the IP will reset after every reboot of the credit card-sized computer. This could make it so your services are no longer reachable and you have to go out of your way to update the new IP address in all places that you set it before. But luckily there is a very easy solution to avoid this situation: a static IP address. </p>
 <p>Setting a static IP on a Raspberry Pi has a lot of benefits and is actually quite easy. In this post, I'll take you through 3 steps to get this working on your credit card-sized computer. Before we get to those steps, I'll explain what a static IP address actually is and why there are several ways of achieving the same result.</p>
 <h2>What is a static IP address?</h2>
