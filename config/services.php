@@ -36,4 +36,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'hcaptcha' => [
+        'key' => env('HCAPTCHA_KEY'),
+        'secret' => env('HCAPTCHA_SECRET'),
+    ]
+
 ];

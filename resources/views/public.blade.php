@@ -146,13 +146,6 @@
 
             gtag('config', 'UA-49160339-1');
         </script>
-{{--        <script>--}}
-{{--            if('serviceWorker' in navigator) {--}}
-{{--                navigator.serviceWorker--}}
-{{--                    .register('/sw.js')--}}
-{{--                    .then(function() { console.log("Service Worker Registered"); });--}}
-{{--            }--}}
-{{--        </script>--}}
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
