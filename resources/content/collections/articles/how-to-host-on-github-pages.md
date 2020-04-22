@@ -1,5 +1,5 @@
 ---
-update_date: '2019-11-20 23:38:58'
+update_date: '2020-04-22 19:00:00'
 description: 'In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.'
 is_scheduled: false
 is_published: true
@@ -61,9 +61,11 @@ Setting up a repository to serve as a static website is very simple. It's only a
 4. Set the source to the master branch and press Save
 5. And done!
 
-You can now view your website at **https://your_username.github.io/repository_name**.
+You can now view your website at *https://your_username.github.io/repository_name*.
 
-If you want to use a custom domain, like **https://your_domain.com**, then you should look [Configuring a custom domain on GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). These pages will tell you exactly what you need to do to be able to serve the static website at any domain you own.
+If you want to use a custom domain, like *https://your_domain.com*, then you should look [Configuring a custom domain on GitHub Pages](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site). These pages will tell you exactly what you need to do to be able to serve the static website at any domain you own.
+
+Do you want a more in-depth tutorial? Then you're looking for [How to set up and automatically deploy your website to GitHub Pages](/articles/how-to-set-up-automatically-deploy-website-github-page). That tutorial will take you through all steps you need to go through to deploy your websites on GitHub Pages without a hassle.
 
 ## Now what?
 Now you have a static website running on GitHub Pages. This includes a free SSL certificate and you don't have to worry about managing servers and hosting at all. So, in the end, you have a lightning-fast website, running on the GitHub servers, which are very reliable. When you want to update the content of the website, just make your changes locally and push to master. GitHub will automatically update your website and you'll be able to see your changes reflected on your website within a minutes. So if you have a content website and don't want to worry about hosting, security and any other settings, just GitHub Pages.

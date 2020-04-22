@@ -3,13 +3,13 @@ description: 'Static web hosting has been a pain point for many developers for y
 post_date: '2020-04-15'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-15 13:37:17'
+update_date: '2020-04-22 18:55:00'
 ---
 
 ![GitHub logo](/images/articles/github-logo.png)
 # GitHub Pages: Static web hosting made simple
 
-Most developers use some kind of version control system (VCS). One of the most well-known VCS is Git and one of the most well-known services to host Git repositories is GitHub. Hosting websites has been one of those things that have been a pain for many developers for many years, but it doesn't have to be that way. You don't have to deal with SSH, FTP, or some other way to interact with a server just to host a static content website. There is a solution when you use GitHub to host your Git repository: GitHub Pages. I've written about GitHub pages before, about [How to host a lightning-fast website on Github Pages](https://roelofjanelsinga.com/articles/how-to-host-on-github-pages). This post is not about how to host your website on GitHub Pages, but why you should consider doing so.
+Most developers use some kind of version control system (VCS). One of the most well-known VCS is Git and one of the most well-known services to host Git repositories is GitHub. Hosting websites has been one of those things that have been a pain for many developers for many years, but it doesn't have to be that way. You don't have to deal with SSH, FTP, or some other way to interact with a server just to host a static content website. There is a solution when you use GitHub to host your Git repository: GitHub Pages. I've written about GitHub pages before, about [How to host a lightning-fast website on Github Pages](/articles/how-to-host-on-github-pages). This post is not about how to host your website on GitHub Pages, but why you should consider doing so.
 
 ## A quick recap: What is GitHub Pages?
 
@@ -31,7 +31,7 @@ There are many benefits by hosting your website on GitHub pages. Some of these a
 
 For this post I'm going to focus on the deployment aspect of these benefits. The ease with which anyone can now deploy changes to their website is really great, so I consider that the most important benefit.
 
-Deploying changes becomes very simple because all you have to do as a developer or designer is push your website to a specific branch in your Git repository. When setting up GitHub Pages for your repository, following the steps I outlined in [How to host a lightning-fast website on Github Pages](https://roelofjanelsinga.com/articles/how-to-host-on-github-pages), you will have specified the branch on which you want to host your website. Often times this is "master" or "gh-pages". Personally, I prefer to use "master". Anything that's on "master" is what I consider to be published already, so putting that thought into practice and using the master branch as "live" on GitHub pages is the correct approach. If your project is more than just a website, you can consider "gh-pages" as your default deployment branch.
+Deploying changes becomes very simple because all you have to do as a developer or designer is push your website to a specific branch in your Git repository. When setting up GitHub Pages for your repository, following the steps I outlined in [How to set up and automatically deploy your website to GitHub Pages](/articles/how-to-set-up-automatically-deploy-website-github-pages), you will have specified the branch on which you want to host your website. Often times this is "master" or "gh-pages". Personally, I prefer to use "master". Anything that's on "master" is what I consider to be published already, so putting that thought into practice and using the master branch as "live" on GitHub pages is the correct approach. If your project is more than just a website, you can consider "gh-pages" as your default deployment branch.
 
 ## How could hosting on GitHub Pages impact your workflow?
 
