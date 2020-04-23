@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-04-15T13:37:19+02:00</updated>
+              <updated>2020-04-23T08:23:40+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1034,11 +1034,11 @@ CMD service nginx start</code></pre>
                     <title>GitHub Pages: Static web hosting made simple</title>
                     <link href="https://roelofjanelsinga.com/articles/github-pages-static-web-hosting-made-simple"/>
                     <id>https://roelofjanelsinga.com/articles/github-pages-static-web-hosting-made-simple</id>
-                    <updated>2020-04-15T13:37:17+02:00</updated>
+                    <updated>2020-04-22T18:55:00+02:00</updated>
                     <published>2020-04-15T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/github-logo.png" alt="GitHub logo" /></p>
 <h1>GitHub Pages: Static web hosting made simple</h1>
-<p>Most developers use some kind of version control system (VCS). One of the most well-known VCS is Git and one of the most well-known services to host Git repositories is GitHub. Hosting websites has been one of those things that have been a pain for many developers for many years, but it doesn't have to be that way. You don't have to deal with SSH, FTP, or some other way to interact with a server just to host a static content website. There is a solution when you use GitHub to host your Git repository: GitHub Pages. I've written about GitHub pages before, about <a href="https://roelofjanelsinga.com/articles/how-to-host-on-github-pages">How to host a lightning-fast website on Github Pages</a>. This post is not about how to host your website on GitHub Pages, but why you should consider doing so.</p>
+<p>Most developers use some kind of version control system (VCS). One of the most well-known VCS is Git and one of the most well-known services to host Git repositories is GitHub. Hosting websites has been one of those things that have been a pain for many developers for many years, but it doesn't have to be that way. You don't have to deal with SSH, FTP, or some other way to interact with a server just to host a static content website. There is a solution when you use GitHub to host your Git repository: GitHub Pages. I've written about GitHub pages before, about <a href="/articles/how-to-host-on-github-pages">How to host a lightning-fast website on Github Pages</a>. This post is not about how to host your website on GitHub Pages, but why you should consider doing so.</p>
 <h2>A quick recap: What is GitHub Pages?</h2>
 <p>GitHub Pages is a service provided by GitHub to host your static website straight from your repository on the GitHub servers. This can be a static website in many different shapes: </p>
 <ul>
@@ -1055,7 +1055,7 @@ CMD service nginx start</code></pre>
 <li>It's free (for public repositories)</li>
 </ul>
 <p>For this post I'm going to focus on the deployment aspect of these benefits. The ease with which anyone can now deploy changes to their website is really great, so I consider that the most important benefit.</p>
-<p>Deploying changes becomes very simple because all you have to do as a developer or designer is push your website to a specific branch in your Git repository. When setting up GitHub Pages for your repository, following the steps I outlined in <a href="https://roelofjanelsinga.com/articles/how-to-host-on-github-pages">How to host a lightning-fast website on Github Pages</a>, you will have specified the branch on which you want to host your website. Often times this is &quot;master&quot; or &quot;gh-pages&quot;. Personally, I prefer to use &quot;master&quot;. Anything that's on &quot;master&quot; is what I consider to be published already, so putting that thought into practice and using the master branch as &quot;live&quot; on GitHub pages is the correct approach. If your project is more than just a website, you can consider &quot;gh-pages&quot; as your default deployment branch.</p>
+<p>Deploying changes becomes very simple because all you have to do as a developer or designer is push your website to a specific branch in your Git repository. When setting up GitHub Pages for your repository, following the steps I outlined in <a href="/articles/how-to-set-up-automatically-deploy-website-github-pages">How to set up and automatically deploy your website to GitHub Pages</a>, you will have specified the branch on which you want to host your website. Often times this is &quot;master&quot; or &quot;gh-pages&quot;. Personally, I prefer to use &quot;master&quot;. Anything that's on &quot;master&quot; is what I consider to be published already, so putting that thought into practice and using the master branch as &quot;live&quot; on GitHub pages is the correct approach. If your project is more than just a website, you can consider &quot;gh-pages&quot; as your default deployment branch.</p>
 <h2>How could hosting on GitHub Pages impact your workflow?</h2>
 <p>By using the master branch of your repository as your published website, it means that any time you push your code to the repository it will be published nearly instantly. This has the benefit that you can now start to practice continuous deployment. You don't have to do anything manually after pushing your code, because GitHub takes care of this. This leaves you free to do other things, like writing more code. This also alleviates the pain of having to use SSH or FTP to publish your changes. Anyone with access to the repository is now able to contribute to your project. This includes people that otherwise may not have the technical skills to publish changes. This empowers you, your contributors, and/or your team. In this regard, GitHub Pages helps people feel like they can help out.</p>
 <p>Because you can only host static websites on GitHub Pages, it means you will be able to work in the same environment on your local machine as on GitHub Pages. Mistakes that you make locally will show up on your website. This also means that fixing bugs is simple because anything that's broken on your website will also be broken in your local environment. </p>
@@ -1374,7 +1374,7 @@ you can get started creating your own sitemap. You can simply make this manually
                     <title>How to host a lightning-fast website on Github Pages</title>
                     <link href="https://roelofjanelsinga.com/articles/how-to-host-on-github-pages"/>
                     <id>https://roelofjanelsinga.com/articles/how-to-host-on-github-pages</id>
-                    <updated>2019-11-20T23:38:58+01:00</updated>
+                    <updated>2020-04-22T19:00:00+02:00</updated>
                     <published>2019-11-27T12:00:00+01:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/github-logo.png" alt="&quot;Github logo&quot;" /></p>
 <h1>How to host a lightning-fast website on Github Pages</h1>
@@ -1410,8 +1410,9 @@ you can get started creating your own sitemap. You can simply make this manually
 <li>Set the source to the master branch and press Save</li>
 <li>And done!</li>
 </ol>
-<p>You can now view your website at <strong><a href="https://your_username.github.io/repository_name">https://your_username.github.io/repository_name</a></strong>.</p>
-<p>If you want to use a custom domain, like <strong><a href="https://your_domain.com">https://your_domain.com</a></strong>, then you should look <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">Configuring a custom domain on GitHub Pages</a>. These pages will tell you exactly what you need to do to be able to serve the static website at any domain you own.</p>
+<p>You can now view your website at <em><a href="https://your_username.github.io/repository_name">https://your_username.github.io/repository_name</a></em>.</p>
+<p>If you want to use a custom domain, like <em><a href="https://your_domain.com">https://your_domain.com</a></em>, then you should look <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">Configuring a custom domain on GitHub Pages</a>. These pages will tell you exactly what you need to do to be able to serve the static website at any domain you own.</p>
+<p>Do you want a more in-depth tutorial? Then you're looking for <a href="/articles/how-to-set-up-automatically-deploy-website-github-page">How to set up and automatically deploy your website to GitHub Pages</a>. That tutorial will take you through all steps you need to go through to deploy your websites on GitHub Pages without a hassle.</p>
 <h2>Now what?</h2>
 <p>Now you have a static website running on GitHub Pages. This includes a free SSL certificate and you don't have to worry about managing servers and hosting at all. So, in the end, you have a lightning-fast website, running on the GitHub servers, which are very reliable. When you want to update the content of the website, just make your changes locally and push to master. GitHub will automatically update your website and you'll be able to see your changes reflected on your website within a minutes. So if you have a content website and don't want to worry about hosting, security and any other settings, just GitHub Pages.</p>]]></content>
                     <summary><![CDATA[In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.]]></summary>
@@ -1726,6 +1727,141 @@ static domain_name_servers=192.168.0.1</code></pre>
 <p>If you have any questions or suggestions on how to do this more easily, you can find me on <a href="https://twitter.com/RJElsinga">Twitter</a>.</p>]]></content>
                     <summary><![CDATA[Setting a static IP on a Raspberry Pi has a lot of benefits and is actually quite easy. In this post, I'll take you through 3 steps to get this working on your credit card-sized computer.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/raspberry-pi.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Tutorial: How to set up and automatically deploy your website to GitHub Pages</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages"/>
+                    <id>https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages</id>
+                    <updated>2020-04-23T08:23:38+02:00</updated>
+                    <published>2020-04-23T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/github-logo.png" alt="GitHub Logo" /></p>
+<h1>Tutorial: How to set up and automatically deploy your website to GitHub Pages</h1>
+<p>So you want to host your static website on GitHub Pages? Excellent choice! In this tutorial, I'm taking you through the steps to host your static website on GitHub Pages and how you can deploy your own changes. After this tutorial, you will be able to automatically deploy your own website to the internet. Before we get into the steps you have to take to publish your website to GitHub Pages, I will outline a few options and limitations you have when using GitHub Pages for your website hosting.</p>
+<h3>What are my options for hosting a static website?</h3>
+<p>There are a few options you have for hosting your website on GitHub Pages, these include:</p>
+<ul>
+<li>Using Jekyll to generate your website</li>
+<li>Using your master branch as your source and production website</li>
+<li>Using your master branch as your source and gh-pages as your production website</li>
+</ul>
+<p>In this post I will not be going over how to use Jekyll in combination with GitHub pages. Jekyll is supported by GitHub, which means GitHub will do everything needed to deploy a Jekyll website for you. In this tutorial, we'll focus on deploying a plain HTML / CSS / JavaScript website. </p>
+<p>The second option is to use the master branch both as the source of your website and the production website itself. What this means is that all of your source files, including build scripts, package.json file, and other &quot;source&quot; files like SCSS are accessible through the internet. For example, you'd be able to see the contents of your SCSS files by going to <a href="https://yourwebsite.com/scss/_header.scss">https://yourwebsite.com/scss/_header.scss</a>. This is the easiest solution for hosting your website on GitHub Pages, but it's not the cleanest option.</p>
+<p>This is where the third option comes in: using your master branch for all your source files and having a separate &quot;gh-pages&quot; branch that holds the production files for your website. This is a slightly more involved solution but is much cleaner than the second option. This is what this tutorial will focus on.</p>
+<h3>What are the limitations of hosting on GitHub Pages?</h3>
+<p>Hosting on GitHub Pages is great, but there are some limitations and gotchas. These include:</p>
+<ul>
+<li>You can only host static websites (or dynamic through static JS files)</li>
+<li>Your repository is the source of truth, so your compiled JS / CSS files need to be in Git</li>
+</ul>
+<p>GitHub Pages is essentially a service that gives you a folder on a server. A web server like Nginx is serving the files as-is. There is no scripting layer and you can't execute PHP files for example. If you want to have a dynamic website, you can still do this, but you'll need to do it through JavaScript. JavaScript files are static files, so the server will be able to serve those as they are. When the files have been served, it's possible to retrieve data from any external service you have at your disposal. </p>
+<p>Another thing that seems a little backward, if you've worked with CI/CD systems before, is that all of your production files will need to be in Git. Normally you only have your source files in Git, because the CI/CD pipelines build the production files for you. With GitHub Pages, you could accomplish this by using GitHub Actions, but we'll keep this tutorial simple and not go over that.</p>
+<h3>Setting up your GitHub Pages environment</h3>
+<p>Enough talk, let's get our hands dirty and set up our GitHub Pages environment with all the automation you need to quickly deploy new changes to your website.</p>
+<h2>Step 1: Create / Update your GitHub repository to be public</h2>
+<p>GitHub Pages can be done on private repositories, but for this tutorial, we'll focus on using a public repository for your website. The only difference between using private and public repositories for this is that you need to have a pro membership in order to use private repositories. If you already have this, you can skip to step 2 and follow along from there. </p>
+<p>If this will be a new project for you and you still need to create a repository for your website, make sure to select the public option like displayed below:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-04-08.png" alt="Creating a new GitHub repository" /></p>
+<p>If you already have a repository, but it's a private repository, you can make it public by clicking &quot;Settings&quot; and scrolling down to the danger zone:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-06-07.png" alt="Updating a private repository to be public" /></p>
+<p>Click on &quot;Make public&quot; and you're ready for the next step.</p>
+<h2>Step 2: Create a website on your master branch</h2>
+<p>This is a step that's completely up to you. The aim of this step is to create some kind of content that can be displayed in the browser. You can make an entire static website or just create something simple and move on to the next step. For the sake of simplicity, I will only add an H1 to my project:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-10-43.png" alt="Dummy content for the index.html file" /></p>
+<h2>Step 3: Enable GitHub Pages on your repository</h2>
+<p>Before we enable GitHub Pages on this repository, you have to make a choice about which option you want to use for hosting your website on GitHub Pages. For the sake of this tutorial, I will use the third option: Using &quot;master&quot; as the source branch and &quot;gh-pages&quot; as the production version of the website. </p>
+<p>To create the &quot;gh-pages&quot; branch, click on &quot;Branch: master&quot; and type gh-pages like below:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-15-22.png" alt="Creating the gh-pages branch" /></p>
+<p>Then press: &quot;Create branch: gh-pages from master&quot;. You will now have two branches in your repository: master and gh-pages. To enable GitHub Pages on your repository, click on &quot;Settings&quot; and scroll down the &quot;GitHub Pages&quot; section. You should see something like this: </p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-17-43.png" alt="Enable GitHub Pages on your repository" /></p>
+<p>As you can see, GitHub has already enabled this repository for GitHub Pages, because it detected the &quot;gh-pages&quot; branch. If you chose to stick with the master branch, you will have to enable GitHub pages here and select the master branch as the source. </p>
+<p>Now when we visit the url displayed in the blue header, you will see your website:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-20-04.png" alt="The website we created on GitHub Pages" /></p>
+<h2>Step 4: Using a custom domain</h2>
+<p>Your website is now located at <a href="https://your-username.github.io/repository-name">https://your-username.github.io/repository-name</a>. But oftentimes you want your website to be at a domain you already own. To do this, first, you'll need to decide which type of URL you want to use for this. You can choose a main (apex) domain or a subdomain for this. </p>
+<h3>Step 4A: Using the main domain as your custom domain</h3>
+<p>If you want to use the main domain (roelofjanelsinga.com) then you'll need to create a few new DNS records in the service where you manage your domains. This is what my DNS records look like:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-27-46.png" alt="DNS records for GitHub Pages for an APEX domain" /></p>
+<p>All you need to do here is create 4 A-records for your main domain and point them to the IP addresses below:</p>
+<pre><code class="language-plaintext">185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153</code></pre>
+<p>You can set the TTL to whatever you like, in my case I set them to 1 hour.</p>
+<h3>Step 4B: Using a sub domain as your custom domain</h3>
+<p>Using a sub domain is much easier than using the main domain as your custom domain. You will still need to change your DNS records, but this time you'll only need to do this: </p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-33-07.png" alt="DNS records for GitHub Pages for a subdomain" /></p>
+<p>You create a CNAME-record for the subdomain you want to use, for example, amazing.yourwebsite.com. Set the TTL to whatever you want, I use 1 hour for this. Then the content of your CNAME should be your-github-username.github.io, in my case roelofjan-elsinga.github.io.</p>
+<h3>Step 4C: Submitting your custom domain to GitHub</h3>
+<p>Now that you've set up your DNS records, you can submit your custom domain to GitHub. In the &quot;Custom domain&quot; field you can now enter whichever main domain or subdomain you chose and press &quot;Save&quot;. A new file called &quot;CNAME&quot; will now appear in your repository. This will contain the domain you chose. </p>
+<p>When using a custom domain, you might have to re-enable &quot;Enforce HTTPS&quot; for your website. It might take a while before this option becomes available because GitHub will verify your DNS settings. It might still give you warnings that your DNS settings are incorrect, but you can ignore these warnings if you followed the previous steps. This will automatically go away as soon as GitHub sees your updated DNS records. After a little while, you will be able to see your website appear on the domain you've chosen. </p>
+<p>If you've already set up build scripts and your workflow is to your liking, this could be the last step you need to follow in this tutorial. Step 5 and 6 are about automating your build process and your deployments. These are nice to have, but they're not necessary to use GitHub Pages in any way.</p>
+<h2>Step 5: Automate your build process</h2>
+<p>If your deployment process becomes more difficult by using GitHub Pages, there is really no reason you should do it. This is why I'm including some scripts that you can use to automate your build and deployment processes. I make the following assumptions for these steps, as I can't cover every scenario out there:</p>
+<ul>
+<li>You're using a build command (gulp build, npm run prod, etc.) to compile production assets</li>
+<li>Your production branch is gh-pages and your source branch is master</li>
+<li>You're using a &quot;dist&quot; folder that contains all production assets after running your build command</li>
+</ul>
+<p>I'm more than happy to help you out if your situation is different than the assumptions I'm making here, just contact me on <a href="https://twitter.com/RJElsinga">Twitter</a> and I'll help you out with this step.</p>
+<p>To be able to make everything automatic, I'm going to include an NPM package called Husky. Husky is a tool for NPM that enables you to define git hooks right inside of your package.json file. Git hooks are essentially events that are triggered when you interact with Git. For example, when you commit a change, the events pre-commit and post-commit are emitted. Husky allows us to listen for those events and perform certain tasks. For this tutorial we only need pre-commit, so let's set that up. First, let's install husky:</p>
+<pre><code class="language-bash">npm install --save-dev husky 
+# OR
+yarn add -D husky</code></pre>
+<p>Now, in our package.json file, include the following configuration:</p>
+<pre><code class="language-json">{
+    // Sscripts, dependencies, etc.
+    "husky": {
+        "hooks": {
+          "pre-commit": "npm run prod"
+        }
+    }
+}</code></pre>
+<p>Now, every time we commit a change in Git, &quot;npm run prod&quot; will be executed. You can replace this with your own build script, for example: &quot;gulp build&quot; or &quot;webpack&quot;. In the case of my simplistic project, this could mean that we copy the index.html file to dist/index.html. </p>
+<p>One last thing that we need to do is add new scripts to your package.json:</p>
+<pre><code class="language-json">{
+    // dependencies, etc.
+    "scripts": {
+        "prod": "echo \"Add your build command here\"",
+        "postinstall": "node ./node_modules/husky/lib/installer/bin install",
+        "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
+    }
+    // husky, etc. 
+}</code></pre>
+<p>The &quot;postinstall&quot; script executes after you run &quot;npm install&quot;. This makes sure that husky runs properly. I recommend you run &quot;npm run postinstall&quot; to be certain that husky has done what it needs to do. The deploy command will be needed in the next step, so just copy and paste it for now. </p>
+<p>Now our code will be built every time we commit a change, without having to think about it. Just how we like it.</p>
+<h2>Step 6: Automate your deployment process</h2>
+<p>We've already automated the build process, so now we can automate the deployment process. For this, we're going to make use of GitHub Actions. This sounds very intimidating, but I'll explain exactly what's going on and I'll give you the configuration you need for this to work.</p>
+<p>First of all, let's click &quot;Actions&quot; in your repository:</p>
+<p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_13-49-11.png" alt="Create a new GitHub Action" /></p>
+<p>Then click on &quot;Set up a workflow yourself&quot; on the right side. In the new screen you can write your configuration, but you can remove everything that's there and paste this instead:</p>
+<pre><code class="language-yaml"># This script deploys your website automatically
+name: CI
+
+# Only trigger this script when you push to the master branch
+on:
+  push:
+    branches: [ master ]
+
+# Specify the tasks to run when this scripts gets triggered
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Download our master branch
+    steps:
+    - uses: actions/checkout@v2
+
+    # Run our deployment command
+    - name: Deploying the static website to gh-pages
+      run: npm run deploy</code></pre>
+<p>This configuration takes care of deploying your website automatically when you push changes to the master branch. All the way at the bottom you can see that we execute &quot;npm run deploy&quot;. This is the script that we added to our package.json in step 5. When you run &quot;npm run deploy&quot;, the following command will get executed:</p>
+<pre><code class="language-bash">git push origin `git subtree split --prefix dist master`:gh-pages --force</code></pre>
+<p>Let's analyze what this actually does. This command pushes a single folder, in this case &quot;dist&quot;, to the gh-pages branch. That is the branch that we chose as our production branch in GitHub. This command will get executed every time we push to the master branch. Now every time you push your changes, GitHub Actions will automatically publish your &quot;dist&quot; folder. So that's another thing you don't have to think about anymore when deploying to GitHub Pages.</p>
+<h2>Conclusion</h2>
+<p>I hope this helps you to start deploying your own static websites to GitHub Pages and feel more empowered to update your own content, without needing the help of complicated deployment systems or a development team. Deployment of static websites really doesn't need to be complicated or take any extra work. Through automation scripts, you can deploy changes by going through your normal workflow, just like you've been doing.</p>
+<p>If you want to see an example of a website that's currently running in production in the way that I've described in this tutorial, you can have a look at <a href="https://github.com/sandervolbeda/personal-website">sandervolbeda/personal-website on GitHub</a>.</p>]]></content>
+                    <summary><![CDATA[Setting up a static website, hosting it, and automatically deploying any changes doesn't have to be difficult. In this tutorial, I take you through the steps to set up GitHub Pages and automatically deploy your changes.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>How to get the verified flag on your commits in GitHub</title>
