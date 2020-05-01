@@ -1,11 +1,10 @@
 ---
-description: "Setting up a static website, hosting it, and automatically deploying any changes doesn't have to be difficult. In this tutorial, I take you through the steps to set up GitHub Pages and automatically deploy your changes."
+description: 'Setting up a static website, hosting it, and automatically deploying any changes doesn''t have to be difficult. In this tutorial, I take you through the steps to set up GitHub Pages and automatically deploy your changes.'
 post_date: '2020-04-22'
-is_published: false
+is_published: true
 is_scheduled: false
-update_date: '2020-04-22 18:26:00'
+update_date: '2020-04-23 08:29:01'
 ---
-
 ![GitHub Logo](/images/articles/github-logo.png)
 
 # Tutorial: How to set up and automatically deploy your website to GitHub Pages
