@@ -16,6 +16,13 @@ View the full documentation at https://tailwindcss.com.
 
 module.exports = {
 
+    purge: [
+        './resources/**/*.php',
+        './resources/**/*.md',
+        './resources/**/*.html',
+        './resources/**/*.js',
+    ],
+
     theme: {
 
         /*
@@ -541,7 +548,7 @@ module.exports = {
 
         maxHeight: {
             'full': '100%',
-            'screen': '100vh',
+            'screen': '100vh'
         },
 
 
@@ -814,9 +821,6 @@ module.exports = {
         zIndex: ['responsive'],
     },
 
-    corePlugins: {
-        objectFit: false,
-        objectPosition: false,
-    },
+    corePlugins: {},
 
 }

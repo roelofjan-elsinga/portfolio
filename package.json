@@ -22,7 +22,7 @@
     "sass": "^1.16.0",
     "sass-loader": "7.*",
     "serialize-javascript": "^2.1.1",
-    "tailwindcss": "^1.0",
+    "tailwindcss": "^1.4",
     "workbox-webpack-plugin": "^3.6.3"
   },
   "husky": {

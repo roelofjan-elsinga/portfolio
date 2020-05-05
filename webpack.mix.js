@@ -23,6 +23,7 @@ mix
     })
     .purgeCss({
         extensions: ['html', 'js', 'php', 'md'],
+        whitelist: ['ul', 'ol']
     })
     .sourceMaps()
     .webpackConfig({

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="articles-page items pt-8">
+    <div class="articles-page items pt-8 max-w-md mx-auto">
 
         <div class="paragraph-spacing">
             {!! Block::get('articles') !!}
@@ -19,7 +19,7 @@
 
             @endforeach
 
-            {!! $articles->links() !!}
+            {!! $articles->links('public.pagination') !!}
 
         </main>
     </div>
