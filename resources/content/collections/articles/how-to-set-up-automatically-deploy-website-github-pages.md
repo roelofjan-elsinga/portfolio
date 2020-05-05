@@ -3,7 +3,7 @@ description: 'Setting up a static website, hosting it, and automatically deployi
 post_date: '2020-04-22'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-23 08:29:01'
+update_date: '2020-04-23 11:23:52'
 ---
 ![GitHub Logo](/images/articles/github-logo.png)
 
@@ -19,7 +19,7 @@ There are a few options you have for hosting your website on GitHub Pages, these
 - Using your master branch as your source and production website
 - Using your master branch as your source and gh-pages as your production website
 
-In this post I will not be going over how to use Jekyll in combination with GitHub pages. Jekyll is supported by GitHub, which means GitHub will do everything needed to deploy a Jekyll website for you. In this tutorial, we'll focus on deploying a plain HTML / CSS / JavaScript website. 
+In this post, I will not be going over how to use Jekyll in combination with GitHub pages. Jekyll is supported by GitHub, which means GitHub will do everything needed to deploy a Jekyll website for you. In this tutorial, we'll focus on deploying a plain HTML / CSS / JavaScript website. 
 
 The second option is to use the master branch both as the source of your website and the production website itself. What this means is that all of your source files, including build scripts, package.json file, and other "source" files like SCSS are accessible through the internet. For example, you'd be able to see the contents of your SCSS files by going to https://yourwebsite.com/scss/_header.scss. This is the easiest solution for hosting your website on GitHub Pages, but it's not the cleanest option.
 
@@ -98,9 +98,9 @@ All you need to do here is create 4 A-records for your main domain and point the
 
 You can set the TTL to whatever you like, in my case I set them to 1 hour.
 
-### Step 4B: Using a sub domain as your custom domain
+### Step 4B: Using a subdomain as your custom domain
 
-Using a sub domain is much easier than using the main domain as your custom domain. You will still need to change your DNS records, but this time you'll only need to do this: 
+Using a subdomain is much easier than using the main domain as your custom domain. You will still need to change your DNS records, but this time you'll only need to do this: 
 
 ![DNS records for GitHub Pages for a subdomain](/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-33-07.png)
 
@@ -171,7 +171,7 @@ First of all, let's click "Actions" in your repository:
 
 ![Create a new GitHub Action](/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_13-49-11.png)
 
-Then click on "Set up a workflow yourself" on the right side. In the new screen you can write your configuration, but you can remove everything that's there and paste this instead:
+Then click on "Set up a workflow yourself" on the right side. In the new screen, you can write your configuration, but you can remove everything that's there and paste this instead:
 
 ```yaml
 # This script deploys your website automatically
@@ -182,7 +182,7 @@ on:
   push:
     branches: [ master ]
 
-# Specify the tasks to run when this scripts gets triggered
+# Specify the tasks to run when this script gets triggered
 jobs:
   build:
     runs-on: ubuntu-latest
