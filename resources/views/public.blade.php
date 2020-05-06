@@ -156,17 +156,6 @@
         }
         </script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            (function() {
-                $('a').click(function () {
-                    $('html, body').animate({
-                        scrollTop: $($(this).attr('href')).offset().top
-                    }, 500);
-                    return false;
-                });
-            })();
-        </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49160339-1"></script>
         <script>
