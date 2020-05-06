@@ -4,7 +4,7 @@
 
         <h3>{{$project->name}}</h3>
 
-        <p class="mb-4 mt-2 flex-auto leading-loose">{{$project->description}}</p>
+        <p class="mb-4 mt-2 flex-auto leading-normal">{{$project->description}}</p>
 
         <span class="text-theme-darkest font-bold pb-2 link">View project</span>
 

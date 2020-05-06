@@ -1,4 +1,4 @@
-<nav class="menu block w-full" id="home">
+<nav class="menu block w-full container px-4 lg:px-0" id="home">
     <div class="flex h-16 md:h-32">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="block flex-1 flex items-center text-theme-darkest no-underline text-2xl font-bold"

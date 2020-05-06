@@ -16,6 +16,7 @@ const {GenerateSW} = require('workbox-webpack-plugin');
 mix
     .styles([
         'node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
+        'node_modules/@fortawesome/fontawesome-free/css/brands.css',
         'node_modules/@fortawesome/fontawesome-free/css/solid.css',
     ], 'public/css/fontawesome.css')
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')

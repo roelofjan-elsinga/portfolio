@@ -1,7 +1,7 @@
 @extends('public')
 
 @section('content')
-    <div class="section min-h-full sm:min-h-0 sm:h-3/4 flex flex-col justify-center text-theme-darkest border-theme-darkest">
+    <div class="h-3/4 flex flex-col justify-center text-theme-darkest border-theme-darkest">
         <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12 leading-snug">Full-stack web developer <br /> & Scrum master</h1>
 
         <h4 class="text-xl mb-4">I specialize in</h4>
@@ -19,7 +19,7 @@
         </p>
     </div> 
 
-    <div class="section" id="work">
+    <div id="work">
 
         {!! Block::get('work') !!}
 
@@ -45,19 +45,19 @@
            class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
     </div>
 
-    <div class="section view-article paragraph-spacing my-32 text-lg">
+    <div class="view-article paragraph-spacing my-32 text-lg">
+
         {!! Block::get('about') !!}
+
     </div>
 
-    <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+    <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
 
-            {!! Block::get('my_tech_stack') !!}
+        {!! Block::get('my_tech_stack') !!}
 
-        </div>
     </div>
 
-    <section class="section mt-32 articles">
+    <section class="mt-32 articles">
 
         {!! Block::get('articles_homepage') !!}
 
@@ -74,7 +74,7 @@
 
     </section>
 
-    <section class="section mt-32">
+    <section class="mt-32">
 
         {!! Block::get('open_source_contributions') !!}
 
@@ -100,15 +100,13 @@
            class="text-xl font-bold pt-8 link link--underline inline-block">View more open source contributions</a>
     </section>
 
-    <div class="section">
-        <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+    <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
 
-            {!! Block::get('site_techniques') !!}
+        {!! Block::get('site_techniques') !!}
 
-        </div>
     </div>
 
-    <div class="section social" id="social">
+    <div class="social" id="social">
 
         <div class="items paragraph-spacing my-32 text-xl">
 

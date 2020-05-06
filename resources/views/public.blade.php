@@ -90,7 +90,7 @@
             })(window,document,'script','dataLayer','GTM-W8JVB6T');</script>
         <!-- End Google Tag Manager -->
     </head>
-    <body class="{{isset($customClass) ? $customClass : ''}} container mx-auto text-theme-darkest px-4 lg:px-0">
+    <body class="{{isset($customClass) ? $customClass : ''}} text-theme-darkest">
 
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8JVB6T"
@@ -103,13 +103,15 @@
 
         @show
 
-        @yield('content')
+        <div class="container mx-auto px-4 lg:px-0">
+            @yield('content')
+        </div>
 
         @section('footer')
 
             @include('blocks.mailchimp_form')
 
-            @include('blocks.business_details')
+            @include('blocks.footer')
 
         @show
 

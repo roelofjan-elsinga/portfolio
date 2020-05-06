@@ -453,7 +453,7 @@ module.exports = {
             'full': '100%',
             'half-screen': '50vh',
             'screen': '100vh',
-            '3/4': '75%',
+            '3/4': '75vh',
         },
 
 
