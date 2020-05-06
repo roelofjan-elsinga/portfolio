@@ -118,7 +118,7 @@
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://www.roelofjanelsinga.com",
-          "logo": "{{asset('images/logo/logo_avatar.jpg')}}"
+          "logo": "{{asset('images/logo/logo_avatar.jpg')}}",
           "name": "Roelof Jan Elsinga",
           "contactPoint": {
             "@type": "ContactPoint",
