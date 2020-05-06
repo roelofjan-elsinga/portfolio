@@ -12,6 +12,7 @@
     "php:lint": "./vendor/bin/php-cs-fixer fix -v --config=./.php_cs.dist --path-mode=intersection"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "acorn": "^6.4.1",
     "cross-env": "^5.1",
     "husky": "^1.3.1",

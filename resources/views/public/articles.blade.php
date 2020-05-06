@@ -13,6 +13,25 @@
 
         <main class="articles my-8">
 
+            <form action="{{route('articles')}}" method="get" class="block mb-8">
+                <label for="q" class="font-bold mb-2 block">What are your looking for?</label>
+
+                <div class="flex rounded">
+                    <input type="text" class="bg-gray-200 border-blue-darkest p-4 text-blue-800 rounded-l flex-grow"
+                           placeholder="Search blog posts" name="q" value="{{request()->has('q') ? request()->get('q') : ''}}">
+
+                    <button type="submit" class="bg-gray-400 text-black rounded-r duration-300 px-4">
+                        <span class="fas fa-search"></span>
+                    </button>
+                </div>
+
+                @if(request()->has('q'))
+                    <p class="mt-2">
+                        You're currently searching for: <strong>{{request()->get('q')}}</strong>
+                    </p>
+                @endif
+            </form>
+
             @foreach($articles as $article)
 
                 @include('blocks.article_preview', ['article' => $article])

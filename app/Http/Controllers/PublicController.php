@@ -112,6 +112,16 @@ class PublicController extends Controller
             })
             ->values();
 
+        if ($request->has('q')) {
+            $articles = $articles
+                ->filter(function (Article $article) use ($request) {
+                    return strpos(strtolower($article->title()), strtolower($request->get('q'))) !== false
+                        || strpos(strtolower($article->description()), strtolower($request->get('q'))) !== false
+                        || strpos(strtolower($article->body()), strtolower($request->get('q'))) !== false;
+                })
+                ->values();
+        }
+
         $current_page = $request->get('page') ?? 1;
 
         $page_articles = collect($articles)->forPage($current_page, 10);

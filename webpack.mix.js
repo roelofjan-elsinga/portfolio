@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('tailwindcss');
 const purgeCss = require('laravel-mix-purgecss');
 const {GenerateSW} = require('workbox-webpack-plugin');
 
@@ -15,6 +14,11 @@ const {GenerateSW} = require('workbox-webpack-plugin');
  */
 
 mix
+    .styles([
+        'node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
+        'node_modules/@fortawesome/fontawesome-free/css/solid.css',
+    ], 'public/css/fontawesome.css')
+    .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
     .sass('resources/assets/sass/front.scss', 'public/css/')
     .sass('resources/assets/sass/resume.scss', 'public/css/')
     .options({

@@ -72,6 +72,7 @@
             <link href="{{ mix('css/front.css') }}" rel="stylesheet" defer>
         @show
 
+        <link rel="stylesheet" href="{{mix('css/fontawesome.css')}}" />
         @stack('styles')
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -117,6 +118,7 @@
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://www.roelofjanelsinga.com",
+          "logo": "{{asset('images/logo/logo_avatar.jpg')}}"
           "name": "Roelof Jan Elsinga",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -138,6 +140,19 @@
             "https://github.com/roelofjan-elsinga",
             "https://www.linkedin.com/in/roelofjanelsinga/"
           ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://roelofjanelsinga.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://roelofjanelsinga.com/articles?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
         }
         </script>
 

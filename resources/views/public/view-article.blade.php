@@ -9,6 +9,8 @@
 @section('content')
     <div class="articles-page py-8 sm:py-0 max-w-md mx-auto">
 
+        @include('blocks.breadcrumbs', ['pages' => [['url' => route('articles'), 'title' => 'Blog'], ['url' => request()->url(), 'title' => $article->title()]]])
+
         <main class="view-article paragraph-spacing">
 
             <article>
@@ -43,6 +45,8 @@
         "logo": {
           "@type": "ImageObject",
           "url": "{{url('/images/icons/favicon-96x96.png')}}"
+          "height": 96,
+          "width": 96
         }
       },
       "image": [
@@ -65,14 +69,14 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{$is_article ? 'Articles' : 'Passions'}}",
-        "item": "{{route($is_article ? 'articles' : 'passions.index')}}"
+        "name": "{{'Articles'}}",
+        "item": "{{route('articles')}}"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "{{$article->title()}}",
-        "item": "{{Request::url()}}"
+        "item": "{{request()->url()}}"
       }]
     }
     </script>
