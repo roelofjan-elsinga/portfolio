@@ -9,6 +9,8 @@
 @section('content')
     <div class="section">
 
+        @include('blocks.breadcrumbs', ['pages' => [['url' => route('public.work'), 'title' => 'Portfolio']]])
+
         <div class="paragraph-spacing mb-4">
             {!! Block::get('work-page') !!}
         </div>
@@ -44,7 +46,7 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "My previous projects",
+        "name": "Portfolio",
         "item": "{{route('public.work')}}"
       }]
     }

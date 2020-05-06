@@ -9,6 +9,8 @@
 @section('content')
     <div class="section">
 
+        @include('blocks.breadcrumbs', ['pages' => [['url' => route('public.open_source'), 'title' => 'Open source contributions']]])
+
         <div class="paragraph-spacing mb-4">
             {!! Block::get('open_source_page') !!}
         </div>

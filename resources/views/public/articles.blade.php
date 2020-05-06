@@ -7,6 +7,8 @@
 @section('content')
     <div class="articles-page items pt-8 max-w-md mx-auto">
 
+        @include('blocks.breadcrumbs', ['pages' => [['url' => route('articles'), 'title' => 'Blog']]])
+
         <div class="paragraph-spacing">
             {!! Block::get('articles') !!}
         </div>
