@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Thu, 23 Apr 2020 06:23:40 GMT</pubDate>
+              <pubDate>Wed, 06 May 2020 10:17:46 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -430,7 +430,7 @@ I put together a list of a few simple steps you can take to improve your (...)</
                     <link>https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages</link>
                     <guid>https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages</guid>
                     
-                    <pubDate>Thu, 23 Apr 2020 10:00:00 GMT</pubDate>
+                    <pubDate>Wed, 22 Apr 2020 10:00:00 GMT</pubDate>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800"/>
@@ -859,6 +859,16 @@ We don't move as much as we probably should. So many of us are probably not as h
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>SEO is very important if you want people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website. (...)</description>
+                    <title>Technical SEO: How to add structured data to your website</title>
+                    <link>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</link>
+                    <guid>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</guid>
+                    
+                    <pubDate>Wed, 06 May 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time. (...)</description>
                     <title>The elephant in the room: burnouts</title>

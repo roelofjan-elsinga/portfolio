@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-04-23T08:23:40+02:00</updated>
+              <updated>2020-05-06T12:17:46+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1732,8 +1732,8 @@ static domain_name_servers=192.168.0.1</code></pre>
                     <title>Tutorial: How to set up and automatically deploy your website to GitHub Pages</title>
                     <link href="https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages"/>
                     <id>https://roelofjanelsinga.com/articles/how-to-set-up-automatically-deploy-website-github-pages</id>
-                    <updated>2020-04-23T08:23:38+02:00</updated>
-                    <published>2020-04-23T12:00:00+02:00</published>
+                    <updated>2020-04-23T11:23:52+02:00</updated>
+                    <published>2020-04-22T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/github-logo.png" alt="GitHub Logo" /></p>
 <h1>Tutorial: How to set up and automatically deploy your website to GitHub Pages</h1>
 <p>So you want to host your static website on GitHub Pages? Excellent choice! In this tutorial, I'm taking you through the steps to host your static website on GitHub Pages and how you can deploy your own changes. After this tutorial, you will be able to automatically deploy your own website to the internet. Before we get into the steps you have to take to publish your website to GitHub Pages, I will outline a few options and limitations you have when using GitHub Pages for your website hosting.</p>
@@ -1744,7 +1744,7 @@ static domain_name_servers=192.168.0.1</code></pre>
 <li>Using your master branch as your source and production website</li>
 <li>Using your master branch as your source and gh-pages as your production website</li>
 </ul>
-<p>In this post I will not be going over how to use Jekyll in combination with GitHub pages. Jekyll is supported by GitHub, which means GitHub will do everything needed to deploy a Jekyll website for you. In this tutorial, we'll focus on deploying a plain HTML / CSS / JavaScript website. </p>
+<p>In this post, I will not be going over how to use Jekyll in combination with GitHub pages. Jekyll is supported by GitHub, which means GitHub will do everything needed to deploy a Jekyll website for you. In this tutorial, we'll focus on deploying a plain HTML / CSS / JavaScript website. </p>
 <p>The second option is to use the master branch both as the source of your website and the production website itself. What this means is that all of your source files, including build scripts, package.json file, and other &quot;source&quot; files like SCSS are accessible through the internet. For example, you'd be able to see the contents of your SCSS files by going to <a href="https://yourwebsite.com/scss/_header.scss">https://yourwebsite.com/scss/_header.scss</a>. This is the easiest solution for hosting your website on GitHub Pages, but it's not the cleanest option.</p>
 <p>This is where the third option comes in: using your master branch for all your source files and having a separate &quot;gh-pages&quot; branch that holds the production files for your website. This is a slightly more involved solution but is much cleaner than the second option. This is what this tutorial will focus on.</p>
 <h3>What are the limitations of hosting on GitHub Pages?</h3>
@@ -1787,8 +1787,8 @@ static domain_name_servers=192.168.0.1</code></pre>
 185.199.110.153
 185.199.111.153</code></pre>
 <p>You can set the TTL to whatever you like, in my case I set them to 1 hour.</p>
-<h3>Step 4B: Using a sub domain as your custom domain</h3>
-<p>Using a sub domain is much easier than using the main domain as your custom domain. You will still need to change your DNS records, but this time you'll only need to do this: </p>
+<h3>Step 4B: Using a subdomain as your custom domain</h3>
+<p>Using a subdomain is much easier than using the main domain as your custom domain. You will still need to change your DNS records, but this time you'll only need to do this: </p>
 <p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_12-33-07.png" alt="DNS records for GitHub Pages for a subdomain" /></p>
 <p>You create a CNAME-record for the subdomain you want to use, for example, amazing.yourwebsite.com. Set the TTL to whatever you want, I use 1 hour for this. Then the content of your CNAME should be your-github-username.github.io, in my case roelofjan-elsinga.github.io.</p>
 <h3>Step 4C: Submitting your custom domain to GitHub</h3>
@@ -1833,7 +1833,7 @@ yarn add -D husky</code></pre>
 <p>We've already automated the build process, so now we can automate the deployment process. For this, we're going to make use of GitHub Actions. This sounds very intimidating, but I'll explain exactly what's going on and I'll give you the configuration you need for this to work.</p>
 <p>First of all, let's click &quot;Actions&quot; in your repository:</p>
 <p><img src="/images/articles/how-to-set-up-automatically-deploy-website-github-pages/Screenshot_from_2020-04-22_13-49-11.png" alt="Create a new GitHub Action" /></p>
-<p>Then click on &quot;Set up a workflow yourself&quot; on the right side. In the new screen you can write your configuration, but you can remove everything that's there and paste this instead:</p>
+<p>Then click on &quot;Set up a workflow yourself&quot; on the right side. In the new screen, you can write your configuration, but you can remove everything that's there and paste this instead:</p>
 <pre><code class="language-yaml"># This script deploys your website automatically
 name: CI
 
@@ -1842,7 +1842,7 @@ on:
   push:
     branches: [ master ]
 
-# Specify the tasks to run when this scripts gets triggered
+# Specify the tasks to run when this script gets triggered
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -3573,6 +3573,78 @@ We don't move as much as we probably should. So many of us are probably not as h
 <p>If you'd like to get in contact with me about this, possibly with some advice for me, you can contact me on <a href="https://twitter.com/RJElsinga">Twitter</a> or send me an e-mail at <em>roelofjanelsinga@gmail.com</em>.</p>]]></content>
                     <summary><![CDATA[I'm struggling with micro optimizations on large scale data processing. Find out in what way I'm trying to improve the runtime of the calculations by saving processing cycles.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Technical SEO: How to add structured data to your website</title>
+                    <link href="https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website"/>
+                    <id>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</id>
+                    <updated>2020-05-06T12:17:44+02:00</updated>
+                    <published>2020-05-06T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/search-performance-for-plant-care-for-beginners.png" alt="Search performance plant care for beginners" /></p>
+<h1>Technical SEO: How to add structured data to your website</h1>
+<p>Structured data is a way to normalize your data and Google uses it to understand better what your website and specific pages are about. This is where you can help Google by providing this kind of information on your website. In turn, Google can use this to improve the appearance of your website in the search results. If you've ever seen an FAQ, company details, and news articles in your search results, then you've seen what structured data can do for your website.</p>
+<p>In this post, we'll go over a few common structured data types that you can add to your website today. Structured data might sound like something that's complicated, but all it is is a JSON object in your HTML content. These are the structured data types we'll go over in this post:</p>
+<ul>
+<li>Article</li>
+<li>Breadcrumb</li>
+<li>FAQ</li>
+<li>Logo</li>
+<li>Sitelinks searchbox</li>
+</ul>
+<p>These are types that you can add to a blog, but you can pick and choose which one applies to your situation. You can find the full list of available data types on <a href="https://developers.google.com/search/docs/data-types/article">Google Developers</a>. They may be worth checking out if your needs differ from what I'm describing in this post.</p>
+<h2>Where do I place the structured data?</h2>
+<p>Structured data is a script with a type, it's not content that will be displayed on the page. This means you can place this code snippet really anywhere in your HTML file. It's easier to maintain if everything is grouped together at the bottom of the page. I'm using blocks and components for this website, so I always place the related structured data inside of that component. This could mean that the structured data for the breadcrumbs is all the way at the top of your page and the rest of your code snippets at the bottom of the page. </p>
+<h2>Article</h2>
+<p>An article can be an actual article, but also a blog post. First, let's show the structured data for the previous blog post that I posted on this website. This will give you a good look at what this structured data looks like:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/17519a9199f025aac0078a8181429a18.js"></script>
+<p>As you can see, this code snippet contains a few attributes to identify what kind of structured data we're dealing with: @type and mainEntityOfPage. The JSON object also includes a @context to tell anyone parsing this data that this is a schema of some sort. Then you find the dateModified and datePublished attributes. These dates will be used to display the publish and sometimes the modification date in the search results in Google. Notice how the screenshot below shows &quot;22 Apr, 2020&quot;: </p>
+<p><img src="/images/articles/screenshot-google-search-result-jekyll.png" alt="Screenshot of Google Search results for GitHub Pages" />
+<span class="caption">Screenshot of Google Search results for GitHub Pages</span></p>
+<p>Google was able to add this to the search result because I made that information available through structured data in the HTML. </p>
+<p>Then we have the &quot;headline&quot; attribute. In most cases, this is just the title of your article or blog post. The author attribute is a special attribute because this is a nested data type. You can recognize nested data types by the @type attribute. In this case, we make sure to specify that an author is a Person with the name &quot;Roelof Jan Elsinga&quot;. This is not displayed in the screenshot above, but it does help Google to make better sense of the content on the page. </p>
+<p>The publisher attribute, like the author attribute, is a nested data type that itself contains another nested data type (logo). You can add your own name or the name of the company you work for at the name for the publisher and the URL in the logo should point to your logo or that of your company.</p>
+<p>The last two attributes are about the article/blog post itself. The image is an array of the images you want to feature for this particular post. In my case, this is always the header image, but you can add multiple images. The description is optional, but I use the same value as the description meta tag. </p>
+<h2>Breadcrumb</h2>
+<p>Breadcrumbs are a great way to show your visitors where they are on your website. Besides having visual breadcrumbs on your pages, you can add this as structured data as well. This will help Google to improve the breadcrumbs in the search results. Have a look at the screenshots below and notice the difference in the breadcrumbs. </p>
+<p><img src="/images/articles/screenshot-of-search-result-without-breadcrumbs.png" alt="Screenshot of search result without breadcrumbs" />
+<span class="caption">Screenshot of a search result without breadcrumbs</span></p>
+<p>The first one doesn't have any structured data set up, so Google breaks the URL apart and uses that as the title for the section of the website. </p>
+<p><img src="/images/articles/screenshot-of-search-result-with-breadcrumbs.png" alt="Screenshot of search result with breadcrumbs" />
+<span class="caption">Screenshot of a search result with breadcrumbs</span></p>
+<p>The second screenshot does have structured data with a proper title for the section of the website. This helps to improve the awareness of the location of the page within the website. Now let's see what this looks like as structured data.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/302ad77b12423ee039cc651ec82ff4a2.js"></script>
+<p>Like before, we make sure to mark this JSON object as being a schema and we define this object is of type &quot;BreadcrumbList&quot;. The next attribute &quot;itemListElement&quot; contains all depths within your website to get to the current page. This snippet is from the <a href="https://plantcareforbeginners.com/articles/how-to-care-for-calathea-ornata">page behind the second screenshot</a>, you can look at the page source of that page and you'll see this snippet in the HTML of that page. The attribute &quot;itemListElement&quot; is an array containing list items. Each list item is a nested data type. </p>
+<p>The attributes of that &quot;ListItem&quot; are position, name, and item. Position means the depth of the page in your website, starting at 1. The homepage is always position 1. In this case, &quot;Plant guides&quot; is at position 2. Looking at the second screenshot, you can see this as the second item in the breadcrumbs as well. The item attribute in the structured data is the URL belonging to the current depth level you're looking at. </p>
+<h2>FAQ</h2>
+<p>If you write tutorials or blog posts about topics you're an expert in, it's often a great idea to include an FAQ on the page for your visitors to get answers to questions they might have. These FAQs should be a visible to your visitors as well as being included as structured data. If you only include these FAQs as structured data and not also include a visual representation of it, Google might punish you for this and your SEO benefits are gone. For the FAQ we'll look at the page we went over in the Breadcrumb section. Below you'll find a screenshot of the FAQ on the page as a visual representation.</p>
+<p><img src="/images/articles/screenshot-of-faq-on-plant-care-for-beginners.png" alt="Screenshot of FAQ on Plant care for Beginners" />
+<span class="caption">Screenshot of FAQ on Plant care for Beginners</span></p>
+<p>This is a visual representation of the FAQ that users can interact with. Now that you have this available on the page, you can add it as structured data as well. This looks like the following snippet.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/f49c8746c7f4f40354a0e3b9c74b2256.js"></script>
+<p>I've removed the last two questions to make the code snippet to too long and I've redacted the remaining two answers, because the actual content is not important for this post. To create structured data for your page, set the @type of the JSON object to FAQPage. The mainEntity is an array of questions and answers. The questions and answers are both nested data types of Question and Answer. The question you're displaying in your FAQ section can be added to the &quot;name&quot; attribute of the question and you can add the given answer to the &quot;text&quot; attribute of the nested answer data type. </p>
+<p>Google uses the FAQs to compile a list of questions and answers in the search results. When you're the one that answered the question in your content and/or structured data, you're answer and website get featured like the screenshot below.</p>
+<p><img src="/images/articles/screenshot-of-faq-in-google-search-results.png" alt="Screenshot of FAQ in Google search results" />
+<span class="caption">Screenshot of FAQ in Google search results</span></p>
+<p>This is a great way to drive more traffic to your website through Google searches.</p>
+<h2>Logo</h2>
+<p>If you have a business website, the chances of you having a logo in one way or another is fairly high. This logo is something you should have in the menu at the top but is also something you can add to your website using structured data. Along the logo, you can add other business details like the website and name of the business. Let's see what this looks like as a code snippet.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/7b41379280fce58b2f8e983b532a2bed.js"></script>
+<p>To define a logo, Google uses the &quot;Organization&quot; data type and only needs the &quot;logo&quot; and &quot;url&quot; attribute. The other attribute &quot;name&quot; is defined on the Organization data type but is not required by Google. So you can add this, but it's optional. This structured data is short and simple and that means you can add it to almost all of your websites. There are a few guidelines you should keep in mind when it comes to submitting a logo. You can read find these in the <a href="https://developers.google.com/search/docs/data-types/logo#definitions">Type definition on Google Developers</a>.</p>
+<h2>Sitelinks searchbox</h2>
+<p>Have you ever seen a search result with an embedded search box and wanted that for your website as well? Well that's what you can use structured data for as well. The most important part to get this to work properly is that you need a search page that takes a search term in the URL. An example of my own <a href="https://roelofjanelsinga.com/articles">blog</a> is: </p>
+<pre><code>https://roelofjanelsinga.com/articles?q=search+terms+here</code></pre>
+<p>This doesn't have to be a query parameter, it could also be part of the URL:</p>
+<pre><code>https://example.com/search/search+terms+here</code></pre>
+<p>As long as you can add the search query in the URL in some way, this will be possible for your website as well. Let's look at what this code snippet looks like for my website.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/f04aedeb41149e62a0c998d7bf490c3a.js"></script>
+<p>In this code snippet, we're defining a website with potential actions to take on this website. In this case, a potential action on my website is to search for blog posts. So first of all, we need to define this data to be of type &quot;WebSite&quot;. We need to define the URL of your website and then add an array of &quot;potentialActions&quot;. Each item in the &quot;potentialActions&quot; array is a nested data type. In this case, it's a &quot;SearchAction&quot;. </p>
+<p>A search action needs the URL of your search page and a placeholder for the search terms people can fill in in the search results on Google. This placeholder is called &quot;{search_term_string}&quot;. This placeholder can have a different name if you prefer something else. The placeholder name is defined in the &quot;query-input&quot; attribute. So if you want to use &quot;{placeholder_search_term}&quot;, you need to define this in the &quot;query-input&quot; attribute like so: &quot;required name=placeholder_search_term&quot;. </p>
+<h2>Conclusion</h2>
+<p>There are many more structured data types that might be interesting for you to use on your website. You could add products, events, fact checks, and even recipes with ingredients. You can have a look at the <a href="https://developers.google.com/search/docs/data-types/article">full list of structured data types</a> to pick and choose which ones are relevant for your website. </p>
+<p>Google does a lot of assumptions to display your website in the search results, but you can help Google to improve the presentation of your website. You can add structured data to your HTML pages to define things such as article information, breadcrumbs, FAQs, a logo, and even which actions visitors can take on your website. This will help Google to understand what your website and individual pages are all about and how your website is structured. Over time this could have a positive effect on your SEO rankings and all you had to do was help Google to understand your website better. </p>
+<p>If you have any questions about this post, you can read out to me on <a href="https://twitter.com/RJElsinga">Twitter</a> and I'll do my best to guide you to implement structured data on your website.</p>]]></content>
+                    <summary><![CDATA[SEO is very important if you want people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>The elephant in the room: burnouts</title>
