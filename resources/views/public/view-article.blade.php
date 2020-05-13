@@ -44,7 +44,7 @@
         "name": "Roelof Jan Elsinga",
         "logo": {
           "@type": "ImageObject",
-          "url": "{{url('/images/icons/favicon-96x96.png')}}"
+          "url": "{{url('/images/icons/favicon-96x96.png')}}",
           "height": 96,
           "width": 96
         }
