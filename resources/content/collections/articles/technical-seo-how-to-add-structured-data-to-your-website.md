@@ -1,11 +1,10 @@
 ---
-description: 'SEO is very important if you want people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.'
+description: 'SEO is very important to help people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.'
 post_date: '2020-05-06'
 is_published: true
 is_scheduled: false
-update_date: '2020-05-06 12:17:44'
+update_date: '2020-05-11 15:06:02'
 ---
-
 ![Search performance plant care for beginners](/images/articles/search-performance-for-plant-care-for-beginners.png)
 # Technical SEO: How to add structured data to your website
 Structured data is a way to normalize your data and Google uses it to understand better what your website and specific pages are about. This is where you can help Google by providing this kind of information on your website. In turn, Google can use this to improve the appearance of your website in the search results. If you've ever seen an FAQ, company details, and news articles in your search results, then you've seen what structured data can do for your website.
@@ -58,10 +57,10 @@ The second screenshot does have structured data with a proper title for the sect
 
 Like before, we make sure to mark this JSON object as being a schema and we define this object is of type "BreadcrumbList". The next attribute "itemListElement" contains all depths within your website to get to the current page. This snippet is from the [page behind the second screenshot](https://plantcareforbeginners.com/articles/how-to-care-for-calathea-ornata), you can look at the page source of that page and you'll see this snippet in the HTML of that page. The attribute "itemListElement" is an array containing list items. Each list item is a nested data type. 
 
-The attributes of that "ListItem" are position, name, and item. Position means the depth of the page in your website, starting at 1. The homepage is always position 1. In this case, "Plant guides" is at position 2. Looking at the second screenshot, you can see this as the second item in the breadcrumbs as well. The item attribute in the structured data is the URL belonging to the current depth level you're looking at. 
+The attributes of that "ListItem" are position, name, and item. Position means the depth of the page on your website, starting at 1. The homepage is always position 1. In this case, "Plant guides" is at position 2. Looking at the second screenshot, you can see this as the second item in the breadcrumbs as well. The item attribute in the structured data is the URL belonging to the current depth level you're looking at. 
 
 ## FAQ
-If you write tutorials or blog posts about topics you're an expert in, it's often a great idea to include an FAQ on the page for your visitors to get answers to questions they might have. These FAQs should be a visible to your visitors as well as being included as structured data. If you only include these FAQs as structured data and not also include a visual representation of it, Google might punish you for this and your SEO benefits are gone. For the FAQ we'll look at the page we went over in the Breadcrumb section. Below you'll find a screenshot of the FAQ on the page as a visual representation.
+If you write tutorials or blog posts about topics you're an expert in, it's often a great idea to include an FAQ on the page for your visitors to get answers to questions they might have. These FAQs should be visible to your visitors as well as being included as structured data. If you only include these FAQs as structured data and not also include a visual representation of it, Google might punish you for this and your SEO benefits are gone. For the FAQ we'll look at the page we went over in the Breadcrumb section. Below you'll find a screenshot of the FAQ on the page as a visual representation.
 
 ![Screenshot of FAQ on Plant care for Beginners](/images/articles/screenshot-of-faq-on-plant-care-for-beginners.png)
 <span class="caption">Screenshot of FAQ on Plant care for Beginners</span>
@@ -70,7 +69,7 @@ This is a visual representation of the FAQ that users can interact with. Now tha
 
 <script src="https://gist.github.com/roelofjan-elsinga/f49c8746c7f4f40354a0e3b9c74b2256.js"></script>
 
-I've removed the last two questions to make the code snippet to too long and I've redacted the remaining two answers, because the actual content is not important for this post. To create structured data for your page, set the @type of the JSON object to FAQPage. The mainEntity is an array of questions and answers. The questions and answers are both nested data types of Question and Answer. The question you're displaying in your FAQ section can be added to the "name" attribute of the question and you can add the given answer to the "text" attribute of the nested answer data type. 
+I've removed the last two questions to not make the code snippet too long and I've redacted the remaining two answers because the actual content is not important for this post. To create structured data for your page, set the @type of the JSON object to FAQPage. The mainEntity is an array of questions and answers. The questions and answers are both nested data types of Question and Answer. The question you're displaying in your FAQ section can be added to the "name" attribute of the question and you can add the given answer to the "text" attribute of the nested answer data type. 
 
 Google uses the FAQs to compile a list of questions and answers in the search results. When you're the one that answered the question in your content and/or structured data, you're answer and website get featured like the screenshot below.
 
@@ -80,14 +79,14 @@ Google uses the FAQs to compile a list of questions and answers in the search re
 This is a great way to drive more traffic to your website through Google searches.
 
 ## Logo
-If you have a business website, the chances of you having a logo in one way or another is fairly high. This logo is something you should have in the menu at the top but is also something you can add to your website using structured data. Along the logo, you can add other business details like the website and name of the business. Let's see what this looks like as a code snippet.
+If you have a business website, the chances of you having a logo in one way or another are fairly high. This logo is something you should have on the menu at the top but is also something you can add to your website using structured data. Along with the logo, you can add other business details like the website and the name of the business. Let's see what this looks like as a code snippet.
 
 <script src="https://gist.github.com/roelofjan-elsinga/7b41379280fce58b2f8e983b532a2bed.js"></script>
 
 To define a logo, Google uses the "Organization" data type and only needs the "logo" and "url" attribute. The other attribute "name" is defined on the Organization data type but is not required by Google. So you can add this, but it's optional. This structured data is short and simple and that means you can add it to almost all of your websites. There are a few guidelines you should keep in mind when it comes to submitting a logo. You can read find these in the [Type definition on Google Developers](https://developers.google.com/search/docs/data-types/logo#definitions).
 
 ## Sitelinks searchbox
-Have you ever seen a search result with an embedded search box and wanted that for your website as well? Well that's what you can use structured data for as well. The most important part to get this to work properly is that you need a search page that takes a search term in the URL. An example of my own [blog](https://roelofjanelsinga.com/articles) is: 
+Have you ever seen a search result with an embedded search box and wanted that for your website as well? Well, that's what you can use structured data for as well. The most important part to get this to work properly is that you need a search page that takes a search term in the URL. An example of my own [blog](https://roelofjanelsinga.com/articles) is: 
 ```
 https://roelofjanelsinga.com/articles?q=search+terms+here
 ```

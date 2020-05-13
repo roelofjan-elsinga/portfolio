@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 06 May 2020 10:17:46 GMT</pubDate>
+              <pubDate>Wed, 13 May 2020 12:09:25 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -131,6 +131,16 @@ It's connecting other ser (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboards-bw.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>CLI applications are very useful for performing tasks and automations in many different environments. In this post I go over how you can get started writing applications like this in Go. (...)</description>
+                    <title>Building CLI applications with Go</title>
+                    <link>https://roelofjanelsinga.com/articles/building-cli-applications-with-go</link>
+                    <guid>https://roelofjanelsinga.com/articles/building-cli-applications-with-go</guid>
+                    
+                    <pubDate>Wed, 13 May 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="756"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine. (...)</description>
                     <title>Building my personal cloud after 4 years</title>
@@ -860,7 +870,7 @@ We don't move as much as we probably should. So many of us are probably not as h
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/clock-on-the-wall.jpeg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>SEO is very important if you want people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website. (...)</description>
+<item><description>SEO is very important to help people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website. (...)</description>
                     <title>Technical SEO: How to add structured data to your website</title>
                     <link>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</link>
                     <guid>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</guid>

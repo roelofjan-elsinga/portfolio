@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-05-06T12:17:46+02:00</updated>
+              <updated>2020-05-13T14:09:25+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -540,6 +540,68 @@ It's connecting other ser]]></summary>
 <p>At this point I'm not quite sure what I'll go with. Once I've implemented a solution, I'll update this post and describe the solution in detail.</p>]]></content>
                     <summary><![CDATA[Testing your code is essential if you want to write code that doesn't break your application. Find out how I'm going to use automatic stubs to test the implementation of API's instead of the actual API calls.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/keyboards-bw.jpeg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Building CLI applications with Go</title>
+                    <link href="https://roelofjanelsinga.com/articles/building-cli-applications-with-go"/>
+                    <id>https://roelofjanelsinga.com/articles/building-cli-applications-with-go</id>
+                    <updated>2020-05-13T14:09:23+02:00</updated>
+                    <published>2020-05-13T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/cli-tool-in-go.png" alt="CLI tool in Go" /></p>
+<h1>Building CLI applications with Go</h1>
+<p>Command Line Interface (CLI) applications can automate your work in many ways. They can be used to build your applications, deploy code, run processes, and do all kinds of other miscellaneous tasks. Developers often favor CLI tools because they don't require a user interface, often have consistent behavior in different environments, and are much easier to configure and distribute. The Go community has become much bigger in the past few years and because of this there are several CLI tools that have migrated from bash scripts to Go binaries. There is no better time to learn how to write a CLI application yourself.</p>
+<p>In this post we're going over how to build a simple CLI tool in Go. You might be wondering: why should I use Go for this? These are the reasons for me: the code is expressive, it can be compiled to a binary which is easy to distribute, and it's very fast. This post is not an in-depth tutorial on how to write Go applications, because the implementation of these scripts is up to you, the developer. That's why I'm going to stick with a simple &quot;Hello, World!&quot; application and add some complexity, so you can start building CLI tools in Go for your own projects.</p>
+<p>This post assumes you have already installed Go on your system.</p>
+<h2>The basic &quot;Hello, World!&quot; application</h2>
+<p>The basic &quot;Hello, World!&quot; application is a nice way to see some of the syntax in Go in action. To get started writing a simple CLI application in Go, let's begin with the &quot;Hello, World!&quot; application:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/3165abc10e766e9af54a5a9cba16b4c8.js"></script>
+<p>What does this code mean? First, we define this file as the entry point to our CLI application by specifying &quot;package main&quot;. You can give the file itself any name you'd like. I usually stick with &quot;main.go&quot; to be clear about which file is the entry point of the application.</p>
+<p>As this file is the entry point to the application we have to define a function that will be executed when you run it. You do this by specifying a &quot;main&quot; function. The body of the entry function is printing the famous &quot;Hello, World!&quot; to the terminal. So when we run the command:</p>
+<pre><code class="language-bash">go run main.go</code></pre>
+<p>You will see &quot;Hello World!&quot; in the terminal. Now that we can print something to the terminal, let's add some complexity and configuration options by working with flags.</p>
+<h2>Adding flags to the application</h2>
+<p>Flags are used to configure an application. These flags can be used in a lot of different programming languages, including Go. For this example, I want to customize the message that's displayed in the terminal by passing some data to the application through flags. Let's see how we can customize the behavior or our CLI application based on some input from the user:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/39cc6df5483622bdcbf27c9307b2b8c6.js"></script>
+<p>You can see that we define two flags for our application. One of the flags is called message and the other is called number. Again, these names are up to you and your needs. We define the type of the flags (flag.Int, flag.String), enter a name of the flag, the default value, and a helpful message about what this flag means.</p>
+<p>Now that we've added the help messages, we can run a help command:</p>
+<pre><code class="language-bash">go run main.go --help</code></pre>
+<p>This will return the possible flags you can use on this command:</p>
+<pre><code>Usage of /tmp/go-build456763591/b001/exe/main:
+  -message string
+    The message you'd like to print to the terminal (default "Hello, World!")
+  -number int
+    The number you'd like to add to your message (default 1)
+exit status 2</code></pre>
+<p>This is helpful in case you ever need to run your binary, but don't have the source code to look at. It's also great for distributing your application because you can tell the user which options are available. At the bottom of the main function, you can see that I'm passing the message variable like so: *message. This is because the message variable doesn't actually have a value, but it's a pointer to a place in memory. By adding the asterisk in front of it, you retrieve the value from memory and you can print it to the terminal like a normal string. The other variable, number, is passed to the Println method like &quot;strconv.Itoa(*number)&quot; because the value of *number is an int and not a string. Since Go is a strictly typed language, you'll need to convert it to a string before you can do any string concatenation.</p>
+<p>So now that we can run the application like before, without the flags, and see a new text show up:</p>
+<pre><code class="language-bash">go run main.go</code></pre>
+<p><strong>Shows</strong>: &quot;This is the message you want to display: Hello, World! with number 1&quot;</p>
+<p>As you can see, the flags still have the default value. Now let's try adding custom values:</p>
+<pre><code class="language-bash">go run main.go --message "Hello, Internet!" --number 42</code></pre>
+<p><strong>Shows</strong>: &quot;This is the message you want to display: Hello, Internet! with number 42&quot;</p>
+<p>As the new message has a space, you'll need to use double quotes to treat the string as a single value. As you can see, the sentence printed to the terminal now contains the values you passed to the command. </p>
+<h2>Using flags to write a simple automation</h2>
+<p>Now that we know how to pass values to our CLI application, it's good to make this application actually do something for us. We'll write a simple script that reads contents from a file and writes those to another file. We want to customize the source and target file. The package we'll use for this is <a href="https://golang.org/pkg/io/ioutil/">ioutil</a>. This is a simple application, but by using these techniques you're able to write complex automations and build your applications in such a way that it does exactly what you need it to.</p>
+<p>Let's look at the code for this scenario:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/69826bce71435742d9a343d1867486f0.js"></script>
+<p>Like before, we define two flags. One represents the source file and the other the target file. In my case, I've created a source.json file and added that filename as the default value for the application. This is the content of source.json:</p>
+<pre><code class="language-json">{
+    "message": "This is a message from the source file"
+}</code></pre>
+<p>After parsing the flags, we read the contents of the source file by using ioutil.ReadFile(*sourceFile). This returns the data in bytes and also an error if something went wrong. If there was an error we display an error message in the terminal to notify the consumer of the application that something went wrong while reading the source file. Perhaps you didn't have a source file. If that's the case, the application let's you know by showing this message:</p>
+<pre><code class="language-bash">go run main.go --source src.json</code></pre>
+<p><strong>Shows</strong>: &quot;Found an error while reading the source file: open src.json: no such file or directory&quot;</p>
+<p>After displaying the message we make sure to exit the application because we don't have all the information we need to continue. By returning exit code 1, we make sure the terminal knows something went wrong. Now that we know we have the contents of the file in memory, we can write it to the target file by using &quot;ioutil.WriteFile()&quot;, passing the target filename, the file contents, and the proper file permissions. </p>
+<p>Again, we check if something went wrong and notify the consumer if that was the case. If everything went correctly you get the following output:</p>
+<pre><code class="language-bash">go run main.go --source source.json --target target.json</code></pre>
+<p><strong>Shows</strong>: &quot;Copied the contents of source.json to target.json&quot;</p>
+<p>You should now have a new file called target.json with the same contents as the source.json file. This is a very simple example, but you can see how you can capture the user input and using it to perform some kind of action based on that input. The number of different applications you can make with something simple as these input flags is as big as your imagination.</p>
+<h2>Conclusion</h2>
+<p>Writing CLI applications doesn't have to be difficult. Whether you write shell scripts, Node.js, PHP, or Go, they offer developers a very wide range of possibilities. CLI applications can make your life a lot easier by writing all kinds of automations in a lot of different environments. This post was all about writing CLI applications in Go, because it's expressive, you can compile it to a binary, and the execution of these automations is very fast.</p>
+<p>Now that we've covered the basics of building a CLI application in Go, the types of applications and options you offer to configure these applications is endless. For example: you could build an application where you perform certain tasks while offering the user to skip some of the tasks. This is all up to what you want and need to do. I hope this post showed you some new things that you could use to start writing your own CLI applications in Go.</p>
+<p>If you'd like to talk more about this you can contact me on <a href="https://twitter.com/RJElsinga">Twitter</a>.</p>]]></content>
+                    <summary><![CDATA[CLI applications are very useful for performing tasks and automations in many different environments. In this post I go over how you can get started writing applications like this in Go.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="756" />
                   </entry>
 <entry>
                     <title>Building my personal cloud after 4 years</title>
@@ -3578,7 +3640,7 @@ We don't move as much as we probably should. So many of us are probably not as h
                     <title>Technical SEO: How to add structured data to your website</title>
                     <link href="https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website"/>
                     <id>https://roelofjanelsinga.com/articles/technical-seo-how-to-add-structured-data-to-your-website</id>
-                    <updated>2020-05-06T12:17:44+02:00</updated>
+                    <updated>2020-05-11T15:06:02+02:00</updated>
                     <published>2020-05-06T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/search-performance-for-plant-care-for-beginners.png" alt="Search performance plant care for beginners" /></p>
 <h1>Technical SEO: How to add structured data to your website</h1>
@@ -3614,24 +3676,24 @@ We don't move as much as we probably should. So many of us are probably not as h
 <p>The second screenshot does have structured data with a proper title for the section of the website. This helps to improve the awareness of the location of the page within the website. Now let's see what this looks like as structured data.</p>
 <script src="https://gist.github.com/roelofjan-elsinga/302ad77b12423ee039cc651ec82ff4a2.js"></script>
 <p>Like before, we make sure to mark this JSON object as being a schema and we define this object is of type &quot;BreadcrumbList&quot;. The next attribute &quot;itemListElement&quot; contains all depths within your website to get to the current page. This snippet is from the <a href="https://plantcareforbeginners.com/articles/how-to-care-for-calathea-ornata">page behind the second screenshot</a>, you can look at the page source of that page and you'll see this snippet in the HTML of that page. The attribute &quot;itemListElement&quot; is an array containing list items. Each list item is a nested data type. </p>
-<p>The attributes of that &quot;ListItem&quot; are position, name, and item. Position means the depth of the page in your website, starting at 1. The homepage is always position 1. In this case, &quot;Plant guides&quot; is at position 2. Looking at the second screenshot, you can see this as the second item in the breadcrumbs as well. The item attribute in the structured data is the URL belonging to the current depth level you're looking at. </p>
+<p>The attributes of that &quot;ListItem&quot; are position, name, and item. Position means the depth of the page on your website, starting at 1. The homepage is always position 1. In this case, &quot;Plant guides&quot; is at position 2. Looking at the second screenshot, you can see this as the second item in the breadcrumbs as well. The item attribute in the structured data is the URL belonging to the current depth level you're looking at. </p>
 <h2>FAQ</h2>
-<p>If you write tutorials or blog posts about topics you're an expert in, it's often a great idea to include an FAQ on the page for your visitors to get answers to questions they might have. These FAQs should be a visible to your visitors as well as being included as structured data. If you only include these FAQs as structured data and not also include a visual representation of it, Google might punish you for this and your SEO benefits are gone. For the FAQ we'll look at the page we went over in the Breadcrumb section. Below you'll find a screenshot of the FAQ on the page as a visual representation.</p>
+<p>If you write tutorials or blog posts about topics you're an expert in, it's often a great idea to include an FAQ on the page for your visitors to get answers to questions they might have. These FAQs should be visible to your visitors as well as being included as structured data. If you only include these FAQs as structured data and not also include a visual representation of it, Google might punish you for this and your SEO benefits are gone. For the FAQ we'll look at the page we went over in the Breadcrumb section. Below you'll find a screenshot of the FAQ on the page as a visual representation.</p>
 <p><img src="/images/articles/screenshot-of-faq-on-plant-care-for-beginners.png" alt="Screenshot of FAQ on Plant care for Beginners" />
 <span class="caption">Screenshot of FAQ on Plant care for Beginners</span></p>
 <p>This is a visual representation of the FAQ that users can interact with. Now that you have this available on the page, you can add it as structured data as well. This looks like the following snippet.</p>
 <script src="https://gist.github.com/roelofjan-elsinga/f49c8746c7f4f40354a0e3b9c74b2256.js"></script>
-<p>I've removed the last two questions to make the code snippet to too long and I've redacted the remaining two answers, because the actual content is not important for this post. To create structured data for your page, set the @type of the JSON object to FAQPage. The mainEntity is an array of questions and answers. The questions and answers are both nested data types of Question and Answer. The question you're displaying in your FAQ section can be added to the &quot;name&quot; attribute of the question and you can add the given answer to the &quot;text&quot; attribute of the nested answer data type. </p>
+<p>I've removed the last two questions to not make the code snippet too long and I've redacted the remaining two answers because the actual content is not important for this post. To create structured data for your page, set the @type of the JSON object to FAQPage. The mainEntity is an array of questions and answers. The questions and answers are both nested data types of Question and Answer. The question you're displaying in your FAQ section can be added to the &quot;name&quot; attribute of the question and you can add the given answer to the &quot;text&quot; attribute of the nested answer data type. </p>
 <p>Google uses the FAQs to compile a list of questions and answers in the search results. When you're the one that answered the question in your content and/or structured data, you're answer and website get featured like the screenshot below.</p>
 <p><img src="/images/articles/screenshot-of-faq-in-google-search-results.png" alt="Screenshot of FAQ in Google search results" />
 <span class="caption">Screenshot of FAQ in Google search results</span></p>
 <p>This is a great way to drive more traffic to your website through Google searches.</p>
 <h2>Logo</h2>
-<p>If you have a business website, the chances of you having a logo in one way or another is fairly high. This logo is something you should have in the menu at the top but is also something you can add to your website using structured data. Along the logo, you can add other business details like the website and name of the business. Let's see what this looks like as a code snippet.</p>
+<p>If you have a business website, the chances of you having a logo in one way or another are fairly high. This logo is something you should have on the menu at the top but is also something you can add to your website using structured data. Along with the logo, you can add other business details like the website and the name of the business. Let's see what this looks like as a code snippet.</p>
 <script src="https://gist.github.com/roelofjan-elsinga/7b41379280fce58b2f8e983b532a2bed.js"></script>
 <p>To define a logo, Google uses the &quot;Organization&quot; data type and only needs the &quot;logo&quot; and &quot;url&quot; attribute. The other attribute &quot;name&quot; is defined on the Organization data type but is not required by Google. So you can add this, but it's optional. This structured data is short and simple and that means you can add it to almost all of your websites. There are a few guidelines you should keep in mind when it comes to submitting a logo. You can read find these in the <a href="https://developers.google.com/search/docs/data-types/logo#definitions">Type definition on Google Developers</a>.</p>
 <h2>Sitelinks searchbox</h2>
-<p>Have you ever seen a search result with an embedded search box and wanted that for your website as well? Well that's what you can use structured data for as well. The most important part to get this to work properly is that you need a search page that takes a search term in the URL. An example of my own <a href="https://roelofjanelsinga.com/articles">blog</a> is: </p>
+<p>Have you ever seen a search result with an embedded search box and wanted that for your website as well? Well, that's what you can use structured data for as well. The most important part to get this to work properly is that you need a search page that takes a search term in the URL. An example of my own <a href="https://roelofjanelsinga.com/articles">blog</a> is: </p>
 <pre><code>https://roelofjanelsinga.com/articles?q=search+terms+here</code></pre>
 <p>This doesn't have to be a query parameter, it could also be part of the URL:</p>
 <pre><code>https://example.com/search/search+terms+here</code></pre>
@@ -3643,7 +3705,7 @@ We don't move as much as we probably should. So many of us are probably not as h
 <p>There are many more structured data types that might be interesting for you to use on your website. You could add products, events, fact checks, and even recipes with ingredients. You can have a look at the <a href="https://developers.google.com/search/docs/data-types/article">full list of structured data types</a> to pick and choose which ones are relevant for your website. </p>
 <p>Google does a lot of assumptions to display your website in the search results, but you can help Google to improve the presentation of your website. You can add structured data to your HTML pages to define things such as article information, breadcrumbs, FAQs, a logo, and even which actions visitors can take on your website. This will help Google to understand what your website and individual pages are all about and how your website is structured. Over time this could have a positive effect on your SEO rankings and all you had to do was help Google to understand your website better. </p>
 <p>If you have any questions about this post, you can read out to me on <a href="https://twitter.com/RJElsinga">Twitter</a> and I'll do my best to guide you to implement structured data on your website.</p>]]></content>
-                    <summary><![CDATA[SEO is very important if you want people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.]]></summary>
+                    <summary><![CDATA[SEO is very important to help people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
