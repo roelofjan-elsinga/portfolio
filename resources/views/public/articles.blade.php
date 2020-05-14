@@ -64,3 +64,7 @@
     }
     </script>
 @endsection
+
+@push('styles')
+    <script data-ad-client="ca-pub-6555141565377417" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+@endpush
