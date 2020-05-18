@@ -51,6 +51,7 @@
     <meta name="msapplication-TileImage" content="{{ asset('images/icons/ms-icon-310x310.png') }}">
     <meta name="theme-color" content="#ffffff">
 
+    <link href="{{mix('css/resume.css')}}" rel="preload" as="style"/>
     <link href="{{mix('css/resume.css')}}" rel="stylesheet"/>
 </head>
 

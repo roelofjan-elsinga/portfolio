@@ -69,9 +69,11 @@
 
         <!-- Bootstrap -->
         @section('stylesheets')
+            <link rel="preload" href="{{ mix('css/front.css') }}" as="style">
             <link href="{{ mix('css/front.css') }}" rel="stylesheet" defer>
         @show
 
+        <link rel="preload" href="{{mix('css/fontawesome.css')}}" as="style">
         <link rel="stylesheet" href="{{mix('css/fontawesome.css')}}" />
         @stack('styles')
 
