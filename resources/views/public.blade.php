@@ -62,7 +62,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icons/favicon-16x16.png') }}">
         <link rel="manifest" href="{{ asset('images/icons/site.webmanifest') }}">
         <link rel="mask-icon" href="{{ asset('images/icons/safari-pinned-tab.svg') }}" color="#4fabfe">
-        <link rel="shortcut icon" href="{{ asset('images/icons/favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('images/icons/favicon_sm.ico') }}">
         <meta name="msapplication-TileColor" content="#4fabfe">
         <meta name="msapplication-config" content="{{ asset('images/icons/browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">

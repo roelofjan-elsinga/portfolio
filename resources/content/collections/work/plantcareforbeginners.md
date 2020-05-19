@@ -1,5 +1,6 @@
 ---
-image_url: /images/work/plantcareforbeginners_1920x1080.jpg
+image_url: /images/work/plantcareforbeginners_1920_2.0.jpg
+thumbnail_url: /images/work/plantcareforbeginners_500_2.0.jpg
 image_alt: Plant care for beginners homepage
 title: Plant care for beginners
 description: >
@@ -11,7 +12,7 @@ active: true
 publish_date: 2019-04-23
 ---
 
-![Plant care for beginners](/images/work/plantcareforbeginners_1920x1080.jpg "Plant care for beginners homepage")
+![Plant care for beginners](/images/work/plantcareforbeginners_1920_2.0.jpg "Plant care for beginners homepage")
 
 # Plant care for beginners
 

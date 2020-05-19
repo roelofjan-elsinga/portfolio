@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/aduard_2000_1920x1080_1444039068.jpg
+thumbnail_url: /images/work/aduard_2000_500x500_1444039068.jpg
 image_alt: VV Aduard 2000 screenshot
 title: VV Aduard 2000
 description: >

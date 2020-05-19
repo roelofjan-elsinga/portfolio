@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/abdijloop_1920x1080_1523907651.jpg
+thumbnail_url: /images/work/abdijloop_500x500_1523907652.jpg
 image_alt: Abdijloop Aduard screenshot
 title: Abdijloop Aduard
 description: >

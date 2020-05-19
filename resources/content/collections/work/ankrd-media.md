@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/ankrd-media_1920x1080.jpg
+thumbnail_url: /images/work/ankrd-media_500x500.jpg
 image_alt: Ankrd Media homepage
 title: Ankrd Media
 description: >

@@ -1,5 +1,6 @@
 ---
-image_url: /images/work/aloiacms_1920x1080.png
+image_url: /images/work/aloiacms_1920_2.0.jpg
+thumbnail_url: /images/work/aloiacms_500_2.0.jpg
 image_alt: Aloia CMS homepage
 title: Aloia CMS
 description: >
@@ -11,7 +12,7 @@ active: true
 publish_date: 2019-10-17
 ---
 
-![Aloia CMS](/images/work/aloiacms_1920x1080.png "Aloia CMS homepage")
+![Aloia CMS homepage](/images/work/aloiacms_1920_2.0.jpg "Aloia CMS homepage")
 
 # Aloia CMS
 

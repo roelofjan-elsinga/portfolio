@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/nkrv_1920x1080_1444039117.jpg
+thumbnail_url: /images/work/nkrv_500x500_1444039117.jpg
 image_alt: NKRV screenshot
 title: NKRV
 description: >

@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/tracerlab_1920x1080.jpg
+thumbnail_url: /images/work/tracerlab_500x500.jpg
 image_alt: Tracerlab screenshot
 title: Tracerlab
 description: >

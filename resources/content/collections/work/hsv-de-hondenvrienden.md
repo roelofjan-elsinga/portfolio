@@ -1,5 +1,6 @@
 ---
 image_url: /images/work/hsvdhv_1920x1080_1444039130.jpg
+thumbnail_url: /images/work/hsvdhv_500x500_1444039130.jpg
 image_alt: HSV De Hondenvrienden screenshot
 title: HSV De Hondenvrienden
 description: >
