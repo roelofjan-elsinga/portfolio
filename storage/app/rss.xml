@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 13 May 2020 12:09:25 GMT</pubDate>
+              <pubDate>Sun, 24 May 2020 14:31:55 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -140,7 +140,7 @@ It's connecting other ser (...)</description>
                     <pubDate>Wed, 13 May 2020 10:00:00 GMT</pubDate>
                     
                     
-                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="756"/>
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I've finally built the home server and it was easier than you might imagine. (...)</description>
                     <title>Building my personal cloud after 4 years</title>
@@ -262,6 +262,16 @@ everything we need it to do. People can say that tools are interchangea (...)</d
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 46% increase in clicks from Google results. Find out what I learned. (...)</description>
+                    <title>Getting a 73% increase in clicks from Google results</title>
+                    <link>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</link>
+                    <guid>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</guid>
+                    
+                    <pubDate>Sun, 24 May 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Static web hosting has been a pain point for many developers for years, but it doesn't have to be painful. In this post, we go over how you can use GitHub pages to improve your development cycles and empower everyone to publish content. (...)</description>
                     <title>GitHub Pages: Static web hosting made simple</title>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-05-13T14:09:25+02:00</updated>
+              <updated>2020-05-24T16:31:55+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -545,15 +545,15 @@ It's connecting other ser]]></summary>
                     <title>Building CLI applications with Go</title>
                     <link href="https://roelofjanelsinga.com/articles/building-cli-applications-with-go"/>
                     <id>https://roelofjanelsinga.com/articles/building-cli-applications-with-go</id>
-                    <updated>2020-05-13T14:09:23+02:00</updated>
+                    <updated>2020-05-14T13:51:31+02:00</updated>
                     <published>2020-05-13T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/cli-tool-in-go.png" alt="CLI tool in Go" /></p>
 <h1>Building CLI applications with Go</h1>
-<p>Command Line Interface (CLI) applications can automate your work in many ways. They can be used to build your applications, deploy code, run processes, and do all kinds of other miscellaneous tasks. Developers often favor CLI tools because they don't require a user interface, often have consistent behavior in different environments, and are much easier to configure and distribute. The Go community has become much bigger in the past few years and because of this there are several CLI tools that have migrated from bash scripts to Go binaries. There is no better time to learn how to write a CLI application yourself.</p>
-<p>In this post we're going over how to build a simple CLI tool in Go. You might be wondering: why should I use Go for this? These are the reasons for me: the code is expressive, it can be compiled to a binary which is easy to distribute, and it's very fast. This post is not an in-depth tutorial on how to write Go applications, because the implementation of these scripts is up to you, the developer. That's why I'm going to stick with a simple &quot;Hello, World!&quot; application and add some complexity, so you can start building CLI tools in Go for your own projects.</p>
+<p>Command Line Interface (CLI) applications can automate your work in many ways. They can be used to build your applications, deploy code, run processes, and do all kinds of other miscellaneous tasks. Developers often favor CLI tools because they don't require a user interface, often have consistent behavior in different environments, and are much easier to configure and distribute. The Go community has become much bigger in the past few years and because of this, there are several CLI tools that have migrated from bash scripts to Go binaries. There is no better time to learn how to write a CLI application yourself.</p>
+<p>In this post, we're going over how to build a simple CLI tool in Go. You might be wondering: why should I use Go for this? These are the reasons for me: the code is expressive, it can be compiled to a binary which is easy to distribute, and it's very fast. This post is not an in-depth tutorial on how to write Go applications, because the implementation of these scripts is up to you, the developer. That's why I'm going to stick with a simple &quot;Hello, World!&quot; application and add some complexity, so you can start building CLI tools in Go for your own projects.</p>
 <p>This post assumes you have already installed Go on your system.</p>
 <h2>The basic &quot;Hello, World!&quot; application</h2>
-<p>The basic &quot;Hello, World!&quot; application is a nice way to see some of the syntax in Go in action. To get started writing a simple CLI application in Go, let's begin with the &quot;Hello, World!&quot; application:</p>
+<p>The basic &quot;Hello, World!&quot; application is a nice way to see some of the syntaxes in Go in action. To get started writing a simple CLI application in Go, let's begin with the &quot;Hello, World!&quot; application:</p>
 <script src="https://gist.github.com/roelofjan-elsinga/3165abc10e766e9af54a5a9cba16b4c8.js"></script>
 <p>What does this code mean? First, we define this file as the entry point to our CLI application by specifying &quot;package main&quot;. You can give the file itself any name you'd like. I usually stick with &quot;main.go&quot; to be clear about which file is the entry point of the application.</p>
 <p>As this file is the entry point to the application we have to define a function that will be executed when you run it. You do this by specifying a &quot;main&quot; function. The body of the entry function is printing the famous &quot;Hello, World!&quot; to the terminal. So when we run the command:</p>
@@ -562,7 +562,7 @@ It's connecting other ser]]></summary>
 <h2>Adding flags to the application</h2>
 <p>Flags are used to configure an application. These flags can be used in a lot of different programming languages, including Go. For this example, I want to customize the message that's displayed in the terminal by passing some data to the application through flags. Let's see how we can customize the behavior or our CLI application based on some input from the user:</p>
 <script src="https://gist.github.com/roelofjan-elsinga/39cc6df5483622bdcbf27c9307b2b8c6.js"></script>
-<p>You can see that we define two flags for our application. One of the flags is called message and the other is called number. Again, these names are up to you and your needs. We define the type of the flags (flag.Int, flag.String), enter a name of the flag, the default value, and a helpful message about what this flag means.</p>
+<p>You can see that we define two flags for our application. One of the flags is called &quot;message&quot; and the other is called number. Again, these names are up to you and your needs. We define the type of flags (flag.Int, flag.String), enter the name of the flag, the default value, and a helpful message about what this flag means.</p>
 <p>Now that we've added the help messages, we can run a help command:</p>
 <pre><code class="language-bash">go run main.go --help</code></pre>
 <p>This will return the possible flags you can use on this command:</p>
@@ -572,7 +572,7 @@ It's connecting other ser]]></summary>
   -number int
     The number you'd like to add to your message (default 1)
 exit status 2</code></pre>
-<p>This is helpful in case you ever need to run your binary, but don't have the source code to look at. It's also great for distributing your application because you can tell the user which options are available. At the bottom of the main function, you can see that I'm passing the message variable like so: *message. This is because the message variable doesn't actually have a value, but it's a pointer to a place in memory. By adding the asterisk in front of it, you retrieve the value from memory and you can print it to the terminal like a normal string. The other variable, number, is passed to the Println method like &quot;strconv.Itoa(*number)&quot; because the value of *number is an int and not a string. Since Go is a strictly typed language, you'll need to convert it to a string before you can do any string concatenation.</p>
+<p>This is helpful in case you ever need to run your binary but don't have the source code to look at. It's also great for distributing your application because you can tell the user which options are available. At the bottom of the main function, you can see that I'm passing the message variable like so: *message. This is because the message variable doesn't actually have a value, but it's a pointer to a place in memory. By adding the asterisk in front of it, you retrieve the value from memory and you can print it to the terminal like a normal string. The other variable, number, is passed to the Println method like &quot;strconv.Itoa(*number)&quot; because the value of *number is an int and not a string. Since Go is a strictly typed language, you'll need to convert it to a string before you can do any string concatenation.</p>
 <p>So now that we can run the application like before, without the flags, and see a new text show up:</p>
 <pre><code class="language-bash">go run main.go</code></pre>
 <p><strong>Shows</strong>: &quot;This is the message you want to display: Hello, World! with number 1&quot;</p>
@@ -588,7 +588,7 @@ exit status 2</code></pre>
 <pre><code class="language-json">{
     "message": "This is a message from the source file"
 }</code></pre>
-<p>After parsing the flags, we read the contents of the source file by using ioutil.ReadFile(*sourceFile). This returns the data in bytes and also an error if something went wrong. If there was an error we display an error message in the terminal to notify the consumer of the application that something went wrong while reading the source file. Perhaps you didn't have a source file. If that's the case, the application let's you know by showing this message:</p>
+<p>After parsing the flags, we read the contents of the source file by using ioutil.ReadFile(*sourceFile). This returns the data in bytes and also an error if something went wrong. If there was an error we display an error message in the terminal to notify the consumer of the application that something went wrong while reading the source file. Perhaps you didn't have a source file. If that's the case, the application lets you know by showing this message:</p>
 <pre><code class="language-bash">go run main.go --source src.json</code></pre>
 <p><strong>Shows</strong>: &quot;Found an error while reading the source file: open src.json: no such file or directory&quot;</p>
 <p>After displaying the message we make sure to exit the application because we don't have all the information we need to continue. By returning exit code 1, we make sure the terminal knows something went wrong. Now that we know we have the contents of the file in memory, we can write it to the target file by using &quot;ioutil.WriteFile()&quot;, passing the target filename, the file contents, and the proper file permissions. </p>
@@ -597,11 +597,11 @@ exit status 2</code></pre>
 <p><strong>Shows</strong>: &quot;Copied the contents of source.json to target.json&quot;</p>
 <p>You should now have a new file called target.json with the same contents as the source.json file. This is a very simple example, but you can see how you can capture the user input and using it to perform some kind of action based on that input. The number of different applications you can make with something simple as these input flags is as big as your imagination.</p>
 <h2>Conclusion</h2>
-<p>Writing CLI applications doesn't have to be difficult. Whether you write shell scripts, Node.js, PHP, or Go, they offer developers a very wide range of possibilities. CLI applications can make your life a lot easier by writing all kinds of automations in a lot of different environments. This post was all about writing CLI applications in Go, because it's expressive, you can compile it to a binary, and the execution of these automations is very fast.</p>
-<p>Now that we've covered the basics of building a CLI application in Go, the types of applications and options you offer to configure these applications is endless. For example: you could build an application where you perform certain tasks while offering the user to skip some of the tasks. This is all up to what you want and need to do. I hope this post showed you some new things that you could use to start writing your own CLI applications in Go.</p>
+<p>Writing CLI applications doesn't have to be difficult. Whether you write shell scripts, Node.js, PHP, or Go, they offer developers a very wide range of possibilities. CLI applications can make your life a lot easier by writing all kinds of automations in a lot of different environments. This post was all about writing CLI applications in Go because it's expressive, you can compile it to a binary, and the execution of these automations is very fast.</p>
+<p>Now that we've covered the basics of building a CLI application in Go, the types of applications and options you offer to configure these applications are endless. For example, you could build an application where you perform certain tasks while offering the user to skip some of the tasks. This is all up to what you want and what your needs are. I hope this post showed you some new things that you could use to start writing your own CLI applications in Go.</p>
 <p>If you'd like to talk more about this you can contact me on <a href="https://twitter.com/RJElsinga">Twitter</a>.</p>]]></content>
                     <summary><![CDATA[CLI applications are very useful for performing tasks and automations in many different environments. In this post I go over how you can get started writing applications like this in Go.]]></summary>
-                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="756" />
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>Building my personal cloud after 4 years</title>
@@ -1091,6 +1091,26 @@ CMD service nginx start</code></pre>
 <p>I've written this post because I like to keep myself up-to-date about my progress in skills. I've seen great gains in my programming skills since I've started to write blog posts and this motivates me to keep learning. </p>]]></content>
                     <summary><![CDATA[I've taken the first steps in working with event sourcing and in particular, event sourcing in PHP. It's a very confusing concept, but once I got the gist of it, I was convinced of its value.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Getting a 73% increase in clicks from Google results</title>
+                    <link href="https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results"/>
+                    <id>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</id>
+                    <updated>2020-05-24T16:31:53+02:00</updated>
+                    <published>2020-05-24T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/search-performance-for-plant-care-for-beginners.png" alt="Google search console for Plant care for beginners" /></p>
+<h1>Getting a 73% increase in clicks from Google results</h1>
+<p>Two weeks ago I published a post about my own implementation of technical SEO for a project of mine, called: <a href="/articles/technical-seo-how-to-add-structured-data-to-your-website">Technical SEO: How to add structured data to your website</a>. This was the header image of that post:</p>
+<p><img src="/images/articles/original-google-search-console-for-plant-care-for-beginners.png" alt="Original Google search console for Plant care for beginners" /></p>
+<p>That was an actual screenshot of the numbers in the Google Search console for one of my projects over the last 3 months at that time. Since implementing Structured Data on that website 3 weeks ago, I've noticed that I was getting a lot more clicks. This is what it looks like right now, keep in mind, this is a difference of 3 weeks:</p>
+<p><img src="/images/articles/new-google-search-console-for-plant-care-for-beginners.png" alt="New Google search console for Plant care for beginners" /></p>
+<p>That by itself is an increase of 73.28% of clicks on Google. Now the interesting part: Adding structured data, in particular FAQ items, shows a huge increase in clicks for that same time frame. From 0 to 1.8k in 2-3 weeks:</p>
+<p><img src="/images/articles/faq-rich-results-in-google-search-console.png" alt="FAQ rich results in Google Search Console" /></p>
+<p>Those are the numbers for &quot;Search appearance: FAQ rich results&quot;. That same timespan, since initially implementing FAQ structured data into the website, I've got an additional 1.8K clicks. Helping Google understand your website better and providing answers to FAQs directly in the search results works. At least, in my case, it works. Here's a screenshot of one of those results, including FAQs in Google.</p>
+<p><img src="/images/articles/google-search-results-for-faq-items.png" alt="Google search results for FAQ items" /></p>
+<p>This is not to say that this will have the same impact on your websites because your site might have a lot of clicks already and getting a 73% increase is just not possible. It could be that you have a lot of competition for certain keywords, again this will slow down the number of extra clicks you're getting. This website is located in a niche, but it doesn't take away what a huge impact adding structured data, in particular FAQ items, had on the SEO results.</p>]]></content>
+                    <summary><![CDATA[Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 46% increase in clicks from Google results. Find out what I learned.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>GitHub Pages: Static web hosting made simple</title>
