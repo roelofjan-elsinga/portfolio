@@ -12,8 +12,11 @@
         </p>
 
         <p class="pt-8">
-            <span class="text-lg sm:text-xl inline-block mb-4">Send me a message: </span> <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
-               class="text-lg sm:text-xl font-bold link inline-block">hello@roelofjanelsinga.com</a>
+            <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
+               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+                <span class="fas fa-envelope"></span>
+                Contact me
+            </a>
 
             @include('blocks.contact_confirmation')
         </p>

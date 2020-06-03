@@ -3,18 +3,21 @@ title: 'Algemene voorwaarden'
 description: 'Algemene voorwaarden voor Roelof Jan Elsinga'
 summary: 'Algemene voorwaarden voor Roelof Jan Elsinga'
 template_name: 'flatfilecmsgui::templates.default'
-update_date: '2019-10-26 13:06:59'
+update_date: '2020-06-03 10:35:19'
 in_menu: false
 is_homepage: false
-image: ''
+image: 'https://roelofjanelsinga.com/images/logo/logo_banner.jpg'
 category: home
 menu_name: ''
 post_date: ''
 is_published: true
 is_scheduled: false
 url: /algemene-voorwaarden
+meta_data: null
+author: null
+canonical: ''
+keywords: null
 ---
-
 # Algemene voorwaarden
 
 ### Artikel 1: Definities

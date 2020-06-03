@@ -3,18 +3,21 @@ title: 'The techstack I used to build this website'
 description: 'On this page I explain how I''ve built my portfolio website in detail, including links to the techniques used.'
 summary: 'On this page I explain how I''ve built my portfolio website in detail, including links to the techniques used.'
 template_name: public
-update_date: '2019-09-14 15:36:04'
+update_date: '2020-06-03 10:35:11'
 in_menu: false
 is_homepage: false
-image: ''
+image: 'https://roelofjanelsinga.com/images/logo/logo_banner.jpg'
 category: home
 menu_name: ''
 post_date: ''
 is_published: true
 is_scheduled: false
 url: /how-i-built-this-website
+meta_data: null
+author: null
+canonical: ''
+keywords: null
 ---
-
 ## The techstack I used to build this website
 
 I've built this website with a few different technologies. Some of them I use more often than others:
