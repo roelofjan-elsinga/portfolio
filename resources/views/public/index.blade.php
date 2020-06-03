@@ -44,8 +44,13 @@
 
         </div>
 
-        <a href="{{ route('public.work') }}"
-           class="text-xl font-bold pt-8 link link--underline inline-block">View more projects</a>
+        <div class="flex justify-center mt-8">
+            <a href="{{ route('public.work') }}"
+               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+                View more projects
+            </a>
+        </div>
+
     </div>
 
     <div class="view-article paragraph-spacing my-32 text-lg">
@@ -72,8 +77,12 @@
             @endforeach
         </div>
 
-        <a href="{{ route('articles') }}"
-           class="text-xl font-bold pt-8 link link--underline inline-block">View more blog posts</a>
+        <div class="flex justify-center mt-8">
+            <a href="{{ route('articles') }}"
+               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+                View more blog posts
+            </a>
+        </div>
 
     </section>
 
@@ -99,8 +108,12 @@
 
         </div>
 
-        <a href="{{ route('public.open_source') }}"
-           class="text-xl font-bold pt-8 link link--underline inline-block">View more open source contributions</a>
+        <div class="flex justify-center mt-8">
+            <a href="{{ route('public.open_source') }}"
+               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+                View more open source contributions
+            </a>
+        </div>
     </section>
 
     <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
