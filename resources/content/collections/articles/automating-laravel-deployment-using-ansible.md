@@ -1,10 +1,11 @@
 ---
 description: 'Deploying changes to your websites is often a very repetitive task. Repetition means you can automate the entire process. To do this, you can use Ansible, because it''s easy to set up and doesn''t require any special software on the remote machine.'
 post_date: '2020-06-07'
-is_published: false
+is_published: true
 is_scheduled: false
-update_date: '2020-06-07 17:17:58'
+update_date: '2020-06-07 17:28:36'
 ---
+
 # Automating Laravel deployment using Ansible
 
 If you, like me, have been deploying changes manually to any of your websites consistently for months, if not years, you know that this is a repetitive task. Usually, you pull your changes from your version control system (VCS), run a few tasks to install production dependencies and/or compile them, cache your configuration, and reload some kind of service. It's usually the same few steps with a few optional steps, in case you need to run database migrations for example.

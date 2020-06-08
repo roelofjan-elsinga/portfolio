@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Sun, 24 May 2020 14:31:55 GMT</pubDate>
+              <pubDate>Sun, 07 Jun 2020 15:28:38 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -87,6 +87,16 @@ you have to ask questions, a lot o (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_mJ-ox89d-Xd-lTW9xUKKDQ.png" medium="image" type="image/png" width="800" height="400"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Deploying changes to your websites is often a very repetitive task. Repetition means you can automate the entire process. To do this, you can use Ansible, because it's easy to set up and doesn't require any special software on the remote machine. (...)</description>
+                    <title>Automating Laravel deployment using Ansible</title>
+                    <link>https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible</link>
+                    <guid>https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible</guid>
+                    
+                    <pubDate>Sun, 07 Jun 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>People keep asking about which framework to use (Angular, React, or VueJS),
 and which one is better. I can understand they want to know which one to use for
@@ -263,7 +273,7 @@ everything we need it to do. People can say that tools are interchangea (...)</d
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
-<item><description>Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 46% increase in clicks from Google results. Find out what I learned. (...)</description>
+<item><description>Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 73% increase in clicks from Google results. Find out what I learned. (...)</description>
                     <title>Getting a 73% increase in clicks from Google results</title>
                     <link>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</link>
                     <guid>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</guid>

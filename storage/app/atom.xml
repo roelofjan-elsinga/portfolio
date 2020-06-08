@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-05-24T16:31:55+02:00</updated>
+              <updated>2020-06-07T17:28:38+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -393,6 +393,34 @@ stories of others regarding this amazing operating system.</p>]]></content>
 <h1>Apache Solr tips for beginners like me</h1>]]></content>
                     <summary><![CDATA[]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/1_mJ-ox89d-Xd-lTW9xUKKDQ.png" medium="image" type="image/png" width="800" height="400" />
+                  </entry>
+<entry>
+                    <title>Automating Laravel deployment using Ansible</title>
+                    <link href="https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible"/>
+                    <id>https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible</id>
+                    <updated>2020-06-07T17:28:36+02:00</updated>
+                    <published>2020-06-07T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<h1>Automating Laravel deployment using Ansible</h1>
+<p>If you, like me, have been deploying changes manually to any of your websites consistently for months, if not years, you know that this is a repetitive task. Usually, you pull your changes from your version control system (VCS), run a few tasks to install production dependencies and/or compile them, cache your configuration, and reload some kind of service. It's usually the same few steps with a few optional steps, in case you need to run database migrations for example.</p>
+<h2>What is Ansible?</h2>
+<p>You know that if something is repetitive, you can automate it. This is where Ansible comes in. Originally, Ansible is a tool to help with server orchestration and repeat tasks reliably on an infinite amount of servers. The best part of Ansible is that you don't need to install anything on your remote machines. The only requirement is that you need to be able to connect to your remote machine through SSH. If you can do that, you can use Ansible.</p>
+<p>You could compare Ansible to a large bash script that runs commands on the remote machine through SSH. The main difference between these two is that Ansible makes everything much easier and has built-in modules for abstracting many tasks. Pulling changes from GitHub, specifying only a repository and a destination folder is one of these modules. It makes writing tasks much quicker and easier. </p>
+<h2>Why is Ansible useful?</h2>
+<p>I mentioned that Ansible is originally used for server orchestration. As Ansible is essentially an easy to manage bash file, you can make it do anything you want to. This includes using it for deploying your websites, be it one 1 or 1000 servers. As long as you can use SSH on all of those servers, you can deploy on all of them. </p>
+<p>As most of my websites are built using Laravel, I'll provide a simple configuration to deploy your Laravel website to your server, migrate your database, cache your configuration, and clear your views cache. This is very basic, but it's a starting point. This is not a tutorial, because frankly, I've just started out with using Ansible. </p>
+<h2>The basic configuration</h2>
+<script src="https://gist.github.com/roelofjan-elsinga/84bf1c1fa58ecfa95e18a5174bdd0f14.js"></script>
+<p>Then you'll need to create the secrets.yml file, you can use ansible vault:</p>
+<pre><code class="language-bash">ansible-vault create secrets.yml</code></pre>
+<p>Then fill it with these pieces of information:</p>
+<pre><code class="language-yaml">github_user: your_username
+github_token: your_github_access_token</code></pre>
+<p>To edit this file, you can use the following command</p>
+<pre><code class="language-bash">ansible-vault edit secrets.yml</code></pre>
+<p>This is still something I'm learning, so that's why this is not a full-on tutorial. But by putting this out there, I've already learned a lot of new things about using Ansible.</p>
+<p>There will definitely be more content about Ansible, because I'm already loving how easy it is and how many modules are built-in. When I know more about how it works in-depth, I will write a tutorial for it.</p>]]></content>
+                    <summary><![CDATA[Deploying changes to your websites is often a very repetitive task. Repetition means you can automate the entire process. To do this, you can use Ansible, because it's easy to set up and doesn't require any special software on the remote machine.]]></summary>
+                    
                   </entry>
 <entry>
                     <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
@@ -1096,7 +1124,7 @@ CMD service nginx start</code></pre>
                     <title>Getting a 73% increase in clicks from Google results</title>
                     <link href="https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results"/>
                     <id>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</id>
-                    <updated>2020-05-24T16:31:53+02:00</updated>
+                    <updated>2020-05-24T16:32:19+02:00</updated>
                     <published>2020-05-24T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/search-performance-for-plant-care-for-beginners.png" alt="Google search console for Plant care for beginners" /></p>
 <h1>Getting a 73% increase in clicks from Google results</h1>
@@ -1109,7 +1137,7 @@ CMD service nginx start</code></pre>
 <p>Those are the numbers for &quot;Search appearance: FAQ rich results&quot;. That same timespan, since initially implementing FAQ structured data into the website, I've got an additional 1.8K clicks. Helping Google understand your website better and providing answers to FAQs directly in the search results works. At least, in my case, it works. Here's a screenshot of one of those results, including FAQs in Google.</p>
 <p><img src="/images/articles/google-search-results-for-faq-items.png" alt="Google search results for FAQ items" /></p>
 <p>This is not to say that this will have the same impact on your websites because your site might have a lot of clicks already and getting a 73% increase is just not possible. It could be that you have a lot of competition for certain keywords, again this will slow down the number of extra clicks you're getting. This website is located in a niche, but it doesn't take away what a huge impact adding structured data, in particular FAQ items, had on the SEO results.</p>]]></content>
-                    <summary><![CDATA[Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 46% increase in clicks from Google results. Find out what I learned.]]></summary>
+                    <summary><![CDATA[Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 73% increase in clicks from Google results. Find out what I learned.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
