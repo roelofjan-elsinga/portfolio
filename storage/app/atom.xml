@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-06-07T17:28:38+02:00</updated>
+              <updated>2020-06-08T14:54:56+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -398,9 +398,10 @@ stories of others regarding this amazing operating system.</p>]]></content>
                     <title>Automating Laravel deployment using Ansible</title>
                     <link href="https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible"/>
                     <id>https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible</id>
-                    <updated>2020-06-07T17:28:36+02:00</updated>
+                    <updated>2020-06-08T14:43:04+02:00</updated>
                     <published>2020-06-07T12:00:00+02:00</published>
-                    <content type="html"><![CDATA[<h1>Automating Laravel deployment using Ansible</h1>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/ansible-logo.jpg" alt="Ansible Logo" /></p>
+<h1>Automating Laravel deployment using Ansible</h1>
 <p>If you, like me, have been deploying changes manually to any of your websites consistently for months, if not years, you know that this is a repetitive task. Usually, you pull your changes from your version control system (VCS), run a few tasks to install production dependencies and/or compile them, cache your configuration, and reload some kind of service. It's usually the same few steps with a few optional steps, in case you need to run database migrations for example.</p>
 <h2>What is Ansible?</h2>
 <p>You know that if something is repetitive, you can automate it. This is where Ansible comes in. Originally, Ansible is a tool to help with server orchestration and repeat tasks reliably on an infinite amount of servers. The best part of Ansible is that you don't need to install anything on your remote machines. The only requirement is that you need to be able to connect to your remote machine through SSH. If you can do that, you can use Ansible.</p>
@@ -420,7 +421,7 @@ github_token: your_github_access_token</code></pre>
 <p>This is still something I'm learning, so that's why this is not a full-on tutorial. But by putting this out there, I've already learned a lot of new things about using Ansible.</p>
 <p>There will definitely be more content about Ansible, because I'm already loving how easy it is and how many modules are built-in. When I know more about how it works in-depth, I will write a tutorial for it.</p>]]></content>
                     <summary><![CDATA[Deploying changes to your websites is often a very repetitive task. Repetition means you can automate the entire process. To do this, you can use Ansible, because it's easy to set up and doesn't require any special software on the remote machine.]]></summary>
-                    
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>The battle of apples and oranges: Angular vs React vs VueJS</title>
