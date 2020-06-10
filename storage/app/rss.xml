@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Mon, 08 Jun 2020 12:54:56 GMT</pubDate>
+              <pubDate>Wed, 10 Jun 2020 14:44:41 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -77,6 +77,16 @@ you have to ask questions, a lot o (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_2YOcp3G2ZLewVVIl.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Ansible has several ways of performing tasks: Tasks, Roles, and Handlers. Each has a different use case and in this post, I go over what each of them does and how you can use them. (...)</description>
+                    <title>Ansible: Tasks vs Roles vs Handlers</title>
+                    <link>https://roelofjanelsinga.com/articles/ansible-difference-between-tasks-and-roles</link>
+                    <guid>https://roelofjanelsinga.com/articles/ansible-difference-between-tasks-and-roles</guid>
+                    
+                    <pubDate>Wed, 10 Jun 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description> (...)</description>
                     <title>Apache Solr tips for beginners like me</title>

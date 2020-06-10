@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-06-08T14:54:56+02:00</updated>
+              <updated>2020-06-10T16:44:41+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -382,6 +382,57 @@ stories of others regarding this amazing operating system.</p>]]></content>
 <p>If you have any questions, or better, suggestions on how I can make this process easier for you and me, please leave a comment. I'd love to help you out or learn from your experiences undertaking this hellish upgrade! If you'd like to read more about my struggles with Angular and SEO, have a look at: How to index a single page application built in AngularJS.</p>]]></content>
                     <summary><![CDATA[After 2.5 years it's finally time to make this happen! We're upgrading an AngularJS application to Angular (v6+). Follow along and by the end you'll have a working hybrid application.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_2YOcp3G2ZLewVVIl.jpeg" medium="image" type="image/jpeg" width="800" height="533" />
+                  </entry>
+<entry>
+                    <title>Ansible: Tasks vs Roles vs Handlers</title>
+                    <link href="https://roelofjanelsinga.com/articles/ansible-difference-between-tasks-and-roles"/>
+                    <id>https://roelofjanelsinga.com/articles/ansible-difference-between-tasks-and-roles</id>
+                    <updated>2020-06-10T16:44:40+02:00</updated>
+                    <published>2020-06-10T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/ansible-logo.jpg" alt="Ansible Logo" /></p>
+<h1>Ansible: Tasks vs Roles vs Handlers</h1>
+<p>Running tasks in Ansible can be done in different ways and this can be very confusing for those starting out with automation and server orchestration. In this post, I'll explain the difference and why you should use one or the other for certain situations. If I had this post when I started with Ansible it would've saved me hours of researching, so hopefully this helps you.</p>
+<h2>Tasks</h2>
+<p>Tasks are...well tasks. They are specific to a workflow, called playbooks, in Ansible. If you read my post from last week, <a href="https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible">Automating Laravel deployment using Ansible</a>, you would have seen the configuration I shared at the bottom of that post. This configuration used tasks. These tasks are specific to that specific playbook and can't be shared with other playbooks. This is something you should use roles for.</p>
+<p>An advantage of using tasks rather than roles or handlers is that you have the details of the tasks in the same file as the entire playbook. You can quickly see what your entire playbook will do when you execute it. This is great for smaller playbooks, like the playbook I shared, but gets tough to understand when the playbook gets longer. This is where roles might offer a way out.</p>
+<h2>Roles</h2>
+<p>Roles are a collection of tasks that are grouped under a common name. If we use the configuration that I shared last week, we can convert that into a playbook with roles, rather than tasks. This would look like the configuration below.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/25952857fffcef0e39ccc1ca693d8268.js"></script>
+<p>This configuration has the role &quot;deploy_laravel_app&quot;. To understand what's happening here, I need to give you the folder structure:</p>
+<pre><code>├── deploy_laravel_app
+│   ├── handlers
+│   │   └── main.yml
+│   └── tasks
+│       └── main.yml
+└── playbook.yml</code></pre>
+<p>Here you can see the &quot;playbook.yml&quot; we're using above and a folder called &quot;deploy_laravel_app&quot;. The folder name determines the name of the role in the playbook. The role contains two folder, handlers and tasks. We'll focus on handlers in the next section, but for now we'll focus on the tasks folder. This folder contains a main.yml. This is the default filename ansible will look for when trying to find tasks for a specific role.</p>
+<p>The main.yml contains the following configuration:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/6f2f6d872dd079719dd187e85b89a350.js"></script>
+<p>Here you can see 2 new things that we haven't seen in the configurations yet. The &quot;when&quot; attribute of the tasks from the previous blog post is missing and instead we have the &quot;notify&quot; attribute. These two attributes do the same thing in the sense that they are both running tasks, but only if the status of the task is &quot;changed&quot; instead of &quot;OK&quot;. In other words, this means that the tasks in &quot;notify&quot; are only executed when the task makes a change to the state of the application. In this case, if we pull new changes from Git, only then will those tasks be performed. The difference between the &quot;when&quot; and &quot;notify&quot; attribute however is this: The when attribute is registered on a task, which means the order of execution won't change. The tasks that are executed under the &quot;notify&quot; attribute are handlers. Handlers are executed after all other tasks have been performed.</p>
+<p>The order of execution then looks like this:</p>
+<ol>
+<li>Tasks</li>
+<li>Roles</li>
+<li>Handlers</li>
+</ol>
+<p>So if you have multiple roles that each call different handlers, all roles will perform their tasks first and then all the handlers that need to be executed. </p>
+<p>The advantage of using roles rather than tasks is that the playbook stays small, but you're also creating reusable processes that can be added to multiple playbooks. The use of variables is very important in this case. The disadvantage is that you won't be able to see what the playbook is actually running and in which other the different tasks are executed. You have to look through multiple directories to be able to figure out what is running at which point in time.</p>
+<h2>Handlers</h2>
+<p>Handlers are tasks, but they're executed at the very end of the playbook. If you were to compare this to a JavaScript execution cycle, you could say that handlers are additional tasks that are appended to the task list, not executed in between two other tasks. In the previous section, I showed you the folder structure we're using. Now lets see what's inside of the main.yml in the handlers folder.</p>
+<script src="https://gist.github.com/roelofjan-elsinga/def7668a00525601342d7b044c5fc300.js"></script>
+<p>This looks like the tasks from the configuration from <a href="https://roelofjanelsinga.com/articles/automating-laravel-deployment-using-ansible">Automating Laravel deployment using Ansible</a>. The only difference is that the names are identical to the names used in the &quot;notify&quot; section of the task in the role. These are seen as unique identifiers within the role and it uses the name to figure out which handlers to run.</p>
+<p>The advantages of handlers is that you can very easily perform certain tasks and &quot;schedule&quot; a cleanup command for example. That way it's not something that'll get in the way of executing the main tasks, but it's also not something you're going to forget.</p>
+<p>The biggest disadvantage for me personally is that you're not able to give the handlers a descriptive name like you can for the roles and tasks. </p>
+<h2>Conclusion</h2>
+<p>There are several ways to perform tasks with Ansible: Tasks, Roles, and Handlers. They all have a different use case and they each have their advantages and disadvantages.</p>
+<ul>
+<li>Tasks: clear overview of the tasks to be executed, but could get difficult to understand with longer playbooks.</li>
+<li>Roles: reusable tasks that can schedule other tasks, but it's more difficult to figure out which tasks are performed.</li>
+<li>Handlers: Simple tasks to be performed at the end, but you can't give them a nice and descriptive name.</li>
+</ul>
+<p>I hope this post helped you to understand the difference between the ways you can perform actions in an Ansible playbook. It took me hours to figure out what the difference was and how each of them worked, so I hope this cleared that up.</p>]]></content>
+                    <summary><![CDATA[Ansible has several ways of performing tasks: Tasks, Roles, and Handlers. Each has a different use case and in this post, I go over what each of them does and how you can use them.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>Apache Solr tips for beginners like me</title>
