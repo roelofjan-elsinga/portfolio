@@ -67,6 +67,8 @@
         <meta name="msapplication-config" content="{{ asset('images/icons/browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
 
+        <meta name="monetization" content="$ilp.uphold.com/e477riXGedj9">
+
         <!-- Bootstrap -->
         @section('stylesheets')
             <link rel="preload" href="{{ mix('css/front.css') }}" as="style">
