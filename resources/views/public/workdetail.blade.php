@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <div class="articles-page py-8 sm:py-0">
+    <div class="articles-page py-8 sm:py-0 max-w-md mx-auto">
 
         <main class="view-article paragraph-spacing">
 
