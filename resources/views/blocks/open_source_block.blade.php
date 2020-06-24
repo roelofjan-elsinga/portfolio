@@ -1,4 +1,4 @@
-<article class="flex-1 border p-4 m-2 rounded shadow flex flex-col hover:shadow-md duration-200" style="transition-duration: 0.2s">
+<article class="border p-4 rounded shadow flex flex-col hover:shadow-md duration-200" style="transition-duration: 0.2s">
 
     <a href="{{$project->github_url}}" target="_blank" class="text-theme-darkest no-underline">
 

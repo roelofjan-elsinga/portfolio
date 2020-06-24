@@ -28,19 +28,15 @@
 
         <div class="mt-12">
 
-            @foreach($works->chunk(2) as $items)
+            <div class="grid md:grid-cols-2 gap-4">
 
-                <div class="items block md:flex -mx-2">
+                @foreach($works as $project)
 
-                    @foreach($items as $project)
+                    @include('blocks.project_block', ['project' => $project])
 
-                        @include('blocks.project_block', ['project' => $project])
+                @endforeach
 
-                    @endforeach
-
-                </div>
-
-            @endforeach
+            </div>
 
         </div>
 
@@ -70,11 +66,15 @@
         {!! Block::get('articles_homepage') !!}
 
         <div class="mt-12">
-            @foreach($blog_posts as $article)
+            <div class="items block grid md:grid-cols-2 md:gap-4 -mx-2">
 
-                @include('blocks.article_preview', ['article' => $article])
+                @foreach($blog_posts as $article)
 
-            @endforeach
+                    @include('blocks.article_preview', ['article' => $article])
+
+                @endforeach
+
+            </div>
         </div>
 
         <div class="flex justify-center mt-8">
@@ -92,19 +92,15 @@
 
         <div class="mt-12">
 
-            @foreach($projects->chunk(2) as $items)
+            <div class="grid md:grid-cols-2 md:grid-rows-2 gap-4">
 
-                <div class="items block md:flex -mx-2">
+                @foreach($projects as $project)
 
-                    @foreach($items as $project)
+                    @include('blocks.open_source_block', ['project' => $project])
 
-                        @include('blocks.open_source_block', ['project' => $project])
+                @endforeach
 
-                    @endforeach
-
-                </div>
-
-            @endforeach
+            </div>
 
         </div>
 

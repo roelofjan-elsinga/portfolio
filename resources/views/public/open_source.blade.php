@@ -15,19 +15,15 @@
             {!! Block::get('open_source_page') !!}
         </div>
 
-        @foreach($projects->chunk(2) as $items)
+        <div class="grid md:grid-cols-2 md:grid-rows-2 gap-4">
 
-            <div class="items block md:flex -mx-2">
+            @foreach($projects as $project)
 
-                @foreach($items as $project)
+                @include('blocks.open_source_block', ['project' => $project])
 
-                    @include('blocks.open_source_block', ['project' => $project])
+            @endforeach
 
-                @endforeach
-
-            </div>
-
-        @endforeach
+        </div>
 
     </div>
 

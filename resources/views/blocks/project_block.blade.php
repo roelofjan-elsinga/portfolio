@@ -1,4 +1,4 @@
-<div class="flex-1 border m-2 rounded shadow flex flex-col hover:shadow-md" style="transition-duration: 0.2s">
+<div class="border rounded shadow flex flex-col hover:shadow-md" style="transition-duration: 0.2s">
     <a class="text-theme-darkest no-underline" href="{{$project->url}}">
         <img src="{{$project->thumbnail_url ?? $project->image_url}}" alt="{{$project->image_alt}}" class="mt-4" />
 

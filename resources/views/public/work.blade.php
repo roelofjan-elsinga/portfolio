@@ -16,19 +16,15 @@
         </div>
 
         <div class="items">
-            @foreach($works->chunk(2) as $items)
+            <div class="grid md:grid-cols-2 gap-4">
 
-                <div class="items block md:flex -mx-2">
+                @foreach($works as $project)
 
-                    @foreach($items as $project)
+                    @include('blocks.project_block', ['project' => $project])
 
-                        @include('blocks.project_block', ['project' => $project])
+                @endforeach
 
-                    @endforeach
-
-                </div>
-
-            @endforeach
+            </div>
         </div>
 
     </div>
