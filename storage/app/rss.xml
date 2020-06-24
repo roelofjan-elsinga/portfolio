@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 10 Jun 2020 14:44:41 GMT</pubDate>
+              <pubDate>Wed, 24 Jun 2020 12:43:21 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -909,6 +909,16 @@ We don't move as much as we probably should. So many of us are probably not as h
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>What is an easy way to speed up your page loads? Serving your images in the proper size is one of the things you can do. But, there's more. Find out what you can do to reduce the loading times for your pages with 1 simple trick. (...)</description>
+                    <title>Technical SEO: Improving your page loads with properly sized images</title>
+                    <link>https://roelofjanelsinga.com/articles/technical-seo-improving-your-page-loads-with-properly-sized-images</link>
+                    <guid>https://roelofjanelsinga.com/articles/technical-seo-improving-your-page-loads-with-properly-sized-images</guid>
+                    
+                    <pubDate>Wed, 24 Jun 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bandwidth-usage-in-gumlet.png" medium="image" type="image/png" width="564" height="357"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Burnouts are very common among creatives. Find out how I managed to reduce its effects and how I'm managing to keep it at bay now. Hint: Take back your time. (...)</description>
                     <title>The elephant in the room: burnouts</title>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-06-10T16:44:41+02:00</updated>
+              <updated>2020-06-24T14:43:21+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -3807,6 +3807,38 @@ We don't move as much as we probably should. So many of us are probably not as h
 <p>If you have any questions about this post, you can read out to me on <a href="https://twitter.com/RJElsinga">Twitter</a> and I'll do my best to guide you to implement structured data on your website.</p>]]></content>
                     <summary><![CDATA[SEO is very important to help people to find your website. To help Google understand the content of your website you can use Structured data to provide more context about your website and individual pages. In this post we go over how you can implement this in your website.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/search-performance-for-plant-care-for-beginners.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>Technical SEO: Improving your page loads with properly sized images</title>
+                    <link href="https://roelofjanelsinga.com/articles/technical-seo-improving-your-page-loads-with-properly-sized-images"/>
+                    <id>https://roelofjanelsinga.com/articles/technical-seo-improving-your-page-loads-with-properly-sized-images</id>
+                    <updated>2020-06-24T14:43:18+02:00</updated>
+                    <published>2020-06-24T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/bandwidth-usage-in-gumlet.png" alt="Bandwidth usage in Gumlet" /></p>
+<h1>Technical SEO: Improving your page loads with properly sized images</h1>
+<p>We all know that we should use properly sized images instead of using full-size images and making them smaller with HTML or CSS. Full-size images are larger in size, sometimes megabytes instead of a few kilobytes. When you're loading a page, this makes the load times take much longer, because all that information has to be served to the client. Using properly sized images, you're only serving what you need to. This could reduce your giant 5 megabyte image down to just a few kilobytes. Your page loads much faster, especially on mobile devices and Wi-Fi.</p>
+<p>Only serving smaller images is half the battle though, there is still more you can do. Most latest browsers now support WebP images. This is a modern image format that is much smaller than png's and even jpg's. What if you could automatically resize your images to the proper size and serve your images in the smallest possible format to your clients? Well, there is a solution for that: Gumlet.</p>
+<h2>Setting up Gumlet</h2>
+<p>Using Gumlet to serve your images is easy. When creating an account, you can add a new source. A source in this case is a website. If you're hosting your own images, all you need to do to create a source is:</p>
+<ul>
+<li>Set the source type to &quot;Web Folder&quot;</li>
+<li>Set the Base URL to &quot;<a href="https://my-domain.com">https://my-domain.com</a>&quot;</li>
+<li>Choose a subdomain for Gumlet.</li>
+</ul>
+<p>What this does is proxy the request you make to Gumlet to your own webserver. In the next step, we'll go over how this works. If you're not hosting any of your own image, you're using S3 for example, then you can select another source in the &quot;Source type&quot; dropdown and complete the steps from there.</p>
+<h2>How does it work?</h2>
+<p>In the previous step you've set up your image serving subdomain with Gumlet. In this step, I'm going to show you an example of how Gumlet serves image for your website. Imagine you have the following URL for an image:</p>
+<pre><code class="language-html">&lt;img src="https://my-domain.com/images/banner.jpg"</code></pre>
+<p>This image is 1200px by 800px.</p>
+<p>To be able to take advantage of the compressing and resizing of the image we first need to determine what the size of the image ideally should be. As an example, we can determine that the image should be 300px by 200px. To tell Gumlet we want the compress image in that format, we can update the URL of the image to this:</p>
+<pre><code class="language-html">&lt;img src="https://my-domain.gumlet.io/images/banner.jpeg?w=300&amp;h=200"</code></pre>
+<p>This will request the image from the Gumlet CDN. Gumlet, in turn, will fetch the image from the &quot;Base URL&quot; you set earlier, using the path you specified. This means Gumlet will request the image from your specified location, resize it, and compress it. Most likely you'll save more than 60% on file size and all of your images will now be of the webp format. </p>
+<p>This is the result of using Gumlet for a week on <a href="https://plantcareforbeginners.com">Plant care for Beginners</a>:</p>
+<p><img src="/images/articles/usage-in-gumlet-after-1-week.png" alt="Bandwidth savings in Gumlet" /></p>
+<h2>Conclusion</h2>
+<p>Now that you've set up Gumlet and update the image sources, you'll now see much faster page loads and properly sized images on your website. This relatively simple improvement could give your SEO a serious boost, especially if your website has a lot of images and has been slow because of this. </p>]]></content>
+                    <summary><![CDATA[What is an easy way to speed up your page loads? Serving your images in the proper size is one of the things you can do. But, there's more. Find out what you can do to reduce the loading times for your pages with 1 simple trick.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/bandwidth-usage-in-gumlet.png" medium="image" type="image/png" width="564" height="357" />
                   </entry>
 <entry>
                     <title>The elephant in the room: burnouts</title>
