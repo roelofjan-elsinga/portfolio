@@ -8,11 +8,12 @@
     "license": "MIT",
     "type": "website",
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-json": "*",
         "ext-dom": "*",
         "ext-curl": "*",
         "ext-zip": "*",
+        "ext-simplexml": "*",
         "laravel/framework": "^6.0",
         "symfony/translation": "4.3.5",
         "brainmaestro/composer-git-hooks": "^2.8",
