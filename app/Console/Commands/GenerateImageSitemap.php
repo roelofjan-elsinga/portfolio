@@ -33,7 +33,7 @@ class GenerateImageSitemap extends Command
      */
     public function handle()
     {
-        $xml = new Simphttps://roelofjanelsinga.com/images.xmlleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset></urlset>', null, false);
+        $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset></urlset>', null, false);
 
         $xml->addAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
 
