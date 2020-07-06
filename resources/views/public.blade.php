@@ -69,6 +69,10 @@
 
         <meta name="monetization" content="$ilp.uphold.com/e477riXGedj9">
 
+        <link rel="preload" href="https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.13" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+
         <!-- Bootstrap -->
         @section('stylesheets')
             <link rel="preload" href="{{ mix('css/front.css') }}" as="style">
