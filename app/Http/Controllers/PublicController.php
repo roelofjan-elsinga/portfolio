@@ -112,7 +112,7 @@ class PublicController extends Controller
             })
             ->values();
 
-        if ($request->has('q')) {
+        if ($request->has('q') && !empty($request->get('q'))) {
             $articles = $articles
                 ->filter(function (Article $article) use ($request) {
                     return strpos(strtolower($article->title()), strtolower($request->get('q'))) !== false
