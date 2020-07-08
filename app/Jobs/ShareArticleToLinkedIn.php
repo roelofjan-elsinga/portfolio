@@ -15,18 +15,6 @@ class ShareArticleToLinkedIn implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private LinkedIn $linkedIn;
-
-    /**
-     * Create a new job instance.
-     *
-     * @param LinkedIn $linkedIn
-     */
-    public function __construct(LinkedIn $linkedIn)
-    {
-        $this->linkedIn = $linkedIn;
-    }
-
     /**
      * Execute the job.
      *
@@ -36,7 +24,7 @@ class ShareArticleToLinkedIn implements ShouldQueue
     {
         $linkedin_auth = json_decode(Storage::get('linkedin.json'), true);
 
-        $this->linkedIn
+        app(LinkedIn::class)
             ->share()
             ->withAccessToken($linkedin_auth['access_token'])
             ->article(
