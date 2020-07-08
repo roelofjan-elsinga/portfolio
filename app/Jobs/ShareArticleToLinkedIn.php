@@ -41,7 +41,7 @@ class ShareArticleToLinkedIn implements ShouldQueue
             ->withAccessToken($linkedin_auth['access_token'])
             ->article(
                 $this->article->description(),
-                route('articles.view', $this->article->slug()),
+                route('articles.view', $this->article->slug(), true),
                 $this->article->title(),
                 $this->article->description()
             )
