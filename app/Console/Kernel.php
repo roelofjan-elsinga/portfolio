@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('aloiacms:publish:posts')->dailyAt('12:00');
+        $schedule->command('share:linkedin')->dailyAt('18:00');
     }
 
     protected function commands()

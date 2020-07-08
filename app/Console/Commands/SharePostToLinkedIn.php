@@ -5,6 +5,7 @@ namespace Main\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
 use Main\Classes\LinkedIn\LinkedIn;
+use Main\Jobs\ShareArticleToLinkedIn;
 use Main\Models\Article;
 
 class SharePostToLinkedIn extends Command
@@ -14,7 +15,7 @@ class SharePostToLinkedIn extends Command
      *
      * @var string
      */
-    protected $signature = 'share:linkedin {--slug=}';
+    protected $signature = 'share:linkedin {--slug=} {--date=}';
 
     /**
      * The console command description.
@@ -49,30 +50,34 @@ class SharePostToLinkedIn extends Command
             return;
         }
 
-        $linkedin_auth = json_decode(Storage::get('linkedin.json'), true);
+        if (!is_null($this->option('slug'))) {
 
-        if (is_null($this->option('slug'))) {
-            $this->error("No article slug submitted!");
-            return;
+            $article = Article::find($this->option('slug'));
+
+            if (!$article->exists()) {
+                $this->error("No article found for that slug!");
+                return;
+            }
+
+        } else {
+
+            $date = $this->option('date') ?? date('Y-m-d');
+
+            $article = Article::all()
+                ->filter(function (Article $post) use ($date) {
+
+                    return $post->getPostDate()->toDateString() === $date && $post->isPublished();
+                })
+                ->first();
+
+            if (is_null($article)) {
+                $this->warn("No article published on {$date}, nothing to share!");
+                return;
+            }
+
         }
 
-        $article = Article::find($this->option('slug'));
-
-        if (!$article->exists()) {
-            $this->error("No article found for that slug!");
-            return;
-        }
-
-        $this->linkedIn
-            ->share()
-            ->withAccessToken($linkedin_auth['access_token'])
-            ->article(
-                $article->description(),
-                route('articles.view', $article->slug()),
-                $article->title(),
-                $article->description()
-            )
-            ->publicly();
+        ShareArticleToLinkedIn::dispatchNow($article);
 
         $this->info("Published \"{$article->title()}\" to LinkedIn");
     }
