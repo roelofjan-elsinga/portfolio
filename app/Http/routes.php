@@ -27,4 +27,10 @@ Route::get('portfolio/{slug}', ['as' => 'public.workDetail', 'uses' => 'PublicCo
 /*Resources*/
 Route::resource('public', 'PublicController');
 
+Route::prefix('auth')
+    ->group(function() {
+        Route::get('linkedin/redirect', 'AuthController@logInRedirect')->name('auth.logInRedirect');
+        Route::get('linkedin', 'AuthController@oAuthCallback')->name('auth.callbackLinkedIn');
+    });
+
 Route::get('/{slug}', ['as' => 'page', 'uses' => 'PageController@showPage'])->where('slug', '.*');

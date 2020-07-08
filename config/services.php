@@ -39,6 +39,13 @@ return [
     'hcaptcha' => [
         'key' => env('HCAPTCHA_KEY'),
         'secret' => env('HCAPTCHA_SECRET'),
+    ],
+
+    'linkedin' => [
+        'key' => env('LINKEDIN_KEY'),
+        'secret' => env('LINKEDIN_SECRET'),
+        'redirect_uri' => env('LINKEDIN_REDIRECT_URI'),
+        'state' => env('LINKEDIN_STATE'),
     ]
 
 ];
