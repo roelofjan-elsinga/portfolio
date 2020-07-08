@@ -51,21 +51,17 @@ class SharePostToLinkedIn extends Command
         }
 
         if (!is_null($this->option('slug'))) {
-
             $article = Article::find($this->option('slug'));
 
             if (!$article->exists()) {
                 $this->error("No article found for that slug!");
                 return;
             }
-
         } else {
-
             $date = $this->option('date') ?? date('Y-m-d');
 
             $article = Article::all()
                 ->filter(function (Article $post) use ($date) {
-
                     return $post->getPostDate()->toDateString() === $date && $post->isPublished();
                 })
                 ->first();
@@ -74,7 +70,6 @@ class SharePostToLinkedIn extends Command
                 $this->warn("No article published on {$date}, nothing to share!");
                 return;
             }
-
         }
 
         ShareArticleToLinkedIn::dispatchNow($article);
