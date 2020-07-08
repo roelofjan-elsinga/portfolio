@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-06-24T14:43:21+02:00</updated>
+              <updated>2020-07-08T12:26:08+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -608,7 +608,7 @@ It's connecting other ser]]></summary>
                     <id>https://roelofjanelsinga.com/articles/building-automatic-api-stub-or-mocks-php</id>
                     <updated>2019-08-20T17:28:53+02:00</updated>
                     <published>2019-08-21T12:00:00+02:00</published>
-                    <content type="html"><![CDATA[<p><img src="/images/articles/keyboards-bw.jpeg" alt="&quot;Keyboards Black &amp; White&quot;" /></p>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/keyboards-bw.jpeg" alt="&quot;Keyboards Black and White&quot;" /></p>
 <h1>Building automatic API Stubs and/or using Mocks in PHP</h1>
 <p>Testing your code is essential if you want to write code that doesn't break your application. You should use tests as an assurance that your code does what it's supposed to do, nothing more, nothing less. When you have code that interacts with external services, testing this code becomes more difficult. You're not responsible for the accessibility of other services, but theses still influence the state of your application. Any problems in external services, or the connection to those services, will break your tests if they're not operational. This is not (always) representative of the actual state of your application and can cause false negatives. Don't get me wrong, you should put in place scenarios that deal with these problems, but they shouldn't change your testing expectations. One input should trigger a certain response, a response that's predictable.</p>
 <h2>The reason to build and use an API stub generator</h2>
@@ -1329,6 +1329,49 @@ I love writing blog posts, that's why you see on]]></summary>
 <p>Do you have any tips for me? How can I improve my writing? Let me know on <a href="https://twitter.com/RJElsinga">Twitter</a>, I'd love to hear from you!</p>]]></content>
                     <summary><![CDATA[I'm trying to become a more skilled communicator to my peers and non-technical people. In this post, you'll find out how I'm attempting to do this.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/teamwork.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>How I automated publishing my content to LinkedIn</title>
+                    <link href="https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin"/>
+                    <id>https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin</id>
+                    <updated>2020-07-08T12:26:05+02:00</updated>
+                    <published>2020-07-08T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/automating-publishing-to-linkedin.jpg" alt="How I automated publishing my content to LinkedIn" /></p>
+<h1>How I automated publishing my content to LinkedIn</h1>
+<p>As you might have read in earlier posts, my blog is built using Laravel and my own CMS <a href="https://aloiacms.com">Aloia CMS</a>. This CMS is as flexible as I'd like it to be and I can make changes by extending behavior in PHP. I've migrated everything to Aloia CMS last year, as it made creating content very easy and it lowered the barriers to write content rather than have to work around current systems. Aloia CMS allows me to shape my own workflow and not shape my workflow to fit a certain system. </p>
+<p>As the CMS conforms to my own workflow, I was able to add all kinds of hidden automations in the system over time. The first one was sharing my content with other platforms through an Atom feed. The RSS feed followed quite quickly, as not every platform was capable of parsing an Atom feed. I could effortlessly syndicate my content to several platforms, including MailChimp, Pinterest and Dev.to. Unfortunately, there are still a few platforms that I use to share my content that don't support RSS or Atom feeds. One of these platforms is LinkedIn. As I'd like to focus on the content rather than the process of syndicating the content, I set out to automate the process of sharing my blog posts on LinkedIn.</p>
+<h2>Share on LinkedIn API</h2>
+<p>Creating content is something I enjoy a lot, but having to share this to all the platforms can become tedious over time. To overcome this burden, I wanted to automate syndicating this content. As LinkedIn doesn't support RSS or Atom feeds to publish the posts, there was another way out: API endpoints.</p>
+<p>LinkedIn has API endpoints that you can use to publish articles, text posts, and images from any application. As I've built automations and API connections many times before, this was not much of a challenge. LinkedIn uses the standard Oauth 2.0 authentication method: Redirecting the user to LinkedIn to allow your application access to their information, receiving an authorization code, and then requesting an access token to interact with LinkedIn as the user that allowed your application access. </p>
+<p>As the documentation is a bit of a mess at times, I'm going to list the exact pages I've used to get this to work. This is not a tutorial, so I won't do a step-by-step process in this post, but I will nudge you in the right direction.</p>
+<ol>
+<li><a href="https://www.linkedin.com/developers/apps/new">Create a LinkedIn application</a></li>
+<li>After creating the LinkedIn application, you'll need to request these permissions: &quot;Share on LinkedIn&quot; and &quot;Sign in with LinkedIn&quot;. You can do this under the &quot;Products&quot; section:</li>
+</ol>
+<p><img src="/images/articles/products-in-linkedin-application.png" alt="Permissions in LinkedIn application" /></p>
+<ol start="3">
+<li><a href="https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/consumer/context#step-1-configure-your-application">Set a redirect URL for your website</a>. This is where you'll receive the authorization code.</li>
+<li><a href="https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/consumer/context#step-2-request-an-authorization-code">Request an authorization code</a>. You should use these permissions in the scope: r_liteprofile, w_member_social.</li>
+<li><a href="https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/consumer/context#step-3-exchange-authorization-code-for-an-access-token">Request an access token</a>. This token is valid for 2 months (60 days) and will be used to publish on behave of the user that authenticates your application with LinkedIn.</li>
+<li><a href="https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share-on-linkedin?context=linkedin/consumer/context#creating-a-share-on-linkedin">Share your content on LinkedIn</a>. You'll need to add &quot;Authorization: Bearer token-here&quot; to your request headers.</li>
+</ol>
+<p>Of course, you'll need to handle any errors during this process and you should set up some system to refresh the access token before it expires.</p>
+<h2>LinkedIn API Quirks</h2>
+<p>The LinkedIn API seems to contain a few technical choices that aren't standard practice these days and that means it requires a few different things that you wouldn't expect. These quirks include using several unexpected headers:</p>
+<ul>
+<li>Using &quot;Content-Type: application/x-www-form-urlencoded&quot; to get an access token (would expect application/json)</li>
+<li>Using &quot;X-Restli-Protocol-Version: 2.0.0&quot; to share your content to LinkedIn. This is required.</li>
+</ul>
+<p>The POST request to share your content to LinkedIn is easy enough to copy/paste from the examples about <a href="https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share-on-linkedin#creating-a-share-on-linkedin">Creating a Share on LinkedIn</a>. </p>
+<h2>Automatically sharing blog posts to LinkedIn</h2>
+<p>Now that the API connection is set up, it's just a matter of sharing the blog posts to LinkedIn. There are many ways to do this, like triggering jobs or events to set your automation in motion. However, as sharing the blog posts instantly is not very important to me, I set up a cron job to do this for me. My blog publishes scheduled posts every day at noon if a blog post one is scheduled for that day. If I didn't schedule any posts, I can still manually publish a post. The cron job looks at the publishing dates of all of my posts and figures out which one was published on that day and automatically shares it through the API to LinkedIn at 18:00 (6 PM). This way I don't have to think about publishing anything to any platform manually anymore. </p>
+<p>Automation takes care of all of the repeatable actions I usually do manually and frees me up to focus on writing content instead. This goes hand in hand with my philosophy about using my own CMS, focus on creating content, not on everything around it. Any obstacle that you might face while creating content is a potential deterrent to stop creating content.</p>
+<h2>Conclusion</h2>
+<p>Sharing content to many platforms automatically helps you to get the word out about your expertise and it frees up the time you'd have normally spend on manually sharing your content to those platforms. A lot of platforms support RSS or Atom feeds to automatically publish your content but not all of them. LinkedIn, for example, doesn't support syndicating content through RSS feeds, but it does have API endpoints to be able to automate this. In this post, I went over the steps I took to set up publishing my blog posts to LinkedIn automatically through API endpoints and cron jobs.</p>
+<p>I automate everything that's repeatable and might be a obstacle in the content creation process. Road blocks are a potential to stop creating content and that's why I go out of my way to solve those road blocks and make the process as smooth as possible. </p>
+<p>If you're looking to do this for yourself or your business, you can always contact me and set up a plan of action.</p>]]></content>
+                    <summary><![CDATA[Sharing content to many platforms helps you to get the word out about your expertise. Automating this frees you up to create the content. In this post, I got over how I automated publishing my content to LinkedIn.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/automating-publishing-to-linkedin.jpg" medium="image" type="image/jpeg" width="640" height="427" />
                   </entry>
 <entry>
                     <title>How I made working on my side project more enjoyable and rewarding</title>

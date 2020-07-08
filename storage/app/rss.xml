@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 24 Jun 2020 12:43:21 GMT</pubDate>
+              <pubDate>Wed, 08 Jul 2020 10:26:08 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -333,6 +333,16 @@ I love writing blog posts, that's why you see on (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/teamwork.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Sharing content to many platforms helps you to get the word out about your expertise. Automating this frees you up to create the content. In this post, I got over how I automated publishing my content to LinkedIn. (...)</description>
+                    <title>How I automated publishing my content to LinkedIn</title>
+                    <link>https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin</guid>
+                    
+                    <pubDate>Wed, 08 Jul 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/automating-publishing-to-linkedin.jpg" medium="image" type="image/jpeg" width="640" height="427"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description> (...)</description>
                     <title>How I made working on my side project more enjoyable and rewarding</title>
