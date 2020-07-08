@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
             return new \Main\Console\Commands\SitemapCreator();
         });
 
-        $this->app->bind(LinkedIn::class, function() {
+        $this->app->bind(LinkedIn::class, function () {
             $instance = new LinkedIn(
                 config('services.linkedin.key'),
                 config('services.linkedin.secret'),

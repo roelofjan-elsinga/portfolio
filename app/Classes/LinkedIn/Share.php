@@ -36,5 +36,4 @@ class Share
 
         return $response_data['id'];
     }
-
 }

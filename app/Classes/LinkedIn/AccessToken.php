@@ -3,7 +3,6 @@
 
 namespace Main\Classes\LinkedIn;
 
-
 use GuzzleHttp\Client;
 
 class AccessToken
@@ -37,5 +36,4 @@ class AccessToken
 
         return json_decode($response->getBody()->getContents(), true);
     }
-
 }
