@@ -3,7 +3,6 @@
 
 namespace Main\Classes\LinkedIn;
 
-
 class Authentication
 {
     private string $response_type;
