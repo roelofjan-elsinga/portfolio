@@ -19,10 +19,12 @@
                 <label for="q" class="font-bold mb-2 block">What are your looking for?</label>
 
                 <div class="flex rounded">
-                    <input type="text" class="bg-gray-200 border-blue-darkest p-4 text-blue-800 rounded-l flex-grow"
+                    <input type="text"
+                           class="bg-theme-lightest p-4 text-theme-darkest rounded-l flex-grow placeholder-theme-darkest placeholder-opacity-50"
                            placeholder="Search blog posts" name="q" value="{{request()->has('q') ? request()->get('q') : ''}}">
 
-                    <button type="submit" class="bg-gray-400 text-black rounded-r duration-300 px-4">
+                    <button type="submit"
+                            class="text-lg sm:flex-xl hover:bg-theme-light inline-block bg-theme-lighter text-theme-darkest p-4 duration-300 font-bold rounded-r">
                         <span class="fas fa-search"></span>
                     </button>
                 </div>

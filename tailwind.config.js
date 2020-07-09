@@ -40,8 +40,15 @@ module.exports = {
 
         extend: {
             colors: {
-                'theme-dark': '#4fabfe',
-                'theme-darkest': '#12283a'
+                theme: {
+                    'lightest': '#E5F3FF', // hsl(209,100%,95%)
+                    'lighter': '#B3DAFF', // hsl(209,100%,85%)
+                    'light': '#80C1FF', // hsl(209,100%,75%)
+                    'default': '#4DA9FF', // hsl(209,100%,65%)
+                    'dark': '#0077E6', // hsl(209,100%,45%)
+                    'darker': '#204160', // hsl(209,50%,25%)
+                    'darkest': '#132739' // hsl(209,50%,15%)
+                }
             }
         },
 

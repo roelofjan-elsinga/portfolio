@@ -79,3 +79,29 @@
     }
 
 }
+
+.cta-box {
+    @apply text-lg inline-block bg-theme-lightest text-theme-darkest p-4 rounded duration-300;
+
+    @screen sm {
+        @apply text-xl;
+    }
+
+    a {
+        @apply font-bold text-theme-darkest;
+
+        &:hover {
+            @apply underline;
+        }
+    }
+}
+
+footer {
+    a {
+        @apply text-theme-darkest;
+
+        &:hover {
+            @apply underline;
+        }
+    }
+}

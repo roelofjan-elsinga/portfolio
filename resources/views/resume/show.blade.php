@@ -64,7 +64,7 @@
             <div class="flex-1 leading-loose">
                 <h1 class="text-4xl leading-tight mb-4">{{$resume['name']}}</h1>
 
-                <h2 class="text-2xl text-theme-dark mb-4">{{$resume['current_title']}}</h2>
+                <h2 class="text-2xl text-theme mb-4">{{$resume['current_title']}}</h2>
 
                 <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-theme-darkest underline">roelofjanelsinga@gmail.com</a></p>
                 <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-theme-darkest underline">https://roelofjanelsinga.com</a></p>
@@ -89,12 +89,12 @@
 
                     <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
                         <div class="w-48">
-                            <div class="bg-theme-darkest text-white rounded p-2 inline-block mb-4 lg:mb-0">
+                            <div class="bg-theme-darker text-white rounded p-2 inline-block mb-4 lg:mb-0">
                                 {{$experience['dates']}}
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-dark font-black w-full md:w-auto">
+                            <h3 class="text-lg text-theme font-black w-full md:w-auto">
                                 {{$experience['company']}}
                             </h3>
                             <p class="mt-2 text-gray-600 italic">
@@ -127,12 +127,12 @@
 
                     <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
                         <div class="w-32">
-                            <div class="bg-theme-darkest text-white rounded p-2 inline-block mb-4 lg:mb-0">
+                            <div class="bg-theme-darker text-white rounded p-2 inline-block mb-4 lg:mb-0">
                                 {{$education['dates']}}
                             </div>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-lg text-theme-dark font-black">
+                            <h3 class="text-lg text-theme font-black">
                                 {{$education['school']}}
                             </h3>
                             <p class="mt-2 text-gray-600 italic">

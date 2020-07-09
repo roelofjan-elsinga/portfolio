@@ -1,4 +1,4 @@
-<footer class="bg-theme-dark p-8 mt-8 text-white">
+<footer class="bg-theme-lightest text-theme-darkest p-8 mt-8 text-white">
 
     <div class="container mx-auto">
 
@@ -12,23 +12,23 @@
                 <ul class="list-none text-lg m-0">
                     <li class="mb-2">
                         <a href="https://twitter.com/RJElsinga"
-                           class="hover:underline text-white" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                           target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://medium.com/@roelofjanelsinga"
-                           class="hover:underline text-white" target="_blank"><i class="fab fa-medium"></i> Medium</a>
+                           target="_blank"><i class="fab fa-medium"></i> Medium</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://dev.to/roelofjanelsinga"
-                           class="hover:underline text-white" target="_blank"><i class="fab fa-dev"></i> Dev.to</a>
+                           target="_blank"><i class="fab fa-dev"></i> Dev.to</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://github.com/roelofjan-elsinga"
-                           class="hover:underline text-white" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                           target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     </li>
                     <li class="mb-2">
                         <a href="https://www.linkedin.com/in/roelofjanelsinga/"
-                           class="hover:underline text-white" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                           target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     </li>
                 </ul>
 
@@ -40,7 +40,7 @@
                 <ul class="list-none lext-lg m-0">
                     <li class="mb-2">
                         <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
-                           class="hover:underline text-white"><i class="fas fa-envelope"></i> Send me an e-mail</a>
+                        ><i class="fas fa-envelope"></i> Send me an e-mail</a>
                     </li>
                     <li class="mb-2">
                         KvK: 64377962
@@ -56,18 +56,18 @@
 
                 <ul class="list-none lext-lg m-0">
                     <li class="mb-2">
-                        <a href="{{route('articles')}}" class="hover:underline text-white">Blog</a>
+                        <a href="{{route('articles')}}">Blog</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{route('public.work')}}" class="hover:underline text-white">Portfolio</a>
+                        <a href="{{route('public.work')}}">Portfolio</a>
                     </li>
                     <li class="mb-2">
                         <a href="{{route('resume.show_dutch')}}"
-                           class="hover:underline text-white"><i class="fas fa-id-card"></i> Mijn CV (NL)</a>
+                        ><i class="fas fa-id-card"></i> Mijn CV (NL)</a>
                     </li>
                     <li class="mb-2">
                         <a href="{{route('resume.show')}}"
-                           class="hover:underline text-white"><i class="fas fa-id-card"></i> My resume (EN)</a>
+                        ><i class="fas fa-id-card"></i> My resume (EN)</a>
                     </li>
                 </ul>
             </div>
@@ -77,16 +77,16 @@
 
                 <ul class="list-none lext-lg m-0 md:mt-4">
                     <li class="mb-2">
-                        <a href="{{url('/about-me')}}" class="hover:underline text-white">About me</a>
+                        <a href="{{url('/about-me')}}">About me</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{url('/my-tech-stack')}}" class="hover:underline text-white">My tech stack</a>
+                        <a href="{{url('/my-tech-stack')}}">My tech stack</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{route('public.open_source')}}" class="hover:underline text-white">Open source contributions</a>
+                        <a href="{{route('public.open_source')}}">Open source contributions</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{url('/how-i-built-this-website')}}" class="hover:underline text-white">How I built this website</a>
+                        <a href="{{url('/how-i-built-this-website')}}">How I built this website</a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +98,7 @@
                 &copy; {{date('Y')}} Roelof Jan Elsinga
             </div>
 
-            <a href="{{route('page', 'algemene-voorwaarden')}}" class="text-white hover:underline">
+            <a href="{{route('page', 'algemene-voorwaarden')}}">
                 Algemene voorwaarden
             </a>
         </div>

@@ -1,0 +1,21 @@
+.inline-button {
+  @apply text-lg inline-block bg-theme-lightest text-theme-darkest p-4 duration-300 font-bold;
+
+  @screen sm {
+    @apply text-xl;
+  }
+
+  &:hover {
+    @apply bg-theme-light;
+  }
+}
+
+.cta-button {
+  @extend .inline-button;
+
+  @apply rounded shadow-md;
+
+  &:hover {
+    @apply bg-theme-lightest shadow-lg;
+  }
+}

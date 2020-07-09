@@ -13,7 +13,7 @@
 
         <p class="pt-8">
             <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
-               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+               class="cta-button">
                 <span class="fas fa-envelope"></span>
                 Contact me
             </a>
@@ -42,7 +42,7 @@
 
         <div class="flex justify-center mt-8">
             <a href="{{ route('public.work') }}"
-               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+               class="cta-button">
                 View more projects
             </a>
         </div>
@@ -55,13 +55,13 @@
 
     </div>
 
-    <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+    <div class="paragraph-spacing cta-box">
 
         {!! Block::get('my_tech_stack') !!}
 
     </div>
 
-    <section class="mt-32 articles">
+    <section class="my-32 articles">
 
         {!! Block::get('articles_homepage') !!}
 
@@ -79,14 +79,14 @@
 
         <div class="flex justify-center mt-8">
             <a href="{{ route('articles') }}"
-               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+               class="cta-button">
                 View more blog posts
             </a>
         </div>
 
     </section>
 
-    <section class="mt-32">
+    <section class="my-32">
 
         {!! Block::get('open_source_contributions') !!}
 
@@ -106,13 +106,13 @@
 
         <div class="flex justify-center mt-8">
             <a href="{{ route('public.open_source') }}"
-               class="text-lg sm:text-xl inline-block bg-theme-dark text-white p-4 rounded hover:bg-blue-700 duration-300">
+               class="cta-button">
                 View more open source contributions
             </a>
         </div>
     </section>
 
-    <div class="items paragraph-spacing my-32 text-lg bg-theme-dark text-white rounded p-4">
+    <div class="paragraph-spacing cta-box">
 
         {!! Block::get('site_techniques') !!}
 
