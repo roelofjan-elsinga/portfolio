@@ -57,7 +57,8 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
             "php artisan aloiacms:set-permissions",
-            "@php artisan vendor:publish --force --tag=livewire:assets --ansi"
+            "@php artisan vendor:publish --force --tag=livewire:assets --ansi",
+            "@php artisan vendor:publish --force --tag=aloiacmsgui-assets --ansi"
         ],
         "publish": [
             "composer install --no-dev",
