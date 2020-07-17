@@ -19,7 +19,8 @@
         "brainmaestro/composer-git-hooks": "^2.8",
         "roelofjan-elsinga/aloia-cms": "^3.1",
         "roelofjan-elsinga/aloia-cms-gui": "^3.1",
-        "guzzlehttp/guzzle": "^6.5"
+        "guzzlehttp/guzzle": "^6.5",
+        "livewire/livewire": "^1.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
@@ -55,7 +56,8 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
-            "php artisan aloiacms:set-permissions"
+            "php artisan aloiacms:set-permissions",
+            "@php artisan vendor:publish --force --tag=livewire:assets --ansi"
         ],
         "publish": [
             "composer install --no-dev",

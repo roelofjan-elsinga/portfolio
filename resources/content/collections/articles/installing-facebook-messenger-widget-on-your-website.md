@@ -3,7 +3,9 @@ description: 'Connecting with your target audience: Installing a Facebook Messen
 post_date: '2020-06-03'
 is_published: false
 is_scheduled: false
-update_date: '2020-05-29 08:44:11'
+update_date: '2020-07-17 20:39:59'
+linkedin_post: 'Testing LinkedIn'
+twitter_post: 'Testing Twitter'
 ---
 # Connecting with your target audience: Installing a Facebook Messenger widget on your website
 
