@@ -219,7 +219,7 @@ class PublicController extends Controller
 
     public function contact(ContactRequest $request)
     {
-        Mail::to('roelofjanelsinga@gmail.com')
+        Mail::to('contact@roelofjanelsinga.com')
             ->send(
                 new ContactMail(
                     $request->get('name'),
