@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 const purgeCss = require('laravel-mix-purgecss');
-const {GenerateSW} = require('workbox-webpack-plugin');
+
+require('laravel-mix-workbox');
 
 /*
  |--------------------------------------------------------------------------
@@ -30,43 +31,56 @@ mix
         extensions: ['html', 'js', 'php', 'md'],
         whitelist: ['ul', 'ol']
     })
-    .sourceMaps()
+    .version()
     .webpackConfig({
-        plugins: [
-            new GenerateSW({
-                swDest: path.join(`${__dirname}/public`, 'sw.js'),
-                clientsClaim: true,
-                skipWaiting: true,
-                exclude: [/\.css$/],
-                runtimeCaching: [
-                    {
-                        urlPattern: new RegExp(`${process.env.CANONICAL_BASE}`),
-                        handler: 'networkFirst',
-                        options: {
-                            cacheName: `${process.env.APP_NAME}-${process.env.CANONICAL_BASE}`,
-                            fetchOptions: {
-                                mode: 'no-cors',
-                            },
-                            matchOptions: {
-                                ignoreSearch: true,
-                            },
-                            cacheableResponse: {
-                                statuses: [0, 200]
-                            }
-                        }
-                    },
-                    {
-                        urlPattern: new RegExp('https://fonts.(googleapis|gstatic).com'),
-                        handler: 'cacheFirst',
-                        options: {
-                            cacheName: 'google-fonts',
-                            cacheableResponse: {
-                                statuses: [0, 200]
-                            }
-                        }
-                    }
-                ]
-            })
-        ]
+        output: { publicPath: '' }
     })
-    .version();
+    .generateSW({
+        swDest: path.join(`${__dirname}/public`, 'sw.js'),
+        clientsClaim: true,
+        skipWaiting: true,
+        exclude: [
+            /\.(?:png|jpg|jpeg|svg)$/,
+            'mix.js'
+        ],
+        runtimeCaching: [
+            {
+                urlPattern: new RegExp(`${process.env.CANONICAL_BASE}`),
+                handler: 'NetworkFirst',
+                options: {
+                    cacheName: `${process.env.APP_NAME}-${process.env.CANONICAL_BASE}`,
+                    fetchOptions: {
+                        mode: 'no-cors',
+                    },
+                    matchOptions: {
+                        ignoreSearch: true,
+                    },
+                    cacheableResponse: {
+                        statuses: [0, 200]
+                    }
+                }
+            },
+            {
+                // Match any request that ends with .png, .jpg, .jpeg or .svg.
+                urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+
+                // Apply a cache-first strategy.
+                handler: 'CacheFirst',
+
+                options: {
+                    // Use a custom cache name.
+                    cacheName: 'images',
+                },
+            },
+            {
+                urlPattern: new RegExp('https://fonts.(googleapis|gstatic).com'),
+                handler: 'CacheFirst',
+                options: {
+                    cacheName: 'google-fonts',
+                    cacheableResponse: {
+                        statuses: [0, 200]
+                    }
+                }
+            }
+        ]
+    });

@@ -1,10 +1,14 @@
 {
-    "name": "Roelof Jan",
-    "theme_color": "#ffffff",
+    "name": "Roelof Jan Elsinga",
+    "short_name": "Roelof Jan",
+    "theme_color": "#e5f3ff",
     "background_color": "#ffffff",
     "display": "standalone",
-    "short_name": "Roelof Jan",
-    "start_url": "https://roelofjanelsinga.com?source=app",
+    "orientation": "portrait",
+    "start_url": "/?utm_source=app",
+    "scope": "/",
+    "homepage_url": "https://roelofjanelsinga.com",
+    "default_locale": "en",
     "icons": [
         {
             "src": "/images/icons/android-chrome-192x192.png",
