@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 08 Jul 2020 10:26:08 GMT</pubDate>
+              <pubDate>Wed, 05 Aug 2020 17:57:24 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -129,6 +129,16 @@ pro (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>If you're looking to improve the performance of your website and you haven't tried service workers yet, you should. Adding them gives you a big boost in web performance. Read here how I did it and let me show you how you can too. (...)</description>
+                    <title>Boost web performance with Service Workers</title>
+                    <link>https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers</link>
+                    <guid>https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers</guid>
+                    
+                    <pubDate>Wed, 05 Aug 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speedy-zoomed-in-on-camera.jpeg" medium="image" type="image/jpeg" width="640" height="427"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>There is nothing more fun than working with API's during my work day.
 It's programming like any other day, but it's also so much more!

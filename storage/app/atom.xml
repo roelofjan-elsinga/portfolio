@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-07-08T12:26:08+02:00</updated>
+              <updated>2020-08-05T19:57:24+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -569,6 +569,44 @@ pro]]></summary>
 <p>These points are just a few of many of the benefits of single page applications. But keep in mind that benefits always come with trade offs. There are also disadvantages of building single page applications, and these will be highlighted in a next blog post. The highlighted points in this article are some of the main parts I have encountered building several single page applications of the past year. I'm sure more advantages and disadvantages will show up, but only time will tell.</p>]]></content>
                     <summary><![CDATA[Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren't just ]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/manhattan.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
+<entry>
+                    <title>Boost web performance with Service Workers</title>
+                    <link href="https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers"/>
+                    <id>https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers</id>
+                    <updated>2020-08-05T19:57:22+02:00</updated>
+                    <published>2020-08-05T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/speedy-zoomed-in-on-camera.jpeg" alt="Speedy zoomed in on Camera" /></p>
+<h1>Boost web performance with Service Workers</h1>
+<p>If you've been working on the performance of your websites for a while and haven't tried service workers yet, keep reading. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. This is not an in-depth tutorial about the ins and outs of service worker, but rather an insight in the benefit the service worker brings to your website's Pagespeed (and SEO) score.</p>
+<h2>Before the Service Worker</h2>
+<p>An insight wouldn't mean anything if we don't have a before and after situation. In the following two screenshots you see the before screenshots for the mobile and desktop scores.</p>
+<p><img src="/images/articles/pagespeed-score-before-service-worker.png" alt="Pagespeed score before service worker" title="Pagespeed score before service worker" />
+<span class="caption">Pagespeed score (desktop) before Service Worker</span></p>
+<p>As you can see, the score for desktop was quite good already and didn't need a lot of improvement. However, if we look at the score for mobile there is different situation.</p>
+<p><img src="/images/articles/pagespeed-score-before-service-worker-mobile.png" alt="Pagespeed score before service worker mobile" title="Pagespeed score before service worker mobile" />
+<span class="caption">Pagespeed score (mobile) before Service Worker</span></p>
+<p>The score for the mobile version wasn't great and really needed some improvement, especially since most traffic (80%+) to this website is on mobile devices.</p>
+<h2>In comes the service worker</h2>
+<p>As the website I've run this test on is built with Laravel, I use Laravel Mix for compiling Sass and other assets. Laravel Mix has a plugin to generate a service worker: <a href="https://laravel-mix.com/extensions/workbox">laravel-mix-workbox</a>. With this extension you can very easily generate a service worker for the compiled assets. </p>
+<p>This is an excerpt of the configuration I use to generate the service worker:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/1504426161dbe1ae15014c946bd57f8b.js"></script>
+<p>The most important thing to not here is that you need to include the &quot;webpackConfig&quot; section. If you don't do this, the Service Worker will attempt to cache your assets with an extra leading slash: &quot;//css/style.css&quot;. This will throw errors and will cause the Service Worker to not lauch, because it won't lauch if there are any errors. So by adding &quot;webpackConfig&quot; with the new publicPath, you solve this issue.</p>
+<p>You can use this same configuration if you're using Webpack to bundle and compile your assets. Simply replace &quot;generateSW&quot; with &quot;new GenerateSW&quot; and include it in the plugins section of your webpack.config.js file.</p>
+<p>Now that you have the sw.js file, you need to include it in your webpage:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/78624db71a67657a22fbf447bce03df7.js"></script>
+<h2>After the service worker</h2>
+<p>Now that we have the service worker installed on your webpage, we can check our Pagespeed score once again. These are the screenshots for the Pagespeed scores on mobile and desktop after including the service worker.</p>
+<p><img src="/images/articles/pagespeed-score-after-service-worker.png" alt="Pagespeed score after service worker" title="Pagespeed score after service worker" />
+<span class="caption">Pagespeed score (desktop) after Service Worker</span></p>
+<p>As you can see, the score is now 99 instead of 95. It's a nice boost to our score, but the desktop version never needed the extra boost. Mobile on the other hand has made a massive jump:</p>
+<p><img src="/images/articles/pagespeed-score-after-service-worker-mobile.png" alt="Pagespeed score after service worker mobile" title="Pagespeed score after service worker mobile" />
+<span class="caption">Pagespeed score (mobile) after Service Worker</span></p>
+<p>The mobile score is now 90, and made a jump from 53 to 90, which is quite a difference. The Service worker has caused the score to jump quite a bit and load the static assets much more efficiently. </p>
+<h2>Conclusion</h2>
+<p>Adding a service worker to your website can massively improve the Pagespeed score, your UX, and even your SEO score. So if you're able to do this for your projects and you're looking to get some extra performance out of your website, including a service worker is the easiest performance boost you can make.</p>]]></content>
+                    <summary><![CDATA[If you're looking to improve the performance of your website and you haven't tried service workers yet, you should. Adding them gives you a big boost in web performance. Read here how I did it and let me show you how you can too.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speedy-zoomed-in-on-camera.jpeg" medium="image" type="image/jpeg" width="640" height="427" />
                   </entry>
 <entry>
                     <title>Build bridges with API based application structures</title>
@@ -1334,15 +1372,15 @@ I love writing blog posts, that's why you see on]]></summary>
                     <title>How I automated publishing my content to LinkedIn</title>
                     <link href="https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin"/>
                     <id>https://roelofjanelsinga.com/articles/how-i-automated-publishing-my-content-to-linkedin</id>
-                    <updated>2020-07-08T12:26:05+02:00</updated>
+                    <updated>2020-07-23T11:52:08+02:00</updated>
                     <published>2020-07-08T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/automating-publishing-to-linkedin.jpg" alt="How I automated publishing my content to LinkedIn" /></p>
 <h1>How I automated publishing my content to LinkedIn</h1>
 <p>As you might have read in earlier posts, my blog is built using Laravel and my own CMS <a href="https://aloiacms.com">Aloia CMS</a>. This CMS is as flexible as I'd like it to be and I can make changes by extending behavior in PHP. I've migrated everything to Aloia CMS last year, as it made creating content very easy and it lowered the barriers to write content rather than have to work around current systems. Aloia CMS allows me to shape my own workflow and not shape my workflow to fit a certain system. </p>
-<p>As the CMS conforms to my own workflow, I was able to add all kinds of hidden automations in the system over time. The first one was sharing my content with other platforms through an Atom feed. The RSS feed followed quite quickly, as not every platform was capable of parsing an Atom feed. I could effortlessly syndicate my content to several platforms, including MailChimp, Pinterest and Dev.to. Unfortunately, there are still a few platforms that I use to share my content that don't support RSS or Atom feeds. One of these platforms is LinkedIn. As I'd like to focus on the content rather than the process of syndicating the content, I set out to automate the process of sharing my blog posts on LinkedIn.</p>
+<p>As the CMS conforms to my own workflow, I was able to add all kinds of hidden automation in the system over time. The first one was sharing my content with other platforms through an Atom feed. The RSS feed followed quite quickly, as not every platform was capable of parsing an Atom feed. I could effortlessly syndicate my content to several platforms, including MailChimp, Pinterest, and Dev.to. Unfortunately, there are still a few platforms that I use to share my content that doesn't support RSS or Atom feeds. One of these platforms is LinkedIn. As I'd like to focus on the content rather than the process of syndicating the content, I set out to automate the process of sharing my blog posts on LinkedIn.</p>
 <h2>Share on LinkedIn API</h2>
-<p>Creating content is something I enjoy a lot, but having to share this to all the platforms can become tedious over time. To overcome this burden, I wanted to automate syndicating this content. As LinkedIn doesn't support RSS or Atom feeds to publish the posts, there was another way out: API endpoints.</p>
-<p>LinkedIn has API endpoints that you can use to publish articles, text posts, and images from any application. As I've built automations and API connections many times before, this was not much of a challenge. LinkedIn uses the standard Oauth 2.0 authentication method: Redirecting the user to LinkedIn to allow your application access to their information, receiving an authorization code, and then requesting an access token to interact with LinkedIn as the user that allowed your application access. </p>
+<p>Creating content is something I enjoy a lot, but having to share this with all the platforms can become tedious over time. To overcome this burden, I wanted to automate syndicating this content. As LinkedIn doesn't support RSS or Atom feeds to publish the posts, there was another way out: API endpoints.</p>
+<p>LinkedIn has API endpoints that you can use to publish articles, text posts, and images from any application. As I've built automation and API connections many times before, this was not much of a challenge. LinkedIn uses the standard OAuth 2.0 authentication method: Redirecting the user to LinkedIn to allow your application access to their information, receiving an authorization code, and then requesting an access token to interact with LinkedIn as the user that allowed your application access.</p>
 <p>As the documentation is a bit of a mess at times, I'm going to list the exact pages I've used to get this to work. This is not a tutorial, so I won't do a step-by-step process in this post, but I will nudge you in the right direction.</p>
 <ol>
 <li><a href="https://www.linkedin.com/developers/apps/new">Create a LinkedIn application</a></li>
@@ -1368,7 +1406,7 @@ I love writing blog posts, that's why you see on]]></summary>
 <p>Automation takes care of all of the repeatable actions I usually do manually and frees me up to focus on writing content instead. This goes hand in hand with my philosophy about using my own CMS, focus on creating content, not on everything around it. Any obstacle that you might face while creating content is a potential deterrent to stop creating content.</p>
 <h2>Conclusion</h2>
 <p>Sharing content to many platforms automatically helps you to get the word out about your expertise and it frees up the time you'd have normally spend on manually sharing your content to those platforms. A lot of platforms support RSS or Atom feeds to automatically publish your content but not all of them. LinkedIn, for example, doesn't support syndicating content through RSS feeds, but it does have API endpoints to be able to automate this. In this post, I went over the steps I took to set up publishing my blog posts to LinkedIn automatically through API endpoints and cron jobs.</p>
-<p>I automate everything that's repeatable and might be a obstacle in the content creation process. Road blocks are a potential to stop creating content and that's why I go out of my way to solve those road blocks and make the process as smooth as possible. </p>
+<p>I automate everything that's repeatable and might be an obstacle in the content creation process. Roadblocks are the potential to stop creating content and that's why I go out of my way to solve those roadblocks and make the process as smooth as possible.</p>
 <p>If you're looking to do this for yourself or your business, you can always contact me and set up a plan of action.</p>]]></content>
                     <summary><![CDATA[Sharing content to many platforms helps you to get the word out about your expertise. Automating this frees you up to create the content. In this post, I got over how I automated publishing my content to LinkedIn.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/automating-publishing-to-linkedin.jpg" medium="image" type="image/jpeg" width="640" height="427" />
