@@ -3,7 +3,7 @@ description: 'If you''re looking to improve the performance of your website and 
 post_date: '2020-08-05'
 is_published: true
 is_scheduled: false
-update_date: '2020-08-06 11:13:20'
+update_date: '2020-08-06 11:17:39'
 linkedin_post: 'I''ve been able to improve the mobile performance of one of my websites drastically. I did this by only adding a Service Worker. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. '
 twitter_post: ''
 ---
@@ -17,12 +17,12 @@ For this post, I'm using Lighthouse, because this checks the performance at this
 An insight wouldn't mean anything if we don't have a before and after situation. In the following two screenshots you see the before screenshots for the mobile and desktop scores.
 
 ![Lighthouse performance score before service worker](/images/articles/lighthouse-desktop-before.png "Lighthouse performance score before service worker")
-<span class="caption">Lighthouse performance score (desktop) before Service Worker (June 20th 2020)</span>
+<span class="caption">Lighthouse performance score (desktop) before Service Worker</span>
 
 As you can see, the score for desktop was quite good already and didn't need a lot of improvement. However, if we look at the score for mobile there is different situation.
 
 ![Lighthouse performance score before service worker mobile](/images/articles/lighthouse-mobile-before.png "Lighthouse performance score before service worker mobile")
-<span class="caption">Lighthouse performance score (mobile) before Service Worker (June 20th 2020)</span>
+<span class="caption">Lighthouse performance score (mobile) before Service Worker</span>
 
 The score for the mobile version wasn't great and really needed some improvement, especially since most traffic (80%+) to this website is on mobile devices.
 
@@ -45,12 +45,12 @@ Now that you have the sw.js file, you need to include it in your webpage:
 Now that we have the service worker installed on your webpage, we can check our Lighthouse performance score once again. These are the screenshots for the Lighthouse performance scores on mobile and desktop after including the service worker.
 
 ![Lighthouse performance score after service worker](/images/articles/lighthouse-desktop-after.png "Lighthouse performance score after service worker")
-<span class="caption">Lighthouse performance score (desktop) after Service Worker (August 6th 2020)</span>
+<span class="caption">Lighthouse performance score (desktop) after Service Worker</span>
 
 As you can see, the score is higher than it was. It's a nice boost to our score, but the desktop version never needed the extra performance to begin with. Mobile on the other hand has made a massive jump:
 
 ![Lighthouse performance score after service worker mobile](/images/articles/lighthouse-mobile-after.png "Lighthouse performance score after service worker mobile")
-<span class="caption">Lighthouse score (mobile) after Service Worker (August 6th 2020)</span>
+<span class="caption">Lighthouse score (mobile) after Service Worker</span>
 
 The mobile score is now high enough to be green, which was my goal when I started this. The Service worker has caused the score to jump quite a bit and load the static assets much more efficiently. 
 
