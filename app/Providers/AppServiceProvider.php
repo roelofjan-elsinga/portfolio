@@ -2,6 +2,7 @@
 
 namespace Main\Providers;
 
+use AloiaCms\Publish\Console\PublishScheduledPosts;
 use AloiaCms\Publish\Console\SitemapCreator;
 use Illuminate\Support\ServiceProvider;
 use Main\Classes\LinkedIn\LinkedIn;
@@ -38,6 +39,10 @@ class AppServiceProvider extends ServiceProvider
 
             return $instance
                 ->state(config('services.linkedin.state'));
+        });
+
+        $this->app->bind(PublishScheduledPosts::class, function () {
+            return new \Main\Console\Commands\PublishScheduledPosts();
         });
     }
 }

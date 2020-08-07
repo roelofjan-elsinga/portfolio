@@ -2,16 +2,15 @@
 
 namespace Main\Http\Controllers;
 
-use AloiaCms\Models\ContentBlock;
-use ContentParser\ContentParser;
 use AloiaCms\Models\Article;
 use AloiaCms\Models\MetaTag;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 use Main\Http\Requests\ContactRequest;
 use Main\Mail\ContactMail;
 use Main\Models\OpenSource;
@@ -35,12 +34,18 @@ class PublicController extends Controller
                     return $project->publish_date;
                 })
                 ->take(4),
-            'blog_posts' => Article::published()
-                ->sortByDesc(function (Article $article) {
-                    return $article->getPostDate();
-                })
-                ->take(2),
+            'blog_posts' => $this->getMostRecentPosts(),
         ]);
+    }
+
+    private function getMostRecentPosts(): Collection
+    {
+        return Cache::remember('recent-posts', now()->addDay(), function () {
+            return Article::published()
+                ->sortByDesc(fn (Article $article) => $article->getPostDate())
+                ->values()
+                ->take(2);
+        });
     }
 
     /**
@@ -107,11 +112,7 @@ class PublicController extends Controller
     {
         $request = Request::capture();
 
-        $articles = Article::published()
-            ->sortByDesc(function (Article $article) {
-                return $article->getPostDate();
-            })
-            ->values();
+        $articles = $this->getPublishedArticles();
 
         if ($request->has('q') && !empty($request->get('q'))) {
             $articles = $articles
@@ -140,6 +141,17 @@ class PublicController extends Controller
             'view_route_name' => 'articles.view',
             'page' => MetaTag::find('articles'),
         ]);
+    }
+
+    private function getPublishedArticles(): Collection
+    {
+        return Cache::remember('published-posts', now()->addDay(), function () {
+            return Article::published()
+                ->sortByDesc(function (Article $article) {
+                    return $article->getPostDate();
+                })
+                ->values();
+        });
     }
 
     /**
