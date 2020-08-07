@@ -3,7 +3,6 @@
 
 namespace Main\Tasks\Publishing;
 
-
 use AloiaCms\Publish\Tasks\TaskInterface;
 use Illuminate\Support\Facades\Artisan;
 
