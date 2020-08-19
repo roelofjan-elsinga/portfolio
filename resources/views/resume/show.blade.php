@@ -62,25 +62,25 @@
         <div class="flex flex-col md:flex-row">
 
             <div class="flex-1 leading-loose">
-                <h1 class="text-4xl leading-tight mb-4">{{$resume['name']}}</h1>
+                <h1 class="text-4xl leading-tight mb-4 print:text-2xl print:mb-2">{{$resume['name']}}</h1>
 
-                <h2 class="text-2xl text-theme mb-4">{{$resume['current_title']}}</h2>
+                <h2 class="text-2xl text-theme mb-4 print:text-xl print:mb-2">{{$resume['current_title']}}</h2>
 
-                <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-theme-darkest underline">roelofjanelsinga@gmail.com</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:roelofjanelsinga.com" class="text-theme-darkest underline">roelof.jan@hey.com</a></p>
                 <p><strong>Portfolio:</strong> <a href="https://roelofjanelsinga.com" class="text-theme-darkest underline">https://roelofjanelsinga.com</a></p>
                 <p><strong>Resume (English):</strong> <a href="{{route('resume.show')}}" class="text-theme-darkest underline">{{route('resume.show')}}</a></p>
                 <p><strong>CV (Nederlands):</strong> <a href="{{route('resume.show_dutch')}}" class="text-theme-darkest underline">{{route('resume.show_dutch')}}</a></p>
             </div>
 
-            <div class="flex-1 md:text-right print:hidden">
+            <div class="flex-1 md:text-right">
                 <img src="{{asset($resume['photo_url'])}}" class="my-4 w-auto h-32 md:h-48" />
             </div>
 
         </div>
 
-        <div class="flex flex-col md:flex-row my-4 sm:my-8 print:my-4">
+        <div class="flex flex-col md:flex-row my-4 sm:my-8">
 
-            <div class="flex-1 block w-full print:w-1/2 print:inline-block">
+            <div class="flex-1">
                 <h2>
                     @lang('resume.experience')
                 </h2>
@@ -103,7 +103,7 @@
                             <p class="mt-2 text-lg">
                                 {{$experience['job_title']}}
                             </p>
-                            <div class="mt-2 print:hidden pr-2">
+                            <div class="mt-2 pr-2">
                                 <strong>@lang('resume.key_activities')</strong>
 
                                 <ul class="block mt-2 ml-4 list-disc">
@@ -119,7 +119,7 @@
                 @endforeach
             </div>
 
-            <div class="flex-1 my-8 md:my-0 print:my-4 print:w-1/2 print:inline-block">
+            <div class="flex-1 my-8 md:my-0">
 
                 <h2>@lang('resume.education')</h2>
 

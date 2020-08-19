@@ -13,7 +13,8 @@
         "Building a scalable production environment with Docker Swarm",
         "Automating the sales process using Event sourcing",
         "Improving code quality through automated testing with Docker and CircleCI",
-	    "Near real-time indexing of millions of availability and pricing documents into Apache Solr"
+        "Automated deploying the entire architecture across several servers with Ansible",
+	    "Near real-time indexing of millions of availability and pricing documents into Apache Solr using Golang"
       ]
     },
     {
@@ -24,7 +25,7 @@
       "key_activities": [
         "Developing high performance web applications",
         "Building Aloia CMS and other open source packages",
-	    "Writing blog posts (800+ monthly readers)"
+	    "Running Plant care for Beginners (45.000+ monthly visitors)"
       ]
     },
     {
@@ -71,17 +72,16 @@
   "skills": [
     "PHP",
     "Laravel",
-    "Golang (+testing)",
-    "JavaScript",
-    "TypeScript",
-    "Angular",
-    "AngularJS",
+    "Ansible",
+    "Golang",
+    "Unit testing",
     "Amazon EC2",
     "Amazon RDS",
+    "MySQL",
     "DigitalOcean",
     "ReactJS",
     "Redis",
-    "Apache 2",
+    "Apache2",
     "Nginx",
     "Docker",
     "Docker Swarm",
@@ -89,15 +89,18 @@
     "CentOS",
     "CI/CD (Travis CI, CircleCI)",
     "Apache Solr 6.0+",
+    "Elasticsearch",
     "PHPUnit 6+",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "AngularJS",
     "Netlify",
     "GitHub Pages",
     "Jekyll",
     "SCSS",
     "TailwindCSS",
     "Webpack",
-    "Gulp",
-    "Grunt",
     "Node.js"
   ]
 }

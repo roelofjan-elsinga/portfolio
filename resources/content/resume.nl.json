@@ -13,7 +13,8 @@
         "Ontwikkelen van een schaalbare Docker swarm productie omgeving",
         "Automatiseren van het sales proces d.m.v. Event sourcing",
         "Verbeteren van de kwaliteit van de code d.m.v. automatische tests in Docker en CircleCI",
-        "Real-time indexeren van miljoenen beschikbaarheid en pricing documenten in Apache Solr"
+        "Automatisch deployen van het gehele platform verspreid over meerdere servers met Ansible",
+        "Real-time indexeren van miljoenen beschikbaarheid en pricing documenten in Apache Solr met Golang"
       ]
     },
     {
@@ -23,8 +24,8 @@
       "job_title": "Freelancer",
       "key_activities": [
         "Ontwikkelen van high performance web applicaties",
-        "Bouwen van Aloia CMS en andere open-source software bundels",
-        "Schrijven van blog posts (800+ maandelijkse lezers)"
+        "Bouwen van Aloia CMS en andere open-source software applicaties",
+        "Plant care for Beginners ontwikkelen (45.000+ maandelijks bezoekers)"
       ]
     },
     {
@@ -71,17 +72,16 @@
   "skills": [
     "PHP",
     "Laravel",
-    "Golang (+testen)",
-    "JavaScript",
-    "TypeScript",
-    "Angular",
-    "AngularJS",
+    "Ansible",
+    "Golang",
+    "Unit testing",
     "Amazon EC2",
     "Amazon RDS",
+    "MySQL",
     "DigitalOcean",
     "ReactJS",
     "Redis",
-    "Apache 2",
+    "Apache2",
     "Nginx",
     "Docker",
     "Docker Swarm",
@@ -89,15 +89,18 @@
     "CentOS",
     "CI/CD (Travis CI, CircleCI)",
     "Apache Solr 6.0+",
+    "Elasticsearch",
     "PHPUnit 6+",
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "AngularJS",
     "Netlify",
     "GitHub Pages",
     "Jekyll",
     "SCSS",
     "TailwindCSS",
     "Webpack",
-    "Gulp",
-    "Grunt",
     "Node.js"
   ]
 }
