@@ -55,6 +55,12 @@
 
     </div>
 
+    <div class="view-article paragraph-spacing my-32 text-lg">
+
+        {!! Block::get('resume_download') !!}
+
+    </div>
+
     <div class="paragraph-spacing cta-box">
 
         {!! Block::get('my_tech_stack') !!}

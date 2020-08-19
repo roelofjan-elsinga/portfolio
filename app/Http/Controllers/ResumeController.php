@@ -2,6 +2,8 @@
 
 namespace Main\Http\Controllers;
 
+use Illuminate\Support\Facades\Storage;
+
 class ResumeController
 {
     public function browser()
