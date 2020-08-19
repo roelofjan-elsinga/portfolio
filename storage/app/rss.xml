@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 05 Aug 2020 17:57:24 GMT</pubDate>
+              <pubDate>Wed, 19 Aug 2020 10:04:28 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -84,6 +84,16 @@ you have to ask questions, a lot o (...)</description>
                     <guid>https://roelofjanelsinga.com/articles/ansible-difference-between-tasks-and-roles</guid>
                     
                     <pubDate>Wed, 10 Jun 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Deploying your applications from GitHub using SSH doesn't have to be difficult and you don't have to give your remote machine access to your entire GitHub account either. In this post, we're going over using SSH through Deploy keys to only give your remote machine pull access to a single repository to deploy your application safely. (...)</description>
+                    <title>Ansible: Easy and Safe SSH deployments from GitHub</title>
+                    <link>https://roelofjanelsinga.com/articles/ansible-easy-safe-ssh-deployments-from-github</link>
+                    <guid>https://roelofjanelsinga.com/articles/ansible-easy-safe-ssh-deployments-from-github</guid>
+                    
+                    <pubDate>Wed, 19 Aug 2020 10:00:00 GMT</pubDate>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>

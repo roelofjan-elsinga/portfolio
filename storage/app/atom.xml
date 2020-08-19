@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-08-05T19:57:24+02:00</updated>
+              <updated>2020-08-19T12:04:28+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -435,6 +435,64 @@ stories of others regarding this amazing operating system.</p>]]></content>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
+                    <title>Ansible: Easy and Safe SSH deployments from GitHub</title>
+                    <link href="https://roelofjanelsinga.com/articles/ansible-easy-safe-ssh-deployments-from-github"/>
+                    <id>https://roelofjanelsinga.com/articles/ansible-easy-safe-ssh-deployments-from-github</id>
+                    <updated>2020-08-19T12:04:05+02:00</updated>
+                    <published>2020-08-19T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/ansible-logo.jpg" alt="Ansible Logo" /></p>
+<h1>Ansible: Easy and Safe SSH deployments from GitHub</h1>
+<p>Ansible is a server orchestration tool that you can also use to perform workflows on remote machines in a predictable and repeatable way. In a previous post, <a href="/articles/automating-laravel-deployment-using-ansible">&quot;Automating Laravel deployment using Ansible&quot;</a>, I've lined out how you can deploy an application using your GitHub username and a user token using the Ansible Vault. However, you can also do this using SSH, making sure your server only has pull-access to your application repository. This extra layer of security is quite easy to accomplish, so in this post, we're going to look at how to do this.</p>
+<p>In this blog post, we'll go over the following steps to use the same configuration as before, but with SSH instead of user tokens or passwords:</p>
+<ol>
+<li>Generating an SSH key on your server</li>
+<li>Submitting the Public SSH key to GitHub as a Deploy key</li>
+<li>Deploying your application using SSH</li>
+</ol>
+<h2>Prerequisites</h2>
+<p>You can use the configuration from the <a href="/articles/automating-laravel-deployment-using-ansible">previous blog post</a> to deploy your application, the only difference in this post is that you won't need the Ansible Vault, so you can remove the &quot;vars_files&quot; key from the configurations mentioned in that post. Along with that, you'll need to use the SSH address as the &quot;github_repo_url&quot; value: git@github.com:your-username/your-repository.git. </p>
+<h2>Generating an SSH key on your server</h2>
+<p>Generating an SSH key on your server is a quick process and involves a single command:</p>
+<pre><code class="language-bash">ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa </code></pre>
+<p>Let's break this down:</p>
+<ul>
+<li>&quot;-t&quot;: this is where we define the public key algorithm and set this to &quot;RSA&quot;</li>
+<li>&quot;-b&quot;: we're setting the key size to 4096 bits (don't go any lower)</li>
+<li>&quot;-f&quot;: We're specifying which filename we'd like to use. </li>
+</ul>
+<p>When you're specifying a filename, make sure the file doesn't already exist. This will result in the existing key being overwritten, which could break other SSH connections you might have. If the file already exists, choose a different name: ~/.ssh/your_repository_name, for example.</p>
+<p>If you do end up using a filename that differs from &quot;id_rsa&quot;, you'll need to make an additional change:</p>
+<ol>
+<li>Create and/or open the following file: ~/.ssh/config</li>
+<li>Add the snippet below</li>
+<li>Update the SSH address of your repository to use the custom SSH key</li>
+</ol>
+<pre><code>Host github_server
+    Hostname github.com
+    IdentityFile ~/.ssh/your_repository_name
+    IdentitiesOnly yes</code></pre>
+<p>and change the SSH address for your repository in Ansible to git@github_server:your-username/your-repository.git. Notice how we're not using github.com anymore and are now using our custom configuration: github_server.</p>
+<h2>Submitting the Public SSH key to GitHub as a Deploy key</h2>
+<p>Now that we've generated a private and public SSH key on our server, we can add this as a &quot;Deploy key&quot; to our GitHub repository. <a href="https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys">Deploy keys</a> are SSH keys that give the other machine access to a single GitHub repository. You, as the repository owner, can even specify if the remote machine has push privileges. By default, the Deploy keys only have pull access, which is exactly what we want for deployments. We don't want push privileges and we don't want to give the remote machine unlimited access to our entire GitHub account.</p>
+<p>To get your public SSH key from your server, run this command:</p>
+<pre><code class="language-bash">cat ~/.ssh/id_rsa.pub</code></pre>
+<p>If you used a custom name for your SSH key, use that instead. This could be:</p>
+<pre><code class="language-bash">cat ~/.ssh/your_repository_name.pub</code></pre>
+<p>Notice the .pub behind the SSH key, this is your public key. You can give this out to others, just make sure to NEVER give out your private key (the file without the .pub at the end). The contents of the private file need to remain a secret at all times. </p>
+<p>You should now see your public key in the terminal, starting with &quot;ssh-rsa&quot;. Copy the entire key, including ssh-rsa and the machine name at the end. This is all part of your public key.</p>
+<p>Now, go to your Repository on GitHub and navigate to the &quot;Settings&quot; tab -&gt; Deploy keys -&gt; Add deploy key.</p>
+<p>Give your Deploy key a recognizable title, like &quot;Production server&quot;, and paste the public SSH key in the &quot;Key&quot; field. Don't check the &quot;Allow write access&quot; checkbox unless you really need to. Now click &quot;Add key&quot; and you should see your newly created Deploy key in your overview.</p>
+<h2>Deploying your application using SSH</h2>
+<p>Now that you've connected your server to your GitHub repository, you can make some changes to your application and commit your changes. When you're ready to deploy your changes, execute your Ansible Playbook, and see your application being deployed using your new SSH setup. You can verify if your SSH key was used to pull your changes by refreshing the &quot;Deploy keys&quot; overview in GitHub. Your deploy key should now be green instead of gray, and it should have a message saying &quot;Last used within the last week&quot;. </p>
+<p>To execute your Ansible Playbook, you can use this command:</p>
+<pre><code class="language-bash">ansible-playbook your-configuration-file.yml</code></pre>
+<h2>Conclusion</h2>
+<p>Deploying your applications from GitHub using SSH doesn't have to be difficult and you don't have to give your remote machine access to your entire GitHub account either. In this post, we went over using SSH through Deploy keys in GitHub to only give your remote machine pull access to a single repository to deploy your application safely and easily.</p>
+<p>I've written this blog post to share my recent findings of deploying applications using Ansible. I could have missed a few things here and there, as I'm new to this myself. New findings will always be addressed in new blog posts and inaccuracies will be fixed in this post to make sure I'm not spreading misinformation. So if you've found a mistake, please let me know and help me to spread quality information to fellow software engineers.</p>]]></content>
+                    <summary><![CDATA[Deploying your applications from GitHub using SSH doesn't have to be difficult and you don't have to give your remote machine access to your entire GitHub account either. In this post, we're going over using SSH through Deploy keys to only give your remote machine pull access to a single repository to deploy your application safely.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
+                  </entry>
+<entry>
                     <title>Apache Solr tips for beginners like me</title>
                     <link href="https://roelofjanelsinga.com/articles/apache-solr-tips-for-beginners-like-me"/>
                     <id>https://roelofjanelsinga.com/articles/apache-solr-tips-for-beginners-like-me</id>
@@ -574,37 +632,45 @@ pro]]></summary>
                     <title>Boost web performance with Service Workers</title>
                     <link href="https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers"/>
                     <id>https://roelofjanelsinga.com/articles/boost-web-performance-with-service-workers</id>
-                    <updated>2020-08-05T19:57:22+02:00</updated>
+                    <updated>2020-08-12T08:12:32+02:00</updated>
                     <published>2020-08-05T12:00:00+02:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/speedy-zoomed-in-on-camera.jpeg" alt="Speedy zoomed in on Camera" /></p>
 <h1>Boost web performance with Service Workers</h1>
-<p>If you've been working on the performance of your websites for a while and haven't tried service workers yet, keep reading. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. This is not an in-depth tutorial about the ins and outs of service worker, but rather an insight in the benefit the service worker brings to your website's Pagespeed (and SEO) score.</p>
+<p>If you've been working on the performance of your websites for a while and haven't tried service workers yet, keep reading. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. This is not an in-depth tutorial about the ins and outs of service worker, but rather an insight in the benefit the service worker brings to your website's Lighthouse performance score.</p>
+<p>For this post, I'm using Lighthouse, because this checks the performance at this moment in time, rather than the performance over a longer period of time. The following screenshots have been taken on the same day. The first set of screenshots represent the website without a registered service worker and the second set of screenshots were taken when I registered the service worker. It's the same website, the only difference is the service worker.</p>
 <h2>Before the Service Worker</h2>
 <p>An insight wouldn't mean anything if we don't have a before and after situation. In the following two screenshots you see the before screenshots for the mobile and desktop scores.</p>
-<p><img src="/images/articles/pagespeed-score-before-service-worker.png" alt="Pagespeed score before service worker" title="Pagespeed score before service worker" />
-<span class="caption">Pagespeed score (desktop) before Service Worker</span></p>
+<p><img src="/images/articles/lighthouse-desktop-before.png" alt="Lighthouse performance score before service worker" title="Lighthouse performance score before service worker" />
+<span class="caption">Lighthouse performance score (desktop) before Service Worker</span></p>
 <p>As you can see, the score for desktop was quite good already and didn't need a lot of improvement. However, if we look at the score for mobile there is different situation.</p>
-<p><img src="/images/articles/pagespeed-score-before-service-worker-mobile.png" alt="Pagespeed score before service worker mobile" title="Pagespeed score before service worker mobile" />
-<span class="caption">Pagespeed score (mobile) before Service Worker</span></p>
+<p><img src="/images/articles/lighthouse-mobile-before.png" alt="Lighthouse performance score before service worker mobile" title="Lighthouse performance score before service worker mobile" />
+<span class="caption">Lighthouse performance score (mobile) before Service Worker</span></p>
 <p>The score for the mobile version wasn't great and really needed some improvement, especially since most traffic (80%+) to this website is on mobile devices.</p>
 <h2>In comes the service worker</h2>
-<p>As the website I've run this test on is built with Laravel, I use Laravel Mix for compiling Sass and other assets. Laravel Mix has a plugin to generate a service worker: <a href="https://laravel-mix.com/extensions/workbox">laravel-mix-workbox</a>. With this extension you can very easily generate a service worker for the compiled assets. </p>
+<p>As the website I've run this test on is built with Laravel, I use Laravel Mix for compiling Sass and other assets. Laravel Mix has a plugin to generate a service worker: <a href="https://laravel-mix.com/extensions/workbox">laravel-mix-workbox</a>. With this extension, you can very easily generate a service worker for the compiled assets. </p>
 <p>This is an excerpt of the configuration I use to generate the service worker:</p>
 <script src="https://gist.github.com/roelofjan-elsinga/1504426161dbe1ae15014c946bd57f8b.js"></script>
-<p>The most important thing to not here is that you need to include the &quot;webpackConfig&quot; section. If you don't do this, the Service Worker will attempt to cache your assets with an extra leading slash: &quot;//css/style.css&quot;. This will throw errors and will cause the Service Worker to not lauch, because it won't lauch if there are any errors. So by adding &quot;webpackConfig&quot; with the new publicPath, you solve this issue.</p>
+<p>The most important thing to not here is that you need to include the &quot;webpackConfig&quot; section. If you don't do this, the Service Worker will attempt to cache your assets with an extra leading slash: &quot;//css/style.css&quot;. This will throw errors and will cause the Service Worker to not launch because it won't launch if there are any errors. So by adding &quot;webpackConfig&quot; with the new publicPath, you solve this issue.</p>
 <p>You can use this same configuration if you're using Webpack to bundle and compile your assets. Simply replace &quot;generateSW&quot; with &quot;new GenerateSW&quot; and include it in the plugins section of your webpack.config.js file.</p>
 <p>Now that you have the sw.js file, you need to include it in your webpage:</p>
 <script src="https://gist.github.com/roelofjan-elsinga/78624db71a67657a22fbf447bce03df7.js"></script>
 <h2>After the service worker</h2>
-<p>Now that we have the service worker installed on your webpage, we can check our Pagespeed score once again. These are the screenshots for the Pagespeed scores on mobile and desktop after including the service worker.</p>
-<p><img src="/images/articles/pagespeed-score-after-service-worker.png" alt="Pagespeed score after service worker" title="Pagespeed score after service worker" />
-<span class="caption">Pagespeed score (desktop) after Service Worker</span></p>
-<p>As you can see, the score is now 99 instead of 95. It's a nice boost to our score, but the desktop version never needed the extra boost. Mobile on the other hand has made a massive jump:</p>
-<p><img src="/images/articles/pagespeed-score-after-service-worker-mobile.png" alt="Pagespeed score after service worker mobile" title="Pagespeed score after service worker mobile" />
-<span class="caption">Pagespeed score (mobile) after Service Worker</span></p>
-<p>The mobile score is now 90, and made a jump from 53 to 90, which is quite a difference. The Service worker has caused the score to jump quite a bit and load the static assets much more efficiently. </p>
+<p>Now that we have the service worker installed on your webpage, we can check our Lighthouse performance score once again. These are the screenshots for the Lighthouse performance scores on mobile and desktop after including the service worker.</p>
+<p><img src="/images/articles/lighthouse-desktop-after.png" alt="Lighthouse performance score after service worker" title="Lighthouse performance score after service worker" />
+<span class="caption">Lighthouse performance score (desktop) after Service Worker</span></p>
+<p>As you can see, the score is higher than it was. It's a nice boost to our score, but the desktop version never needed the extra performance to begin with. Mobile on the other hand has made a massive jump:</p>
+<p><img src="/images/articles/lighthouse-mobile-after.png" alt="Lighthouse performance score after service worker mobile" title="Lighthouse performance score after service worker mobile" />
+<span class="caption">Lighthouse score (mobile) after Service Worker</span></p>
+<p>The mobile score is now high enough to be green, which was my goal when I started this. The Service worker has caused the score to jump quite a bit and load the static assets much more efficiently. </p>
+<h2>Other actions taken to improve the score</h2>
+<p>To achieve this score, having a poorly optimized website and only adding a service worker isn't enough. Before adding the service worker, I'd already carried out a variety of different optimizations:</p>
+<ul>
+<li>Lazy loading images through loading=&quot;lazy&quot;</li>
+<li>Properly sizing images with <a href="/articles/technical-seo-improving-your-page-loads-with-properly-sized-images">Gumlet</a></li>
+</ul>
+<p>These factors all played a role in the final score, but it doesn't take away that the service worker still provides a nice performance boost.</p>
 <h2>Conclusion</h2>
-<p>Adding a service worker to your website can massively improve the Pagespeed score, your UX, and even your SEO score. So if you're able to do this for your projects and you're looking to get some extra performance out of your website, including a service worker is the easiest performance boost you can make.</p>]]></content>
+<p>Adding a service worker to your website can massively improve the Lighthouse performance score, your UX, and even results in a better SEO score. So if you're able to do this for your projects and you're looking to get some extra performance out of your website, including a service worker is one of the quickest performance boosts you can get.</p>]]></content>
                     <summary><![CDATA[If you're looking to improve the performance of your website and you haven't tried service workers yet, you should. Adding them gives you a big boost in web performance. Read here how I did it and let me show you how you can too.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/speedy-zoomed-in-on-camera.jpeg" medium="image" type="image/jpeg" width="640" height="427" />
                   </entry>

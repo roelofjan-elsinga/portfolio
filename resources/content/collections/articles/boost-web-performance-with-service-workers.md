@@ -3,7 +3,7 @@ description: 'If you''re looking to improve the performance of your website and 
 post_date: '2020-08-05'
 is_published: true
 is_scheduled: false
-update_date: '2020-08-06 11:17:39'
+update_date: '2020-08-12 08:12:32'
 linkedin_post: 'I''ve been able to improve the mobile performance of one of my websites drastically. I did this by only adding a Service Worker. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. '
 twitter_post: ''
 ---
@@ -27,13 +27,13 @@ As you can see, the score for desktop was quite good already and didn't need a l
 The score for the mobile version wasn't great and really needed some improvement, especially since most traffic (80%+) to this website is on mobile devices.
 
 ## In comes the service worker
-As the website I've run this test on is built with Laravel, I use Laravel Mix for compiling Sass and other assets. Laravel Mix has a plugin to generate a service worker: [laravel-mix-workbox](https://laravel-mix.com/extensions/workbox). With this extension you can very easily generate a service worker for the compiled assets. 
+As the website I've run this test on is built with Laravel, I use Laravel Mix for compiling Sass and other assets. Laravel Mix has a plugin to generate a service worker: [laravel-mix-workbox](https://laravel-mix.com/extensions/workbox). With this extension, you can very easily generate a service worker for the compiled assets. 
 
 This is an excerpt of the configuration I use to generate the service worker:
 
 <script src="https://gist.github.com/roelofjan-elsinga/1504426161dbe1ae15014c946bd57f8b.js"></script>
 
-The most important thing to not here is that you need to include the "webpackConfig" section. If you don't do this, the Service Worker will attempt to cache your assets with an extra leading slash: "//css/style.css". This will throw errors and will cause the Service Worker to not lauch, because it won't lauch if there are any errors. So by adding "webpackConfig" with the new publicPath, you solve this issue.
+The most important thing to not here is that you need to include the "webpackConfig" section. If you don't do this, the Service Worker will attempt to cache your assets with an extra leading slash: "//css/style.css". This will throw errors and will cause the Service Worker to not launch because it won't launch if there are any errors. So by adding "webpackConfig" with the new publicPath, you solve this issue.
 
 You can use this same configuration if you're using Webpack to bundle and compile your assets. Simply replace "generateSW" with "new GenerateSW" and include it in the plugins section of your webpack.config.js file.
 
