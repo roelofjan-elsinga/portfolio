@@ -48,7 +48,7 @@ class PublicTest extends TestCase
             ->assertSessionHas('contact_success', true);
 
         Mail::assertSent(ContactMail::class, function ($mail) {
-            return $mail->hasTo('roelofjanelsinga@gmail.com');
+            return $mail->hasTo('contact@roelofjanelsinga.com');
         });
     }
 

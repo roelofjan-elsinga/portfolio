@@ -42,10 +42,10 @@ return [
     ],
 
     'linkedin' => [
-        'key' => env('LINKEDIN_KEY'),
-        'secret' => env('LINKEDIN_SECRET'),
-        'redirect_uri' => env('LINKEDIN_REDIRECT_URI'),
-        'state' => env('LINKEDIN_STATE'),
+        'key' => env('LINKEDIN_KEY', ''),
+        'secret' => env('LINKEDIN_SECRET', ''),
+        'redirect_uri' => env('LINKEDIN_REDIRECT_URI', ''),
+        'state' => env('LINKEDIN_STATE', ''),
     ]
 
 ];

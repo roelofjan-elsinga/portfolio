@@ -830,4 +830,8 @@ module.exports = {
 
     corePlugins: {},
 
+    future: {
+        removeDeprecatedGapUtilities: true,
+    },
+
 }
