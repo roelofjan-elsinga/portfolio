@@ -55,9 +55,9 @@
 
     </div>
 
-    <div class="view-article paragraph-spacing my-32 text-lg">
+    <div class="view-article my-32 text-lg">
 
-        {!! Block::get('resume_download') !!}
+        @include('blocks.resume_download')
 
     </div>
 
