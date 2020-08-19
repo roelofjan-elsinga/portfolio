@@ -23,7 +23,6 @@
     "minimist": "^1.2.2",
     "sass": "^1.16.0",
     "sass-loader": "7.*",
-    "serialize-javascript": "^2.1.1",
     "tailwindcss": "^1.4",
     "workbox-webpack-plugin": "^5.1.3"
   },
