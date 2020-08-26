@@ -1,14 +1,14 @@
 ---
-description: 'API gateways are great for development teams, because they expose data you need for all kinds of different purposes in a central location. So why not create an API Gateway with GraphQL and use it to bring all your REST endpoints in 1 place?'
+description: 'API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. So why not create an API gateway with GraphQL and use it to bring all your REST endpoints in 1 place?'
 post_date: '2020-08-26'
 is_published: false
 is_scheduled: true
-update_date: '2020-08-25 20:40:16'
-linkedin_post: 'With a growing list of REST API endpoints from different services, the need of having an API gateway started to grow as well. This is why I''ve looked at a few different API gateways for REST resources, but ended up with wanting to use GraphQL for this. I already had experience with building a GraphQL server in PHP with Laravel, but that wasn''t quite fast enough and made caching very difficult. Because of this, I opted to use a Golang to build my GraphQL server. It''s both much faster and caching fields is much easier. But it didn''t end there, because I needed it to centralize all REST API endpoints, so that''s what I''ve experimented with and it''s actually not as difficult as I expected. Read more about this process with code examples.'
+update_date: '2020-08-26 08:27:54'
+linkedin_post: 'With a growing list of REST API endpoints from different services, the need of having an API gateway starts to grow as well. This makes it easier for a development team to build products. This is why I''ve looked at a few different API gateways for REST resources, but ended up using GraphQL for this. I already had experience with building a GraphQL server in PHP with Laravel, but the performance wasn''t quite there and made caching very difficult. Because of this, I opted to use Golang to build my GraphQL server. It''s much faster and caching fields is easier to do. I''ve experimented centralizing REST API endpoints using GraphQL and it''s actually not as difficult as I expected. Read more about this process with code examples.'
 twitter_post: ''
 ---
 ![Golang with GraphQL](/images/articles/golang-with-graphql.png)
-# GraphQL: Abstracting existing API endpoints in a single place
+# GraphQL: Centralize existing REST API endpoints for easier development
 API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. There are a few great REST API gateways out there, like [KrakenD](https://www.krakend.io/), but what if you wanted to go in a different direction and choose GraphQL for your API infrastructure? Well, that works out perfectly, as it's one of the goals of GraphQL: Abstracting many different services into a single place and allowing the developers very fine-grained control over the data they need.
 
 In this post, we're going to look over a GraphQL implementation, which keeps the previous sentence in mind: Abstracting existing REST API Endpoints into a fast GraphQL server. To build the GraphQL server, we're going to use Golang: It's fast, it's memory efficient, and provides just enough tools, but not too many. The GraphQL package we'll use is [github.com/graphql-go/graphql](https://github.com/graphql-go/graphql). This package is very closely aligned with the JavaScript implementation [graphql-js](https://github.com/graphql/graphql-js). This makes it a perfect candidate, because you'll be able to follow JavaScript tutorials and be able to port this to Go.
