@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-08-19T12:04:28+02:00</updated>
+              <updated>2020-08-26T12:00:05+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1334,6 +1334,51 @@ CMD service nginx start</code></pre>
 <p>If you're looking at finding a simpler way to host your static websites, you should give GitHub Pages a try. It simplifies your development cycles and allows technical, but also less technical team members to contribute to the project directly.</p>]]></content>
                     <summary><![CDATA[Static web hosting has been a pain point for many developers for years, but it doesn't have to be painful. In this post, we go over how you can use GitHub pages to improve your development cycles and empower everyone to publish content.]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
+                    <title>GraphQL: Centralize existing REST API endpoints for easier development</title>
+                    <link href="https://roelofjanelsinga.com/articles/graphql-centralize-existing-rest-api-endpoints"/>
+                    <id>https://roelofjanelsinga.com/articles/graphql-centralize-existing-rest-api-endpoints</id>
+                    <updated>2020-08-26T08:27:54+02:00</updated>
+                    <published>2020-08-26T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/golang-with-graphql.png" alt="Golang with GraphQL" /></p>
+<h1>GraphQL: Centralize existing REST API endpoints for easier development</h1>
+<p>API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. There are a few great REST API gateways out there, like <a href="https://www.krakend.io/">KrakenD</a>, but what if you wanted to go in a different direction and choose GraphQL for your API infrastructure? Well, that works out perfectly, as it's one of the goals of GraphQL: Abstracting many different services into a single place and allowing the developers very fine-grained control over the data they need.</p>
+<p>In this post, we're going to look over a GraphQL implementation, which keeps the previous sentence in mind: Abstracting existing REST API Endpoints into a fast GraphQL server. To build the GraphQL server, we're going to use Golang: It's fast, it's memory efficient, and provides just enough tools, but not too many. The GraphQL package we'll use is <a href="https://github.com/graphql-go/graphql">github.com/graphql-go/graphql</a>. This package is very closely aligned with the JavaScript implementation <a href="https://github.com/graphql/graphql-js">graphql-js</a>. This makes it a perfect candidate, because you'll be able to follow JavaScript tutorials and be able to port this to Go.</p>
+<h2>The entrypoint</h2>
+<p>To show how you can abstract an existing REST API Endpoint in GraphQL, we're going to need an example project. I've created an example project at <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction">github.com/roelofjan-elsinga/graphql-rest-abstraction</a>. You can use this to follow along in this post, as I will go over different parts of the GraphQL server and explain what's going on.</p>
+<p>The entrypoint of our GraphQL server is <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/main.go">main.go</a>. Here we specify two resources in our GraphQL server: users and user. </p>
+<script src="https://gist.github.com/roelofjan-elsinga/36cd9a32bfe45cec0b26cb8d485f3a65.js"></script>
+<p>We intend to use a dummy <a href="https://jsonplaceholder.typicode.com/">REST API service</a> to fetch JSON data for all users and also a single user. The &quot;users&quot; resources will be used to fetch all users at <a href="https://jsonplaceholder.typicode.com/users">https://jsonplaceholder.typicode.com/users</a>, while the &quot;user&quot; resource will be used to fetch a single user by ID from <a href="https://jsonplaceholder.typicode.com/users/1">https://jsonplaceholder.typicode.com/users/1</a> or any other user available to us.</p>
+<h2>Fetching all users</h2>
+<p>Now that we have a REST API we can use, we can create a resource to be able to fetch this data through a GraphQL resource. You can find this resource in <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/users.go">queries/users.go</a>: </p>
+<script src="https://gist.github.com/roelofjan-elsinga/6c9003ccbc75a9c5c7b37a243b9a5de3.js"></script>
+<p>Here you'll find a method &quot;fetchUsers&quot;, where we call the REST API endpoint and convert the data into a Go struct, which is located in <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/models/user.go">models/user.go</a>. Our field &quot;Users&quot;, will return the User slice from &quot;fetchUsers&quot;. </p>
+<p>In the &quot;users&quot; field declaration we specified the type we expect to receive from this GraphQL resource: graphql.NewList(userObject). We told GraphQL we're returning multiple users. The userObject is one of our GraphQL resources and you can <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/users.go#L134">view it in full here</a>. It's too much code to inline here, so I've linked it up to the exact line you need in the source code. The userObject itself also contains fields and nested objects (<a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/users.go#L77">address</a> and <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/users.go#L13">company</a>). These nested objects are linked to the exact line as well. As you can see, objects can be nested within nested objects.</p>
+<p>Now that we've specified all fields and we can retrieve data from the REST API, it's time to give our new GraphQL resource a try. Follow the <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction#how-to-launch-the-server-for-development">setup steps</a> (there are only 4, and they're easy) and try to execute the following GraphQL query:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/1d59d60fc250fc07cd462556dacf6d18.js"></script>
+<p>You should now see all of your users appear in the response, but only the fields we've specified in our query:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/0917f2c7880a5757e9cfb900c2d01378.js"></script>
+<p>I've redacted the rest of the users to not make this snippet too long. As you can see, only the requested fields we're returned, like we expect from GraphQL.</p>
+<h2>Fetching a single user</h2>
+<p>Now that we've seen we can retrieve all users, we'll also go into retrieving a single user. The userObject is the same as we've looked at before, so I won't go over that again, but the field declaration for &quot;user&quot; has changed a little bit compared to &quot;users&quot; and so has the query. Let's look a the field declaration first. It's located at <a href="https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/user.go">queries/user.go</a> and looks like this:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/085f23bc3e9255c06f6d7aa106087f31.js"></script>
+<p>There are three main differences:</p>
+<ol>
+<li>The type we expect is now userObject instead of graphql.NewList(userObject). We only expect 1 user.</li>
+<li>Our field declaration has an Args key. We use this to tell the server that we need a user ID for this query and that it cannot be empty: graphql.NewNonNull(graphql.Int)</li>
+<li>We pass the user ID to the fetchSingleUser method and append it to the REST endpoint</li>
+</ol>
+<p>I mentioned that the GraphQL query now has changed as well, so let's look at what it looks like:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/6de71af5f280ba0c9df539a665d77f13.js"></script>
+<p>This query needs a user_id to be submitted (of type Int!), so we can do that using {&quot;user_id&quot;: 1}, or whichever user_id you want to retrieve from the API endpoint.</p>
+<p>This query results in the following response:</p>
+<script src="https://gist.github.com/roelofjan-elsinga/df938bf1d98c0095afca0cdbb1ea3398.js"></script>
+<p>As you can see, we now only have the user with ID of 1.</p>
+<h2>Conclusion</h2>
+<p>This guide has shown you how to can create an API Gateway using GraphQL, to create an abstraction layer in front of your existing REST API endpoints. There are a few things missing, like Authentication, a DataLoader for efficient data fetching, but this is a simple example to show how this works. Using this method, you can piece by piece expand your API Gateway in GraphQL and Go to cover your entire list of REST API endpoints, without disturbing your existing customers. Your existing customers will still be able to fetch data from your REST API, but over time you can help them migrate to your easy-to-use GraphQL API Gateway.</p>]]></content>
+                    <summary><![CDATA[API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. So why not create an API gateway with GraphQL and use it to bring all your REST endpoints in 1 place?]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-with-graphql.png" medium="image" type="image/png" width="640" height="427" />
                   </entry>
 <entry>
                     <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>

@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 19 Aug 2020 10:04:28 GMT</pubDate>
+              <pubDate>Wed, 26 Aug 2020 10:00:05 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -322,6 +322,16 @@ everything we need it to do. People can say that tools are interchangea (...)</d
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/github-logo.png" medium="image" type="image/png" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. So why not create an API gateway with GraphQL and use it to bring all your REST endpoints in 1 place? (...)</description>
+                    <title>GraphQL: Centralize existing REST API endpoints for easier development</title>
+                    <link>https://roelofjanelsinga.com/articles/graphql-centralize-existing-rest-api-endpoints</link>
+                    <guid>https://roelofjanelsinga.com/articles/graphql-centralize-existing-rest-api-endpoints</guid>
+                    
+                    <pubDate>Wed, 26 Aug 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/golang-with-graphql.png" medium="image" type="image/png" width="640" height="427"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>In this post, I go over the steps I have taken to add Elasticsearch to an existing Laravel application on very minimal hardware resources. I also discuss the hurdles I had to overcome to achieve this. (...)</description>
                     <title>How I added Elasticsearch to a Laravel application on a server with minimal resources</title>
