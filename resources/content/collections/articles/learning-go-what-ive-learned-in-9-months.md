@@ -1,12 +1,13 @@
 ---
 description: 'In January of 2020, I started learning Go. In these past 9 months, I''ve been able to build multiple applications to contribute to faster applications, easier deployments, and more stability in the infrastructure. In this post, I go over what I''ve built and what I learned.'
 post_date: '2020-09-17'
-is_published: false
-is_scheduled: true
+is_published: true
+is_scheduled: false
 update_date: '2020-09-16 14:04:25'
 linkedin_post: 'In January of 2020, I started learning Go. In these past 9 months, I''ve been able to build multiple applications to contribute to faster applications, easier deployments, and more stability in the infrastructure. The simplicity of the language and amazing performance were very compelling reasons to pick up Go. In this post, I go over what I''ve built and what I learned.'
 twitter_post: ''
 ---
+
 ![Go logo](/images/articles/cli-tool-in-go.png)
 # Learning Go: What I've learned in 9 months
 If you've developed any applications that run on servers, you have probably heard of Go (Golang). It's a compiled language with very little moving parts, so you won't have to spend a long time to get to know the programming language and start building applications with it. Besides being relatively easy to learn, it's also known for being lightning fast, because the code you write is compiled into binaries, which can run on your system natively. 

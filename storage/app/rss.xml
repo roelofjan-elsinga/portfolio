@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 26 Aug 2020 10:00:05 GMT</pubDate>
+              <pubDate>Thu, 17 Sep 2020 10:00:05 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -658,6 +658,16 @@ I (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/girl-on-laptop.jpg" medium="image" type="image/jpeg" width="1500" height="1000"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>In January of 2020, I started learning Go. In these past 9 months, I've been able to build multiple applications to contribute to faster applications, easier deployments, and more stability in the infrastructure. In this post, I go over what I've built and what I learned. (...)</description>
+                    <title>Learning Go: What I've learned in 9 months</title>
+                    <link>https://roelofjanelsinga.com/articles/learning-go-what-ive-learned-in-9-months</link>
+                    <guid>https://roelofjanelsinga.com/articles/learning-go-what-ive-learned-in-9-months</guid>
+                    
+                    <pubDate>Thu, 17 Sep 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/cli-tool-in-go.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>I've learned to speak Norwegian over the past 2-3 years, here are some things I've found interesting and note worthy. (...)</description>
                     <title>Learning to speak Norwegian</title>
