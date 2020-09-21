@@ -1,18 +1,18 @@
 ---
 description: 'Debugging your infrastructure with Netdata'
-post_date: '2020-09-16'
+post_date: '2020-09-23'
 is_published: false
-is_scheduled: false
-update_date: '2020-09-15 19:00:07'
+is_scheduled: true
+update_date: '2020-09-16 18:41:28'
 linkedin_post: ''
 twitter_post: ''
 ---
 ![Netdata cloud dashboard](/images/articles/netdata-cloud-dashboard.png)
 <span class="caption">Graphics from the <a href="https://www.netdata.cloud/blog/introducing-the-all-new-netdata-cloud/" rel="nofollow">Netdata blog</a></span>
 # Fixing hidden infrastructure issues with Netdata
-Fixing issues for a single application is usually not the most difficult thing in the world. You'll have to keep track of a limited amount of aspects that could potentially go wrong. But what happens when you're developing an entire platform consisting of multiple services? How do you keep track of potential issues between them at scale? And how do you deal with fixing issues if the different services are spread out over multiple nodes? 
+Fixing issues for a single application is usually not the most difficult thing in the world. You'll have to keep track of a limited amount of aspects that could potentially go wrong. But what happens when you're developing an entire platform consisting of multiple services? How do you keep track of potential issues between them at scale? And how do you deal with discovering issues if different services are spread out over multiple nodes? 
 
-Well, you're going to need some detailed monitoring that you can very easily deploy on multiple nodes at the same time. This is where you can deploy Netdata to keep track of your entire infrastructure at a single glance.
+Well, you're going to need a good monitoring solution that you can very easily deploy on multiple nodes at the same time. For this, you could use Netdata to keep track of your entire infrastructure at a single glance.
 
 In this post, I'm explaining why Netdata is a great option for your infrastructure monitoring and how it has helped me to fix a major problem with my infrastructure within the first hour of installing it in my servers.
 
