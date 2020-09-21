@@ -1,22 +1,22 @@
 ---
-description: 'API gateways are great for development teams, because they expose data you need for all kinds of different purposes in a central location. So why not create an API Gateway with GraphQL and use it to bring all your REST endpoints in 1 place?'
+description: 'API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. So why not create an API gateway with GraphQL and use it to bring all your REST endpoints in 1 place?'
 post_date: '2020-08-26'
-is_published: false
-is_scheduled: true
-update_date: '2020-08-25 20:40:16'
-linkedin_post: 'With a growing list of REST API endpoints from different services, the need of having an API gateway started to grow as well. This is why I''ve looked at a few different API gateways for REST resources, but ended up with wanting to use GraphQL for this. I already had experience with building a GraphQL server in PHP with Laravel, but that wasn''t quite fast enough and made caching very difficult. Because of this, I opted to use a Golang to build my GraphQL server. It''s both much faster and caching fields is much easier. But it didn''t end there, because I needed it to centralize all REST API endpoints, so that''s what I''ve experimented with and it''s actually not as difficult as I expected. Read more about this process with code examples.'
+is_published: true
+is_scheduled: false
+update_date: '2020-08-26 12:17:42'
+linkedin_post: 'With a growing list of REST API endpoints from different services, the need of having an API gateway starts to grow as well. This makes it easier for a development team to build products. This is why I''ve looked at a few different API gateways for REST resources, but ended up using GraphQL for this. I already had experience with building a GraphQL server in PHP with Laravel, but the performance wasn''t quite there and made caching very difficult. Because of this, I opted to use Golang to build my GraphQL server. It''s much faster and caching fields is easier to do. I''ve experimented centralizing REST API endpoints using GraphQL and it''s actually not as difficult as I expected. Read more about this process with code examples.'
 twitter_post: ''
 ---
 ![Golang with GraphQL](/images/articles/golang-with-graphql.png)
-# GraphQL: Abstracting existing API endpoints in a single place
-API gateways are great for development teams, because they expose the data you need for all kinds of different purposes in a central location. There are a few great REST API gateways out there, like [KrakenD](https://www.krakend.io/), but what if you wanted to go in a different direction and choose GraphQL for your API infrastructure? Well, that works out perfectly, as it's one of the goals of GraphQL: Abstracting many different services into a single place and allowing the developers very fine-grained control over the data they need.
+# GraphQL: Centralize existing REST API endpoints for easier development
+API gateways are great for development teams because they expose the data you need for all kinds of different purposes in a central location. There are a few great REST API gateways out there, like [KrakenD](https://www.krakend.io/), but what if you wanted to go in a different direction and choose GraphQL for your API infrastructure? Well, that works out perfectly, as it's one of the goals of GraphQL: Abstracting many different services into a single place and allowing the developers very fine-grained control over the data they need.
 
-In this post, we're going to look over a GraphQL implementation, which keeps the previous sentence in mind: Abstracting existing REST API Endpoints into a fast GraphQL server. To build the GraphQL server, we're going to use Golang: It's fast, it's memory efficient, and provides just enough tools, but not too many. The GraphQL package we'll use is [github.com/graphql-go/graphql](https://github.com/graphql-go/graphql). This package is very closely aligned with the JavaScript implementation [graphql-js](https://github.com/graphql/graphql-js). This makes it a perfect candidate, because you'll be able to follow JavaScript tutorials and be able to port this to Go.
+In this post, we're going to look over a GraphQL implementation, which keeps the previous sentence in mind: Abstracting existing REST API Endpoints into a fast GraphQL server. To build the GraphQL server, we're going to use Golang: It's fast, it's memory efficient, and provides just enough tools, but not too many. The GraphQL package we'll use is [github.com/graphql-go/graphql](https://github.com/graphql-go/graphql). This package is very closely aligned with the JavaScript implementation [graphql-js](https://github.com/graphql/graphql-js). This makes it a perfect candidate because you'll be able to follow JavaScript tutorials and be able to port this to Go.
 
-## The entrypoint
+## The entry point
 To show how you can abstract an existing REST API Endpoint in GraphQL, we're going to need an example project. I've created an example project at [github.com/roelofjan-elsinga/graphql-rest-abstraction](https://github.com/roelofjan-elsinga/graphql-rest-abstraction). You can use this to follow along in this post, as I will go over different parts of the GraphQL server and explain what's going on.
 
-The entrypoint of our GraphQL server is [main.go](https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/main.go). Here we specify two resources in our GraphQL server: users and user. 
+The entry point of our GraphQL server is [main.go](https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/main.go). Here we specify two resources in our GraphQL server: users and user. 
 
 <script src="https://gist.github.com/roelofjan-elsinga/36cd9a32bfe45cec0b26cb8d485f3a65.js"></script>
 
@@ -39,7 +39,7 @@ You should now see all of your users appear in the response, but only the fields
 
 <script src="https://gist.github.com/roelofjan-elsinga/0917f2c7880a5757e9cfb900c2d01378.js"></script>
 
-I've redacted the rest of the users to not make this snippet too long. As you can see, only the requested fields we're returned, like we expect from GraphQL.
+I've redacted the rest of the users to not make this snippet too long. As you can see, only the requested fields we're returned, as we expect from GraphQL.
 
 ## Fetching a single user
 Now that we've seen we can retrieve all users, we'll also go into retrieving a single user. The userObject is the same as we've looked at before, so I won't go over that again, but the field declaration for "user" has changed a little bit compared to "users" and so has the query. Let's look a the field declaration first. It's located at [queries/user.go](https://github.com/roelofjan-elsinga/graphql-rest-abstraction/blob/master/queries/user.go) and looks like this:
