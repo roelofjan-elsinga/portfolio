@@ -14,18 +14,18 @@
         "Automatiseren van het sales proces d.m.v. Event sourcing",
         "Verbeteren van de kwaliteit van de code d.m.v. automatische tests in Docker en CircleCI",
         "Automatisch deployen van het gehele platform verspreid over meerdere servers met Ansible",
-        "Real-time indexeren van miljoenen beschikbaarheid en pricing documenten in Apache Solr met Golang"
+        "Real-time indexeren van miljoenen documenten in Apache Solr met Golang"
       ]
     },
     {
-      "dates": "Okt 2015 - Nu",
+      "dates": "Okt 2017 - Nu",
       "company": "Roelof Jan Elsinga",
       "location": "Groningen, Nederland",
       "job_title": "Freelancer",
       "key_activities": [
         "Ontwikkelen van high performance web applicaties",
-        "Bouwen van Aloia CMS en andere open-source software applicaties",
-        "Plant care for Beginners ontwikkelen (45.000+ maandelijks bezoekers)"
+        "Bouwen van Aloia CMS en andere open-source software projecten",
+        "Plant care for Beginners ontwikkelen (50.000+ maandelijks bezoekers)"
       ]
     },
     {
