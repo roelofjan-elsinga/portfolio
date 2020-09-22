@@ -1,4 +1,4 @@
-<html>
+<html lang="{{app()->getLocale()}}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="flex-1 md:text-right">
-                <img src="{{asset($resume['photo_url'])}}" class="my-4 w-auto h-32 md:h-48" />
+                <img src="{{asset($resume['photo_url'])}}" alt="Roelof Jan Elsinga" class="my-4 w-auto h-32 md:h-48" />
             </div>
 
         </div>
