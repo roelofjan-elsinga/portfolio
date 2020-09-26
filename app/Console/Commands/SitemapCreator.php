@@ -23,7 +23,6 @@ class SitemapCreator extends \AloiaCms\Publish\Console\SitemapCreator
         $generator->add(route('resume.show', [], false), 0.9, $this->lastmod, 'monthly');
         $generator->add(route('resume.show_dutch', [], false), 0.9, $this->lastmod, 'monthly');
         $generator->add(route('public.open_source', [], false), 0.9, $this->lastmod, 'monthly');
-        $generator->add(route('contact', [], false), 0.9, $this->lastmod, 'monthly');
     }
 
     /**
