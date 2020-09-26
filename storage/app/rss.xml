@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Thu, 17 Sep 2020 10:00:05 GMT</pubDate>
+              <pubDate>Wed, 23 Sep 2020 10:00:05 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -302,6 +302,16 @@ everything we need it to do. People can say that tools are interchangea (...)</d
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Netdata has helped me to fix a major issue by pointing me in the right direction. By visualizing the issues that were happening, it helped me to find and fix a major issue within the first hour of deploying Netdata across the different nodes in the platform architecture. (...)</description>
+                    <title>Fixing hidden infrastructure issues with Netdata</title>
+                    <link>https://roelofjanelsinga.com/articles/fixing-hidden-infrastructure-issues-with-netdata</link>
+                    <guid>https://roelofjanelsinga.com/articles/fixing-hidden-infrastructure-issues-with-netdata</guid>
+                    
+                    <pubDate>Wed, 23 Sep 2020 10:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/netdata-cloud-dashboard.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Three weeks ago I posted about structured data and technical SEO. These improvements resulted in a 73% increase in clicks from Google results. Find out what I learned. (...)</description>
                     <title>Getting a 73% increase in clicks from Google results</title>

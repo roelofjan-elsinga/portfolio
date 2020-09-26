@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-09-17T12:00:05+02:00</updated>
+              <updated>2020-09-23T12:00:05+02:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -1277,6 +1277,47 @@ CMD service nginx start</code></pre>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/explore.jpg" medium="image" type="image/jpeg" width="1200" height="800" />
                   </entry>
 <entry>
+                    <title>Fixing hidden infrastructure issues with Netdata</title>
+                    <link href="https://roelofjanelsinga.com/articles/fixing-hidden-infrastructure-issues-with-netdata"/>
+                    <id>https://roelofjanelsinga.com/articles/fixing-hidden-infrastructure-issues-with-netdata</id>
+                    <updated>2020-09-21T19:13:36+02:00</updated>
+                    <published>2020-09-23T12:00:00+02:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/netdata-cloud-dashboard.png" alt="Netdata cloud dashboard" />
+<span class="caption">Graphics from the <a href="https://www.netdata.cloud/blog/introducing-the-all-new-netdata-cloud/" rel="nofollow">Netdata blog</a></span></p>
+<h1>Fixing hidden infrastructure issues with Netdata</h1>
+<p>As developers, we deal with fixing bugs every day. If your error messages are clear, it's often quite easy to fix these issues. Fixing issues for a single application is also not the most difficult thing in the world. You'll have to keep track of a limited amount of moving parts that could potentially go wrong. But what happens when you're developing an entire platform consisting of multiple services? How do you keep track of potential issues between them at scale? And how do you deal with discovering issues if different services are spread out over multiple nodes?</p>
+<p>When dealing with larger infrastructures, you're going to need good monitoring solutions you can very easily deploy on multiple nodes at the same time, using reproducible steps. One of the monitoring solutions that fit this description perfectly is Netdata.</p>
+<p>In this post, I'm explaining why Netdata is a great option for your infrastructure monitoring and how it has helped me to fix a major problem with my infrastructure within the first hour of installing it onto some servers.</p>
+<h2>What is Netdata?</h2>
+<p>Netdata is monitoring software for servers, but really anything that runs Linux. So you could also install this on your workstation and keep track of your system resources using Netdata, instead of top or htop. Netdata comes with a built-in dashboard that you can access at <a href="https://localhost:19999">https://localhost:19999</a> on your local machine and you'll see all system information you could ever want. However, when you've deployed this on multiple nodes, you can feed this data into Netdata Cloud and all of them in your dashboard at the same time. You can see all resource usage of your entire infrastructure at a single glance.</p>
+<p><img src="/images/articles/netdata-overview-of-multiple-servers.png" alt="Netdata Cloud dashboard with multiple servers" />
+<span class="caption">Netdata Cloud dashboard with multiple servers</span></p>
+<h2>Why Netdata?</h2>
+<p>Netdata is very easy to install and comes with a few nice features, which makes it perfect for infrastructure monitoring. You can install the Netdata client on your devices (including all nodes in your infrastructure) and connect it to a single dashboard: Netdata Cloud. This is a free dashboard you can feed all of your nodes' information into to create a clean overview of your servers and their health statuses. This dashboard shows you CPU usage, RAM usage, inbound/outbound bandwidth, and a lot more information that you could use to figure out the health of your nodes.</p>
+<p>Information is all great, but it's not good enough if deploying Netdata to all your servers automatically isn't possible. Luckily, you can install Netdata using bash scripts, and adding each individual node to your Netdata Cloud dashboard is, yet again, a bash script. This means you can automate this process using, you could've expected this, Ansible. Ansible helps you to run the same script on multiple nodes automatically, in a reproducible way. This is a perfect match with Netdata, because the installation is easy and reproducible. Adding the installation scripts for Netdata to Ansible ensure that you're always able to monitor the status of your nodes, as soon as they've launched.</p>
+<p>Running a few bash scripts is quite easy, just make sure you know what you're executing when you run bash scripts from the internet.</p>
+<p>Installing the client is a single line, which you'll need to run on your target node (the server):</p>
+<pre><code class="language-bash">bash &lt;(curl -Ss https://my-netdata.io/kickstart.sh)</code></pre>
+<p>After you've created an account on <a href="https://app.netdata.cloud">Netdata Cloud</a>, all you need to do to link the Netdata client to your Cloud account is run a script similar to this on your target node:</p>
+<pre><code class="language-bash">sudo netdata-claim.sh -token=your_token -rooms=your_room -url=https://app.netdata.cloud</code></pre>
+<p>You'll be given a token and room identifier in Netdata Cloud, so don't worry about copy/pasting this line above. Now your server will automatically be connected to Netdata Cloud and you'll be able to see all kinds of metrics. Below are some of the metrics you might see in your dashboard:</p>
+<p><img src="/images/articles/netdata-system-overview.png" alt="Netdata system overview" />
+<span class="caption">Netdata system overview</span></p>
+<p>The data transfer is done through SSH tunnels, so you can be rest assured that it's safe.</p>
+<h2>How Netdata helped me fix a major issue within the first hour</h2>
+<p>Now that you know what Netdata is and have gotten a little overview of what it can show you, let's go into how it helped me to fix a major (hidden) issue within the first hour of deploying it in my infrastructure. </p>
+<p>As a little back story, one of the servers is running an Apache Solr instance to serve as a search engine and it has been quite slow over the past few months. Apache Solr has a nice dashboard that shows the memory usage and the JVM memory usage, as it's built using Java.</p>
+<p><img src="/images/articles/solr-memory-usage-overview.png" alt="Apache Solr memory usage overview" />
+<span class="caption">Apache Solr memory usage overview</span></p>
+<p>This was always stuck around 90% of memory usage, so I assumed that the performance issues had something to do with RAM limitations. This let me down a path of upgrading the server within AWS to give the Solr instance more memory to work with, but this didn't have the expected results. </p>
+<p>After installing Netdata on this server, I saw that the CPU was almost constantly hitting 100% usage, which was strange as the server wasn't under heavy load at the time. It seemed that RAM limitations weren't the issue after all, but the CPU was having a though time. So after a bit of searching around on our favorite search engine, I found this <a href="https://issues.apache.org/jira/browse/SOLR-13349">Jira issue</a>. It pointed out that the version we were running (7.7.1) was causing memory issues and that it was patched in the next version (7.7.2). So after upgrading the Apache Solr server to the latest 7.7.x version (7.7.3) the problems were resolved. The search engine was at least 3 times quicker, even under heavy load, while indexing large amounts of documents. </p>
+<p>It would've taken me much longer to solve this issue without Netdata, because the memory statistics in the Apache Solr dashboard were misleading, while the usage statistics in Netdata showed the real cause of the problem. You might have been able to solve this issue using top or htop as well, but then you'd already need to know what you were looking for. I was looking in the wrong place and Netdata helped to point me in the right direction. </p>
+<h2>Conclusion</h2>
+<p>Using Netdata to visualize the health of several nodes helped me to find an issue that was previously hidden. The monitoring solutions I had available to me all pointed to RAM limitations, while Netdata pointed me to CPU limitations. This different perspective helped me to find and fix a major issue, that has been around for months, within the first hour of installing the software. It has contributed to a more stable and much faster search experience on the platform.</p>]]></content>
+                    <summary><![CDATA[Netdata has helped me to fix a major issue by pointing me in the right direction. By visualizing the issues that were happening, it helped me to find and fix a major issue within the first hour of deploying Netdata across the different nodes in the platform architecture.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/netdata-cloud-dashboard.png" medium="image" type="image/png" width="1200" height="800" />
+                  </entry>
+<entry>
                     <title>Getting a 73% increase in clicks from Google results</title>
                     <link href="https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results"/>
                     <id>https://roelofjanelsinga.com/articles/getting-73-increase-clicks-from-google-results</id>
@@ -1766,7 +1807,7 @@ you can get started creating your own sitemap. You can simply make this manually
 </ol>
 <p>You can now view your website at <em><a href="https://your_username.github.io/repository_name">https://your_username.github.io/repository_name</a></em>.</p>
 <p>If you want to use a custom domain, like <em><a href="https://your_domain.com">https://your_domain.com</a></em>, then you should look <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">Configuring a custom domain on GitHub Pages</a>. These pages will tell you exactly what you need to do to be able to serve the static website at any domain you own.</p>
-<p>Do you want a more in-depth tutorial? Then you're looking for <a href="/articles/how-to-set-up-automatically-deploy-website-github-page">How to set up and automatically deploy your website to GitHub Pages</a>. That tutorial will take you through all steps you need to go through to deploy your websites on GitHub Pages without a hassle.</p>
+<p>Do you want a more in-depth tutorial? Then you're looking for <a href="/articles/how-to-set-up-automatically-deploy-website-github-pages">How to set up and automatically deploy your website to GitHub Pages</a>. That tutorial will take you through all steps you need to go through to deploy your websites on GitHub Pages without a hassle.</p>
 <h2>Now what?</h2>
 <p>Now you have a static website running on GitHub Pages. This includes a free SSL certificate and you don't have to worry about managing servers and hosting at all. So, in the end, you have a lightning-fast website, running on the GitHub servers, which are very reliable. When you want to update the content of the website, just make your changes locally and push to master. GitHub will automatically update your website and you'll be able to see your changes reflected on your website within a minutes. So if you have a content website and don't want to worry about hosting, security and any other settings, just GitHub Pages.</p>]]></content>
                     <summary><![CDATA[In this post I describe how you can host a lightning fast website on Github Pages for free. There are several ways of approaching this situation. Out of all the great solutions I describe how to do this with Jekyll.]]></summary>
