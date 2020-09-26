@@ -14,11 +14,16 @@ class SitemapCreator extends \AloiaCms\Publish\Console\SitemapCreator
      */
     protected function appendAdditionalUrls(SitemapGenerator $generator): void
     {
-        $generator->add('/portfolio', 0.9, $this->lastmod, 'monthly');
+        $generator->add(route('public.work', [], false), 0.9, $this->lastmod, 'monthly');
 
         foreach ($this->getPortfolioUrls() as $url) {
             $generator->add($url, 0.8, $this->lastmod, 'monthly');
         }
+
+        $generator->add(route('resume.show', [], false), 0.9, $this->lastmod, 'monthly');
+        $generator->add(route('resume.show_dutch', [], false), 0.9, $this->lastmod, 'monthly');
+        $generator->add(route('public.open_source', [], false), 0.9, $this->lastmod, 'monthly');
+        $generator->add(route('contact', [], false), 0.9, $this->lastmod, 'monthly');
     }
 
     /**
