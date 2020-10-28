@@ -45,10 +45,10 @@ mix
         ],
         runtimeCaching: [
             {
-                urlPattern: new RegExp(`${process.env.CANONICAL_BASE}`),
+                urlPattern: new RegExp(`https://roelofjanelsinga.com`),
                 handler: 'NetworkFirst',
                 options: {
-                    cacheName: `${process.env.APP_NAME}-${process.env.CANONICAL_BASE}`,
+                    cacheName: `roelofjanelsinga-https://roelofjanelsinga.com`,
                     fetchOptions: {
                         mode: 'no-cors',
                     },

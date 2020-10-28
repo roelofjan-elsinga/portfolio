@@ -1,0 +1,27 @@
+name: Compile assets
+
+on:
+  push:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    name: Compile assets
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install NPM dependencies
+        run: yarn
+
+      - name: Compile assets
+        run: npm run prod
+
+      - name: Commit the changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatically compiled assets [skip ci]
+          commit_options: '--no-verify --signoff'
+          commit_user_name: Portfolio Robot
+          commit_user_email: info@roelofjanelsinga.com
+          commit_author: Portfolio Robot <info@roelofjanelsinga.com>
