@@ -39,7 +39,7 @@ class Canonical
      */
     public static function getCanonicalDestination(): string
     {
-        return config('view.canonical.destination');
+        return request()->url();
     }
 
     /**
@@ -53,7 +53,7 @@ class Canonical
 
         $destination = self::getCanonicalDestination();
 
-        $full_url = "{$destination}{$request->getRequestUri()}";
+        $full_url = "{$destination}{$request->getPathInfo()}";
 
         $canonical_url = explode('?', $full_url);
 
