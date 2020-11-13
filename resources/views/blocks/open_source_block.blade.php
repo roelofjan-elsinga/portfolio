@@ -6,7 +6,7 @@
 
         <p class="mb-4 mt-2 flex-auto leading-normal">{{$project->description}}</p>
 
-        <span class="text-theme-darkest font-bold pb-2 link">View project</span>
+        <span class="text-theme-darkest font-bold pb-2 link">{{__('home.view_project')}}</span>
 
     </a>
 

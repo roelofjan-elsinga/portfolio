@@ -6,6 +6,7 @@ use AloiaCms\Publish\Console\PublishScheduledPosts;
 use AloiaCms\Publish\Console\SitemapCreator;
 use Illuminate\Support\ServiceProvider;
 use Main\Classes\LinkedIn\LinkedIn;
+use Main\Models\ContentBlock;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -43,6 +44,10 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->bind(PublishScheduledPosts::class, function () {
             return new \Main\Console\Commands\PublishScheduledPosts();
+        });
+
+        $this->app->bind('AloiaCmsBlock', function () {
+            return new ContentBlock();
         });
     }
 }

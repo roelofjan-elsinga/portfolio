@@ -19,7 +19,7 @@
 
         <p class="mb-4 leading-normal">{{$article->description()}}</p>
 
-        <span class="text-gray-600 text-sm">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
+        <span class="text-gray-600 text-sm">{{__('article.posted_on')}}: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
     </div>
 
 </article>

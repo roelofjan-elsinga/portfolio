@@ -17,7 +17,7 @@
 
                 {!! $article->body() !!}
 
-                <span class="text-sm text-gray-600">Posted on: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
+                <span class="text-sm text-gray-600">{{__('article.posted_on')}}: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
 
             </article>
 

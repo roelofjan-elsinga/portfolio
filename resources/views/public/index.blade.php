@@ -4,18 +4,18 @@
     <div class="h-3/4 flex flex-col justify-center text-theme-darkest border-theme-darkest">
         <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12 leading-snug">Full-stack web developer <br /> & Scrum master</h1>
 
-        <h4 class="text-xl mb-4">I specialize in</h4>
+        <h4 class="text-xl mb-4">{{__('home.specialize')}}</h4>
         <p class="text-lg sm:text-xl leading-loose">
-            ⚡ Building lighting fast web applications <br />
-            🔒 Making them secure <br />
-            🔥 And making them scalable
+            ⚡ {{__('home.fast_apps')}} <br />
+            🔒 {{__('home.secure_apps')}} <br />
+            🔥 {{__('home.scalable_apps')}}
         </p>
 
         <p class="pt-8">
             <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
                class="cta-button">
                 <span class="fas fa-envelope"></span>
-                Contact me
+                {{__('home.contact_me')}}
             </a>
 
             @include('blocks.contact_confirmation')
@@ -43,7 +43,7 @@
         <div class="flex justify-center mt-8">
             <a href="{{ route('public.work') }}"
                class="cta-button">
-                View more projects
+                {{__('home.view_more_projects')}}
             </a>
         </div>
 
@@ -86,7 +86,7 @@
         <div class="flex justify-center mt-8">
             <a href="{{ route('articles') }}"
                class="cta-button">
-                View more blog posts
+                {{__('home.view_more_posts')}}
             </a>
         </div>
 
@@ -113,7 +113,7 @@
         <div class="flex justify-center mt-8">
             <a href="{{ route('public.open_source') }}"
                class="cta-button">
-                View more open source contributions
+                {{__('home.view_more_os')}}
             </a>
         </div>
     </section>

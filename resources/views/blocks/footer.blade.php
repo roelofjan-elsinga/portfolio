@@ -2,12 +2,12 @@
 
     <div class="container mx-auto">
 
-        <strong class="text-center mb-8 text-3xl block">More information</strong>
+        <strong class="text-center mb-8 text-3xl block">{{__('footer.title')}}</strong>
 
         <section class="flex flex-col md:flex-row">
 
             <div class="flex-1">
-                <h4 class="mb-4 text-xl font-bold">Social media</h4>
+                <h4 class="mb-4 text-xl font-bold">{{__('footer.social_media')}}</h4>
 
                 <ul class="list-none text-lg m-0">
                     <li class="mb-2">
@@ -35,12 +35,12 @@
             </div>
 
             <div class="flex-1">
-                <h4 class="mb-4 text-xl font-bold mt-8 md:mt-0">Business</h4>
+                <h4 class="mb-4 text-xl font-bold mt-8 md:mt-0">{{__('footer.business')}}</h4>
 
                 <ul class="list-none lext-lg m-0">
                     <li class="mb-2">
                         <a href="mailto:hello@roelofjanelsinga.com?subject=Hi%20Roelof Jan!"
-                        ><i class="fas fa-envelope"></i> Send me an e-mail</a>
+                        ><i class="fas fa-envelope"></i> {{__('footer.send_an_email')}}</a>
                     </li>
                     <li class="mb-2">
                         KvK: 64377962
@@ -52,7 +52,7 @@
             </div>
 
             <div class="flex-1">
-                <h4 class="mb-4 text-xl font-bold mt-8 md:mt-0">Pages</h4>
+                <h4 class="mb-4 text-xl font-bold mt-8 md:mt-0">{{__('footer.pages')}}</h4>
 
                 <ul class="list-none lext-lg m-0">
                     <li class="mb-2">
@@ -73,20 +73,20 @@
             </div>
 
             <div class="flex-1">
-                <h4 class="mb-4 text-xl font-bold hidden md:block">Pages</h4>
+                <h4 class="mb-4 text-xl font-bold hidden md:block">{{__('footer.pages')}}</h4>
 
                 <ul class="list-none lext-lg m-0 md:mt-4">
                     <li class="mb-2">
-                        <a href="{{url('/about-me')}}">About me</a>
+                        <a href="{{url('/about-me')}}">{{__('footer.about_me')}}</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{url('/my-tech-stack')}}">My tech stack</a>
+                        <a href="{{url('/my-tech-stack')}}">{{__('home.my_tech_stack')}}</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{route('public.open_source')}}">Open source contributions</a>
+                        <a href="{{route('public.open_source')}}">{{__('footer.oss_contributions')}}</a>
                     </li>
                     <li class="mb-2">
-                        <a href="{{url('/how-i-built-this-website')}}">How I built this website</a>
+                        <a href="{{url('/how-i-built-this-website')}}">{{__('footer.how_i_built')}}</a>
                     </li>
                 </ul>
             </div>

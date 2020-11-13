@@ -16,12 +16,12 @@
         <main class="articles my-8">
 
             <form action="{{route('articles')}}" method="get" class="block mb-8">
-                <label for="q" class="font-bold mb-2 block">What are your looking for?</label>
+                <label for="q" class="font-bold mb-2 block">{{__('article.search_title')}}</label>
 
                 <div class="flex rounded">
                     <input type="text"
                            class="bg-theme-lightest p-4 text-theme-darkest rounded-l flex-grow placeholder-theme-darkest placeholder-opacity-50"
-                           placeholder="Search blog posts" name="q" value="{{request()->has('q') ? request()->get('q') : ''}}">
+                           placeholder="{{__('article.search_placeholder')}}" name="q" value="{{request()->has('q') ? request()->get('q') : ''}}">
 
                     <button type="submit"
                             class="text-lg sm:flex-xl hover:bg-theme-light inline-block bg-theme-lighter text-theme-darkest p-4 duration-300 font-bold rounded-r">
