@@ -57,9 +57,9 @@
             <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
         @endif
 
-        <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getPathInfo()}}" hreflang="en">
-        <link rel="alternate" href="https://roelofjanelsinga.nl{{request()->getPathInfo()}}" hreflang="nl">
-        <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getPathInfo()}}" hreflang="x-default">
+        <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getRequestUri()}}" hreflang="en">
+        <link rel="alternate" href="https://roelofjanelsinga.nl{{request()->getRequestUri()}}" hreflang="nl">
+        <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getRequestUri()}}" hreflang="x-default">
 
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon-32x32.png') }}">
