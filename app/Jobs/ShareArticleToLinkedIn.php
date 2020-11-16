@@ -34,13 +34,17 @@ class ShareArticleToLinkedIn implements ShouldQueue
      */
     public function handle(LinkedIn $linkedIn)
     {
+        if (empty($this->article->linkedin_post)) {
+            return;
+        }
+
         $linkedin_auth = json_decode(Storage::get('linkedin.json'), true);
 
         $linkedIn
             ->share()
             ->withAccessToken($linkedin_auth['access_token'])
             ->article(
-                $this->article->linkedin_post ?? $this->article->description(),
+                $this->article->linkedin_post,
                 route('articles.view', $this->article->slug(), true),
                 $this->article->title(),
                 $this->article->description()
