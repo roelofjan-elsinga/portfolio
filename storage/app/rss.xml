@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 18 Nov 2020 11:00:06 GMT</pubDate>
+              <pubDate>Mon, 30 Nov 2020 16:49:41 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -916,6 +916,16 @@ to be able to save all my files and access them from  (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/google-analytics.png" medium="image" type="image/jpeg" width="1355" height="897"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Setting up your development environment with Ansible is a great way to save yourself and your colleagues headaches. Creating an Ansible Playbook helps you to keep everyone on your team in the same environment and makes switching machines an easy task, not a chore. (...)</description>
+                    <title>Setting up your development environment with Ansible</title>
+                    <link>https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible</link>
+                    <guid>https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible</guid>
+                    
+                    <pubDate>Mon, 30 Nov 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description> (...)</description>
                     <title>Sharing state between AngularJS and Angular v6 with Redux</title>

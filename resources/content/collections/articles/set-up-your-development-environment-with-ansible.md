@@ -1,9 +1,9 @@
 ---
 description: 'Setting up your development environment with Ansible is a great way to save yourself and your colleagues headaches. Creating an Ansible Playbook helps you to keep everyone on your team in the same environment and makes switching machines an easy task, not a chore.'
-post_date: '2020-11-30'
-is_published: false
+post_date: '2020-11-25'
+is_published: true
 is_scheduled: false
-update_date: '2020-11-30 17:44:58'
+update_date: '2020-11-30 17:50:09'
 faq: null
 linkedin_post: ''
 twitter_post: ''
