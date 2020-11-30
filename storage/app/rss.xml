@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Wed, 23 Sep 2020 10:00:05 GMT</pubDate>
+              <pubDate>Wed, 18 Nov 2020 11:00:06 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -413,6 +413,16 @@ I love writing blog posts, that's why you see on (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg" medium="image" type="image/jpeg" width="800" height="533"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>When you're using Home Assistant for your home automation and you've got a few MQTT devices you might want to create simple switches for your devices. However, if you're like me, this simple task turned out to be a very tough task. In this post we're going to create a visual toggle for your MQTT devices. (...)</description>
+                    <title>How to create a simple MQTT switch in Home Assistant</title>
+                    <link>https://roelofjanelsinga.com/articles/how-to-create-switch-dashboard-home-assistant</link>
+                    <guid>https://roelofjanelsinga.com/articles/how-to-create-switch-dashboard-home-assistant</guid>
+                    
+                    <pubDate>Wed, 18 Nov 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/home-assistant-logo-banner.png" medium="image" type="image/png" width="640" height="426"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>In this post I'll explain how you can fix CORS headers for usage in a single page application. I give code examples with comments for Nginx and Apache. (...)</description>
                     <title>How to fix CORS headers in a single page application</title>

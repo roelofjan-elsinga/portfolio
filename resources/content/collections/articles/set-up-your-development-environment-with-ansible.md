@@ -1,9 +1,9 @@
 ---
 description: 'Setting up your development environment with Ansible'
-post_date: '2020-09-30'
+post_date: '2020-11-25'
 is_published: false
 is_scheduled: false
-update_date: '2020-09-29 16:49:48'
+update_date: '2020-11-27 16:59:03'
 faq: null
 linkedin_post: ''
 twitter_post: ''

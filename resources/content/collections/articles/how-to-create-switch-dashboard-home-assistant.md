@@ -1,12 +1,13 @@
 ---
 description: 'When you''re using Home Assistant for your home automation and you''ve got a few MQTT devices you might want to create simple switches for your devices. However, if you''re like me, this simple task turned out to be a very tough task. In this post we''re going to create a visual toggle for your MQTT devices.'
 post_date: '2020-11-18'
-is_published: false
-is_scheduled: true
+is_published: true
+is_scheduled: false
 update_date: '2020-11-16 17:42:16'
 linkedin_post: ''
 twitter_post: ''
 ---
+
 ![Home assistant logo banner](/images/articles/home-assistant-logo-banner.png "Home assistant logo banner")
 # How to create a simple MQTT switch in Home Assistant
 When you're using Home Assistant for your home automation and you've got a few MQTT devices you might want to create simple switches for your devices. However, if you're like me, this simple task turned out to be a very tough task. This post is as much for you as it is for me, because I forget how to do this every time and each time I go through this it takes me hours to get going. In this short post, we're going to do 3 things:
