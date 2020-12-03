@@ -58,10 +58,6 @@
 
     code {
         @apply bg-gray-300 block p-8 break-words overflow-x-scroll;
-
-        @screen md {
-            @apply overflow-x-hidden;
-        }
     }
 
 }
