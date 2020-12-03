@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-11-30T17:49:41+01:00</updated>
+              <updated>2020-12-03T12:52:27+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -3951,8 +3951,8 @@ If you want to be notified when I publish new posts, subscribe to my mailing lis
                     <title>Setting up your development environment with Ansible</title>
                     <link href="https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible"/>
                     <id>https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible</id>
-                    <updated>2020-11-30T17:49:39+01:00</updated>
-                    <published>2020-11-30T12:00:00+01:00</published>
+                    <updated>2020-11-30T17:50:09+01:00</updated>
+                    <published>2020-11-25T12:00:00+01:00</published>
                     <content type="html"><![CDATA[<p><img src="/images/articles/ansible-logo.jpg" alt="Ansible Logo" /></p>
 <h1>Setting up your development environment with Ansible</h1>
 <p>It's probably very clear by now, but Ansible is one of my favorite deployment/automation tools. It's a tool to very easily create reproducible scripts that you can use for all kinds of different purposes. In case you're interested to find out more about what I've done with Ansible, go have a look at any of the links below.</p>
@@ -5077,6 +5077,122 @@ skill that you need to practice. It's difficult and you will make mistakes, but 
 <p>So based on your needs you can go for either a Windows based system, a Linux based system or a combination between the two. Personally I have two different systems, one for Ubuntu (A Linux distro) and another one for Windows 10. This makes developing applications very easy, because I need some pieces of software that are only available on a Linux based system. I can just simply set up a connection between the two systems and they work with each other perfectly. But this is only an isolated example, there are a ton of different scenarios possible in which a combination of the two operating systems is a very desirable setup. But try and see for yourself. Give different distro's a try, try making connections, combine systems and see what you can do with them.</p>]]></content>
                     <summary><![CDATA[The title of the post is a thing I'm struggling with on a daily basis. On the one hand you have Windows, an operating system series that I've been using my enti]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" type="image/jpeg" width="1920" height="1080" />
+                  </entry>
+<entry>
+                    <title>Asciidoc and Asciidoctor: Write an e-book with code</title>
+                    <link href="https://roelofjanelsinga.com/articles/write-an-e-book-with-code-asciidoc"/>
+                    <id>https://roelofjanelsinga.com/articles/write-an-e-book-with-code-asciidoc</id>
+                    <updated>2020-12-03T12:47:33+01:00</updated>
+                    <published>2020-12-03T12:00:00+01:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/asciidoctor-logo.png" alt="Asciidoctor logo" title="Asciidoctor logo" /></p>
+<h1>Asciidoc and Asciidoctor: Write an e-book with code</h1>
+<p>Writing a book is something most bloggers or content writers have thought about at some point in time. So have I, so I looked at ways I could reuse a few blog posts as a base for a book. As all of these blog posts are markdown files, I initially looked for a way to turn Markdown files into an e-book by converting it to a PDF. There we're a few options available, for example: <a href="https://github.com/themsaid/ibis">themsaid/ibis</a>. This library is easy to use, but also very limited in customization. </p>
+<p>Then I was pointed towards <a href="https://asciidoc.org/">Asciidoc</a>, something I wasn't familiar with. In this post, we'll go over what Asciidoc is and how you can use it to generate PDF, EPUB and MOBI documents. Don't let the official Asciidoc website fool you with its simplistic and outdated looks: it's very modern and can do all the heavy lifting, so you can focus on your content.</p>
+<h2>What is Asciidoc?</h2>
+<p>Asciidoc is a markup language like Markdown, but it has many more features. Like Markdown, you can convert Asciidoc to more common formats like HTML. However, you can do a lot more with it. Markdown is built with basic HTML elements in mind, but sometimes the HTML is too complicated and you'll need to inline HTML code in your Markdown files. Markdown is supposed to be simple. </p>
+<p>Asciidoc, on the other hand, has many plugins you can use to parse the files into other formats. Parsing Asciidoc to HTML is just one of the parsers. There are many more available like PDF, EPUB, Docbook, and MOBI. You can use the same Asciidoc file to create all kinds of different formats of your content. Because you can use the same file to create different types of output files, you can create a format of your content that works for your readers, not just what's easiest for you.</p>
+<h2>Pre-requisites for creating PDF's</h2>
+<p>In order for you to create a PDF from Asciidoc files, we'll need some software. This is what we'll need to get started:</p>
+<ul>
+<li>Ruby &gt;= 2.7</li>
+<li>Asciidoc (apt-get install asciidoc)</li>
+<li>Asciidoctor (included in example Gemfile)</li>
+<li>Asciidoctor-pdf (included in example Gemfile)</li>
+</ul>
+<p>And the example Gemfile looks like this:</p>
+<pre><code class="language-ruby">source "https://rubygems.org"
+
+gem "asciidoctor", "~&gt; 2.0.10"
+gem "asciidoctor-pdf", "~&gt; 1.5.3"</code></pre>
+<p>To install these gems, run the following command in the folder where you keep the Gemfile:</p>
+<pre><code class="language-bash">bundle install</code></pre>
+<h2>Basic Asciidoc configuration</h2>
+<p>In Markdown, the files only contain content, unless you use a separate parse for things like Yaml Front Matter. For Asciidoc files, all configuration is done in the &quot;.adoc&quot; files themselves. This is convenient, because you'll have everything you need in a single place. Let's go over a basic example that we'll call book.adoc.</p>
+<pre><code class="language-asciidoc">= Title of your book
+:author: Author Name
+:email: email@example.com
+:revnumber: v0.1
+:revdate: 02.12.2020
+:notitle:
+:doctype: book
+:chapter-label:
+:sectnums:
+:toc: left
+:toclevels: 2
+:toc-title: Table of Contents
+:front-cover-image: image::images/cover.jpg[]
+:description: This is the description of your book</code></pre>
+<p>That looks very intimidating, but a lot of it is optional and easy to look up in the documentation. Let's go over what each of these tags mean and why you would want to use them. As a little sidenote, you can also specify the author in a different format:</p>
+<pre><code class="language-asciidoc">= Title of your book
+Author Name &lt;email@example.com&gt;
+v0.1, 2020-12-012</code></pre>
+<p>However, I like to work with as much verbosity as possible, to make it as easy on myself as I can. You can choose which format you'd like to follow. </p>
+<p>Besides the author information, we still have these tags left:</p>
+<h4>:notitle:</h4>
+<p>This means we don't want to display the title of the book at the front of the book. Instead of this, we'll display an image as the title page using &quot;:front-cover-image:&quot;.</p>
+<h4>:doctype: book</h4>
+<p>We make sure to mark this document as being a book, rather than a website. This sets a few defaults, like alternating left and right pages.</p>
+<h4>:chapter-label:</h4>
+<p>Here you can specify a prefix for chapter tables. This defaults to &quot;Chapter&quot;, resulting in chapter names like this: &quot;Chapter 1. Title of chapter 1&quot;. If you don't want the &quot;Chapter&quot; prefix, like me, you can overwrite this behavior and keep it empty. This will now result in &quot;1. Title of chapter 1&quot;.</p>
+<h4>:sectnums:</h4>
+<p>In the previous label (:chapter-label:) we specified a prefix, or rather remove it. But there is still a number in the chapter title. This number is in the chapter, because :sectnums: makes this happen. If you prefer to not have numbers for your sections (1, 1.1, 1.2, 2, etc.), then you can choose to not add this tag.</p>
+<h4>:toc:, :toclevels:, :toc-title:</h4>
+<p>The tag :toc: tells the Asciidoc parser that we want a Table Of Contents. This will automatically add all chapter and section headers to the table of contents, without any manual work from you. If you prefer to only have chapters in the Table of Contents, you can change the :toclevels: to &quot;1&quot;. Having it set to &quot;2&quot; here means that both chapters (1, 2, 3, and 4) and sections (1.1, 1.2, 2.1, 2.2) will be added. You can even set it to 3 or more. This way it'll start adding subsections (like 1.1.1, 1.1.2, etc.) as well. Now that we've specified that we want chapters and sections in the Table of Contents, we can even specify what we want to call the Table Of Contents. In this case, it'll be called: &quot;Table of Contents&quot;, but you can name this anything you'd like.</p>
+<h4>:front-cover-image:</h4>
+<p>Earlier, we went over the fact that we don't want the title of the book on the first page, but rather use an image as our cover. You can specify this behavior by adding this tag with a path to an image. The syntax for adding images in an asciidoc document is &quot;image::./images/cover.jpg[Alt text here]&quot;. It's very similar to Markdown.</p>
+<h4>:description:</h4>
+<p>You can add a description as meta data to your PDF by specifying a value here. This is an optional step, so you can choose not to do this as well.</p>
+<p>If you ever get stuck with the formatting or which tags to use, you can look it up on the internet, because unlike Markdown, there is only 1 standard. This makes searching keywords on Google for Asciidoc very easy.</p>
+<h2>Basic Asciidoc syntax</h2>
+<p>Asciidoc syntax is quite easy to learn, but there is a lot of things you can do. To keep this post simple, we'll only go over the most commonly used ones and skip the majority of other ones. If you'd like a full list of the syntax, there is a great guide on the <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">Asciidoctor website</a>. They describe everything you might want to use. For now, we'll stick with the most common ones. I'll convert these to HTML tags to give them some context:</p>
+<ul>
+<li>== (h1)</li>
+<li>=== (h2)</li>
+<li>. (a dot, ol)</li>
+<li>* (ul)</li>
+<li>image::images/image.jpeg[Alt text] (img)</li>
+<li>_text_ (italic text)</li>
+<li>*text* (bold text)</li>
+<li>include::chapters/chapter-1.adoc[] (include a file)</li>
+</ul>
+<p>As I mentioned, there are a ton more, but these are the most commonly used ones. If you noticed, an H1 is two equal signs instead of just one. One equal sign is the title of the book, this is why it's all the way at the top of the configuration section.</p>
+<h2>Writing the content</h2>
+<p>Now that we have the configuration and we know the basic syntax, let's write a simple &quot;book&quot; that we can convert to a PDF in the next section. In Asciidoc, you write the content in the same file as the configuration from earlier, but you can also choose to include separate files and write you content in there. You can start writing content under the configuration from earlier, just make sure to leave an empty line like so:</p>
+<pre><code class="language-asciidoc"># ... rest of the configuration
+:front-cover-image: image::images/cover.jpg[]
+:description: This is the description of your book
+
+== Title of chapter 1</code></pre>
+<p>Instead of writing the content in the main book.adoc document, you can also include chapters by doing this:</p>
+<pre><code class="language-asciidoc"># ... rest of the configuration
+:front-cover-image: image::images/cover.jpg[]
+:description: This is the description of your book
+
+include::chapters/chapter-1.adoc[]</code></pre>
+<p>Now that we have some content, we can generate a PDF from this &quot;book&quot;.</p>
+<h2>Generating a PDF from an Asciidoc document</h2>
+<p>If you remember from the prerequisites, we installed the Ruby gems we need to generate a PDF from an Asciidoc document.
+These Gems are going to help us to create a PDf with a single command.
+We've named the main file of our book &quot;book.adoc&quot;. We're going to export this file to &quot;book.pdf&quot; using the following command:</p>
+<pre><code class="language-bash">bundle exec asciidoctor-pdf book.adoc</code></pre>
+<p>There are several things you can specify while using this command, for example the output filename.
+If you want to change the output filename, you can do so by passing a flag to the command:</p>
+<pre><code class="language-bash">bundle exec asciidoctor-pdf book.adoc --o my-amazing-book.pdf</code></pre>
+<p>As you can see, it's a simple and readable command. Now you'll have your PDF file and you can open it to view your new book.</p>
+<h2>Styling your PDF document</h2>
+<p>Asciidoc has a lot of features, you can change almost everything about it, like the styling of your PDF.
+I won't go into details about styling this in this post, but if there is interest (contact me), I could write a post about this.
+Instead, I will leave you with a link to the best resource I can find for styling your PDF and this command you could use to apply your styles:</p>
+<pre><code class="language-bash">bundle exec asciidoctor-pdf book.adoc -a pdf-style=themes/light-theme.yml -o my-amazing-book.pdf</code></pre>
+<p>As you can see, you can specify a stylesheet to apply to your PDF. The best reference for how to write this can be found on
+<a href="https://github.com/asciidoctor/asciidoctor-pdf/blob/v1.5.3/docs/theming-guide.adoc">GitHub</a>.</p>
+<h2>Conclusion</h2>
+<p>Markdown is a simplistic markup language to focus on the content instead of the individual elements, but it's also very limited.
+You can use Asciidoc to accomplish the same simplicity while still being able to create more complex structures.
+In this post, we went over how you can convert an Asciidoc file to a PDF and optionally add some styling to it.
+The learning curve can be quite steep, from my personal experience, but once you understand how it works you'll have superpowers.</p>]]></content>
+                    <summary><![CDATA[Markdown is a simplistic markup language to focus on the content instead of the individual elements, but it's also very limited. You can use Asciidoc to accomplish the same simplicity while still being able to create more complex structures. In this post, we're going over how you can convert an Asciidoc file to a PDF book.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/asciidoctor-logo.png" medium="image" type="image/png" width="640" height="426" />
                   </entry>
 
 </feed>

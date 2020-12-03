@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Mon, 30 Nov 2020 16:49:41 GMT</pubDate>
+              <pubDate>Thu, 03 Dec 2020 11:52:27 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -922,7 +922,7 @@ to be able to save all my files and access them from  (...)</description>
                     <link>https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible</link>
                     <guid>https://roelofjanelsinga.com/articles/set-up-your-development-environment-with-ansible</guid>
                     
-                    <pubDate>Mon, 30 Nov 2020 11:00:00 GMT</pubDate>
+                    <pubDate>Wed, 25 Nov 2020 11:00:00 GMT</pubDate>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/ansible-logo.jpg" medium="image" type="image/jpeg" width="1200" height="800"/>
@@ -1161,6 +1161,16 @@ This was just before responsive web design started bec (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/deer.jpg" medium="image" type="image/jpeg" width="1920" height="1080"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>Markdown is a simplistic markup language to focus on the content instead of the individual elements, but it's also very limited. You can use Asciidoc to accomplish the same simplicity while still being able to create more complex structures. In this post, we're going over how you can convert an Asciidoc file to a PDF book. (...)</description>
+                    <title>Asciidoc and Asciidoctor: Write an e-book with code</title>
+                    <link>https://roelofjanelsinga.com/articles/write-an-e-book-with-code-asciidoc</link>
+                    <guid>https://roelofjanelsinga.com/articles/write-an-e-book-with-code-asciidoc</guid>
+                    
+                    <pubDate>Thu, 03 Dec 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/asciidoctor-logo.png" medium="image" type="image/png" width="640" height="426"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 
 <generator>Atom 1.0 XSLT+PHP Transform v1.1 (http://atom.geekhood.net)</generator></channel>

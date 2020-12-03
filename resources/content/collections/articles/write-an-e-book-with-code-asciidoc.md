@@ -1,14 +1,17 @@
 ---
 description: 'Markdown is a simplistic markup language to focus on the content instead of the individual elements, but it''s also very limited. You can use Asciidoc to accomplish the same simplicity while still being able to create more complex structures. In this post, we''re going over how you can convert an Asciidoc file to a PDF book.'
-post_date: '2020-12-02'
-is_published: false
+post_date: '2020-12-03'
+is_published: true
 is_scheduled: false
-update_date: '2020-12-03 12:41:19'
+update_date: '2020-12-03 12:47:33'
 linkedin_post: ''
 twitter_post: ''
 ---
+
+
+
 ![Asciidoctor logo](/images/articles/asciidoctor-logo.png "Asciidoctor logo")
-# Asciidoc & Asciidoctor: Write an e-book with code
+# Asciidoc and Asciidoctor: Write an e-book with code
 Writing a book is something most bloggers or content writers have thought about at some point in time. So have I, so I looked at ways I could reuse a few blog posts as a base for a book. As all of these blog posts are markdown files, I initially looked for a way to turn Markdown files into an e-book by converting it to a PDF. There we're a few options available, for example: [themsaid/ibis](https://github.com/themsaid/ibis). This library is easy to use, but also very limited in customization. 
 
 Then I was pointed towards [Asciidoc](https://asciidoc.org/), something I wasn't familiar with. In this post, we'll go over what Asciidoc is and how you can use it to generate PDF, EPUB and MOBI documents. Don't let the official Asciidoc website fool you with its simplistic and outdated looks: it's very modern and can do all the heavy lifting, so you can focus on your content.
