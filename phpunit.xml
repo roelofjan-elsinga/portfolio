@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit backupGlobals="false"
-         backupStaticAttributes="false"
-         bootstrap="bootstrap/autoload.php"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false">
-    <testsuites>
-        <testsuite name="Application Test Suite">
-            <directory>./tests/</directory>
-        </testsuite>
-    </testsuites>
-    <filter>
-        <whitelist>
-            <directory suffix=".php">app/</directory>
-        </whitelist>
-    </filter>
-    <php>
-        <env name="APP_URL" value="http://localhost:8080"/>
-        <env name="CANONICAL_BASE" value="http://localhost:8080"/>
-        <env name="APP_ENV" value="testing"/>
-        <env name="APP_KEY" value="base64:gsANm1zTLlc1/rJdQAW1L24bgNJ9DWl5r4ZntTiUhd4="/>
-        <env name="APP_SECRET" value="EL@l8yYkRvdO(t=pU#-TWjFZQ)D9Bo"/>
-        <env name="APP_DEBUG" value="true"/>
-
-        <env name="CACHE_DRIVER" value="file"/>
-        <env name="SESSION_DRIVER" value="array"/>
-        <env name="QUEUE_DRIVER" value="array"/>
-        <env name="MAIL_DRIVER" value="log"/>
-
-        <env name="LOG_CHANNEL" value="single"/>
-
-        <env name="FEED_TITLE" value="Roelof Jan Elsinga"/>
-        <env name="SITE_URL" value="http://localhost:8080"/>
-        <env name="SITE_AUTHOR" value="Roelof Jan Elsinga"/>
-        <env name="FEED_IDENTIFIER" value="http://localhost:8080/"/>
-    </php>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false" bootstrap="bootstrap/autoload.php" colors="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" processIsolation="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage>
+    <include>
+      <directory suffix=".php">app/</directory>
+    </include>
+  </coverage>
+  <testsuites>
+    <testsuite name="Application Test Suite">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+    <env name="APP_URL" value="http://localhost:8080"/>
+    <env name="CANONICAL_BASE" value="http://localhost:8080"/>
+    <env name="APP_ENV" value="testing"/>
+    <env name="APP_KEY" value="base64:gsANm1zTLlc1/rJdQAW1L24bgNJ9DWl5r4ZntTiUhd4="/>
+    <env name="APP_SECRET" value="EL@l8yYkRvdO(t=pU#-TWjFZQ)D9Bo"/>
+    <env name="APP_DEBUG" value="true"/>
+    <env name="CACHE_DRIVER" value="file"/>
+    <env name="SESSION_DRIVER" value="array"/>
+    <env name="QUEUE_DRIVER" value="array"/>
+    <env name="MAIL_DRIVER" value="log"/>
+    <env name="LOG_CHANNEL" value="single"/>
+    <env name="FEED_TITLE" value="Roelof Jan Elsinga"/>
+    <env name="SITE_URL" value="http://localhost:8080"/>
+    <env name="SITE_AUTHOR" value="Roelof Jan Elsinga"/>
+    <env name="FEED_IDENTIFIER" value="http://localhost:8080/"/>
+  </php>
 </phpunit>
