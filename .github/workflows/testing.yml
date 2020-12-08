@@ -21,6 +21,8 @@ jobs:
           tools: composer:v2, phpunit:9.5.0
           coverage: pcov
           extensions: mbstring
+      - name: Install Composer dependencies
+        run: composer install
       - name: Run PHPUnit
         run: ./vendor/bin/phpunit --coverage-clover=coverage.xml\
       - name: Upload coverage reports
