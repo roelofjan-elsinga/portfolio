@@ -21,3 +21,7 @@ jobs:
           tools: composer:v2, phpunit:9.5.0
           coverage: pcov
           extensions: mbstring
+      - name: Run PHPUnit
+        run: ./vendor/bin/phpunit --coverage-clover=coverage.xml\
+      - name: Upload coverage reports
+        run: bash <(curl -s https://codecov.io/bash)
