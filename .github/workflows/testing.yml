@@ -1,0 +1,25 @@
+name: PHPUnit
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: PHP ${{ matrix.php }}
+    strategy:
+      matrix:
+        php: [7.4, 8.0]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: php-actions/composer@v4
+        with:
+          php_version: ${{ matrix.php }}
+          composer_version: 2
+      - uses: php-actions/phpunit@v1
+        with:
+          config: pphunit.xml
+          php_version: ${{ matrix.php }}
+          phpunit_version: 9.5.0
