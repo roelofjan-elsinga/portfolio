@@ -14,12 +14,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: php-actions/composer@v4
+      - name: Setup PHP with composer v2
+        uses: shivammathur/setup-php@v2
         with:
-          php_version: ${{ matrix.php }}
-          composer_version: 2
-      - uses: php-actions/phpunit@v1
-        with:
-          config: pphunit.xml
-          php_version: ${{ matrix.php }}
-          phpunit_version: 9.5.0
+          php-version: ${{ matrix.php }}
+          tools: composer:v2, phpunit:9.5.0
+          coverage: pcov
+          extensions: mbstring
