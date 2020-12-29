@@ -57,9 +57,7 @@ class PublicController extends Controller
     {
         return view('public.work', [
             'works' => Work::all()
-                ->sortByDesc(function (Work $work) {
-                    return $work->publish_date;
-                }),
+                ->sortByDesc(fn (Work $work) => $work->publish_date),
             'page' => MetaTag::find('work'),
         ]);
     }

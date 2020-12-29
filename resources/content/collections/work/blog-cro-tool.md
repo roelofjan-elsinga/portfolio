@@ -6,7 +6,7 @@ title: CRO-tool blog
 description: >
   The CRO-tool blog is a resource on how to interpret and apply CRO. It includes resources on CRO itself, 
   setting up certain tools, and SEO to get more traffic for your CRO experiments.
-url: /portfolio/cro-tool-blog
+url: /portfolio/blog-cro-tool
 project_url: https://blog.cro-tool.com/
 active: true
 publish_date: 2020-03-18

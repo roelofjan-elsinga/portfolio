@@ -7,7 +7,7 @@ description: >
   Ankrd is a social media platform for colleges. It aims to be a central point where colleges can post events
   and discuss topics. Every school has its own posts and members. This was the first application
   that I created using the new version of Angular.
-url: /portfolio/ankrd
+url: /portfolio/ankrd-website
 project_url: https://ankrd.com/
 active: true
 publish_date: 2017-07-20

@@ -1,7 +1,7 @@
 ---
 image_url: /images/work/cro-tool-homepage_640.jpg
 thumbnail_url: /images/work/cro-tool-homepage_500.jpg
-image_alt: Plant care for beginners homepage
+image_alt: CRO-tool homepage
 title: CRO-tool
 description: >
   CRO-tool is a tool to create hypotheses for CRO using psychological theories. 
