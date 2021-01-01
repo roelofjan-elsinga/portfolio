@@ -188,7 +188,7 @@ class PublicController extends Controller
      *
      * @return \stdClass
      */
-    private function arrayToClass(array $input)
+    protected function arrayToClass(array $input)
     {
         $class = new \stdClass();
 
@@ -202,29 +202,21 @@ class PublicController extends Controller
     /**
      * Display the Atom feed
      *
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
      */
     public function atomFeed()
     {
-        $atom_feed = Storage::get('atom.xml');
-
-        return response($atom_feed, 200, [
-            'Content-Type' => 'application/atom+xml',
-        ]);
+        return \response()->file(public_path('atom.xml'));
     }
 
     /**
      * Display the RSS feed
      *
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
      */
     public function rssFeed()
     {
-        $rss_feed = Storage::get('rss.xml');
-
-        return response($rss_feed, 200, [
-            'Content-Type' => 'application/rss+xml',
-        ]);
+        return \response()->file(public_path('rss.xml'));
     }
 
     public function contact(ContactRequest $request)

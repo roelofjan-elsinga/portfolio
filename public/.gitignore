@@ -1,3 +1,5 @@
 sitemap.xml
 images.xml
 vendor/*
+atom.xml
+rss.xml

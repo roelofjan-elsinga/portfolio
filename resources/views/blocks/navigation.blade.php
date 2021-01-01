@@ -12,7 +12,7 @@
             </li>
             <li class="inline-block mx-2"><a class="link" href="{{route('articles')}}">{{__('nav.blog')}}</a></li>
             <li class="inline-block mx-2">
-                <a class="link" href="{{route('feed')}}">
+                <a class="link" href="{{asset('atom.xml')}}">
                     <img src="{{asset('images/icons/rss-feed.svg')}}" class="h-4" alt="RSS Feed logo" />
                 </a>
             </li>
