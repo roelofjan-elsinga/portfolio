@@ -4,3 +4,34 @@
 
 [context.production.environment]
   PHP_VERSION = "7.4"
+
+[[redirects]]
+  from = "/feed"
+  to = "/atom.xml"
+  status = 301
+
+[[redirects]]
+  from = "/feed/rss"
+  to = "/rss.xml"
+  status = 301
+
+[[redirects]]
+  from = "/articles/1"
+  to = "/articles"
+  status = 301
+
+[[redirects]]
+  from = "/passions"
+  to = "/articles"
+  status = 301
+
+[[redirects]]
+  from = "/passions/:slug"
+  to = "/articles/:slug"
+  status = 301
+
+[[redirects]]
+  from = "/articles"
+  to = "/articles/:page"
+  status = 301
+  query = {page = ":page"}

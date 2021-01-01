@@ -17,6 +17,7 @@
     "laravel-mix-workbox": "^0.1.2",
     "lint-staged": "^8.1.4",
     "minimist": "^1.2.2",
+    "netlify-cli": "^2.69.11",
     "sass": "^1.16.0",
     "sass-loader": "7.*",
     "tailwindcss": "^1.4",

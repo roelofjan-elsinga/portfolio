@@ -1,4 +1,4 @@
-<form action="{{route('contact')}}" method="post">
+<form name="contact" method="post" netlify>
     <div class="w-full md:w-1/2 mt-4">
         @csrf
         <input type="text" name="name" class="bg-white border border-gray-300 rounded p-4 text-theme-darkest mb-2 text-lg" placeholder="{{__('contact.name')}}" required>

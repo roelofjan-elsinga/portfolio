@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use Main\Classes\ArticlePaginator;
 use Main\Http\Requests\ContactRequest;
 use Main\Mail\ContactMail;
 use Main\Models\OpenSource;
@@ -106,7 +107,7 @@ class PublicController extends Controller
      * @throws \Exception
      *
      */
-    public function articles()
+    public function articles(?int $page = null)
     {
         $request = Request::capture();
 
@@ -122,12 +123,13 @@ class PublicController extends Controller
                 ->values();
         }
 
-        $current_page = $request->get('page') ?? 1;
+        $current_page = $page ?? 1;
 
         $page_articles = collect($articles)->forPage($current_page, 10);
 
-        $paginator = new LengthAwarePaginator($page_articles, count($articles), 10, $current_page, [
+        $paginator = new ArticlePaginator($page_articles, count($articles), 10, $current_page, [
             'path' => '/articles',
+            'q' => $request->get('q')
         ]);
 
         return view('public.articles', [
