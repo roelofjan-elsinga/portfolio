@@ -1,3 +1,6 @@
 [build]
   publish = "dist/"
   command = "php artisan export"
+
+[context.production.environment]
+  PHP_VERSION = "7.4"

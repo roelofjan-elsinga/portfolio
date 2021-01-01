@@ -56,7 +56,7 @@ return [
      * You can skip these by adding a `--skip-{name}` flag to the command.
      */
     'before' => [
-         'assets' => '/usr/bin/npm run prod',
+         'assets' => 'npm run prod',
          'atom_feed' => 'php artisan aloiacms:publish:feed',
          'rss_feed' => 'php artisan feed:rss'
     ],
