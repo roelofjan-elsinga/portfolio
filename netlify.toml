@@ -1,6 +1,6 @@
 [build]
   publish = "dist/"
-  command = "php artisan export -v"
+  command = "php artisan export --skip-deploy"
 
 [build.environment]
   PHP_VERSION = "7.4"
