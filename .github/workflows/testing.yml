@@ -23,6 +23,8 @@ jobs:
           extensions: mbstring
       - name: Install Composer dependencies
         run: composer install
+      - name: Generate feeds
+        run: php artisan aloiacms:publish:feed
       - name: Run PHPUnit
         run: ./vendor/bin/phpunit --coverage-clover=coverage.xml\
       - name: Upload coverage reports
