@@ -21,7 +21,7 @@ class ExportServiceProvider extends ServiceProvider
     {
         $exporter->crawl(false);
         $exporter->paths([
-            '',
+            '/',
             'articles',
             'resume',
             'mijn-cv',
