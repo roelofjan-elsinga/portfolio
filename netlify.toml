@@ -2,7 +2,7 @@
   publish = "dist/"
   command = "php artisan export"
 
-[context.production.environment]
+[build.environment]
   PHP_VERSION = "7.4"
 
 [[redirects]]
