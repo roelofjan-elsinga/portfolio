@@ -5,8 +5,6 @@ namespace Main\Providers;
 use AloiaCms\Models\Page;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 use Main\Models\Article;
 use Main\Models\Work;
@@ -21,9 +19,6 @@ class ExportServiceProvider extends ServiceProvider
      */
     public function boot(Exporter $exporter)
     {
-        App::setLocale('nl');
-        Config::set('APP_URL', 'https://roelofjanelsinga.nl');
-
         $exporter->crawl(false);
         $exporter->paths([
             '',
