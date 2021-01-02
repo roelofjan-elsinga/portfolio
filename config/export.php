@@ -57,8 +57,7 @@ return [
      */
     'before' => [
          'assets' => 'npm run prod',
-         'atom_feed' => 'php artisan aloiacms:publish:feed',
-         'rss_feed' => 'php artisan feed:rss'
+         'feeds' => 'php artisan aloiacms:publish:feed',
     ],
 
     /*
