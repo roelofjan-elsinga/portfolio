@@ -3,7 +3,7 @@
   <channel><description>Roelof Jan Elsinga</description>
 <title>Roelof Jan Elsinga</title>
               <link>https://roelofjanelsinga.com</link>
-              <pubDate>Thu, 03 Dec 2020 11:52:27 GMT</pubDate>
+              <pubDate>Wed, 30 Dec 2020 11:00:03 GMT</pubDate>
               
               
               <!-- source: https://roelofjanelsinga.com/feed -->
@@ -750,6 +750,16 @@ The initial situation was as follows: (...)</description>
                     
                     
                     <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" type="image/jpeg" width="800" height="459"/>
+                  <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
+<item><description>2020 has been a strange year for us all, but I don't want to linger on the negatives this year has brought. Instead, I'd like to highlight everything that went well for me. In this post, I'll highlight everything I've learned this year and everything I'm proud of. (...)</description>
+                    <title>My 2020 in review</title>
+                    <link>https://roelofjanelsinga.com/articles/my-2020-in-review</link>
+                    <guid>https://roelofjanelsinga.com/articles/my-2020-in-review</guid>
+                    
+                    <pubDate>Wed, 30 Dec 2020 11:00:00 GMT</pubDate>
+                    
+                    
+                    <!--Unknown element content--><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/my-2020-in-review.png" medium="image" type="image/png" width="1200" height="800"/>
                   <source url="https://roelofjanelsinga.com/feed">Roelof Jan Elsinga</source></item>
 <item><description>Find out which file types I use for certain scenarios and which situations suit a specific file type best. We’ll dive into JSON, YAML, XML, and dotenv. (...)</description>
                     <title>How to Pick Right Configuration File Type for Your Project</title>

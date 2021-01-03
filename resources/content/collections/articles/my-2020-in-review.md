@@ -1,12 +1,13 @@
 ---
 description: '2020 has been a strange year for us all, but I don''t want to linger on the negatives this year has brought. Instead, I''d like to highlight everything that went well for me. In this post, I''ll highlight everything I''ve learned this year and everything I''m proud of.'
 post_date: '2020-12-30'
-is_published: false
-is_scheduled: true
-update_date: '2020-12-29 13:21:25'
+is_published: true
+is_scheduled: false
+update_date: '2020-12-29 21:43:52'
 linkedin_post: '2020 was a crazy year, but I''ve been surprisingly productive during the quarantine. I''ve created a list of everything I''ve done and I''m proud of this year, to end this strange year on a high note. What have you done that you''re most proud of this year?'
 twitter_post: ''
 ---
+
 ![My 2020 in review](/images/articles/my-2020-in-review.png "My 2020 in review")
 # My 2020 in review
 2020 has been a strange year for us all, but I don't want to linger on the negatives this year has brought. Instead, I'd like to highlight everything that went well for me. I'd like to invite you to do the same to end this strange year on a high. In this post, I'll highlight everything I've learned this year and everything I'm proud of. Quarantine has been a strange time, where all of a sudden I had a lot of extra time to spend on myself and my projects.
@@ -27,7 +28,7 @@ In 2021, I hope to continue to improve Aloia CMS by making the performance even 
 
 ![Plant care for Beginners logo](/images/articles/plantcareforbeginners-logo-banner.png "Plant care for Beginners logo")
 ### Plant care for Beginners
-2020 was THE year for my side projects! The extra time quarantine gave me allowed me to write many plant care guides for [Plant care for Beginners](https://plantcareforbeginners.com). In May, I enabled Google Adsense and since that point my side project actually started to make some money. At the beginning of December, I switched my ads from Adsense to Mediavine and I hope to stay with them for a while.
+2020 was THE year for my side projects! The extra time quarantine allowed me to write many plant care guides for [Plant care for Beginners](https://plantcareforbeginners.com). In May, I enabled Google Adsense and since that point my side project actually started to make some money. At the beginning of December, I switched my ads from Adsense to Mediavine and I hope to stay with them for a while.
 
 In the short term, I will migrate parts of the website from a purely file-based CMS (Aloia CMS) to Neo4j. The data will still be stored on disk, but content suggestions and content aggregate pages will be generated using Neo4j. This makes it much easier for myself to help visitors find the information they might be looking for.
 

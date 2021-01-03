@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Roelof Jan Elsinga</title>
               <link href="https://roelofjanelsinga.com"/>
-              <updated>2020-12-03T12:52:27+01:00</updated>
+              <updated>2020-12-30T12:00:03+01:00</updated>
               <author>
                 <name>Roelof Jan Elsinga</name>
               </author>
@@ -3197,6 +3197,65 @@ requests? Let me know in the comments, I'd love to learn from you.</p>]]></conte
                     <summary><![CDATA[First, let me refresh your memory about what results I've had so far.
 The initial situation was as follows:]]></summary>
                     <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/0_TZbsjFf22AO6FfeA.jpeg" medium="image" type="image/jpeg" width="800" height="459" />
+                  </entry>
+<entry>
+                    <title>My 2020 in review</title>
+                    <link href="https://roelofjanelsinga.com/articles/my-2020-in-review"/>
+                    <id>https://roelofjanelsinga.com/articles/my-2020-in-review</id>
+                    <updated>2020-12-29T21:43:52+01:00</updated>
+                    <published>2020-12-30T12:00:00+01:00</published>
+                    <content type="html"><![CDATA[<p><img src="/images/articles/my-2020-in-review.png" alt="My 2020 in review" title="My 2020 in review" /></p>
+<h1>My 2020 in review</h1>
+<p>2020 has been a strange year for us all, but I don't want to linger on the negatives this year has brought. Instead, I'd like to highlight everything that went well for me. I'd like to invite you to do the same to end this strange year on a high. In this post, I'll highlight everything I've learned this year and everything I'm proud of. Quarantine has been a strange time, where all of a sudden I had a lot of extra time to spend on myself and my projects.</p>
+<h2>Highlights of my 2020</h2>
+<p><img src="/images/articles/go-logo-banner.png" alt="Golang logo" title="Golang logo" /></p>
+<h3>Golang</h3>
+<p>At the beginning of the year, I needed to make a few business processes faster that were written in PHP. I ran out of ideas on how to do this in PHP, so I gave Go a try. What a major success that turned out to be. The process execution time was shorten significantly: from 1 week to &quot;just&quot; 3 hours. Learning Golang turned out to have a major impact on my career., but more on that later.</p>
+<p>The power and simplicity of Go convinced me to migrate a few other parts of a larger monolith application, written in PHP, to Go microservices.</p>
+<p><img src="/images/articles/aloiacms-logo-banner.png" alt="Aloia CMS logo" title="Aloia CMS logo" /></p>
+<h3>Aloia CMS</h3>
+<p>My trusty CMS, <a href="https://aloiacms.com">Aloia CMS</a>, got its first stable version this year (february) and has become a powerhouse for my projects. Its simplicity and extendability made it a very reliable base for my portfolio and Plant care for Beginners, which I'll talk about next. The latest version (3.3.0) brings model events when content is saved or deleted. This change alone makes it possible to build all kinds of automation scripts for the consuming Laravel application. For example, this allows me to easily synchronize data between the flat files and Neo4j.</p>
+<p>In 2021, I hope to continue to improve Aloia CMS by making the performance even better and allowing for easier extensions for the built-in commands. This change will make it even nicer for developers to use.</p>
+<p><img src="/images/articles/plantcareforbeginners-logo-banner.png" alt="Plant care for Beginners logo" title="Plant care for Beginners logo" /></p>
+<h3>Plant care for Beginners</h3>
+<p>2020 was THE year for my side projects! The extra time quarantine allowed me to write many plant care guides for <a href="https://plantcareforbeginners.com">Plant care for Beginners</a>. In May, I enabled Google Adsense and since that point my side project actually started to make some money. At the beginning of December, I switched my ads from Adsense to Mediavine and I hope to stay with them for a while.</p>
+<p>In the short term, I will migrate parts of the website from a purely file-based CMS (Aloia CMS) to Neo4j. The data will still be stored on disk, but content suggestions and content aggregate pages will be generated using Neo4j. This makes it much easier for myself to help visitors find the information they might be looking for.</p>
+<p><img src="/images/articles/cro-tool-logo-banner.png" alt="CRO-tool logo" title="CRO-tool logo" /></p>
+<h3>CRO-tool</h3>
+<p><a href="https://sandervolbeda.com">Sander</a> had a great idea for a new side-project: <a href="https://cro-tool.com">CRO-tool</a>. This project aims to help UX and CRO (conversion rate optimization) professionals to use psychology for their A/B experiments. Together, we've worked hard on getting an MVP off the ground, with success! We've sold a few <a href="https://cro-tool.com/pricing">early-bird lifetime licenses</a> for our tool and we're planning to release around 20 new psychological theories of the next few months to keep adding value to our subscribers. </p>
+<p>CRO-tool has taught me a lot about running a SaaS project on which people depend for their day job. The tool has to be as stable as possible at all times and changes should be made with care.</p>
+<p><img src="/images/articles/ansible-logo-banner.png" alt="Ansible logo" title="Ansible logo" /></p>
+<h3>Ansible</h3>
+<p>Throughout this year, I've been looking at automating everything that could be automated. This includes deploying all websites I manage. Up to this point, this has always been a manual process. Using Ansible, I've created playbooks to automate the deployments of my websites. This helps to keep my mind at ease and prevents human error while deploying. I'm no longer at risk of forgetting something during deployments, because this has been automated.</p>
+<p><img src="/images/articles/neo4j-logo-banner.png" alt="Neo4j Logo" title="Neo4j Logo" /></p>
+<h3>Neo4j</h3>
+<p>Neo4j came on my radar quite late in the year, around mid-November. However, in this short time it has changed my views of what a database should be. A database should shape to your needs, not the other way around. If you're working with complex data, you'll often struggle with many joins in a query to get the data you need. Neo4j makes this much easier and the performance, even while doing many &quot;joins&quot;, is many times better than MySQL. I've built a few projects with Neo4j already. One of which is a Go + GraphQL server and a Neo4j database. The other is an extension for Plant care for Beginners, using PHP and Neo4j together. Both have been a pleasure to work with so far.</p>
+<h3>A new job</h3>
+<p>I've found a new job this year! I've been working at Tubber for the past 5 years and I was ready for the next step. I've found the right place for me at Afosto. At this new job, I'll get to work with Kubernetes, Microservices, and a lot of Golang. I enjoyed working with Go so much that it ultimately resulted in finding a new job where I can use it more often. I hope to learn a lot about the topics I just mentioned in 2021 and using them in production.</p>
+<h3>Mastermind group</h3>
+<p>Since I've had more time to spend on my side-projects, having a Mastermind group has been an amazing experience. This mastermind group has given me new insights and ideas to use to improve my side-projects and make them profitable. It has been fine working on my side-projects by myself, but having others there as a soundboard and your best critics is great. &quot;Fail fast&quot; is really one of the things that I experience during the masterminds, because you have to to explain your problems and progress. By thinking about it and getting questions, you'll quickly know if your ideas are going to work or if they need a little more polish.</p>
+<h2>Fun statistics</h2>
+<p>These are some fun statistics for me about 2020:</p>
+<ul>
+<li>I've written 76 blog posts on 4 websites:
+<ul>
+<li>32 on <a href="https://roelofjanelsinga.com">roelofjanelsinga.com</a></li>
+<li>31 on <a href="https://plantcareforbeginners.com">plantcareforbeginners.com</a></li>
+<li>10 on <a href="https://aloiacms.com">aloiacms.com</a></li>
+<li>3 on <a href="https://blog.cro-tool.com">blog.cro-tool.com</a></li>
+</ul></li>
+<li>Launched 2 websites:
+<ul>
+<li><a href="https://cro-tool.com">cro-tool.com</a></li>
+<li><a href="https://blog.cro-tool.com">blog.cro-tool.com</a></li>
+</ul></li>
+<li>Reached a peak of 63k visitors per month on <a href="https://plantcareforbeginners.com">Plant care for Beginners</a></li>
+</ul>
+<h2>A strange but productive year</h2>
+<p>2020 was a strange year, but it I've been very productive throughout it. I'm very happy with what I've accomplished and I hope to carry on this productive streak to 2021. I don't think I'll start any new projects in 2021, but who knows what will happen. I'm planning on improving what I've got now, instead of adding more to my list of projects. Quality over quantity.</p>
+<p>I hope you've had a good year, considering the current state of the world. Even if you haven't had the time or energy to be productive this year, you've made it. Productive or not, I hope you learned something new or found something that brings you energy in some way. This year has highlighted how important mental health is, so work on that first, before trying to be &quot;productive&quot;.</p>]]></content>
+                    <summary><![CDATA[2020 has been a strange year for us all, but I don't want to linger on the negatives this year has brought. Instead, I'd like to highlight everything that went well for me. In this post, I'll highlight everything I've learned this year and everything I'm proud of.]]></summary>
+                    <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://roelofjanelsinga.com/images/articles/my-2020-in-review.png" medium="image" type="image/png" width="1200" height="800" />
                   </entry>
 <entry>
                     <title>How to Pick Right Configuration File Type for Your Project</title>
