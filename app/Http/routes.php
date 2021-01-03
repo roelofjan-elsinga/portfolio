@@ -5,7 +5,7 @@ Route::permanentRedirect('blog', 'articles');
 
 Route::get('/', ['as' => 'home', 'uses' => 'PublicController@index']);
 Route::post('contact', ['as' => 'contact', 'uses' => 'PublicController@contact']);
-Route::get('articles', ['as' => 'articles', 'uses' => 'PublicController@articles']);
+Route::get('articles/{page?}', ['as' => 'articles', 'uses' => 'PublicController@articles'])->where('page', '[0-9]+');
 Route::get('articles/{slug}', ['as' => 'articles.view', 'uses' => 'PublicController@showArticle']);
 Route::permanentRedirect('/passions', '/articles');
 

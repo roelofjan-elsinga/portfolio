@@ -11,25 +11,17 @@ class PublicTest extends TestCase
 {
     public function test_atom_feed_can_be_viewed()
     {
-        Storage::fake('atom');
-
-        Storage::disk('atom')->put('atom.xml', 'test');
-
         $this
             ->get(route('feed'))
-            ->assertSee('test')
+            ->assertHeader('Content-Type', 'text/xml')
             ->assertOk();
     }
 
     public function test_rss_feed_can_be_viewed()
     {
-        Storage::fake('atom');
-
-        Storage::disk('atom')->put('rss.xml', 'test');
-
         $this
             ->get(route('feed.rss'))
-            ->assertSee('test')
+            ->assertHeader('Content-Type', 'text/xml')
             ->assertOk();
     }
 

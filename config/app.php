@@ -56,7 +56,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE', 'en'),
 
     'default_locale' => 'en',
 
@@ -152,7 +152,8 @@ return [
         Main\Providers\AuthServiceProvider::class,
         Main\Providers\EventServiceProvider::class,
         Main\Providers\RouteServiceProvider::class,
-        Main\Providers\BroadcastServiceProvider::class
+        Main\Providers\BroadcastServiceProvider::class,
+        Main\Providers\ExportServiceProvider::class
 
     ],
 

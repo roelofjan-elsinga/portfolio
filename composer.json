@@ -29,7 +29,8 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "spatie/phpunit-watcher": "^1.12",
         "mikey179/vfsstream": "^1.6",
-        "mockery/mockery": "^1.3"
+        "mockery/mockery": "^1.3",
+        "spatie/laravel-export": "^0.3.7"
     },
     "autoload": {
         "classmap": [
@@ -56,7 +57,6 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover",
-            "php artisan aloiacms:set-permissions",
             "@php artisan vendor:publish --force --tag=livewire:assets --ansi",
             "@php artisan vendor:publish --force --tag=aloiacmsgui-assets --ansi"
         ]
