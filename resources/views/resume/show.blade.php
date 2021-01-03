@@ -82,15 +82,15 @@
 
             <div class="flex-1">
                 <h2>
-                    @lang('resume.experience')
+                    {{__('resume.experience', [], $lang)}}
                 </h2>
 
-                @foreach($resume['experiences'] as $experience)
+            @foreach($resume['experiences'] as $experience)
 
-                    <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
-                        <div class="w-48">
-                            <div class="bg-theme-darker text-white rounded p-2 inline-block mb-4 lg:mb-0">
-                                {{$experience['dates']}}
+                <div class="flex flex-col lg:flex-row mt-8 print:mt-4">
+                    <div class="w-48">
+                        <div class="bg-theme-darker text-white rounded p-2 inline-block mb-4 lg:mb-0">
+                            {{$experience['dates']}}
                             </div>
                         </div>
                         <div class="flex-1">
@@ -104,7 +104,7 @@
                                 {{$experience['job_title']}}
                             </p>
                             <div class="mt-2 pr-2">
-                                <strong>@lang('resume.key_activities')</strong>
+                                <strong>{{__('resume.key_activities', [], $lang)}}</strong>
 
                                 <ul class="block mt-2 ml-4 list-disc">
                                     @foreach($experience['key_activities'] as $activity)
@@ -121,7 +121,7 @@
 
             <div class="flex-1 my-8 md:my-0">
 
-                <h2>@lang('resume.education')</h2>
+                <h2>{{__('resume.education', [], $lang)}}</h2>
 
                 @foreach($resume['education'] as $education)
 
@@ -154,7 +154,7 @@
         </div>
 
         <div>
-            <h2 class="mt-4 md:mt-8 mb-4">@lang('resume.skills')</h2>
+            <h2 class="mt-4 md:mt-8 mb-4">{{__('resume.skills', [], $lang)}}</h2>
 
             <ul class="-m-1">
                 @foreach($resume['skills'] as $skill)

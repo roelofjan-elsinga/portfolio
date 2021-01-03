@@ -10,15 +10,15 @@ class ResumeController
     {
         return view('resume.show', [
             'resume' => $this->getResumeFromFile('resume.json'),
+            'lang' => 'en'
         ]);
     }
 
     public function browserDutch()
     {
-        app()->setLocale('nl');
-
         return view('resume.show', [
             'resume' => $this->getResumeFromFile('resume.nl.json'),
+            'lang' => 'nl'
         ]);
     }
 

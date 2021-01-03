@@ -3,7 +3,6 @@
 namespace Main\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
-use Main\Http\Middleware\Localize;
 
 class Kernel extends HttpKernel
 {
@@ -30,8 +29,7 @@ class Kernel extends HttpKernel
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Main\Http\Middleware\VerifyCsrfToken::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
-            Localize::class
+            \Illuminate\Routing\Middleware\SubstituteBindings::class
         ],
 
         'api' => [
