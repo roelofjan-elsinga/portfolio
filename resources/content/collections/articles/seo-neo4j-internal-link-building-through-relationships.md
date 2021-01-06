@@ -3,11 +3,10 @@ description: 'Internal link building is a great way to signal to search engines 
 post_date: '2021-01-06'
 is_published: true
 is_scheduled: false
-update_date: '2021-01-06 16:15:36'
+update_date: '2021-01-06 16:23:56'
 linkedin_post: ''
 twitter_post: ''
 ---
-
 ![Neo4j Logo](/images/articles/neo4j-logo.png "Neo4j Logo")
 # SEO & Neo4j: Internal link building through relationships
 Internal link building is a great way to signal to search engines which pages are the most important on your website. However, you can also use internal links as a way to group content and give individual pieces of content more context. If you have a blog with 5 posts, this process isn't very difficult and time-consuming. However, when you have over 25 posts this becomes increasingly difficult and you need to look for some ways to link pieces of content together automatically. 
