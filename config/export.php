@@ -58,6 +58,7 @@ return [
     'before' => [
          'assets' => 'npm run prod',
          'feeds' => 'php artisan aloiacms:publish:feed',
+         'sitemap' => 'php artisan aloiacms:publish:sitemap',
     ],
 
     /*
