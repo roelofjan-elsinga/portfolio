@@ -2,7 +2,9 @@
 
 namespace Main\Models;
 
+use AloiaCms\InlineBlockParser;
 use DOMDocument;
+use ParsedownExtra;
 
 class Article extends \AloiaCms\Models\Article
 {
@@ -24,5 +26,22 @@ class Article extends \AloiaCms\Models\Article
         }
 
         return $images;
+    }
+
+    /**
+     * Get the parse file body
+     *
+     * @return string
+     */
+    public function body(): string
+    {
+        if (!$this->parsed_body) {
+            $this->parsed_body = (new InlineBlockParser)
+                ->parseHtmlString(
+                    (new ParseDownExtra())->parse($this->rawBody())
+                );
+        }
+
+        return $this->parsed_body;
     }
 }

@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    <div class="articles-page py-8 sm:py-0 max-w-md mx-auto">
+    <div class="articles-page py-8 sm:py-0 max-w-md mx-auto" id="top">
 
         @include('blocks.breadcrumbs', ['pages' => [['url' => route('articles'), 'title' => 'Blog'], ['url' => request()->url(), 'title' => $article->title()]]])
 

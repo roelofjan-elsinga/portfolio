@@ -3,11 +3,7 @@
 }
 
 .inline-link {
-    @apply text-theme-darkest border-theme-darkest;
-    font-weight: 700;
-    padding-bottom: .25rem;
-    text-decoration: none;
-    border-bottom-width: 2px;
+    @apply text-theme-darkest underline;
 }
 
 .view-article {
@@ -34,6 +30,12 @@
 
     ol {
         @apply list-decimal text-lg mb-4;
+
+        li {
+            a {
+                @extend .inline-link;
+            }
+        }
     }
 
     .caption {
@@ -58,6 +60,10 @@
 
     code {
         @apply bg-gray-300 block p-8 break-words overflow-x-scroll;
+    }
+
+    .top-link {
+        @apply text-sm italic block mb-2;
     }
 
 }

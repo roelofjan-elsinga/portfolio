@@ -21,16 +21,19 @@ These 3 versions are:
 Let's get into the 3 iterations of link building and why I chose to move from one to the other.
 
 ## 1. Link the 3 most recent guides {#recent}
+[Back to top](#top) {.top-link}
 When I started linking guides together, I only did this to keep visitors on the website by giving them more content to read. Prior to this, the content was the content and there weren't any suggestions for "Other content you might enjoy". To start out, I've listed the 3 most recent guides under every other guide. This way, readers had somewhere to go after the finished reading the guide. 
 
 It was an improvement on the current situation, but it didn't benefit the SEO rankings of the website as much as I expected it would. Why? Well, every time a new guide was published, every guide was linking to the new guide, whether it was relevant to the current topic or not. This might give the new guide a little bit of "link juice", but more often than not, readers wouldn't click on the link to the new guide, because it wasn't relevant to the content they were reading at that point in time. The new guide didn't offer them what they wanted or needed, so the "link juice" was wasted.
 
 ## 2. Link the 3 most relevant guides (based on tags) {#tags}
+[Back to top](#top) {.top-link}
 A logical next step was to manually suggest related content. The easiest way to add some sort of relevancy to any piece of content is by adding tags, a lot of them. By adding tags, I was able to create groups of related content. The more tags two guides have in common, the more relevant they likely are for each other.
 
 I implemented a tag-based relevancy model and the results were quite good. Most linked guides had something in common with the guide the reader was currently on. However, purely matching based on tags and sorting which guide had the most tags in common is still not completely accurate. More than a few times I had seen a suggested guide under the content that was vaguely related to the content, but I knew there were guides that were much more relevant to the current guide. There just wasn't a good way to fix this using only tags (without playing the system and adding more tags).
 
 ## 3. Link the 3 most relevant guides (based on tags and reader behavior) {#behavior}
+[Back to top](#top) {.top-link}
 I asked myself: "How can you add more relevancy between guides?" The simple (yet not so simple) answer I found was by looking at reader behavior. Which guides do readers look at in a single session? After reading a guide, do they look for more information or do they leave? With that idea, I looked at some ways to "calculate" which guides are most relevant based on tags and reader behavior. I couldn't use the current system, flat files, because that would be far too slow. MySQL also wasn't a great option because it's too much data and too many joins in a query, this would be too slow. 
 
 Then I found Neo4j, a lightning fast graph database where relationships are a core concept. Using Neo4j, I can quickly and easily find the most relevant guides other readers looked at after looking at the current guide. Combine this with the most relevant guide (based on tags) and I can find the 3 most relevant guides for a guide within milliseconds. This is a great solution, because:

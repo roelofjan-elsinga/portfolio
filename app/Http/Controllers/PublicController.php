@@ -2,15 +2,13 @@
 
 namespace Main\Http\Controllers;
 
-use AloiaCms\Models\Article;
+use Main\Models\Article;
 use AloiaCms\Models\MetaTag;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Storage;
 use Main\Classes\ArticlePaginator;
 use Main\Http\Requests\ContactRequest;
 use Main\Mail\ContactMail;
