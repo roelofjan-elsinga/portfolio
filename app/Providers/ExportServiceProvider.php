@@ -7,6 +7,7 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Main\Models\Article;
+use Main\Models\Tag;
 use Main\Models\Work;
 use Spatie\Export\Exporter;
 
@@ -60,6 +61,12 @@ class ExportServiceProvider extends ServiceProvider
         $exporter->paths(
             Work::all()
                 ->map(fn (Work $work) => route('public.workDetail', $work->filename(), false))
+                ->toArray()
+        );
+
+        $exporter->paths(
+            Tag::all()
+                ->map(fn (Tag $tag) => route('articles.tags', $tag->filename(), false))
                 ->toArray()
         );
     }
