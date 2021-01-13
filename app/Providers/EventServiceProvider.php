@@ -3,6 +3,7 @@
 namespace Main\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Main\Listeners\ModelSubscriber;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -11,10 +12,10 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [
-        'Main\Events\SomeEvent' => [
-            'Main\Listeners\EventListener',
-        ],
+    protected $listen = [];
+
+    protected $subscribe = [
+        ModelSubscriber::class
     ];
 
     /**

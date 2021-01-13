@@ -17,4 +17,22 @@ class Controller extends BaseController
     {
         View::share('page', MetaTag::find('home'));
     }
+
+    /**
+     * Convert an array to a stdClass.
+     *
+     * @param array $input
+     *
+     * @return \stdClass
+     */
+    protected function arrayToClass(array $input)
+    {
+        $class = new \stdClass();
+
+        foreach ($input as $key => $value) {
+            $class->{$key} = $value;
+        }
+
+        return $class;
+    }
 }

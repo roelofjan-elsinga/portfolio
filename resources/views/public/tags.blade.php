@@ -9,7 +9,7 @@
 
         <main class="articles mb-8 max-w-md">
 
-            @include('blocks.breadcrumbs', ['pages' => [['url' => route('articles'), 'title' => 'Blog']]])
+            @include('blocks.breadcrumbs', ['pages' => [['url' => route('articles.tags', $tag_name), 'title' => $page->title]]])
 
             <div class="paragraph-spacing mb-8">
                 {!! Block::get('articles') !!}
@@ -21,18 +21,20 @@
 
             @endforeach
 
-            {!! $articles->links('public.pagination') !!}
-
         </main>
 
         <aside class="flex-1">
             <div class="bg-theme-lightest rounded p-8 sticky" style="top: 16px;">
                 <h3 class="mb-4">Tags</h3>
 
+                <a href="{{route('articles')}}" class="block my-4 underline">
+                    Back to all blog posts
+                </a>
+
                 <ul class="list-none -ml-0">
                     @foreach($tags as $tag)
                         <li class="mb-2">
-                            <a href="{{route('articles.tags', $tag->get("name"))}}">
+                            <a href="{{route('articles.tags', $tag->get("name"))}}" class="{{$tag->get("name") === $tag_name ? 'font-bold underline' : ''}}">
                                 {{$tag->get("name")}} ({{count($tag->get("articles"))}})
                             </a>
                         </li>
@@ -55,8 +57,8 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blog",
-        "item": "{{route(Route::currentRouteName())}}"
+        "name": "{{$page->title}}",
+        "item": "{{route('articles.tags', $tag_name)}}"
       }]
     }
     </script>

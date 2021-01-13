@@ -19,8 +19,7 @@ class ArticlePaginator extends LengthAwarePaginator
         }
 
         return route('articles', [
-            'page' => $page === 1 ? null : $page,
-            'q' => $this->getOptions()['q']
+            'page' => $page === 1 ? null : $page
         ], false);
     }
 }

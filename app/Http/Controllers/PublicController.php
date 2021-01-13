@@ -5,11 +5,9 @@ namespace Main\Http\Controllers;
 use Main\Models\Article;
 use AloiaCms\Models\MetaTag;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
-use Main\Classes\ArticlePaginator;
 use Main\Http\Requests\ContactRequest;
 use Main\Mail\ContactMail;
 use Main\Models\OpenSource;
@@ -96,107 +94,6 @@ class PublicController extends Controller
                 'keywords' => str_replace(' ', ',', $work->title)
             ]),
         ]);
-    }
-
-    /**
-     * View the articles page.
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @throws \Exception
-     *
-     */
-    public function articles(?int $page = null)
-    {
-        $request = Request::capture();
-
-        $articles = $this->getPublishedArticles();
-
-        if ($request->has('q') && !empty($request->get('q'))) {
-            $articles = $articles
-                ->filter(function (Article $article) use ($request) {
-                    return strpos(strtolower($article->title()), strtolower($request->get('q'))) !== false
-                        || strpos(strtolower($article->description()), strtolower($request->get('q'))) !== false
-                        || strpos(strtolower($article->body()), strtolower($request->get('q'))) !== false;
-                })
-                ->values();
-        }
-
-        $current_page = $page ?? 1;
-
-        $page_articles = collect($articles)->forPage($current_page, 10);
-
-        $paginator = new ArticlePaginator($page_articles, count($articles), 10, $current_page, [
-            'path' => '/articles',
-            'q' => $request->get('q')
-        ]);
-
-        return view('public.articles', [
-            'articles' => $paginator,
-            'pagination_tags' => [
-                'prev' => $current_page > 1 ? $paginator->url($current_page - 1) : null,
-                'next' => $current_page < $paginator->lastPage() ? $paginator->url($current_page + 1) : null,
-            ],
-            'view_route_name' => 'articles.view',
-            'page' => MetaTag::find('articles'),
-        ]);
-    }
-
-    private function getPublishedArticles(): Collection
-    {
-        return Cache::remember('published-posts', now()->addDay(), function () {
-            return Article::published()
-                ->sortByDesc(function (Article $article) {
-                    return $article->getPostDate();
-                })
-                ->values();
-        });
-    }
-
-    /**
-     * View an article.
-     *
-     * @param string $slug
-     *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function showArticle(string $slug)
-    {
-        $article = Article::find($slug);
-
-        if (!$article->exists()) {
-            abort(404);
-        }
-
-        return view('public.view-article', [
-            'article' => $article,
-            'page' => $this->arrayToClass([
-                'title' => $article->title(),
-                'author' => 'Roelof Jan Elsinga',
-                'description' => substr(strip_tags($article->description()), 0, 160),
-                'image_url' => url($article->image()),
-                'keywords' => str_replace(' ', ',', $article->title()),
-                'canonical' => $article->canonicalLink(),
-            ]),
-            'is_article' => true,
-        ]);
-    }
-
-    /**
-     * Convert an array to a stdClass.
-     *
-     * @param array $input
-     *
-     * @return \stdClass
-     */
-    protected function arrayToClass(array $input)
-    {
-        $class = new \stdClass();
-
-        foreach ($input as $key => $value) {
-            $class->{$key} = $value;
-        }
-
-        return $class;
     }
 
     /**

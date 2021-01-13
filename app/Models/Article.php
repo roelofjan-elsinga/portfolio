@@ -4,6 +4,7 @@ namespace Main\Models;
 
 use AloiaCms\InlineBlockParser;
 use DOMDocument;
+use Illuminate\Support\Collection;
 use ParsedownExtra;
 
 class Article extends \AloiaCms\Models\Article
@@ -43,5 +44,12 @@ class Article extends \AloiaCms\Models\Article
         }
 
         return $this->parsed_body;
+    }
+
+    public function tags(): Collection
+    {
+        return Tag::all()
+            ->filter(fn (Tag $tag) => in_array($this->filename(), $tag->get('articles') ?? []))
+            ->values();
     }
 }
