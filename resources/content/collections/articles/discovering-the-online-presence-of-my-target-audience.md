@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-05-11'
 url: discovering-the-online-presence-of-my-target-audience
+update_date: '2021-01-13 14:02:41'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - entrepreneurship
 ---
-
 !["Discovering the online presence of my target audience"](/images/articles/snake_plant.jpg)
 
 # Discovering the online presence of my target audience

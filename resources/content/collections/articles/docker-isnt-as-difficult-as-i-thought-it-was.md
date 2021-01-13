@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/docker-isnt-as-difficult-as-i-thought-it-was-db2cdea06e21'
 post_date: '2018-03-16'
 url: docker-isnt-as-difficult-as-i-thought-it-was
+description: 'When I looked into using Docker for my projects, I was very intimidated by "the Dockerfile". This was until I realized that I''ve been doing a similar thing for '
+update_date: '2021-01-13 14:13:34'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - docker
 ---
-
 !["Containers"](/images/articles/0_DMj0ko2eJtSm4nRZ.jpeg)
 
 # Docker isn't as difficult as I thought it was

@@ -1,12 +1,16 @@
 ---
-update_date: '2020-02-13 12:34:32'
+update_date: '2021-01-13 13:55:09'
 description: 'In this post I revisit a blog post I wrote 4 years ago. At that time I was looking at building a home server and predicted some technologies. 4 years later I''ve finally built the home server and it was easier than you might imagine.'
 is_scheduled: false
 is_published: true
 post_date: '2020-02-12'
 url: building-my-personal-cloud-after-4-years
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - raspberry-pi
+    - nextcloud
 ---
-
 !["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-nextcloud.png)
 # Building my personal cloud after 4 years
 

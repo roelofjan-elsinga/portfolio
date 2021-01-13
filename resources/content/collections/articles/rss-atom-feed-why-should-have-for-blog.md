@@ -1,12 +1,15 @@
 ---
-update_date: '2019-12-10 09:49:08'
+update_date: '2021-01-13 13:57:19'
 description: 'RSS/Atom feed: Why you should have one for your blog. In this post I talk about why you should have syndication feeds for your blog. You can easily and quickly share your content to many different platforms without doing any of the work yourself.'
 is_scheduled: false
 is_published: true
 post_date: '2019-12-11'
 url: rss-atom-feed-why-should-have-for-blog
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - rss
 ---
-
 !["RSS logo"](/images/articles/rss-logo.png)
 # RSS/Atom feed: Why you should have one for your blog
 RSS (Really Simple Syndication) and Atom (Atom Syndication Format) are two ways to syndicate your content across platforms. A lot of people have heard about RSS in some way or another, but fewer people know Atom. Atom is just a more modern version of RSS, but they serve the same purpose: Sharing updates from a source to different destinations. In this post, I'll explain why you should be using a feed, be it Atom or RSS, for your blog. If you're wondering what the differences are between RSS and Atom, you can read about it on [Wikipedia](https://en.wikipedia.org/wiki/Atom_(Web_standard)#Atom_compared_to_RSS_2.0).

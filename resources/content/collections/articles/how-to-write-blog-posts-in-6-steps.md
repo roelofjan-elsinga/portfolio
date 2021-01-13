@@ -1,12 +1,16 @@
 ---
-update_date: '2019-08-26 17:26:03'
+update_date: '2021-01-13 14:04:11'
 description: 'Writing blog posts can be a difficult if you don''t write a lot and don''t know where to start. Find out how I write blog posts and maybe it''ll help you to get started too.'
 is_scheduled: false
 is_published: true
 post_date: '2019-09-04'
 url: how-to-write-blog-posts-in-6-steps
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
+    - blogging
 ---
-
 !["Writing on a laptop"](/images/articles/writing-on-a-laptop.jpeg)
 <span class="caption">A photo by <a href="https://unsplash.com/@glenncarstenspeters">Glenn Carstens-Peters</a></span>
 # How I write my blog posts: 6 steps

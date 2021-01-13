@@ -3,7 +3,11 @@ description: 'CLI applications are very useful for performing tasks and automati
 post_date: '2020-05-13'
 is_published: true
 is_scheduled: false
-update_date: '2020-05-14 13:51:31'
+update_date: '2021-01-13 12:13:55'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - go
 ---
 ![CLI tool in Go](/images/articles/cli-tool-in-go.png)
 # Building CLI applications with Go

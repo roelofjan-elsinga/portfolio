@@ -1,12 +1,16 @@
 ---
-update_date: '2019-11-06 15:57:13'
+update_date: '2021-01-13 13:58:47'
 description: 'In this post I describe how I transformed a mono repository platform to a platform with two distinct applications and using Netlify to simplify the CI/CD pipeline with Angular. '
 is_scheduled: false
 is_published: true
 post_date: '2019-11-13'
 url: using-netlify-to-simplify-the-ci-cd-pipeline-with-angular
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - netlify
+    - angular
 ---
-
 !["Netlify and angular"](/images/articles/netlify-and-angular.png)
 # Using Netlify to simplify the CI/CD pipeline with Angular
 For the past few years, I've maintained a mono repository for my day job. This repository included a complete Laravel application and a complete Angular application (first AngularJS, later Angular). This all worked well together but became more difficult to maintain as the development team changed members and responsibilities over time. In this post, I'll walk you through the old situation, through an intermediate scenario, to the current architecture. As most architecture decisions are very much bound to a specific use case and definitely doesn't work for everyone, I will clearly explain what my choices were and why I chose to do it in a certain way.

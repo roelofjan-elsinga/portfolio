@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2019-02-07'
 url: 5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people
+description: "To get started with any work, you need to know what to do. In order to find out what the actual problem the person is facing,\r\nyou have to ask questions, a lot o"
+update_date: '2021-01-13 14:18:10'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
 ---
-
 !["Light bulbs"](/images/articles/light_bulbs.jpeg)
 
 # 5 Lessons I've learned by working on a product with non-technical people

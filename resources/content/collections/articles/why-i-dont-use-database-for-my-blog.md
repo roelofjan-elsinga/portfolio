@@ -4,8 +4,13 @@ is_scheduled: false
 is_published: true
 post_date: '2019-03-25'
 url: why-i-dont-use-database-for-my-blog
+update_date: '2021-01-13 14:05:02'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - blogging
+    - database
 ---
-
 !["Why I don't use a database for my blog"](/images/articles/stack_wood.jpeg)
 
 # Why I don't use a database for my blog

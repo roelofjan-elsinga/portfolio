@@ -1,12 +1,16 @@
 ---
-update_date: '2020-02-21 14:21:49'
+update_date: '2021-01-13 13:54:46'
 description: 'In this post, I go over the steps you have to take to set up an internet-facing personal cloud using nothing more than a Raspberry Pi, Nextcloud, and an external hard drive.'
 is_scheduled: false
 is_published: true
 post_date: '2020-02-19'
 url: how-to-setup-personal-cloud-raspberrypi-nextcloud
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - raspberry-pi
+    - nextcloud
 ---
-
 !["Raspberry pi + nextcloud"](/images/articles/raspberry-pi-nextcloud.png)
 # How to set up a personal cloud using a Raspberry Pi and Nextcloud
 

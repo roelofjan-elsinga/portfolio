@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2016-10-27'
 url: benefits-single-page-application
+description: 'Realtime information, partial page loads, quickly navigating to pages. Javascript has a lot to offer and is getting more and more popular. Websites aren''t just '
+update_date: '2021-01-13 14:16:02'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - javascript
 ---
-
 ![Manhattan at nigh](/images/articles/manhattan.jpg "Benefits of a single page application")
 
 # Benefits of a single page application

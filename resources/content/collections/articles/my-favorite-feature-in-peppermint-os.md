@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2020-03-04'
 url: my-favorite-feature-in-peppermint-os
+update_date: '2021-01-13 13:54:20'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - linux
 ---
-
 !["Ice on peppermint os"](/images/articles/ice-on-peppermint-os.jpg)
 # My favorite feature in Peppermint OS
 

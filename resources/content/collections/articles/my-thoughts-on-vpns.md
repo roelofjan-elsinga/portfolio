@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-31 18:21:19'
+update_date: '2021-01-13 14:00:55'
 description: 'Find out why I think you should use a VPN for your internet usage. If you like to browse any and all websites and be anonymous at the same time, you might benefit from using a VPN.'
 is_scheduled: false
 is_published: true
 post_date: '2019-09-11'
 url: my-thoughts-on-vpns
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - privacy
 ---
-
 !["Surveillance camera"](/images/articles/surveillance-camera.jpeg)
 # My thoughts about using a VPN during everyday life
 For the past month, I've been using a VPN for all of my internet usage, including my work laptop and mobile phone. It's been a fascinating experiment and here are some reasons why I think you should give it a try:

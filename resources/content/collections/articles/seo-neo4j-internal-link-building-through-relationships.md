@@ -3,9 +3,13 @@ description: 'Internal link building is a great way to signal to search engines 
 post_date: '2021-01-06'
 is_published: true
 is_scheduled: false
-update_date: '2021-01-06 16:23:56'
+update_date: '2021-01-13 14:05:09'
 linkedin_post: ''
 twitter_post: ''
+tags:
+    - neo4j
+    - seo
+    - database
 ---
 ![Neo4j Logo](/images/articles/neo4j-logo.png "Neo4j Logo")
 # SEO & Neo4j: Internal link building through relationships

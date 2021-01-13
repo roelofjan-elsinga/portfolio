@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-04-10'
 url: why-i-dont-have-comments-on-my-blog
+update_date: '2021-01-13 14:03:16'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - blogging
 ---
-
 !["Why I don't have comments on my blog"](/images/articles/heart-zero-likes.jpeg)
 
 # Why I don't have comments on my blog

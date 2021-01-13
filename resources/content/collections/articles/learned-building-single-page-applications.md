@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-26 18:59:07'
+update_date: '2021-01-13 14:16:43'
 description: "Single Page Applications (SPA's) are amazing to build and work with,\r\nbut there are a lot of disadvantages as well. This post describes some of the things that\r\nI"
 is_scheduled: false
 is_published: true
 post_date: '2017-06-06'
 url: learned-building-single-page-applications
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - javascript
 ---
-
 ![What I've learned building Single page applications](/images/articles/girl-on-laptop.jpg)
 
 # What I've learned building Single page applications

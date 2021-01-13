@@ -3,7 +3,11 @@ description: 'Prioritizing is difficult, but there are some tricks to make this 
 post_date: '2020-04-01'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-03 07:35:47'
+update_date: '2021-01-13 13:53:31'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
 !["Man with too many choices"](/images/articles/man-with-too-many-choices.jpeg)
 # 3 things to do to prioritize new features

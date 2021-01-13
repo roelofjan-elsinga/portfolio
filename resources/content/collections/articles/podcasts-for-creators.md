@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2017-09-02'
 url: podcasts-for-creators
+description: "Sharing knowledge about a topic you're passionate about is one of the most fun things you can do.\r\nYou can share your interests by talking to colleagues, go to m"
+update_date: '2021-01-13 14:14:26'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - podcasts
 ---
-
 ![Podcasts for creators and programmers](/images/articles/microphone.jpg)
 
 # Podcasts for creators and programmers

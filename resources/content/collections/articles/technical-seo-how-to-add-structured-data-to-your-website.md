@@ -3,7 +3,11 @@ description: 'SEO is very important to help people to find your website. To help
 post_date: '2020-05-06'
 is_published: true
 is_scheduled: false
-update_date: '2020-05-11 15:06:02'
+update_date: '2021-01-13 12:14:03'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - seo
 ---
 ![Search performance plant care for beginners](/images/articles/search-performance-for-plant-care-for-beginners.png)
 # Technical SEO: How to add structured data to your website

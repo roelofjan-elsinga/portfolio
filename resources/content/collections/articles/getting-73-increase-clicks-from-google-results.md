@@ -3,7 +3,11 @@ description: 'Three weeks ago I posted about structured data and technical SEO. 
 post_date: '2020-05-24'
 is_published: true
 is_scheduled: false
-update_date: '2020-05-24 16:32:19'
+update_date: '2021-01-13 12:13:48'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - seo
 ---
 ![Google search console for Plant care for beginners](/images/articles/search-performance-for-plant-care-for-beginners.png)
 # Getting a 73% increase in clicks from Google results

@@ -1,12 +1,16 @@
 ---
-update_date: '2019-08-20 17:28:53'
+update_date: '2021-01-13 14:01:26'
 description: 'Testing your code is essential if you want to write code that doesn''t break your application. Find out how I''m going to use automatic stubs to test the implementation of API''s instead of the actual API calls.'
 is_scheduled: false
 is_published: true
 post_date: '2019-08-21'
 url: building-automatic-api-stub-or-mocks-php
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - php
+    - testing
 ---
-
 !["Keyboards Black and White"](/images/articles/keyboards-bw.jpeg)
 # Building automatic API Stubs and/or using Mocks in PHP
 Testing your code is essential if you want to write code that doesn't break your application. You should use tests as an assurance that your code does what it's supposed to do, nothing more, nothing less. When you have code that interacts with external services, testing this code becomes more difficult. You're not responsible for the accessibility of other services, but theses still influence the state of your application. Any problems in external services, or the connection to those services, will break your tests if they're not operational. This is not (always) representative of the actual state of your application and can cause false negatives. Don't get me wrong, you should put in place scenarios that deal with these problems, but they shouldn't change your testing expectations. One input should trigger a certain response, a response that's predictable.

@@ -3,9 +3,12 @@ description: 'API gateways are great for development teams, because they expose 
 post_date: '2020-08-26'
 is_published: true
 is_scheduled: false
-update_date: '2020-08-26 12:17:42'
+update_date: '2021-01-13 12:09:14'
 linkedin_post: 'With a growing list of REST API endpoints from different services, the need of having an API gateway starts to grow as well. This makes it easier for a development team to build products. This is why I''ve looked at a few different API gateways for REST resources, but ended up using GraphQL for this. I already had experience with building a GraphQL server in PHP with Laravel, but the performance wasn''t quite there and made caching very difficult. Because of this, I opted to use Golang to build my GraphQL server. It''s much faster and caching fields is easier to do. I''ve experimented centralizing REST API endpoints using GraphQL and it''s actually not as difficult as I expected. Read more about this process with code examples.'
 twitter_post: ''
+tags:
+    - go
+    - graphql
 ---
 ![Golang with GraphQL](/images/articles/golang-with-graphql.png)
 # GraphQL: Centralize existing REST API endpoints for easier development

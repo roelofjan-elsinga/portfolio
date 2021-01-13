@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-30 20:13:53'
+update_date: '2021-01-13 14:04:36'
 description: 'Find out which file types I use for certain scenarios and which situations suit a specific file type best. We’ll dive into JSON, YAML, XML, and dotenv.'
 is_scheduled: false
 is_published: true
 post_date: '2019-04-04'
 url: my-choice-of-configuraton-file-types
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
-
 ![My choice of configuration file types](/images/articles/post-in-json.png)
 
 # How to Pick Right Configuration File Type for Your Project

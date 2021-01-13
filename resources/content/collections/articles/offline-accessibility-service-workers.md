@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-26 19:13:36'
+update_date: '2021-01-13 14:15:15'
 description: "Web applications are great. They're fast, they can be used on all platforms and often feel\r\nlike they're a real native application with accessibility .\r\nBut then,"
 is_scheduled: false
 is_published: true
 post_date: '2017-06-09'
 url: offline-accessibility-service-workers
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - service-workers
 ---
-
 ![Offline accessibility with service workers](/images/articles/guy-swimming.jpg)
 
 # Offline accessibility with service workers

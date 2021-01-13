@@ -3,10 +3,12 @@ description: 'Setting up your development environment with Ansible is a great wa
 post_date: '2020-11-25'
 is_published: true
 is_scheduled: false
-update_date: '2020-11-30 17:50:09'
+update_date: '2021-01-13 12:08:20'
 faq: null
 linkedin_post: ''
 twitter_post: ''
+tags:
+    - ansible
 ---
 ![Ansible Logo](/images/articles/ansible-logo.jpg)
 # Setting up your development environment with Ansible

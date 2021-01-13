@@ -1,12 +1,15 @@
 ---
-update_date: '2019-07-17 10:05:21'
+update_date: '2021-01-13 14:17:55'
 description: 'Work should be work, and free time should be free time. When you''re working, you should be able to work uninterrupted and have a great working day, but then, when you''re done, you have free time.'
 is_scheduled: false
 is_published: true
 post_date: '2019-02-14'
 url: company-culture
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - productivity
 ---
-
 !["Offices"](/images/articles/office.jpeg)
 
 # Company culture - productive and pleasant for all

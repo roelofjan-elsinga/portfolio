@@ -1,12 +1,15 @@
 ---
-update_date: '2019-07-29 07:18:49'
+update_date: '2021-01-13 14:02:09'
 description: 'In this post I''m explaining how you can improve the query performance for polymorphic relationships in Laravel, find out how I did it.'
 is_scheduled: false
 is_published: true
 post_date: '2019-07-29'
 url: improve-performance-polymorphic-relationships-laravel
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - laravel
 ---
-
 !["Start sprint race"](/images/articles/start-sprint-race.jpeg)
 
 # Improve query performance for polymorphic relationships in Laravel

@@ -1,12 +1,15 @@
 ---
-update_date: '2019-10-11 17:08:33'
+update_date: '2021-01-13 13:59:49'
 description: 'Portfolio updates for September 2019'
 is_scheduled: false
 is_published: true
 post_date: '2019-10-09'
 url: portfolio-updates-september-2019
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
 ---
-
 !["New homepage in september 2019"](/images/articles/new-homepage-in-september-2019.png)
 # Portfolio updates for September 2019
 

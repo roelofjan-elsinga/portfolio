@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-12-11'
 url: proxy-api-calls-to-your-server-during-angular-development
+update_date: '2021-01-13 13:57:27'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - angular
 ---
-
 !["Angular logo"](/images/articles/angular-logo.jpg)
 # Proxy API calls to your server during Angular development
 When you're developing an Angular application, you'll most likely use "ng serve" to display your application. When you're trying to request data through API calls to "/api/some/resource" you get a 404 response. But why? Well Angular sends the API request to http://localhost:4200/api/some/resource. Because you're not specifying a domain in your services, just a path, Angular will send the request to the current domain, which is fine for development, but will break in development.

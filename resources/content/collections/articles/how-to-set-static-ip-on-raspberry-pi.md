@@ -3,7 +3,11 @@ description: 'Setting a static IP on a Raspberry Pi has a lot of benefits and is
 post_date: '2020-04-08'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-08 16:10:33'
+update_date: '2021-01-13 12:14:34'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - raspberry-pi
 ---
 ![Raspberry Pi](/images/articles/raspberry-pi.jpeg)
 # How to set a static IP address on a Raspberry Pi

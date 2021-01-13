@@ -1,12 +1,15 @@
 ---
-update_date: '2019-11-02 15:26:40'
+update_date: '2021-01-13 13:58:55'
 description: '100% test coverage: Why or why not? But first, what does 100% test coverage mean? Let''s explore the topic in this post and I''ll tell you my thoughts about it afterwards.'
 is_scheduled: false
 is_published: true
 post_date: '2019-11-06'
 url: 100-test-coverage-why-or-why-not
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - testing
 ---
-
 !["Unpeeling a banana"](/images/articles/unpeeling-a-banana.jpeg)
 <span class="caption">Photo by Carlos Alberto Gómez Iñiguez</span>
 

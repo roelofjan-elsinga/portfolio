@@ -1,12 +1,16 @@
 ---
-update_date: '2019-09-01 10:55:15'
+update_date: '2021-01-13 14:04:52'
 description: 'Find out how to generate a sitemap for you website and how to submit this to Google Search Console. You can do this by hand or automatically, let me show you.'
 is_scheduled: false
 is_published: true
 post_date: '2019-03-29'
 url: how-to-generate-a-sitemap
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
+    - seo
 ---
-
 !["How to generate a sitemap"](/images/articles/binoculars.jpeg)
 
 # How to generate a sitemap

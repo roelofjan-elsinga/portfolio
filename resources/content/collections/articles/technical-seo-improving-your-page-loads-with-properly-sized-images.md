@@ -3,9 +3,12 @@ description: 'What is an easy way to speed up your page loads? Serving your imag
 post_date: '2020-06-24'
 is_published: true
 is_scheduled: false
-update_date: '2020-06-24 14:43:18'
+update_date: '2021-01-13 12:10:31'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - seo
 ---
-
 ![Bandwidth usage in Gumlet](/images/articles/bandwidth-usage-in-gumlet.png)
 # Technical SEO: Improving your page loads with properly sized images
 We all know that we should use properly sized images instead of using full-size images and making them smaller with HTML or CSS. Full-size images are larger in size, sometimes megabytes instead of a few kilobytes. When you're loading a page, this makes the load times take much longer, because all that information has to be served to the client. Using properly sized images, you're only serving what you need to. This could reduce your giant 5 megabyte image down to just a few kilobytes. Your page loads much faster, especially on mobile devices and Wi-Fi.

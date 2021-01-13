@@ -3,11 +3,14 @@ description: 'Deploying your applications from GitHub using SSH doesn''t have to
 post_date: '2020-08-19'
 is_published: true
 is_scheduled: false
-update_date: '2020-08-19 12:04:05'
+update_date: '2021-01-13 12:09:30'
 linkedin_post: 'I''ve worked a lot with Ansible of the past few weeks, what a journey it has been so far! I''ve learned to automatically deploy entire platforms across multiple servers with a single command and how to do this predictably and in a repeatable manner. Recently, I''ve found a way to make this even easier (and safer) by using SSH deploy keys in GitHub to give the remote machines access to 1 repository, but only read access. This is perfect for deployment purposes, so I decided to write about what I learned.'
 twitter_post: ''
+tags:
+    - github
+    - ansible
+    - ssh
 ---
-
 ![Ansible Logo](/images/articles/ansible-logo.jpg)
 # Ansible: Easy and Safe SSH deployments from GitHub
 Ansible is a server orchestration tool that you can also use to perform workflows on remote machines in a predictable and repeatable way. In a previous post, ["Automating Laravel deployment using Ansible"](/articles/automating-laravel-deployment-using-ansible), I've lined out how you can deploy an application using your GitHub username and a user token using the Ansible Vault. However, you can also do this using SSH, making sure your server only has pull-access to your application repository. This extra layer of security is quite easy to accomplish, so in this post, we're going to look at how to do this.

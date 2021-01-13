@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-2-graphql-test-results-e8f3b2db676b'
 post_date: '2018-03-19'
 url: modernizing-log-part-2-graphql-test-results
+description: 'In the previous log, I mentioned that I had a product page that had too many XHR requests and was overloading the server with a high visitor count. To combat th'
+update_date: '2021-01-13 14:13:26'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - graphql
 ---
-
 !["Flower bulbs"](/images/articles/1_GdfAu9ucc1ZQdKz39S-0Kg.jpeg)
 
 # Modernizing log: Part 2, GraphQL test results

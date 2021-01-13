@@ -3,7 +3,11 @@ description: 'Setting up a static website, hosting it, and automatically deployi
 post_date: '2020-04-22'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-23 11:23:52'
+update_date: '2021-01-13 12:14:14'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - github
 ---
 ![GitHub Logo](/images/articles/github-logo.png)
 

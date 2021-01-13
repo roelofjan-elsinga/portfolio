@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2016-11-17'
 url: isomorphic-javascript
+description: 'JavaScript, a language built to work on the client, in a browser, to make a website more interactive. Use Javascript to react to user''s input, send XHR requests'
+update_date: '2021-01-13 14:16:19'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - javascript
 ---
-
 ![Isomorphic JavaScript](/images/articles/its-better-together.jpg)
 
 # Isomorphic JavaScript: What is it and what can I do with it?

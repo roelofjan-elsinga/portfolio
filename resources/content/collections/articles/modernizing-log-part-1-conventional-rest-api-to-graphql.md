@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-1-conventional-rest-api-to-graphql-f512cb07d2ab'
 post_date: '2018-03-14'
 url: modernizing-log-part-1-conventional-rest-api-to-graphql
+description: "Iâve been working on a Laravel and AngularJS application for two years now.\r\nItâs slowly becoming more and more complex and itâs starting to becom"
+update_date: '2021-01-13 14:14:09'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - graphql
 ---
-
 !["Books"](/images/articles/1__GgmGZJnFec994dvCDpbWQ.jpeg)
 
 # Modernizing log: Part 1, Conventional REST API to GraphQL

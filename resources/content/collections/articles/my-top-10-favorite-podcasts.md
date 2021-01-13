@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-03-20'
 url: my-top-10-favorite-podcasts
+update_date: '2021-01-13 14:05:34'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - podcasts
 ---
-
 ![My top 10 favorite podcasts](/images/articles/headphones.jpeg)
 
 # My top 10 favorite podcasts

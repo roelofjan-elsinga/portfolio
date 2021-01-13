@@ -1,12 +1,15 @@
 ---
-update_date: '2019-10-14 13:33:35'
+update_date: '2021-01-13 13:59:12'
 description: 'In this post, I go through the steps you can take to write good documentation. You can use these in any kind of project and will allow others to help you when you need it.'
 is_scheduled: false
 is_published: true
 post_date: '2019-10-30'
 url: how-to-write-good-documentation
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - documentation
 ---
-
 !["Blank page"](/images/articles/blank-page.jpg)
 # How to write good documentation
 Writing documentation is often more important than writing code itself. Why? Well, if no one knows how to use your code, no one will use it. You need to be able to explain how your code works and why it works the way it does. This way, other developers will know how to write code in the same style you do. If you provide examples for the way you're implementing your code, others will understand the context in which to use your software.

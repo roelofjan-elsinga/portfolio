@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2019-01-25'
 url: improving-development-hiring
+description: 'When applying to development jobs, you''re often asked to do a coding test to prove that you know what you''re doing. I think this is terrible and here are better'
+update_date: '2021-01-13 14:18:41'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
-
 ![Keyboard](/images/articles/keyboard.jpg)
 
 # Improving development hiring

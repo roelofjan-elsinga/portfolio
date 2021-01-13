@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2019-02-11'
 url: learn-to-say-no
+description: "When working on tasks during a work day, you can often get distracted by other tasks that need to\r\nbe completed while you're working on something else. As this k"
+update_date: '2021-01-13 14:17:44'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - productivity
 ---
-
 !["Clock"](/images/articles/clock.jpg)
 
 # Learn to say NO

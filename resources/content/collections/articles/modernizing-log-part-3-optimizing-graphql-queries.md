@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/modernizing-log-part-3-optimizing-graphql-queries-bea400c86a3d'
 post_date: '2018-05-02'
 url: modernizing-log-part-3-optimizing-graphql-queries
+description: "First, let me refresh your memory about what results I've had so far.\r\nThe initial situation was as follows:"
+update_date: '2021-01-13 14:13:13'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - graphql
 ---
-
 !["Sports car"](/images/articles/0_TZbsjFf22AO6FfeA.jpeg)
 
 # Modernizing log: Part 3, Optimizing GraphQL queries

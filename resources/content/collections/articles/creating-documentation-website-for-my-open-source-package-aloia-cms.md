@@ -1,12 +1,15 @@
 ---
-update_date: '2019-11-18 03:06:32'
+update_date: '2021-01-13 13:58:34'
 description: 'Creating a documentation website for my open source package Aloia CMS'
 is_scheduled: false
 is_published: true
 post_date: '2019-11-20'
 url: creating-documentation-website-for-my-open-source-package-aloia-cms
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - aloia-cms
 ---
-
 !["Aloia cms documentation website"](/images/articles/aloia-cms-documentation-website.png)
 # Creating a documentation website for my open-source package Aloia CMS
 As some of you might know, I've been working on a content management system. I've described [Why I built my own CMS](/articles/why-built-my-own-cms) in an earlier post. Then, after I wrote [How to write good documentation](/articles/how-to-write-good-documentation) I thought to myself: "I just wrote about this, but I'm talking the talk and not walking the walk". 

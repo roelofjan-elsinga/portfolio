@@ -1,12 +1,16 @@
 ---
-update_date: '2020-03-11 16:33:17'
+update_date: '2021-01-13 13:54:05'
 description: 'In this post, I go over the steps I have taken to add Elasticsearch to an existing Laravel application on very minimal hardware resources. I also discuss the hurdles I had to overcome to achieve this.'
 is_scheduled: false
 is_published: true
 post_date: '2020-03-11'
 url: how-added-elasticsearch-to-laravel-minimal-hardware
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - laravel
+    - elasticsearch
 ---
-
 !["Cro tool homepage"](/images/articles/cro-tool-homepage.jpg)
 # How I added Elasticsearch to a Laravel application on a server with minimal resources
 

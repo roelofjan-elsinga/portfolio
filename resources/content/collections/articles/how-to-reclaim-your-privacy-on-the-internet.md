@@ -1,12 +1,15 @@
 ---
-update_date: '2020-01-01 11:24:51'
+update_date: '2021-01-13 13:56:45'
 description: 'In this post I''m giving you four different steps you can take to reclaim your privacy on the internet. You can take all of these steps, but also just some of them. Any steps you take will be an improvement already.'
 is_scheduled: false
 is_published: true
 post_date: '2020-01-01'
 url: how-to-reclaim-your-privacy-on-the-internet
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - privacy
 ---
-
 !["A lego character protecting itself from shoes"](/images/articles/a-lego-character-protecting-itself-from-shoes.jpg)
 <span class="caption">Photo by James Pond on Unsplash</span>
 # How to reclaim your privacy on the internet

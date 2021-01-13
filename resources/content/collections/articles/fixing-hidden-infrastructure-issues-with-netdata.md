@@ -3,11 +3,13 @@ description: 'Netdata has helped me to fix a major issue by pointing me in the r
 post_date: '2020-09-23'
 is_published: true
 is_scheduled: false
-update_date: '2020-09-21 19:13:36'
+update_date: '2021-01-13 12:08:36'
 linkedin_post: 'Netdata has helped me to fix a major issue within the first hour of deploying it across different nodes in the platform architecture. The existing server monitoring solutions all pointed me towards RAM limitations, while Netdata showed me this issue had to do with CPU usage instead. This helped me to improve the performance of the Apache Solr instance by at least 3 times and contribute to a more stable architecture.'
 twitter_post: ''
+tags:
+    - debugging
+    - netdata
 ---
-
 ![Netdata cloud dashboard](/images/articles/netdata-cloud-dashboard.png)
 <span class="caption">Graphics from the <a href="https://www.netdata.cloud/blog/introducing-the-all-new-netdata-cloud/" rel="nofollow">Netdata blog</a></span>
 # Fixing hidden infrastructure issues with Netdata

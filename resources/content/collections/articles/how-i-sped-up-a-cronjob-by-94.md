@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/how-i-sped-up-a-cronjob-by-1800-e33e9ef073dd'
 post_date: '2018-04-26'
 url: how-i-sped-up-a-cronjob-by-94
+description: 'We all need Cronjob for certain automation tasks, but sometimes these tasks take so long that they become a huge burden to you and your ecosystem. I had a Cronj'
+update_date: '2021-01-13 14:13:47'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
-
 !["Sand walker"](/images/articles/0_xqnRu6Z6PGP8I4ab.jpeg)
 
 # How I reduced the runtime of a Cronjob by 94%

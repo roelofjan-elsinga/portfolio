@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-04-21'
 url: 5-reasons-to-start-using-ubuntu
+update_date: '2021-01-13 14:03:08'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - linux
 ---
-
 !["5 reasons to start using Ubuntu"](/images/articles/ubuntu_logo.png)
 
 # 5 reasons to start using Ubuntu

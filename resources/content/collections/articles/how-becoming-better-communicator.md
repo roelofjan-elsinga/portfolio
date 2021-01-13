@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-20 19:54:26'
+update_date: '2021-01-13 14:01:17'
 description: 'I''m trying to become a more skilled communicator to my peers and non-technical people. In this post, you''ll find out how I''m attempting to do this.'
 is_scheduled: false
 is_published: true
 post_date: '2019-08-28'
 url: how-becoming-better-communicator
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
 ---
-
 !["Teamwork"](/images/articles/teamwork.jpg)
 <span class="caption"><a class="link" style="border-bottom-width:0;" href="https://www.freepik.com/free-photos-vectors/business">Illustration created by stockgiu</a></span>
 # How I'm trying to become a better communicator

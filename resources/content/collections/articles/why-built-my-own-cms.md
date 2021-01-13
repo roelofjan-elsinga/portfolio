@@ -1,12 +1,15 @@
 ---
-update_date: '2019-09-08 16:13:57'
+update_date: '2021-01-13 14:00:42'
 description: 'I''ve always been against building my own CMS. Find out why I decided to build my own CMS anyway and what motivated me to build modules for it.'
 is_scheduled: false
 is_published: true
 post_date: '2019-09-18'
 url: why-built-my-own-cms
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - aloia-cms
 ---
-
 !["Screenshot flat file cms dashboard"](/images/articles/screenshot-flat-file-cms-dashboard.png)
 # Why I built my own CMS
 I've always been against building my own content management system (CMS). When anyone asked me to build something like it, I just went with off-the-shelf solutions like WordPress. This was always enough for me because I wasn't building the websites for myself. I was always convinced that I could create my content more easily by just creating HTML files and serving that as content. Setting up a CMS only cost me time and effort to set it up, connect it to a database, and update it regularly. So why did I end up creating my own CMS anyway? There are two reasons for this:

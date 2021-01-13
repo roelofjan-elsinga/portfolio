@@ -3,9 +3,12 @@ description: 'Sharing content to many platforms helps you to get the word out ab
 post_date: '2020-07-08'
 is_published: true
 is_scheduled: false
-update_date: '2020-07-23 11:52:08'
+update_date: '2021-01-13 12:10:13'
 linkedin_post: ''
 twitter_post: ''
+tags:
+    - linkedin
+    - automation
 ---
 ![How I automated publishing my content to LinkedIn](/images/articles/automating-publishing-to-linkedin.jpg)
 # How I automated publishing my content to LinkedIn

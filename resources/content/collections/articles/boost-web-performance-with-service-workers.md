@@ -3,9 +3,11 @@ description: 'If you''re looking to improve the performance of your website and 
 post_date: '2020-08-05'
 is_published: true
 is_scheduled: false
-update_date: '2020-08-12 08:12:32'
+update_date: '2021-01-13 12:09:58'
 linkedin_post: 'I''ve been able to improve the mobile performance of one of my websites drastically. I did this by only adding a Service Worker. A Service Worker is a script that runs in your browser which helps to optimize asset loading on your website, even allowing the caching of assets in the browser for offline usage. '
 twitter_post: ''
+tags:
+    - service-workers
 ---
 ![Speedy zoomed in on Camera](/images/articles/speedy-zoomed-in-on-camera.jpeg)
 # Boost web performance with Service Workers

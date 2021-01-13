@@ -3,7 +3,13 @@ description: 'Deploying changes to your websites is often a very repetitive task
 post_date: '2020-06-07'
 is_published: true
 is_scheduled: false
-update_date: '2020-06-08 14:43:04'
+update_date: '2021-01-13 12:10:59'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - ansible
+    - laravel
+    - automation
 ---
 ![Ansible Logo](/images/articles/ansible-logo.jpg)
 # Automating Laravel deployment using Ansible

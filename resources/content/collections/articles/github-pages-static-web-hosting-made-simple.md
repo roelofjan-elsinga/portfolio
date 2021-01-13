@@ -3,9 +3,12 @@ description: 'Static web hosting has been a pain point for many developers for y
 post_date: '2020-04-15'
 is_published: true
 is_scheduled: false
-update_date: '2020-04-22 18:55:00'
+update_date: '2021-01-13 12:14:21'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - github
 ---
-
 ![GitHub logo](/images/articles/github-logo.png)
 # GitHub Pages: Static web hosting made simple
 

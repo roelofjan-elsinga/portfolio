@@ -3,11 +3,13 @@ description: 'Markdown is a simplistic markup language to focus on the content i
 post_date: '2020-12-03'
 is_published: true
 is_scheduled: false
-update_date: '2020-12-03 12:47:33'
+update_date: '2021-01-13 12:08:16'
 linkedin_post: ''
 twitter_post: ''
+tags:
+    - asciidoc
+    - ebook
 ---
-
 
 
 ![Asciidoctor logo](/images/articles/asciidoctor-logo.png "Asciidoctor logo")

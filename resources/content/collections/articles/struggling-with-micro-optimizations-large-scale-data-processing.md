@@ -1,12 +1,15 @@
 ---
-update_date: '2019-09-14 14:38:05'
+update_date: '2021-01-13 14:00:02'
 description: 'I''m struggling with micro optimizations on large scale data processing. Find out in what way I''m trying to improve the runtime of the calculations by saving processing cycles.'
 is_scheduled: false
 is_published: true
 post_date: '2019-10-02'
 url: struggling-with-micro-optimizations-large-scale-data-processing
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
 ---
-
 !["Clock on the wall"](/images/articles/clock-on-the-wall.jpeg)
 # Struggling with micro-optimizations on large scale data processing
 

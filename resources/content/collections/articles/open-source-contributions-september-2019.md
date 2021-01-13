@@ -1,12 +1,16 @@
 ---
-update_date: '2019-09-14 14:08:03'
+update_date: '2021-01-13 14:00:25'
 description: 'In this post I explain which open-source project I contributed to in september of 2019. It''s been a very interesting month and I''ve learned a lot of new things.'
 is_scheduled: false
 is_published: true
 post_date: '2019-09-25'
 url: open-source-contributions-september-2019
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - open-source
+    - development
 ---
-
 !["People working together"](/images/articles/people-working-together.jpeg)
 <span class="caption">Applying patches to a package to make progress with your application.</span>
 # Open source contributions (September 2019)

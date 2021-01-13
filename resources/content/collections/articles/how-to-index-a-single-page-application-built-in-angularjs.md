@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-26 17:36:43'
+update_date: '2021-01-13 14:15:28'
 description: 'Find out how to properly index a single page application for Google and other search engines with Prerender.'
 is_scheduled: false
 is_published: true
 post_date: '2017-01-12'
 url: how-to-index-a-single-page-application-built-in-angularjs
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - angular
 ---
-
 ![Magnifier](/images/articles/magnifier.jpg)
 
 # How to index a single page application built in AngularJS

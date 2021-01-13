@@ -3,8 +3,13 @@ is_scheduled: false
 is_published: true
 post_date: '2016-11-10'
 url: windows-or-linux
+description: 'The title of the post is a thing I''m struggling with on a daily basis. On the one hand you have Windows, an operating system series that I''ve been using my enti'
+update_date: '2021-01-13 14:15:48'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - linux
 ---
-
 ![Windows or Linux?](/images/articles/deer.jpg "Windows or Linux?")
 
 # Windows or Linux?

@@ -1,12 +1,16 @@
 ---
-update_date: '2019-08-15 19:39:50'
+update_date: '2021-01-13 14:01:39'
 description: 'Recently I''ve been quite active with contributing to open source projects on GitHub. Find out which packages I''ve contributed to and which packages of my own I''ve been maintaining.'
 is_scheduled: false
 is_published: true
 post_date: '2019-08-15'
 url: recent-open-source-contributions-augustus-2019
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - open-source
+    - development
 ---
-
 !["Starry sky"](/images/articles/starry-sky.jpeg)
 # My recent open source contributions (August 2019)
 Recently I've been quite active with contributing to open source projects on GitHub. Part of the reason is the necessity to move other projects forward and the proposed changes allow me to do so. Another reason is that and I have great admiration for the software packages and would like to contribute to make them better, not just for me, but for everyone else.

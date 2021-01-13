@@ -1,12 +1,16 @@
 ---
-update_date: '2019-12-10 12:54:38'
+update_date: '2021-01-13 14:04:28'
 description: 'In this post I go over the top 10 reasons why I believe software engineers would benefit from blogging. But remember: If you''re not writing blog posts you''re not any less of a software developer.'
 is_scheduled: false
 is_published: true
 post_date: '2019-12-25'
 url: top-10-reasons-to-start-blogging-as-software-engineer
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
+    - blogging
 ---
-
 !["Fireworks in water"](/images/articles/fireworks-in-water.jpg)
 # Top 10 reasons to start blogging as a software engineer
 Blogging is an amazing thing to do for software engineers. I like to write blog posts for a lot of reasons, but a few of those reasons are more important than others. This is why I've created my top 10 reasons why software engineers should start a blog themselves. 

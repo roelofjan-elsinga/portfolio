@@ -3,11 +3,12 @@ description: '2020 has been a strange year for us all, but I don''t want to ling
 post_date: '2020-12-30'
 is_published: true
 is_scheduled: false
-update_date: '2020-12-29 21:43:52'
+update_date: '2021-01-13 12:08:12'
 linkedin_post: '2020 was a crazy year, but I''ve been surprisingly productive during the quarantine. I''ve created a list of everything I''ve done and I''m proud of this year, to end this strange year on a high note. What have you done that you''re most proud of this year?'
 twitter_post: ''
+tags:
+    - growth
 ---
-
 ![My 2020 in review](/images/articles/my-2020-in-review.png "My 2020 in review")
 # My 2020 in review
 2020 has been a strange year for us all, but I don't want to linger on the negatives this year has brought. Instead, I'd like to highlight everything that went well for me. I'd like to invite you to do the same to end this strange year on a high. In this post, I'll highlight everything I've learned this year and everything I'm proud of. Quarantine has been a strange time, where all of a sudden I had a lot of extra time to spend on myself and my projects.

@@ -1,12 +1,15 @@
 ---
-update_date: '2020-01-15 16:34:51'
+update_date: '2021-01-13 13:56:14'
 description: 'In this post I explain the differences between a rolling release and a snapshot release distro. This post is aimed at people that are just starting out with Linux of want to explore and make the switch to Linux.'
 is_scheduled: false
 is_published: true
 post_date: '2020-01-15'
 url: linux-rolling-releases-versus-snapshot-releases
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - linux
 ---
-
 !["Linux logo"](/images/articles/linux-logo.jpg)
 # Linux: Rolling releases vs Snapshot releases
 There are many, many Linux distros out there and it's both amazing and confusing! It's going hand in hand with the open source way of thinking: Don't like it? Fork it and improve it! That's exactly what the enormous amount of Linux distros stands for. People found a distro they liked, but something wasn't right, so they changed it and made it into a new one. This is both the greatest and most confusing aspect of the Linux desktop. It's confusing for the newcomers because they have no clue where to start on their Linux journey. I'm writing this post to explain one aspect of the Linux ecosystem: rolling releases and snapshot releases. What are the differences and which one should you use?

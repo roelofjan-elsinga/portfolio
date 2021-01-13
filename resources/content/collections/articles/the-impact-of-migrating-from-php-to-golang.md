@@ -1,12 +1,16 @@
 ---
-update_date: '2020-01-22 10:16:53'
+update_date: '2021-01-13 13:56:08'
 description: 'Find out how I reduced the execution time of a script by 99%. In this post I go over the impact of migrating from PHP to Golang. I recently migrated a business process from PHP to Golang and it had more benefits than just a performance increase.'
 is_scheduled: false
 is_published: true
 post_date: '2020-01-22'
 url: the-impact-of-migrating-from-php-to-golang
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - php
+    - go
 ---
-
 !["PHP plus Golang"](/images/articles/php-plus-golang.jpg)
 <span class="caption">PHP logo by Colin Viebrock <a href="https://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0)</a></span>
 # The impact of migrating from PHP to Golang

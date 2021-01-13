@@ -1,12 +1,15 @@
 ---
-update_date: '2019-11-28 20:44:17'
+update_date: '2021-01-13 13:57:35'
 description: 'Event sourcing: The single source of truth. In this post I''ll explain my reasoning for calling event sourcing the single source of truth. Spoiler alert: It is a very beneficial practice for decentralized applications.'
 is_scheduled: false
 is_published: true
 post_date: '2019-12-04'
 url: event-sourcing-single-source-truth
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - event-sourcing
 ---
-
 !["People running together"](/images/articles/people-running-together.jpeg)
 # Event sourcing: The single source of truth
 Event sourcing is a very fascinating concept in programming. I think it could be used as a single source of truth for a wide range of decentralized applications. Event sourcing is a concept that took me quite a while to get my head around because it's very different from the normal way of dealing with data in some kind of database. In this post, I will quickly go over the concept of event sourcing and how it differs from something like a CRUD application. Then I will go over some aspects of event sourcing that could help make it very easy to create decentralized applications, all using a single source of truth to perform tasks.

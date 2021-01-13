@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-02-28'
 url: how-i-reduced-my-docker-image-by-55-percent
+update_date: '2021-01-13 14:05:44'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - docker
 ---
-
 ![How I reduced my docker image by 55%](/images/articles/steel_tower.jpeg)
 
 # How I reduced my docker image by 55%

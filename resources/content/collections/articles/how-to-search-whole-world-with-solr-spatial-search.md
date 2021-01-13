@@ -1,12 +1,15 @@
 ---
-update_date: '2019-03-13 07:26:00'
+update_date: '2021-01-13 14:05:53'
 description: 'When using a Polygon or MultiPolygon for searching on a SpatialField with IsWithin(), you can''t use a square shape unless it''s counter-clockwise.'
 is_scheduled: false
 is_published: true
 post_date: '2019-02-26'
 url: how-to-search-whole-world-with-solr-spatial-search
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - apache-solr
 ---
-
 ![Solr logo](/images/articles/solr_logo.png)
 
 # How to search "the whole world" with Solr Spatial Search

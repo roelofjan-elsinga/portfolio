@@ -1,12 +1,15 @@
 ---
-update_date: '2020-02-06 08:44:36'
+update_date: '2021-01-13 13:55:17'
 description: 'In this post, I reflect on some of the recent changes I''ve planned and implemented into Aloia CMS. The release of version 1.0 is close and is all about simplying workflows and getting out of the way.'
 is_scheduled: false
 is_published: true
 post_date: '2020-02-05'
 url: aloia-cms-the-road-to-version-1-0
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - aloia-cms
 ---
-
 !["Aloia CMS version 1.0"](/images/articles/aloia-cms-version-1.0.jpg)
 # Aloia CMS: The road to version 1.0
 If you've been reading my blog posts for a longer time, you might remember that I'm working on a CMS, something I never thought I would do. In this post, I will go over my reasons why I'm building my own CMS again because they've changed a little bit since the last time I wrote about it. This post is a little different than my other posts as I usually pick a topic and do a deep-dive. This is more of an announcement and reflection in one in the past few weeks while working on Aloia CMS.

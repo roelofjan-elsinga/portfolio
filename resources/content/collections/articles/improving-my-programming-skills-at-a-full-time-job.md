@@ -4,8 +4,13 @@ is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/improving-my-programming-skills-at-a-full-time-job-e3f380c492b1'
 post_date: '2018-03-15'
 url: improving-my-programming-skills-at-a-full-time-job
+description: 'I''ve been working full-time, right out of college, for two years now. Initially, I thought this would limit my time for improving my programming skills. It most'
+update_date: '2021-01-13 14:13:59'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - growth
 ---
-
 !["Fireworks"](/images/articles/1_5U2TFnE_wepgDzToah--Xg.jpeg)
 
 # Improving my programming skills at a full-time job

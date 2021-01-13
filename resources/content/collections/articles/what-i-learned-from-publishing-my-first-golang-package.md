@@ -1,12 +1,16 @@
 ---
-update_date: '2020-01-29 10:04:21'
+update_date: '2021-01-13 13:55:27'
 description: 'In this post I go over what I learned from publishing my first Golang package. I tell you about why I did this and what my workflow was to achieve this goal.'
 is_scheduled: false
 is_published: true
 post_date: '2020-01-29'
 url: what-i-learned-from-publishing-my-first-golang-package
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - go
+    - growth
 ---
-
 !["Golang packages"](/images/articles/golang-packages.jpg)
 <span class="caption">Box icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
 # What I learned from publishing my first Golang package

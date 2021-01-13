@@ -3,9 +3,12 @@ description: 'Ansible has several ways of performing tasks: Tasks, Roles, and Ha
 post_date: '2020-06-10'
 is_published: true
 is_scheduled: false
-update_date: '2020-06-10 16:44:40'
+update_date: '2021-01-13 12:10:48'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - ansible
 ---
-
 ![Ansible Logo](/images/articles/ansible-logo.jpg)
 # Ansible: Tasks vs Roles vs Handlers
 Running tasks in Ansible can be done in different ways and this can be very confusing for those starting out with automation and server orchestration. In this post, I'll explain the difference and why you should use one or the other for certain situations. If I had this post when I started with Ansible it would've saved me hours of researching, so hopefully this helps you.

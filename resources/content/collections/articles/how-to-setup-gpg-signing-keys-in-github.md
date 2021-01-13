@@ -1,10 +1,14 @@
 ---
-update_date: '2020-03-30 06:30:55'
+update_date: '2021-01-13 13:53:51'
 description: 'If you''ve ever used a Github integration, then you''ll now you can verify your Git commits. In this post, I''ll go over the steps you need to take to accomplish this for your own development system.'
 is_scheduled: false
 is_published: true
 post_date: '2020-03-18'
 url: how-to-setup-gpg-signing-keys-in-github
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - github
 ---
 !["Lock on blue wall"](/images/articles/lock-on-blue-wall.jpeg)
 # How to get the verified flag on your commits in GitHub

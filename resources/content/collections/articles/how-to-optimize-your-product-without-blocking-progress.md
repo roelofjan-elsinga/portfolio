@@ -1,12 +1,15 @@
 ---
-update_date: '2020-01-07 19:29:01'
+update_date: '2021-01-13 13:56:27'
 description: 'In this post I go over how you can optimize your product without blocking progress along the way. A lot of people can get stuck on features that might be meaningless to the product. Through data you can prioritize features and improvements, which will guide your work towards a specific goal.'
 is_scheduled: false
 is_published: true
 post_date: '2020-01-08'
 url: how-to-optimize-your-product-without-blocking-progress
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
-
 !["Drawn graph"](/images/articles/drawn-graph.jpg)
 <span class="caption">Photo by Isaac Smith on Unsplash</span>
 # How to optimize your product without blocking progress

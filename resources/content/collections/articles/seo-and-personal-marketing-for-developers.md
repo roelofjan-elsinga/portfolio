@@ -4,8 +4,12 @@ is_scheduled: false
 is_published: true
 post_date: '2019-03-21'
 url: seo-and-personal-marketing-for-developers
+update_date: '2021-01-13 14:05:18'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - seo
 ---
-
 ![SEO and personal marketing for developers](/images/articles/google-analytics.png)
 
 # SEO and personal marketing for developers

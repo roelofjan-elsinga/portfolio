@@ -1,12 +1,15 @@
 ---
-update_date: '2019-08-26 19:27:19'
+update_date: '2021-01-13 14:14:38'
 description: "There is nothing more fun than working with API's during my work day.\r\nIt's programming like any other day, but it's also so much more!\r\nIt's connecting other ser"
 is_scheduled: false
 is_published: true
 post_date: '2017-08-12'
 url: build-bridges-api-based-structures
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - development
 ---
-
 ![Build bridges with API based application structures](/images/articles/bridge-forest.jpg)
 
 # Build bridges with API based application structures

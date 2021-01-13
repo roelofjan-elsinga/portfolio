@@ -1,13 +1,16 @@
 ---
-update_date: '2019-11-01 08:22:02'
+update_date: '2021-01-13 14:11:06'
 description: 'After 2.5 years it''s finally time to make this happen! We''re upgrading an AngularJS application to Angular (v6+). Follow along and by the end you''ll have a working hybrid application.'
 is_scheduled: false
 is_published: true
 canonical: 'https://medium.com/@roelofjanelsinga/angularjs-angular-v6-hybrid-finally-97ac37087de1'
 post_date: '2018-06-01'
 url: angularjs-angular-v6-hybrid-finally
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - angular
 ---
-
 !["Sports car"](/images/articles/0_2YOcp3G2ZLewVVIl.jpeg)
 
 # AngularJS + Angular (v6) hybrid (finally!)

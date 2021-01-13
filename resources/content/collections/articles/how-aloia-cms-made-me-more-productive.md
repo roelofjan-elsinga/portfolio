@@ -4,7 +4,11 @@ is_published: true
 url: how-aloia-cms-made-me-more-productive
 post_date: '2020-03-25'
 description: "Aloia CMS is a CMS I'm currently actively developing, so this post is a very obvious milestone in this process.\r\nI love writing blog posts, that's why you see on"
-update_date: '2020-03-26 13:15:14'
+update_date: '2021-01-13 13:53:44'
+linkedin_post: ''
+twitter_post: ''
+tags:
+    - aloia-cms
 ---
 !["Rotating cogs"](/images/articles/rotating-cogs.jpeg)
 
