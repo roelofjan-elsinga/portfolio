@@ -5,3 +5,4 @@
 
 @livewire('manage-twitter-message', ['message' => $article->twitter_post ?? ''])
 
+@livewire('tags-manager', ['tags' => $article->tags ?? []])
