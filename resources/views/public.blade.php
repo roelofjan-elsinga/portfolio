@@ -51,12 +51,6 @@
             <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
         @endif
 
-        {{-- Display the canonical URL if necessary and if it's not already included --}}
-
-        @if(!isset($pagination_tags))
-            <link rel="canonical" href="{{\Main\Classes\Canonical::getLink()}}" />
-        @endif
-
         <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getRequestUri()}}" hreflang="en">
         <link rel="alternate" href="https://roelofjanelsinga.nl{{request()->getRequestUri()}}" hreflang="nl">
         <link rel="alternate" href="https://roelofjanelsinga.com{{request()->getRequestUri()}}" hreflang="x-default">
