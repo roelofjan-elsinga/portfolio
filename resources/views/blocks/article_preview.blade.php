@@ -12,7 +12,7 @@
             href="{{!is_null($article->externalUrl()) ? $article->externalUrl() : route('articles.view', $article->slug())}}"
             {{!is_null($article->externalUrl()) ? "target='_blank'" : ''}} class="hover:underline"
         >
-            <h3 class="mb-4 font-bold leading-normal">
+            <h3 class="mb-4 font-bold leading-normal text-3xl">
                 {{$article->title()}}
             </h3>
         </a>

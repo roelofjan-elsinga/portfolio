@@ -13,4 +13,5 @@ articles:
     - the-elephant-in-the-room-burnouts
     - improving-my-programming-skills-at-a-full-time-job
     - 5-lessons-ive-learned-by-working-on-a-product-with-non-technical-people
+    - keep-it-simple-stupid
 ---
