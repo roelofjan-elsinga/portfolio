@@ -4,7 +4,7 @@
     <div class="h-3/4 flex flex-col justify-center text-theme-darkest border-theme-darkest">
         <h1 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-12 leading-snug">Full-stack web developer <br /> & Scrum master</h1>
 
-        <h4 class="text-xl mb-4">{{__('home.specialize')}}</h4>
+        <strong class="text-xl mb-4">{{__('home.specialize')}}</strong>
         <p class="text-lg sm:text-xl leading-loose">
             ⚡ {{__('home.fast_apps')}} <br />
             🔒 {{__('home.secure_apps')}} <br />

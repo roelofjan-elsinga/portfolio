@@ -56,7 +56,7 @@
 .paragraph-spacing {
 
     h1 {
-        font-size: 1.875rem;
+        @apply text-4xl;
         margin-bottom: 1rem;
     }
 

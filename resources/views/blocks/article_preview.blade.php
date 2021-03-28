@@ -17,9 +17,18 @@
             </h3>
         </a>
 
-        <p class="mb-4 leading-normal">{{$article->description()}}</p>
+        <p class="mb-4 leading-loose">{{$article->description()}}</p>
 
         <span class="text-gray-600 text-sm">{{__('article.posted_on')}}: {!! $article->getPostDate()->format('F jS, Y') !!}</span>
+
+        <div class="flex space-x-2 mt-4">
+            @foreach($article->get('tags') as $tag)
+                <a href="{{route('articles.tags', $tag)}}" class="bg-blue-200 hover:bg-blue-300 rounded p-2">
+                    {{$tag}}
+                </a>
+            @endforeach
+        </div>
+
     </div>
 
 </article>

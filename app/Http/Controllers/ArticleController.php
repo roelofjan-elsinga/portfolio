@@ -87,7 +87,8 @@ class ArticleController extends Controller
     public function tags(string $tag_name)
     {
         $articles = Collection::make(Tag::find($tag_name)->get('articles') ?? [])
-            ->map(fn (string $article_slug) => Article::find($article_slug));
+            ->map(fn (string $article_slug) => Article::find($article_slug))
+            ->sortByDesc(fn (Article $article) => $article->getPostDate());
 
         return view('public.tags', [
             'articles' => $articles,
