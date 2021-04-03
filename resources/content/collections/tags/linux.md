@@ -6,4 +6,5 @@ articles:
     - linux-how-it-saved-my-old-laptop
     - 5-reasons-to-start-using-ubuntu
     - windows-or-linux
+    - hello-manjaro
 ---
