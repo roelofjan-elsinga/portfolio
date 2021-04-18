@@ -7,6 +7,5 @@ articles:
     - technical-seo-how-to-add-structured-data-to-your-website
     - how-to-generate-a-sitemap
     - seo-and-personal-marketing-for-developers
-    - neo4j-seo-ux-creating-content-dependencies
     - neo4j-seo-ux-easily-create-related-content
 ---
