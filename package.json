@@ -4,8 +4,7 @@
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run dev -- --watch",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "php:lint:all": "./vendor/bin/php-cs-fixer fix --rules=@PSR2 -v --using-cache=no ./app",
-    "php:lint": "./vendor/bin/php-cs-fixer fix -v --config=./.php_cs.dist --path-mode=intersection"
+    "php:lint:all": "./vendor/bin/php-cs-fixer fix --rules=@PSR2 -v --using-cache=no ./app"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
@@ -30,7 +29,7 @@
   },
   "lint-staged": {
     "*.php": [
-      "npm run php:lint",
+      "./vendor/bin/php-cs-fixer fix -v --config=./.php_cs.dist --path-mode=intersection",
       "git add"
     ]
   }

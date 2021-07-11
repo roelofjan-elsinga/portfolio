@@ -23,3 +23,14 @@ h3 {
 
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .column-count-2 {
+      column-count: 2;
+    }
+    .column-count-3 {
+      column-count: 3;
+    }
+  }
+}
