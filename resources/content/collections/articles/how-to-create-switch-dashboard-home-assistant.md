@@ -7,7 +7,7 @@ update_date: '2021-01-13 12:08:24'
 linkedin_post: ''
 twitter_post: ''
 tags:
-    - homeassistent
+    - homeassistant
     - mqtt
 ---
 ![Home assistant logo banner](/images/articles/home-assistant-logo-banner.png "Home assistant logo banner")
